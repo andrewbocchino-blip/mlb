@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MLB Model — 2026-06-06</title>
+<style>
+:root { --bg:#0f1115; --card:#1a1d24; --line:#2a2f3a; --txt:#e6e8ec; --muted:#8a909c;
+        --play:#22c55e; --lean:#eab308; --pass:#6b7280; --accent:#3b82f6; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--txt); font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif; }
+header { padding:20px; border-bottom:1px solid var(--line); position:sticky; top:0; background:var(--bg); z-index:2; }
+h1 { margin:0; font-size:20px; }
+.sub { color:var(--muted); font-size:13px; margin-top:4px; }
+.wrap { max-width:980px; margin:0 auto; padding:16px; }
+.summary { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:20px; }
+.summary h2 { margin:0 0 10px; font-size:16px; }
+table { width:100%; border-collapse:collapse; }
+td,th { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); font-size:14px; }
+tr.play td:first-child { color:var(--play); font-weight:700; }
+tr.lean td:first-child { color:var(--lean); font-weight:700; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:16px; }
+.card-head .matchup { font-size:17px; font-weight:700; }
+.at { color:var(--muted); font-weight:400; }
+.meta { color:var(--muted); font-size:12px; margin-top:3px; }
+.warn { color:var(--lean); }
+.dials { display:flex; gap:10px; margin:14px 0; flex-wrap:wrap; }
+.dial { flex:1; min-width:140px; border:1px solid var(--line); border-radius:10px; padding:10px; text-align:center; }
+.dial-mkt { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+.dial-score { font-size:26px; font-weight:800; margin:2px 0; }
+.dial-verdict { font-size:13px; font-weight:700; }
+.dial-pick { font-size:12px; color:var(--muted); margin-top:2px; min-height:1em; }
+.dial.play { border-color:var(--play); } .dial.play .dial-verdict { color:var(--play); }
+.dial.lean { border-color:var(--lean); } .dial.lean .dial-verdict { color:var(--lean); }
+.dial.pass .dial-verdict { color:var(--pass); }
+.advs { display:flex; gap:16px; flex-wrap:wrap; }
+.adv-block { flex:1; min-width:220px; }
+.adv-team { font-size:12px; text-transform:uppercase; color:var(--accent); letter-spacing:.04em; margin-bottom:4px; }
+.adv-block ul { margin:0; padding-left:0; list-style:none; }
+.adv-block li { font-size:13px; padding:2px 0; }
+.stars { color:var(--lean); letter-spacing:-1px; }
+.detail { color:var(--muted); font-size:12px; }
+.muted { color:var(--muted); }
+.disclaimer { color:var(--muted); font-size:12px; margin-top:24px; padding:14px; border:1px dashed var(--line); border-radius:10px; }
+</style></head>
+<body>
+<header><div class="wrap" style="padding:0">
+  <h1>MLB Rank-and-Advantage Model</h1>
+  <div class="sub">Slate 2026-06-06 · updated 2026-06-06 11:20 AM ET · ML / Run Line / Total (real DK & FD lines) · paper only</div>
+</div></header>
+<div class="wrap">
+  <div class="summary">
+    <h2>Play sheet — 7 PLAY · 3 LEAN</h2>
+    <table>
+      <tr><th>Verdict</th><th>Score</th><th>Game</th><th>Market</th><th>Pick</th></tr>
+      <tr class="play"><td>PLAY</td><td>9.5</td><td>Cincinnati Reds @ St. Louis Cardinals</td><td>Moneyline</td><td>St. Louis Cardinals ML</td></tr><tr class="play"><td>PLAY</td><td>9.5</td><td>Chicago White Sox @ Philadelphia Phillies</td><td>Moneyline</td><td>Chicago White Sox ML</td></tr><tr class="play"><td>PLAY</td><td>9.4</td><td>Milwaukee Brewers @ Colorado Rockies</td><td>Total</td><td>Under 10.5</td></tr><tr class="play"><td>PLAY</td><td>8.9</td><td>Seattle Mariners @ Detroit Tigers</td><td>Total</td><td>Under 9.0</td></tr><tr class="play"><td>PLAY</td><td>8.8</td><td>Los Angeles Angels @ Los Angeles Dodgers</td><td>Moneyline</td><td>Los Angeles Dodgers ML</td></tr><tr class="play"><td>PLAY</td><td>8.2</td><td>Milwaukee Brewers @ Colorado Rockies</td><td>Moneyline</td><td>Milwaukee Brewers ML</td></tr><tr class="play"><td>PLAY</td><td>7.1</td><td>Chicago White Sox @ Philadelphia Phillies</td><td>Run Line</td><td>Chicago White Sox -1.5</td></tr><tr class="lean"><td>LEAN</td><td>6.6</td><td>Los Angeles Angels @ Los Angeles Dodgers</td><td>Run Line</td><td>Los Angeles Dodgers -1.5</td></tr><tr class="lean"><td>LEAN</td><td>6.1</td><td>Milwaukee Brewers @ Colorado Rockies</td><td>Run Line</td><td>Milwaukee Brewers -1.5</td></tr><tr class="lean"><td>LEAN</td><td>5.4</td><td>Baltimore Orioles @ Toronto Blue Jays</td><td>Moneyline</td><td>Baltimore Orioles ML</td></tr>
+    </table>
+  </div>
+  
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">Seattle Mariners <span class="at">@</span> Detroit Tigers</div>
+        <div class="meta">2026-06-06 17:10:00 UTC · Comerica Park · line 9.0 · model 6.9 · home win 45% </div>
+        <div class="meta">park 0.96 (eff 0.98)</div>
+      </div>
+      <div class="dials"><div class="dial pass"><div class="dial-mkt">Moneyline</div><div class="dial-score">0.0</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Run Line</div><div class="dial-score">0.0</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial play"><div class="dial-mkt">Total</div><div class="dial-score">8.9</div><div class="dial-verdict">PLAY</div><div class="dial-pick">Under 9.0</div></div></div>
+      <div class="advs"><div class="adv-block muted">No stacked advantages — leaning PASS</div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">Kansas City Royals <span class="at">@</span> Minnesota Twins</div>
+        <div class="meta">2026-06-06 18:10:00 UTC · Target Field · line 8.5 · model 7.7 · home win 67% </div>
+        <div class="meta">park 0.99 (eff 1.00)</div>
+      </div>
+      <div class="dials"><div class="dial pass"><div class="dial-mkt">Moneyline</div><div class="dial-score">1.6</div><div class="dial-verdict">PASS</div><div class="dial-pick">Kansas City Royals ML</div></div><div class="dial pass"><div class="dial-mkt">Run Line</div><div class="dial-score">1.2</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Total</div><div class="dial-score">2.2</div><div class="dial-verdict">PASS</div><div class="dial-pick">Under 8.5</div></div></div>
+      <div class="advs"><div class="adv-block"><div class="adv-team">Kansas City Royals advantages</div><ul><li><span class="stars">★★★★☆</span> <b>Hits/G</b> <span class="detail">(12th off vs 27th def) across 2 windows</span></li><li><span class="stars">★★★☆☆</span> <b>Runs/G</b> <span class="detail">(24th off vs 29th def) across 2 windows</span></li></ul></div><div class="adv-block"><div class="adv-team">Minnesota Twins advantages</div><ul><li><span class="stars">★★★☆☆</span> <b>Runs/G</b> <span class="detail">(11th off vs 21th def) across 2 windows</span></li></ul></div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">Cincinnati Reds <span class="at">@</span> St. Louis Cardinals</div>
+        <div class="meta">2026-06-06 18:15:00 UTC · Busch Stadium · line 9.5 · model 8.9 · home win 56% </div>
+        <div class="meta">park 0.99 (eff 1.00)</div>
+      </div>
+      <div class="dials"><div class="dial play"><div class="dial-mkt">Moneyline</div><div class="dial-score">9.5</div><div class="dial-verdict">PLAY</div><div class="dial-pick">St. Louis Cardinals ML</div></div><div class="dial pass"><div class="dial-mkt">Run Line</div><div class="dial-score">3.8</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Total</div><div class="dial-score">2.7</div><div class="dial-verdict">PASS</div><div class="dial-pick">Under 9.5</div></div></div>
+      <div class="advs"><div class="adv-block"><div class="adv-team">St. Louis Cardinals advantages</div><ul><li><span class="stars">★★★★☆</span> <b>Runs/G</b> <span class="detail">(14th off vs 26th def) across 2 windows</span></li><li><span class="stars">★★★★☆</span> <b>Hits/G</b> <span class="detail">(9th off vs 21th def) across 2 windows</span></li><li><span class="stars">★★★★☆</span> <b>BA</b> <span class="detail">(10th off vs 21th def) across 2 windows</span></li></ul></div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">San Francisco Giants <span class="at">@</span> Chicago Cubs</div>
+        <div class="meta">2026-06-06 18:20:00 UTC · Wrigley Field · line 7.5 · model 7.9 · home win 64% </div>
+        <div class="meta">park 1.00 (eff 1.00)</div>
+      </div>
+      <div class="dials"><div class="dial pass"><div class="dial-mkt">Moneyline</div><div class="dial-score">1.9</div><div class="dial-verdict">PASS</div><div class="dial-pick">San Francisco Giants ML</div></div><div class="dial pass"><div class="dial-mkt">Run Line</div><div class="dial-score">1.4</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Total</div><div class="dial-score">2.0</div><div class="dial-verdict">PASS</div><div class="dial-pick">Over 7.5</div></div></div>
+      <div class="advs"><div class="adv-block"><div class="adv-team">San Francisco Giants advantages</div><ul><li><span class="stars">★★★★★</span> <b>Runs/G</b> <span class="detail">(2th off vs 24th def) across 2 windows</span></li><li><span class="stars">★★★★★</span> <b>Hits/G</b> <span class="detail">(1th off vs 21th def) across 3 windows</span></li><li><span class="stars">★★★★☆</span> <b>BA</b> <span class="detail">(2th off vs 16th def) across 3 windows</span></li></ul></div><div class="adv-block"><div class="adv-team">Chicago Cubs advantages</div><ul><li><span class="stars">★★★★☆</span> <b>Runs/G</b> <span class="detail">(9th off vs 23th def) across 3 windows</span></li><li><span class="stars">★★★★☆</span> <b>Hits/G</b> <span class="detail">(12th off vs 28th def) across 3 windows</span></li><li><span class="stars">★★★★☆</span> <b>BA</b> <span class="detail">(13th off vs 25th def) across 2 windows</span></li></ul></div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">Baltimore Orioles <span class="at">@</span> Toronto Blue Jays</div>
+        <div class="meta">2026-06-06 19:07:00 UTC · Rogers Centre · line 8.5 · model 7.9 · home win 39% </div>
+        <div class="meta">park 0.98 (eff 0.99) · dome/roof — weather neutral</div>
+      </div>
+      <div class="dials"><div class="dial lean"><div class="dial-mkt">Moneyline</div><div class="dial-score">5.4</div><div class="dial-verdict">LEAN</div><div class="dial-pick">Baltimore Orioles ML</div></div><div class="dial pass"><div class="dial-mkt">Run Line</div><div class="dial-score">4.1</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Total</div><div class="dial-score">1.5</div><div class="dial-verdict">PASS</div><div class="dial-pick">Under 8.5</div></div></div>
+      <div class="advs"><div class="adv-block"><div class="adv-team">Baltimore Orioles advantages</div><ul><li><span class="stars">★★★★★</span> <b>Runs/G</b> <span class="detail">(3th off vs 26th def) across 3 windows</span></li><li><span class="stars">★★★★☆</span> <b>BA</b> <span class="detail">(5th off vs 18th def) across 3 windows</span></li><li><span class="stars">★★★☆☆</span> <b>Hits/G</b> <span class="detail">(8th off vs 13th def) across 2 windows</span></li></ul></div><div class="adv-block"><div class="adv-team">Toronto Blue Jays advantages</div><ul><li><span class="stars">★★★★★</span> <b>Hits/G</b> <span class="detail">(9th off vs 29th def) across 3 windows</span></li><li><span class="stars">★★★★★</span> <b>BA</b> <span class="detail">(8th off vs 29th def) across 3 windows</span></li></ul></div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">Chicago White Sox <span class="at">@</span> Philadelphia Phillies</div>
+        <div class="meta">2026-06-06 20:05:00 UTC · Citizens Bank Park · line 10.0 · model 9.3 · home win 34% </div>
+        <div class="meta">park 1.04 (eff 1.02)</div>
+      </div>
+      <div class="dials"><div class="dial play"><div class="dial-mkt">Moneyline</div><div class="dial-score">9.5</div><div class="dial-verdict">PLAY</div><div class="dial-pick">Chicago White Sox ML</div></div><div class="dial play"><div class="dial-mkt">Run Line</div><div class="dial-score">7.1</div><div class="dial-verdict">PLAY</div><div class="dial-pick">Chicago White Sox -1.5</div></div><div class="dial pass"><div class="dial-mkt">Total</div><div class="dial-score">3.9</div><div class="dial-verdict">PASS</div><div class="dial-pick">Under 10.0</div></div></div>
+      <div class="advs"><div class="adv-block"><div class="adv-team">Chicago White Sox advantages</div><ul><li><span class="stars">★★★★★</span> <b>BA</b> <span class="detail">(6th off vs 28th def) across 3 windows</span></li><li><span class="stars">★★★☆☆</span> <b>Runs/G</b> <span class="detail">(7th off vs 11th def) across 2 windows</span></li><li><span class="stars">★★★☆☆</span> <b>Hits/G</b> <span class="detail">(18th off vs 27th def) across 3 windows</span></li></ul></div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">Washington Nationals <span class="at">@</span> Arizona Diamondbacks</div>
+        <div class="meta">2026-06-06 20:10:00 UTC · Chase Field · line 9.5 · model 9.2 · home win 55% </div>
+        <div class="meta">park 1.02 (eff 1.01) · dome/roof — weather neutral</div>
+      </div>
+      <div class="dials"><div class="dial pass"><div class="dial-mkt">Moneyline</div><div class="dial-score">3.3</div><div class="dial-verdict">PASS</div><div class="dial-pick">Washington Nationals ML</div></div><div class="dial pass"><div class="dial-mkt">Run Line</div><div class="dial-score">1.3</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Total</div><div class="dial-score">1.6</div><div class="dial-verdict">PASS</div><div class="dial-pick">Under 9.5</div></div></div>
+      <div class="advs"><div class="adv-block"><div class="adv-team">Washington Nationals advantages</div><ul><li><span class="stars">★★★★☆</span> <b>Runs/G</b> <span class="detail">(1th off vs 16th def) across 3 windows</span></li><li><span class="stars">★★★★☆</span> <b>Hits/G</b> <span class="detail">(6th off vs 20th def) across 3 windows</span></li><li><span class="stars">★★★★☆</span> <b>BA</b> <span class="detail">(9th off vs 20th def) across 3 windows</span></li></ul></div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">Athletics <span class="at">@</span> Houston Astros</div>
+        <div class="meta">2026-06-06 20:10:00 UTC · Daikin Park · line 9.5 · model 9.0 · home win 48% </div>
+        <div class="meta">park 1.00 (eff 1.00) · dome/roof — weather neutral</div>
+      </div>
+      <div class="dials"><div class="dial pass"><div class="dial-mkt">Moneyline</div><div class="dial-score">3.3</div><div class="dial-verdict">PASS</div><div class="dial-pick">Houston Astros ML</div></div><div class="dial pass"><div class="dial-mkt">Run Line</div><div class="dial-score">1.3</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Total</div><div class="dial-score">2.2</div><div class="dial-verdict">PASS</div><div class="dial-pick">Under 9.5</div></div></div>
+      <div class="advs"><div class="adv-block"><div class="adv-team">Houston Astros advantages</div><ul><li><span class="stars">★★★★☆</span> <b>Runs/G</b> <span class="detail">(12th off vs 26th def) across 3 windows</span></li><li><span class="stars">★★★★☆</span> <b>Hits/G</b> <span class="detail">(11th off vs 25th def) across 2 windows</span></li><li><span class="stars">★★★★☆</span> <b>BA</b> <span class="detail">(11th off vs 26th def) across 3 windows</span></li></ul></div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">Pittsburgh Pirates <span class="at">@</span> Atlanta Braves</div>
+        <div class="meta">2026-06-06 20:10:00 UTC · Truist Park · line 8.0 · model 8.9 · home win 47% </div>
+        <div class="meta">park 1.00 (eff 1.00)</div>
+      </div>
+      <div class="dials"><div class="dial pass"><div class="dial-mkt">Moneyline</div><div class="dial-score">1.6</div><div class="dial-verdict">PASS</div><div class="dial-pick">Atlanta Braves ML</div></div><div class="dial pass"><div class="dial-mkt">Run Line</div><div class="dial-score">0.6</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Total</div><div class="dial-score">3.8</div><div class="dial-verdict">PASS</div><div class="dial-pick">Over 8.0</div></div></div>
+      <div class="advs"><div class="adv-block"><div class="adv-team">Pittsburgh Pirates advantages</div><ul><li><span class="stars">★★★★☆</span> <b>Hits/G</b> <span class="detail">(3th off vs 16th def) across 2 windows</span></li></ul></div><div class="adv-block"><div class="adv-team">Atlanta Braves advantages</div><ul><li><span class="stars">★★★★☆</span> <b>Runs/G</b> <span class="detail">(2th off vs 18th def) across 3 windows</span></li><li><span class="stars">★★★☆☆</span> <b>Hits/G</b> <span class="detail">(3th off vs 12th def) across 2 windows</span></li></ul></div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">Tampa Bay Rays <span class="at">@</span> Miami Marlins</div>
+        <div class="meta">2026-06-06 20:10:00 UTC · loanDepot park · line 8.0 · model 7.4 · home win 43% </div>
+        <div class="meta">park 0.99 (eff 1.00) · dome/roof — weather neutral</div>
+      </div>
+      <div class="dials"><div class="dial pass"><div class="dial-mkt">Moneyline</div><div class="dial-score">0.0</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Run Line</div><div class="dial-score">0.0</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Total</div><div class="dial-score">1.1</div><div class="dial-verdict">PASS</div><div class="dial-pick">Under 8.0</div></div></div>
+      <div class="advs"><div class="adv-block muted">No stacked advantages — leaning PASS</div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">Cleveland Guardians <span class="at">@</span> Texas Rangers</div>
+        <div class="meta">2026-06-06 23:35:00 UTC · Globe Life Field · line 7.5 · model 8.2 · home win 52% </div>
+        <div class="meta">park 1.02 (eff 1.01) · dome/roof — weather neutral</div>
+      </div>
+      <div class="dials"><div class="dial pass"><div class="dial-mkt">Moneyline</div><div class="dial-score">0.0</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Run Line</div><div class="dial-score">0.0</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Total</div><div class="dial-score">2.7</div><div class="dial-verdict">PASS</div><div class="dial-pick">Over 7.5</div></div></div>
+      <div class="advs"><div class="adv-block muted">No stacked advantages — leaning PASS</div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">Boston Red Sox <span class="at">@</span> New York Yankees</div>
+        <div class="meta">2026-06-06 23:35:00 UTC · Yankee Stadium · line 8.5 · model 7.7 · home win 63% </div>
+        <div class="meta">park 1.03 (eff 1.01)</div>
+      </div>
+      <div class="dials"><div class="dial pass"><div class="dial-mkt">Moneyline</div><div class="dial-score">0.0</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Run Line</div><div class="dial-score">0.0</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Total</div><div class="dial-score">2.8</div><div class="dial-verdict">PASS</div><div class="dial-pick">Under 8.5</div></div></div>
+      <div class="advs"><div class="adv-block muted">No stacked advantages — leaning PASS</div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">Milwaukee Brewers <span class="at">@</span> Colorado Rockies</div>
+        <div class="meta">2026-06-07 01:10:00 UTC · Coors Field · line 10.5 · model 9.0 · home win 37% </div>
+        <div class="meta">park 1.16 (eff 1.07)</div>
+      </div>
+      <div class="dials"><div class="dial play"><div class="dial-mkt">Moneyline</div><div class="dial-score">8.2</div><div class="dial-verdict">PLAY</div><div class="dial-pick">Milwaukee Brewers ML</div></div><div class="dial lean"><div class="dial-mkt">Run Line</div><div class="dial-score">6.1</div><div class="dial-verdict">LEAN</div><div class="dial-pick">Milwaukee Brewers -1.5</div></div><div class="dial play"><div class="dial-mkt">Total</div><div class="dial-score">9.4</div><div class="dial-verdict">PLAY</div><div class="dial-pick">Under 10.5</div></div></div>
+      <div class="advs"><div class="adv-block"><div class="adv-team">Milwaukee Brewers advantages</div><ul><li><span class="stars">★★★★★</span> <b>Runs/G</b> <span class="detail">(5th off vs 30th def) across 3 windows</span></li><li><span class="stars">★★★★★</span> <b>Hits/G</b> <span class="detail">(12th off vs 30th def) across 3 windows</span></li><li><span class="stars">★★★★★</span> <b>BA</b> <span class="detail">(10th off vs 30th def) across 3 windows</span></li></ul></div><div class="adv-block"><div class="adv-team">Colorado Rockies advantages</div><ul><li><span class="stars">★★★★★</span> <b>Hits/G</b> <span class="detail">(3th off vs 23th def) across 2 windows</span></li></ul></div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">Los Angeles Angels <span class="at">@</span> Los Angeles Dodgers</div>
+        <div class="meta">2026-06-07 02:10:00 UTC · UNIQLO Field at Dodger Stadium · line 8.5 · model 9.2 · home win 72% </div>
+        <div class="meta">park 0.97 (eff 0.99)</div>
+      </div>
+      <div class="dials"><div class="dial play"><div class="dial-mkt">Moneyline</div><div class="dial-score">8.8</div><div class="dial-verdict">PLAY</div><div class="dial-pick">Los Angeles Dodgers ML</div></div><div class="dial lean"><div class="dial-mkt">Run Line</div><div class="dial-score">6.6</div><div class="dial-verdict">LEAN</div><div class="dial-pick">Los Angeles Dodgers -1.5</div></div><div class="dial pass"><div class="dial-mkt">Total</div><div class="dial-score">2.4</div><div class="dial-verdict">PASS</div><div class="dial-pick">Over 8.5</div></div></div>
+      <div class="advs"><div class="adv-block"><div class="adv-team">Los Angeles Dodgers advantages</div><ul><li><span class="stars">★★★★★</span> <b>Runs/G</b> <span class="detail">(3th off vs 27th def) across 3 windows</span></li><li><span class="stars">★★★★☆</span> <b>BA</b> <span class="detail">(1th off vs 14th def) across 3 windows</span></li></ul></div></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-head">
+        <div class="matchup">New York Mets <span class="at">@</span> San Diego Padres</div>
+        <div class="meta">2026-06-07 02:10:00 UTC · Petco Park · line 7.5 · model 8.0 · home win 40% </div>
+        <div class="meta">park 0.93 (eff 0.97)</div>
+      </div>
+      <div class="dials"><div class="dial pass"><div class="dial-mkt">Moneyline</div><div class="dial-score">0.0</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Run Line</div><div class="dial-score">0.0</div><div class="dial-verdict">PASS</div><div class="dial-pick">—</div></div><div class="dial pass"><div class="dial-mkt">Total</div><div class="dial-score">3.6</div><div class="dial-verdict">PASS</div><div class="dial-pick">Over 7.5</div></div></div>
+      <div class="advs"><div class="adv-block muted">No stacked advantages — leaning PASS</div></div>
+    </div>
+    
+  <div class="disclaimer">
+    Decision support only — NOT proven +EV. This model has not been validated to beat the market;
+    track results and bet nothing real until a clean sample shows the plays win. F5 and NRFI are
+    omitted because real market lines for them are not available through the free data source.
+  </div>
+</div>
+</body></html>
