@@ -1,3 +1,4 @@
+name: Daily MLB Dashboard
 
 # Runs every morning and on manual trigger. Free for public repos.
 on:
@@ -31,10 +32,13 @@ jobs:
       - name: Generate dashboard
         run: python run.py
 
+      - name: Grade prior picks
+        run: python grade.py || echo "grading skipped"
+
       - name: Commit and publish page
         run: |
           git config user.name "mlb-bot"
           git config user.email "mlb-bot@users.noreply.github.com"
-          git add docs/index.html docs/locked_picks.jsonl
-          git commit -m "Midnight pull $(date -u +%Y-%m-%d)" || echo "no changes"
+          git add docs/index.html docs/locked_picks.jsonl docs/PICKS.md docs/RESULTS.md
+          git commit -m "Midnight pull + grade $(date -u +%Y-%m-%d)" || echo "no changes"
           git push
