@@ -162,43 +162,77 @@ def main():
     print(f"Graded {changed} newly-final picks. Wrote docs/PICKS.md and docs/RESULTS.md")
 
 
+def _books_cell(row):
+    """Render both books' prices, bolding the better (higher American odds)."""
+    books = row.get("books") or {}
+    if not books:
+        return "—"
+    best = row.get("best_book")
+    parts = []
+    for bk, price in sorted(books.items(), key=lambda kv: -kv[1]):
+        disp = f"{'+' if price > 0 else ''}{price}"
+        if bk == best:
+            parts.append(f"**{bk} {disp}**")   # bold the better line
+        else:
+            parts.append(f"{bk} {disp}")
+    return " / ".join(parts)
+
+
 def write_picks_md(rows):
     by_date = {}
     for r in rows:
         by_date.setdefault(r["slate_date"], []).append(r)
-    out = ["# Locked Picks", "", "Picks frozen at the line they were taken at. Paper only — no real money.", ""]
+    out = ["# Locked Picks", "", "Picks frozen at the line they were taken at. "
+           "Both books shown; **bold = better price**. One bet, graded once. Paper only.", ""]
     for date in sorted(by_date, reverse=True):
         out.append(f"## {date}")
         out.append("")
-        out.append("| Verdict | Score | Game | Market | Pick | Line | Model Tot | Home Win% |")
-        out.append("|---|---|---|---|---|---|---|---|")
+        out.append("| Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |")
+        out.append("|---|---|---|---|---|---|---|")
         for r in sorted(by_date[date], key=lambda x: -x["score"]):
             line = r.get("line_at_pull")
             line = "—" if line is None else line
             out.append(f"| {r['verdict']} | {r['score']} | {r['game']} | {r['market']} "
-                       f"| {r['pick']} | {line} | {r.get('model_total','')} "
-                       f"| {round(r.get('home_win_prob',0)*100)}% |")
+                       f"| {r['pick']} | {line} | {_books_cell(r)} |")
         out.append("")
     with open("docs/PICKS.md", "w") as f:
         f.write("\n".join(out))
 
 
-def write_results_md(rows):
-    graded = [r for r in rows if r.get("graded")]
-    out = ["# Results", "", "Graded against finals. Paper only.", ""]
+def _dedupe(graded):
+    """Collapse to one row per unique bet (date+game+market+pick), so a pick
+    that was logged multiple times (e.g. once per book, or re-pulled) is
+    counted ONCE. Keeps the row with book pricing if present."""
+    best = {}
+    for r in graded:
+        key = (r["slate_date"], r["game"], r["market"], r["pick"])
+        if key not in best or (r.get("books") and not best[key].get("books")):
+            best[key] = r
+    return list(best.values())
 
-    # running tally
+
+def write_results_md(rows):
+    graded_all = [r for r in rows if r.get("graded")]
+    graded = _dedupe(graded_all)   # honest: one bet counted once
+    out = ["# Results", "",
+           "Graded against finals. Each unique bet counted once (deduped across books). "
+           "Both books shown; **bold = better price**. Paper only.", ""]
+
     tot_w = sum(1 for r in graded if r["result"] == "WIN")
     tot_l = sum(1 for r in graded if r["result"] == "LOSS")
     tot_p = sum(1 for r in graded if r["result"] == "PUSH")
     tot_pl = sum(r.get("pl", 0) for r in graded)
     risk = sum(1 for r in graded if r["result"] in ("WIN", "LOSS"))
     roi = (tot_pl / risk * 100) if risk else 0.0
+    win_rate = (tot_w / risk * 100) if risk else 0.0
+    dups = len(graded_all) - len(graded)
     out.append(f"**Overall: {tot_w}-{tot_l}" + (f"-{tot_p}" if tot_p else "") +
-               f"  ·  {tot_pl:+.2f}u  ·  {roi:+.1f}% ROI** (1u flat)")
+               f"  ·  {win_rate:.0f}% win rate  ·  {tot_pl:+.2f}u  ·  {roi:+.1f}% ROI** (1u flat)")
+    if dups:
+        out.append("")
+        out.append(f"_({dups} duplicate book-listings collapsed so nothing is double-counted.)_")
     out.append("")
 
-    # PLAY vs LEAN split
     for tier in ("PLAY", "LEAN"):
         tw = sum(1 for r in graded if r["verdict"] == tier and r["result"] == "WIN")
         tl = sum(1 for r in graded if r["verdict"] == tier and r["result"] == "LOSS")
@@ -215,14 +249,14 @@ def write_results_md(rows):
         dpl = sum(r.get("pl", 0) for r in day)
         out.append(f"## {date} — {dw}-{dl}  ({dpl:+.2f}u)")
         out.append("")
-        out.append("| Result | Verdict | Game | Market | Pick | Line | P/L |")
-        out.append("|---|---|---|---|---|---|---|")
+        out.append("| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | P/L |")
+        out.append("|---|---|---|---|---|---|---|---|")
         for r in sorted(day, key=lambda x: (x["result"] != "WIN", -x["score"])):
             line = r.get("line_at_pull")
             line = "—" if line is None else line
             emoji = {"WIN": "✅ WIN", "LOSS": "❌ LOSS", "PUSH": "➖ PUSH"}.get(r["result"], r["result"])
             out.append(f"| {emoji} | {r['verdict']} | {r['game']} | {r['market']} "
-                       f"| {r['pick']} | {line} | {r.get('pl',0):+.2f} |")
+                       f"| {r['pick']} | {line} | {_books_cell(r)} | {r.get('pl',0):+.2f} |")
         out.append("")
     with open("docs/RESULTS.md", "w") as f:
         f.write("\n".join(out))
