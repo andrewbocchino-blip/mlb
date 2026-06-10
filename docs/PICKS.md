@@ -9,11 +9,19 @@ Picks frozen at the line they were taken at. Both books shown; **bold = better p
 | PLAY | 9.5 | Los Angeles Dodgers @ Pittsburgh Pirates | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -196** / DraftKings -201 |
 | PLAY | 9.5 | Texas Rangers @ Kansas City Royals | Total | Under 10.0 | 10.0 | **FanDuel +112** / DraftKings -110 |
 | PLAY | 9.5 | Chicago Cubs @ Colorado Rockies | Total | Under 12.5 | 12.5 | **FanDuel -106** / DraftKings -117 |
+| PLAY | 9.5 | Los Angeles Dodgers @ Pittsburgh Pirates | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -198** / DraftKings -200 |
+| PLAY | 9.5 | Texas Rangers @ Kansas City Royals | Total | Under 10.0 | 10.0 | **FanDuel -110** / DraftKings -110 |
+| PLAY | 9.5 | Chicago Cubs @ Colorado Rockies | Total | Under 12.0 | 12.0 | **DraftKings -112** / FanDuel -114 |
+| PLAY | 8.6 | Atlanta Braves @ Chicago White Sox | Total | Over 7.0 | 7.0 | **DraftKings -117** / FanDuel -120 |
 | PLAY | 8.4 | Milwaukee Brewers @ Athletics | Moneyline | Milwaukee Brewers ML | — | **FanDuel -110** / DraftKings -112 |
+| PLAY | 8.4 | Milwaukee Brewers @ Athletics | Moneyline | Milwaukee Brewers ML | — | **FanDuel -104** / DraftKings -110 |
 | PLAY | 7.1 | Los Angeles Dodgers @ Pittsburgh Pirates | Run Line | Los Angeles Dodgers -1.5 | — | **FanDuel -114** / DraftKings -120 |
+| PLAY | 7.1 | Los Angeles Dodgers @ Pittsburgh Pirates | Run Line | Los Angeles Dodgers -1.5 | — | **FanDuel -122** / DraftKings -126 |
 | LEAN | 6.5 | Boston Red Sox @ Tampa Bay Rays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -146** / DraftKings -156 |
+| LEAN | 6.5 | Boston Red Sox @ Tampa Bay Rays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -162** / DraftKings -163 |
 | LEAN | 6.3 | Atlanta Braves @ Chicago White Sox | Total | Over 7.5 | 7.5 | **DraftKings -106** / FanDuel -110 |
 | LEAN | 5.4 | Chicago Cubs @ Colorado Rockies | Moneyline | Chicago Cubs ML | — | **FanDuel -166** / DraftKings -168 |
+| LEAN | 5.4 | Chicago Cubs @ Colorado Rockies | Moneyline | Chicago Cubs ML | — | **FanDuel -172** / DraftKings -175 |
 | LEAN | 5.1 | Los Angeles Dodgers @ Pittsburgh Pirates | Total | Over 8.0 | 8.0 | **FanDuel -106** / DraftKings -106 |
 
 ## 2026-06-09
