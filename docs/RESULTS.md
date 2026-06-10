@@ -2,12 +2,22 @@
 
 Graded against finals. Each unique bet counted once (deduped across books). Both books shown; **bold = better price**. Paper only.
 
-**Overall: 18-11  ·  62% win rate  ·  +5.38u  ·  +18.6% ROI** (1u flat)
+**Overall: 23-11  ·  68% win rate  ·  +9.93u  ·  +29.2% ROI** (1u flat)
 
-_(8 duplicate book-listings collapsed so nothing is double-counted.)_
+_(13 duplicate book-listings collapsed so nothing is double-counted.)_
 
-- **PLAY tier:** 13-7
+- **PLAY tier:** 18-7
 - **LEAN tier:** 5-4
+
+## 2026-06-09 — 5-0  (+4.55u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | P/L |
+|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Seattle Mariners @ Baltimore Orioles | Moneyline | Seattle Mariners ML | — | **DraftKings -115** / FanDuel -116 | +0.91 |
+| ✅ WIN | PLAY | Philadelphia Phillies @ Toronto Blue Jays | Moneyline | Toronto Blue Jays ML | — | **FanDuel -110** / DraftKings -111 | +0.91 |
+| ✅ WIN | PLAY | Texas Rangers @ Kansas City Royals | Total | Under 9.5 | 9.5 | **FanDuel -115** / DraftKings -121 | +0.91 |
+| ✅ WIN | PLAY | Chicago Cubs @ Colorado Rockies | Total | Under 12.5 | 12.5 | **FanDuel -110** / DraftKings -114 | +0.91 |
+| ✅ WIN | PLAY | Milwaukee Brewers @ Athletics | Total | Under 13.0 | 13.0 | **DraftKings -113** / FanDuel -115 | +0.91 |
 
 ## 2026-06-08 — 3-5  (-2.27u)
 
