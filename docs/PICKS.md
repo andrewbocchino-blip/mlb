@@ -9,13 +9,19 @@ Picks frozen at the line they were taken at. Both books shown; **bold = better p
 | PLAY | 9.5 | Arizona Diamondbacks @ Miami Marlins | Moneyline | Miami Marlins ML | — | **FanDuel -112** / DraftKings -114 |
 | PLAY | 9.5 | Texas Rangers @ Kansas City Royals | Total | Under 10.5 | 10.5 | **DraftKings -114** / FanDuel -120 |
 | PLAY | 9.5 | Los Angeles Dodgers @ Pittsburgh Pirates | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -162** / DraftKings -163 |
+| PLAY | 9.5 | Texas Rangers @ Kansas City Royals | Total | Under 10.5 | 10.5 | **DraftKings -114** / FanDuel -118 |
+| PLAY | 9.5 | Los Angeles Dodgers @ Pittsburgh Pirates | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -174** / DraftKings -175 |
 | PLAY | 8.8 | Chicago Cubs @ Colorado Rockies | Total | Under 11.0 | 11.0 | **DraftKings -103** / FanDuel -105 |
+| PLAY | 8.8 | Chicago Cubs @ Colorado Rockies | Total | Under 11.0 | 11.0 | **FanDuel -105** / DraftKings -106 |
 | PLAY | 7.6 | St. Louis Cardinals @ New York Mets | Total | Under 9.0 | 9.0 | **FanDuel -115** / DraftKings -117 |
 | PLAY | 7.1 | Arizona Diamondbacks @ Miami Marlins | Run Line | Miami Marlins -1.5 | — | **DraftKings -186** / FanDuel -188 |
 | PLAY | 7.1 | Los Angeles Dodgers @ Pittsburgh Pirates | Run Line | Los Angeles Dodgers -1.5 | — | **FanDuel +104** / DraftKings -101 |
+| PLAY | 7.1 | Los Angeles Dodgers @ Pittsburgh Pirates | Run Line | Los Angeles Dodgers -1.5 | — | **FanDuel -110** / DraftKings -110 |
 | LEAN | 6.3 | Chicago Cubs @ Colorado Rockies | Moneyline | Colorado Rockies ML | — | **FanDuel +130** / DraftKings +123 |
+| LEAN | 6.3 | Chicago Cubs @ Colorado Rockies | Moneyline | Colorado Rockies ML | — | **DraftKings +139** / FanDuel +132 |
 | LEAN | 6.2 | Minnesota Twins @ Detroit Tigers | Total | Under 9.5 | 9.5 | **DraftKings -114** / FanDuel -118 |
 | LEAN | 5.7 | Atlanta Braves @ Chicago White Sox | Moneyline | Atlanta Braves ML | — | **FanDuel -118** / DraftKings -121 |
+| LEAN | 5.7 | Atlanta Braves @ Chicago White Sox | Moneyline | Atlanta Braves ML | — | **FanDuel -116** / DraftKings -119 |
 
 ## 2026-06-10
 
