@@ -2,12 +2,28 @@
 
 Graded against finals. Each unique bet counted once (deduped across books). Both books shown; **bold = better price**. Paper only.
 
-**Overall: 23-11  ·  68% win rate  ·  +9.93u  ·  +29.2% ROI** (1u flat)
+**Overall: 27-17-1  ·  61% win rate  ·  +7.57u  ·  +17.2% ROI** (1u flat)
 
-_(13 duplicate book-listings collapsed so nothing is double-counted.)_
+_(19 duplicate book-listings collapsed so nothing is double-counted.)_
 
-- **PLAY tier:** 18-7
-- **LEAN tier:** 5-4
+- **PLAY tier:** 20-11
+- **LEAN tier:** 7-6
+
+## 2026-06-10 — 4-6  (-2.36u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | P/L |
+|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Chicago Cubs @ Colorado Rockies | Total | Under 12.5 | 12.5 | **FanDuel -106** / DraftKings -117 | +0.91 |
+| ✅ WIN | PLAY | Chicago Cubs @ Colorado Rockies | Total | Under 12.0 | 12.0 | **DraftKings -112** / FanDuel -114 | +0.91 |
+| ✅ WIN | LEAN | Boston Red Sox @ Tampa Bay Rays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -146** / DraftKings -156 | +0.91 |
+| ✅ WIN | LEAN | Los Angeles Dodgers @ Pittsburgh Pirates | Total | Over 8.0 | 8.0 | **FanDuel -106** / DraftKings -106 | +0.91 |
+| ❌ LOSS | PLAY | Los Angeles Dodgers @ Pittsburgh Pirates | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -196** / DraftKings -201 | -1.00 |
+| ➖ PUSH | PLAY | Texas Rangers @ Kansas City Royals | Total | Under 10.0 | 10.0 | **FanDuel +112** / DraftKings -110 | +0.00 |
+| ❌ LOSS | PLAY | Atlanta Braves @ Chicago White Sox | Total | Over 7.0 | 7.0 | **DraftKings -117** / FanDuel -120 | -1.00 |
+| ❌ LOSS | PLAY | Milwaukee Brewers @ Athletics | Moneyline | Milwaukee Brewers ML | — | **FanDuel -110** / DraftKings -112 | -1.00 |
+| ❌ LOSS | PLAY | Los Angeles Dodgers @ Pittsburgh Pirates | Run Line | Los Angeles Dodgers -1.5 | — | **FanDuel -114** / DraftKings -120 | -1.00 |
+| ❌ LOSS | LEAN | Atlanta Braves @ Chicago White Sox | Total | Over 7.5 | 7.5 | **DraftKings -106** / FanDuel -110 | -1.00 |
+| ❌ LOSS | LEAN | Chicago Cubs @ Colorado Rockies | Moneyline | Chicago Cubs ML | — | **FanDuel -166** / DraftKings -168 | -1.00 |
 
 ## 2026-06-09 — 5-0  (+4.55u)
 
