@@ -2,12 +2,26 @@
 
 Graded against finals. Each unique bet counted once (deduped across books). Both books shown; **bold = better price**. Paper only.
 
-**Overall: 27-17-1  ·  61% win rate  ·  +7.57u  ·  +17.2% ROI** (1u flat)
+**Overall: 32-20-2  ·  62% win rate  ·  +9.12u  ·  +17.5% ROI** (1u flat)
 
-_(19 duplicate book-listings collapsed so nothing is double-counted.)_
+_(24 duplicate book-listings collapsed so nothing is double-counted.)_
 
-- **PLAY tier:** 20-11
-- **LEAN tier:** 7-6
+- **PLAY tier:** 25-12
+- **LEAN tier:** 7-8
+
+## 2026-06-11 — 5-3  (+1.55u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | P/L |
+|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Arizona Diamondbacks @ Miami Marlins | Moneyline | Miami Marlins ML | — | **FanDuel -112** / DraftKings -114 | +0.91 |
+| ✅ WIN | PLAY | Texas Rangers @ Kansas City Royals | Total | Under 10.5 | 10.5 | **DraftKings -114** / FanDuel -120 | +0.91 |
+| ✅ WIN | PLAY | Los Angeles Dodgers @ Pittsburgh Pirates | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -162** / DraftKings -163 | +0.91 |
+| ✅ WIN | PLAY | Arizona Diamondbacks @ Miami Marlins | Run Line | Miami Marlins -1.5 | — | **DraftKings -186** / FanDuel -188 | +0.91 |
+| ✅ WIN | PLAY | Los Angeles Dodgers @ Pittsburgh Pirates | Run Line | Los Angeles Dodgers -1.5 | — | **FanDuel +104** / DraftKings -101 | +0.91 |
+| ❌ LOSS | PLAY | Chicago Cubs @ Colorado Rockies | Total | Under 11.0 | 11.0 | **DraftKings -103** / FanDuel -105 | -1.00 |
+| ➖ PUSH | PLAY | St. Louis Cardinals @ New York Mets | Total | Under 9.0 | 9.0 | **FanDuel -115** / DraftKings -117 | +0.00 |
+| ❌ LOSS | LEAN | Chicago Cubs @ Colorado Rockies | Moneyline | Colorado Rockies ML | — | **FanDuel +130** / DraftKings +123 | -1.00 |
+| ❌ LOSS | LEAN | Minnesota Twins @ Detroit Tigers | Total | Under 9.5 | 9.5 | **DraftKings -114** / FanDuel -118 | -1.00 |
 
 ## 2026-06-10 — 4-6  (-2.36u)
 

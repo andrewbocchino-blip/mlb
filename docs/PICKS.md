@@ -2,6 +2,19 @@
 
 Picks frozen at the line they were taken at. Both books shown; **bold = better price**. One bet, graded once. Paper only.
 
+## 2026-06-12
+
+| Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|
+| PLAY | 9.5 | Los Angeles Dodgers @ Chicago White Sox | Moneyline | Los Angeles Dodgers ML | — | **DraftKings -149** / FanDuel -152 |
+| PLAY | 9.5 | Philadelphia Phillies @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -250** / DraftKings -251 |
+| PLAY | 8.8 | Philadelphia Phillies @ Milwaukee Brewers | Total | Over 7.5 | 7.5 | **FanDuel -118** / DraftKings -119 |
+| PLAY | 8.8 | Chicago Cubs @ San Francisco Giants | Moneyline | San Francisco Giants ML | — | **FanDuel -118** / DraftKings -120 |
+| PLAY | 7.1 | Philadelphia Phillies @ Milwaukee Brewers | Run Line | Milwaukee Brewers -1.5 | — | **FanDuel -108** / DraftKings -115 |
+| LEAN | 5.9 | Arizona Diamondbacks @ Cincinnati Reds | Total | Under 9.5 | 9.5 | **FanDuel -105** / DraftKings -107 |
+| LEAN | 5.9 | Tampa Bay Rays @ Los Angeles Angels | Total | Under 9.0 | 9.0 | **DraftKings -114** / FanDuel -120 |
+| LEAN | 5.1 | Colorado Rockies @ Athletics | Moneyline | Athletics ML | — | **FanDuel -196** / DraftKings -198 |
+
 ## 2026-06-11
 
 | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
