@@ -2,22 +2,25 @@
 
 Graded against finals. Each unique bet counted once (deduped across books). Both books shown; **bold = better price**. Paper only.
 
-**Overall: 35-22-2  ·  61% win rate  ·  +9.85u  ·  +17.3% ROI** (1u flat)
+**Overall: 37-23-2  ·  62% win rate  ·  +10.67u  ·  +17.8% ROI** (1u flat)
 
 _(24 duplicate book-listings collapsed so nothing is double-counted.)_
 
-- **PLAY tier:** 27-14
-- **LEAN tier:** 8-8
+- **PLAY tier:** 27-15
+- **LEAN tier:** 10-8
 
-## 2026-06-12 — 3-2  (+0.73u)
+## 2026-06-12 — 5-3  (+1.55u)
 
 | Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | P/L |
 |---|---|---|---|---|---|---|---|
 | ✅ WIN | PLAY | Philadelphia Phillies @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -250** / DraftKings -251 | +0.91 |
 | ✅ WIN | PLAY | Philadelphia Phillies @ Milwaukee Brewers | Run Line | Milwaukee Brewers -1.5 | — | **FanDuel -108** / DraftKings -115 | +0.91 |
 | ✅ WIN | LEAN | Arizona Diamondbacks @ Cincinnati Reds | Total | Under 9.5 | 9.5 | **FanDuel -105** / DraftKings -107 | +0.91 |
+| ✅ WIN | LEAN | Tampa Bay Rays @ Los Angeles Angels | Total | Under 9.0 | 9.0 | **DraftKings -114** / FanDuel -120 | +0.91 |
+| ✅ WIN | LEAN | Colorado Rockies @ Athletics | Moneyline | Athletics ML | — | **FanDuel -196** / DraftKings -198 | +0.91 |
 | ❌ LOSS | PLAY | Los Angeles Dodgers @ Chicago White Sox | Moneyline | Los Angeles Dodgers ML | — | **DraftKings -149** / FanDuel -152 | -1.00 |
 | ❌ LOSS | PLAY | Philadelphia Phillies @ Milwaukee Brewers | Total | Over 7.5 | 7.5 | **FanDuel -118** / DraftKings -119 | -1.00 |
+| ❌ LOSS | PLAY | Chicago Cubs @ San Francisco Giants | Moneyline | San Francisco Giants ML | — | **FanDuel -118** / DraftKings -120 | -1.00 |
 
 ## 2026-06-11 — 5-3  (+1.55u)
 
