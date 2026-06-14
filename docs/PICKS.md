@@ -2,6 +2,17 @@
 
 Picks frozen at the line they were taken at. Both books shown; **bold = better price**. One bet, graded once. Paper only.
 
+## 2026-06-14
+
+| Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|
+| PLAY | 9.5 | St. Louis Cardinals @ Minnesota Twins | Moneyline | St. Louis Cardinals ML | — | **FanDuel -102** / DraftKings -103 |
+| PLAY | 9.5 | Los Angeles Dodgers @ Chicago White Sox | Moneyline | Los Angeles Dodgers ML | — | **DraftKings -193** / FanDuel -196 |
+| PLAY | 9.5 | Philadelphia Phillies @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel +102** / DraftKings -101 |
+| PLAY | 8.2 | Seattle Mariners @ Washington Nationals | Moneyline | Seattle Mariners ML | — | **DraftKings -144** / FanDuel -148 |
+| PLAY | 7.1 | Philadelphia Phillies @ Milwaukee Brewers | Run Line | Milwaukee Brewers -1.5 | — | **DraftKings -175** / FanDuel -182 |
+| LEAN | 6.4 | Texas Rangers @ Boston Red Sox | Total | Under 9.0 | 9.0 | **DraftKings -105** / FanDuel -110 |
+
 ## 2026-06-13
 
 | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |

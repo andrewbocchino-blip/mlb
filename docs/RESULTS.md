@@ -2,12 +2,30 @@
 
 Graded against finals. Each unique bet counted once (deduped across books). Both books shown; **bold = better price**. Paper only.
 
-**Overall: 37-23-2  ·  62% win rate  ·  +10.67u  ·  +17.8% ROI** (1u flat)
+**Overall: 43-30-2  ·  59% win rate  ·  +9.13u  ·  +12.5% ROI** (1u flat)
 
-_(24 duplicate book-listings collapsed so nothing is double-counted.)_
+_(33 duplicate book-listings collapsed so nothing is double-counted.)_
 
-- **PLAY tier:** 27-15
-- **LEAN tier:** 10-8
+- **PLAY tier:** 29-21
+- **LEAN tier:** 14-9
+
+## 2026-06-13 — 6-7  (-1.54u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | P/L |
+|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Los Angeles Dodgers @ Chicago White Sox | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -205** / DraftKings -207 | +0.91 |
+| ✅ WIN | PLAY | St. Louis Cardinals @ Minnesota Twins | Moneyline | St. Louis Cardinals ML | — | **FanDuel +100** / DraftKings -105 | +0.91 |
+| ✅ WIN | LEAN | Tampa Bay Rays @ Los Angeles Angels | Total | Over 6.5 | 6.5 | **DraftKings +289** / FanDuel -110 | +0.91 |
+| ✅ WIN | LEAN | Arizona Diamondbacks @ Cincinnati Reds | Total | Under 9.5 | 9.5 | **DraftKings -105** / FanDuel -122 | +0.91 |
+| ✅ WIN | LEAN | Philadelphia Phillies @ Milwaukee Brewers | Total | Over 8.0 | 8.0 | **FanDuel -110** / DraftKings -115 | +0.91 |
+| ✅ WIN | LEAN | Colorado Rockies @ Athletics | Moneyline | Athletics ML | — | **FanDuel -172** / DraftKings -175 | +0.91 |
+| ❌ LOSS | PLAY | Philadelphia Phillies @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -142** / DraftKings -143 | -1.00 |
+| ❌ LOSS | PLAY | Colorado Rockies @ Athletics | Total | Under 11.5 | 11.5 | **FanDuel -104** / DraftKings -127 | -1.00 |
+| ❌ LOSS | PLAY | San Diego Padres @ Baltimore Orioles | Total | Under 10.0 | 10.0 | **FanDuel -106** / DraftKings -107 | -1.00 |
+| ❌ LOSS | PLAY | San Diego Padres @ Baltimore Orioles | Total | Under 9.5 | 9.5 | **DraftKings -105** / FanDuel -110 | -1.00 |
+| ❌ LOSS | PLAY | Miami Marlins @ Pittsburgh Pirates | Moneyline | Miami Marlins ML | — | **FanDuel +120** | -1.00 |
+| ❌ LOSS | PLAY | Philadelphia Phillies @ Milwaukee Brewers | Run Line | Milwaukee Brewers -1.5 | — | **FanDuel +158** / DraftKings +157 | -1.00 |
+| ❌ LOSS | LEAN | Houston Astros @ Kansas City Royals | Moneyline | Kansas City Royals ML | — | **FanDuel -126** / DraftKings -126 | -1.00 |
 
 ## 2026-06-12 — 5-3  (+1.55u)
 
