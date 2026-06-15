@@ -2,12 +2,23 @@
 
 Graded against finals. Each unique bet counted once (deduped across books). Both books shown; **bold = better price**. Paper only.
 
-**Overall: 43-30-2  ·  59% win rate  ·  +9.13u  ·  +12.5% ROI** (1u flat)
+**Overall: 45-34-2  ·  57% win rate  ·  +6.95u  ·  +8.8% ROI** (1u flat)
 
 _(33 duplicate book-listings collapsed so nothing is double-counted.)_
 
-- **PLAY tier:** 29-21
-- **LEAN tier:** 14-9
+- **PLAY tier:** 31-24
+- **LEAN tier:** 14-10
+
+## 2026-06-14 — 2-4  (-2.18u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | P/L |
+|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Philadelphia Phillies @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel +102** / DraftKings -101 | +0.91 |
+| ✅ WIN | PLAY | Philadelphia Phillies @ Milwaukee Brewers | Run Line | Milwaukee Brewers -1.5 | — | **DraftKings -175** / FanDuel -182 | +0.91 |
+| ❌ LOSS | PLAY | St. Louis Cardinals @ Minnesota Twins | Moneyline | St. Louis Cardinals ML | — | **FanDuel -102** / DraftKings -103 | -1.00 |
+| ❌ LOSS | PLAY | Los Angeles Dodgers @ Chicago White Sox | Moneyline | Los Angeles Dodgers ML | — | **DraftKings -193** / FanDuel -196 | -1.00 |
+| ❌ LOSS | PLAY | Seattle Mariners @ Washington Nationals | Moneyline | Seattle Mariners ML | — | **DraftKings -144** / FanDuel -148 | -1.00 |
+| ❌ LOSS | LEAN | Texas Rangers @ Boston Red Sox | Total | Under 9.0 | 9.0 | **DraftKings -105** / FanDuel -110 | -1.00 |
 
 ## 2026-06-13 — 6-7  (-1.54u)
 

@@ -2,6 +2,16 @@
 
 Picks frozen at the line they were taken at. Both books shown; **bold = better price**. One bet, graded once. Paper only.
 
+## 2026-06-15
+
+| Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|
+| PLAY | 9.0 | Pittsburgh Pirates @ Athletics | Total | Under 10.5 | 10.5 | **FanDuel -102** / DraftKings -114 |
+| LEAN | 6.3 | Detroit Tigers @ Houston Astros | Total | Under 9.0 | 9.0 | **DraftKings -117** / FanDuel -118 |
+| LEAN | 6.1 | Kansas City Royals @ Washington Nationals | Moneyline | Washington Nationals ML | — | **FanDuel -118** / DraftKings -132 |
+| LEAN | 5.7 | San Diego Padres @ St. Louis Cardinals | Moneyline | St. Louis Cardinals ML | — | **FanDuel -110** / DraftKings -157 |
+| LEAN | 5.0 | Colorado Rockies @ Chicago Cubs | Moneyline | Chicago Cubs ML | — | **FanDuel -190** / DraftKings -219 |
+
 ## 2026-06-14
 
 | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
