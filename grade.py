@@ -41,6 +41,13 @@ except Exception:
 
 LOCK = "docs/locked_picks.jsonl"
 
+# v15 validation: CLV, segmentation, artifact-checking (applies to both models)
+try:
+    from mlb_betting_model.v15.validation import summarize_segments, artifact_flags
+except Exception:
+    summarize_segments = None
+    artifact_flags = None
+
 
 def american_payout(odds, win):
     if odds is None:
@@ -179,85 +186,138 @@ def _books_cell(row):
 
 
 def write_picks_md(rows):
-    by_date = {}
+    # Dedupe to one row per unique bet per date (keep the latest pull), so
+    # re-runs of the same slate don't show the pick twice. The raw
+    # locked_picks.jsonl still preserves every timestamped pull.
+    latest = {}
     for r in rows:
+        key = (r.get("model", "A"), r["slate_date"], r["game"], r["market"], r["pick"])
+        prev = latest.get(key)
+        if prev is None or r.get("pulled_at", "") >= prev.get("pulled_at", ""):
+            latest[key] = r
+    deduped = list(latest.values())
+
+    by_date = {}
+    for r in deduped:
         by_date.setdefault(r["slate_date"], []).append(r)
-    out = ["# Locked Picks", "", "Picks frozen at the line they were taken at. "
-           "Both books shown; **bold = better price**. One bet, graded once. Paper only.", ""]
+    out = ["# Locked Picks — A/B", "", "Picks frozen at the line they were taken at. "
+           "**Model A** = current (v14.3). **Model B** = variant. "
+           "Both books shown; **bold = better price**. One row per bet. Paper only.", ""]
     for date in sorted(by_date, reverse=True):
         out.append(f"## {date}")
         out.append("")
-        out.append("| Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |")
-        out.append("|---|---|---|---|---|---|---|")
-        for r in sorted(by_date[date], key=lambda x: -x["score"]):
+        out.append("| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |")
+        out.append("|---|---|---|---|---|---|---|---|")
+        for r in sorted(by_date[date], key=lambda x: (x.get("model", "A"), -x["score"])):
             line = r.get("line_at_pull")
             line = "—" if line is None else line
-            out.append(f"| {r['verdict']} | {r['score']} | {r['game']} | {r['market']} "
+            out.append(f"| {r.get('model','A')} | {r['verdict']} | {r['score']} | {r['game']} | {r['market']} "
                        f"| {r['pick']} | {line} | {_books_cell(r)} |")
         out.append("")
     with open("docs/PICKS.md", "w") as f:
         f.write("\n".join(out))
+    return
 
 
 def _dedupe(graded):
-    """Collapse to one row per unique bet (date+game+market+pick), so a pick
-    that was logged multiple times (e.g. once per book, or re-pulled) is
-    counted ONCE. Keeps the row with book pricing if present."""
+    """Collapse to one row per unique bet (model+date+game+market+pick), so a
+    pick logged multiple times (per book, or re-pulled) is counted ONCE. Model
+    A and Model B are kept separate by including the model tag in the key."""
     best = {}
     for r in graded:
-        key = (r["slate_date"], r["game"], r["market"], r["pick"])
+        key = (r.get("model", "A"), r["slate_date"], r["game"], r["market"], r["pick"])
         if key not in best or (r.get("books") and not best[key].get("books")):
             best[key] = r
     return list(best.values())
 
 
+def _model_summary(graded, label):
+    """One model's headline line: W-L, win rate, ROI, avg CLV, + artifact flags."""
+    risk = [r for r in graded if r["result"] in ("WIN", "LOSS")]
+    w = sum(1 for r in risk if r["result"] == "WIN")
+    l = sum(1 for r in risk if r["result"] == "LOSS")
+    pl = sum(r.get("pl", 0) for r in risk)
+    n = len(risk)
+    roi = (pl / n * 100) if n else 0.0
+    wr = (w / n * 100) if n else 0.0
+    clvs = [r["clv"] for r in risk if r.get("clv") is not None]
+    avg_clv = (sum(clvs) / len(clvs)) if clvs else None
+    clv_str = f"{avg_clv:+.2f}%" if avg_clv is not None else "n/a (no closing lines yet)"
+    line = (f"**Model {label}: {w}-{l}  ·  {wr:.0f}% win  ·  {pl:+.2f}u  ·  "
+            f"{roi:+.1f}% ROI  ·  avg CLV {clv_str}**")
+    flags = artifact_flags(risk) if artifact_flags else []
+    return line, flags
+
+
 def write_results_md(rows):
     graded_all = [r for r in rows if r.get("graded")]
-    graded = _dedupe(graded_all)   # honest: one bet counted once
-    out = ["# Results", "",
-           "Graded against finals. Each unique bet counted once (deduped across books). "
-           "Both books shown; **bold = better price**. Paper only.", ""]
+    graded = _dedupe(graded_all)
+    A = [r for r in graded if r.get("model", "A") == "A"]
+    B = [r for r in graded if r.get("model") == "B"]
 
-    tot_w = sum(1 for r in graded if r["result"] == "WIN")
-    tot_l = sum(1 for r in graded if r["result"] == "LOSS")
-    tot_p = sum(1 for r in graded if r["result"] == "PUSH")
-    tot_pl = sum(r.get("pl", 0) for r in graded)
-    risk = sum(1 for r in graded if r["result"] in ("WIN", "LOSS"))
-    roi = (tot_pl / risk * 100) if risk else 0.0
-    win_rate = (tot_w / risk * 100) if risk else 0.0
-    dups = len(graded_all) - len(graded)
-    out.append(f"**Overall: {tot_w}-{tot_l}" + (f"-{tot_p}" if tot_p else "") +
-               f"  ·  {win_rate:.0f}% win rate  ·  {tot_pl:+.2f}u  ·  {roi:+.1f}% ROI** (1u flat)")
-    if dups:
-        out.append("")
-        out.append(f"_({dups} duplicate book-listings collapsed so nothing is double-counted.)_")
+    out = ["# Results — A/B Test", "",
+           "**Model A** = current model (v14.3, control). **Model B** = variant "
+           "(stricter regression + literature weights). CLV measured from the real "
+           "price vs close. Each unique bet counted once. Paper only — no real money.", ""]
+
+    # headline comparison
+    for label, g in (("A", A), ("B", B)):
+        line, flags = _model_summary(g, label)
+        out.append(line)
+        for f in flags:
+            out.append(f"  - ⚠️ _{f}_")
+    out.append("")
+    out.append("> CLV is the signal that matters here, not W-L — per the sharp-bettor "
+               "method, beating the closing line is what indicates a real edge. A small "
+               "sample of wins with negative CLV is luck, not edge.")
     out.append("")
 
-    for tier in ("PLAY", "LEAN"):
-        tw = sum(1 for r in graded if r["verdict"] == tier and r["result"] == "WIN")
-        tl = sum(1 for r in graded if r["verdict"] == tier and r["result"] == "LOSS")
-        out.append(f"- **{tier} tier:** {tw}-{tl}")
-    out.append("")
+    # segmentation: where does each model win? (find the ONE slice, if any)
+    if summarize_segments:
+        for label, g in (("A", A), ("B", B)):
+            risk = [r for r in g if r["result"] in ("WIN", "LOSS")]
+            if not risk:
+                continue
+            seg = summarize_segments(risk)
+            out.append(f"### Model {label} — segments (finding the winning slice)")
+            out.append("")
+            for dim in ("market", "side", "fav_band"):
+                buckets = seg.get(dim, {})
+                if not buckets:
+                    continue
+                parts = []
+                for name, b in sorted(buckets.items(), key=lambda kv: -kv[1]["roi"]):
+                    clv = f", CLV {b['avg_clv']:+.1f}%" if b.get("avg_clv") is not None else ""
+                    parts.append(f"{name} {b['w']}-{b['l']} ({b['roi']:+.0f}%{clv})")
+                out.append(f"- **by {dim}:** " + "  ·  ".join(parts))
+            out.append("")
 
-    by_date = {}
-    for r in graded:
-        by_date.setdefault(r["slate_date"], []).append(r)
-    for date in sorted(by_date, reverse=True):
-        day = by_date[date]
-        dw = sum(1 for r in day if r["result"] == "WIN")
-        dl = sum(1 for r in day if r["result"] == "LOSS")
-        dpl = sum(r.get("pl", 0) for r in day)
-        out.append(f"## {date} — {dw}-{dl}  ({dpl:+.2f}u)")
+    # per-model, per-day detail tables
+    for label, g in (("A", A), ("B", B)):
+        if not g:
+            continue
+        out.append(f"## Model {label} — picks by date")
         out.append("")
-        out.append("| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | P/L |")
-        out.append("|---|---|---|---|---|---|---|---|")
-        for r in sorted(day, key=lambda x: (x["result"] != "WIN", -x["score"])):
-            line = r.get("line_at_pull")
-            line = "—" if line is None else line
-            emoji = {"WIN": "✅ WIN", "LOSS": "❌ LOSS", "PUSH": "➖ PUSH"}.get(r["result"], r["result"])
-            out.append(f"| {emoji} | {r['verdict']} | {r['game']} | {r['market']} "
-                       f"| {r['pick']} | {line} | {_books_cell(r)} | {r.get('pl',0):+.2f} |")
-        out.append("")
+        by_date = {}
+        for r in g:
+            by_date.setdefault(r["slate_date"], []).append(r)
+        for date in sorted(by_date, reverse=True):
+            day = by_date[date]
+            dw = sum(1 for r in day if r["result"] == "WIN")
+            dl = sum(1 for r in day if r["result"] == "LOSS")
+            dpl = sum(r.get("pl", 0) for r in day)
+            out.append(f"### {date} — {dw}-{dl}  ({dpl:+.2f}u)")
+            out.append("")
+            out.append("| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |")
+            out.append("|---|---|---|---|---|---|---|---|---|")
+            for r in sorted(day, key=lambda x: (x["result"] != "WIN", -x["score"])):
+                line = r.get("line_at_pull")
+                line = "—" if line is None else line
+                emoji = {"WIN": "✅ WIN", "LOSS": "❌ LOSS", "PUSH": "➖ PUSH"}.get(r["result"], r["result"])
+                clv = f"{r['clv']:+.1f}%" if r.get("clv") is not None else "—"
+                out.append(f"| {emoji} | {r['verdict']} | {r['game']} | {r['market']} "
+                           f"| {r['pick']} | {line} | {_books_cell(r)} | {clv} | {r.get('pl',0):+.2f} |")
+            out.append("")
     with open("docs/RESULTS.md", "w") as f:
         f.write("\n".join(out))
 
