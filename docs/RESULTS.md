@@ -2,24 +2,28 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 46-34  ·  57% win  ·  +7.86u  ·  +9.8% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 48-36  ·  57% win  ·  +7.68u  ·  +9.1% ROI  ·  avg CLV n/a (no closing lines yet)**
 **Model B: 0-0  ·  0% win  ·  +0.00u  ·  +0.0% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Run Line 9-4 (+32%)  ·  Moneyline 23-17 (+10%)  ·  Total 14-13 (-1%)
-- **by side:** team 32-21 (+15%)  ·  Under 11-8 (+11%)  ·  Over 3-5 (-28%)
-- **by fav_band:** heavy fav 2-0 (+91%)  ·  unknown 18-11 (+19%)  ·  pickem 19-14 (+10%)  ·  fav 6-6 (-4%)  ·  dog 1-3 (-52%)
+- **by market:** Run Line 9-4 (+32%)  ·  Moneyline 25-17 (+14%)  ·  Total 14-15 (-8%)
+- **by side:** team 34-21 (+18%)  ·  Under 11-10 (+0%)  ·  Over 3-5 (-28%)
+- **by fav_band:** heavy fav 2-0 (+91%)  ·  unknown 18-11 (+19%)  ·  pickem 20-16 (+6%)  ·  fav 7-6 (+3%)  ·  dog 1-3 (-52%)
 
 ## Model A — picks by date
 
-### 2026-06-15 — 1-0  (+0.91u)
+### 2026-06-15 — 3-2  (+0.73u)
 
 | Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
 |---|---|---|---|---|---|---|---|---|
 | ✅ WIN | LEAN | Kansas City Royals @ Washington Nationals | Moneyline | Washington Nationals ML | — | **FanDuel -118** / DraftKings -132 | — | +0.91 |
+| ✅ WIN | LEAN | San Diego Padres @ St. Louis Cardinals | Moneyline | St. Louis Cardinals ML | — | **FanDuel -110** / DraftKings -157 | — | +0.91 |
+| ✅ WIN | LEAN | Colorado Rockies @ Chicago Cubs | Moneyline | Chicago Cubs ML | — | **FanDuel -190** / DraftKings -219 | — | +0.91 |
+| ❌ LOSS | PLAY | Pittsburgh Pirates @ Athletics | Total | Under 10.5 | 10.5 | **FanDuel -102** / DraftKings -114 | — | -1.00 |
+| ❌ LOSS | LEAN | Detroit Tigers @ Houston Astros | Total | Under 9.0 | 9.0 | **DraftKings -117** / FanDuel -118 | — | -1.00 |
 
 ### 2026-06-14 — 2-4  (-2.18u)
 
