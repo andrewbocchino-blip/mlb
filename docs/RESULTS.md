@@ -2,18 +2,37 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 48-36  ·  57% win  ·  +7.68u  ·  +9.1% ROI  ·  avg CLV n/a (no closing lines yet)**
-**Model B: 0-0  ·  0% win  ·  +0.00u  ·  +0.0% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 52-40  ·  57% win  ·  +7.32u  ·  +8.0% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model B: 4-4  ·  50% win  ·  -0.36u  ·  -4.5% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Run Line 9-4 (+32%)  ·  Moneyline 25-17 (+14%)  ·  Total 14-15 (-8%)
-- **by side:** team 34-21 (+18%)  ·  Under 11-10 (+0%)  ·  Over 3-5 (-28%)
-- **by fav_band:** heavy fav 2-0 (+91%)  ·  unknown 18-11 (+19%)  ·  pickem 20-16 (+6%)  ·  fav 7-6 (+3%)  ·  dog 1-3 (-52%)
+- **by market:** Run Line 9-5 (+23%)  ·  Moneyline 29-19 (+15%)  ·  Total 14-16 (-11%)
+- **by side:** team 38-24 (+17%)  ·  Under 11-10 (+0%)  ·  Over 3-6 (-36%)
+- **by fav_band:** heavy fav 2-0 (+91%)  ·  unknown 18-11 (+19%)  ·  pickem 23-17 (+10%)  ·  fav 7-8 (-11%)  ·  dog 2-4 (-36%)
+
+### Model B — segments (finding the winning slice)
+
+- **by market:** Moneyline 4-2 (+27%)  ·  Run Line 0-1 (-100%)  ·  Total 0-1 (-100%)
+- **by side:** team 4-3 (+9%)  ·  Over 0-1 (-100%)
+- **by fav_band:** pickem 3-1 (+43%)  ·  dog 1-1 (-4%)  ·  fav 0-2 (-100%)
 
 ## Model A — picks by date
+
+### 2026-06-16 — 4-4  (-0.36u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Cleveland Guardians @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -118** / DraftKings -157 | — | +0.91 |
+| ✅ WIN | LEAN | Kansas City Royals @ Washington Nationals | Moneyline | Washington Nationals ML | — | **FanDuel -118** / DraftKings -144 | — | +0.91 |
+| ✅ WIN | LEAN | San Diego Padres @ St. Louis Cardinals | Moneyline | St. Louis Cardinals ML | — | **FanDuel -118** / DraftKings -120 | — | +0.91 |
+| ✅ WIN | LEAN | Pittsburgh Pirates @ Athletics | Moneyline | Pittsburgh Pirates ML | — | **DraftKings +119** / FanDuel -126 | — | +0.91 |
+| ❌ LOSS | PLAY | Cleveland Guardians @ Milwaukee Brewers | Total | Over 8.0 | 8.0 | **DraftKings -119** / FanDuel -124 | — | -1.00 |
+| ❌ LOSS | PLAY | Minnesota Twins @ Texas Rangers | Moneyline | Texas Rangers ML | — | **DraftKings -132** / FanDuel -134 | — | -1.00 |
+| ❌ LOSS | LEAN | Cleveland Guardians @ Milwaukee Brewers | Run Line | Milwaukee Brewers -1.5 | — | **DraftKings +135** / FanDuel -205 | — | -1.00 |
+| ❌ LOSS | LEAN | Colorado Rockies @ Chicago Cubs | Moneyline | Chicago Cubs ML | — | **FanDuel -180** / DraftKings -198 | — | -1.00 |
 
 ### 2026-06-15 — 3-2  (+0.73u)
 
@@ -150,3 +169,18 @@
 | ✅ WIN | LEAN | Los Angeles Angels @ Los Angeles Dodgers | Run Line | Los Angeles Dodgers -1.5 | — | — | — | +0.91 |
 | ✅ WIN | LEAN | Milwaukee Brewers @ Colorado Rockies | Run Line | Milwaukee Brewers -1.5 | — | — | — | +0.91 |
 | ❌ LOSS | LEAN | Baltimore Orioles @ Toronto Blue Jays | Moneyline | Baltimore Orioles ML | — | — | — | -1.00 |
+
+## Model B — picks by date
+
+### 2026-06-16 — 4-4  (-0.36u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Cleveland Guardians @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -118** / DraftKings -157 | — | +0.91 |
+| ✅ WIN | LEAN | Kansas City Royals @ Washington Nationals | Moneyline | Washington Nationals ML | — | **FanDuel -118** / DraftKings -144 | — | +0.91 |
+| ✅ WIN | LEAN | San Diego Padres @ St. Louis Cardinals | Moneyline | St. Louis Cardinals ML | — | **FanDuel -118** / DraftKings -120 | — | +0.91 |
+| ✅ WIN | LEAN | Pittsburgh Pirates @ Athletics | Moneyline | Pittsburgh Pirates ML | — | **DraftKings +119** / FanDuel -126 | — | +0.91 |
+| ❌ LOSS | PLAY | Cleveland Guardians @ Milwaukee Brewers | Total | Over 8.0 | 8.0 | **DraftKings -119** / FanDuel -124 | — | -1.00 |
+| ❌ LOSS | PLAY | Minnesota Twins @ Texas Rangers | Moneyline | Texas Rangers ML | — | **DraftKings -132** / FanDuel -134 | — | -1.00 |
+| ❌ LOSS | LEAN | Cleveland Guardians @ Milwaukee Brewers | Run Line | Milwaukee Brewers -1.5 | — | **DraftKings +135** / FanDuel -205 | — | -1.00 |
+| ❌ LOSS | LEAN | Colorado Rockies @ Chicago Cubs | Moneyline | Chicago Cubs ML | — | **FanDuel -180** / DraftKings -198 | — | -1.00 |
