@@ -7,25 +7,25 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
 |---|---|---|---|---|---|---|---|
 | A | PLAY | 9.5 | Chicago White Sox @ New York Yankees | Moneyline | New York Yankees ML | — | **FanDuel -158** / DraftKings -163 |
-| A | PLAY | 9.5 | Los Angeles Angels @ Athletics | Total | Under 10.5 | 10.5 | **DraftKings -113** / FanDuel -120 |
-| A | PLAY | 9.3 | Cleveland Guardians @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -146** / DraftKings -156 |
+| A | PLAY | 9.5 | Los Angeles Angels @ Athletics | Total | Under 10.5 | 10.5 | **FanDuel -112** / DraftKings -113 |
+| A | PLAY | 9.3 | Cleveland Guardians @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -148** / DraftKings -157 |
 | A | PLAY | 8.8 | San Francisco Giants @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -144** / DraftKings -144 |
 | A | PLAY | 8.1 | Minnesota Twins @ Texas Rangers | Moneyline | Minnesota Twins ML | — | **FanDuel -124** / DraftKings -126 |
 | A | PLAY | 7.8 | Toronto Blue Jays @ Boston Red Sox | Total | Under 9.0 | 9.0 | **DraftKings -108** / FanDuel -115 |
-| A | PLAY | 7.0 | Cleveland Guardians @ Milwaukee Brewers | Run Line | Milwaukee Brewers -1.5 | — | **DraftKings +150** / FanDuel +146 |
-| A | LEAN | 6.6 | San Francisco Giants @ Atlanta Braves | Run Line | Atlanta Braves -1.5 | — | **DraftKings +151** / FanDuel +146 |
+| A | PLAY | 7.0 | Cleveland Guardians @ Milwaukee Brewers | Run Line | Milwaukee Brewers -1.5 | — | **DraftKings +153** / FanDuel +146 |
+| A | LEAN | 6.6 | San Francisco Giants @ Atlanta Braves | Run Line | Atlanta Braves -1.5 | — | **FanDuel +150** / DraftKings +148 |
 | A | LEAN | 6.5 | New York Mets @ Philadelphia Phillies | Moneyline | New York Mets ML | — | **FanDuel +104** / DraftKings +104 |
-| A | LEAN | 6.1 | Minnesota Twins @ Texas Rangers | Run Line | Minnesota Twins -1.5 | — | **FanDuel +140** / DraftKings +130 |
+| A | LEAN | 6.1 | Minnesota Twins @ Texas Rangers | Run Line | Minnesota Twins -1.5 | — | **FanDuel +140** / DraftKings +134 |
 | B | PLAY | 9.5 | Chicago White Sox @ New York Yankees | Moneyline | New York Yankees ML | — | **FanDuel -158** / DraftKings -163 |
-| B | PLAY | 9.5 | Los Angeles Angels @ Athletics | Total | Under 10.5 | 10.5 | **DraftKings -113** / FanDuel -120 |
-| B | PLAY | 9.3 | Cleveland Guardians @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -146** / DraftKings -156 |
+| B | PLAY | 9.5 | Los Angeles Angels @ Athletics | Total | Under 10.5 | 10.5 | **FanDuel -112** / DraftKings -113 |
+| B | PLAY | 9.3 | Cleveland Guardians @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -148** / DraftKings -157 |
 | B | PLAY | 8.8 | San Francisco Giants @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -144** / DraftKings -144 |
 | B | PLAY | 8.1 | Toronto Blue Jays @ Boston Red Sox | Total | Under 9.0 | 9.0 | **DraftKings -108** / FanDuel -115 |
 | B | PLAY | 8.1 | Minnesota Twins @ Texas Rangers | Moneyline | Minnesota Twins ML | — | **FanDuel -124** / DraftKings -126 |
-| B | PLAY | 7.0 | Cleveland Guardians @ Milwaukee Brewers | Run Line | Milwaukee Brewers -1.5 | — | **DraftKings +150** / FanDuel +146 |
-| B | LEAN | 6.6 | San Francisco Giants @ Atlanta Braves | Run Line | Atlanta Braves -1.5 | — | **DraftKings +151** / FanDuel +146 |
+| B | PLAY | 7.0 | Cleveland Guardians @ Milwaukee Brewers | Run Line | Milwaukee Brewers -1.5 | — | **DraftKings +153** / FanDuel +146 |
+| B | LEAN | 6.6 | San Francisco Giants @ Atlanta Braves | Run Line | Atlanta Braves -1.5 | — | **FanDuel +150** / DraftKings +148 |
 | B | LEAN | 6.5 | New York Mets @ Philadelphia Phillies | Moneyline | New York Mets ML | — | **FanDuel +104** / DraftKings +104 |
-| B | LEAN | 6.1 | Minnesota Twins @ Texas Rangers | Run Line | Minnesota Twins -1.5 | — | **FanDuel +140** / DraftKings +130 |
+| B | LEAN | 6.1 | Minnesota Twins @ Texas Rangers | Run Line | Minnesota Twins -1.5 | — | **FanDuel +140** / DraftKings +134 |
 
 ## 2026-06-17
 
