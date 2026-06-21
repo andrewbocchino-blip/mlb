@@ -2,6 +2,28 @@
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
 
+## 2026-06-21
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Cincinnati Reds @ New York Yankees | Moneyline | New York Yankees ML | — | **FanDuel -108** / DraftKings -110 |
+| A | PLAY | 8.2 | Minnesota Twins @ Arizona Diamondbacks | Moneyline | Minnesota Twins ML | — | **FanDuel +118** / DraftKings +109 |
+| A | PLAY | 8.2 | Los Angeles Angels @ Athletics | Moneyline | Los Angeles Angels ML | — | **FanDuel +108** / DraftKings +104 |
+| A | LEAN | 6.9 | Pittsburgh Pirates @ Colorado Rockies | Moneyline | Pittsburgh Pirates ML | — | **FanDuel -138** / DraftKings -149 |
+| A | LEAN | 6.6 | St. Louis Cardinals @ Kansas City Royals | Total | Under 9.0 | 9.0 | **DraftKings -105** / FanDuel -110 |
+| A | LEAN | 6.1 | Toronto Blue Jays @ Chicago Cubs | Total | Over 6.5 | 6.5 | **FanDuel -118** / DraftKings -118 |
+| A | LEAN | 6.1 | Pittsburgh Pirates @ Colorado Rockies | Total | Under 12.0 | 12.0 | **FanDuel -104** / DraftKings -114 |
+| A | LEAN | 5.5 | St. Louis Cardinals @ Kansas City Royals | Moneyline | Kansas City Royals ML | — | **FanDuel +104** / DraftKings +104 |
+| B | PLAY | 9.5 | Cincinnati Reds @ New York Yankees | Moneyline | New York Yankees ML | — | **FanDuel -108** / DraftKings -110 |
+| B | PLAY | 9.5 | Toronto Blue Jays @ Chicago Cubs | Moneyline | Chicago Cubs ML | — | **FanDuel +106** / DraftKings +101 |
+| B | PLAY | 8.2 | Minnesota Twins @ Arizona Diamondbacks | Moneyline | Minnesota Twins ML | — | **FanDuel +118** / DraftKings +109 |
+| B | PLAY | 8.2 | Los Angeles Angels @ Athletics | Moneyline | Los Angeles Angels ML | — | **FanDuel +108** / DraftKings +104 |
+| B | PLAY | 7.5 | Pittsburgh Pirates @ Colorado Rockies | Total | Under 12.0 | 12.0 | **FanDuel -104** / DraftKings -114 |
+| B | PLAY | 7.0 | St. Louis Cardinals @ Kansas City Royals | Total | Under 9.0 | 9.0 | **DraftKings -105** / FanDuel -110 |
+| B | LEAN | 6.9 | Pittsburgh Pirates @ Colorado Rockies | Moneyline | Pittsburgh Pirates ML | — | **FanDuel -138** / DraftKings -149 |
+| B | LEAN | 5.5 | St. Louis Cardinals @ Kansas City Royals | Moneyline | Kansas City Royals ML | — | **FanDuel +104** / DraftKings +104 |
+| B | LEAN | 5.5 | Toronto Blue Jays @ Chicago Cubs | Total | Over 6.5 | 6.5 | **FanDuel -118** / DraftKings -118 |
+
 ## 2026-06-20
 
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
