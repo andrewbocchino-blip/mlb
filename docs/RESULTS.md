@@ -2,24 +2,36 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 75-63  ·  54% win  ·  +5.25u  ·  +3.8% ROI  ·  avg CLV n/a (no closing lines yet)**
-**Model B: 28-27  ·  51% win  ·  -1.52u  ·  -2.8% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 78-67  ·  54% win  ·  +3.98u  ·  +2.7% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model B: 31-31  ·  50% win  ·  -2.79u  ·  -4.5% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 40-31 (+8%)  ·  Run Line 14-11 (+7%)  ·  Total 21-21 (-4%)
-- **by side:** team 54-42 (+7%)  ·  Under 17-14 (+5%)  ·  Over 4-7 (-30%)
-- **by fav_band:** unknown 18-11 (+19%)  ·  heavy fav 3-2 (+15%)  ·  pickem 36-25 (+13%)  ·  fav 12-16 (-18%)  ·  dog 6-9 (-24%)
+- **by market:** Moneyline 43-33 (+8%)  ·  Run Line 14-11 (+7%)  ·  Total 21-23 (-9%)
+- **by side:** team 57-44 (+8%)  ·  Under 17-16 (-2%)  ·  Over 4-7 (-30%)
+- **by fav_band:** unknown 18-11 (+19%)  ·  heavy fav 3-2 (+15%)  ·  pickem 37-29 (+7%)  ·  fav 13-16 (-14%)  ·  dog 7-9 (-16%)
 
 ### Model B — segments (finding the winning slice)
 
-- **by market:** Total 8-7 (+2%)  ·  Moneyline 15-14 (-1%)  ·  Run Line 5-6 (-13%)
-- **by side:** Under 7-5 (+11%)  ·  team 20-20 (-4%)  ·  Over 1-2 (-36%)
-- **by fav_band:** pickem 17-10 (+20%)  ·  dog 5-6 (-13%)  ·  fav 5-9 (-32%)  ·  heavy fav 1-2 (-36%)
+- **by market:** Moneyline 18-16 (+1%)  ·  Total 8-9 (-10%)  ·  Run Line 5-6 (-13%)
+- **by side:** team 23-22 (-2%)  ·  Under 7-7 (-4%)  ·  Over 1-2 (-36%)
+- **by fav_band:** pickem 18-14 (+7%)  ·  dog 6-6 (-4%)  ·  fav 6-9 (-24%)  ·  heavy fav 1-2 (-36%)
 
 ## Model A — picks by date
+
+### 2026-06-21 — 3-4  (-1.27u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Minnesota Twins @ Arizona Diamondbacks | Moneyline | Minnesota Twins ML | — | **FanDuel +118** / DraftKings +109 | — | +0.91 |
+| ✅ WIN | PLAY | Los Angeles Angels @ Athletics | Moneyline | Los Angeles Angels ML | — | **FanDuel +108** / DraftKings +104 | — | +0.91 |
+| ✅ WIN | LEAN | Pittsburgh Pirates @ Colorado Rockies | Moneyline | Pittsburgh Pirates ML | — | **FanDuel -138** / DraftKings -149 | — | +0.91 |
+| ❌ LOSS | PLAY | Cincinnati Reds @ New York Yankees | Moneyline | New York Yankees ML | — | **FanDuel -108** / DraftKings -110 | — | -1.00 |
+| ❌ LOSS | LEAN | St. Louis Cardinals @ Kansas City Royals | Total | Under 9.0 | 9.0 | **DraftKings -105** / FanDuel -110 | — | -1.00 |
+| ❌ LOSS | LEAN | Pittsburgh Pirates @ Colorado Rockies | Total | Under 12.0 | 12.0 | **FanDuel -104** / DraftKings -114 | — | -1.00 |
+| ❌ LOSS | LEAN | St. Louis Cardinals @ Kansas City Royals | Moneyline | Kansas City Royals ML | — | **FanDuel +104** / DraftKings +104 | — | -1.00 |
 
 ### 2026-06-20 — 6-7  (-1.54u)
 
@@ -238,6 +250,18 @@
 | ❌ LOSS | LEAN | Baltimore Orioles @ Toronto Blue Jays | Moneyline | Baltimore Orioles ML | — | — | — | -1.00 |
 
 ## Model B — picks by date
+
+### 2026-06-21 — 3-4  (-1.27u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Minnesota Twins @ Arizona Diamondbacks | Moneyline | Minnesota Twins ML | — | **FanDuel +118** / DraftKings +109 | — | +0.91 |
+| ✅ WIN | PLAY | Los Angeles Angels @ Athletics | Moneyline | Los Angeles Angels ML | — | **FanDuel +108** / DraftKings +104 | — | +0.91 |
+| ✅ WIN | LEAN | Pittsburgh Pirates @ Colorado Rockies | Moneyline | Pittsburgh Pirates ML | — | **FanDuel -138** / DraftKings -149 | — | +0.91 |
+| ❌ LOSS | PLAY | Cincinnati Reds @ New York Yankees | Moneyline | New York Yankees ML | — | **FanDuel -108** / DraftKings -110 | — | -1.00 |
+| ❌ LOSS | PLAY | Pittsburgh Pirates @ Colorado Rockies | Total | Under 12.0 | 12.0 | **FanDuel -104** / DraftKings -114 | — | -1.00 |
+| ❌ LOSS | PLAY | St. Louis Cardinals @ Kansas City Royals | Total | Under 9.0 | 9.0 | **DraftKings -105** / FanDuel -110 | — | -1.00 |
+| ❌ LOSS | LEAN | St. Louis Cardinals @ Kansas City Royals | Moneyline | Kansas City Royals ML | — | **FanDuel +104** / DraftKings +104 | — | -1.00 |
 
 ### 2026-06-20 — 6-8  (-2.54u)
 
