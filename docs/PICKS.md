@@ -2,6 +2,29 @@
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
 
+## 2026-06-23
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Boston Red Sox @ Colorado Rockies | Total | Under 10.5 | 10.5 | **FanDuel -105** / DraftKings -105 |
+| A | PLAY | 8.6 | Los Angeles Dodgers @ Minnesota Twins | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -176** / DraftKings -186 |
+| A | PLAY | 8.1 | Chicago Cubs @ New York Mets | Moneyline | Chicago Cubs ML | — | **FanDuel +100** / DraftKings -102 |
+| A | PLAY | 8.0 | Milwaukee Brewers @ Cincinnati Reds | Moneyline | Milwaukee Brewers ML | — | **DraftKings -114** / FanDuel -116 |
+| A | PLAY | 7.6 | Kansas City Royals @ Tampa Bay Rays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -184** / DraftKings -193 |
+| A | LEAN | 6.3 | Seattle Mariners @ Pittsburgh Pirates | Moneyline | Pittsburgh Pirates ML | — | **DraftKings +109** / FanDuel +108 |
+| A | LEAN | 6.0 | Philadelphia Phillies @ Washington Nationals | Moneyline | Washington Nationals ML | — | **DraftKings +143** / FanDuel +142 |
+| A | LEAN | 5.7 | Kansas City Royals @ Tampa Bay Rays | Run Line | Tampa Bay Rays -1.5 | — | **FanDuel +116** / DraftKings +113 |
+| A | LEAN | 5.6 | Athletics @ San Francisco Giants | Moneyline | San Francisco Giants ML | — | **FanDuel -120** / DraftKings -120 |
+| B | PLAY | 9.5 | Boston Red Sox @ Colorado Rockies | Total | Under 10.5 | 10.5 | **FanDuel -105** / DraftKings -105 |
+| B | PLAY | 8.6 | Los Angeles Dodgers @ Minnesota Twins | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -176** / DraftKings -186 |
+| B | PLAY | 8.1 | Chicago Cubs @ New York Mets | Moneyline | Chicago Cubs ML | — | **FanDuel +100** / DraftKings -102 |
+| B | PLAY | 8.0 | Milwaukee Brewers @ Cincinnati Reds | Moneyline | Milwaukee Brewers ML | — | **DraftKings -114** / FanDuel -116 |
+| B | PLAY | 7.6 | Kansas City Royals @ Tampa Bay Rays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -184** / DraftKings -193 |
+| B | LEAN | 6.3 | Seattle Mariners @ Pittsburgh Pirates | Moneyline | Pittsburgh Pirates ML | — | **DraftKings +109** / FanDuel +108 |
+| B | LEAN | 6.0 | Philadelphia Phillies @ Washington Nationals | Moneyline | Washington Nationals ML | — | **DraftKings +143** / FanDuel +142 |
+| B | LEAN | 5.7 | Kansas City Royals @ Tampa Bay Rays | Run Line | Tampa Bay Rays -1.5 | — | **FanDuel +116** / DraftKings +113 |
+| B | LEAN | 5.6 | Athletics @ San Francisco Giants | Moneyline | San Francisco Giants ML | — | **FanDuel -120** / DraftKings -120 |
+
 ## 2026-06-22
 
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
