@@ -2,24 +2,34 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 158-118  ·  57% win  ·  +25.78u  ·  +9.3% ROI  ·  avg CLV n/a (no closing lines yet)**
-**Model B: 110-81  ·  58% win  ·  +19.10u  ·  +10.0% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 160-121  ·  57% win  ·  +24.60u  ·  +8.8% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model B: 112-84  ·  57% win  ·  +17.92u  ·  +9.1% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 88-55 (+18%)  ·  Total 44-39 (+1%)  ·  Run Line 26-24 (-1%)
-- **by side:** team 114-79 (+13%)  ·  Over 10-8 (+6%)  ·  Under 34-31 (-0%)
-- **by fav_band:** unknown 19-11 (+21%)  ·  heavy fav 6-4 (+15%)  ·  pickem 80-57 (+12%)  ·  fav 36-27 (+9%)  ·  dog 17-19 (-10%)
+- **by market:** Moneyline 90-56 (+18%)  ·  Total 44-39 (+1%)  ·  Run Line 26-26 (-4%)
+- **by side:** team 116-82 (+12%)  ·  Over 10-8 (+6%)  ·  Under 34-31 (-0%)
+- **by fav_band:** heavy fav 7-4 (+22%)  ·  unknown 19-11 (+21%)  ·  pickem 81-58 (+11%)  ·  fav 36-28 (+7%)  ·  dog 17-20 (-12%)
 
 ### Model B — segments (finding the winning slice)
 
-- **by market:** Moneyline 63-39 (+18%)  ·  Total 31-24 (+8%)  ·  Run Line 16-18 (-10%)
-- **by side:** Over 6-2 (+43%)  ·  team 79-57 (+11%)  ·  Under 25-22 (+2%)
-- **by fav_band:** unknown 1-0 (+91%)  ·  pickem 61-40 (+15%)  ·  fav 29-20 (+13%)  ·  heavy fav 4-4 (-4%)  ·  dog 15-17 (-10%)
+- **by market:** Moneyline 65-40 (+18%)  ·  Total 31-24 (+8%)  ·  Run Line 16-20 (-15%)
+- **by side:** Over 6-2 (+43%)  ·  team 81-60 (+10%)  ·  Under 25-22 (+2%)
+- **by fav_band:** unknown 1-0 (+91%)  ·  pickem 62-41 (+15%)  ·  fav 29-21 (+11%)  ·  heavy fav 5-4 (+6%)  ·  dog 15-18 (-13%)
 
 ## Model A — picks by date
+
+### 2026-07-06 — 2-3  (-1.18u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Colorado Rockies @ Los Angeles Dodgers | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -230** / DraftKings -238 | — | +0.91 |
+| ✅ WIN | PLAY | Milwaukee Brewers @ St. Louis Cardinals | Moneyline | Milwaukee Brewers ML | — | **FanDuel -108** / DraftKings -109 | — | +0.91 |
+| ❌ LOSS | PLAY | Philadelphia Phillies @ Kansas City Royals | Moneyline | Philadelphia Phillies ML | — | **FanDuel -200** / DraftKings -205 | — | -1.00 |
+| ❌ LOSS | PLAY | Philadelphia Phillies @ Kansas City Royals | Run Line | Philadelphia Phillies -1.5 | — | **DraftKings -125** / FanDuel -128 | — | -1.00 |
+| ❌ LOSS | LEAN | Milwaukee Brewers @ St. Louis Cardinals | Run Line | Milwaukee Brewers -1.5 | — | **FanDuel +158** / DraftKings +148 | — | -1.00 |
 
 ### 2026-07-05 — 2-5  (-3.18u)
 
@@ -452,6 +462,16 @@
 | ❌ LOSS | LEAN | Baltimore Orioles @ Toronto Blue Jays | Moneyline | Baltimore Orioles ML | — | — | — | -1.00 |
 
 ## Model B — picks by date
+
+### 2026-07-06 — 2-3  (-1.18u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Colorado Rockies @ Los Angeles Dodgers | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -230** / DraftKings -238 | — | +0.91 |
+| ✅ WIN | PLAY | Milwaukee Brewers @ St. Louis Cardinals | Moneyline | Milwaukee Brewers ML | — | **FanDuel -108** / DraftKings -109 | — | +0.91 |
+| ❌ LOSS | PLAY | Philadelphia Phillies @ Kansas City Royals | Moneyline | Philadelphia Phillies ML | — | **FanDuel -200** / DraftKings -205 | — | -1.00 |
+| ❌ LOSS | PLAY | Philadelphia Phillies @ Kansas City Royals | Run Line | Philadelphia Phillies -1.5 | — | **DraftKings -125** / FanDuel -128 | — | -1.00 |
+| ❌ LOSS | LEAN | Milwaukee Brewers @ St. Louis Cardinals | Run Line | Milwaukee Brewers -1.5 | — | **FanDuel +158** / DraftKings +148 | — | -1.00 |
 
 ### 2026-07-05 — 2-5  (-3.18u)
 
