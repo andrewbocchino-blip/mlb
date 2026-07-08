@@ -2,24 +2,33 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 160-121  ·  57% win  ·  +24.60u  ·  +8.8% ROI  ·  avg CLV n/a (no closing lines yet)**
-**Model B: 112-84  ·  57% win  ·  +17.92u  ·  +9.1% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 162-123  ·  57% win  ·  +24.42u  ·  +8.6% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model B: 113-86  ·  57% win  ·  +16.83u  ·  +8.5% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 90-56 (+18%)  ·  Total 44-39 (+1%)  ·  Run Line 26-26 (-4%)
-- **by side:** team 116-82 (+12%)  ·  Over 10-8 (+6%)  ·  Under 34-31 (-0%)
-- **by fav_band:** heavy fav 7-4 (+22%)  ·  unknown 19-11 (+21%)  ·  pickem 81-58 (+11%)  ·  fav 36-28 (+7%)  ·  dog 17-20 (-12%)
+- **by market:** Moneyline 90-57 (+17%)  ·  Total 46-39 (+3%)  ·  Run Line 26-27 (-6%)
+- **by side:** Over 12-8 (+15%)  ·  team 116-84 (+11%)  ·  Under 34-31 (-0%)
+- **by fav_band:** unknown 19-11 (+21%)  ·  pickem 83-59 (+12%)  ·  heavy fav 7-5 (+11%)  ·  fav 36-28 (+7%)  ·  dog 17-20 (-12%)
 
 ### Model B — segments (finding the winning slice)
 
-- **by market:** Moneyline 65-40 (+18%)  ·  Total 31-24 (+8%)  ·  Run Line 16-20 (-15%)
-- **by side:** Over 6-2 (+43%)  ·  team 81-60 (+10%)  ·  Under 25-22 (+2%)
-- **by fav_band:** unknown 1-0 (+91%)  ·  pickem 62-41 (+15%)  ·  fav 29-21 (+11%)  ·  heavy fav 5-4 (+6%)  ·  dog 15-18 (-13%)
+- **by market:** Moneyline 65-41 (+17%)  ·  Total 32-24 (+9%)  ·  Run Line 16-21 (-17%)
+- **by side:** Over 7-2 (+49%)  ·  team 81-62 (+8%)  ·  Under 25-22 (+2%)
+- **by fav_band:** unknown 1-0 (+91%)  ·  pickem 63-42 (+15%)  ·  fav 29-21 (+11%)  ·  heavy fav 5-5 (-4%)  ·  dog 15-18 (-13%)
 
 ## Model A — picks by date
+
+### 2026-07-07 — 2-2  (-0.18u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | LEAN | Milwaukee Brewers @ St. Louis Cardinals | Total | Over 7.5 | 7.5 | **DraftKings -115** / FanDuel -122 | — | +0.91 |
+| ✅ WIN | LEAN | Atlanta Braves @ Pittsburgh Pirates | Total | Over 8.0 | 8.0 | **DraftKings -105** / FanDuel -106 | — | +0.91 |
+| ❌ LOSS | PLAY | Colorado Rockies @ Los Angeles Dodgers | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -250** / DraftKings -272 | — | -1.00 |
+| ❌ LOSS | PLAY | Colorado Rockies @ Los Angeles Dodgers | Run Line | Los Angeles Dodgers -1.5 | — | **FanDuel -126** / DraftKings -130 | — | -1.00 |
 
 ### 2026-07-06 — 2-3  (-1.18u)
 
@@ -462,6 +471,14 @@
 | ❌ LOSS | LEAN | Baltimore Orioles @ Toronto Blue Jays | Moneyline | Baltimore Orioles ML | — | — | — | -1.00 |
 
 ## Model B — picks by date
+
+### 2026-07-07 — 1-2  (-1.09u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Milwaukee Brewers @ St. Louis Cardinals | Total | Over 7.5 | 7.5 | **DraftKings -115** / FanDuel -122 | — | +0.91 |
+| ❌ LOSS | PLAY | Colorado Rockies @ Los Angeles Dodgers | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -250** / DraftKings -272 | — | -1.00 |
+| ❌ LOSS | PLAY | Colorado Rockies @ Los Angeles Dodgers | Run Line | Los Angeles Dodgers -1.5 | — | **FanDuel -126** / DraftKings -130 | — | -1.00 |
 
 ### 2026-07-06 — 2-3  (-1.18u)
 

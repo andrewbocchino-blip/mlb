@@ -2,6 +2,21 @@
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
 
+## 2026-07-08
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Athletics @ Detroit Tigers | Moneyline | Detroit Tigers ML | — | **FanDuel -158** / DraftKings -163 |
+| A | PLAY | 9.5 | Milwaukee Brewers @ St. Louis Cardinals | Moneyline | Milwaukee Brewers ML | — | **FanDuel -134** / DraftKings -143 |
+| A | PLAY | 7.1 | Athletics @ Detroit Tigers | Run Line | Detroit Tigers -1.5 | — | **FanDuel +128** / DraftKings +128 |
+| A | LEAN | 5.8 | Kansas City Royals @ New York Mets | Moneyline | New York Mets ML | — | — |
+| A | LEAN | 5.1 | Houston Astros @ Washington Nationals | Moneyline | Washington Nationals ML | — | **FanDuel -134** / DraftKings -136 |
+| B | PLAY | 9.5 | Athletics @ Detroit Tigers | Moneyline | Detroit Tigers ML | — | **FanDuel -158** / DraftKings -163 |
+| B | PLAY | 9.5 | Milwaukee Brewers @ St. Louis Cardinals | Moneyline | Milwaukee Brewers ML | — | **FanDuel -134** / DraftKings -143 |
+| B | PLAY | 7.1 | Athletics @ Detroit Tigers | Run Line | Detroit Tigers -1.5 | — | **FanDuel +128** / DraftKings +128 |
+| B | LEAN | 5.8 | Kansas City Royals @ New York Mets | Moneyline | New York Mets ML | — | — |
+| B | LEAN | 5.1 | Houston Astros @ Washington Nationals | Moneyline | Washington Nationals ML | — | **FanDuel -134** / DraftKings -136 |
+
 ## 2026-07-07
 
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
