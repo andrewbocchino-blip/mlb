@@ -2,6 +2,20 @@
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
 
+## 2026-07-09
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Athletics @ Detroit Tigers | Moneyline | Detroit Tigers ML | — | **DraftKings -137** / FanDuel -138 |
+| A | PLAY | 9.5 | Milwaukee Brewers @ St. Louis Cardinals | Moneyline | Milwaukee Brewers ML | — | **FanDuel -130** / DraftKings -136 |
+| A | LEAN | 5.7 | Cleveland Guardians @ Minnesota Twins | Moneyline | Minnesota Twins ML | — | **FanDuel +114** / DraftKings +108 |
+| A | LEAN | 5.1 | Colorado Rockies @ San Francisco Giants | Moneyline | Colorado Rockies ML | — | — |
+| B | PLAY | 9.5 | Athletics @ Detroit Tigers | Moneyline | Detroit Tigers ML | — | **DraftKings -137** / FanDuel -138 |
+| B | PLAY | 9.5 | Milwaukee Brewers @ St. Louis Cardinals | Moneyline | Milwaukee Brewers ML | — | **FanDuel -130** / DraftKings -136 |
+| B | LEAN | 5.7 | Cleveland Guardians @ Minnesota Twins | Moneyline | Minnesota Twins ML | — | **FanDuel +114** / DraftKings +108 |
+| B | LEAN | 5.1 | Colorado Rockies @ San Francisco Giants | Moneyline | Colorado Rockies ML | — | — |
+| B | LEAN | 5.0 | Philadelphia Phillies @ Cincinnati Reds | Total | Under 9.5 | 9.5 | **DraftKings -112** / FanDuel -118 |
+
 ## 2026-07-08
 
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
