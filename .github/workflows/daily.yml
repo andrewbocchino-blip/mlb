@@ -25,21 +25,10 @@ jobs:
         run: python run.py
       - name: Grade prior picks
         run: python grade.py || echo "grading skipped"
-      - name: Add B divergence section
-        run: python3 tools/b_unique.py docs/PICKS.md --markdown >> docs/PICKS.md || echo "divergence skipped"
-      - name: Commit and publish page
-        run: |
-          git config user.name "mlb-bot"
-          git config user.email "mlb-bot@users.noreply.github.com"
-          git add -A docs/
-          git commit -m "Midnight pull + grade $(date -u +%Y-%m-%d)" || echo "no changes"
-          git push
-          
-- name: Add B divergence (today only, top of page)
+      - name: Add B divergence (today only, top of page)
         run: |
           D=$(grep -m1 -oE '^## [0-9]{4}-[0-9]{2}-[0-9]{2}' docs/PICKS.md | cut -d' ' -f2)
           python3 tools/b_unique.py docs/PICKS.md --markdown --date "$D" > /tmp/div.md || true
           if grep -qE '^\| (NEW|UPGRADE)' /tmp/div.md; then
             { echo "# ⚡ B Divergence — $D"; cat /tmp/div.md; echo ""; echo "---"; echo ""; cat docs/PICKS.md; } > /tmp/picks.md
             mv /tmp/picks.md docs/PICKS.md
-          fi
