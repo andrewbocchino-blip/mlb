@@ -42,3 +42,6 @@ jobs:
           git add -A docs/
           git commit -m "Midnight pull + grade $(date -u +%Y-%m-%d)" || echo "no changes"
           git push
+          
+      - name: Add B divergence section
+        run: python3 tools/b_unique.py locked_picks.md --markdown >> locked_picks.md
