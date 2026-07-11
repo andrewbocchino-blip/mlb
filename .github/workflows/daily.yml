@@ -1,40 +1,32 @@
 name: Daily MLB Dashboard
-
 # Runs every morning and on manual trigger. Free for public repos.
 on:
   schedule:
     # 04:05 UTC = 12:05 AM ET — pull lines at midnight, before game-day public money.
-    # This timestamp-locks the picks at the overnight line so the midnight-line
-    # theory can be tested honestly against results (closing line / final).
     - cron: "5 4 * * *"
   workflow_dispatch: {}   # also run on-demand from the Actions tab
-
 permissions:
   contents: write   # allow committing the generated page back to the repo
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests
-
       - name: Generate dashboard
         run: python run.py
-
       - name: Grade prior picks
         run: python grade.py || echo "grading skipped"
-
+      - name: Add B divergence section
+        run: python3 tools/b_unique.py docs/PICKS.md --markdown >> docs/PICKS.md || echo "divergence skipped"
       - name: Commit and publish page
         run: |
           git config user.name "mlb-bot"
@@ -42,4 +34,3 @@ jobs:
           git add -A docs/
           git commit -m "Midnight pull + grade $(date -u +%Y-%m-%d)" || echo "no changes"
           git push
-        
