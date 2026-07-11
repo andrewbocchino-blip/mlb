@@ -32,3 +32,12 @@ jobs:
           if grep -qE '^\| (NEW|UPGRADE)' /tmp/div.md; then
             { echo "# ⚡ B Divergence — $D"; cat /tmp/div.md; echo ""; echo "---"; echo ""; cat docs/PICKS.md; } > /tmp/picks.md
             mv /tmp/picks.md docs/PICKS.md
+
+            fi
+      - name: Commit and publish page
+        run: |
+          git config user.name "mlb-bot"
+          git config user.email "mlb-bot@users.noreply.github.com"
+          git add -A docs/
+          git commit -m "Midnight pull + grade $(date -u +%Y-%m-%d)" || echo "no changes"
+          git push
