@@ -6,7 +6,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
 |---|---|---|---|---|---|---|---|
-| A | PLAY | 9.5 | Athletics @ Chicago White Sox | Moneyline | Chicago White Sox ML | — | **FanDuel -108** / DraftKings -112 |
+| A | PLAY | 9.5 | Athletics @ Chicago White Sox | Moneyline | Chicago White Sox ML | — | **FanDuel -112** / DraftKings -115 |
 | A | PLAY | 9.5 | Atlanta Braves @ St. Louis Cardinals | Moneyline | Atlanta Braves ML | — | **FanDuel -104** / DraftKings -107 |
 | A | PLAY | 9.5 | Arizona Diamondbacks @ Los Angeles Dodgers | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -275** / DraftKings -283 |
 | A | PLAY | 8.8 | Milwaukee Brewers @ Pittsburgh Pirates | Moneyline | Milwaukee Brewers ML | — | **FanDuel -130** / DraftKings -131 |
@@ -18,7 +18,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | A | LEAN | 5.3 | New York Yankees @ Washington Nationals | Moneyline | New York Yankees ML | — | **FanDuel -190** / DraftKings -199 |
 | A | LEAN | 5.3 | Boston Red Sox @ New York Mets | Moneyline | Boston Red Sox ML | — | **FanDuel +134** / DraftKings +134 |
 | A | LEAN | 5.0 | Colorado Rockies @ San Francisco Giants | Moneyline | Colorado Rockies ML | — | **FanDuel +130** / DraftKings +124 |
-| B | PLAY | 9.5 | Athletics @ Chicago White Sox | Moneyline | Chicago White Sox ML | — | **FanDuel -108** / DraftKings -112 |
+| B | PLAY | 9.5 | Athletics @ Chicago White Sox | Moneyline | Chicago White Sox ML | — | **FanDuel -112** / DraftKings -115 |
 | B | PLAY | 9.5 | Atlanta Braves @ St. Louis Cardinals | Moneyline | Atlanta Braves ML | — | **FanDuel -104** / DraftKings -107 |
 | B | PLAY | 9.5 | Arizona Diamondbacks @ Los Angeles Dodgers | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -275** / DraftKings -283 |
 | B | PLAY | 8.8 | Milwaukee Brewers @ Pittsburgh Pirates | Moneyline | Milwaukee Brewers ML | — | **FanDuel -130** / DraftKings -131 |
@@ -745,36 +745,3 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | A | LEAN | 6.6 | Los Angeles Angels @ Los Angeles Dodgers | Run Line | Los Angeles Dodgers -1.5 | — | — |
 | A | LEAN | 6.1 | Milwaukee Brewers @ Colorado Rockies | Run Line | Milwaukee Brewers -1.5 | — | — |
 | A | LEAN | 5.4 | Baltimore Orioles @ Toronto Blue Jays | Moneyline | Baltimore Orioles ML | — | — |
-
-### 2026-07-09 — B divergence
-| Type | Verdict | Score | Market | Pick | Game | Books |
-|---|---|---|---|---|---|---|
-| NEW | LEAN | 5.0 | Total | Under 9.5 | Philadelphia Phillies @ Cincinnati Reds | **DraftKings -112** / FanDuel -118 |
-
-### 2026-07-04 — B divergence
-| Type | Verdict | Score | Market | Pick | Game | Books |
-|---|---|---|---|---|---|---|
-| NEW | LEAN | 5.5 | Moneyline | Colorado Rockies ML | San Francisco Giants @ Colorado Rockies | **FanDuel +110** / DraftKings +109 |
-
-### 2026-06-29 — B divergence
-| Type | Verdict | Score | Market | Pick | Game | Books |
-|---|---|---|---|---|---|---|
-| NEW | LEAN | 5.5 | Total | Under 9.0 | New York Mets @ Toronto Blue Jays | **FanDuel -104** / DraftKings -119 |
-
-### 2026-06-21 — B divergence
-| Type | Verdict | Score | Market | Pick | Game | Books |
-|---|---|---|---|---|---|---|
-| NEW | PLAY | 9.5 | Moneyline | Chicago Cubs ML | Toronto Blue Jays @ Chicago Cubs | **FanDuel +106** / DraftKings +101 |
-| UPGRADE | PLAY (A: LEAN 6.1) | 7.5 | Total | Under 12.0 | Pittsburgh Pirates @ Colorado Rockies | **FanDuel -104** / DraftKings -114 |
-| UPGRADE | PLAY (A: LEAN 6.6) | 7.0 | Total | Under 9.0 | St. Louis Cardinals @ Kansas City Royals | **DraftKings -105** / FanDuel -110 |
-
-### 2026-06-20 — B divergence
-| Type | Verdict | Score | Market | Pick | Game | Books |
-|---|---|---|---|---|---|---|
-| NEW | LEAN | 5.3 | Total | Under 9.5 | Cincinnati Reds @ New York Yankees | **FanDuel -115** / DraftKings -119 |
-
-### 2026-06-19 — B divergence
-| Type | Verdict | Score | Market | Pick | Game | Books |
-|---|---|---|---|---|---|---|
-| UPGRADE | PLAY (A: LEAN 6.6) | 7.3 | Total | Under 10.0 | Los Angeles Angels @ Athletics | **DraftKings -111** / FanDuel -115 |
-| NEW | LEAN | 5.5 | Total | Under 11.5 | Pittsburgh Pirates @ Colorado Rockies | **DraftKings -111** / FanDuel -114 |
