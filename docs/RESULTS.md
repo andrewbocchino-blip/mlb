@@ -2,24 +2,30 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 179-145  ·  55% win  ·  +17.89u  ·  +5.5% ROI  ·  avg CLV n/a (no closing lines yet)**
-**Model B: 131-106  ·  55% win  ·  +13.21u  ·  +5.6% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 180-145  ·  55% win  ·  +18.80u  ·  +5.8% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model B: 132-106  ·  55% win  ·  +14.12u  ·  +5.9% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 105-73 (+13%)  ·  Total 47-41 (+2%)  ·  Run Line 27-31 (-11%)
-- **by side:** Over 13-10 (+8%)  ·  team 132-104 (+7%)  ·  Under 34-31 (-0%)
-- **by fav_band:** unknown 20-12 (+19%)  ·  fav 42-31 (+10%)  ·  pickem 90-69 (+8%)  ·  heavy fav 7-8 (-11%)  ·  dog 20-25 (-15%)
+- **by market:** Moneyline 105-73 (+13%)  ·  Total 48-41 (+3%)  ·  Run Line 27-31 (-11%)
+- **by side:** Over 13-10 (+8%)  ·  team 132-104 (+7%)  ·  Under 35-31 (+1%)
+- **by fav_band:** unknown 20-12 (+19%)  ·  fav 42-31 (+10%)  ·  pickem 91-69 (+9%)  ·  heavy fav 7-8 (-11%)  ·  dog 20-25 (-15%)
 
 ### Model B — segments (finding the winning slice)
 
-- **by market:** Total 34-24 (+12%)  ·  Moneyline 80-57 (+12%)  ·  Run Line 17-25 (-23%)
-- **by side:** Over 8-2 (+53%)  ·  team 97-82 (+4%)  ·  Under 26-22 (+4%)
-- **by fav_band:** unknown 2-1 (+27%)  ·  fav 35-24 (+13%)  ·  pickem 71-50 (+12%)  ·  dog 18-23 (-16%)  ·  heavy fav 5-8 (-26%)
+- **by market:** Total 35-24 (+13%)  ·  Moneyline 80-57 (+12%)  ·  Run Line 17-25 (-23%)
+- **by side:** Over 8-2 (+53%)  ·  Under 27-22 (+5%)  ·  team 97-82 (+4%)
+- **by fav_band:** unknown 2-1 (+27%)  ·  fav 35-24 (+13%)  ·  pickem 72-50 (+13%)  ·  dog 18-23 (-16%)  ·  heavy fav 5-8 (-26%)
 
 ## Model A — picks by date
+
+### 2026-07-16 — 1-0  (+0.91u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | LEAN | New York Mets @ Philadelphia Phillies | Total | Under 9.5 | 9.5 | **FanDuel -104** / DraftKings -109 | — | +0.91 |
 
 ### 2026-07-12 — 4-4  (-0.36u)
 
@@ -535,6 +541,12 @@
 | ❌ LOSS | LEAN | Baltimore Orioles @ Toronto Blue Jays | Moneyline | Baltimore Orioles ML | — | — | — | -1.00 |
 
 ## Model B — picks by date
+
+### 2026-07-16 — 1-0  (+0.91u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | LEAN | New York Mets @ Philadelphia Phillies | Total | Under 9.5 | 9.5 | **FanDuel -104** / DraftKings -109 | — | +0.91 |
 
 ### 2026-07-12 — 4-3  (+0.64u)
 

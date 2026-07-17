@@ -1,6 +1,35 @@
+# ⚡ B Divergence — 2026-07-17
+
+### 2026-07-17 — B divergence
+| Type | Verdict | Score | Market | Pick | Game | Books |
+|---|---|---|---|---|---|---|
+| UPGRADE | PLAY (A: LEAN 6.4) | 7.0 | Total | Under 10.0 | Washington Nationals @ Athletics | **DraftKings -108** / FanDuel -110 |
+
+---
+
 # Locked Picks — A/B
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
+
+## 2026-07-17
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | San Diego Padres @ Kansas City Royals | Total | Under 10.0 | 10.0 | **DraftKings -103** / FanDuel -104 |
+| A | PLAY | 9.5 | Cincinnati Reds @ Colorado Rockies | Total | Under 12.0 | 12.0 | **DraftKings -111** / FanDuel -114 |
+| A | PLAY | 9.5 | Washington Nationals @ Athletics | Moneyline | Washington Nationals ML | — | **FanDuel -104** / DraftKings -108 |
+| A | PLAY | 8.1 | Texas Rangers @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -215** / DraftKings -217 |
+| A | LEAN | 6.4 | Washington Nationals @ Athletics | Total | Under 10.0 | 10.0 | **DraftKings -108** / FanDuel -110 |
+| A | LEAN | 5.7 | Miami Marlins @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -146** / DraftKings -149 |
+| A | LEAN | 5.5 | Pittsburgh Pirates @ Cleveland Guardians | Total | Over 7.5 | 7.5 | **DraftKings -112** / FanDuel -114 |
+| A | LEAN | 5.4 | Pittsburgh Pirates @ Cleveland Guardians | Moneyline | Pittsburgh Pirates ML | — | **DraftKings +109** / FanDuel +106 |
+| B | PLAY | 9.5 | San Diego Padres @ Kansas City Royals | Total | Under 10.0 | 10.0 | **DraftKings -103** / FanDuel -104 |
+| B | PLAY | 9.5 | Cincinnati Reds @ Colorado Rockies | Total | Under 12.0 | 12.0 | **DraftKings -111** / FanDuel -114 |
+| B | PLAY | 9.5 | Washington Nationals @ Athletics | Moneyline | Washington Nationals ML | — | **FanDuel -104** / DraftKings -108 |
+| B | PLAY | 8.1 | Texas Rangers @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -215** / DraftKings -217 |
+| B | PLAY | 7.0 | Washington Nationals @ Athletics | Total | Under 10.0 | 10.0 | **DraftKings -108** / FanDuel -110 |
+| B | LEAN | 5.7 | Miami Marlins @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -146** / DraftKings -149 |
+| B | LEAN | 5.4 | Pittsburgh Pirates @ Cleveland Guardians | Moneyline | Pittsburgh Pirates ML | — | **DraftKings +109** / FanDuel +106 |
 
 ## 2026-07-16
 
