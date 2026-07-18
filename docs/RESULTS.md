@@ -2,24 +2,35 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 180-145  ·  55% win  ·  +18.80u  ·  +5.8% ROI  ·  avg CLV n/a (no closing lines yet)**
-**Model B: 132-106  ·  55% win  ·  +14.12u  ·  +5.9% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 184-147  ·  56% win  ·  +20.44u  ·  +6.2% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model B: 136-108  ·  56% win  ·  +15.76u  ·  +6.5% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 105-73 (+13%)  ·  Total 48-41 (+3%)  ·  Run Line 27-31 (-11%)
-- **by side:** Over 13-10 (+8%)  ·  team 132-104 (+7%)  ·  Under 35-31 (+1%)
-- **by fav_band:** unknown 20-12 (+19%)  ·  fav 42-31 (+10%)  ·  pickem 91-69 (+9%)  ·  heavy fav 7-8 (-11%)  ·  dog 20-25 (-15%)
+- **by market:** Moneyline 108-73 (+14%)  ·  Total 49-43 (+2%)  ·  Run Line 27-31 (-11%)
+- **by side:** Over 13-10 (+8%)  ·  team 135-104 (+8%)  ·  Under 36-33 (-0%)
+- **by fav_band:** unknown 20-12 (+19%)  ·  fav 43-31 (+11%)  ·  pickem 93-71 (+8%)  ·  heavy fav 8-8 (-4%)  ·  dog 20-25 (-15%)
 
 ### Model B — segments (finding the winning slice)
 
-- **by market:** Total 35-24 (+13%)  ·  Moneyline 80-57 (+12%)  ·  Run Line 17-25 (-23%)
-- **by side:** Over 8-2 (+53%)  ·  Under 27-22 (+5%)  ·  team 97-82 (+4%)
-- **by fav_band:** unknown 2-1 (+27%)  ·  fav 35-24 (+13%)  ·  pickem 72-50 (+13%)  ·  dog 18-23 (-16%)  ·  heavy fav 5-8 (-26%)
+- **by market:** Moneyline 83-57 (+13%)  ·  Total 36-26 (+11%)  ·  Run Line 17-25 (-23%)
+- **by side:** Over 8-2 (+53%)  ·  team 100-82 (+5%)  ·  Under 28-24 (+3%)
+- **by fav_band:** unknown 2-1 (+27%)  ·  fav 36-24 (+15%)  ·  pickem 74-52 (+12%)  ·  dog 18-23 (-16%)  ·  heavy fav 6-8 (-18%)
 
 ## Model A — picks by date
+
+### 2026-07-17 — 4-2  (+1.64u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Cincinnati Reds @ Colorado Rockies | Total | Under 12.0 | 12.0 | **DraftKings -111** / FanDuel -114 | — | +0.91 |
+| ✅ WIN | PLAY | Washington Nationals @ Athletics | Moneyline | Washington Nationals ML | — | **FanDuel -104** / DraftKings -108 | — | +0.91 |
+| ✅ WIN | PLAY | Texas Rangers @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -215** / DraftKings -217 | — | +0.91 |
+| ✅ WIN | LEAN | Miami Marlins @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -146** / DraftKings -149 | — | +0.91 |
+| ❌ LOSS | PLAY | San Diego Padres @ Kansas City Royals | Total | Under 10.0 | 10.0 | **DraftKings -103** / FanDuel -104 | — | -1.00 |
+| ❌ LOSS | LEAN | Washington Nationals @ Athletics | Total | Under 10.0 | 10.0 | **DraftKings -108** / FanDuel -110 | — | -1.00 |
 
 ### 2026-07-16 — 1-0  (+0.91u)
 
@@ -541,6 +552,17 @@
 | ❌ LOSS | LEAN | Baltimore Orioles @ Toronto Blue Jays | Moneyline | Baltimore Orioles ML | — | — | — | -1.00 |
 
 ## Model B — picks by date
+
+### 2026-07-17 — 4-2  (+1.64u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Cincinnati Reds @ Colorado Rockies | Total | Under 12.0 | 12.0 | **DraftKings -111** / FanDuel -114 | — | +0.91 |
+| ✅ WIN | PLAY | Washington Nationals @ Athletics | Moneyline | Washington Nationals ML | — | **FanDuel -104** / DraftKings -108 | — | +0.91 |
+| ✅ WIN | PLAY | Texas Rangers @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -215** / DraftKings -217 | — | +0.91 |
+| ✅ WIN | LEAN | Miami Marlins @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -146** / DraftKings -149 | — | +0.91 |
+| ❌ LOSS | PLAY | San Diego Padres @ Kansas City Royals | Total | Under 10.0 | 10.0 | **DraftKings -103** / FanDuel -104 | — | -1.00 |
+| ❌ LOSS | PLAY | Washington Nationals @ Athletics | Total | Under 10.0 | 10.0 | **DraftKings -108** / FanDuel -110 | — | -1.00 |
 
 ### 2026-07-16 — 1-0  (+0.91u)
 

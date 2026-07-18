@@ -1,15 +1,46 @@
-# ⚡ B Divergence — 2026-07-17
+# ⚡ B Divergence — 2026-07-18
 
-### 2026-07-17 — B divergence
+### 2026-07-18 — B divergence
 | Type | Verdict | Score | Market | Pick | Game | Books |
 |---|---|---|---|---|---|---|
-| UPGRADE | PLAY (A: LEAN 6.4) | 7.0 | Total | Under 10.0 | Washington Nationals @ Athletics | **DraftKings -108** / FanDuel -110 |
+| NEW | LEAN | 5.7 | Total | Under 9.5 | Tampa Bay Rays @ Boston Red Sox | **FanDuel -110** / DraftKings -111 |
+| NEW | LEAN | 5.2 | Total | Under 10.5 | Washington Nationals @ Athletics | **DraftKings -106** / FanDuel -110 |
 
 ---
 
 # Locked Picks — A/B
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
+
+## 2026-07-18
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Cincinnati Reds @ Colorado Rockies | Total | Under 13.0 | 13.0 | **FanDuel -106** / DraftKings -115 |
+| A | PLAY | 9.5 | San Diego Padres @ Kansas City Royals | Moneyline | Kansas City Royals ML | — | **FanDuel +100** / DraftKings -102 |
+| A | PLAY | 9.5 | Texas Rangers @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -112** / DraftKings -117 |
+| A | PLAY | 9.5 | Washington Nationals @ Athletics | Moneyline | Washington Nationals ML | — | **FanDuel +110** / DraftKings +108 |
+| A | PLAY | 9.3 | San Diego Padres @ Kansas City Royals | Total | Under 10.5 | 10.5 | **DraftKings +100** / FanDuel -104 |
+| A | PLAY | 8.8 | San Francisco Giants @ Seattle Mariners | Moneyline | San Francisco Giants ML | — | **FanDuel +116** / DraftKings +112 |
+| A | PLAY | 7.1 | San Diego Padres @ Kansas City Royals | Run Line | Kansas City Royals -1.5 | — | **FanDuel -156** / DraftKings -163 |
+| A | PLAY | 7.1 | Texas Rangers @ Atlanta Braves | Run Line | Atlanta Braves -1.5 | — | **FanDuel -192** / DraftKings -192 |
+| A | LEAN | 6.5 | Minnesota Twins @ Chicago Cubs | Moneyline | Minnesota Twins ML | — | **FanDuel +120** / DraftKings +119 |
+| A | LEAN | 6.5 | Tampa Bay Rays @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **FanDuel -120** / DraftKings -120 |
+| A | LEAN | 5.9 | Pittsburgh Pirates @ Cleveland Guardians | Moneyline | Pittsburgh Pirates ML | — | **FanDuel +108** / DraftKings -112 |
+| A | LEAN | 5.0 | Pittsburgh Pirates @ Cleveland Guardians | Total | Over 7.5 | 7.5 | **FanDuel -105** / DraftKings -118 |
+| B | PLAY | 9.5 | Cincinnati Reds @ Colorado Rockies | Total | Under 13.0 | 13.0 | **FanDuel -106** / DraftKings -115 |
+| B | PLAY | 9.5 | San Diego Padres @ Kansas City Royals | Moneyline | Kansas City Royals ML | — | **FanDuel +100** / DraftKings -102 |
+| B | PLAY | 9.5 | San Diego Padres @ Kansas City Royals | Total | Under 10.5 | 10.5 | **DraftKings +100** / FanDuel -104 |
+| B | PLAY | 9.5 | Texas Rangers @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -112** / DraftKings -117 |
+| B | PLAY | 9.5 | Washington Nationals @ Athletics | Moneyline | Washington Nationals ML | — | **FanDuel +110** / DraftKings +108 |
+| B | PLAY | 8.8 | San Francisco Giants @ Seattle Mariners | Moneyline | San Francisco Giants ML | — | **FanDuel +116** / DraftKings +112 |
+| B | PLAY | 7.1 | San Diego Padres @ Kansas City Royals | Run Line | Kansas City Royals -1.5 | — | **FanDuel -156** / DraftKings -163 |
+| B | PLAY | 7.1 | Texas Rangers @ Atlanta Braves | Run Line | Atlanta Braves -1.5 | — | **FanDuel -192** / DraftKings -192 |
+| B | LEAN | 6.5 | Minnesota Twins @ Chicago Cubs | Moneyline | Minnesota Twins ML | — | **FanDuel +120** / DraftKings +119 |
+| B | LEAN | 6.5 | Tampa Bay Rays @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **FanDuel -120** / DraftKings -120 |
+| B | LEAN | 5.9 | Pittsburgh Pirates @ Cleveland Guardians | Moneyline | Pittsburgh Pirates ML | — | **FanDuel +108** / DraftKings -112 |
+| B | LEAN | 5.7 | Tampa Bay Rays @ Boston Red Sox | Total | Under 9.5 | 9.5 | **FanDuel -110** / DraftKings -111 |
+| B | LEAN | 5.2 | Washington Nationals @ Athletics | Total | Under 10.5 | 10.5 | **DraftKings -106** / FanDuel -110 |
 
 ## 2026-07-17
 
