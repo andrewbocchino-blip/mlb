@@ -2,24 +2,41 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 184-147  ·  56% win  ·  +20.44u  ·  +6.2% ROI  ·  avg CLV n/a (no closing lines yet)**
-**Model B: 136-108  ·  56% win  ·  +15.76u  ·  +6.5% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 189-153  ·  55% win  ·  +18.99u  ·  +5.6% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model B: 140-116  ·  55% win  ·  +11.40u  ·  +4.5% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 108-73 (+14%)  ·  Total 49-43 (+2%)  ·  Run Line 27-31 (-11%)
-- **by side:** Over 13-10 (+8%)  ·  team 135-104 (+8%)  ·  Under 36-33 (-0%)
-- **by fav_band:** unknown 20-12 (+19%)  ·  fav 43-31 (+11%)  ·  pickem 93-71 (+8%)  ·  heavy fav 8-8 (-4%)  ·  dog 20-25 (-15%)
+- **by market:** Moneyline 110-78 (+12%)  ·  Total 51-43 (+4%)  ·  Run Line 28-32 (-11%)
+- **by side:** Over 14-10 (+11%)  ·  team 138-110 (+6%)  ·  Under 37-33 (+1%)
+- **by fav_band:** unknown 20-12 (+19%)  ·  fav 44-32 (+11%)  ·  pickem 97-73 (+9%)  ·  heavy fav 8-8 (-4%)  ·  dog 20-28 (-20%)
 
 ### Model B — segments (finding the winning slice)
 
-- **by market:** Moneyline 83-57 (+13%)  ·  Total 36-26 (+11%)  ·  Run Line 17-25 (-23%)
-- **by side:** Over 8-2 (+53%)  ·  team 100-82 (+5%)  ·  Under 28-24 (+3%)
-- **by fav_band:** unknown 2-1 (+27%)  ·  fav 36-24 (+15%)  ·  pickem 74-52 (+12%)  ·  dog 18-23 (-16%)  ·  heavy fav 6-8 (-18%)
+- **by market:** Moneyline 85-62 (+10%)  ·  Total 37-28 (+9%)  ·  Run Line 18-26 (-22%)
+- **by side:** Over 8-2 (+53%)  ·  team 103-88 (+3%)  ·  Under 29-26 (+1%)
+- **by fav_band:** unknown 2-1 (+27%)  ·  fav 37-25 (+14%)  ·  pickem 77-56 (+11%)  ·  heavy fav 6-8 (-18%)  ·  dog 18-26 (-22%)
 
 ## Model A — picks by date
+
+### 2026-07-18 — 5-6  (-1.45u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | San Diego Padres @ Kansas City Royals | Moneyline | Kansas City Royals ML | — | **FanDuel +100** / DraftKings -102 | — | +0.91 |
+| ✅ WIN | PLAY | San Diego Padres @ Kansas City Royals | Total | Under 10.5 | 10.5 | **DraftKings +100** / FanDuel -104 | — | +0.91 |
+| ✅ WIN | PLAY | San Diego Padres @ Kansas City Royals | Run Line | Kansas City Royals -1.5 | — | **FanDuel -156** / DraftKings -163 | — | +0.91 |
+| ✅ WIN | LEAN | Tampa Bay Rays @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **FanDuel -120** / DraftKings -120 | — | +0.91 |
+| ✅ WIN | LEAN | Pittsburgh Pirates @ Cleveland Guardians | Total | Over 7.5 | 7.5 | **FanDuel -105** / DraftKings -118 | — | +0.91 |
+| ➖ PUSH | PLAY | Cincinnati Reds @ Colorado Rockies | Total | Under 13.0 | 13.0 | **FanDuel -106** / DraftKings -115 | — | +0.00 |
+| ❌ LOSS | PLAY | Texas Rangers @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -112** / DraftKings -117 | — | -1.00 |
+| ❌ LOSS | PLAY | Washington Nationals @ Athletics | Moneyline | Washington Nationals ML | — | **FanDuel +110** / DraftKings +108 | — | -1.00 |
+| ❌ LOSS | PLAY | San Francisco Giants @ Seattle Mariners | Moneyline | San Francisco Giants ML | — | **FanDuel +116** / DraftKings +112 | — | -1.00 |
+| ❌ LOSS | PLAY | Texas Rangers @ Atlanta Braves | Run Line | Atlanta Braves -1.5 | — | **FanDuel -192** / DraftKings -192 | — | -1.00 |
+| ❌ LOSS | LEAN | Minnesota Twins @ Chicago Cubs | Moneyline | Minnesota Twins ML | — | **FanDuel +120** / DraftKings +119 | — | -1.00 |
+| ❌ LOSS | LEAN | Pittsburgh Pirates @ Cleveland Guardians | Moneyline | Pittsburgh Pirates ML | — | **FanDuel +108** / DraftKings -112 | — | -1.00 |
 
 ### 2026-07-17 — 4-2  (+1.64u)
 
@@ -552,6 +569,24 @@
 | ❌ LOSS | LEAN | Baltimore Orioles @ Toronto Blue Jays | Moneyline | Baltimore Orioles ML | — | — | — | -1.00 |
 
 ## Model B — picks by date
+
+### 2026-07-18 — 4-8  (-4.36u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | San Diego Padres @ Kansas City Royals | Moneyline | Kansas City Royals ML | — | **FanDuel +100** / DraftKings -102 | — | +0.91 |
+| ✅ WIN | PLAY | San Diego Padres @ Kansas City Royals | Total | Under 10.5 | 10.5 | **DraftKings +100** / FanDuel -104 | — | +0.91 |
+| ✅ WIN | PLAY | San Diego Padres @ Kansas City Royals | Run Line | Kansas City Royals -1.5 | — | **FanDuel -156** / DraftKings -163 | — | +0.91 |
+| ✅ WIN | LEAN | Tampa Bay Rays @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **FanDuel -120** / DraftKings -120 | — | +0.91 |
+| ➖ PUSH | PLAY | Cincinnati Reds @ Colorado Rockies | Total | Under 13.0 | 13.0 | **FanDuel -106** / DraftKings -115 | — | +0.00 |
+| ❌ LOSS | PLAY | Texas Rangers @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -112** / DraftKings -117 | — | -1.00 |
+| ❌ LOSS | PLAY | Washington Nationals @ Athletics | Moneyline | Washington Nationals ML | — | **FanDuel +110** / DraftKings +108 | — | -1.00 |
+| ❌ LOSS | PLAY | San Francisco Giants @ Seattle Mariners | Moneyline | San Francisco Giants ML | — | **FanDuel +116** / DraftKings +112 | — | -1.00 |
+| ❌ LOSS | PLAY | Texas Rangers @ Atlanta Braves | Run Line | Atlanta Braves -1.5 | — | **FanDuel -192** / DraftKings -192 | — | -1.00 |
+| ❌ LOSS | LEAN | Minnesota Twins @ Chicago Cubs | Moneyline | Minnesota Twins ML | — | **FanDuel +120** / DraftKings +119 | — | -1.00 |
+| ❌ LOSS | LEAN | Pittsburgh Pirates @ Cleveland Guardians | Moneyline | Pittsburgh Pirates ML | — | **FanDuel +108** / DraftKings -112 | — | -1.00 |
+| ❌ LOSS | LEAN | Tampa Bay Rays @ Boston Red Sox | Total | Under 9.5 | 9.5 | **FanDuel -110** / DraftKings -111 | — | -1.00 |
+| ❌ LOSS | LEAN | Washington Nationals @ Athletics | Total | Under 10.5 | 10.5 | **DraftKings -106** / FanDuel -110 | — | -1.00 |
 
 ### 2026-07-17 — 4-2  (+1.64u)
 

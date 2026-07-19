@@ -1,16 +1,47 @@
-# ⚡ B Divergence — 2026-07-18
+# ⚡ B Divergence — 2026-07-19
 
-### 2026-07-18 — B divergence
+### 2026-07-19 — B divergence
 | Type | Verdict | Score | Market | Pick | Game | Books |
 |---|---|---|---|---|---|---|
-| NEW | LEAN | 5.7 | Total | Under 9.5 | Tampa Bay Rays @ Boston Red Sox | **FanDuel -110** / DraftKings -111 |
-| NEW | LEAN | 5.2 | Total | Under 10.5 | Washington Nationals @ Athletics | **DraftKings -106** / FanDuel -110 |
+| NEW | LEAN | 5.4 | Total | Under 9.0 | New York Mets @ Philadelphia Phillies | **FanDuel +100** / DraftKings -119 |
 
 ---
 
 # Locked Picks — A/B
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
+
+## 2026-07-19
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Los Angeles Dodgers @ New York Yankees | Total | Over 7.5 | 7.5 | **FanDuel -110** / DraftKings -110 |
+| A | PLAY | 9.5 | Texas Rangers @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel +104** / DraftKings +100 |
+| A | PLAY | 9.5 | Cincinnati Reds @ Colorado Rockies | Total | Under 11.5 | 11.5 | **DraftKings -108** / FanDuel -122 |
+| A | PLAY | 8.3 | Pittsburgh Pirates @ Cleveland Guardians | Moneyline | Pittsburgh Pirates ML | — | **FanDuel -124** / DraftKings -131 |
+| A | PLAY | 8.3 | San Diego Padres @ Kansas City Royals | Moneyline | Kansas City Royals ML | — | **DraftKings -131** / FanDuel -134 |
+| A | PLAY | 7.1 | Texas Rangers @ Atlanta Braves | Run Line | Atlanta Braves -1.5 | — | **FanDuel -156** / DraftKings -163 |
+| A | PLAY | 7.1 | San Diego Padres @ Kansas City Royals | Total | Under 10.5 | 10.5 | **DraftKings -105** / FanDuel -122 |
+| A | PLAY | 7.1 | Minnesota Twins @ Chicago Cubs | Total | Over 8.0 | 8.0 | **FanDuel -102** / DraftKings -110 |
+| A | LEAN | 6.2 | Pittsburgh Pirates @ Cleveland Guardians | Run Line | Pittsburgh Pirates -1.5 | — | **FanDuel +146** / DraftKings +139 |
+| A | LEAN | 6.1 | Washington Nationals @ Athletics | Moneyline | Washington Nationals ML | — | **FanDuel -130** / DraftKings -143 |
+| A | LEAN | 5.9 | Minnesota Twins @ Chicago Cubs | Moneyline | Chicago Cubs ML | — | **FanDuel -162** / DraftKings -169 |
+| A | LEAN | 5.5 | Cincinnati Reds @ Colorado Rockies | Moneyline | Colorado Rockies ML | — | **FanDuel +120** / DraftKings +119 |
+| A | LEAN | 5.1 | St. Louis Cardinals @ Arizona Diamondbacks | Total | Under 9.0 | 9.0 | **FanDuel -112** / DraftKings -112 |
+| B | PLAY | 9.5 | Texas Rangers @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel +104** / DraftKings +100 |
+| B | PLAY | 9.5 | Cincinnati Reds @ Colorado Rockies | Total | Under 11.5 | 11.5 | **DraftKings -108** / FanDuel -122 |
+| B | PLAY | 8.5 | Los Angeles Dodgers @ New York Yankees | Total | Over 7.5 | 7.5 | **FanDuel -110** / DraftKings -110 |
+| B | PLAY | 8.3 | Pittsburgh Pirates @ Cleveland Guardians | Moneyline | Pittsburgh Pirates ML | — | **FanDuel -124** / DraftKings -131 |
+| B | PLAY | 8.3 | San Diego Padres @ Kansas City Royals | Moneyline | Kansas City Royals ML | — | **DraftKings -131** / FanDuel -134 |
+| B | PLAY | 8.2 | San Diego Padres @ Kansas City Royals | Total | Under 10.5 | 10.5 | **DraftKings -105** / FanDuel -122 |
+| B | PLAY | 7.1 | Texas Rangers @ Atlanta Braves | Run Line | Atlanta Braves -1.5 | — | **FanDuel -156** / DraftKings -163 |
+| B | LEAN | 6.2 | Pittsburgh Pirates @ Cleveland Guardians | Run Line | Pittsburgh Pirates -1.5 | — | **FanDuel +146** / DraftKings +139 |
+| B | LEAN | 6.2 | Minnesota Twins @ Chicago Cubs | Total | Over 8.0 | 8.0 | **FanDuel -102** / DraftKings -110 |
+| B | LEAN | 6.1 | Washington Nationals @ Athletics | Moneyline | Washington Nationals ML | — | **FanDuel -130** / DraftKings -143 |
+| B | LEAN | 5.9 | Minnesota Twins @ Chicago Cubs | Moneyline | Chicago Cubs ML | — | **FanDuel -162** / DraftKings -169 |
+| B | LEAN | 5.5 | Cincinnati Reds @ Colorado Rockies | Moneyline | Colorado Rockies ML | — | **FanDuel +120** / DraftKings +119 |
+| B | LEAN | 5.5 | St. Louis Cardinals @ Arizona Diamondbacks | Total | Under 9.0 | 9.0 | **FanDuel -112** / DraftKings -112 |
+| B | LEAN | 5.4 | New York Mets @ Philadelphia Phillies | Total | Under 9.0 | 9.0 | **FanDuel +100** / DraftKings -119 |
 
 ## 2026-07-18
 
