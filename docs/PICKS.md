@@ -1,15 +1,36 @@
-# ⚡ B Divergence — 2026-07-20
+# ⚡ B Divergence — 2026-07-21
 
-### 2026-07-20 — B divergence
+### 2026-07-21 — B divergence
 | Type | Verdict | Score | Market | Pick | Game | Books |
 |---|---|---|---|---|---|---|
-| UPGRADE | PLAY (A: LEAN 5.7) | 7.0 | Total | Under 12.0 | Washington Nationals @ Colorado Rockies | **FanDuel -102** / DraftKings -114 |
+| UPGRADE | PLAY (A: LEAN 5.7) | 7.4 | Total | Under 13.0 | Washington Nationals @ Colorado Rockies | **FanDuel +100** / DraftKings -113 |
 
 ---
 
 # Locked Picks — A/B
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
+
+## 2026-07-21
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | San Diego Padres @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -144** / DraftKings -149 |
+| A | PLAY | 8.1 | New York Mets @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -142** / DraftKings -149 |
+| A | PLAY | 7.2 | Baltimore Orioles @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **FanDuel -136** / DraftKings -144 |
+| A | PLAY | 7.1 | San Diego Padres @ Atlanta Braves | Run Line | Atlanta Braves -1.5 | — | **FanDuel +140** / DraftKings +138 |
+| A | LEAN | 6.8 | Tampa Bay Rays @ Toronto Blue Jays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -112** / DraftKings -115 |
+| A | LEAN | 5.7 | Washington Nationals @ Colorado Rockies | Total | Under 13.0 | 13.0 | **FanDuel +100** / DraftKings -113 |
+| A | LEAN | 5.3 | Washington Nationals @ Colorado Rockies | Moneyline | Washington Nationals ML | — | **FanDuel -102** / DraftKings -106 |
+| A | LEAN | 5.1 | Tampa Bay Rays @ Toronto Blue Jays | Run Line | Tampa Bay Rays -1.5 | — | **FanDuel +152** / DraftKings +149 |
+| B | PLAY | 9.5 | San Diego Padres @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -144** / DraftKings -149 |
+| B | PLAY | 8.1 | New York Mets @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -142** / DraftKings -149 |
+| B | PLAY | 7.4 | Washington Nationals @ Colorado Rockies | Total | Under 13.0 | 13.0 | **FanDuel +100** / DraftKings -113 |
+| B | PLAY | 7.2 | Baltimore Orioles @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **FanDuel -136** / DraftKings -144 |
+| B | PLAY | 7.1 | San Diego Padres @ Atlanta Braves | Run Line | Atlanta Braves -1.5 | — | **FanDuel +140** / DraftKings +138 |
+| B | LEAN | 6.8 | Tampa Bay Rays @ Toronto Blue Jays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -112** / DraftKings -115 |
+| B | LEAN | 5.3 | Washington Nationals @ Colorado Rockies | Moneyline | Washington Nationals ML | — | **FanDuel -102** / DraftKings -106 |
+| B | LEAN | 5.1 | Tampa Bay Rays @ Toronto Blue Jays | Run Line | Tampa Bay Rays -1.5 | — | **FanDuel +152** / DraftKings +149 |
 
 ## 2026-07-20
 
