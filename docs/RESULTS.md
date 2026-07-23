@@ -2,24 +2,35 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 206-167  ·  55% win  ·  +20.46u  ·  +5.5% ROI  ·  avg CLV n/a (no closing lines yet)**
-**Model B: 157-130  ·  55% win  ·  +12.87u  ·  +4.5% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 211-168  ·  56% win  ·  +24.01u  ·  +6.3% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model B: 162-131  ·  55% win  ·  +16.42u  ·  +5.6% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 119-84 (+12%)  ·  Total 55-49 (+1%)  ·  Run Line 32-34 (-7%)
-- **by side:** Over 16-11 (+13%)  ·  team 151-118 (+7%)  ·  Under 39-38 (-3%)
-- **by fav_band:** unknown 20-12 (+19%)  ·  pickem 107-80 (+9%)  ·  fav 48-36 (+9%)  ·  heavy fav 8-8 (-4%)  ·  dog 23-31 (-19%)
+- **by market:** Moneyline 122-85 (+13%)  ·  Total 56-49 (+2%)  ·  Run Line 33-34 (-6%)
+- **by side:** Over 16-11 (+13%)  ·  team 155-119 (+8%)  ·  Under 40-38 (-2%)
+- **by fav_band:** unknown 20-12 (+19%)  ·  pickem 111-80 (+11%)  ·  fav 48-37 (+8%)  ·  heavy fav 8-8 (-4%)  ·  dog 24-31 (-17%)
 
 ### Model B — segments (finding the winning slice)
 
-- **by market:** Moneyline 94-68 (+11%)  ·  Total 41-34 (+4%)  ·  Run Line 22-28 (-16%)
-- **by side:** Over 9-3 (+43%)  ·  team 116-96 (+4%)  ·  Under 32-31 (-3%)
-- **by fav_band:** unknown 2-1 (+27%)  ·  fav 41-29 (+12%)  ·  pickem 87-63 (+11%)  ·  heavy fav 6-8 (-18%)  ·  dog 21-29 (-20%)
+- **by market:** Moneyline 97-69 (+12%)  ·  Total 42-34 (+6%)  ·  Run Line 23-28 (-14%)
+- **by side:** Over 9-3 (+43%)  ·  team 120-97 (+6%)  ·  Under 33-31 (-2%)
+- **by fav_band:** unknown 2-1 (+27%)  ·  pickem 91-63 (+13%)  ·  fav 41-30 (+10%)  ·  dog 22-29 (-18%)  ·  heavy fav 6-8 (-18%)
 
 ## Model A — picks by date
+
+### 2026-07-22 — 5-1  (+3.55u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Washington Nationals @ Colorado Rockies | Total | Under 11.5 | 11.5 | **DraftKings -115** / FanDuel -118 | — | +0.91 |
+| ✅ WIN | PLAY | Tampa Bay Rays @ Toronto Blue Jays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -104** / DraftKings -110 | — | +0.91 |
+| ✅ WIN | PLAY | San Diego Padres @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -118** / DraftKings -120 | — | +0.91 |
+| ✅ WIN | PLAY | Los Angeles Dodgers @ Philadelphia Phillies | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -112** / DraftKings -120 | — | +0.91 |
+| ✅ WIN | LEAN | Los Angeles Dodgers @ Philadelphia Phillies | Run Line | Los Angeles Dodgers -1.5 | — | **FanDuel +138** / DraftKings +129 | — | +0.91 |
+| ❌ LOSS | LEAN | Baltimore Orioles @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **FanDuel -144** / DraftKings -147 | — | -1.00 |
 
 ### 2026-07-21 — 2-5  (-3.18u)
 
@@ -615,6 +626,17 @@
 | ❌ LOSS | LEAN | Baltimore Orioles @ Toronto Blue Jays | Moneyline | Baltimore Orioles ML | — | — | — | -1.00 |
 
 ## Model B — picks by date
+
+### 2026-07-22 — 5-1  (+3.55u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Washington Nationals @ Colorado Rockies | Total | Under 11.5 | 11.5 | **DraftKings -115** / FanDuel -118 | — | +0.91 |
+| ✅ WIN | PLAY | Tampa Bay Rays @ Toronto Blue Jays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -104** / DraftKings -110 | — | +0.91 |
+| ✅ WIN | PLAY | San Diego Padres @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -118** / DraftKings -120 | — | +0.91 |
+| ✅ WIN | PLAY | Los Angeles Dodgers @ Philadelphia Phillies | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -112** / DraftKings -120 | — | +0.91 |
+| ✅ WIN | LEAN | Los Angeles Dodgers @ Philadelphia Phillies | Run Line | Los Angeles Dodgers -1.5 | — | **FanDuel +138** / DraftKings +129 | — | +0.91 |
+| ❌ LOSS | LEAN | Baltimore Orioles @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **FanDuel -144** / DraftKings -147 | — | -1.00 |
 
 ### 2026-07-21 — 2-5  (-3.18u)
 
