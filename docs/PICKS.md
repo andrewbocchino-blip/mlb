@@ -1,15 +1,27 @@
-# ⚡ B Divergence — 2026-07-25
-
-### 2026-07-25 — B divergence
-| Type | Verdict | Score | Market | Pick | Game | Books |
-|---|---|---|---|---|---|---|
-| UPGRADE | PLAY (A: LEAN 6.6) | 7.5 | Total | Under 10.5 | Athletics @ Minnesota Twins | **FanDuel -110** / DraftKings -114 |
-
----
-
 # Locked Picks — A/B
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
+
+## 2026-07-26
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Cleveland Guardians @ Tampa Bay Rays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -142** / DraftKings -143 |
+| A | PLAY | 9.5 | Colorado Rockies @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -320** / DraftKings -340 |
+| A | PLAY | 9.5 | Colorado Rockies @ Milwaukee Brewers | Total | Over 7.5 | 7.5 | **FanDuel -114** / DraftKings -118 |
+| A | PLAY | 8.9 | Los Angeles Dodgers @ New York Mets | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -154** / DraftKings -172 |
+| A | PLAY | 8.5 | Atlanta Braves @ Baltimore Orioles | Moneyline | Atlanta Braves ML | — | **FanDuel -104** / DraftKings -106 |
+| A | PLAY | 7.1 | Colorado Rockies @ Milwaukee Brewers | Run Line | Milwaukee Brewers -1.5 | — | **FanDuel -144** / DraftKings -149 |
+| A | LEAN | 5.7 | Seattle Mariners @ Texas Rangers | Moneyline | Texas Rangers ML | — | **FanDuel -110** / DraftKings -111 |
+| A | LEAN | 5.3 | Cincinnati Reds @ St. Louis Cardinals | Total | Under 9.0 | 9.0 | **DraftKings -101** / FanDuel -122 |
+| B | PLAY | 9.5 | Cleveland Guardians @ Tampa Bay Rays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -142** / DraftKings -143 |
+| B | PLAY | 9.5 | Colorado Rockies @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -320** / DraftKings -340 |
+| B | PLAY | 8.9 | Los Angeles Dodgers @ New York Mets | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -154** / DraftKings -172 |
+| B | PLAY | 8.8 | Colorado Rockies @ Milwaukee Brewers | Total | Over 7.5 | 7.5 | **FanDuel -114** / DraftKings -118 |
+| B | PLAY | 8.5 | Atlanta Braves @ Baltimore Orioles | Moneyline | Atlanta Braves ML | — | **FanDuel -104** / DraftKings -106 |
+| B | PLAY | 7.1 | Colorado Rockies @ Milwaukee Brewers | Run Line | Milwaukee Brewers -1.5 | — | **FanDuel -144** / DraftKings -149 |
+| B | LEAN | 5.8 | Cincinnati Reds @ St. Louis Cardinals | Total | Under 9.0 | 9.0 | **DraftKings -101** / FanDuel -122 |
+| B | LEAN | 5.7 | Seattle Mariners @ Texas Rangers | Moneyline | Texas Rangers ML | — | **FanDuel -110** / DraftKings -111 |
 
 ## 2026-07-25
 
