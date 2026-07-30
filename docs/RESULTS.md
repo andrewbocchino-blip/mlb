@@ -2,24 +2,41 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 238-189  ·  56% win  ·  +27.58u  ·  +6.5% ROI  ·  avg CLV n/a (no closing lines yet)**
-**Model B: 191-150  ·  56% win  ·  +23.81u  ·  +7.0% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 242-197  ·  55% win  ·  +23.22u  ·  +5.3% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model B: 196-157  ·  56% win  ·  +21.36u  ·  +6.1% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 139-99 (+12%)  ·  Total 61-51 (+4%)  ·  Run Line 38-39 (-6%)
-- **by side:** Over 18-12 (+15%)  ·  team 177-138 (+7%)  ·  Under 43-39 (+0%)
-- **by fav_band:** unknown 20-12 (+19%)  ·  pickem 122-91 (+9%)  ·  fav 58-44 (+9%)  ·  heavy fav 11-9 (+5%)  ·  dog 27-33 (-14%)
+- **by market:** Moneyline 142-104 (+10%)  ·  Total 62-52 (+4%)  ·  Run Line 38-41 (-8%)
+- **by side:** Over 18-13 (+11%)  ·  team 180-145 (+6%)  ·  Under 44-39 (+1%)
+- **by fav_band:** unknown 20-12 (+19%)  ·  fav 61-45 (+10%)  ·  pickem 123-96 (+7%)  ·  heavy fav 11-9 (+5%)  ·  dog 27-35 (-17%)
 
 ### Model B — segments (finding the winning slice)
 
-- **by market:** Total 50-35 (+12%)  ·  Moneyline 114-83 (+10%)  ·  Run Line 27-32 (-13%)
-- **by side:** Over 11-3 (+50%)  ·  team 141-115 (+5%)  ·  Under 39-32 (+5%)
-- **by fav_band:** unknown 2-1 (+27%)  ·  pickem 104-73 (+12%)  ·  fav 51-37 (+11%)  ·  heavy fav 9-9 (-4%)  ·  dog 25-30 (-13%)
+- **by market:** Total 52-35 (+14%)  ·  Moneyline 117-88 (+9%)  ·  Run Line 27-34 (-16%)
+- **by side:** Over 11-3 (+50%)  ·  Under 41-32 (+7%)  ·  team 144-122 (+3%)
+- **by fav_band:** unknown 2-1 (+27%)  ·  fav 54-38 (+12%)  ·  pickem 106-77 (+11%)  ·  heavy fav 9-9 (-4%)  ·  dog 25-32 (-16%)
 
 ## Model A — picks by date
+
+### 2026-07-29 — 4-8  (-4.36u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Seattle Mariners @ Los Angeles Dodgers | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -144** / DraftKings -150 | — | +0.91 |
+| ✅ WIN | PLAY | Texas Rangers @ Tampa Bay Rays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -138** / DraftKings -143 | — | +0.91 |
+| ✅ WIN | PLAY | Boston Red Sox @ Athletics | Moneyline | Boston Red Sox ML | — | **FanDuel -154** / DraftKings -156 | — | +0.91 |
+| ✅ WIN | PLAY | Boston Red Sox @ Athletics | Total | Under 10.5 | 10.5 | **FanDuel -102** / DraftKings -106 | — | +0.91 |
+| ❌ LOSS | PLAY | Baltimore Orioles @ Detroit Tigers | Moneyline | Detroit Tigers ML | — | **FanDuel -174** / DraftKings -180 | — | -1.00 |
+| ❌ LOSS | PLAY | Milwaukee Brewers @ San Francisco Giants | Moneyline | Milwaukee Brewers ML | — | **FanDuel -122** / DraftKings -126 | — | -1.00 |
+| ❌ LOSS | PLAY | Chicago Cubs @ St. Louis Cardinals | Moneyline | Chicago Cubs ML | — | **FanDuel -116** / DraftKings -127 | — | -1.00 |
+| ❌ LOSS | PLAY | Milwaukee Brewers @ San Francisco Giants | Run Line | Milwaukee Brewers -1.5 | — | **FanDuel +140** / DraftKings +138 | — | -1.00 |
+| ❌ LOSS | PLAY | Chicago Cubs @ St. Louis Cardinals | Run Line | Chicago Cubs -1.5 | — | **FanDuel +146** / DraftKings +131 | — | -1.00 |
+| ❌ LOSS | LEAN | Arizona Diamondbacks @ Pittsburgh Pirates | Moneyline | Pittsburgh Pirates ML | — | **DraftKings -129** / FanDuel -134 | — | -1.00 |
+| ❌ LOSS | LEAN | Toronto Blue Jays @ Washington Nationals | Moneyline | Washington Nationals ML | — | **FanDuel +106** / DraftKings +102 | — | -1.00 |
+| ❌ LOSS | LEAN | Texas Rangers @ Tampa Bay Rays | Total | Over 7.5 | 7.5 | **DraftKings -107** / FanDuel -108 | — | -1.00 |
 
 ### 2026-07-28 — 8-7  (+0.28u)
 
@@ -704,6 +721,23 @@
 | ❌ LOSS | LEAN | Baltimore Orioles @ Toronto Blue Jays | Moneyline | Baltimore Orioles ML | — | — | — | -1.00 |
 
 ## Model B — picks by date
+
+### 2026-07-29 — 5-7  (-2.45u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Seattle Mariners @ Los Angeles Dodgers | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -144** / DraftKings -150 | — | +0.91 |
+| ✅ WIN | PLAY | Boston Red Sox @ Athletics | Total | Under 10.5 | 10.5 | **FanDuel -102** / DraftKings -106 | — | +0.91 |
+| ✅ WIN | PLAY | Texas Rangers @ Tampa Bay Rays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -138** / DraftKings -143 | — | +0.91 |
+| ✅ WIN | PLAY | Boston Red Sox @ Athletics | Moneyline | Boston Red Sox ML | — | **FanDuel -154** / DraftKings -156 | — | +0.91 |
+| ✅ WIN | LEAN | Seattle Mariners @ Los Angeles Dodgers | Total | Under 9.5 | 9.5 | **DraftKings -117** / FanDuel -122 | — | +0.91 |
+| ❌ LOSS | PLAY | Baltimore Orioles @ Detroit Tigers | Moneyline | Detroit Tigers ML | — | **FanDuel -174** / DraftKings -180 | — | -1.00 |
+| ❌ LOSS | PLAY | Milwaukee Brewers @ San Francisco Giants | Moneyline | Milwaukee Brewers ML | — | **FanDuel -122** / DraftKings -126 | — | -1.00 |
+| ❌ LOSS | PLAY | Chicago Cubs @ St. Louis Cardinals | Moneyline | Chicago Cubs ML | — | **FanDuel -116** / DraftKings -127 | — | -1.00 |
+| ❌ LOSS | PLAY | Milwaukee Brewers @ San Francisco Giants | Run Line | Milwaukee Brewers -1.5 | — | **FanDuel +140** / DraftKings +138 | — | -1.00 |
+| ❌ LOSS | PLAY | Chicago Cubs @ St. Louis Cardinals | Run Line | Chicago Cubs -1.5 | — | **FanDuel +146** / DraftKings +131 | — | -1.00 |
+| ❌ LOSS | LEAN | Arizona Diamondbacks @ Pittsburgh Pirates | Moneyline | Pittsburgh Pirates ML | — | **DraftKings -129** / FanDuel -134 | — | -1.00 |
+| ❌ LOSS | LEAN | Toronto Blue Jays @ Washington Nationals | Moneyline | Washington Nationals ML | — | **FanDuel +106** / DraftKings +102 | — | -1.00 |
 
 ### 2026-07-28 — 10-6  (+3.10u)
 
