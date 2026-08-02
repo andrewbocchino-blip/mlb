@@ -1,15 +1,39 @@
-# ⚡ B Divergence — 2026-08-01
+# ⚡ B Divergence — 2026-08-02
 
-### 2026-08-01 — B divergence
+### 2026-08-02 — B divergence
 | Type | Verdict | Score | Market | Pick | Game | Books |
 |---|---|---|---|---|---|---|
-| NEW | LEAN | 5.8 | Total | Under 10.5 | Detroit Tigers @ Athletics | **FanDuel +100** / DraftKings +100 |
+| NEW | LEAN | 5.5 | Moneyline | Colorado Rockies ML | Kansas City Royals @ Colorado Rockies | **FanDuel -110** / DraftKings -114 |
 
 ---
 
 # Locked Picks — A/B
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
+
+## 2026-08-02
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Texas Rangers @ Houston Astros | Moneyline | Houston Astros ML | — | **FanDuel -122** / DraftKings -126 |
+| A | PLAY | 9.5 | New York Yankees @ Chicago Cubs | Total | Over 6.5 | 6.5 | **DraftKings -111** / FanDuel -115 |
+| A | PLAY | 9.5 | Kansas City Royals @ Colorado Rockies | Total | Under 12.5 | 12.5 | **DraftKings -103** / FanDuel -110 |
+| A | PLAY | 9.5 | Detroit Tigers @ Athletics | Moneyline | Detroit Tigers ML | — | **FanDuel -106** / DraftKings -115 |
+| A | PLAY | 9.5 | Detroit Tigers @ Athletics | Total | Under 11.5 | 11.5 | **DraftKings -112** / FanDuel -122 |
+| A | PLAY | 7.1 | Texas Rangers @ Houston Astros | Run Line | Houston Astros -1.5 | — | **DraftKings +163** / FanDuel +160 |
+| A | LEAN | 6.3 | Philadelphia Phillies @ Baltimore Orioles | Moneyline | Philadelphia Phillies ML | — | **FanDuel -128** / DraftKings -137 |
+| A | LEAN | 6.2 | San Francisco Giants @ San Diego Padres | Moneyline | San Diego Padres ML | — | **FanDuel -138** / DraftKings -150 |
+| A | LEAN | 5.0 | Texas Rangers @ Houston Astros | Total | Under 9.0 | 9.0 | **DraftKings +101** / FanDuel -120 |
+| B | PLAY | 9.5 | Texas Rangers @ Houston Astros | Moneyline | Houston Astros ML | — | **FanDuel -122** / DraftKings -126 |
+| B | PLAY | 9.5 | New York Yankees @ Chicago Cubs | Total | Over 6.5 | 6.5 | **DraftKings -111** / FanDuel -115 |
+| B | PLAY | 9.5 | Kansas City Royals @ Colorado Rockies | Total | Under 12.5 | 12.5 | **DraftKings -103** / FanDuel -110 |
+| B | PLAY | 9.5 | Detroit Tigers @ Athletics | Moneyline | Detroit Tigers ML | — | **FanDuel -106** / DraftKings -115 |
+| B | PLAY | 9.5 | Detroit Tigers @ Athletics | Total | Under 11.5 | 11.5 | **DraftKings -112** / FanDuel -122 |
+| B | PLAY | 7.1 | Texas Rangers @ Houston Astros | Run Line | Houston Astros -1.5 | — | **DraftKings +163** / FanDuel +160 |
+| B | LEAN | 6.3 | Philadelphia Phillies @ Baltimore Orioles | Moneyline | Philadelphia Phillies ML | — | **FanDuel -128** / DraftKings -137 |
+| B | LEAN | 6.2 | San Francisco Giants @ San Diego Padres | Moneyline | San Diego Padres ML | — | **FanDuel -138** / DraftKings -150 |
+| B | LEAN | 5.5 | Texas Rangers @ Houston Astros | Total | Under 9.0 | 9.0 | **DraftKings +101** / FanDuel -120 |
+| B | LEAN | 5.5 | Kansas City Royals @ Colorado Rockies | Moneyline | Colorado Rockies ML | — | **FanDuel -110** / DraftKings -114 |
 
 ## 2026-08-01
 
