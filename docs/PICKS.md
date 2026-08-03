@@ -1,15 +1,32 @@
-# ⚡ B Divergence — 2026-08-02
+# ⚡ B Divergence — 2026-08-03
 
-### 2026-08-02 — B divergence
+### 2026-08-03 — B divergence
 | Type | Verdict | Score | Market | Pick | Game | Books |
 |---|---|---|---|---|---|---|
-| NEW | LEAN | 5.5 | Moneyline | Colorado Rockies ML | Kansas City Royals @ Colorado Rockies | **FanDuel -110** / DraftKings -114 |
+| NEW | LEAN | 5.3 | Total | Under 9.0 | San Diego Padres @ Arizona Diamondbacks | **DraftKings -103** / FanDuel -115 |
 
 ---
 
 # Locked Picks — A/B
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
+
+## 2026-08-03
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | San Francisco Giants @ Texas Rangers | Moneyline | San Francisco Giants ML | — | **FanDuel +100** / DraftKings -110 |
+| A | PLAY | 9.5 | Tampa Bay Rays @ Colorado Rockies | Moneyline | Tampa Bay Rays ML | — | **FanDuel -156** / DraftKings -166 |
+| A | PLAY | 8.4 | Toronto Blue Jays @ Houston Astros | Moneyline | Houston Astros ML | — | **FanDuel -126** / DraftKings -136 |
+| A | PLAY | 7.9 | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.5 | 11.5 | **FanDuel -115** / DraftKings -115 |
+| A | LEAN | 6.4 | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 8.5 | 8.5 | **FanDuel -104** / DraftKings -106 |
+| A | LEAN | 5.1 | Los Angeles Dodgers @ Chicago Cubs | Total | Over 8.0 | 8.0 | **FanDuel -110** / DraftKings -113 |
+| B | PLAY | 9.5 | San Francisco Giants @ Texas Rangers | Moneyline | San Francisco Giants ML | — | **FanDuel +100** / DraftKings -110 |
+| B | PLAY | 9.5 | Tampa Bay Rays @ Colorado Rockies | Moneyline | Tampa Bay Rays ML | — | **FanDuel -156** / DraftKings -166 |
+| B | PLAY | 9.1 | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.5 | 11.5 | **FanDuel -115** / DraftKings -115 |
+| B | PLAY | 8.4 | Toronto Blue Jays @ Houston Astros | Moneyline | Houston Astros ML | — | **FanDuel -126** / DraftKings -136 |
+| B | LEAN | 5.6 | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 8.5 | 8.5 | **FanDuel -104** / DraftKings -106 |
+| B | LEAN | 5.3 | San Diego Padres @ Arizona Diamondbacks | Total | Under 9.0 | 9.0 | **DraftKings -103** / FanDuel -115 |
 
 ## 2026-08-02
 
