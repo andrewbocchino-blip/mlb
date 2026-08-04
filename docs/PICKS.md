@@ -1,15 +1,28 @@
-# ⚡ B Divergence — 2026-08-03
-
-### 2026-08-03 — B divergence
-| Type | Verdict | Score | Market | Pick | Game | Books |
-|---|---|---|---|---|---|---|
-| NEW | LEAN | 5.3 | Total | Under 9.0 | San Diego Padres @ Arizona Diamondbacks | **DraftKings -103** / FanDuel -115 |
-
----
-
 # Locked Picks — A/B
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
+
+## 2026-08-04
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Minnesota Twins @ Kansas City Royals | Total | Under 9.5 | 9.5 | **DraftKings -105** / FanDuel -124 |
+| A | PLAY | 9.5 | Pittsburgh Pirates @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -154** / DraftKings -167 |
+| A | PLAY | 9.5 | San Francisco Giants @ Texas Rangers | Moneyline | San Francisco Giants ML | — | **DraftKings +167** / FanDuel +166 |
+| A | PLAY | 8.2 | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.0 | 11.0 | **DraftKings -108** / FanDuel -114 |
+| A | PLAY | 8.1 | Washington Nationals @ Philadelphia Phillies | Moneyline | Philadelphia Phillies ML | — | **FanDuel -250** / DraftKings -263 |
+| A | PLAY | 7.5 | Athletics @ Cincinnati Reds | Total | Under 9.5 | 9.5 | **DraftKings -106** / FanDuel -122 |
+| A | PLAY | 7.2 | Toronto Blue Jays @ Houston Astros | Moneyline | Houston Astros ML | — | **FanDuel -126** / DraftKings -131 |
+| A | LEAN | 5.8 | Los Angeles Dodgers @ Chicago Cubs | Moneyline | Los Angeles Dodgers ML | — | **DraftKings -208** / FanDuel -210 |
+| A | LEAN | 5.3 | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 7.5 | 7.5 | **DraftKings -114** / FanDuel -115 |
+| B | PLAY | 9.5 | Minnesota Twins @ Kansas City Royals | Total | Under 9.5 | 9.5 | **DraftKings -105** / FanDuel -124 |
+| B | PLAY | 9.5 | Pittsburgh Pirates @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -154** / DraftKings -167 |
+| B | PLAY | 9.5 | San Francisco Giants @ Texas Rangers | Moneyline | San Francisco Giants ML | — | **DraftKings +167** / FanDuel +166 |
+| B | PLAY | 9.1 | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.0 | 11.0 | **DraftKings -108** / FanDuel -114 |
+| B | PLAY | 8.1 | Athletics @ Cincinnati Reds | Total | Under 9.5 | 9.5 | **DraftKings -106** / FanDuel -122 |
+| B | PLAY | 8.1 | Washington Nationals @ Philadelphia Phillies | Moneyline | Philadelphia Phillies ML | — | **FanDuel -250** / DraftKings -263 |
+| B | PLAY | 7.2 | Toronto Blue Jays @ Houston Astros | Moneyline | Houston Astros ML | — | **FanDuel -126** / DraftKings -131 |
+| B | LEAN | 5.8 | Los Angeles Dodgers @ Chicago Cubs | Moneyline | Los Angeles Dodgers ML | — | **DraftKings -208** / FanDuel -210 |
 
 ## 2026-08-03
 

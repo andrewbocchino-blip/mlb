@@ -2,24 +2,35 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 267-212  ·  56% win  ·  +30.97u  ·  +6.5% ROI  ·  avg CLV n/a (no closing lines yet)**
-**Model B: 222-173  ·  56% win  ·  +29.02u  ·  +7.3% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 270-215  ·  56% win  ·  +30.70u  ·  +6.3% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model B: 225-176  ·  56% win  ·  +28.75u  ·  +7.2% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 156-110 (+12%)  ·  Total 69-56 (+5%)  ·  Run Line 42-46 (-9%)
-- **by side:** Over 20-14 (+12%)  ·  team 198-156 (+7%)  ·  Under 49-42 (+3%)
-- **by fav_band:** fav 70-46 (+15%)  ·  unknown 20-14 (+12%)  ·  pickem 137-104 (+9%)  ·  heavy fav 11-9 (+5%)  ·  dog 29-39 (-18%)
+- **by market:** Moneyline 158-111 (+12%)  ·  Total 70-58 (+4%)  ·  Run Line 42-46 (-9%)
+- **by side:** Over 21-15 (+11%)  ·  team 200-157 (+7%)  ·  Under 49-43 (+2%)
+- **by fav_band:** fav 71-46 (+16%)  ·  unknown 20-14 (+12%)  ·  pickem 139-107 (+8%)  ·  heavy fav 11-9 (+5%)  ·  dog 29-39 (-18%)
 
 ### Model B — segments (finding the winning slice)
 
-- **by market:** Total 59-40 (+14%)  ·  Moneyline 132-94 (+12%)  ·  Run Line 31-39 (-15%)
-- **by side:** Over 13-4 (+46%)  ·  Under 46-36 (+7%)  ·  team 163-133 (+5%)
-- **by fav_band:** fav 63-39 (+18%)  ·  pickem 121-86 (+12%)  ·  heavy fav 9-9 (-4%)  ·  dog 27-36 (-18%)  ·  unknown 2-3 (-24%)
+- **by market:** Total 60-42 (+12%)  ·  Moneyline 134-95 (+12%)  ·  Run Line 31-39 (-15%)
+- **by side:** Over 13-5 (+38%)  ·  Under 47-37 (+7%)  ·  team 165-134 (+5%)
+- **by fav_band:** fav 64-39 (+19%)  ·  pickem 123-89 (+11%)  ·  heavy fav 9-9 (-4%)  ·  dog 27-36 (-18%)  ·  unknown 2-3 (-24%)
 
 ## Model A — picks by date
+
+### 2026-08-03 — 3-3  (-0.27u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | San Francisco Giants @ Texas Rangers | Moneyline | San Francisco Giants ML | — | **FanDuel +100** / DraftKings -110 | — | +0.91 |
+| ✅ WIN | PLAY | Tampa Bay Rays @ Colorado Rockies | Moneyline | Tampa Bay Rays ML | — | **FanDuel -156** / DraftKings -166 | — | +0.91 |
+| ✅ WIN | LEAN | Los Angeles Dodgers @ Chicago Cubs | Total | Over 8.0 | 8.0 | **FanDuel -110** / DraftKings -113 | — | +0.91 |
+| ❌ LOSS | PLAY | Toronto Blue Jays @ Houston Astros | Moneyline | Houston Astros ML | — | **FanDuel -126** / DraftKings -136 | — | -1.00 |
+| ❌ LOSS | PLAY | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.5 | 11.5 | **FanDuel -115** / DraftKings -115 | — | -1.00 |
+| ❌ LOSS | LEAN | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 8.5 | 8.5 | **FanDuel -104** / DraftKings -106 | — | -1.00 |
 
 ### 2026-08-02 — 7-2  (+4.37u)
 
@@ -781,6 +792,17 @@
 | ❌ LOSS | LEAN | Baltimore Orioles @ Toronto Blue Jays | Moneyline | Baltimore Orioles ML | — | — | — | -1.00 |
 
 ## Model B — picks by date
+
+### 2026-08-03 — 3-3  (-0.27u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | San Francisco Giants @ Texas Rangers | Moneyline | San Francisco Giants ML | — | **FanDuel +100** / DraftKings -110 | — | +0.91 |
+| ✅ WIN | PLAY | Tampa Bay Rays @ Colorado Rockies | Moneyline | Tampa Bay Rays ML | — | **FanDuel -156** / DraftKings -166 | — | +0.91 |
+| ✅ WIN | LEAN | San Diego Padres @ Arizona Diamondbacks | Total | Under 9.0 | 9.0 | **DraftKings -103** / FanDuel -115 | — | +0.91 |
+| ❌ LOSS | PLAY | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.5 | 11.5 | **FanDuel -115** / DraftKings -115 | — | -1.00 |
+| ❌ LOSS | PLAY | Toronto Blue Jays @ Houston Astros | Moneyline | Houston Astros ML | — | **FanDuel -126** / DraftKings -136 | — | -1.00 |
+| ❌ LOSS | LEAN | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 8.5 | 8.5 | **FanDuel -104** / DraftKings -106 | — | -1.00 |
 
 ### 2026-08-02 — 8-2  (+5.28u)
 
