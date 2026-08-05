@@ -89,8 +89,23 @@ def fetch_finals(client, date):
                 home = teams["home"]["team"]["name"]
                 ar = teams["away"].get("score")
                 hr = teams["home"].get("score")
-                if ar is not None and hr is not None:
-                    finals[(away, home)] = (ar, hr)
+                if ar is None or hr is None:
+                    continue
+                # v16: per-inning linescore for NRFI / F5 grading
+                first = f5 = None
+                innings = ((g.get("linescore") or {}).get("innings") or [])
+                if innings:
+                    def _runs(inn, side):
+                        v = (inn.get(side) or {}).get("runs")
+                        return v if isinstance(v, (int, float)) else 0
+                    inns = sorted(innings, key=lambda i: i.get("num") or 0)
+                    if inns and (inns[0].get("num") == 1):
+                        first = (_runs(inns[0], "away"), _runs(inns[0], "home"))
+                    if len(inns) >= 5:
+                        a5 = sum(_runs(i, "away") for i in inns[:5])
+                        h5 = sum(_runs(i, "home") for i in inns[:5])
+                        f5 = (a5, h5)
+                finals[(away, home)] = {"final": (ar, hr), "first": first, "f5": f5}
             except Exception:
                 continue
     return finals
@@ -105,10 +120,22 @@ def grade_pick(row, finals):
     key = (away, home)
     if key not in finals:
         return None, None
-    ar, hr = finals[key]
+    fin = finals[key]
+    ar, hr = fin["final"]
     total = ar + hr
     mkt = row["market"]
     pick = row["pick"]
+
+    # PAYOUT BUGFIX (2026-07-18): grade P&L at the odds LOCKED at pull time
+    # (best book), not a flat +0.91. Falls back to the conservative flat
+    # payout only when no locked price exists.
+    def _locked_odds():
+        books = row.get("books") or {}
+        bb = row.get("best_book")
+        px = books.get(bb) if bb else None
+        if px is None and books:
+            px = max(books.values())
+        return px
 
     if mkt == "Total":
         line = row.get("line_at_pull")
@@ -118,21 +145,39 @@ def grade_pick(row, finals):
             return "PUSH", 0.0
         over = total > line
         win = (over and pick.startswith("Over")) or ((not over) and pick.startswith("Under"))
-        return ("WIN" if win else "LOSS"), american_payout(None, win)
+        return ("WIN" if win else "LOSS"), american_payout(_locked_odds(), win)
+
+    if mkt == "F5 Total":
+        line = row.get("line_at_pull")
+        if line is None or fin.get("f5") is None:
+            return None, None
+        a5, h5 = fin["f5"]
+        t5 = a5 + h5
+        if t5 == line:
+            return "PUSH", 0.0
+        over = t5 > line
+        win = (over and "Over" in pick) or ((not over) and "Under" in pick)
+        return ("WIN" if win else "LOSS"), american_payout(_locked_odds(), win)
+
+    if mkt == "NRFI":
+        if fin.get("first") is None:
+            return None, None
+        a1, h1 = fin["first"]
+        scored = (a1 + h1) > 0
+        win = (pick == "YRFI" and scored) or (pick == "NRFI" and not scored)
+        return ("WIN" if win else "LOSS"), american_payout(_locked_odds(), win)
 
     if mkt == "Moneyline":
         home_won = hr > ar
-        picked_home = home in pick and not pick.strip().startswith(away)
-        # robust: match pick text to team name
         picked_home = pick.startswith(home)
         win = (home_won and picked_home) or ((not home_won) and not picked_home)
-        return ("WIN" if win else "LOSS"), american_payout(None, win)
+        return ("WIN" if win else "LOSS"), american_payout(_locked_odds(), win)
 
     if mkt == "Run Line":
         picked_home = pick.startswith(home)
         margin = (hr - ar) if picked_home else (ar - hr)
         win = margin >= 2  # laying -1.5
-        return ("WIN" if win else "LOSS"), american_payout(None, win)
+        return ("WIN" if win else "LOSS"), american_payout(_locked_odds(), win)
 
     return None, None
 
