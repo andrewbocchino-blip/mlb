@@ -16,22 +16,26 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
 |---|---|---|---|---|---|---|---|
-| A | PLAY | 9.5 | Toronto Blue Jays @ Houston Astros | Moneyline | Houston Astros ML | — | **FanDuel -158** / DraftKings -169 |
+| A | PLAY | 9.5 | Toronto Blue Jays @ Houston Astros | Moneyline | Houston Astros ML | — | **DraftKings -208** / FanDuel -225 |
 | A | PLAY | 9.5 | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.5 | 11.5 | **DraftKings -108** / FanDuel -110 |
-| A | PLAY | 9.5 | Pittsburgh Pirates @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -130** / DraftKings -136 |
-| A | PLAY | 9.5 | San Diego Padres @ Arizona Diamondbacks | Moneyline | San Diego Padres ML | — | **FanDuel -112** / DraftKings -121 |
-| A | PLAY | 9.5 | Detroit Tigers @ Seattle Mariners | Moneyline | Detroit Tigers ML | — | **DraftKings +128** / FanDuel +124 |
-| A | PLAY | 8.2 | Tampa Bay Rays @ Colorado Rockies | Moneyline | Tampa Bay Rays ML | — | **FanDuel -154** / DraftKings -167 |
-| A | PLAY | 7.1 | Toronto Blue Jays @ Houston Astros | Run Line | Houston Astros -1.5 | — | **FanDuel +130** / DraftKings +118 |
+| A | PLAY | 9.5 | Pittsburgh Pirates @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -124** / DraftKings -127 |
+| A | PLAY | 9.5 | San Diego Padres @ Arizona Diamondbacks | Moneyline | San Diego Padres ML | — | **DraftKings -119** / FanDuel -122 |
+| A | PLAY | 9.5 | Detroit Tigers @ Seattle Mariners | Moneyline | Detroit Tigers ML | — | **DraftKings +143** / FanDuel +140 |
+| A | PLAY | 9.5 | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.0 | 11.0 | **FanDuel -110** / DraftKings -110 |
+| A | PLAY | 8.2 | Tampa Bay Rays @ Colorado Rockies | Moneyline | Tampa Bay Rays ML | — | **DraftKings -153** / FanDuel -154 |
+| A | PLAY | 7.7 | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 7.0 | 7.0 | **DraftKings -117** / FanDuel -120 |
+| A | PLAY | 7.1 | Toronto Blue Jays @ Houston Astros | Run Line | Houston Astros -1.5 | — | **FanDuel -104** / DraftKings -106 |
 | A | LEAN | 6.5 | San Diego Padres @ Arizona Diamondbacks | Total | Under 9.5 | 9.5 | **DraftKings +101** / FanDuel -124 |
 | A | LEAN | 5.5 | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 7.5 | 7.5 | **DraftKings +102** / FanDuel -120 |
-| B | PLAY | 9.5 | Toronto Blue Jays @ Houston Astros | Moneyline | Houston Astros ML | — | **FanDuel -158** / DraftKings -169 |
+| B | PLAY | 9.5 | Toronto Blue Jays @ Houston Astros | Moneyline | Houston Astros ML | — | **DraftKings -208** / FanDuel -225 |
 | B | PLAY | 9.5 | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.5 | 11.5 | **DraftKings -108** / FanDuel -110 |
-| B | PLAY | 9.5 | Pittsburgh Pirates @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -130** / DraftKings -136 |
-| B | PLAY | 9.5 | San Diego Padres @ Arizona Diamondbacks | Moneyline | San Diego Padres ML | — | **FanDuel -112** / DraftKings -121 |
-| B | PLAY | 9.5 | Detroit Tigers @ Seattle Mariners | Moneyline | Detroit Tigers ML | — | **DraftKings +128** / FanDuel +124 |
-| B | PLAY | 8.2 | Tampa Bay Rays @ Colorado Rockies | Moneyline | Tampa Bay Rays ML | — | **FanDuel -154** / DraftKings -167 |
-| B | PLAY | 7.1 | Toronto Blue Jays @ Houston Astros | Run Line | Houston Astros -1.5 | — | **FanDuel +130** / DraftKings +118 |
+| B | PLAY | 9.5 | Pittsburgh Pirates @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -124** / DraftKings -127 |
+| B | PLAY | 9.5 | San Diego Padres @ Arizona Diamondbacks | Moneyline | San Diego Padres ML | — | **DraftKings -119** / FanDuel -122 |
+| B | PLAY | 9.5 | Detroit Tigers @ Seattle Mariners | Moneyline | Detroit Tigers ML | — | **DraftKings +143** / FanDuel +140 |
+| B | PLAY | 9.5 | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.0 | 11.0 | **FanDuel -110** / DraftKings -110 |
+| B | PLAY | 8.2 | Tampa Bay Rays @ Colorado Rockies | Moneyline | Tampa Bay Rays ML | — | **DraftKings -153** / FanDuel -154 |
+| B | PLAY | 7.2 | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 7.0 | 7.0 | **DraftKings -117** / FanDuel -120 |
+| B | PLAY | 7.1 | Toronto Blue Jays @ Houston Astros | Run Line | Houston Astros -1.5 | — | **FanDuel -104** / DraftKings -106 |
 | B | PLAY | 7.1 | San Diego Padres @ Arizona Diamondbacks | Total | Under 9.5 | 9.5 | **DraftKings +101** / FanDuel -124 |
 | B | LEAN | 5.2 | New York Mets @ Cleveland Guardians | Total | Under 8.5 | 8.5 | **DraftKings -112** / FanDuel -115 |
 
