@@ -22,10 +22,14 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | A | PLAY | 9.5 | San Diego Padres @ Arizona Diamondbacks | Moneyline | San Diego Padres ML | — | **DraftKings -119** / FanDuel -122 |
 | A | PLAY | 9.5 | Detroit Tigers @ Seattle Mariners | Moneyline | Detroit Tigers ML | — | **DraftKings +143** / FanDuel +140 |
 | A | PLAY | 9.5 | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.0 | 11.0 | **FanDuel -110** / DraftKings -110 |
+| A | PLAY | 9.4 | Washington Nationals @ Philadelphia Phillies | F5 Total | F5 Over 5.5 | 5.5 | **FanDuel -110** |
 | A | PLAY | 8.2 | Tampa Bay Rays @ Colorado Rockies | Moneyline | Tampa Bay Rays ML | — | **DraftKings -153** / FanDuel -154 |
 | A | PLAY | 7.7 | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 7.0 | 7.0 | **DraftKings -117** / FanDuel -120 |
 | A | PLAY | 7.1 | Toronto Blue Jays @ Houston Astros | Run Line | Houston Astros -1.5 | — | **FanDuel -104** / DraftKings -106 |
+| A | PLAY | 7.0 | Minnesota Twins @ Kansas City Royals | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -138** |
 | A | LEAN | 6.5 | San Diego Padres @ Arizona Diamondbacks | Total | Under 9.5 | 9.5 | **DraftKings +101** / FanDuel -124 |
+| A | LEAN | 6.4 | Tampa Bay Rays @ Colorado Rockies | F5 Total | F5 Under 6.5 | 6.5 | **FanDuel -135** |
+| A | LEAN | 5.6 | Pittsburgh Pirates @ Milwaukee Brewers | F5 Total | F5 Over 3.5 | 3.5 | **FanDuel -132** |
 | A | LEAN | 5.5 | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 7.5 | 7.5 | **DraftKings +102** / FanDuel -120 |
 | B | PLAY | 9.5 | Toronto Blue Jays @ Houston Astros | Moneyline | Houston Astros ML | — | **DraftKings -208** / FanDuel -225 |
 | B | PLAY | 9.5 | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.5 | 11.5 | **DraftKings -108** / FanDuel -110 |
