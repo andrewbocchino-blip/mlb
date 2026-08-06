@@ -1,22 +1,25 @@
 name: Daily MLB Dashboard
-# Two scheduled runs + manual trigger. Free for public repos.
-#   04:05 UTC (12:05 AM ET) — CORE markets (ML / RL / Total) locked at the
-#                             midnight line, before game-day public money.
-#   15:00 UTC (11:00 AM ET) — PERIOD markets only (F5 / NRFI). Books post
-#                             these morning-of; the overnight run can never
-#                             see them. Core picks are NOT re-locked here.
+# Three scheduled runs + manual trigger. Free for public repos.
+#   04:05 UTC (12:05a ET) — CORE markets (ML / Total) locked at midnight line
+#   15:00 UTC (11:00a ET) — PERIOD markets (F5 / NRFI) + NRFI + HR boards
+#   22:45 UTC ( 6:45p ET) — CLV capture: closing prices for today's picks
 on:
   schedule:
     - cron: "5 4 * * *"
     - cron: "0 15 * * *"
+    - cron: "45 22 * * *"
   workflow_dispatch:
     inputs:
       period_only:
-        description: "Lock only F5/NRFI picks (period-market run)"
+        description: "Lock only F5/NRFI picks + boards (period-market run)"
+        required: false
+        default: "false"
+      clv_only:
+        description: "Capture closing lines / CLV only"
         required: false
         default: "false"
 permissions:
-  contents: write   # allow committing the generated page back to the repo
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,18 +37,28 @@ jobs:
       - name: Decide run mode
         id: mode
         run: |
-          if [ "${{ github.event.schedule }}" = "0 15 * * *" ] || [ "${{ github.event.inputs.period_only }}" = "true" ]; then
+          if [ "${{ github.event.schedule }}" = "45 22 * * *" ] || [ "${{ github.event.inputs.clv_only }}" = "true" ]; then
+            echo "MODE=clv" >> "$GITHUB_ENV"
+            echo "label=CLV close capture" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 15 * * *" ] || [ "${{ github.event.inputs.period_only }}" = "true" ]; then
+            echo "MODE=period" >> "$GITHUB_ENV"
             echo "PERIOD_ONLY=1" >> "$GITHUB_ENV"
             echo "label=Period-market pull (F5/NRFI)" >> "$GITHUB_OUTPUT"
           else
-            echo "PERIOD_ONLY=" >> "$GITHUB_ENV"
+            echo "MODE=core" >> "$GITHUB_ENV"
             echo "label=Midnight pull" >> "$GITHUB_OUTPUT"
           fi
       - name: Generate dashboard
+        if: env.MODE != 'clv'
         run: python run.py
+      - name: Capture closing lines (CLV)
+        if: env.MODE == 'clv'
+        run: python clv.py
       - name: Grade prior picks
+        if: env.MODE != 'clv'
         run: python grade.py || echo "grading skipped"
       - name: Add B divergence (today only, top of page)
+        if: env.MODE != 'clv'
         run: |
           D=$(grep -m1 -oE '^## [0-9]{4}-[0-9]{2}-[0-9]{2}' docs/PICKS.md | cut -d' ' -f2)
           python3 tools/b_unique.py docs/PICKS.md --markdown --date "$D" > /tmp/div.md || true
@@ -59,5 +72,6 @@ jobs:
           git config user.name "mlb-bot"
           git config user.email "mlb-bot@users.noreply.github.com"
           git add -A docs/
-          git commit -m "${{ steps.mode.outputs.label }} + grade $(date -u +%Y-%m-%d)" || echo "no changes"
+          git pull --rebase --autostash || true
+          git commit -m "${{ steps.mode.outputs.label }} $(date -u +%Y-%m-%d)" || echo "no changes"
           git push
