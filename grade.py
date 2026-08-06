@@ -183,6 +183,54 @@ def grade_pick(row, finals):
 
 
 BOARD = "docs/nrfi_board.jsonl"
+HRBOARD = "docs/hr_board.jsonl"
+
+
+def load_hr_board():
+    try:
+        with open(HRBOARD) as f:
+            return [json.loads(l) for l in f if l.strip()]
+    except FileNotFoundError:
+        return []
+
+
+def grade_hr_board(client, board):
+    """Did each listed player homer on the slate date? (Doubleheaders: any
+    game that day counts.) One gameLog call per ungraded player."""
+    changed = 0
+    log_cache = {}
+    for r in board:
+        if r.get("graded"):
+            continue
+        pid = r.get("player_id")
+        season = int(r["slate_date"][:4])
+        if pid not in log_cache:
+            try:
+                log_cache[pid] = client.get_json(
+                    f"mlb/people/{pid}/stats",
+                    {"stats": "gameLog", "group": "hitting", "season": season})
+            except Exception:
+                log_cache[pid] = None
+        resp = log_cache[pid]
+        if not resp:
+            continue
+        day_games = []
+        for blk in (resp.get("stats") or []):
+            for sp in (blk.get("splits") or []):
+                if sp.get("date") == r["slate_date"]:
+                    day_games.append(sp.get("stat") or {})
+        if not day_games:
+            continue  # hasn't played yet / off day — stays pending
+        hrs = 0
+        for st in day_games:
+            try:
+                hrs += int(st.get("homeRuns") or 0)
+            except (TypeError, ValueError):
+                pass
+        r["graded"] = True
+        r["result"] = "HIT" if hrs > 0 else "MISS"
+        changed += 1
+    return changed
 
 
 def load_board():
@@ -225,6 +273,15 @@ def main():
     dates = sorted({r["slate_date"] for r in rows} | {b["slate_date"] for b in board})
     finals_by_date = {d: fetch_finals(client, d) for d in dates}
 
+    hr_board = load_hr_board()
+    hr_changed = grade_hr_board(client, hr_board)
+    if hr_board:
+        with open(HRBOARD, "w") as f:
+            for b in hr_board:
+                f.write(json.dumps(b) + "\n")
+        if hr_changed:
+            print(f"Graded {hr_changed} HR board calls.")
+
     b_changed = grade_board(board, finals_by_date)
     if board:
         with open(BOARD, "w") as f:
@@ -249,7 +306,7 @@ def main():
         for r in rows:
             f.write(json.dumps(r) + "\n")
 
-    write_picks_md(rows, board)
+    write_picks_md(rows, board, hr_board)
     write_results_md(rows)
     print(f"Graded {changed} newly-final picks. Wrote docs/PICKS.md and docs/RESULTS.md")
 
@@ -270,8 +327,9 @@ def _books_cell(row):
     return " / ".join(parts)
 
 
-def write_picks_md(rows, board=None):
+def write_picks_md(rows, board=None, hr_board=None):
     board = board or []
+    hr_board = hr_board or []
     # Dedupe to one row per unique bet per date (keep the latest pull), so
     # re-runs of the same slate don't show the pick twice. The raw
     # locked_picks.jsonl still preserves every timestamped pull.
@@ -326,6 +384,25 @@ def write_picks_md(rows, board=None):
                 if tiers:
                     out.append(f"*Board calibration (all time): {' · '.join(tiers)}*")
                     out.append("")
+        day_hr = [b for b in hr_board if b["slate_date"] == date]
+        if day_hr:
+            out.append("#### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)")
+            out.append("")
+            out.append("| # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |")
+            out.append("|---|---|---|---|---|---|---|---|---|")
+            for b in sorted(day_hr, key=lambda x: x.get("rank") or 99):
+                res = {"HIT": "✅ HR", "MISS": "❌ no HR"}.get(b.get("result"), "pending")
+                out.append(f"| {b.get('rank','')} | {b['player']} | {b['team']} | {b['game']} "
+                           f"| {b['p_hr']:.0%} | {b['park_f']:.2f} | {b['wx_f']:.2f} "
+                           f"| {b['sp_f']:.2f} | {res} |")
+            out.append("")
+            graded_hr = [b for b in hr_board if b.get("graded")]
+            if graded_hr:
+                exp = sum(b["p_hr"] for b in graded_hr)
+                hits = sum(1 for b in graded_hr if b["result"] == "HIT")
+                out.append(f"*HR board calibration (all time): {hits} homered of "
+                           f"{len(graded_hr)} listed · model expected {exp:.1f}*")
+                out.append("")
     with open("docs/PICKS.md", "w") as f:
         f.write("\n".join(out))
     return
