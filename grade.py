@@ -57,6 +57,41 @@ def american_payout(odds, win):
     return -1.0
 
 
+def locked_odds(row):
+    """Best locked price for a row, or None."""
+    books = row.get("books") or {}
+    bb = row.get("best_book")
+    px = books.get(bb) if bb else None
+    if px is None and books:
+        px = max(books.values())
+    return px
+
+
+def reprice_historical(rows):
+    """REPRICE PASS (2026-08-06): rows graded before the payout fix carry a
+    flat +0.91 on every win. Recompute P&L at the locked best-book odds.
+    Idempotent: corrected rows are flagged 'repriced' and never touched
+    again. LOSS/PUSH amounts are unchanged (-1.0 / 0.0 were always right)."""
+    fixed = 0
+    delta = 0.0
+    for r in rows:
+        if not r.get("graded") or r.get("repriced"):
+            continue
+        if r.get("result") != "WIN":
+            r["repriced"] = True
+            continue
+        odds = locked_odds(r)
+        correct = round(american_payout(odds, True), 2)
+        if abs(correct - (r.get("pl") or 0)) >= 0.005:
+            delta += correct - (r.get("pl") or 0)
+            r["pl"] = correct
+            fixed += 1
+        r["repriced"] = True
+    if fixed:
+        print(f"Repriced {fixed} historical wins at locked odds (net P&L change {delta:+.2f}u).")
+    return fixed
+
+
 def load_locked():
     if not os.path.exists(LOCK):
         return []
@@ -130,12 +165,7 @@ def grade_pick(row, finals):
     # (best book), not a flat +0.91. Falls back to the conservative flat
     # payout only when no locked price exists.
     def _locked_odds():
-        books = row.get("books") or {}
-        bb = row.get("best_book")
-        px = books.get(bb) if bb else None
-        if px is None and books:
-            px = max(books.values())
-        return px
+        return locked_odds(row)
 
     if mkt == "Total":
         line = row.get("line_at_pull")
@@ -289,6 +319,8 @@ def main():
                 f.write(json.dumps(b) + "\n")
         if b_changed:
             print(f"Graded {b_changed} NRFI/YRFI board calls.")
+
+    reprice_historical(rows)
 
     changed = 0
     for r in rows:
@@ -460,6 +492,39 @@ def write_results_md(rows):
                "method, beating the closing line is what indicates a real edge. A small "
                "sample of wins with negative CLV is luck, not edge.")
     out.append("")
+
+    # probability calibration: does the ML win model's number mean anything?
+    ml_rows = [r for r in A if r["market"] == "Moneyline"
+               and r.get("home_win_prob") is not None
+               and r["result"] in ("WIN", "LOSS")]
+    if ml_rows:
+        pts = []
+        for r in ml_rows:
+            away, home = r["game"].split(" @ ", 1)
+            picked_home = r["pick"].startswith(home)
+            home_won = (r["result"] == "WIN") == picked_home
+            pts.append((float(r["home_win_prob"]), 1.0 if home_won else 0.0))
+        brier = sum((p - o) ** 2 for p, o in pts) / len(pts)
+        out.append(f"### Moneyline probability calibration (Model A, n={len(pts)})")
+        out.append("")
+        out.append(f"Brier score: **{brier:.4f}** (0.25 = coin flip knowledge; lower is better)")
+        out.append("")
+        out.append("| Model home-win band | n | Predicted avg | Actual home-win % |")
+        out.append("|---|---|---|---|")
+        bands = [(0.0, 0.40), (0.40, 0.45), (0.45, 0.50), (0.50, 0.55),
+                 (0.55, 0.60), (0.60, 0.65), (0.65, 1.01)]
+        for lo, hi in bands:
+            bp = [(p, o) for p, o in pts if lo <= p < hi]
+            if not bp:
+                continue
+            pred = sum(p for p, _ in bp) / len(bp)
+            act = sum(o for _, o in bp) / len(bp)
+            label = f"{lo:.0%}–{hi:.0%}" if hi <= 1 else f"{lo:.0%}+"
+            out.append(f"| {label} | {len(bp)} | {pred:.0%} | {act:.0%} |")
+        out.append("")
+        out.append("> Calibrated = predicted ≈ actual per band. Systematic gaps mean the "
+                   "win probabilities themselves need retuning before any ML edge claim.")
+        out.append("")
 
     # segmentation: where does each model win? (find the ONE slice, if any)
     if summarize_segments:
