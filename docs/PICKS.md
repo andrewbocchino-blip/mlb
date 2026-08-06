@@ -1,16 +1,28 @@
-# ⚡ B Divergence — 2026-08-05
-
-### 2026-08-05 — B divergence
-| Type | Verdict | Score | Market | Pick | Game | Books |
-|---|---|---|---|---|---|---|
-| UPGRADE | PLAY (A: LEAN 6.5) | 7.1 | Total | Under 9.5 | San Diego Padres @ Arizona Diamondbacks | **DraftKings +101** / FanDuel -124 |
-| NEW | LEAN | 5.2 | Total | Under 8.5 | New York Mets @ Cleveland Guardians | **DraftKings -112** / FanDuel -115 |
-
----
-
 # Locked Picks — A/B
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
+
+## 2026-08-06
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Athletics @ Cincinnati Reds | Moneyline | Cincinnati Reds ML | — | **FanDuel -154** / DraftKings -157 |
+| A | PLAY | 9.5 | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 7.5 | 7.5 | **DraftKings -115** / FanDuel -120 |
+| A | PLAY | 9.5 | Washington Nationals @ Philadelphia Phillies | Moneyline | Philadelphia Phillies ML | — | **FanDuel -335** / DraftKings -354 |
+| A | PLAY | 8.1 | Chicago White Sox @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **FanDuel -184** / DraftKings -192 |
+| A | LEAN | 6.1 | Chicago White Sox @ Boston Red Sox | Run Line | Boston Red Sox -1.5 | — | **FanDuel +116** / DraftKings +109 |
+| A | LEAN | 6.0 | Los Angeles Angels @ Baltimore Orioles | Total | Under 10.0 | 10.0 | **DraftKings -104** / FanDuel -114 |
+| A | LEAN | 5.4 | Athletics @ Cincinnati Reds | Total | Under 9.5 | 9.5 | **FanDuel -106** / DraftKings -114 |
+| A | LEAN | 5.2 | Toronto Blue Jays @ Chicago Cubs | Total | Over 7.5 | 7.5 | **DraftKings -105** / FanDuel -115 |
+| A | LEAN | 5.0 | San Diego Padres @ Arizona Diamondbacks | Moneyline | Arizona Diamondbacks ML | — | **DraftKings -114** / FanDuel -116 |
+| B | PLAY | 9.5 | Athletics @ Cincinnati Reds | Moneyline | Cincinnati Reds ML | — | **FanDuel -154** / DraftKings -157 |
+| B | PLAY | 9.5 | Washington Nationals @ Philadelphia Phillies | Moneyline | Philadelphia Phillies ML | — | **FanDuel -335** / DraftKings -354 |
+| B | PLAY | 8.6 | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 7.5 | 7.5 | **DraftKings -115** / FanDuel -120 |
+| B | PLAY | 8.1 | Chicago White Sox @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **FanDuel -184** / DraftKings -192 |
+| B | LEAN | 6.9 | Los Angeles Angels @ Baltimore Orioles | Total | Under 10.0 | 10.0 | **DraftKings -104** / FanDuel -114 |
+| B | LEAN | 6.3 | Athletics @ Cincinnati Reds | Total | Under 9.5 | 9.5 | **FanDuel -106** / DraftKings -114 |
+| B | LEAN | 6.1 | Chicago White Sox @ Boston Red Sox | Run Line | Boston Red Sox -1.5 | — | **FanDuel +116** / DraftKings +109 |
+| B | LEAN | 5.0 | San Diego Padres @ Arizona Diamondbacks | Moneyline | Arizona Diamondbacks ML | — | **DraftKings -114** / FanDuel -116 |
 
 ## 2026-08-05
 

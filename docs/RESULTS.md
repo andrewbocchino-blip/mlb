@@ -2,24 +2,44 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 274-220  ·  55% win  ·  +29.34u  ·  +5.9% ROI  ·  avg CLV n/a (no closing lines yet)**
-**Model B: 229-180  ·  56% win  ·  +28.39u  ·  +6.9% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 279-230  ·  55% win  ·  +23.34u  ·  +4.6% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model B: 233-187  ·  55% win  ·  +24.65u  ·  +5.9% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 161-113 (+12%)  ·  Total 71-61 (+3%)  ·  Run Line 42-46 (-9%)
-- **by side:** Over 21-16 (+8%)  ·  team 203-159 (+7%)  ·  Under 50-45 (+0%)
-- **by fav_band:** fav 72-46 (+16%)  ·  unknown 20-14 (+12%)  ·  pickem 141-110 (+7%)  ·  heavy fav 12-10 (+4%)  ·  dog 29-40 (-20%)
+- **by market:** Moneyline 163-116 (+11%)  ·  Total 73-64 (+2%)  ·  Run Line 42-47 (-10%)  ·  F5 Total 1-3 (-56%)
+- **by side:** team 206-166 (+6%)  ·  Over 21-18 (+3%)  ·  Under 52-46 (+1%)
+- **by fav_band:** fav 74-49 (+15%)  ·  unknown 20-14 (+12%)  ·  pickem 144-115 (+6%)  ·  heavy fav 12-10 (+4%)  ·  dog 29-42 (-22%)
 
 ### Model B — segments (finding the winning slice)
 
-- **by market:** Moneyline 137-97 (+12%)  ·  Total 61-44 (+11%)  ·  Run Line 31-39 (-15%)
-- **by side:** Over 13-5 (+38%)  ·  team 168-136 (+6%)  ·  Under 48-39 (+5%)
-- **by fav_band:** fav 65-39 (+19%)  ·  pickem 125-91 (+10%)  ·  heavy fav 10-10 (-4%)  ·  dog 27-37 (-19%)  ·  unknown 2-3 (-24%)
+- **by market:** Moneyline 139-100 (+11%)  ·  Total 63-47 (+9%)  ·  Run Line 31-40 (-17%)
+- **by side:** Over 13-6 (+31%)  ·  Under 50-41 (+5%)  ·  team 170-140 (+5%)
+- **by fav_band:** fav 66-40 (+19%)  ·  pickem 128-95 (+10%)  ·  heavy fav 10-10 (-4%)  ·  dog 27-39 (-22%)  ·  unknown 2-3 (-24%)
 
 ## Model A — picks by date
+
+### 2026-08-05 — 5-10  (-6.00u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.5 | 11.5 | **DraftKings -108** / FanDuel -110 | — | +0.93 |
+| ✅ WIN | PLAY | Pittsburgh Pirates @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -130** / DraftKings -136 | — | +0.77 |
+| ✅ WIN | PLAY | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.0 | 11.0 | **FanDuel -110** / DraftKings -110 | — | +0.91 |
+| ✅ WIN | PLAY | Tampa Bay Rays @ Colorado Rockies | Moneyline | Tampa Bay Rays ML | — | **FanDuel -154** / DraftKings -167 | — | +0.65 |
+| ✅ WIN | LEAN | Tampa Bay Rays @ Colorado Rockies | F5 Total | F5 Under 6.5 | 6.5 | **FanDuel -135** | — | +0.74 |
+| ❌ LOSS | PLAY | Toronto Blue Jays @ Houston Astros | Moneyline | Houston Astros ML | — | **FanDuel -158** / DraftKings -169 | — | -1.00 |
+| ❌ LOSS | PLAY | San Diego Padres @ Arizona Diamondbacks | Moneyline | San Diego Padres ML | — | **FanDuel -112** / DraftKings -121 | — | -1.00 |
+| ❌ LOSS | PLAY | Detroit Tigers @ Seattle Mariners | Moneyline | Detroit Tigers ML | — | **DraftKings +128** / FanDuel +124 | — | -1.00 |
+| ❌ LOSS | PLAY | Washington Nationals @ Philadelphia Phillies | F5 Total | F5 Over 5.5 | 5.5 | **FanDuel -110** | — | -1.00 |
+| ❌ LOSS | PLAY | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 7.0 | 7.0 | **DraftKings -117** / FanDuel -120 | — | -1.00 |
+| ❌ LOSS | PLAY | Toronto Blue Jays @ Houston Astros | Run Line | Houston Astros -1.5 | — | **FanDuel +130** / DraftKings +118 | — | -1.00 |
+| ❌ LOSS | PLAY | Minnesota Twins @ Kansas City Royals | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -138** | — | -1.00 |
+| ❌ LOSS | LEAN | San Diego Padres @ Arizona Diamondbacks | Total | Under 9.5 | 9.5 | **DraftKings +101** / FanDuel -124 | — | -1.00 |
+| ❌ LOSS | LEAN | Pittsburgh Pirates @ Milwaukee Brewers | F5 Total | F5 Over 3.5 | 3.5 | **FanDuel -132** | — | -1.00 |
+| ❌ LOSS | LEAN | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 7.5 | 7.5 | **DraftKings +102** / FanDuel -120 | — | -1.00 |
 
 ### 2026-08-04 — 4-5  (-1.36u)
 
@@ -806,6 +826,22 @@
 | ❌ LOSS | LEAN | Baltimore Orioles @ Toronto Blue Jays | Moneyline | Baltimore Orioles ML | — | — | — | -1.00 |
 
 ## Model B — picks by date
+
+### 2026-08-05 — 4-7  (-3.74u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.5 | 11.5 | **DraftKings -108** / FanDuel -110 | — | +0.93 |
+| ✅ WIN | PLAY | Pittsburgh Pirates @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -130** / DraftKings -136 | — | +0.77 |
+| ✅ WIN | PLAY | Tampa Bay Rays @ Colorado Rockies | Total | Under 11.0 | 11.0 | **FanDuel -110** / DraftKings -110 | — | +0.91 |
+| ✅ WIN | PLAY | Tampa Bay Rays @ Colorado Rockies | Moneyline | Tampa Bay Rays ML | — | **FanDuel -154** / DraftKings -167 | — | +0.65 |
+| ❌ LOSS | PLAY | Toronto Blue Jays @ Houston Astros | Moneyline | Houston Astros ML | — | **FanDuel -158** / DraftKings -169 | — | -1.00 |
+| ❌ LOSS | PLAY | San Diego Padres @ Arizona Diamondbacks | Moneyline | San Diego Padres ML | — | **FanDuel -112** / DraftKings -121 | — | -1.00 |
+| ❌ LOSS | PLAY | Detroit Tigers @ Seattle Mariners | Moneyline | Detroit Tigers ML | — | **DraftKings +128** / FanDuel +124 | — | -1.00 |
+| ❌ LOSS | PLAY | Pittsburgh Pirates @ Milwaukee Brewers | Total | Over 7.0 | 7.0 | **DraftKings -117** / FanDuel -120 | — | -1.00 |
+| ❌ LOSS | PLAY | Toronto Blue Jays @ Houston Astros | Run Line | Houston Astros -1.5 | — | **FanDuel +130** / DraftKings +118 | — | -1.00 |
+| ❌ LOSS | PLAY | San Diego Padres @ Arizona Diamondbacks | Total | Under 9.5 | 9.5 | **DraftKings +101** / FanDuel -124 | — | -1.00 |
+| ❌ LOSS | LEAN | New York Mets @ Cleveland Guardians | Total | Under 8.5 | 8.5 | **DraftKings -112** / FanDuel -115 | — | -1.00 |
 
 ### 2026-08-04 — 4-4  (-0.36u)
 
