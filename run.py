@@ -342,6 +342,13 @@ def build_games(run_date: str):
             ml = score_moneyline(an, hn, adv, hwp, mkt_home_novig)
             tot = score_total_v14(model_total_neutral, mkt_total, env["combined"], over_supporting={"o": 0.5})
             rl = score_run_line(ml, hwp, hwp >= 0.5)
+            # SEGMENT RETIRED 2026-08-06: run lines were mechanically cloned
+            # from ML at a fixed score and were the worst live performer in
+            # both models. No RL bet locks until independently modeled.
+            if rl.verdict in ("PLAY", "LEAN"):
+                rl = MarketVerdict(rl.market, rl.score, "PASS", "—",
+                                   list(rl.rationale) +
+                                   ["segment retired 2026-08-06 — cloned-from-ML, worst live performer"])
 
             def book_prices(market_key, outcome_match):
                 """Return [(book, price, point)] across books for one pick side."""
@@ -398,6 +405,23 @@ def build_games(run_date: str):
             rl_b = score_run_line(ml_b, hwp_b, hwp_b >= 0.5)
             verdicts_b = {"Moneyline": ml_b, "Run Line": rl_b, "Total": tot_b}
             prices_b = {m: best_for(m, v) for m, v in verdicts_b.items()}
+
+            # DOG-BAND FILTER 2026-08-06: dog-band moneylines are the model's
+            # consistently losing segment. Any ML pick whose best price is
+            # +105 or longer is downgraded to PASS (tracked, not bet).
+            def _dogband(vdict, pdict):
+                mlv = vdict.get("Moneyline")
+                pe = pdict.get("Moneyline")
+                if mlv and mlv.verdict in ("PLAY", "LEAN") and pe:
+                    books = pe.get("books") or {}
+                    if books and max(books.values()) >= 105:
+                        vdict["Moneyline"] = MarketVerdict(
+                            mlv.market, mlv.score, "PASS", "—",
+                            list(mlv.rationale) +
+                            ["dog-band filter 2026-08-06 — segment consistently losing; no bet at +105 or longer"])
+                        pdict["Moneyline"] = None
+            _dogband(verdicts, prices)
+            _dogband(verdicts_b, prices_b)
 
             out.append({
                 "away": an, "home": hn,
@@ -715,7 +739,13 @@ def lock_picks(games: list[dict], run_date: str) -> int:
 
     for gm in games:
         emit(gm, "A", "verdicts", "prices", "hwp")
-        emit(gm, "B", "verdicts_b", "prices_b", "hwp_b")
+        # MODEL B LOCKING RETIRED 2026-08-06. Delta backtest on the live
+        # ledger: B-upgraded shared picks 23-24 (-3.07u) vs B-downgraded
+        # 12-5 (+5.92u) — the xERA divergence signal scored BACKWARDS on
+        # shared picks; verdict-crossing divergences went 3-6. Signal not
+        # validated -> experiment retired, historical B rows preserved.
+        # (B verdicts still render on the dashboard for reference.)
+        # emit(gm, "B", "verdicts_b", "prices_b", "hwp_b")
     import os
     os.makedirs("docs", exist_ok=True)
     path = "docs/locked_picks.jsonl"
