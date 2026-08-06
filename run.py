@@ -573,7 +573,7 @@ def lock_picks(games: list[dict], run_date: str) -> int:
             # line; 15:00 UTC run -> period markets only (posted morning-of).
             if period_only != (mkt in PERIOD_MARKETS):
                 continue
-            if (model_tag, gm["game"], mkt, v.pick) in already:
+            if (model_tag, f"{gm['away']} @ {gm['home']}", mkt, v.pick) in already:
                 continue
             if v.verdict in ("PLAY", "LEAN"):
                 price_info = (gm.get(prices_key) or {}).get(mkt) or {}
