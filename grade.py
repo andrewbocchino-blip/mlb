@@ -182,16 +182,56 @@ def grade_pick(row, finals):
     return None, None
 
 
+BOARD = "docs/nrfi_board.jsonl"
+
+
+def load_board():
+    try:
+        with open(BOARD) as f:
+            return [json.loads(l) for l in f if l.strip()]
+    except FileNotFoundError:
+        return []
+
+
+def grade_board(board, finals_by_date):
+    """Grade forced NRFI/YRFI calls against the actual first inning."""
+    changed = 0
+    for r in board:
+        if r.get("graded"):
+            continue
+        fin = (finals_by_date.get(r["slate_date"]) or {})
+        for (away, home), f in fin.items():
+            if f.get("first") is None:
+                continue
+            if f"{away} @ {home}" == r["game"]:
+                a1, h1 = f["first"]
+                actual = "YRFI" if (a1 + h1) > 0 else "NRFI"
+                r["graded"] = True
+                r["result"] = "HIT" if actual == r["call"] else "MISS"
+                changed += 1
+                break
+    return changed
+
+
 def main():
     client = WorkerClient()
     rows = load_locked()
-    if not rows:
+    board = load_board()
+    if not rows and not board:
         print("No locked picks yet.")
         return
 
-    # group dates needing grading
-    dates = sorted({r["slate_date"] for r in rows})
+    # group dates needing grading (locked picks + board dates)
+    dates = sorted({r["slate_date"] for r in rows} | {b["slate_date"] for b in board})
     finals_by_date = {d: fetch_finals(client, d) for d in dates}
+
+    b_changed = grade_board(board, finals_by_date)
+    if board:
+        with open(BOARD, "w") as f:
+            for b in board:
+                f.write(json.dumps(b) + "\n")
+        if b_changed:
+            print(f"Graded {b_changed} NRFI/YRFI board calls.")
 
     changed = 0
     for r in rows:
@@ -209,7 +249,7 @@ def main():
         for r in rows:
             f.write(json.dumps(r) + "\n")
 
-    write_picks_md(rows)
+    write_picks_md(rows, board)
     write_results_md(rows)
     print(f"Graded {changed} newly-final picks. Wrote docs/PICKS.md and docs/RESULTS.md")
 
@@ -230,7 +270,8 @@ def _books_cell(row):
     return " / ".join(parts)
 
 
-def write_picks_md(rows):
+def write_picks_md(rows, board=None):
+    board = board or []
     # Dedupe to one row per unique bet per date (keep the latest pull), so
     # re-runs of the same slate don't show the pick twice. The raw
     # locked_picks.jsonl still preserves every timestamped pull.
@@ -259,6 +300,32 @@ def write_picks_md(rows):
             out.append(f"| {r.get('model','A')} | {r['verdict']} | {r['score']} | {r['game']} | {r['market']} "
                        f"| {r['pick']} | {line} | {_books_cell(r)} |")
         out.append("")
+        day_board = [b for b in board if b["slate_date"] == date]
+        if day_board:
+            out.append(f"#### NRFI/YRFI Board — forced calls (calibration record, NOT bets)")
+            out.append("")
+            out.append("| Game | Call | Confidence | Model P | Market P | Edge | Result |")
+            out.append("|---|---|---|---|---|---|---|")
+            conf_order = {"High": 0, "Medium": 1, "Low": 2, "Coin flip": 3}
+            for b in sorted(day_board, key=lambda x: (conf_order.get(x["confidence"], 9),
+                                                      -(x.get("model_p") or 0))):
+                mp = f"{b['model_p']:.0%}" if b.get("model_p") is not None else "—"
+                kp = f"{b['market_p']:.0%}" if b.get("market_p") is not None else "— (no market)"
+                ed = f"{b['edge']:+.1%}" if b.get("edge") is not None else "—"
+                res = {"HIT": "✅ HIT", "MISS": "❌ MISS"}.get(b.get("result"), "pending")
+                out.append(f"| {b['game']} | **{b['call']}** | {b['confidence']} | {mp} | {kp} | {ed} | {res} |")
+            out.append("")
+            graded_b = [b for b in board if b.get("graded")]
+            if graded_b:
+                tiers = []
+                for tier in ("High", "Medium", "Low", "Coin flip"):
+                    tb = [b for b in graded_b if b["confidence"] == tier]
+                    if tb:
+                        h = sum(1 for b in tb if b["result"] == "HIT")
+                        tiers.append(f"{tier} {h}-{len(tb)-h}")
+                if tiers:
+                    out.append(f"*Board calibration (all time): {' · '.join(tiers)}*")
+                    out.append("")
     with open("docs/PICKS.md", "w") as f:
         f.write("\n".join(out))
     return
