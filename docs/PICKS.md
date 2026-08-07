@@ -11,10 +11,48 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | A | PLAY | 9.5 | Tampa Bay Rays @ Seattle Mariners | Moneyline | Tampa Bay Rays ML | — | **DraftKings +101** / FanDuel +100 |
 | A | PLAY | 9.5 | Detroit Tigers @ San Francisco Giants | Moneyline | Detroit Tigers ML | — | **FanDuel -124** |
 | A | PLAY | 9.2 | Minnesota Twins @ Milwaukee Brewers | Total | Over 7.5 | 7.5 | **DraftKings -118** / FanDuel -120 |
+| A | PLAY | 8.5 | Los Angeles Dodgers @ Arizona Diamondbacks | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -140** |
 | A | PLAY | 8.3 | Chicago Cubs @ Kansas City Royals | Total | Under 10.0 | 10.0 | **FanDuel -122** |
 | A | PLAY | 8.1 | Minnesota Twins @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -162** / DraftKings -171 |
 | A | PLAY | 8.1 | Los Angeles Dodgers @ Arizona Diamondbacks | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -166** / DraftKings -181 |
+| A | LEAN | 5.5 | Athletics @ Boston Red Sox | NRFI | YRFI | 0.5 | **FanDuel +100** |
 | A | LEAN | 5.0 | Toronto Blue Jays @ Philadelphia Phillies | Total | Under 8.5 | 8.5 | **DraftKings -112** / FanDuel -128 |
+| A | LEAN | 5.0 | Baltimore Orioles @ Texas Rangers | F5 Total | F5 Over 3.5 | 3.5 | **FanDuel -144** |
+
+#### NRFI/YRFI Board — forced calls (calibration record, NOT bets)
+
+| Game | Call | Confidence | Model P | Market P | Edge | Result |
+|---|---|---|---|---|---|---|
+| Athletics @ Boston Red Sox | **YRFI** | High | 78% | 47% | +30.4% | pending |
+| Los Angeles Angels @ Miami Marlins | **YRFI** | High | 72% | 50% | +21.2% | pending |
+| Cleveland Guardians @ Chicago White Sox | **YRFI** | High | 68% | 50% | +18.0% | pending |
+| Atlanta Braves @ New York Yankees | **YRFI** | High | 66% | 52% | +14.1% | pending |
+| Houston Astros @ San Diego Padres | **YRFI** | High | 65% | 50% | +15.2% | pending |
+| Detroit Tigers @ San Francisco Giants | **YRFI** | High | 62% | 48% | +14.3% | pending |
+| Tampa Bay Rays @ Seattle Mariners | **YRFI** | High | 62% | 45% | +16.8% | pending |
+| Toronto Blue Jays @ Philadelphia Phillies | **YRFI** | High | 56% | 47% | +8.9% | pending |
+| Chicago Cubs @ Kansas City Royals | **YRFI** | Medium | 64% | 56% | +7.5% | pending |
+| Cincinnati Reds @ Washington Nationals | **YRFI** | Medium | 63% | 56% | +6.8% | pending |
+| Minnesota Twins @ Milwaukee Brewers | **NRFI** | Medium | 56% | 51% | +5.1% | pending |
+| New York Mets @ Pittsburgh Pirates | **NRFI** | Low | 53% | 50% | +2.9% | pending |
+| Los Angeles Dodgers @ Arizona Diamondbacks | **YRFI** | Coin flip | 52% | 55% | -3.6% | pending |
+| Colorado Rockies @ St. Louis Cardinals | **YRFI** | Coin flip | 51% | 52% | -0.9% | pending |
+| Baltimore Orioles @ Texas Rangers | **NRFI** | Coin flip | 50% | 55% | -4.6% | pending |
+
+#### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
+
+| # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Ben Rice | New York Yankees | Atlanta Braves @ New York Yankees | 29% | 1.24 | 1.00 | 1.09 | pending |
+| 2 | Luis García Jr. | New York Yankees | Atlanta Braves @ New York Yankees | 27% | 1.24 | 1.00 | 1.09 | pending |
+| 3 | Aaron Judge | New York Yankees | Atlanta Braves @ New York Yankees | 27% | 1.24 | 1.00 | 1.09 | pending |
+| 4 | CJ Abrams | Washington Nationals | Cincinnati Reds @ Washington Nationals | 24% | 1.04 | 1.00 | 1.18 | pending |
+| 5 | James Wood | Washington Nationals | Cincinnati Reds @ Washington Nationals | 24% | 1.04 | 1.00 | 1.18 | pending |
+| 6 | Max Muncy | Los Angeles Dodgers | Los Angeles Dodgers @ Arizona Diamondbacks | 24% | 1.03 | 1.00 | 1.24 | pending |
+| 7 | Shohei Ohtani | Los Angeles Dodgers | Los Angeles Dodgers @ Arizona Diamondbacks | 24% | 1.03 | 1.00 | 1.24 | pending |
+| 8 | Jake Bauers | Milwaukee Brewers | Minnesota Twins @ Milwaukee Brewers | 23% | 1.09 | 1.00 | 1.24 | pending |
+| 9 | Kyle Schwarber | Philadelphia Phillies | Toronto Blue Jays @ Philadelphia Phillies | 23% | 1.18 | 1.00 | 0.86 | pending |
+| 10 | Paul Goldschmidt | New York Yankees | Atlanta Braves @ New York Yankees | 23% | 1.24 | 1.00 | 1.09 | pending |
 
 ## 2026-08-06
 
