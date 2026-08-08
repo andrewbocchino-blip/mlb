@@ -2,32 +2,32 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 283-236  ·  55% win  ·  +10.00u  ·  +1.9% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 287-243  ·  54% win  ·  +5.86u  ·  +1.1% ROI  ·  avg CLV n/a (no closing lines yet)**
 **Model B: 237-191  ·  55% win  ·  +14.16u  ·  +3.3% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
-### Moneyline probability calibration (Model A, n=283)
+### Moneyline probability calibration (Model A, n=289)
 
-Brier score: **0.2420** (0.25 = coin flip knowledge; lower is better)
+Brier score: **0.2428** (0.25 = coin flip knowledge; lower is better)
 
 | Model home-win band | n | Predicted avg | Actual home-win % |
 |---|---|---|---|
-| 0%–40% | 40 | 35% | 35% |
-| 40%–45% | 41 | 43% | 51% |
-| 45%–50% | 47 | 47% | 36% |
+| 0%–40% | 41 | 35% | 37% |
+| 40%–45% | 43 | 43% | 51% |
+| 45%–50% | 48 | 47% | 35% |
 | 50%–55% | 39 | 52% | 38% |
 | 55%–60% | 49 | 57% | 65% |
 | 60%–65% | 32 | 62% | 62% |
-| 65%+ | 35 | 70% | 66% |
+| 65%+ | 37 | 69% | 65% |
 
 > Calibrated = predicted ≈ actual per band. Systematic gaps mean the win probabilities themselves need retuning before any ML edge claim.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 166-117 (+4%)  ·  Total 74-67 (+2%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 1-4 (-65%)
-- **by side:** Over 21-20 (+3%)  ·  Under 53-47 (+2%)  ·  team 209-169 (+2%)
-- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 145-119 (+5%)  ·  fav 76-50 (-1%)  ·  dog 29-43 (-4%)  ·  heavy fav 13-10 (-20%)
+- **by market:** Moneyline 169-120 (+4%)  ·  Total 75-68 (+2%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 1-6 (-75%)  ·  NRFI 0-1 (-100%)
+- **by side:** Over 22-20 (+5%)  ·  Under 53-48 (+1%)  ·  team 212-175 (+1%)
+- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 147-122 (+5%)  ·  fav 77-54 (-4%)  ·  dog 29-43 (-4%)  ·  heavy fav 14-10 (-18%)
 
 ### Model B — segments (finding the winning slice)
 
@@ -36,6 +36,23 @@ Brier score: **0.2420** (0.25 = coin flip knowledge; lower is better)
 - **by fav_band:** pickem 129-98 (+9%)  ·  fav 68-40 (+4%)  ·  dog 27-40 (-5%)  ·  unknown 2-3 (-24%)  ·  heavy fav 11-10 (-26%)
 
 ## Model A — picks by date
+
+### 2026-08-07 — 4-7  (-4.14u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Athletics @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **FanDuel -255** / DraftKings -269 | — | +0.39 |
+| ✅ WIN | PLAY | Chicago Cubs @ Kansas City Royals | Moneyline | Chicago Cubs ML | — | **FanDuel -164** | — | +0.61 |
+| ✅ WIN | PLAY | Tampa Bay Rays @ Seattle Mariners | Moneyline | Tampa Bay Rays ML | — | **DraftKings +101** / FanDuel +100 | — | +1.01 |
+| ✅ WIN | PLAY | Minnesota Twins @ Milwaukee Brewers | Total | Over 7.5 | 7.5 | **DraftKings -118** / FanDuel -120 | — | +0.85 |
+| ❌ LOSS | PLAY | Detroit Tigers @ San Francisco Giants | Moneyline | Detroit Tigers ML | — | **FanDuel -124** | — | -1.00 |
+| ❌ LOSS | PLAY | Los Angeles Dodgers @ Arizona Diamondbacks | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -140** | — | -1.00 |
+| ➖ PUSH | PLAY | Chicago Cubs @ Kansas City Royals | Total | Under 10.0 | 10.0 | **FanDuel -122** | — | +0.00 |
+| ❌ LOSS | PLAY | Minnesota Twins @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -162** / DraftKings -171 | — | -1.00 |
+| ❌ LOSS | PLAY | Los Angeles Dodgers @ Arizona Diamondbacks | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -166** / DraftKings -181 | — | -1.00 |
+| ❌ LOSS | LEAN | Athletics @ Boston Red Sox | NRFI | YRFI | 0.5 | **FanDuel +100** | — | -1.00 |
+| ❌ LOSS | LEAN | Toronto Blue Jays @ Philadelphia Phillies | Total | Under 8.5 | 8.5 | **DraftKings -112** / FanDuel -128 | — | -1.00 |
+| ❌ LOSS | LEAN | Baltimore Orioles @ Texas Rangers | F5 Total | F5 Over 3.5 | 3.5 | **FanDuel -144** | — | -1.00 |
 
 ### 2026-08-06 — 4-6  (-3.55u)
 

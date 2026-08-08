@@ -2,6 +2,18 @@
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
 
+## 2026-08-08
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Athletics @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **DraftKings -243** / FanDuel -245 |
+| A | PLAY | 9.5 | Chicago Cubs @ Kansas City Royals | Moneyline | Chicago Cubs ML | — | **FanDuel -164** / DraftKings -175 |
+| A | PLAY | 9.5 | Houston Astros @ San Diego Padres | Moneyline | Houston Astros ML | — | **DraftKings +104** / FanDuel +100 |
+| A | PLAY | 9.5 | Detroit Tigers @ San Francisco Giants | Moneyline | Detroit Tigers ML | — | **DraftKings -110** / FanDuel -112 |
+| A | PLAY | 9.5 | Tampa Bay Rays @ Seattle Mariners | Moneyline | Tampa Bay Rays ML | — | **FanDuel +104** / DraftKings -101 |
+| A | PLAY | 7.1 | Los Angeles Dodgers @ Arizona Diamondbacks | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -176** / DraftKings -180 |
+| A | LEAN | 6.3 | Athletics @ Boston Red Sox | Total | Under 9.5 | 9.5 | **DraftKings +101** / FanDuel -124 |
+
 ## 2026-08-07
 
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
@@ -23,36 +35,40 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | Game | Call | Confidence | Model P | Market P | Edge | Result |
 |---|---|---|---|---|---|---|
-| Athletics @ Boston Red Sox | **YRFI** | High | 78% | 47% | +30.4% | pending |
-| Los Angeles Angels @ Miami Marlins | **YRFI** | High | 72% | 50% | +21.2% | pending |
-| Cleveland Guardians @ Chicago White Sox | **YRFI** | High | 68% | 50% | +18.0% | pending |
-| Atlanta Braves @ New York Yankees | **YRFI** | High | 66% | 52% | +14.1% | pending |
-| Houston Astros @ San Diego Padres | **YRFI** | High | 65% | 50% | +15.2% | pending |
-| Detroit Tigers @ San Francisco Giants | **YRFI** | High | 62% | 48% | +14.3% | pending |
-| Tampa Bay Rays @ Seattle Mariners | **YRFI** | High | 62% | 45% | +16.8% | pending |
-| Toronto Blue Jays @ Philadelphia Phillies | **YRFI** | High | 56% | 47% | +8.9% | pending |
-| Chicago Cubs @ Kansas City Royals | **YRFI** | Medium | 64% | 56% | +7.5% | pending |
-| Cincinnati Reds @ Washington Nationals | **YRFI** | Medium | 63% | 56% | +6.8% | pending |
-| Minnesota Twins @ Milwaukee Brewers | **NRFI** | Medium | 56% | 51% | +5.1% | pending |
-| New York Mets @ Pittsburgh Pirates | **NRFI** | Low | 53% | 50% | +2.9% | pending |
-| Los Angeles Dodgers @ Arizona Diamondbacks | **YRFI** | Coin flip | 52% | 55% | -3.6% | pending |
-| Colorado Rockies @ St. Louis Cardinals | **YRFI** | Coin flip | 51% | 52% | -0.9% | pending |
-| Baltimore Orioles @ Texas Rangers | **NRFI** | Coin flip | 50% | 55% | -4.6% | pending |
+| Athletics @ Boston Red Sox | **YRFI** | High | 78% | 47% | +30.4% | ❌ MISS |
+| Los Angeles Angels @ Miami Marlins | **YRFI** | High | 72% | 50% | +21.2% | ✅ HIT |
+| Cleveland Guardians @ Chicago White Sox | **YRFI** | High | 68% | 50% | +18.0% | ✅ HIT |
+| Atlanta Braves @ New York Yankees | **YRFI** | High | 66% | 52% | +14.1% | ❌ MISS |
+| Houston Astros @ San Diego Padres | **YRFI** | High | 65% | 50% | +15.2% | ❌ MISS |
+| Detroit Tigers @ San Francisco Giants | **YRFI** | High | 62% | 48% | +14.3% | ✅ HIT |
+| Tampa Bay Rays @ Seattle Mariners | **YRFI** | High | 62% | 45% | +16.8% | ❌ MISS |
+| Toronto Blue Jays @ Philadelphia Phillies | **YRFI** | High | 56% | 47% | +8.9% | ❌ MISS |
+| Chicago Cubs @ Kansas City Royals | **YRFI** | Medium | 64% | 56% | +7.5% | ✅ HIT |
+| Cincinnati Reds @ Washington Nationals | **YRFI** | Medium | 63% | 56% | +6.8% | ✅ HIT |
+| Minnesota Twins @ Milwaukee Brewers | **NRFI** | Medium | 56% | 51% | +5.1% | ❌ MISS |
+| New York Mets @ Pittsburgh Pirates | **NRFI** | Low | 53% | 50% | +2.9% | ❌ MISS |
+| Los Angeles Dodgers @ Arizona Diamondbacks | **YRFI** | Coin flip | 52% | 55% | -3.6% | ❌ MISS |
+| Colorado Rockies @ St. Louis Cardinals | **YRFI** | Coin flip | 51% | 52% | -0.9% | ❌ MISS |
+| Baltimore Orioles @ Texas Rangers | **NRFI** | Coin flip | 50% | 55% | -4.6% | ✅ HIT |
+
+*Board calibration (all time): High 3-5 · Medium 2-1 · Low 0-1 · Coin flip 1-2*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
 | # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Ben Rice | New York Yankees | Atlanta Braves @ New York Yankees | 29% | 1.24 | 1.00 | 1.09 | pending |
-| 2 | Luis García Jr. | New York Yankees | Atlanta Braves @ New York Yankees | 27% | 1.24 | 1.00 | 1.09 | pending |
+| 1 | Ben Rice | New York Yankees | Atlanta Braves @ New York Yankees | 29% | 1.24 | 1.00 | 1.09 | ❌ no HR |
+| 2 | Luis García Jr. | New York Yankees | Atlanta Braves @ New York Yankees | 27% | 1.24 | 1.00 | 1.09 | ❌ no HR |
 | 3 | Aaron Judge | New York Yankees | Atlanta Braves @ New York Yankees | 27% | 1.24 | 1.00 | 1.09 | pending |
-| 4 | CJ Abrams | Washington Nationals | Cincinnati Reds @ Washington Nationals | 24% | 1.04 | 1.00 | 1.18 | pending |
+| 4 | CJ Abrams | Washington Nationals | Cincinnati Reds @ Washington Nationals | 24% | 1.04 | 1.00 | 1.18 | ❌ no HR |
 | 5 | James Wood | Washington Nationals | Cincinnati Reds @ Washington Nationals | 24% | 1.04 | 1.00 | 1.18 | pending |
-| 6 | Max Muncy | Los Angeles Dodgers | Los Angeles Dodgers @ Arizona Diamondbacks | 24% | 1.03 | 1.00 | 1.24 | pending |
-| 7 | Shohei Ohtani | Los Angeles Dodgers | Los Angeles Dodgers @ Arizona Diamondbacks | 24% | 1.03 | 1.00 | 1.24 | pending |
-| 8 | Jake Bauers | Milwaukee Brewers | Minnesota Twins @ Milwaukee Brewers | 23% | 1.09 | 1.00 | 1.24 | pending |
-| 9 | Kyle Schwarber | Philadelphia Phillies | Toronto Blue Jays @ Philadelphia Phillies | 23% | 1.18 | 1.00 | 0.86 | pending |
-| 10 | Paul Goldschmidt | New York Yankees | Atlanta Braves @ New York Yankees | 23% | 1.24 | 1.00 | 1.09 | pending |
+| 6 | Max Muncy | Los Angeles Dodgers | Los Angeles Dodgers @ Arizona Diamondbacks | 24% | 1.03 | 1.00 | 1.24 | ❌ no HR |
+| 7 | Shohei Ohtani | Los Angeles Dodgers | Los Angeles Dodgers @ Arizona Diamondbacks | 24% | 1.03 | 1.00 | 1.24 | ❌ no HR |
+| 8 | Jake Bauers | Milwaukee Brewers | Minnesota Twins @ Milwaukee Brewers | 23% | 1.09 | 1.00 | 1.24 | ❌ no HR |
+| 9 | Kyle Schwarber | Philadelphia Phillies | Toronto Blue Jays @ Philadelphia Phillies | 23% | 1.18 | 1.00 | 0.86 | ❌ no HR |
+| 10 | Paul Goldschmidt | New York Yankees | Atlanta Braves @ New York Yankees | 23% | 1.24 | 1.00 | 1.09 | ❌ no HR |
+
+*HR board calibration (all time): 0 homered of 8 listed · model expected 2.0*
 
 ## 2026-08-06
 
