@@ -11,8 +11,48 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | A | PLAY | 9.5 | Houston Astros @ San Diego Padres | Moneyline | Houston Astros ML | — | **DraftKings +104** / FanDuel +100 |
 | A | PLAY | 9.5 | Detroit Tigers @ San Francisco Giants | Moneyline | Detroit Tigers ML | — | **DraftKings -110** / FanDuel -112 |
 | A | PLAY | 9.5 | Tampa Bay Rays @ Seattle Mariners | Moneyline | Tampa Bay Rays ML | — | **FanDuel +104** / DraftKings -101 |
+| A | PLAY | 9.5 | Colorado Rockies @ St. Louis Cardinals | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -128** |
 | A | PLAY | 7.1 | Los Angeles Dodgers @ Arizona Diamondbacks | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -176** / DraftKings -180 |
 | A | LEAN | 6.3 | Athletics @ Boston Red Sox | Total | Under 9.5 | 9.5 | **DraftKings +101** / FanDuel -124 |
+
+#### NRFI/YRFI Board — forced calls (calibration record, NOT bets)
+
+| Game | Call | Confidence | Model P | Market P | Edge | Result |
+|---|---|---|---|---|---|---|
+| Detroit Tigers @ San Francisco Giants | **YRFI** | High | 68% | 48% | +19.3% | pending |
+| Chicago Cubs @ Kansas City Royals | **YRFI** | High | 64% | 50% | +14.0% | pending |
+| Colorado Rockies @ St. Louis Cardinals | **YRFI** | High | 63% | 50% | +12.9% | pending |
+| Cleveland Guardians @ Chicago White Sox | **YRFI** | High | 63% | 47% | +16.2% | pending |
+| Minnesota Twins @ Milwaukee Brewers | **NRFI** | High | 62% | 50% | +12.5% | pending |
+| Tampa Bay Rays @ Seattle Mariners | **YRFI** | High | 62% | 47% | +14.8% | pending |
+| New York Mets @ Pittsburgh Pirates | **NRFI** | High | 61% | 48% | +13.2% | pending |
+| Cincinnati Reds @ Washington Nationals | **YRFI** | High | 58% | 48% | +9.4% | pending |
+| Athletics @ Boston Red Sox | **YRFI** | High | 57% | 47% | +9.8% | pending |
+| Baltimore Orioles @ Texas Rangers | **YRFI** | High | 55% | 46% | +9.2% | pending |
+| Atlanta Braves @ New York Yankees | **NRFI** | Coin flip | 54% | 53% | +0.8% | pending |
+| Toronto Blue Jays @ Philadelphia Phillies | **YRFI** | Coin flip | 52% | 55% | -3.8% | pending |
+| Los Angeles Angels @ Miami Marlins | **NRFI** | Coin flip | 51% | 54% | -2.7% | pending |
+| Houston Astros @ San Diego Padres | **NRFI** | Coin flip | 51% | 55% | -4.1% | pending |
+| Los Angeles Dodgers @ Arizona Diamondbacks | **YRFI** | Coin flip | 51% | 52% | -1.3% | pending |
+
+*Board calibration (all time): High 3-5 · Medium 2-1 · Low 0-1 · Coin flip 1-2*
+
+#### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
+
+| # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Kyle Schwarber | Philadelphia Phillies | Toronto Blue Jays @ Philadelphia Phillies | 32% | 1.18 | 1.00 | 1.24 | pending |
+| 2 | Matt Olson | Atlanta Braves | Atlanta Braves @ New York Yankees | 29% | 1.24 | 1.00 | 1.10 | pending |
+| 3 | Munetaka Murakami | Chicago White Sox | Cleveland Guardians @ Chicago White Sox | 28% | 1.15 | 1.00 | 1.11 | pending |
+| 4 | Hunter Goodman | Colorado Rockies | Colorado Rockies @ St. Louis Cardinals | 27% | 0.92 | 1.00 | 1.22 | pending |
+| 5 | Kazuma Okamoto | Toronto Blue Jays | Toronto Blue Jays @ Philadelphia Phillies | 26% | 1.18 | 1.00 | 1.24 | pending |
+| 6 | Bryce Harper | Philadelphia Phillies | Toronto Blue Jays @ Philadelphia Phillies | 25% | 1.18 | 1.00 | 1.24 | pending |
+| 7 | Derek Hill | Philadelphia Phillies | Toronto Blue Jays @ Philadelphia Phillies | 24% | 1.18 | 1.00 | 1.24 | pending |
+| 8 | Colson Montgomery | Chicago White Sox | Cleveland Guardians @ Chicago White Sox | 24% | 1.15 | 1.00 | 1.11 | pending |
+| 9 | Esmerlyn Valdez | Pittsburgh Pirates | New York Mets @ Pittsburgh Pirates | 24% | 0.90 | 1.00 | 1.24 | pending |
+| 10 | Mickey Moniak | Colorado Rockies | Colorado Rockies @ St. Louis Cardinals | 23% | 0.92 | 1.00 | 1.22 | pending |
+
+*HR board calibration (all time): 0 homered of 8 listed · model expected 2.0*
 
 ## 2026-08-07
 
