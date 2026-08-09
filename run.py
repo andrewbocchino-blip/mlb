@@ -762,8 +762,15 @@ def main():
     try:
         games = build_games(run_date)
     except Exception as exc:
-        games = []
-        print(f"[fatal] {exc}", file=sys.stderr)
+        # FAIL LOUDLY (2026-08-09): a build failure previously produced a
+        # GREEN run that overwrote the dashboard with an empty page and
+        # silently skipped all locks and boards (observed 8/9 15:26 UTC —
+        # transient upstream error, invisible until the diff was read).
+        # Now: preserve yesterday's dashboard, write nothing, exit red.
+        print(f"[fatal] build_games failed: {exc}", file=sys.stderr)
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
     import os
     os.makedirs("docs", exist_ok=True)
     with open("docs/index.html", "w") as f:
