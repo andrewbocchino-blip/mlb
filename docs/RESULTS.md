@@ -2,32 +2,32 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 287-243  ·  54% win  ·  +5.86u  ·  +1.1% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 291-247  ·  54% win  ·  +5.16u  ·  +1.0% ROI  ·  avg CLV n/a (no closing lines yet)**
 **Model B: 237-191  ·  55% win  ·  +14.16u  ·  +3.3% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
-### Moneyline probability calibration (Model A, n=289)
+### Moneyline probability calibration (Model A, n=295)
 
-Brier score: **0.2428** (0.25 = coin flip knowledge; lower is better)
+Brier score: **0.2438** (0.25 = coin flip knowledge; lower is better)
 
 | Model home-win band | n | Predicted avg | Actual home-win % |
 |---|---|---|---|
-| 0%–40% | 41 | 35% | 37% |
-| 40%–45% | 43 | 43% | 51% |
-| 45%–50% | 48 | 47% | 35% |
+| 0%–40% | 42 | 35% | 38% |
+| 40%–45% | 46 | 43% | 50% |
+| 45%–50% | 49 | 47% | 35% |
 | 50%–55% | 39 | 52% | 38% |
 | 55%–60% | 49 | 57% | 65% |
-| 60%–65% | 32 | 62% | 62% |
+| 60%–65% | 33 | 62% | 61% |
 | 65%+ | 37 | 69% | 65% |
 
 > Calibrated = predicted ≈ actual per band. Systematic gaps mean the win probabilities themselves need retuning before any ML edge claim.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 169-120 (+4%)  ·  Total 75-68 (+2%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 1-6 (-75%)  ·  NRFI 0-1 (-100%)
-- **by side:** Over 22-20 (+5%)  ·  Under 53-48 (+1%)  ·  team 212-175 (+1%)
-- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 147-122 (+5%)  ·  fav 77-54 (-4%)  ·  dog 29-43 (-4%)  ·  heavy fav 14-10 (-18%)
+- **by market:** Moneyline 172-123 (+4%)  ·  Total 75-69 (+2%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 2-6 (-56%)  ·  NRFI 0-1 (-100%)
+- **by side:** Over 22-20 (+5%)  ·  team 216-178 (+1%)  ·  Under 53-49 (+0%)
+- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 150-124 (+5%)  ·  dog 29-43 (-4%)  ·  fav 78-55 (-4%)  ·  heavy fav 14-11 (-21%)
 
 ### Model B — segments (finding the winning slice)
 
@@ -36,6 +36,19 @@ Brier score: **0.2428** (0.25 = coin flip knowledge; lower is better)
 - **by fav_band:** pickem 129-98 (+9%)  ·  fav 68-40 (+4%)  ·  dog 27-40 (-5%)  ·  unknown 2-3 (-24%)  ·  heavy fav 11-10 (-26%)
 
 ## Model A — picks by date
+
+### 2026-08-08 — 4-4  (-0.70u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Detroit Tigers @ San Francisco Giants | Moneyline | Detroit Tigers ML | — | **DraftKings -110** / FanDuel -112 | — | +0.91 |
+| ✅ WIN | PLAY | Tampa Bay Rays @ Seattle Mariners | Moneyline | Tampa Bay Rays ML | — | **FanDuel +104** / DraftKings -101 | — | +1.04 |
+| ✅ WIN | PLAY | Colorado Rockies @ St. Louis Cardinals | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -128** | — | +0.78 |
+| ✅ WIN | PLAY | Los Angeles Dodgers @ Arizona Diamondbacks | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -176** / DraftKings -180 | — | +0.57 |
+| ❌ LOSS | PLAY | Athletics @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **DraftKings -243** / FanDuel -245 | — | -1.00 |
+| ❌ LOSS | PLAY | Chicago Cubs @ Kansas City Royals | Moneyline | Chicago Cubs ML | — | **FanDuel -164** / DraftKings -175 | — | -1.00 |
+| ❌ LOSS | PLAY | Houston Astros @ San Diego Padres | Moneyline | Houston Astros ML | — | **DraftKings +104** / FanDuel +100 | — | -1.00 |
+| ❌ LOSS | LEAN | Athletics @ Boston Red Sox | Total | Under 9.5 | 9.5 | **DraftKings +101** / FanDuel -124 | — | -1.00 |
 
 ### 2026-08-07 — 4-7  (-4.14u)
 
