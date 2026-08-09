@@ -16,6 +16,34 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | A | LEAN | 6.7 | Minnesota Twins @ Milwaukee Brewers | Total | Over 7.5 | 7.5 | **DraftKings -103** / FanDuel -104 |
 | A | LEAN | 5.1 | Colorado Rockies @ St. Louis Cardinals | Moneyline | St. Louis Cardinals ML | — | **FanDuel -166** / DraftKings -168 |
 
+#### NRFI/YRFI Board — forced calls (calibration record, NOT bets)
+
+| Game | Call | Confidence | Model P | Market P | Edge | Result |
+|---|---|---|---|---|---|---|
+| Los Angeles Dodgers @ Arizona Diamondbacks | **YRFI** | High | 70% | — (no market) | — | pending |
+| Houston Astros @ San Diego Padres | **YRFI** | High | 67% | — (no market) | — | pending |
+| Detroit Tigers @ San Francisco Giants | **YRFI** | High | 66% | — (no market) | — | pending |
+| Tampa Bay Rays @ Seattle Mariners | **YRFI** | High | 65% | — (no market) | — | pending |
+
+*Board calibration (all time): High 7-11 · Medium 2-1 · Low 0-1 · Coin flip 4-4*
+
+#### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
+
+| # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Yordan Alvarez | Houston Astros | Houston Astros @ San Diego Padres | 22% | 0.94 | 1.00 | 1.00 | pending |
+| 2 | Junior Caminero | Tampa Bay Rays | Tampa Bay Rays @ Seattle Mariners | 20% | 0.89 | 1.00 | 1.01 | pending |
+| 3 | Dominic Canzone | Seattle Mariners | Tampa Bay Rays @ Seattle Mariners | 18% | 0.89 | 1.00 | 1.13 | pending |
+| 4 | Ty France | San Diego Padres | Houston Astros @ San Diego Padres | 18% | 0.94 | 1.00 | 1.09 | pending |
+| 5 | Manny Machado | San Diego Padres | Houston Astros @ San Diego Padres | 17% | 0.94 | 1.00 | 1.09 | pending |
+| 6 | Max Muncy | Los Angeles Dodgers | Los Angeles Dodgers @ Arizona Diamondbacks | 17% | 1.03 | 1.00 | 0.85 | pending |
+| 7 | Shohei Ohtani | Los Angeles Dodgers | Los Angeles Dodgers @ Arizona Diamondbacks | 16% | 1.03 | 1.00 | 0.85 | pending |
+| 8 | Christian Walker | Houston Astros | Houston Astros @ San Diego Padres | 16% | 0.94 | 1.00 | 1.00 | pending |
+| 9 | Nolan Arenado | Arizona Diamondbacks | Los Angeles Dodgers @ Arizona Diamondbacks | 16% | 1.03 | 1.00 | 1.04 | pending |
+| 10 | Victor Mesa Jr. | Tampa Bay Rays | Tampa Bay Rays @ Seattle Mariners | 16% | 0.89 | 1.00 | 1.01 | pending |
+
+*HR board calibration (all time): 2 homered of 17 listed · model expected 4.3*
+
 ## 2026-08-08
 
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
