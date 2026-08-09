@@ -53,14 +53,19 @@ def to_decimal(american):
     return (american / 100.0 + 1.0) if american > 0 else (100.0 / abs(american) + 1.0)
 
 
-def fetch_close_quotes(client):
-    """Current core quotes (bulk) + period quotes (per event)."""
+def fetch_close_quotes(client, need_core=True, need_period=True):
+    """Closing quotes — but ONLY for market groups with locked picks
+    awaiting closes (credit economy, 2026-08-09). Skipping the per-event
+    period loop on days with no period picks saves ~30 credits."""
     odds = []
-    try:
-        core = client.odds(markets="h2h,spreads,totals", bookmakers=BOOKMAKERS)
-        odds.extend(core or [])
-    except Exception as exc:
-        print(f"[clv] core odds unavailable ({exc})")
+    if need_core:
+        try:
+            core = client.odds(markets="h2h,totals", bookmakers=BOOKMAKERS)
+            odds.extend(core or [])
+        except Exception as exc:
+            print(f"[clv] core odds unavailable ({exc})")
+    if not need_period:
+        return parse_odds(odds)
     try:
         for ev in (client.events() or []):
             ev_id = ev.get("id")
@@ -128,7 +133,9 @@ def main():
         return
 
     client = WorkerClient()
-    quotes = fetch_close_quotes(client)
+    need_core = any(r["market"] in ("Moneyline", "Total", "Run Line") for r in todo)
+    need_period = any(r["market"] in ("F5 Total", "NRFI") for r in todo)
+    quotes = fetch_close_quotes(client, need_core, need_period)
     if not quotes:
         print("CLV: no quotes returned — leaving picks untouched.")
         return
