@@ -212,6 +212,68 @@ def grade_pick(row, finals):
     return None, None
 
 
+PROPS = "docs/props_board.jsonl"
+
+
+def load_props():
+    try:
+        with open(PROPS) as f:
+            return [json.loads(l) for l in f if l.strip()]
+    except FileNotFoundError:
+        return []
+
+
+def grade_props(client, board):
+    """Grade prop calls off each player's game log for the slate date.
+    HR props: did he homer. K props: strikeouts vs the locked line."""
+    changed = 0
+    cache = {}
+    for r in board:
+        if r.get("graded"):
+            continue
+        season = int(r["slate_date"][:4])
+        group = "pitching" if r["market"] == "pitcher_strikeouts" else "hitting"
+        pid = r.get("player_id")
+        if pid is None:
+            continue
+        key = (pid, group)
+        if key not in cache:
+            try:
+                cache[key] = client.get_json(
+                    f"mlb/people/{pid}/stats",
+                    {"stats": "gameLog", "group": group, "season": season})
+            except Exception:
+                cache[key] = None
+        resp = cache[key]
+        if not resp:
+            continue
+        day = []
+        for blk in (resp.get("stats") or []):
+            for sp in (blk.get("splits") or []):
+                if sp.get("date") == r["slate_date"]:
+                    day.append(sp.get("stat") or {})
+        if not day:
+            continue          # didn't play / not final yet — stays pending
+        stat_key = "strikeOuts" if group == "pitching" else "homeRuns"
+        total = 0
+        for st in day:
+            try:
+                total += int(st.get(stat_key) or 0)
+            except (TypeError, ValueError):
+                pass
+        line = float(r["line"])
+        if total == line:
+            r["graded"], r["result"], r["actual"] = True, "PUSH", total
+        else:
+            went_over = total > line
+            hit = (went_over and r["side"] == "Over") or ((not went_over) and r["side"] == "Under")
+            r["graded"] = True
+            r["result"] = "HIT" if hit else "MISS"
+            r["actual"] = total
+        changed += 1
+    return changed
+
+
 BOARD = "docs/nrfi_board.jsonl"
 HRBOARD = "docs/hr_board.jsonl"
 
@@ -303,6 +365,15 @@ def main():
     dates = sorted({r["slate_date"] for r in rows} | {b["slate_date"] for b in board})
     finals_by_date = {d: fetch_finals(client, d) for d in dates}
 
+    props_board = load_props()
+    p_changed = grade_props(client, props_board)
+    if props_board:
+        with open(PROPS, "w") as f:
+            for b in props_board:
+                f.write(json.dumps(b) + "\n")
+        if p_changed:
+            print(f"Graded {p_changed} prop calls.")
+
     hr_board = load_hr_board()
     hr_changed = grade_hr_board(client, hr_board)
     if hr_board:
@@ -338,7 +409,7 @@ def main():
         for r in rows:
             f.write(json.dumps(r) + "\n")
 
-    write_picks_md(rows, board, hr_board)
+    write_picks_md(rows, board, hr_board, props_board)
     write_results_md(rows)
     print(f"Graded {changed} newly-final picks. Wrote docs/PICKS.md and docs/RESULTS.md")
 
@@ -359,9 +430,10 @@ def _books_cell(row):
     return " / ".join(parts)
 
 
-def write_picks_md(rows, board=None, hr_board=None):
+def write_picks_md(rows, board=None, hr_board=None, props_board=None):
     board = board or []
     hr_board = hr_board or []
+    props_board = props_board or []
     # Dedupe to one row per unique bet per date (keep the latest pull), so
     # re-runs of the same slate don't show the pick twice. The raw
     # locked_picks.jsonl still preserves every timestamped pull.
@@ -376,14 +448,25 @@ def write_picks_md(rows, board=None, hr_board=None):
     by_date = {}
     for r in deduped:
         by_date.setdefault(r["slate_date"], []).append(r)
+    # BOARD VISIBILITY FIX (2026-08-11): the boards render inside the per-date
+    # loop, so a slate with zero locked picks used to drop its NRFI/HR/prop
+    # tables entirely even though they were written to disk. Iterate over the
+    # UNION of pick dates and board dates.
+    for _b in list(board) + list(hr_board) + list(props_board):
+        by_date.setdefault(_b["slate_date"], [])
     out = ["# Locked Picks — A/B", "", "Picks frozen at the line they were taken at. "
            "**Model A** = current (v14.3). **Model B** = variant. "
            "Both books shown; **bold = better price**. One row per bet. Paper only.", ""]
     for date in sorted(by_date, reverse=True):
         out.append(f"## {date}")
         out.append("")
-        out.append("| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |")
-        out.append("|---|---|---|---|---|---|---|---|")
+        if not by_date[date]:
+            out.append("*No locked picks — model passed the slate. Boards below are "
+                       "calibration records, not bets.*")
+            out.append("")
+        else:
+            out.append("| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |")
+            out.append("|---|---|---|---|---|---|---|---|")
         for r in sorted(by_date[date], key=lambda x: (x.get("model", "A"), -x["score"])):
             line = r.get("line_at_pull")
             line = "—" if line is None else line
@@ -435,6 +518,41 @@ def write_picks_md(rows, board=None, hr_board=None):
                 out.append(f"*HR board calibration (all time): {hits} homered of "
                            f"{len(graded_hr)} listed · model expected {exp:.1f}*")
                 out.append("")
+        day_props = [b for b in props_board if b["slate_date"] == date]
+        if day_props:
+            MKT = {"batter_home_runs": "HR", "pitcher_strikeouts": "Ks"}
+            out.append("#### Prop Divergence — model vs **no-vig** market "
+                       "(calibration record, NOT bets)")
+            out.append("")
+            out.append("| Player | Mkt | Call | Line | Price | Book | Model | No-vig | Edge | Hold | Result |")
+            out.append("|---|---|---|---|---|---|---|---|---|---|---|")
+            for b in sorted(day_props, key=lambda x: -x.get("edge", 0))[:15]:
+                res = {"HIT": "✅ HIT", "MISS": "❌ MISS", "PUSH": "➖ PUSH"}.get(b.get("result"), "pending")
+                if b.get("actual") is not None:
+                    res += f" ({b['actual']})"
+                star = "**" if b.get("qualified") else ""
+                px = b.get("price")
+                pxs = f"{'+' if px and px > 0 else ''}{int(px)}" if px is not None else "—"
+                out.append(f"| {star}{b['player']}{star} | {MKT.get(b['market'], b['market'])} "
+                           f"| {b['side']} | {b['line']} | {pxs} | {b.get('book','—')} "
+                           f"| {b['model_p']:.0%} | {b['novig_p']:.0%} | {b['edge']:+.1%} "
+                           f"| {b['hold']:.1%} | {res} |")
+            out.append("")
+            gp = [b for b in props_board if b.get("graded") and b.get("result") in ("HIT", "MISS")]
+            if gp:
+                q = [b for b in gp if b.get("qualified")]
+                def _rec(rows_):
+                    h = sum(1 for b in rows_ if b["result"] == "HIT")
+                    exp = sum(b["model_p"] for b in rows_)
+                    return f"{h}-{len(rows_)-h} (model expected {exp:.1f} hits)"
+                line = f"*Prop calibration (all time): all calls {_rec(gp)}*"
+                if q:
+                    line += f" · *gate-clearing calls {_rec(q)}*"
+                out.append(line)
+                out.append("")
+            out.append("*Bold = cleared the 6% no-vig edge gate with no data-quality flags. "
+                       "Edge is measured against the vig-free price, never the raw line.*")
+            out.append("")
     with open("docs/PICKS.md", "w") as f:
         f.write("\n".join(out))
     return
