@@ -16,7 +16,69 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | A | LEAN | 6.5 | Philadelphia Phillies @ St. Louis Cardinals | Moneyline | Philadelphia Phillies ML | — | **FanDuel -160** / DraftKings -163 |
 | A | LEAN | 6.3 | Chicago Cubs @ Washington Nationals | Moneyline | Chicago Cubs ML | — | **DraftKings -159** / FanDuel -160 |
 | A | LEAN | 5.8 | Milwaukee Brewers @ San Diego Padres | Total | Over 7.5 | 7.5 | **FanDuel -108** / DraftKings -108 |
+| A | LEAN | 5.4 | Pittsburgh Pirates @ Miami Marlins | F5 Total | F5 Over 3.5 | 3.5 | **FanDuel -114** |
 | A | LEAN | 5.2 | Colorado Rockies @ Arizona Diamondbacks | Moneyline | Arizona Diamondbacks ML | — | **FanDuel -168** / DraftKings -170 |
+
+#### NRFI/YRFI Board — forced calls (calibration record, NOT bets)
+
+| Game | Call | Confidence | Model P | Market P | Edge | Result |
+|---|---|---|---|---|---|---|
+| Colorado Rockies @ Arizona Diamondbacks | **YRFI** | High | 68% | 55% | +13.7% | pending |
+| Cleveland Guardians @ Detroit Tigers | **YRFI** | High | 68% | 48% | +19.6% | pending |
+| New York Mets @ Atlanta Braves | **YRFI** | High | 66% | 52% | +14.6% | pending |
+| Philadelphia Phillies @ St. Louis Cardinals | **YRFI** | High | 63% | 48% | +14.8% | pending |
+| Milwaukee Brewers @ San Diego Padres | **YRFI** | High | 62% | 45% | +17.5% | pending |
+| Boston Red Sox @ Toronto Blue Jays | **YRFI** | High | 58% | 42% | +16.3% | pending |
+| Pittsburgh Pirates @ Miami Marlins | **YRFI** | High | 53% | 40% | +12.5% | pending |
+| Chicago Cubs @ Washington Nationals | **YRFI** | Medium | 58% | 53% | +4.6% | pending |
+| Houston Astros @ San Francisco Giants | **NRFI** | Medium | 57% | 50% | +6.8% | pending |
+| Baltimore Orioles @ Minnesota Twins | **NRFI** | Medium | 52% | 46% | +6.3% | pending |
+| Kansas City Royals @ Los Angeles Dodgers | **YRFI** | Low | 56% | 52% | +3.8% | pending |
+| Seattle Mariners @ New York Yankees | **YRFI** | Low | 51% | 48% | +3.5% | pending |
+| Tampa Bay Rays @ Athletics | **YRFI** | Coin flip | 57% | 57% | -0.1% | pending |
+| Texas Rangers @ Los Angeles Angels | **YRFI** | Coin flip | 53% | 56% | -3.1% | pending |
+| Cincinnati Reds @ Chicago White Sox | **YRFI** | Coin flip | 51% | 50% | +1.4% | pending |
+
+*Board calibration (all time): High 9-13 · Medium 2-1 · Low 0-1 · Coin flip 4-4*
+
+#### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
+
+| # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Junior Caminero | Tampa Bay Rays | Tampa Bay Rays @ Athletics | 30% | 1.12 | 1.00 | 1.24 | pending |
+| 2 | Munetaka Murakami | Chicago White Sox | Cincinnati Reds @ Chicago White Sox | 28% | 1.15 | 1.00 | 1.07 | pending |
+| 3 | Hunter Goodman | Colorado Rockies | Colorado Rockies @ Arizona Diamondbacks | 27% | 1.03 | 1.00 | 1.08 | pending |
+| 4 | Joc Pederson | Texas Rangers | Texas Rangers @ Los Angeles Angels | 25% | 1.04 | 1.00 | 1.24 | pending |
+| 5 | CJ Abrams | Washington Nationals | Chicago Cubs @ Washington Nationals | 25% | 1.04 | 1.00 | 1.24 | pending |
+| 6 | Ben Rice | New York Yankees | Seattle Mariners @ New York Yankees | 24% | 1.24 | 1.00 | 0.88 | pending |
+| 7 | Colson Montgomery | Chicago White Sox | Cincinnati Reds @ Chicago White Sox | 23% | 1.15 | 1.00 | 1.07 | pending |
+| 8 | Victor Mesa Jr. | Tampa Bay Rays | Tampa Bay Rays @ Athletics | 23% | 1.12 | 1.00 | 1.24 | pending |
+| 9 | Dominic Canzone | Seattle Mariners | Seattle Mariners @ New York Yankees | 23% | 1.24 | 1.00 | 1.06 | pending |
+| 10 | Mickey Moniak | Colorado Rockies | Colorado Rockies @ Arizona Diamondbacks | 22% | 1.03 | 1.00 | 1.08 | pending |
+
+*HR board calibration (all time): 2 homered of 27 listed · model expected 6.1*
+
+#### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
+
+| Player | Mkt | Call | Line | Price | Book | Model | No-vig | Edge | Hold | Result |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Drew Anderson | Ks | Over | 3.5 | +119 | DraftKings | 100% | 43% | +56.8% | 5.8% | pending |
+| Mason Barnett | Ks | Over | 3.5 | +112 | FanDuel | 100% | 45% | +55.4% | 5.8% | pending |
+| Blake Snell | Ks | Under | 5.5 | +124 | DraftKings | 68% | 42% | +25.4% | 5.9% | pending |
+| Blake Snell | Ks | Under | 6.5 | -158 | FanDuel | 81% | 58% | +23.2% | 5.9% | pending |
+| **Sean Burke** | Ks | Over | 7.5 | +110 | DraftKings | 62% | 45% | +16.9% | 6.1% | pending |
+| **Sean Burke** | Ks | Over | 6.5 | -158 | FanDuel | 75% | 58% | +16.8% | 5.9% | pending |
+| **Mitch Bratt** | Ks | Under | 4.5 | -148 | DraftKings | 72% | 56% | +15.8% | 6.0% | pending |
+| **Andre Pallante** | Ks | Over | 3.5 | +106 | FanDuel | 60% | 46% | +14.3% | 6.2% | pending |
+| **Kyle Harrison** | Ks | Over | 5.5 | +112 | FanDuel | 56% | 45% | +11.0% | 5.8% | pending |
+| Cody Bradford | Ks | Over | 4.5 | -143 | DraftKings | 66% | 56% | +10.9% | 6.0% | pending |
+| **Paul Skenes** | Ks | Under | 6.5 | +118 | DraftKings | 53% | 43% | +9.8% | 6.0% | pending |
+| **Walker Buehler** | Ks | Under | 4.5 | -136 | DraftKings | 64% | 54% | +9.6% | 5.9% | pending |
+| **Cristopher Sanchez** | Ks | Over | 5.5 | -142 | FanDuel | 64% | 55% | +8.3% | 5.8% | pending |
+| **Hunter Brown** | Ks | Under | 5.5 | +100 | FanDuel | 55% | 47% | +8.3% | 6.1% | pending |
+| **Tomoyuki Sugano** | Ks | Under | 2.5 | +115 | DraftKings | 52% | 44% | +7.6% | 5.9% | pending |
+
+*Bold = cleared the 6% no-vig edge gate with no data-quality flags. Edge is measured against the vig-free price, never the raw line.*
 
 ## 2026-08-09
 
