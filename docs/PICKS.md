@@ -2,6 +2,22 @@
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
 
+## 2026-08-11
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Tampa Bay Rays @ Athletics | Moneyline | Tampa Bay Rays ML | — | **FanDuel -172** / DraftKings -174 |
+| A | PLAY | 9.5 | Houston Astros @ San Francisco Giants | Moneyline | Houston Astros ML | — | **DraftKings -177** / FanDuel -184 |
+| A | PLAY | 9.5 | Kansas City Royals @ Los Angeles Dodgers | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -260** / DraftKings -264 |
+| A | PLAY | 8.7 | Tampa Bay Rays @ Athletics | Total | Under 10.5 | 10.5 | **FanDuel -105** / DraftKings -115 |
+| A | PLAY | 8.1 | Cleveland Guardians @ Detroit Tigers | Moneyline | Detroit Tigers ML | — | **FanDuel -120** / DraftKings -124 |
+| A | PLAY | 7.8 | New York Mets @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -124** / DraftKings -130 |
+| A | LEAN | 6.8 | Pittsburgh Pirates @ Miami Marlins | Total | Over 7.0 | 7.0 | **FanDuel -102** / DraftKings -104 |
+| A | LEAN | 6.5 | Philadelphia Phillies @ St. Louis Cardinals | Moneyline | Philadelphia Phillies ML | — | **FanDuel -160** / DraftKings -163 |
+| A | LEAN | 6.3 | Chicago Cubs @ Washington Nationals | Moneyline | Chicago Cubs ML | — | **DraftKings -159** / FanDuel -160 |
+| A | LEAN | 5.8 | Milwaukee Brewers @ San Diego Padres | Total | Over 7.5 | 7.5 | **FanDuel -108** / DraftKings -108 |
+| A | LEAN | 5.2 | Colorado Rockies @ Arizona Diamondbacks | Moneyline | Arizona Diamondbacks ML | — | **FanDuel -168** / DraftKings -170 |
+
 ## 2026-08-09
 
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
@@ -20,29 +36,29 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | Game | Call | Confidence | Model P | Market P | Edge | Result |
 |---|---|---|---|---|---|---|
-| Los Angeles Dodgers @ Arizona Diamondbacks | **YRFI** | High | 70% | — (no market) | — | pending |
-| Houston Astros @ San Diego Padres | **YRFI** | High | 67% | — (no market) | — | pending |
-| Detroit Tigers @ San Francisco Giants | **YRFI** | High | 66% | — (no market) | — | pending |
-| Tampa Bay Rays @ Seattle Mariners | **YRFI** | High | 65% | — (no market) | — | pending |
+| Los Angeles Dodgers @ Arizona Diamondbacks | **YRFI** | High | 70% | — (no market) | — | ✅ HIT |
+| Houston Astros @ San Diego Padres | **YRFI** | High | 67% | — (no market) | — | ❌ MISS |
+| Detroit Tigers @ San Francisco Giants | **YRFI** | High | 66% | — (no market) | — | ❌ MISS |
+| Tampa Bay Rays @ Seattle Mariners | **YRFI** | High | 65% | — (no market) | — | ✅ HIT |
 
-*Board calibration (all time): High 7-11 · Medium 2-1 · Low 0-1 · Coin flip 4-4*
+*Board calibration (all time): High 9-13 · Medium 2-1 · Low 0-1 · Coin flip 4-4*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
 | # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Yordan Alvarez | Houston Astros | Houston Astros @ San Diego Padres | 22% | 0.94 | 1.00 | 1.00 | pending |
-| 2 | Junior Caminero | Tampa Bay Rays | Tampa Bay Rays @ Seattle Mariners | 20% | 0.89 | 1.00 | 1.01 | pending |
-| 3 | Dominic Canzone | Seattle Mariners | Tampa Bay Rays @ Seattle Mariners | 18% | 0.89 | 1.00 | 1.13 | pending |
-| 4 | Ty France | San Diego Padres | Houston Astros @ San Diego Padres | 18% | 0.94 | 1.00 | 1.09 | pending |
-| 5 | Manny Machado | San Diego Padres | Houston Astros @ San Diego Padres | 17% | 0.94 | 1.00 | 1.09 | pending |
-| 6 | Max Muncy | Los Angeles Dodgers | Los Angeles Dodgers @ Arizona Diamondbacks | 17% | 1.03 | 1.00 | 0.85 | pending |
-| 7 | Shohei Ohtani | Los Angeles Dodgers | Los Angeles Dodgers @ Arizona Diamondbacks | 16% | 1.03 | 1.00 | 0.85 | pending |
-| 8 | Christian Walker | Houston Astros | Houston Astros @ San Diego Padres | 16% | 0.94 | 1.00 | 1.00 | pending |
-| 9 | Nolan Arenado | Arizona Diamondbacks | Los Angeles Dodgers @ Arizona Diamondbacks | 16% | 1.03 | 1.00 | 1.04 | pending |
-| 10 | Victor Mesa Jr. | Tampa Bay Rays | Tampa Bay Rays @ Seattle Mariners | 16% | 0.89 | 1.00 | 1.01 | pending |
+| 1 | Yordan Alvarez | Houston Astros | Houston Astros @ San Diego Padres | 22% | 0.94 | 1.00 | 1.00 | ❌ no HR |
+| 2 | Junior Caminero | Tampa Bay Rays | Tampa Bay Rays @ Seattle Mariners | 20% | 0.89 | 1.00 | 1.01 | ❌ no HR |
+| 3 | Dominic Canzone | Seattle Mariners | Tampa Bay Rays @ Seattle Mariners | 18% | 0.89 | 1.00 | 1.13 | ❌ no HR |
+| 4 | Ty France | San Diego Padres | Houston Astros @ San Diego Padres | 18% | 0.94 | 1.00 | 1.09 | ❌ no HR |
+| 5 | Manny Machado | San Diego Padres | Houston Astros @ San Diego Padres | 17% | 0.94 | 1.00 | 1.09 | ❌ no HR |
+| 6 | Max Muncy | Los Angeles Dodgers | Los Angeles Dodgers @ Arizona Diamondbacks | 17% | 1.03 | 1.00 | 0.85 | ❌ no HR |
+| 7 | Shohei Ohtani | Los Angeles Dodgers | Los Angeles Dodgers @ Arizona Diamondbacks | 16% | 1.03 | 1.00 | 0.85 | ❌ no HR |
+| 8 | Christian Walker | Houston Astros | Houston Astros @ San Diego Padres | 16% | 0.94 | 1.00 | 1.00 | ❌ no HR |
+| 9 | Nolan Arenado | Arizona Diamondbacks | Los Angeles Dodgers @ Arizona Diamondbacks | 16% | 1.03 | 1.00 | 1.04 | ❌ no HR |
+| 10 | Victor Mesa Jr. | Tampa Bay Rays | Tampa Bay Rays @ Seattle Mariners | 16% | 0.89 | 1.00 | 1.01 | ❌ no HR |
 
-*HR board calibration (all time): 2 homered of 17 listed · model expected 4.3*
+*HR board calibration (all time): 2 homered of 27 listed · model expected 6.1*
 
 ## 2026-08-08
 
@@ -77,7 +93,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Houston Astros @ San Diego Padres | **NRFI** | Coin flip | 51% | 55% | -4.1% | ❌ MISS |
 | Los Angeles Dodgers @ Arizona Diamondbacks | **YRFI** | Coin flip | 51% | 52% | -1.3% | ❌ MISS |
 
-*Board calibration (all time): High 7-11 · Medium 2-1 · Low 0-1 · Coin flip 4-4*
+*Board calibration (all time): High 9-13 · Medium 2-1 · Low 0-1 · Coin flip 4-4*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -94,7 +110,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Esmerlyn Valdez | Pittsburgh Pirates | New York Mets @ Pittsburgh Pirates | 24% | 0.90 | 1.00 | 1.24 | ❌ no HR |
 | 10 | Mickey Moniak | Colorado Rockies | Colorado Rockies @ St. Louis Cardinals | 23% | 0.92 | 1.00 | 1.22 | ❌ no HR |
 
-*HR board calibration (all time): 2 homered of 17 listed · model expected 4.3*
+*HR board calibration (all time): 2 homered of 27 listed · model expected 6.1*
 
 ## 2026-08-07
 
@@ -133,7 +149,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Colorado Rockies @ St. Louis Cardinals | **YRFI** | Coin flip | 51% | 52% | -0.9% | ❌ MISS |
 | Baltimore Orioles @ Texas Rangers | **NRFI** | Coin flip | 50% | 55% | -4.6% | ✅ HIT |
 
-*Board calibration (all time): High 7-11 · Medium 2-1 · Low 0-1 · Coin flip 4-4*
+*Board calibration (all time): High 9-13 · Medium 2-1 · Low 0-1 · Coin flip 4-4*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -150,7 +166,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Kyle Schwarber | Philadelphia Phillies | Toronto Blue Jays @ Philadelphia Phillies | 23% | 1.18 | 1.00 | 0.86 | ❌ no HR |
 | 10 | Paul Goldschmidt | New York Yankees | Atlanta Braves @ New York Yankees | 23% | 1.24 | 1.00 | 1.09 | ❌ no HR |
 
-*HR board calibration (all time): 2 homered of 17 listed · model expected 4.3*
+*HR board calibration (all time): 2 homered of 27 listed · model expected 6.1*
 
 ## 2026-08-06
 
