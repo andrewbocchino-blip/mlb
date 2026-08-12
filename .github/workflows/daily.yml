@@ -22,6 +22,10 @@ on:
         description: "Replay prop models on history -> docs/BACKTEST.md"
         required: false
         default: "false"
+      analyze:
+        description: "Sweep gates against the graded record -> docs/ANALYSIS.md"
+        required: false
+        default: "false"
 permissions:
   contents: write
 jobs:
@@ -56,14 +60,18 @@ jobs:
         if: github.event.inputs.backtest == 'true'
         run: python backtest_props.py --pitchers 40
 
+      - name: Threshold + calibration analysis
+        if: github.event.inputs.analyze == 'true'
+        run: python analyze.py
+
       - name: Generate dashboard
-        if: env.MODE != 'clv' && github.event.inputs.backtest != 'true'
+        if: env.MODE != 'clv' && github.event.inputs.backtest != 'true' && github.event.inputs.analyze != 'true'
         run: python run.py
       - name: Capture closing lines (CLV)
         if: env.MODE == 'clv'
         run: python clv.py
       - name: Grade prior picks
-        if: env.MODE != 'clv' && github.event.inputs.backtest != 'true'
+        if: env.MODE != 'clv' && github.event.inputs.backtest != 'true' && github.event.inputs.analyze != 'true'
         run: python grade.py || echo "grading skipped"
       - name: Add B divergence (today only, top of page)
         if: env.MODE != 'clv'
