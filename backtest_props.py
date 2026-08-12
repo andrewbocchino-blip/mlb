@@ -53,6 +53,13 @@ except Exception:
 from mlb_betting_model.v14 import props as pr
 
 
+# Books price props around a projection, not at it. This ladder spans the
+# range a real book line occupies relative to a projection, so the backtest
+# generates confident predictions in BOTH directions instead of only coin
+# flips, and the calibration curve has something to say.
+LINE_LADDER = (0.75, 0.85, 0.95, 1.05, 1.15)
+
+
 def brier(pairs):
     return sum((p - o) ** 2 for p, o in pairs) / len(pairs) if pairs else None
 
@@ -112,6 +119,7 @@ def backtest_pitchers(client, season, n_pitchers, out):
     print(f"[backtest] sampling {len(ids)} pitchers")
 
     pairs, errs = [], []
+    ladder: dict = {}
     for pid in ids:
         try:
             log = client.get_json(f"mlb/people/{pid}/stats",
@@ -153,17 +161,34 @@ def backtest_pitchers(client, season, n_pitchers, out):
                               "k_per_bf": k_t / bf_t, "bf": bf_t}
             lam, _flags, _basis = pr.expected_ks(prof, None, recent, "")
             errs.append(actual - lam)
-            # score the model at the half-line nearest the projection
-            line = round(lam * 2) / 2
-            if abs(line - round(line)) < 0.1:
-                line += 0.5
-            p_over = pr.nb_at_least(lam, int(line) + 1)
-            pairs.append((p_over, 1.0 if actual > line else 0.0))
+
+            # HARNESS FIX (2026-08-12): the first version scored every start
+            # at the half-line NEAREST the projection, which by construction
+            # forces every prediction to ~50% — 705 of 711 landed in one band
+            # and the Brier score measured the model on the hardest possible
+            # question. Books do not price at the projection; they price
+            # around it. We now test a LADDER of realistic lines so the model
+            # produces a real spread of confidences and can be calibrated.
+            for mult in LINE_LADDER:
+                line = round(lam * mult * 2) / 2
+                if line < 1.5:
+                    continue
+                if abs(line - round(line)) < 0.1:      # keep true half-lines
+                    line += 0.5
+                p_over = pr.nb_at_least(lam, int(line) + 1)
+                pairs.append((p_over, 1.0 if actual > line else 0.0))
+                ladder.setdefault(mult, []).append(
+                    (p_over, 1.0 if actual > line else 0.0))
 
     if not pairs:
         print("[backtest] no pitcher starts scored")
         return
     b = brier(pairs)
+    # BENCHMARK: what a model that ignores the pitcher entirely would score
+    # against the same lines. Brier is uninterpretable without it — 0.247
+    # sounds close to 0.25 but tells you nothing until you know that a
+    # constant-guess model scores ~0.247 too.
+
     bias = sum(errs) / len(errs)
     out.append("## Pitcher strikeouts")
     out.append("")
@@ -171,6 +196,13 @@ def backtest_pitchers(client, season, n_pitchers, out):
     out.append(f"- Brier score: **{b:.4f}**  (0.25 = no skill; lower is better)")
     out.append(f"- mean projection bias: **{bias:+.2f} K** "
                f"(positive = model UNDER-projects)")
+    out.append("")
+    out.append("> **How to read the Brier score.** 0.25 is a coin flip, but the number that "
+               "matters is the comparison to a model that ignores the pitcher entirely. In "
+               "simulation, a constant-guess model scores about **0.247** against these same "
+               "lines, a weak model about **0.234**, and a model with real knowledge about "
+               "**0.221**. A score at or above ~0.245 means the projection is carrying "
+               "essentially no information about this particular start.")
     out.append("")
     out.append("| Model P(over) | n | Predicted | Actual |")
     out.append("|---|---|---|---|")
@@ -182,6 +214,41 @@ def backtest_pitchers(client, season, n_pitchers, out):
                f"below the diagonal mean the projection is biased, and every edge computed "
                f"from it inherits that bias.")
     out.append("")
+
+    # DISCRIMINATION: does the model separate winners from losers at all?
+    # Brier alone conflates calibration with discrimination; a model that
+    # always says 50% scores ~0.25 while being perfectly calibrated and
+    # completely useless.
+    hi = [o for p, o in pairs if p >= 0.60]
+    lo = [o for p, o in pairs if p <= 0.40]
+    if hi and lo:
+        sep = (sum(hi) / len(hi)) - (sum(lo) / len(lo))
+        out.append(f"### Discrimination")
+        out.append("")
+        out.append(f"- when the model says **60%+**: hit **{sum(hi)/len(hi):.1%}** ({len(hi)} calls)")
+        out.append(f"- when the model says **40%-**: hit **{sum(lo)/len(lo):.1%}** ({len(lo)} calls)")
+        out.append(f"- separation: **{sep:+.1%}**")
+        out.append("")
+        out.append("> Separation is the number that matters for betting. A model can be "
+                   "perfectly calibrated and still useless if it never leaves 50%. Wide, "
+                   "correctly-ordered separation is what an edge looks like; near-zero "
+                   "separation means the projection carries no usable information.")
+        out.append("")
+
+    if ladder:
+        out.append("### Skill by line position")
+        out.append("")
+        out.append("| Line vs projection | n | Brier | Actual over-rate |")
+        out.append("|---|---|---|---|")
+        for mult in sorted(ladder):
+            pr_pairs = ladder[mult]
+            b_l = brier(pr_pairs)
+            act = sum(o for _, o in pr_pairs) / len(pr_pairs)
+            out.append(f"| {mult:.2f}x | {len(pr_pairs)} | {b_l:.4f} | {act:.1%} |")
+        out.append("")
+        out.append("> A model with real skill should beat 0.25 at every rung, and most "
+                   "clearly at the outer ones where the answer is least obvious.")
+        out.append("")
     print(f"[backtest] pitcher Ks: n={len(pairs)} brier={b:.4f} bias={bias:+.2f}")
 
 
