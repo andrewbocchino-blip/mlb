@@ -2,6 +2,16 @@
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
 
+## 2026-08-12
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Tampa Bay Rays @ Athletics | Moneyline | Tampa Bay Rays ML | — | **FanDuel -200** |
+| A | PLAY | 9.5 | Cleveland Guardians @ Detroit Tigers | Moneyline | Detroit Tigers ML | — | **FanDuel -130** / DraftKings -131 |
+| A | PLAY | 7.3 | Texas Rangers @ Los Angeles Angels | Total | Under 9.5 | 9.5 | **FanDuel -106** / DraftKings -122 |
+| A | LEAN | 5.9 | Colorado Rockies @ Arizona Diamondbacks | Moneyline | Arizona Diamondbacks ML | — | **FanDuel -172** / DraftKings -180 |
+| A | LEAN | 5.7 | Houston Astros @ San Francisco Giants | Moneyline | Houston Astros ML | — | **FanDuel -138** |
+
 ## 2026-08-11
 
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
@@ -23,60 +33,62 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | Game | Call | Confidence | Model P | Market P | Edge | Result |
 |---|---|---|---|---|---|---|
-| Colorado Rockies @ Arizona Diamondbacks | **YRFI** | High | 68% | 55% | +13.7% | pending |
-| Cleveland Guardians @ Detroit Tigers | **YRFI** | High | 68% | 48% | +19.6% | pending |
-| New York Mets @ Atlanta Braves | **YRFI** | High | 66% | 52% | +14.6% | pending |
-| Philadelphia Phillies @ St. Louis Cardinals | **YRFI** | High | 63% | 48% | +14.8% | pending |
-| Milwaukee Brewers @ San Diego Padres | **YRFI** | High | 62% | 45% | +17.5% | pending |
-| Boston Red Sox @ Toronto Blue Jays | **YRFI** | High | 58% | 42% | +16.3% | pending |
-| Pittsburgh Pirates @ Miami Marlins | **YRFI** | High | 53% | 40% | +12.5% | pending |
-| Chicago Cubs @ Washington Nationals | **YRFI** | Medium | 58% | 53% | +4.6% | pending |
-| Houston Astros @ San Francisco Giants | **NRFI** | Medium | 57% | 50% | +6.8% | pending |
-| Baltimore Orioles @ Minnesota Twins | **NRFI** | Medium | 52% | 46% | +6.3% | pending |
-| Kansas City Royals @ Los Angeles Dodgers | **YRFI** | Low | 56% | 52% | +3.8% | pending |
-| Seattle Mariners @ New York Yankees | **YRFI** | Low | 51% | 48% | +3.5% | pending |
-| Tampa Bay Rays @ Athletics | **YRFI** | Coin flip | 57% | 57% | -0.1% | pending |
-| Texas Rangers @ Los Angeles Angels | **YRFI** | Coin flip | 53% | 56% | -3.1% | pending |
-| Cincinnati Reds @ Chicago White Sox | **YRFI** | Coin flip | 51% | 50% | +1.4% | pending |
+| Colorado Rockies @ Arizona Diamondbacks | **YRFI** | High | 68% | 55% | +13.7% | ✅ HIT |
+| Cleveland Guardians @ Detroit Tigers | **YRFI** | High | 68% | 48% | +19.6% | ❌ MISS |
+| New York Mets @ Atlanta Braves | **YRFI** | High | 66% | 52% | +14.6% | ❌ MISS |
+| Philadelphia Phillies @ St. Louis Cardinals | **YRFI** | High | 63% | 48% | +14.8% | ❌ MISS |
+| Milwaukee Brewers @ San Diego Padres | **YRFI** | High | 62% | 45% | +17.5% | ❌ MISS |
+| Boston Red Sox @ Toronto Blue Jays | **YRFI** | High | 58% | 42% | +16.3% | ❌ MISS |
+| Pittsburgh Pirates @ Miami Marlins | **YRFI** | High | 53% | 40% | +12.5% | ❌ MISS |
+| Chicago Cubs @ Washington Nationals | **YRFI** | Medium | 58% | 53% | +4.6% | ✅ HIT |
+| Houston Astros @ San Francisco Giants | **NRFI** | Medium | 57% | 50% | +6.8% | ✅ HIT |
+| Baltimore Orioles @ Minnesota Twins | **NRFI** | Medium | 52% | 46% | +6.3% | ❌ MISS |
+| Kansas City Royals @ Los Angeles Dodgers | **YRFI** | Low | 56% | 52% | +3.8% | ❌ MISS |
+| Seattle Mariners @ New York Yankees | **YRFI** | Low | 51% | 48% | +3.5% | ❌ MISS |
+| Tampa Bay Rays @ Athletics | **YRFI** | Coin flip | 57% | 57% | -0.1% | ✅ HIT |
+| Texas Rangers @ Los Angeles Angels | **YRFI** | Coin flip | 53% | 56% | -3.1% | ✅ HIT |
+| Cincinnati Reds @ Chicago White Sox | **YRFI** | Coin flip | 51% | 50% | +1.4% | ✅ HIT |
 
-*Board calibration (all time): High 9-13 · Medium 2-1 · Low 0-1 · Coin flip 4-4*
+*Board calibration (all time): High 10-19 · Medium 4-2 · Low 0-3 · Coin flip 7-4*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
 | # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Junior Caminero | Tampa Bay Rays | Tampa Bay Rays @ Athletics | 30% | 1.12 | 1.00 | 1.24 | pending |
-| 2 | Munetaka Murakami | Chicago White Sox | Cincinnati Reds @ Chicago White Sox | 28% | 1.15 | 1.00 | 1.07 | pending |
-| 3 | Hunter Goodman | Colorado Rockies | Colorado Rockies @ Arizona Diamondbacks | 27% | 1.03 | 1.00 | 1.08 | pending |
-| 4 | Joc Pederson | Texas Rangers | Texas Rangers @ Los Angeles Angels | 25% | 1.04 | 1.00 | 1.24 | pending |
-| 5 | CJ Abrams | Washington Nationals | Chicago Cubs @ Washington Nationals | 25% | 1.04 | 1.00 | 1.24 | pending |
-| 6 | Ben Rice | New York Yankees | Seattle Mariners @ New York Yankees | 24% | 1.24 | 1.00 | 0.88 | pending |
-| 7 | Colson Montgomery | Chicago White Sox | Cincinnati Reds @ Chicago White Sox | 23% | 1.15 | 1.00 | 1.07 | pending |
-| 8 | Victor Mesa Jr. | Tampa Bay Rays | Tampa Bay Rays @ Athletics | 23% | 1.12 | 1.00 | 1.24 | pending |
-| 9 | Dominic Canzone | Seattle Mariners | Seattle Mariners @ New York Yankees | 23% | 1.24 | 1.00 | 1.06 | pending |
-| 10 | Mickey Moniak | Colorado Rockies | Colorado Rockies @ Arizona Diamondbacks | 22% | 1.03 | 1.00 | 1.08 | pending |
+| 1 | Junior Caminero | Tampa Bay Rays | Tampa Bay Rays @ Athletics | 30% | 1.12 | 1.00 | 1.24 | ✅ HR |
+| 2 | Munetaka Murakami | Chicago White Sox | Cincinnati Reds @ Chicago White Sox | 28% | 1.15 | 1.00 | 1.07 | ❌ no HR |
+| 3 | Hunter Goodman | Colorado Rockies | Colorado Rockies @ Arizona Diamondbacks | 27% | 1.03 | 1.00 | 1.08 | ❌ no HR |
+| 4 | Joc Pederson | Texas Rangers | Texas Rangers @ Los Angeles Angels | 25% | 1.04 | 1.00 | 1.24 | ✅ HR |
+| 5 | CJ Abrams | Washington Nationals | Chicago Cubs @ Washington Nationals | 25% | 1.04 | 1.00 | 1.24 | ✅ HR |
+| 6 | Ben Rice | New York Yankees | Seattle Mariners @ New York Yankees | 24% | 1.24 | 1.00 | 0.88 | ❌ no HR |
+| 7 | Colson Montgomery | Chicago White Sox | Cincinnati Reds @ Chicago White Sox | 23% | 1.15 | 1.00 | 1.07 | ❌ no HR |
+| 8 | Victor Mesa Jr. | Tampa Bay Rays | Tampa Bay Rays @ Athletics | 23% | 1.12 | 1.00 | 1.24 | ✅ HR |
+| 9 | Dominic Canzone | Seattle Mariners | Seattle Mariners @ New York Yankees | 23% | 1.24 | 1.00 | 1.06 | ❌ no HR |
+| 10 | Mickey Moniak | Colorado Rockies | Colorado Rockies @ Arizona Diamondbacks | 22% | 1.03 | 1.00 | 1.08 | ❌ no HR |
 
-*HR board calibration (all time): 2 homered of 27 listed · model expected 6.1*
+*HR board calibration (all time): 6 homered of 37 listed · model expected 8.6*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
 | Player | Mkt | Call | Line | Price | Book | Model | No-vig | Edge | Hold | Result |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Drew Anderson | Ks | Over | 3.5 | +119 | DraftKings | 100% | 43% | +56.8% | 5.8% | pending |
-| Mason Barnett | Ks | Over | 3.5 | +112 | FanDuel | 100% | 45% | +55.4% | 5.8% | pending |
-| Blake Snell | Ks | Under | 5.5 | +124 | DraftKings | 68% | 42% | +25.4% | 5.9% | pending |
-| Blake Snell | Ks | Under | 6.5 | -158 | FanDuel | 81% | 58% | +23.2% | 5.9% | pending |
-| **Sean Burke** | Ks | Over | 7.5 | +110 | DraftKings | 62% | 45% | +16.9% | 6.1% | pending |
-| **Sean Burke** | Ks | Over | 6.5 | -158 | FanDuel | 75% | 58% | +16.8% | 5.9% | pending |
-| **Mitch Bratt** | Ks | Under | 4.5 | -148 | DraftKings | 72% | 56% | +15.8% | 6.0% | pending |
-| **Andre Pallante** | Ks | Over | 3.5 | +106 | FanDuel | 60% | 46% | +14.3% | 6.2% | pending |
-| **Kyle Harrison** | Ks | Over | 5.5 | +112 | FanDuel | 56% | 45% | +11.0% | 5.8% | pending |
-| Cody Bradford | Ks | Over | 4.5 | -143 | DraftKings | 66% | 56% | +10.9% | 6.0% | pending |
-| **Paul Skenes** | Ks | Under | 6.5 | +118 | DraftKings | 53% | 43% | +9.8% | 6.0% | pending |
-| **Walker Buehler** | Ks | Under | 4.5 | -136 | DraftKings | 64% | 54% | +9.6% | 5.9% | pending |
-| **Cristopher Sanchez** | Ks | Over | 5.5 | -142 | FanDuel | 64% | 55% | +8.3% | 5.8% | pending |
-| **Hunter Brown** | Ks | Under | 5.5 | +100 | FanDuel | 55% | 47% | +8.3% | 6.1% | pending |
-| **Tomoyuki Sugano** | Ks | Under | 2.5 | +115 | DraftKings | 52% | 44% | +7.6% | 5.9% | pending |
+| Drew Anderson | Ks | Over | 3.5 | +119 | DraftKings | 100% | 43% | +56.8% | 5.8% | ✅ HIT (4) |
+| Mason Barnett | Ks | Over | 3.5 | +112 | FanDuel | 100% | 45% | +55.4% | 5.8% | ❌ MISS (0) |
+| Blake Snell | Ks | Under | 5.5 | +124 | DraftKings | 68% | 42% | +25.4% | 5.9% | ❌ MISS (10) |
+| Blake Snell | Ks | Under | 6.5 | -158 | FanDuel | 81% | 58% | +23.2% | 5.9% | ❌ MISS (10) |
+| **Sean Burke** | Ks | Over | 7.5 | +110 | DraftKings | 62% | 45% | +16.9% | 6.1% | ✅ HIT (8) |
+| **Sean Burke** | Ks | Over | 6.5 | -158 | FanDuel | 75% | 58% | +16.8% | 5.9% | ✅ HIT (8) |
+| **Mitch Bratt** | Ks | Under | 4.5 | -148 | DraftKings | 72% | 56% | +15.8% | 6.0% | ✅ HIT (4) |
+| **Andre Pallante** | Ks | Over | 3.5 | +106 | FanDuel | 60% | 46% | +14.3% | 6.2% | ❌ MISS (2) |
+| **Kyle Harrison** | Ks | Over | 5.5 | +112 | FanDuel | 56% | 45% | +11.0% | 5.8% | ❌ MISS (3) |
+| Cody Bradford | Ks | Over | 4.5 | -143 | DraftKings | 66% | 56% | +10.9% | 6.0% | ❌ MISS (1) |
+| **Paul Skenes** | Ks | Under | 6.5 | +118 | DraftKings | 53% | 43% | +9.8% | 6.0% | ✅ HIT (4) |
+| **Walker Buehler** | Ks | Under | 4.5 | -136 | DraftKings | 64% | 54% | +9.6% | 5.9% | ❌ MISS (5) |
+| **Cristopher Sanchez** | Ks | Over | 5.5 | -142 | FanDuel | 64% | 55% | +8.3% | 5.8% | ✅ HIT (7) |
+| **Hunter Brown** | Ks | Under | 5.5 | +100 | FanDuel | 55% | 47% | +8.3% | 6.1% | ✅ HIT (4) |
+| **Tomoyuki Sugano** | Ks | Under | 2.5 | +115 | DraftKings | 52% | 44% | +7.6% | 5.9% | ❌ MISS (5) |
+
+*Prop calibration (all time): all calls 13-17 (model expected 18.4 hits)* · *gate-clearing calls 7-6 (model expected 8.0 hits)*
 
 *Bold = cleared the 6% no-vig edge gate with no data-quality flags. Edge is measured against the vig-free price, never the raw line.*
 
@@ -103,7 +115,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Detroit Tigers @ San Francisco Giants | **YRFI** | High | 66% | — (no market) | — | ❌ MISS |
 | Tampa Bay Rays @ Seattle Mariners | **YRFI** | High | 65% | — (no market) | — | ✅ HIT |
 
-*Board calibration (all time): High 9-13 · Medium 2-1 · Low 0-1 · Coin flip 4-4*
+*Board calibration (all time): High 10-19 · Medium 4-2 · Low 0-3 · Coin flip 7-4*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -120,7 +132,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Nolan Arenado | Arizona Diamondbacks | Los Angeles Dodgers @ Arizona Diamondbacks | 16% | 1.03 | 1.00 | 1.04 | ❌ no HR |
 | 10 | Victor Mesa Jr. | Tampa Bay Rays | Tampa Bay Rays @ Seattle Mariners | 16% | 0.89 | 1.00 | 1.01 | ❌ no HR |
 
-*HR board calibration (all time): 2 homered of 27 listed · model expected 6.1*
+*HR board calibration (all time): 6 homered of 37 listed · model expected 8.6*
 
 ## 2026-08-08
 
@@ -155,7 +167,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Houston Astros @ San Diego Padres | **NRFI** | Coin flip | 51% | 55% | -4.1% | ❌ MISS |
 | Los Angeles Dodgers @ Arizona Diamondbacks | **YRFI** | Coin flip | 51% | 52% | -1.3% | ❌ MISS |
 
-*Board calibration (all time): High 9-13 · Medium 2-1 · Low 0-1 · Coin flip 4-4*
+*Board calibration (all time): High 10-19 · Medium 4-2 · Low 0-3 · Coin flip 7-4*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -172,7 +184,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Esmerlyn Valdez | Pittsburgh Pirates | New York Mets @ Pittsburgh Pirates | 24% | 0.90 | 1.00 | 1.24 | ❌ no HR |
 | 10 | Mickey Moniak | Colorado Rockies | Colorado Rockies @ St. Louis Cardinals | 23% | 0.92 | 1.00 | 1.22 | ❌ no HR |
 
-*HR board calibration (all time): 2 homered of 27 listed · model expected 6.1*
+*HR board calibration (all time): 6 homered of 37 listed · model expected 8.6*
 
 ## 2026-08-07
 
@@ -211,7 +223,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Colorado Rockies @ St. Louis Cardinals | **YRFI** | Coin flip | 51% | 52% | -0.9% | ❌ MISS |
 | Baltimore Orioles @ Texas Rangers | **NRFI** | Coin flip | 50% | 55% | -4.6% | ✅ HIT |
 
-*Board calibration (all time): High 9-13 · Medium 2-1 · Low 0-1 · Coin flip 4-4*
+*Board calibration (all time): High 10-19 · Medium 4-2 · Low 0-3 · Coin flip 7-4*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -228,7 +240,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Kyle Schwarber | Philadelphia Phillies | Toronto Blue Jays @ Philadelphia Phillies | 23% | 1.18 | 1.00 | 0.86 | ❌ no HR |
 | 10 | Paul Goldschmidt | New York Yankees | Atlanta Braves @ New York Yankees | 23% | 1.24 | 1.00 | 1.09 | ❌ no HR |
 
-*HR board calibration (all time): 2 homered of 27 listed · model expected 6.1*
+*HR board calibration (all time): 6 homered of 37 listed · model expected 8.6*
 
 ## 2026-08-06
 

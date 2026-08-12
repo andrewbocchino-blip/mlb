@@ -2,32 +2,32 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 296-251  ·  54% win  ·  +4.51u  ·  +0.8% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 302-257  ·  54% win  ·  +2.67u  ·  +0.5% ROI  ·  avg CLV n/a (no closing lines yet)**
 **Model B: 237-191  ·  55% win  ·  +14.16u  ·  +3.3% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
-### Moneyline probability calibration (Model A, n=301)
+### Moneyline probability calibration (Model A, n=309)
 
-Brier score: **0.2434** (0.25 = coin flip knowledge; lower is better)
+Brier score: **0.2431** (0.25 = coin flip knowledge; lower is better)
 
 | Model home-win band | n | Predicted avg | Actual home-win % |
 |---|---|---|---|
-| 0%–40% | 42 | 35% | 38% |
-| 40%–45% | 47 | 43% | 49% |
-| 45%–50% | 51 | 47% | 35% |
-| 50%–55% | 39 | 52% | 38% |
-| 55%–60% | 50 | 57% | 66% |
-| 60%–65% | 34 | 62% | 59% |
+| 0%–40% | 43 | 35% | 37% |
+| 40%–45% | 48 | 43% | 50% |
+| 45%–50% | 53 | 47% | 36% |
+| 50%–55% | 41 | 52% | 39% |
+| 55%–60% | 51 | 57% | 67% |
+| 60%–65% | 35 | 62% | 60% |
 | 65%+ | 38 | 69% | 66% |
 
 > Calibrated = predicted ≈ actual per band. Systematic gaps mean the win probabilities themselves need retuning before any ML edge claim.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 176-125 (+4%)  ·  Total 76-71 (+1%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 2-6 (-56%)  ·  NRFI 0-1 (-100%)
-- **by side:** Over 22-21 (+2%)  ·  team 220-180 (+1%)  ·  Under 54-50 (+0%)
-- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 152-126 (+5%)  ·  dog 29-43 (-4%)  ·  fav 80-57 (-4%)  ·  heavy fav 15-11 (-18%)
+- **by market:** Moneyline 181-128 (+4%)  ·  Total 77-73 (+0%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 2-7 (-61%)  ·  NRFI 0-1 (-100%)
+- **by side:** Over 23-22 (+2%)  ·  team 225-184 (+1%)  ·  Under 54-51 (-1%)
+- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 155-129 (+5%)  ·  dog 29-43 (-4%)  ·  fav 82-60 (-5%)  ·  heavy fav 16-11 (-16%)
 
 ### Model B — segments (finding the winning slice)
 
@@ -36,6 +36,23 @@ Brier score: **0.2434** (0.25 = coin flip knowledge; lower is better)
 - **by fav_band:** pickem 129-98 (+9%)  ·  fav 68-40 (+4%)  ·  dog 27-40 (-5%)  ·  unknown 2-3 (-24%)  ·  heavy fav 11-10 (-26%)
 
 ## Model A — picks by date
+
+### 2026-08-11 — 6-6  (-1.84u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Tampa Bay Rays @ Athletics | Moneyline | Tampa Bay Rays ML | — | **FanDuel -172** / DraftKings -174 | — | +0.58 |
+| ✅ WIN | PLAY | Kansas City Royals @ Los Angeles Dodgers | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -260** / DraftKings -264 | — | +0.38 |
+| ✅ WIN | PLAY | Cleveland Guardians @ Detroit Tigers | Moneyline | Detroit Tigers ML | — | **FanDuel -120** / DraftKings -124 | — | +0.83 |
+| ✅ WIN | PLAY | New York Mets @ Atlanta Braves | Moneyline | Atlanta Braves ML | — | **FanDuel -124** / DraftKings -130 | — | +0.81 |
+| ✅ WIN | LEAN | Chicago Cubs @ Washington Nationals | Moneyline | Chicago Cubs ML | — | **DraftKings -159** / FanDuel -160 | — | +0.63 |
+| ✅ WIN | LEAN | Milwaukee Brewers @ San Diego Padres | Total | Over 7.5 | 7.5 | **FanDuel -108** / DraftKings -108 | — | +0.93 |
+| ❌ LOSS | PLAY | Houston Astros @ San Francisco Giants | Moneyline | Houston Astros ML | — | **DraftKings -177** / FanDuel -184 | — | -1.00 |
+| ❌ LOSS | PLAY | Tampa Bay Rays @ Athletics | Total | Under 10.5 | 10.5 | **FanDuel -105** / DraftKings -115 | — | -1.00 |
+| ❌ LOSS | LEAN | Pittsburgh Pirates @ Miami Marlins | Total | Over 7.0 | 7.0 | **FanDuel -102** / DraftKings -104 | — | -1.00 |
+| ❌ LOSS | LEAN | Philadelphia Phillies @ St. Louis Cardinals | Moneyline | Philadelphia Phillies ML | — | **FanDuel -160** / DraftKings -163 | — | -1.00 |
+| ❌ LOSS | LEAN | Pittsburgh Pirates @ Miami Marlins | F5 Total | F5 Over 3.5 | 3.5 | **FanDuel -114** | — | -1.00 |
+| ❌ LOSS | LEAN | Colorado Rockies @ Arizona Diamondbacks | Moneyline | Arizona Diamondbacks ML | — | **FanDuel -168** / DraftKings -170 | — | -1.00 |
 
 ### 2026-08-09 — 5-4  (-0.65u)
 
