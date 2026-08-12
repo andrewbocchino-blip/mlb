@@ -18,6 +18,10 @@ on:
         description: "Capture closing lines / CLV only"
         required: false
         default: "false"
+      backtest:
+        description: "Replay prop models on history -> docs/BACKTEST.md"
+        required: false
+        default: "false"
 permissions:
   contents: write
 jobs:
@@ -48,14 +52,18 @@ jobs:
             echo "MODE=core" >> "$GITHUB_ENV"
             echo "label=Midnight pull" >> "$GITHUB_OUTPUT"
           fi
+      - name: Backtest prop models (history replay)
+        if: github.event.inputs.backtest == 'true'
+        run: python backtest_props.py --pitchers 40
+
       - name: Generate dashboard
-        if: env.MODE != 'clv'
+        if: env.MODE != 'clv' && github.event.inputs.backtest != 'true'
         run: python run.py
       - name: Capture closing lines (CLV)
         if: env.MODE == 'clv'
         run: python clv.py
       - name: Grade prior picks
-        if: env.MODE != 'clv'
+        if: env.MODE != 'clv' && github.event.inputs.backtest != 'true'
         run: python grade.py || echo "grading skipped"
       - name: Add B divergence (today only, top of page)
         if: env.MODE != 'clv'
