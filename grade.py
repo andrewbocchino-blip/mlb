@@ -233,6 +233,14 @@ def grade_props(client, board):
             continue
         season = int(r["slate_date"][:4])
         group = "pitching" if r["market"] == "pitcher_strikeouts" else "hitting"
+        STAT_KEYS = {
+            "batter_home_runs": ("homeRuns",),
+            "pitcher_strikeouts": ("strikeOuts",),
+            "batter_strikeouts": ("strikeOuts",),
+            "batter_hits": ("hits",),
+            "batter_rbis": ("rbi",),
+            "batter_hits_runs_rbis": ("hits", "runs", "rbi"),   # composite
+        }
         pid = r.get("player_id")
         if pid is None:
             continue
@@ -254,13 +262,27 @@ def grade_props(client, board):
                     day.append(sp.get("stat") or {})
         if not day:
             continue          # didn't play / not final yet — stays pending
-        stat_key = "strikeOuts" if group == "pitching" else "homeRuns"
+        if len(day) > 1:
+            # Props settle on a SINGLE game. Summing both halves of a
+            # doubleheader (1 hit + 1 hit graded against Over 1.5 as a
+            # win) is simply wrong, and we don't store the gamePk needed
+            # to pick the right half. Void rather than grade it falsely.
+            r["graded"] = True
+            r["result"] = "VOID"
+            r["actual"] = None
+            r["void_reason"] = "doubleheader — per-game settlement not determinable"
+            changed += 1
+            continue
+        keys = STAT_KEYS.get(r["market"])
+        if not keys:
+            continue
         total = 0
         for st in day:
-            try:
-                total += int(st.get(stat_key) or 0)
-            except (TypeError, ValueError):
-                pass
+            for kkey in keys:
+                try:
+                    total += int(st.get(kkey) or 0)
+                except (TypeError, ValueError):
+                    pass
         line = float(r["line"])
         if total == line:
             r["graded"], r["result"], r["actual"] = True, "PUSH", total
@@ -520,25 +542,36 @@ def write_picks_md(rows, board=None, hr_board=None, props_board=None):
                 out.append("")
         day_props = [b for b in props_board if b["slate_date"] == date]
         if day_props:
-            MKT = {"batter_home_runs": "HR", "pitcher_strikeouts": "Ks"}
+            MKT = {"batter_home_runs": "HR", "pitcher_strikeouts": "Ks (P)",
+                   "batter_strikeouts": "Ks (B)", "batter_hits": "Hits",
+                   "batter_rbis": "RBI", "batter_hits_runs_rbis": "H+R+RBI"}
             out.append("#### Prop Divergence — model vs **no-vig** market "
                        "(calibration record, NOT bets)")
             out.append("")
-            out.append("| Player | Mkt | Call | Line | Price | Book | Model | No-vig | Edge | Hold | Result |")
-            out.append("|---|---|---|---|---|---|---|---|---|---|---|")
-            for b in sorted(day_props, key=lambda x: -x.get("edge", 0))[:15]:
-                res = {"HIT": "✅ HIT", "MISS": "❌ MISS", "PUSH": "➖ PUSH"}.get(b.get("result"), "pending")
+            out.append("| Player | Mkt | Tier | Call | Line | Price | Book | Model | No-vig | Edge | EV | Result |")
+            out.append("|---|---|---|---|---|---|---|---|---|---|---|---|")
+            for b in sorted(day_props, key=lambda x: -x.get("ev", 0))[:15]:
+                res = {"HIT": "✅ HIT", "MISS": "❌ MISS", "PUSH": "➖ PUSH",
+                       "VOID": "⊘ VOID"}.get(b.get("result"), "pending")
                 if b.get("actual") is not None:
                     res += f" ({b['actual']})"
                 star = "**" if b.get("qualified") else ""
                 px = b.get("price")
                 pxs = f"{'+' if px and px > 0 else ''}{int(px)}" if px is not None else "—"
                 out.append(f"| {star}{b['player']}{star} | {MKT.get(b['market'], b['market'])} "
-                           f"| {b['side']} | {b['line']} | {pxs} | {b.get('book','—')} "
+                           f"| {b.get('tier','?')} | {b['side']} | {b['line']} | {pxs} | {b.get('book','—')} "
                            f"| {b['model_p']:.0%} | {b['novig_p']:.0%} | {b['edge']:+.1%} "
-                           f"| {b['hold']:.1%} | {res} |")
+                           f"| {b.get('ev', 0):+.1%} | {res} |")
+            out.append("")
+            nq = sum(1 for b in day_props if b.get("qualified"))
+            out.append(f"*Scanned {len(day_props)} priced props today; {nq} cleared their "
+                       f"market's EV gate. With this many comparisons some divergence is "
+                       f"guaranteed by noise alone — the top of the board is exactly where "
+                       f"model error concentrates, so treat rank as a research queue, not a "
+                       f"confidence order.*")
             out.append("")
             gp = [b for b in props_board if b.get("graded") and b.get("result") in ("HIT", "MISS")]
+            n_void = sum(1 for b in props_board if b.get("result") == "VOID")
             if gp:
                 q = [b for b in gp if b.get("qualified")]
                 def _rec(rows_):
@@ -546,13 +579,37 @@ def write_picks_md(rows, board=None, hr_board=None, props_board=None):
                     exp = sum(b["model_p"] for b in rows_)
                     return f"{h}-{len(rows_)-h} (model expected {exp:.1f} hits)"
                 line = f"*Prop calibration (all time): all calls {_rec(gp)}*"
+                if n_void:
+                    line += f" · {n_void} void"
                 if q:
                     line += f" · *gate-clearing calls {_rec(q)}*"
+                for t in ("A", "B", "C"):
+                    tb = [b for b in gp if b.get("tier") == t]
+                    if tb:
+                        line += f" · *tier {t} {_rec(tb)}*"
                 out.append(line)
                 out.append("")
-            out.append("*Bold = cleared the 6% no-vig edge gate with no data-quality flags. "
-                       "Edge is measured against the vig-free price, never the raw line.*")
+            out.append("*Bold = cleared its market's no-vig edge gate with no data-quality flags. "
+                       "Edge is measured against the vig-free price, never the raw line.* "
+                       "**Tier A** = skill-rate model with matchup (HR, pitcher Ks). "
+                       "**Tier B** = rate model, no platoon splits (hits, batter Ks). "
+                       "**Tier C** = experimental (RBI, H+R+RBI): depends on teammates reaching "
+                       "base, and H+R+RBI sums correlated components as independent, which "
+                       "understates variance — research only.")
             out.append("")
+            shown = [b for b in sorted(day_props, key=lambda x: -x.get("ev", 0))[:15]
+                     if b.get("basis") or b.get("flags")]
+            if shown:
+                out.append("<details><summary>Inputs behind each call</summary>")
+                out.append("")
+                for b in shown:
+                    bits = list(b.get("basis") or [])
+                    for fl in (b.get("flags") or []):
+                        bits.append(f"⚠️ {fl}")
+                    out.append(f"- **{b['player']}** ({b['side']} {b['line']}): " + " · ".join(bits))
+                out.append("")
+                out.append("</details>")
+                out.append("")
     with open("docs/PICKS.md", "w") as f:
         f.write("\n".join(out))
     return
