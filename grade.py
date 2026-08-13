@@ -645,6 +645,118 @@ def _model_summary(graded, label):
     return line, flags
 
 
+def _standings_block(out):
+    """Calibration standings for every board — the scoreboard that decides
+    whether any of these models has earned trust. Lives in RESULTS.md
+    because it IS the result: not units won, but whether the stated
+    probabilities match what actually happened."""
+    board = load_board()
+    hrb = load_hr_board()
+    props = load_props()
+
+    out.append("## Board calibration standings")
+    out.append("")
+    out.append("These boards are calibration records, not bets. The question is not "
+               "whether they won — it is whether a call at a stated confidence lands "
+               "at that rate. A tier that hits BELOW its stated probability is a model "
+               "telling you it does not know what it claims to know.")
+    out.append("")
+
+    # ---- NRFI forced-call board ----
+    gb = [b for b in board if b.get("result") in ("HIT", "MISS")]
+    if gb:
+        out.append("### NRFI/YRFI forced calls")
+        out.append("")
+        out.append("| Confidence | n | Hit | Miss | Hit% | Model said | Gap |")
+        out.append("|---|---|---|---|---|---|---|")
+        for tier in ("High", "Medium", "Low", "Coin flip"):
+            tb = [b for b in gb if b.get("confidence") == tier]
+            if not tb:
+                continue
+            h = sum(1 for b in tb if b["result"] == "HIT")
+            act = h / len(tb)
+            pred = sum(b.get("model_p") or 0 for b in tb) / len(tb)
+            out.append(f"| {tier} | {len(tb)} | {h} | {len(tb)-h} | {act:.0%} "
+                       f"| {pred:.0%} | {act-pred:+.0%} |")
+        h_all = sum(1 for b in gb if b["result"] == "HIT")
+        pred_all = sum(b.get("model_p") or 0 for b in gb) / len(gb)
+        out.append(f"| **All** | **{len(gb)}** | **{h_all}** | **{len(gb)-h_all}** "
+                   f"| **{h_all/len(gb):.0%}** | **{pred_all:.0%}** "
+                   f"| **{h_all/len(gb)-pred_all:+.0%}** |")
+        out.append("")
+        yr = [b for b in gb if b.get("call") == "YRFI"]
+        if yr:
+            out.append(f"YRFI share of calls: **{len(yr)}/{len(gb)} ({len(yr)/len(gb):.0%})** "
+                       f"— hitting {sum(1 for b in yr if b['result']=='HIT')/len(yr):.0%}.")
+            out.append("")
+        hi = [b for b in gb if b.get("confidence") == "High"]
+        if len(hi) >= 15:
+            hi_rate = sum(1 for b in hi if b["result"] == "HIT") / len(hi)
+            cf = [b for b in gb if b.get("confidence") == "Coin flip"]
+            if cf and hi_rate < (sum(1 for b in cf if b["result"] == "HIT") / len(cf)):
+                out.append("> ⚠️ **Confidence is inverted**: the High tier is hitting BELOW "
+                           "the Coin flip tier. Whatever the confidence metric is measuring, "
+                           "it is not the probability of being right. Calls at this tier "
+                           "should carry no weight until this reverses.")
+                out.append("")
+
+    # ---- HR board ----
+    ghr = [b for b in hrb if b.get("result") in ("HIT", "MISS")]
+    if ghr:
+        hits = sum(1 for b in ghr if b["result"] == "HIT")
+        exp = sum(b.get("p_hr") or 0 for b in ghr)
+        out.append("### HR board (top-10 daily)")
+        out.append("")
+        out.append(f"- listed and graded: **{len(ghr)}**")
+        out.append(f"- homered: **{hits}** · model expected **{exp:.1f}**")
+        out.append(f"- actual rate **{hits/len(ghr):.1%}** vs predicted **{exp/len(ghr):.1%}** "
+                   f"(**{hits/len(ghr)-exp/len(ghr):+.1%}**)")
+        out.append("")
+
+    # ---- prop board ----
+    gp = [b for b in props if b.get("result") in ("HIT", "MISS")]
+    if gp:
+        out.append("### Prop divergence board")
+        out.append("")
+        out.append("| Tier | Market | n | Hit | Miss | Hit% | Model said | Gap |")
+        out.append("|---|---|---|---|---|---|---|---|")
+        LABEL = {"batter_home_runs": "HR", "pitcher_strikeouts": "Ks (P)",
+                 "batter_strikeouts": "Ks (B)", "batter_hits": "Hits",
+                 "batter_rbis": "RBI", "batter_hits_runs_rbis": "H+R+RBI"}
+        for tier in ("A", "B", "C"):
+            tb = [b for b in gp if b.get("tier") == tier]
+            for mkt in sorted({b["market"] for b in tb}):
+                mb = [b for b in tb if b["market"] == mkt]
+                h = sum(1 for b in mb if b["result"] == "HIT")
+                act = h / len(mb)
+                pred = sum(b.get("model_p") or 0 for b in mb) / len(mb)
+                out.append(f"| {tier} | {LABEL.get(mkt, mkt)} | {len(mb)} | {h} "
+                           f"| {len(mb)-h} | {act:.0%} | {pred:.0%} | {act-pred:+.0%} |")
+        h_all = sum(1 for b in gp if b["result"] == "HIT")
+        pred_all = sum(b.get("model_p") or 0 for b in gp) / len(gp)
+        out.append(f"| **All** | | **{len(gp)}** | **{h_all}** | **{len(gp)-h_all}** "
+                   f"| **{h_all/len(gp):.0%}** | **{pred_all:.0%}** "
+                   f"| **{h_all/len(gp)-pred_all:+.0%}** |")
+        out.append("")
+        q = [b for b in gp if b.get("qualified")]
+        if q:
+            hq = sum(1 for b in q if b["result"] == "HIT")
+            pq = sum(b.get("model_p") or 0 for b in q) / len(q)
+            out.append(f"Gate-clearing calls only: **{hq}-{len(q)-hq}** "
+                       f"({hq/len(q):.0%} vs {pq:.0%} predicted).")
+            out.append("")
+        nvoid = sum(1 for b in props if b.get("result") == "VOID")
+        if nvoid:
+            out.append(f"_{nvoid} void (doubleheaders — per-game settlement not determinable)._")
+            out.append("")
+
+    out.append("> **Sample-size reality check.** Distinguishing a real edge from noise "
+               "needs hundreds of graded calls per tier. Gaps below are indicative, not "
+               "verdicts — except where a tier is inverted against a lower tier, which is "
+               "a structural signal rather than variance.")
+    out.append("")
+
+
 def write_results_md(rows):
     graded_all = [r for r in rows if r.get("graded")]
     graded = _dedupe(graded_all)
@@ -663,6 +775,8 @@ def write_results_md(rows):
         for f in flags:
             out.append(f"  - ⚠️ _{f}_")
     out.append("")
+    _standings_block(out)
+
     out.append("> CLV is the signal that matters here, not W-L — per the sharp-bettor "
                "method, beating the closing line is what indicates a real edge. A small "
                "sample of wins with negative CLV is luck, not edge.")
