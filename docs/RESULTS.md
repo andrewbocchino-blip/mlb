@@ -2,21 +2,59 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 302-257  ·  54% win  ·  +2.67u  ·  +0.5% ROI  ·  avg CLV n/a (no closing lines yet)**
+**Model A: 307-260  ·  54% win  ·  +3.58u  ·  +0.6% ROI  ·  avg CLV -5.84%**
 **Model B: 237-191  ·  55% win  ·  +14.16u  ·  +3.3% ROI  ·  avg CLV n/a (no closing lines yet)**
+
+## Board calibration standings
+
+These boards are calibration records, not bets. The question is not whether they won — it is whether a call at a stated confidence lands at that rate. A tier that hits BELOW its stated probability is a model telling you it does not know what it claims to know.
+
+### NRFI/YRFI forced calls
+
+| Confidence | n | Hit | Miss | Hit% | Model said | Gap |
+|---|---|---|---|---|---|---|
+| High | 36 | 13 | 23 | 36% | 64% | -28% |
+| Medium | 12 | 6 | 6 | 50% | 56% | -6% |
+| Low | 4 | 1 | 3 | 25% | 53% | -28% |
+| Coin flip | 12 | 7 | 5 | 58% | 53% | +6% |
+| **All** | **64** | **27** | **37** | **42%** | **60%** | **-18%** |
+
+YRFI share of calls: **51/64 (80%)** — hitting 41%.
+
+> ⚠️ **Confidence is inverted**: the High tier is hitting BELOW the Coin flip tier. Whatever the confidence metric is measuring, it is not the probability of being right. Calls at this tier should carry no weight until this reverses.
+
+### HR board (top-10 daily)
+
+- listed and graded: **46**
+- homered: **6** · model expected **11.0**
+- actual rate **13.0%** vs predicted **23.9%** (**-10.9%**)
+
+### Prop divergence board
+
+| Tier | Market | n | Hit | Miss | Hit% | Model said | Gap |
+|---|---|---|---|---|---|---|---|
+| A | Ks (P) | 31 | 23 | 8 | 74% | 59% | +15% |
+| B | Hits | 226 | 111 | 115 | 49% | 56% | -7% |
+| C | H+R+RBI | 226 | 110 | 116 | 49% | 60% | -11% |
+| C | RBI | 226 | 82 | 144 | 36% | 39% | -2% |
+| **All** | | **739** | **339** | **400** | **46%** | **52%** | **-6%** |
+
+Gate-clearing calls only: **40-32** (56% vs 60% predicted).
+
+> **Sample-size reality check.** Distinguishing a real edge from noise needs hundreds of graded calls per tier. Gaps below are indicative, not verdicts — except where a tier is inverted against a lower tier, which is a structural signal rather than variance.
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
-### Moneyline probability calibration (Model A, n=309)
+### Moneyline probability calibration (Model A, n=313)
 
-Brier score: **0.2431** (0.25 = coin flip knowledge; lower is better)
+Brier score: **0.2427** (0.25 = coin flip knowledge; lower is better)
 
 | Model home-win band | n | Predicted avg | Actual home-win % |
 |---|---|---|---|
-| 0%–40% | 43 | 35% | 37% |
-| 40%–45% | 48 | 43% | 50% |
+| 0%–40% | 44 | 35% | 36% |
+| 40%–45% | 49 | 43% | 49% |
 | 45%–50% | 53 | 47% | 36% |
-| 50%–55% | 41 | 52% | 39% |
+| 50%–55% | 43 | 52% | 37% |
 | 55%–60% | 51 | 57% | 67% |
 | 60%–65% | 35 | 62% | 60% |
 | 65%+ | 38 | 69% | 66% |
@@ -25,9 +63,9 @@ Brier score: **0.2431** (0.25 = coin flip knowledge; lower is better)
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 181-128 (+4%)  ·  Total 77-73 (+0%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 2-7 (-61%)  ·  NRFI 0-1 (-100%)
-- **by side:** Over 23-22 (+2%)  ·  team 225-184 (+1%)  ·  Under 54-51 (-1%)
-- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 155-129 (+5%)  ·  dog 29-43 (-4%)  ·  fav 82-60 (-5%)  ·  heavy fav 16-11 (-16%)
+- **by market:** Moneyline 183-130 (+3%, CLV -14.1%)  ·  NRFI 1-1 (+3%, CLV +2.0%)  ·  Total 78-73 (+1%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 3-8 (-53%, CLV -5.6%)
+- **by side:** Over 23-22 (+2%)  ·  team 229-187 (+1%, CLV -5.8%)  ·  Under 55-51 (-0%)
+- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 157-131 (+4%, CLV -4.0%)  ·  dog 29-43 (-4%)  ·  fav 85-61 (-5%, CLV -11.2%)  ·  heavy fav 16-11 (-16%)
 
 ### Model B — segments (finding the winning slice)
 
@@ -36,6 +74,19 @@ Brier score: **0.2431** (0.25 = coin flip knowledge; lower is better)
 - **by fav_band:** pickem 129-98 (+9%)  ·  fav 68-40 (+4%)  ·  dog 27-40 (-5%)  ·  unknown 2-3 (-24%)  ·  heavy fav 11-10 (-26%)
 
 ## Model A — picks by date
+
+### 2026-08-12 — 5-3  (+0.91u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Tampa Bay Rays @ Athletics | Moneyline | Tampa Bay Rays ML | — | **FanDuel -200** | — | +0.50 |
+| ✅ WIN | PLAY | Chicago Cubs @ Washington Nationals | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -144** | -11.2% | +0.69 |
+| ✅ WIN | PLAY | Texas Rangers @ Los Angeles Angels | Total | Under 9.5 | 9.5 | **FanDuel -106** / DraftKings -122 | — | +0.94 |
+| ✅ WIN | LEAN | Cleveland Guardians @ Detroit Tigers | NRFI | YRFI | 0.5 | **FanDuel +106** | +2.0% | +1.06 |
+| ✅ WIN | LEAN | Houston Astros @ San Francisco Giants | Moneyline | Houston Astros ML | — | **FanDuel -138** | — | +0.72 |
+| ❌ LOSS | PLAY | Cleveland Guardians @ Detroit Tigers | Moneyline | Detroit Tigers ML | — | **FanDuel -130** / DraftKings -131 | -14.1% | -1.00 |
+| ❌ LOSS | PLAY | Cincinnati Reds @ Chicago White Sox | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -130** | +0.0% | -1.00 |
+| ❌ LOSS | LEAN | Colorado Rockies @ Arizona Diamondbacks | Moneyline | Arizona Diamondbacks ML | — | **FanDuel -172** / DraftKings -180 | — | -1.00 |
 
 ### 2026-08-11 — 6-6  (-1.84u)
 
