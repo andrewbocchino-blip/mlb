@@ -689,6 +689,28 @@ def _standings_block(out):
             out.append(f"YRFI share of calls: **{len(yr)}/{len(gb)} ({len(yr)/len(gb):.0%})** "
                        f"— hitting {sum(1 for b in yr if b['result']=='HIT')/len(yr):.0%}.")
             out.append("")
+        # NAIVE BASELINE. A forced-call board must beat "always call the
+        # majority class" or it has no discriminating power at all. This is
+        # the comparison that matters and the one the board kept failing:
+        # through 8/15 it was 34-53 (39%) while always-NRFI would have gone
+        # 51-36 (59%).
+        n_nrfi_actual = sum(1 for b in gb
+                            if (b.get("call") == "NRFI") == (b["result"] == "HIT"))
+        base_rate = n_nrfi_actual / len(gb)
+        naive = max(base_rate, 1 - base_rate)
+        naive_side = "NRFI" if base_rate >= 0.5 else "YRFI"
+        model_rate = h_all / len(gb)
+        out.append(f"**Naive baseline check.** First innings were scoreless in "
+                   f"**{base_rate:.1%}** of these games, so always calling {naive_side} "
+                   f"scores **{naive:.1%}**. The model scores **{model_rate:.1%}**.")
+        if model_rate < naive:
+            out.append("")
+            out.append("> ⚠️ **The model is losing to a coin that always says the same thing.** "
+                       "Until it beats this line, its calls carry no information and should "
+                       "not be treated as analysis — a forced call is only worth making if it "
+                       "beats the majority class.")
+        out.append("")
+
         hi = [b for b in gb if b.get("confidence") == "High"]
         if len(hi) >= 15:
             hi_rate = sum(1 for b in hi if b["result"] == "HIT") / len(hi)
