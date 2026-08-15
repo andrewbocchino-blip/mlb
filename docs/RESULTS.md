@@ -2,7 +2,7 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 309-266  ·  54% win  ·  -1.03u  ·  -0.2% ROI  ·  avg CLV -3.53%**
+**Model A: 309-268  ·  54% win  ·  -3.03u  ·  -0.5% ROI  ·  avg CLV -3.44%**
 **Model B: 237-191  ·  55% win  ·  +14.16u  ·  +3.3% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 ## Board calibration standings
@@ -13,13 +13,13 @@ These boards are calibration records, not bets. The question is not whether they
 
 | Confidence | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|
-| High | 51 | 17 | 34 | 33% | 64% | -31% |
-| Medium | 15 | 8 | 7 | 53% | 56% | -3% |
-| Low | 5 | 1 | 4 | 20% | 53% | -33% |
+| High | 52 | 17 | 35 | 33% | 64% | -31% |
+| Medium | 16 | 9 | 7 | 56% | 56% | +0% |
+| Low | 6 | 1 | 5 | 17% | 52% | -36% |
 | Coin flip | 13 | 7 | 6 | 54% | 53% | +1% |
-| **All** | **84** | **33** | **51** | **39%** | **60%** | **-21%** |
+| **All** | **87** | **34** | **53** | **39%** | **60%** | **-21%** |
 
-YRFI share of calls: **67/84 (80%)** — hitting 37%.
+YRFI share of calls: **69/87 (79%)** — hitting 38%.
 
 > ⚠️ **Confidence is inverted**: the High tier is hitting BELOW the Coin flip tier. Whatever the confidence metric is measuring, it is not the probability of being right. Calls at this tier should carry no weight until this reverses.
 
@@ -63,9 +63,9 @@ Brier score: **0.2435** (0.25 = coin flip knowledge; lower is better)
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** NRFI 1-1 (+3%, CLV +2.0%)  ·  Moneyline 184-133 (+2%, CLV -5.7%)  ·  Total 78-74 (-0%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 4-10 (-50%, CLV -2.5%)
-- **by side:** Under 55-51 (-0%)  ·  Over 23-23 (-0%)  ·  team 231-192 (-0%, CLV -3.5%)
-- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 158-136 (+3%, CLV -2.4%)  ·  dog 29-43 (-4%)  ·  fav 86-62 (-5%, CLV -6.7%)  ·  heavy fav 16-11 (-16%)
+- **by market:** NRFI 1-1 (+3%, CLV +2.0%)  ·  Moneyline 184-133 (+2%, CLV -5.7%)  ·  Total 78-75 (-1%, CLV -4.1%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 4-11 (-53%, CLV -2.4%)
+- **by side:** Under 55-51 (-0%)  ·  team 231-193 (-0%, CLV -3.4%)  ·  Over 23-24 (-2%, CLV -4.1%)
+- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 158-137 (+3%, CLV -2.5%)  ·  fav 86-62 (-5%, CLV -6.7%)  ·  dog 29-44 (-5%, CLV -1.9%)  ·  heavy fav 16-11 (-16%)
 
 ### Model B — segments (finding the winning slice)
 
@@ -75,14 +75,16 @@ Brier score: **0.2435** (0.25 = coin flip knowledge; lower is better)
 
 ## Model A — picks by date
 
-### 2026-08-14 — 1-5  (-4.44u)
+### 2026-08-14 — 1-7  (-6.44u)
 
 | Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
 |---|---|---|---|---|---|---|---|---|
 | ✅ WIN | LEAN | St. Louis Cardinals @ Chicago Cubs | Moneyline | Chicago Cubs ML | — | **FanDuel -180** / DraftKings -191 | -1.2% | +0.56 |
+| ❌ LOSS | PLAY | Colorado Rockies @ San Francisco Giants | Total | Over 7.5 | 7.5 | **DraftKings -118** / FanDuel -122 | -4.1% | -1.00 |
 | ❌ LOSS | LEAN | Boston Red Sox @ Pittsburgh Pirates | Moneyline | Boston Red Sox ML | — | **FanDuel -144** / DraftKings -144 | -7.6% | -1.00 |
 | ❌ LOSS | LEAN | Washington Nationals @ New York Mets | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -120** | +0.0% | -1.00 |
 | ❌ LOSS | LEAN | Baltimore Orioles @ Tampa Bay Rays | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -120** | -1.9% | -1.00 |
+| ❌ LOSS | LEAN | Colorado Rockies @ San Francisco Giants | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel +112** | -1.9% | -1.00 |
 | ❌ LOSS | LEAN | St. Louis Cardinals @ Chicago Cubs | Total | Over 8.0 | 8.0 | **FanDuel -108** / DraftKings -110 | — | -1.00 |
 | ❌ LOSS | LEAN | Washington Nationals @ New York Mets | Moneyline | Washington Nationals ML | — | **FanDuel +102** / DraftKings +100 | -1.9% | -1.00 |
 
