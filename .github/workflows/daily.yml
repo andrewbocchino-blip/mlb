@@ -26,6 +26,10 @@ on:
         description: "Sweep gates against the graded record -> docs/ANALYSIS.md"
         required: false
         default: "false"
+      fit:
+        description: "Refit guessed model parameters -> docs/FIT.md"
+        required: false
+        default: "false"
 permissions:
   contents: write
 jobs:
@@ -64,14 +68,18 @@ jobs:
         if: github.event.inputs.analyze == 'true'
         run: python analyze.py
 
+      - name: Refit model parameters against real distributions
+        if: github.event.inputs.fit == 'true'
+        run: python fit_params.py --days 60 --players 120
+
       - name: Generate dashboard
-        if: env.MODE != 'clv' && github.event.inputs.backtest != 'true' && github.event.inputs.analyze != 'true'
+        if: env.MODE != 'clv' && github.event.inputs.backtest != 'true' && github.event.inputs.analyze != 'true' && github.event.inputs.fit != 'true'
         run: python run.py
       - name: Capture closing lines (CLV)
         if: env.MODE == 'clv'
         run: python clv.py
       - name: Grade prior picks
-        if: env.MODE != 'clv' && github.event.inputs.backtest != 'true' && github.event.inputs.analyze != 'true'
+        if: env.MODE != 'clv' && github.event.inputs.backtest != 'true' && github.event.inputs.analyze != 'true' && github.event.inputs.fit != 'true'
         run: python grade.py || echo "grading skipped"
       - name: Add B divergence (today only, top of page)
         if: env.MODE != 'clv'
