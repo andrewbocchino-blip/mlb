@@ -2,7 +2,7 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 309-268  ·  54% win  ·  -3.03u  ·  -0.5% ROI  ·  avg CLV -3.44%**
+**Model A: 312-275  ·  53% win  ·  -7.49u  ·  -1.3% ROI  ·  avg CLV -2.95%**
 **Model B: 237-191  ·  55% win  ·  +14.16u  ·  +3.3% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 ## Board calibration standings
@@ -13,31 +13,35 @@ These boards are calibration records, not bets. The question is not whether they
 
 | Confidence | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|
-| High | 52 | 17 | 35 | 33% | 64% | -31% |
+| High | 60 | 20 | 40 | 33% | 64% | -31% |
 | Medium | 16 | 9 | 7 | 56% | 56% | +0% |
-| Low | 6 | 1 | 5 | 17% | 52% | -36% |
-| Coin flip | 13 | 7 | 6 | 54% | 53% | +1% |
-| **All** | **87** | **34** | **53** | **39%** | **60%** | **-21%** |
+| Low | 10 | 4 | 6 | 40% | 53% | -13% |
+| Coin flip | 16 | 10 | 6 | 62% | 53% | +10% |
+| **All** | **102** | **43** | **59** | **42%** | **60%** | **-18%** |
 
-YRFI share of calls: **69/87 (79%)** — hitting 38%.
+YRFI share of calls: **81/102 (79%)** — hitting 40%.
+
+**Naive baseline check.** First innings were scoreless in **58.8%** of these games, so always calling NRFI scores **58.8%**. The model scores **42.2%**.
+
+> ⚠️ **The model is losing to a coin that always says the same thing.** Until it beats this line, its calls carry no information and should not be treated as analysis — a forced call is only worth making if it beats the majority class.
 
 > ⚠️ **Confidence is inverted**: the High tier is hitting BELOW the Coin flip tier. Whatever the confidence metric is measuring, it is not the probability of being right. Calls at this tier should carry no weight until this reverses.
 
 ### HR board (top-10 daily)
 
-- listed and graded: **64**
-- homered: **8** · model expected **15.4**
-- actual rate **12.5%** vs predicted **24.1%** (**-11.6%**)
+- listed and graded: **74**
+- homered: **9** · model expected **17.9**
+- actual rate **12.2%** vs predicted **24.2%** (**-12.1%**)
 
 ### Prop divergence board
 
 | Tier | Market | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|---|
-| A | Ks (P) | 71 | 47 | 24 | 66% | 58% | +8% |
-| B | Hits | 562 | 292 | 270 | 52% | 57% | -5% |
-| C | H+R+RBI | 562 | 268 | 294 | 48% | 58% | -10% |
-| C | RBI | 562 | 209 | 353 | 37% | 42% | -4% |
-| **All** | | **1787** | **829** | **958** | **46%** | **52%** | **-6%** |
+| A | Ks (P) | 98 | 60 | 38 | 61% | 59% | +3% |
+| B | Hits | 774 | 390 | 384 | 50% | 57% | -6% |
+| C | H+R+RBI | 774 | 374 | 400 | 48% | 58% | -10% |
+| C | RBI | 774 | 286 | 488 | 37% | 43% | -6% |
+| **All** | | **2450** | **1123** | **1327** | **46%** | **53%** | **-7%** |
 
 Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 
@@ -45,27 +49,27 @@ Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
-### Moneyline probability calibration (Model A, n=317)
+### Moneyline probability calibration (Model A, n=320)
 
-Brier score: **0.2435** (0.25 = coin flip knowledge; lower is better)
+Brier score: **0.2438** (0.25 = coin flip knowledge; lower is better)
 
 | Model home-win band | n | Predicted avg | Actual home-win % |
 |---|---|---|---|
 | 0%–40% | 45 | 35% | 38% |
-| 40%–45% | 49 | 43% | 49% |
-| 45%–50% | 54 | 47% | 37% |
+| 40%–45% | 50 | 43% | 48% |
+| 45%–50% | 55 | 47% | 38% |
 | 50%–55% | 43 | 52% | 37% |
 | 55%–60% | 51 | 57% | 67% |
-| 60%–65% | 36 | 62% | 58% |
+| 60%–65% | 37 | 62% | 57% |
 | 65%+ | 39 | 69% | 67% |
 
 > Calibrated = predicted ≈ actual per band. Systematic gaps mean the win probabilities themselves need retuning before any ML edge claim.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** NRFI 1-1 (+3%, CLV +2.0%)  ·  Moneyline 184-133 (+2%, CLV -5.7%)  ·  Total 78-75 (-1%, CLV -4.1%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 4-11 (-53%, CLV -2.4%)
-- **by side:** Under 55-51 (-0%)  ·  team 231-193 (-0%, CLV -3.4%)  ·  Over 23-24 (-2%, CLV -4.1%)
-- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 158-137 (+3%, CLV -2.5%)  ·  fav 86-62 (-5%, CLV -6.7%)  ·  dog 29-44 (-5%, CLV -1.9%)  ·  heavy fav 16-11 (-16%)
+- **by market:** NRFI 1-1 (+3%, CLV +2.0%)  ·  Moneyline 185-135 (+2%, CLV -4.2%)  ·  Total 80-78 (-1%, CLV -4.1%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 4-13 (-59%, CLV -2.0%)
+- **by side:** Under 56-53 (-1%)  ·  team 232-197 (-1%, CLV -2.9%)  ·  Over 24-25 (-2%, CLV -4.1%)
+- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 161-141 (+2%, CLV -2.5%)  ·  dog 29-44 (-5%, CLV -1.9%)  ·  fav 86-65 (-7%, CLV -4.2%)  ·  heavy fav 16-11 (-16%)
 
 ### Model B — segments (finding the winning slice)
 
@@ -74,6 +78,21 @@ Brier score: **0.2435** (0.25 = coin flip knowledge; lower is better)
 - **by fav_band:** pickem 129-98 (+9%)  ·  fav 68-40 (+4%)  ·  dog 27-40 (-5%)  ·  unknown 2-3 (-24%)  ·  heavy fav 11-10 (-26%)
 
 ## Model A — picks by date
+
+### 2026-08-15 — 3-7  (-4.46u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Texas Rangers @ Athletics | Total | Under 11.5 | 11.5 | **FanDuel -118** / DraftKings -120 | — | +0.85 |
+| ✅ WIN | PLAY | Boston Red Sox @ Pittsburgh Pirates | Moneyline | Boston Red Sox ML | — | **FanDuel -126** / DraftKings -126 | -11.2% | +0.79 |
+| ✅ WIN | LEAN | Colorado Rockies @ San Francisco Giants | Total | Over 7.5 | 7.5 | **DraftKings -111** / FanDuel -115 | — | +0.90 |
+| ❌ LOSS | PLAY | St. Louis Cardinals @ Chicago Cubs | Moneyline | Chicago Cubs ML | — | **FanDuel -166** / DraftKings -181 | -0.9% | -1.00 |
+| ❌ LOSS | PLAY | San Diego Padres @ Cleveland Guardians | Moneyline | San Diego Padres ML | — | **FanDuel +102** | +6.7% | -1.00 |
+| ❌ LOSS | PLAY | Arizona Diamondbacks @ Atlanta Braves | Total | Under 9.5 | 9.5 | **DraftKings -107** / FanDuel -120 | — | -1.00 |
+| ❌ LOSS | LEAN | Arizona Diamondbacks @ Atlanta Braves | F5 Total | F5 Under 5.5 | 5.5 | **FanDuel -132** | +0.0% | -1.00 |
+| ❌ LOSS | LEAN | Boston Red Sox @ Pittsburgh Pirates | Total | Over 7.5 | 7.5 | **FanDuel -115** / DraftKings -119 | — | -1.00 |
+| ❌ LOSS | LEAN | St. Louis Cardinals @ Chicago Cubs | Total | Under 9.5 | 9.5 | **DraftKings -118** / FanDuel -120 | — | -1.00 |
+| ❌ LOSS | LEAN | Baltimore Orioles @ Tampa Bay Rays | F5 Total | F5 Over 3.5 | 3.5 | **FanDuel -144** | — | -1.00 |
 
 ### 2026-08-14 — 1-7  (-6.44u)
 
