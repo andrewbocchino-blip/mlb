@@ -1,0 +1,14 @@
+{
+  "FI_DISPERSION": 2.168865182051851,
+  "K_DISPERSION": 1.1122071007963847,
+  "RBI_DISPERSION": 1.5845574266144782,
+  "HRR_DISPERSION": 2.0444937812293387,
+  "SHRINK_avg": 800.0,
+  "SHRINK_k_pa": 30.0,
+  "_fitted_on": "2026-08-17",
+  "_stats": {
+    "fi_games": 764,
+    "fi_mean": 0.9921465968586387,
+    "fi_p0": 0.518324607329843
+  }
+}
