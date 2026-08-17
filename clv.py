@@ -44,6 +44,9 @@ except Exception:
 from mlb_betting_model.parsers import parse_odds
 
 LOCK = "docs/locked_picks.jsonl"
+PROPS = "docs/props_board.jsonl"
+PROP_MARKETS = ("batter_home_runs", "pitcher_strikeouts", "batter_strikeouts",
+                "batter_hits", "batter_rbis", "batter_hits_runs_rbis")
 ET = ZoneInfo("America/New_York")
 BOOKMAKERS = "draftkings,fanduel"
 PERIOD_MARKETS = "h2h_1st_5_innings,totals_1st_5_innings,totals_1st_1_innings"
@@ -120,6 +123,72 @@ def side_for(row):
     return None, None, False
 
 
+def capture_prop_clv(client, today):
+    """Closing prices for today's prop board rows.
+
+    Props move hard between the late-morning pull and first pitch, so this
+    is where being early is measurable. CLV gives a verdict on the board in
+    weeks; win-rate needs hundreds of graded calls."""
+    try:
+        rows = [json.loads(l) for l in open(PROPS) if l.strip()]
+    except FileNotFoundError:
+        return 0
+    todo = [r for r in rows if r.get("slate_date") == today
+            and r.get("close_price") is None and not r.get("clv_final")]
+    if not todo:
+        return 0
+
+    # one per-event fetch per game that actually has a row awaiting a close
+    games = {r["game"] for r in todo}
+    markets = ",".join(sorted({r["market"] for r in todo
+                               if r["market"] in PROP_MARKETS}))
+    if not markets:
+        return 0
+    quotes = {}
+    try:
+        for ev in (client.events() or []):
+            matchup = f"{ev.get('away_team')} @ {ev.get('home_team')}"
+            if matchup not in games or not ev.get("id"):
+                continue
+            eo = client.event_odds(ev["id"], markets=markets, bookmakers=BOOKMAKERS)
+            for bk in ((eo or {}).get("bookmakers") or []):
+                book = bk.get("title") or bk.get("key")
+                for m in (bk.get("markets") or []):
+                    for o in (m.get("outcomes") or []):
+                        who, side = o.get("description"), o.get("name")
+                        px, pt = o.get("price"), o.get("point")
+                        if not who or px is None or pt is None:
+                            continue
+                        key = (matchup, m.get("key"), who.lower(), float(pt), side)
+                        quotes.setdefault(key, {})[book] = float(px)
+    except Exception as exc:
+        print(f"[clv] prop closes unavailable ({exc})")
+        return 0
+
+    n = 0
+    for r in todo:
+        key = (r["game"], r["market"], (r.get("player") or "").lower(),
+               float(r["line"]), r["side"])
+        books = quotes.get(key) or {}
+        if not books:
+            continue
+        close = books.get(r.get("book"))
+        if close is None:
+            close = max(books.values())
+        locked = r.get("price")
+        if locked is None:
+            continue
+        r["close_price"] = close
+        r["clv"] = round((to_decimal(locked) / to_decimal(close) - 1.0) * 100.0, 2)
+        r["clv_final"] = True
+        n += 1
+    with open(PROPS, "w") as f:
+        for r in rows:
+            f.write(json.dumps(r) + "\n")
+    print(f"[clv] prop closes captured for {n} board rows")
+    return n
+
+
 def main():
     today = datetime.now(ET).strftime("%Y-%m-%d")
     if not os.path.exists(LOCK):
@@ -130,6 +199,10 @@ def main():
             and r.get("close_odds") is None and not r.get("clv_final")]
     if not todo:
         print(f"CLV: nothing to capture for {today}.")
+        try:
+            capture_prop_clv(WorkerClient(), today)
+        except Exception as exc:
+            print(f"[clv] prop capture failed ({exc})")
         return
 
     client = WorkerClient()
@@ -198,6 +271,10 @@ def main():
             f.write(json.dumps(r) + "\n")
     print(f"CLV: captured closes for {captured} picks "
           f"({skipped} unmatched — started early or market pulled).")
+    try:
+        capture_prop_clv(client, today)
+    except Exception as exc:
+        print(f"[clv] prop capture failed ({exc})")
 
 
 if __name__ == "__main__":
