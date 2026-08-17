@@ -548,7 +548,14 @@ def write_picks_md(rows, board=None, hr_board=None, props_board=None):
             out.append("#### Prop Divergence — model vs **no-vig** market "
                        "(calibration record, NOT bets)")
             out.append("")
-            out.append("| Player | Mkt | Tier | Call | Line | Price | Book | Model | No-vig | Edge | EV | Result |")
+            out.append("*Divergence means our number disagrees with the market — it does "
+                       "NOT mean the market is wrong. The market price already contains "
+                       "every sharp model working on this game; when we disagree, the "
+                       "more likely explanation is that our number is worse. Until this "
+                       "board beats its baseline, read a large divergence as a warning "
+                       "about our projection, not an opportunity.*")
+            out.append("")
+            out.append("| Player | Mkt | Tier | Call | Line | Price | Book | Model | No-vig | Diverg. | EV | Result |")
             out.append("|---|---|---|---|---|---|---|---|---|---|---|---|")
             for b in sorted(day_props, key=lambda x: -x.get("ev", 0))[:15]:
                 res = {"HIT": "✅ HIT", "MISS": "❌ MISS", "PUSH": "➖ PUSH",
@@ -588,6 +595,26 @@ def write_picks_md(rows, board=None, hr_board=None, props_board=None):
                     if tb:
                         line += f" · *tier {t} {_rec(tb)}*"
                 out.append(line)
+                out.append("")
+            # PROP CLV — known at close, long before results are. This is
+            # the fastest honest verdict available on the board: beating the
+            # closing prop price does not require outsmarting the market,
+            # only being early to a move it later makes.
+            clvs = [b["clv"] for b in props_board if b.get("clv") is not None]
+            if clvs:
+                _avg = sum(clvs) / len(clvs)
+                _pos = sum(1 for c in clvs if c > 0)
+                out.append(f"**Prop CLV: {_avg:+.2f}%** across {len(clvs)} closed rows "
+                           f"({_pos}/{len(clvs)} beat the close).")
+                out.append("")
+                if _avg <= 0:
+                    out.append("> Negative or flat CLV means the market moved AGAINST our "
+                               "calls after we made them — the clearest available evidence "
+                               "that the divergences are our error, not the market's.")
+                else:
+                    out.append("> Positive CLV is the first real evidence this board carries "
+                               "information. It needs to persist over a few hundred rows "
+                               "before it means anything.")
                 out.append("")
             out.append("*Bold = cleared its market's no-vig edge gate with no data-quality flags. "
                        "Edge is measured against the vig-free price, never the raw line.* "
@@ -799,6 +826,18 @@ def write_results_md(rows):
     out.append("")
     _standings_block(out)
 
+    out.append("> **CLV caveat.** Beating the close is only evidence of skill when the "
+               "move came from the market re-evaluating the same information we had. If "
+               "a lineup scratch or injury broke after we locked, we collect the CLV "
+               "without having known anything — that is luck wearing the costume of "
+               "skill. Read CLV as evidence in aggregate, never on a single bet.")
+    out.append("")
+    out.append("> **CLV caveat.** Beating the close is evidence of skill only when the "
+               "move came from the market re-evaluating information we also had. If a "
+               "scratch or injury broke after we locked, we collect the CLV without "
+               "having known anything — that is luck wearing the costume of skill. Read "
+               "CLV in aggregate, never on a single bet.")
+    out.append("")
     out.append("> CLV is the signal that matters here, not W-L — per the sharp-bettor "
                "method, beating the closing line is what indicates a real edge. A small "
                "sample of wins with negative CLV is luck, not edge.")
