@@ -2,7 +2,7 @@
 
 **Model A** = current model (v14.3, control). **Model B** = variant (stricter regression + literature weights). CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 312-275  ·  53% win  ·  -7.49u  ·  -1.3% ROI  ·  avg CLV -2.95%**
+**Model A: 320-277  ·  54% win  ·  -3.03u  ·  -0.5% ROI  ·  avg CLV -8.11%**
 **Model B: 237-191  ·  55% win  ·  +14.16u  ·  +3.3% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 ## Board calibration standings
@@ -13,15 +13,15 @@ These boards are calibration records, not bets. The question is not whether they
 
 | Confidence | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|
-| High | 60 | 20 | 40 | 33% | 64% | -31% |
-| Medium | 16 | 9 | 7 | 56% | 56% | +0% |
-| Low | 10 | 4 | 6 | 40% | 53% | -13% |
-| Coin flip | 16 | 10 | 6 | 62% | 53% | +10% |
-| **All** | **102** | **43** | **59** | **42%** | **60%** | **-18%** |
+| High | 68 | 23 | 45 | 34% | 64% | -30% |
+| Medium | 19 | 11 | 8 | 58% | 56% | +2% |
+| Low | 11 | 5 | 6 | 45% | 53% | -8% |
+| Coin flip | 19 | 12 | 7 | 63% | 53% | +11% |
+| **All** | **117** | **51** | **66** | **44%** | **60%** | **-16%** |
 
-YRFI share of calls: **81/102 (79%)** — hitting 40%.
+YRFI share of calls: **89/117 (76%)** — hitting 39%.
 
-**Naive baseline check.** First innings were scoreless in **58.8%** of these games, so always calling NRFI scores **58.8%**. The model scores **42.2%**.
+**Naive baseline check.** First innings were scoreless in **59.8%** of these games, so always calling NRFI scores **59.8%**. The model scores **43.6%**.
 
 > ⚠️ **The model is losing to a coin that always says the same thing.** Until it beats this line, its calls carry no information and should not be treated as analysis — a forced call is only worth making if it beats the majority class.
 
@@ -29,19 +29,19 @@ YRFI share of calls: **81/102 (79%)** — hitting 40%.
 
 ### HR board (top-10 daily)
 
-- listed and graded: **74**
-- homered: **9** · model expected **17.9**
-- actual rate **12.2%** vs predicted **24.2%** (**-12.1%**)
+- listed and graded: **82**
+- homered: **11** · model expected **20.1**
+- actual rate **13.4%** vs predicted **24.5%** (**-11.0%**)
 
 ### Prop divergence board
 
 | Tier | Market | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|---|
-| A | Ks (P) | 98 | 60 | 38 | 61% | 59% | +3% |
-| B | Hits | 774 | 390 | 384 | 50% | 57% | -6% |
-| C | H+R+RBI | 774 | 374 | 400 | 48% | 58% | -10% |
-| C | RBI | 774 | 286 | 488 | 37% | 43% | -6% |
-| **All** | | **2450** | **1123** | **1327** | **46%** | **53%** | **-7%** |
+| A | Ks (P) | 127 | 80 | 47 | 63% | 58% | +5% |
+| B | Hits | 988 | 511 | 477 | 52% | 57% | -5% |
+| C | H+R+RBI | 988 | 485 | 503 | 49% | 58% | -9% |
+| C | RBI | 988 | 379 | 609 | 38% | 43% | -5% |
+| **All** | | **3121** | **1468** | **1653** | **47%** | **53%** | **-6%** |
 
 Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 
@@ -49,17 +49,17 @@ Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
-### Moneyline probability calibration (Model A, n=320)
+### Moneyline probability calibration (Model A, n=323)
 
-Brier score: **0.2438** (0.25 = coin flip knowledge; lower is better)
+Brier score: **0.2437** (0.25 = coin flip knowledge; lower is better)
 
 | Model home-win band | n | Predicted avg | Actual home-win % |
 |---|---|---|---|
-| 0%–40% | 45 | 35% | 38% |
+| 0%–40% | 46 | 35% | 37% |
 | 40%–45% | 50 | 43% | 48% |
 | 45%–50% | 55 | 47% | 38% |
-| 50%–55% | 43 | 52% | 37% |
-| 55%–60% | 51 | 57% | 67% |
+| 50%–55% | 44 | 52% | 39% |
+| 55%–60% | 52 | 57% | 65% |
 | 60%–65% | 37 | 62% | 57% |
 | 65%+ | 39 | 69% | 67% |
 
@@ -67,9 +67,9 @@ Brier score: **0.2438** (0.25 = coin flip knowledge; lower is better)
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** NRFI 1-1 (+3%, CLV +2.0%)  ·  Moneyline 185-135 (+2%, CLV -4.2%)  ·  Total 80-78 (-1%, CLV -4.1%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 4-13 (-59%, CLV -2.0%)
-- **by side:** Under 56-53 (-1%)  ·  team 232-197 (-1%, CLV -2.9%)  ·  Over 24-25 (-2%, CLV -4.1%)
-- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 161-141 (+2%, CLV -2.5%)  ·  dog 29-44 (-5%, CLV -1.9%)  ·  fav 86-65 (-7%, CLV -4.2%)  ·  heavy fav 16-11 (-16%)
+- **by market:** NRFI 3-1 (+40%, CLV +2.0%)  ·  Moneyline 187-136 (+2%, CLV -14.4%)  ·  Total 83-78 (+0%, CLV -4.1%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 5-14 (-54%, CLV -2.0%)
+- **by side:** Under 58-53 (+1%)  ·  Over 25-25 (-0%, CLV -4.1%)  ·  team 237-199 (-1%, CLV -8.3%)
+- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 166-141 (+4%, CLV -2.5%)  ·  fav 89-66 (-6%, CLV -19.5%)  ·  dog 29-45 (-6%, CLV -1.9%)  ·  heavy fav 16-11 (-16%)
 
 ### Model B — segments (finding the winning slice)
 
@@ -78,6 +78,21 @@ Brier score: **0.2438** (0.25 = coin flip knowledge; lower is better)
 - **by fav_band:** pickem 129-98 (+9%)  ·  fav 68-40 (+4%)  ·  dog 27-40 (-5%)  ·  unknown 2-3 (-24%)  ·  heavy fav 11-10 (-26%)
 
 ## Model A — picks by date
+
+### 2026-08-16 — 8-2  (+4.46u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Miami Marlins @ Cincinnati Reds | Moneyline | Miami Marlins ML | — | **FanDuel -122** / DraftKings -126 | — | +0.82 |
+| ✅ WIN | PLAY | Philadelphia Phillies @ Minnesota Twins | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -144** | — | +0.69 |
+| ✅ WIN | PLAY | Texas Rangers @ Athletics | Total | Under 10.5 | 10.5 | **DraftKings -112** / FanDuel -120 | — | +0.89 |
+| ✅ WIN | LEAN | Miami Marlins @ Cincinnati Reds | Total | Under 9.5 | 9.5 | **DraftKings -103** / FanDuel -120 | — | +0.97 |
+| ✅ WIN | LEAN | New York Yankees @ Toronto Blue Jays | NRFI | NRFI | 0.5 | **FanDuel -184** | — | +0.54 |
+| ✅ WIN | LEAN | Baltimore Orioles @ Tampa Bay Rays | Total | Over 8.0 | 8.0 | **DraftKings -102** / FanDuel -115 | — | +0.98 |
+| ✅ WIN | LEAN | Washington Nationals @ New York Mets | Moneyline | New York Mets ML | — | **DraftKings -175** / FanDuel -178 | — | +0.57 |
+| ✅ WIN | LEAN | Kansas City Royals @ Los Angeles Angels | NRFI | NRFI | 0.5 | **FanDuel +100** | — | +1.00 |
+| ❌ LOSS | PLAY | Colorado Rockies @ San Francisco Giants | Moneyline | San Francisco Giants ML | — | **FanDuel -134** / DraftKings -135 | -95.8% | -1.00 |
+| ❌ LOSS | LEAN | Baltimore Orioles @ Tampa Bay Rays | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel +116** | — | -1.00 |
 
 ### 2026-08-15 — 3-7  (-4.46u)
 
