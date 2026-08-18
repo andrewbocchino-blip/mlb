@@ -806,16 +806,163 @@ def _standings_block(out):
     out.append("")
 
 
+
+
+def _recent_results_block(out, days_back: int = 5):
+    """Graded rows from the last few slates for every board, in one place.
+
+    These previously lived only in PICKS.md, interleaved with each day's
+    picks — so seeing how the boards actually performed meant scrolling
+    through the whole file. Results belong on the results page."""
+    import collections
+    board = load_board()
+    hrb = load_hr_board()
+    props = load_props()
+
+    dates = sorted({b["slate_date"] for b in (board + hrb + props)
+                    if b.get("result") in ("HIT", "MISS")}, reverse=True)[:days_back]
+    if not dates:
+        return
+
+    out.append("## Recent board results")
+    out.append("")
+    out.append(f"Last {len(dates)} graded slates. Full history stays in PICKS.md.")
+    out.append("")
+
+    ICON = {"HIT": "✅", "MISS": "❌", "PUSH": "➖", "VOID": "⊘"}
+    LABEL = {"batter_home_runs": "HR", "pitcher_strikeouts": "Ks (P)",
+             "batter_strikeouts": "Ks (B)", "batter_hits": "Hits",
+             "batter_rbis": "RBI", "batter_hits_runs_rbis": "H+R+RBI"}
+
+    for d in dates:
+        db = [b for b in board if b["slate_date"] == d and b.get("result") in ("HIT", "MISS")]
+        dh = [b for b in hrb if b["slate_date"] == d and b.get("result") in ("HIT", "MISS")]
+        dp = [b for b in props if b["slate_date"] == d and b.get("result") in ("HIT", "MISS")]
+        if not (db or dh or dp):
+            continue
+        bits = []
+        if db:
+            h = sum(1 for b in db if b["result"] == "HIT")
+            bits.append(f"NRFI {h}-{len(db)-h}")
+        if dh:
+            h = sum(1 for b in dh if b["result"] == "HIT")
+            bits.append(f"HR {h}-{len(dh)-h}")
+        if dp:
+            h = sum(1 for b in dp if b["result"] == "HIT")
+            bits.append(f"props {h}-{len(dp)-h}")
+        out.append(f"### {d} — {' · '.join(bits)}")
+        out.append("")
+
+        if dp:
+            out.append("| Prop | Mkt | Call | Line | Price | Model | Actual | |")
+            out.append("|---|---|---|---|---|---|---|---|")
+            for b in sorted(dp, key=lambda x: -(x.get("ev") or 0))[:8]:
+                px = b.get("price")
+                pxs = f"{'+' if px and px > 0 else ''}{int(px)}" if px is not None else "—"
+                star = "**" if b.get("qualified") else ""
+                out.append(f"| {star}{b['player']}{star} | {LABEL.get(b['market'], b['market'])} "
+                           f"| {b['side']} | {b['line']} | {pxs} | {b['model_p']:.0%} "
+                           f"| {b.get('actual', '—')} | {ICON.get(b['result'], '')} |")
+            out.append("")
+
+        if dh:
+            hits = [b for b in dh if b["result"] == "HIT"]
+            out.append(f"**HR board:** {len(hits)} of {len(dh)} homered"
+                       + (f" — {', '.join(b['player'] for b in hits)}" if hits else "")
+                       + f" (model expected {sum(b.get('p_hr') or 0 for b in dh):.1f})")
+            out.append("")
+
+        if db:
+            wrong = [b for b in db if b["result"] == "MISS" and b.get("confidence") == "High"]
+            h = sum(1 for b in db if b["result"] == "HIT")
+            out.append(f"**NRFI board:** {h}-{len(db)-h}"
+                       + (f" · {len(wrong)} High-confidence calls missed" if wrong else ""))
+            out.append("")
+
+
 def write_results_md(rows):
     graded_all = [r for r in rows if r.get("graded")]
     graded = _dedupe(graded_all)
     A = [r for r in graded if r.get("model", "A") == "A"]
     B = [r for r in graded if r.get("model") == "B"]
 
-    out = ["# Results — A/B Test", "",
-           "**Model A** = current model (v14.3, control). **Model B** = variant "
-           "(stricter regression + literature weights). CLV measured from the real "
-           "price vs close. Each unique bet counted once. Paper only — no real money.", ""]
+    out = ["# Results", ""]
+
+    # ---- SCOREBOARD: every board's standing, at a glance, first thing ----
+    board = load_board()
+    hrb = load_hr_board()
+    props = load_props()
+
+    def _line(name, hits, n, pred, extra=""):
+        if not n:
+            return f"| {name} | — | no graded calls yet | | |"
+        act = hits / n
+        gap = act - pred if pred is not None else None
+        verdict = ("🟢 ahead of its own number" if gap is not None and gap > 0.03
+                   else "🔴 behind its own number" if gap is not None and gap < -0.03
+                   else "🟡 tracking its number")
+        return (f"| {name} | {hits}-{n-hits} | **{act:.1%}** | "
+                f"{pred:.1%} | {verdict}{extra} |" if pred is not None
+                else f"| {name} | {hits}-{n-hits} | **{act:.1%}** | — | {verdict}{extra} |")
+
+    out.append("## Scoreboard")
+    out.append("")
+    out.append("| Board | Record | Hit rate | Model predicted | Standing |")
+    out.append("|---|---|---|---|---|")
+
+    gA = [r for r in _dedupe([x for x in rows if x.get("graded")])
+          if r.get("model", "A") == "A" and r.get("result") in ("WIN", "LOSS")]
+    if gA:
+        w = sum(1 for r in gA if r["result"] == "WIN")
+        pl = sum(r.get("pl") or 0 for r in gA)
+        clvs = [r["clv"] for r in gA if r.get("clv") is not None]
+        extra = f" · CLV {sum(clvs)/len(clvs):+.2f}%" if clvs else " · CLV pending"
+        out.append(f"| **Locked bets** (ML/Total) | {w}-{len(gA)-w} | "
+                   f"**{w/len(gA):.1%}** | — | {pl:+.2f}u{extra} |")
+
+    gb = [b for b in board if b.get("result") in ("HIT", "MISS")]
+    if gb:
+        h = sum(1 for b in gb if b["result"] == "HIT")
+        pred = sum(b.get("model_p") or 0 for b in gb) / len(gb)
+        base = sum(1 for b in gb
+                   if (b.get("call") == "NRFI") == (b["result"] == "HIT")) / len(gb)
+        naive = max(base, 1 - base)
+        flag = "" if h / len(gb) > naive else f" · ⚠️ below {naive:.0%} naive baseline"
+        out.append(_line("NRFI/YRFI forced calls", h, len(gb), pred, flag))
+
+    ghr = [b for b in hrb if b.get("result") in ("HIT", "MISS")]
+    if ghr:
+        h = sum(1 for b in ghr if b["result"] == "HIT")
+        pred = sum(b.get("p_hr") or 0 for b in ghr) / len(ghr)
+        out.append(_line("HR board (top 10 daily)", h, len(ghr), pred))
+
+    gp = [b for b in props if b.get("result") in ("HIT", "MISS")]
+    if gp:
+        h = sum(1 for b in gp if b["result"] == "HIT")
+        pred = sum(b.get("model_p") or 0 for b in gp) / len(gp)
+        pclv = [b["clv"] for b in props if b.get("clv") is not None]
+        extra = f" · CLV {sum(pclv)/len(pclv):+.2f}%" if pclv else " · CLV pending"
+        out.append(_line("Player props (all tiers)", h, len(gp), pred, extra))
+        for tier, name in (("A", "props · tier A (HR, pitcher K)"),
+                           ("B", "props · tier B (hits, batter K)"),
+                           ("C", "props · tier C (RBI, H+R+RBI)")):
+            tb = [b for b in gp if b.get("tier") == tier]
+            if len(tb) >= 5:
+                th = sum(1 for b in tb if b["result"] == "HIT")
+                tp = sum(b.get("model_p") or 0 for b in tb) / len(tb)
+                out.append(_line(f"&nbsp;&nbsp;↳ {name}", th, len(tb), tp))
+
+    out.append("")
+    out.append("**Hit rate vs predicted is the whole test.** A board that hits at the rate "
+               "it claims is trustworthy even when it loses; a board that hits below its "
+               "own number is telling you it does not know what it claims to know.")
+    out.append("")
+    out.append("---")
+    out.append("")
+    out.append("**Model A** = current model (control). **Model B** = retired variant, "
+               "history preserved. CLV measured from the real price vs close. Each unique "
+               "bet counted once. Paper only — no real money.")
+    out.append("")
 
     # headline comparison
     for label, g in (("A", A), ("B", B)):
@@ -825,6 +972,8 @@ def write_results_md(rows):
             out.append(f"  - ⚠️ _{f}_")
     out.append("")
     _standings_block(out)
+
+    _recent_results_block(out)
 
     out.append("> **CLV caveat.** Beating the close is only evidence of skill when the "
                "move came from the market re-evaluating the same information we had. If "
