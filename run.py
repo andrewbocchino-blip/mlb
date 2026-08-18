@@ -643,6 +643,7 @@ def write_nrfi_board(games: list[dict], run_date: str) -> None:
             if board is None or (run_date, game_str) in existing:
                 continue
             row = {"slate_date": run_date, "pulled_at": pulled_at,
+                   "pull_tag": _os.environ.get("PULL_TAG") or "period",
                    "game": game_str, "graded": False, "result": None}
             row.update(board)
             f.write(_json.dumps(row) + "\n")
@@ -759,6 +760,7 @@ def write_props_board(games: list[dict], run_date: str, league) -> None:
     with open(path, "a") as f:
         for r in rows:
             row = {"slate_date": run_date, "pulled_at": pulled_at,
+                   "pull_tag": _os.environ.get("PULL_TAG") or "period",
                    "graded": False, "result": None}
             row.update(r)
             f.write(_json.dumps(row) + "\n")
@@ -783,6 +785,11 @@ def lock_picks(games: list[dict], run_date: str) -> int:
     import os as _os
     PERIOD_MARKETS = ("F5 Total", "NRFI")
     period_only = _os.environ.get("PERIOD_ONLY") == "1"
+    # Which pull is this? The 8am run takes the slate before the day's money
+    # moves it; the 11am run re-prices with lineups. Dedupe (below) means the
+    # 8am lock is never overwritten, so tagging lets us measure whether the
+    # early price actually beat the later one.
+    pull_tag = _os.environ.get("PULL_TAG") or "core"
 
     # Load rows already locked for this slate so a re-run never duplicates.
     already = set()
@@ -815,6 +822,7 @@ def lock_picks(games: list[dict], run_date: str) -> int:
                     "pick": v.pick,
                     "verdict": v.verdict,
                     "score": v.score,
+                    "pull_tag": pull_tag,
                     "line_at_pull": (gm.get("mkt_total") if mkt == "Total"
                                      else gm.get("mkt_f5_total") if mkt == "F5 Total"
                                      else 0.5 if mkt == "NRFI" else None),
