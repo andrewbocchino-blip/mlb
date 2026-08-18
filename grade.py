@@ -557,7 +557,10 @@ def write_picks_md(rows, board=None, hr_board=None, props_board=None):
             out.append("")
             out.append("| Player | Mkt | Tier | Call | Line | Price | Book | Model | No-vig | Diverg. | EV | Result |")
             out.append("|---|---|---|---|---|---|---|---|---|---|---|---|")
-            for b in sorted(day_props, key=lambda x: -x.get("ev", 0))[:15]:
+            in_band = [b for b in day_props if b.get("in_band", True)]
+            parlay = [b for b in day_props if b.get("parlay_only")]
+            for b in sorted(in_band, key=lambda x: (-(x.get("rank_score") or 0),
+                                                    -(x.get("ev") or 0)))[:15]:
                 res = {"HIT": "✅ HIT", "MISS": "❌ MISS", "PUSH": "➖ PUSH",
                        "VOID": "⊘ VOID"}.get(b.get("result"), "pending")
                 if b.get("actual") is not None:
@@ -596,6 +599,28 @@ def write_picks_md(rows, board=None, hr_board=None, props_board=None):
                         line += f" · *tier {t} {_rec(tb)}*"
                 out.append(line)
                 out.append("")
+            if parlay:
+                out.append("")
+                out.append("**Parlay-leg candidates** (heavier juice than the "
+                           "-250 straight-bet floor; only worth considering inside a "
+                           "multi-leg ticket where the combined price justifies it)")
+                out.append("")
+                out.append("| Player | Mkt | Call | Line | Price | Model | No-vig | Result |")
+                out.append("|---|---|---|---|---|---|---|---|")
+                for b in sorted(parlay, key=lambda x: -(x.get("ev") or 0))[:6]:
+                    px = b.get("price")
+                    pxs = f"{'+' if px and px > 0 else ''}{int(px)}" if px is not None else "—"
+                    res = {"HIT": "✅", "MISS": "❌", "PUSH": "➖", "VOID": "⊘"}.get(b.get("result"), "pending")
+                    out.append(f"| {b['player']} | {MKT.get(b['market'], b['market'])} "
+                               f"| {b['side']} | {b['line']} | {pxs} "
+                               f"| {b['model_p']:.0%} | {b['novig_p']:.0%} | {res} |")
+                out.append("")
+                out.append("> A parlay multiplies the vig on every leg. Two legs at -300 "
+                           "each is a -900 ticket needing ~90% to break even — only "
+                           "sensible if BOTH legs are genuinely mispriced, which we have "
+                           "not demonstrated.")
+                out.append("")
+
             # PROP CLV — known at close, long before results are. This is
             # the fastest honest verdict available on the board: beating the
             # closing prop price does not require outsmarting the market,
@@ -616,6 +641,15 @@ def write_picks_md(rows, board=None, hr_board=None, props_board=None):
                                "information. It needs to persist over a few hundred rows "
                                "before it means anything.")
                 out.append("")
+            out.append("*Ranked by EV discounted for how much evidence each market has: "
+                       "pitcher Ks (backtest Brier 0.2307 vs 0.2466 blind) rank at full "
+                       "weight, HR and RBI at half or less because neither has "
+                       "demonstrated skill. Price band: -250 to +250 for most markets "
+                       "(worse than -250 needs 71%+ to break even); HR props run to "
+                       "+955 since the market is priced as longshots by nature. Rows at "
+                       "+400 or longer carry a caution — our probability estimate is "
+                       "least reliable at that scale, and so is the devig.*")
+            out.append("")
             out.append("*Bold = cleared its market's no-vig edge gate with no data-quality flags. "
                        "Edge is measured against the vig-free price, never the raw line.* "
                        "**Tier A** = skill-rate model with matchup (HR, pitcher Ks). "
