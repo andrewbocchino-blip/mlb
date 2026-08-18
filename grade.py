@@ -914,6 +914,50 @@ def _recent_results_block(out, days_back: int = 5):
             out.append("")
 
 
+def _timing_block(out):
+    """Does taking the slate early actually beat taking it late?
+
+    The 8am pull takes prices before the day's money moves them; the 11am
+    pull re-prices with confirmed lineups. Dedupe means the 8am lock is
+    never overwritten, so any row the 11am run adds is one the 8am run
+    passed on — and CLV on each tells us directly whether being early beat
+    being better informed. This is the cheapest real test of the 'be early'
+    thesis available to us."""
+    props = load_props()
+    rows = [b for b in props if b.get("clv") is not None and b.get("pull_tag")]
+    if len(rows) < 10:
+        return
+    out.append("## Early vs late pull")
+    out.append("")
+    out.append("| Pull | Rows | Avg CLV | Beat close |")
+    out.append("|---|---|---|---|")
+    for tag, name in (("early8", "8am (pre-move)"), ("late11", "11am (lineups)")):
+        sel = [b for b in rows if b.get("pull_tag") == tag]
+        if not sel:
+            continue
+        avg = sum(b["clv"] for b in sel) / len(sel)
+        pos = sum(1 for b in sel if b["clv"] > 0)
+        out.append(f"| {name} | {len(sel)} | **{avg:+.2f}%** | {pos}/{len(sel)} |")
+    out.append("")
+    e = [b["clv"] for b in rows if b.get("pull_tag") == "early8"]
+    l = [b["clv"] for b in rows if b.get("pull_tag") == "late11"]
+    if e and l:
+        diff = (sum(e)/len(e)) - (sum(l)/len(l))
+        if diff > 0.5:
+            out.append(f"> The early pull is beating the late pull by **{diff:+.2f}%** CLV. "
+                       f"That is the 'be early' thesis working: taking the number before "
+                       f"the day's money arrives is worth more than the extra information "
+                       f"the later pull has.")
+        elif diff < -0.5:
+            out.append(f"> The late pull is ahead by **{-diff:.2f}%** CLV. Confirmed lineups "
+                       f"and settled markets are worth more here than being early — which "
+                       f"argues for consolidating on the later run.")
+        else:
+            out.append("> No meaningful difference yet. Needs a few hundred rows per pull "
+                       "before this comparison means anything.")
+        out.append("")
+
+
 def write_results_md(rows):
     graded_all = [r for r in rows if r.get("graded")]
     graded = _dedupe(graded_all)
@@ -1007,6 +1051,7 @@ def write_results_md(rows):
     out.append("")
     _standings_block(out)
 
+    _timing_block(out)
     _recent_results_block(out)
 
     out.append("> **CLV caveat.** Beating the close is only evidence of skill when the "
