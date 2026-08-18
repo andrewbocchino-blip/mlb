@@ -1,11 +1,19 @@
 name: Daily MLB Dashboard
 # Three scheduled runs + manual trigger. Free for public repos.
 #   04:05 UTC (12:05a ET) — CORE markets (ML / Total) locked at midnight line
-#   15:00 UTC (11:00a ET) — PERIOD markets (F5 / NRFI) + NRFI + HR boards
+#   12:00 UTC ( 8:00a ET) — EARLY period pull: F5/NRFI + all three boards,
+#                           taken before the day's money moves the numbers.
+#                           This is the snapshot that OWNS the slate.
+#   15:00 UTC (11:00a ET) — LATE period pull: re-prices the same slate with
+#                           confirmed lineups where available. Dedupe means
+#                           it can only ADD calls the 8am run did not make,
+#                           never overwrite an 8am lock — so the early price
+#                           is preserved and the two are comparable.
 #   22:45 UTC ( 6:45p ET) — CLV capture: closing prices for today's picks
 on:
   schedule:
     - cron: "5 4 * * *"
+    - cron: "0 12 * * *"
     - cron: "0 15 * * *"
     - cron: "45 22 * * *"
   workflow_dispatch:
@@ -56,12 +64,19 @@ jobs:
           if [ "${{ github.event.schedule }}" = "45 22 * * *" ] || [ "${{ github.event.inputs.clv_only }}" = "true" ]; then
             echo "MODE=clv" >> "$GITHUB_ENV"
             echo "label=CLV close capture" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "0 15 * * *" ] || [ "${{ github.event.inputs.period_only }}" = "true" ]; then
+          elif [ "${{ github.event.schedule }}" = "0 12 * * *" ] || [ "${{ github.event.schedule }}" = "0 15 * * *" ] || [ "${{ github.event.inputs.period_only }}" = "true" ]; then
             echo "MODE=period" >> "$GITHUB_ENV"
             echo "PERIOD_ONLY=1" >> "$GITHUB_ENV"
-            echo "label=Period-market pull (F5/NRFI)" >> "$GITHUB_OUTPUT"
+            if [ "${{ github.event.schedule }}" = "0 15 * * *" ]; then
+              echo "PULL_TAG=late11" >> "$GITHUB_ENV"
+              echo "label=Late period pull (11am, lineups)" >> "$GITHUB_OUTPUT"
+            else
+              echo "PULL_TAG=early8" >> "$GITHUB_ENV"
+              echo "label=Early period pull (8am, pre-move)" >> "$GITHUB_OUTPUT"
+            fi
           else
             echo "MODE=core" >> "$GITHUB_ENV"
+            echo "PULL_TAG=core" >> "$GITHUB_ENV"
             echo "label=Midnight pull" >> "$GITHUB_OUTPUT"
           fi
       - name: Backtest prop models (history replay)
