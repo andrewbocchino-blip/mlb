@@ -842,78 +842,6 @@ def _standings_block(out):
 
 
 
-def _recent_results_block(out, days_back: int = 5):
-    """Graded rows from the last few slates for every board, in one place.
-
-    These previously lived only in PICKS.md, interleaved with each day's
-    picks — so seeing how the boards actually performed meant scrolling
-    through the whole file. Results belong on the results page."""
-    import collections
-    board = load_board()
-    hrb = load_hr_board()
-    props = load_props()
-
-    dates = sorted({b["slate_date"] for b in (board + hrb + props)
-                    if b.get("result") in ("HIT", "MISS")}, reverse=True)[:days_back]
-    if not dates:
-        return
-
-    out.append("## Recent board results")
-    out.append("")
-    out.append(f"Last {len(dates)} graded slates. Full history stays in PICKS.md.")
-    out.append("")
-
-    ICON = {"HIT": "✅", "MISS": "❌", "PUSH": "➖", "VOID": "⊘"}
-    LABEL = {"batter_home_runs": "HR", "pitcher_strikeouts": "Ks (P)",
-             "batter_strikeouts": "Ks (B)", "batter_hits": "Hits",
-             "batter_rbis": "RBI", "batter_hits_runs_rbis": "H+R+RBI"}
-
-    for d in dates:
-        db = [b for b in board if b["slate_date"] == d and b.get("result") in ("HIT", "MISS")]
-        dh = [b for b in hrb if b["slate_date"] == d and b.get("result") in ("HIT", "MISS")]
-        dp = [b for b in props if b["slate_date"] == d and b.get("result") in ("HIT", "MISS")]
-        if not (db or dh or dp):
-            continue
-        bits = []
-        if db:
-            h = sum(1 for b in db if b["result"] == "HIT")
-            bits.append(f"NRFI {h}-{len(db)-h}")
-        if dh:
-            h = sum(1 for b in dh if b["result"] == "HIT")
-            bits.append(f"HR {h}-{len(dh)-h}")
-        if dp:
-            h = sum(1 for b in dp if b["result"] == "HIT")
-            bits.append(f"props {h}-{len(dp)-h}")
-        out.append(f"### {d} — {' · '.join(bits)}")
-        out.append("")
-
-        if dp:
-            out.append("| Prop | Mkt | Call | Line | Price | Model | Actual | |")
-            out.append("|---|---|---|---|---|---|---|---|")
-            for b in sorted(dp, key=lambda x: -(x.get("ev") or 0))[:8]:
-                px = b.get("price")
-                pxs = f"{'+' if px and px > 0 else ''}{int(px)}" if px is not None else "—"
-                star = "**" if b.get("qualified") else ""
-                out.append(f"| {star}{b['player']}{star} | {LABEL.get(b['market'], b['market'])} "
-                           f"| {b['side']} | {b['line']} | {pxs} | {b['model_p']:.0%} "
-                           f"| {b.get('actual', '—')} | {ICON.get(b['result'], '')} |")
-            out.append("")
-
-        if dh:
-            hits = [b for b in dh if b["result"] == "HIT"]
-            out.append(f"**HR board:** {len(hits)} of {len(dh)} homered"
-                       + (f" — {', '.join(b['player'] for b in hits)}" if hits else "")
-                       + f" (model expected {sum(b.get('p_hr') or 0 for b in dh):.1f})")
-            out.append("")
-
-        if db:
-            wrong = [b for b in db if b["result"] == "MISS" and b.get("confidence") == "High"]
-            h = sum(1 for b in db if b["result"] == "HIT")
-            out.append(f"**NRFI board:** {h}-{len(db)-h}"
-                       + (f" · {len(wrong)} High-confidence calls missed" if wrong else ""))
-            out.append("")
-
-
 def _timing_block(out):
     """Does taking the slate early actually beat taking it late?
 
@@ -921,8 +849,7 @@ def _timing_block(out):
     pull re-prices with confirmed lineups. Dedupe means the 8am lock is
     never overwritten, so any row the 11am run adds is one the 8am run
     passed on — and CLV on each tells us directly whether being early beat
-    being better informed. This is the cheapest real test of the 'be early'
-    thesis available to us."""
+    being better informed."""
     props = load_props()
     rows = [b for b in props if b.get("clv") is not None and b.get("pull_tag")]
     if len(rows) < 10:
@@ -942,20 +869,144 @@ def _timing_block(out):
     e = [b["clv"] for b in rows if b.get("pull_tag") == "early8"]
     l = [b["clv"] for b in rows if b.get("pull_tag") == "late11"]
     if e and l:
-        diff = (sum(e)/len(e)) - (sum(l)/len(l))
+        diff = (sum(e) / len(e)) - (sum(l) / len(l))
         if diff > 0.5:
-            out.append(f"> The early pull is beating the late pull by **{diff:+.2f}%** CLV. "
-                       f"That is the 'be early' thesis working: taking the number before "
-                       f"the day's money arrives is worth more than the extra information "
-                       f"the later pull has.")
+            out.append(f"> The early pull is beating the late pull by **{diff:+.2f}%** CLV — "
+                       f"taking the number before the day's money arrives is worth more "
+                       f"than the extra information the later pull has.")
         elif diff < -0.5:
             out.append(f"> The late pull is ahead by **{-diff:.2f}%** CLV. Confirmed lineups "
-                       f"and settled markets are worth more here than being early — which "
-                       f"argues for consolidating on the later run.")
+                       f"are worth more here than being early.")
         else:
-            out.append("> No meaningful difference yet. Needs a few hundred rows per pull "
-                       "before this comparison means anything.")
+            out.append("> No meaningful difference yet. Needs a few hundred rows per pull.")
         out.append("")
+
+
+def _recent_results_block(out, rows=None, days_back: int = 4):
+    """Every call and its result, day by day — the full ledger.
+
+    The previous version summarised ("HR 2 of 10") and showed only the top
+    eight props, which meant answering "what did it pick yesterday and what
+    happened" still required scrolling PICKS.md. Results belong on the
+    results page in full: same tables as the picks, with the outcome
+    attached to each row."""
+    board = load_board()
+    hrb = load_hr_board()
+    props = load_props()
+    rows = rows or []
+
+    graded_dates = sorted(
+        {b["slate_date"] for b in (board + hrb + props)
+         if b.get("result") in ("HIT", "MISS", "PUSH", "VOID")}
+        | {r["slate_date"] for r in rows
+           if r.get("result") in ("WIN", "LOSS", "PUSH")},
+        reverse=True)[:days_back]
+    if not graded_dates:
+        return
+
+    ICON = {"HIT": "✅", "MISS": "❌", "WIN": "✅", "LOSS": "❌",
+            "PUSH": "➖", "VOID": "⊘"}
+    MKT = {"batter_home_runs": "HR", "pitcher_strikeouts": "Ks (P)",
+           "batter_strikeouts": "Ks (B)", "batter_hits": "Hits",
+           "batter_rbis": "RBI", "batter_hits_runs_rbis": "H+R+RBI"}
+
+    out.append("## Daily ledger — every call, every result")
+    out.append("")
+    out.append(f"Last {len(graded_dates)} graded slates in full. Most recent first.")
+    out.append("")
+
+    for di, d in enumerate(graded_dates):
+        dg = [r for r in rows if r.get("slate_date") == d
+              and r.get("result") in ("WIN", "LOSS", "PUSH")
+              and r.get("model", "A") == "A"]
+        db = [b for b in board if b["slate_date"] == d
+              and b.get("result") in ("HIT", "MISS")]
+        dh = [b for b in hrb if b["slate_date"] == d
+              and b.get("result") in ("HIT", "MISS")]
+        dp = [b for b in props if b["slate_date"] == d
+              and b.get("result") in ("HIT", "MISS", "PUSH", "VOID")]
+        if not (dg or db or dh or dp):
+            continue
+
+        head = []
+        if dg:
+            w = sum(1 for r in dg if r["result"] == "WIN")
+            pl = sum(r.get("pl") or 0 for r in dg)
+            head.append(f"bets {w}-{len(dg)-w} ({pl:+.2f}u)")
+        if dp:
+            h = sum(1 for b in dp if b["result"] == "HIT")
+            n = sum(1 for b in dp if b["result"] in ("HIT", "MISS"))
+            head.append(f"props {h}-{n-h}")
+        if db:
+            h = sum(1 for b in db if b["result"] == "HIT")
+            head.append(f"NRFI {h}-{len(db)-h}")
+        if dh:
+            h = sum(1 for b in dh if b["result"] == "HIT")
+            head.append(f"HR {h}-{len(dh)-h}")
+        out.append(f"### {d} — {' · '.join(head)}")
+        out.append("")
+
+        if dg:
+            out.append("**Locked bets**")
+            out.append("")
+            out.append("| Market | Pick | Line | Price | Score | CLV | Result |")
+            out.append("|---|---|---|---|---|---|---|")
+            for r in sorted(dg, key=lambda x: -(x.get("score") or 0)):
+                px = locked_odds(r)
+                pxs = f"{'+' if px and px > 0 else ''}{int(px)}" if px is not None else "—"
+                ln = r.get("line_at_pull")
+                clv = f"{r['clv']:+.1f}%" if r.get("clv") is not None else "—"
+                out.append(f"| {r['market']} | {r['pick']} | {ln if ln is not None else '—'} "
+                           f"| {pxs} | {r.get('score','')} | {clv} "
+                           f"| {ICON.get(r['result'],'')} {r.get('pl',0):+.2f}u |")
+            out.append("")
+
+        if dp:
+            out.append("**Player props**")
+            out.append("")
+            out.append("| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |")
+            out.append("|---|---|---|---|---|---|---|---|---|")
+            for b in sorted(dp, key=lambda x: -(x.get("rank_score") or x.get("ev") or 0)):
+                px = b.get("price")
+                pxs = f"{'+' if px and px > 0 else ''}{int(px)}" if px is not None else "—"
+                star = "**" if b.get("qualified") else ""
+                clv = f"{b['clv']:+.1f}%" if b.get("clv") is not None else "—"
+                out.append(f"| {star}{b['player']}{star} | {MKT.get(b['market'], b['market'])} "
+                           f"| {b['side']} | {b['line']} | {pxs} | {b.get('model_p',0):.0%} "
+                           f"| {b.get('actual','—')} | {clv} | {ICON.get(b.get('result'),'')} |")
+            out.append("")
+            out.append("*Bold = cleared its edge and EV gate.*")
+            out.append("")
+
+        if db:
+            out.append("**NRFI / YRFI forced calls**")
+            out.append("")
+            out.append("| Game | Call | Confidence | Model | Market | Result |")
+            out.append("|---|---|---|---|---|---|")
+            order = {"High": 0, "Medium": 1, "Low": 2, "Coin flip": 3}
+            for b in sorted(db, key=lambda x: order.get(x.get("confidence"), 9)):
+                mk = f"{b['market_p']:.0%}" if b.get("market_p") is not None else "—"
+                out.append(f"| {b['game']} | **{b['call']}** | {b.get('confidence','')} "
+                           f"| {b.get('model_p',0):.0%} | {mk} | {ICON.get(b['result'],'')} |")
+            out.append("")
+
+        if dh:
+            out.append("**HR board — top 10**")
+            out.append("")
+            out.append("| # | Player | Game | P(HR) | Result |")
+            out.append("|---|---|---|---|---|")
+            for b in sorted(dh, key=lambda x: x.get("rank") or 99):
+                out.append(f"| {b.get('rank','')} | {b['player']} | {b.get('game','')} "
+                           f"| {b.get('p_hr',0):.0%} | {ICON.get(b['result'],'')} |")
+            exp = sum(b.get("p_hr") or 0 for b in dh)
+            hits = sum(1 for b in dh if b["result"] == "HIT")
+            out.append("")
+            out.append(f"*{hits} homered · model expected {exp:.1f}*")
+            out.append("")
+
+        if di == 0 and len(graded_dates) > 1:
+            out.append("---")
+            out.append("")
 
 
 def write_results_md(rows):
@@ -1052,14 +1103,8 @@ def write_results_md(rows):
     _standings_block(out)
 
     _timing_block(out)
-    _recent_results_block(out)
+    _recent_results_block(out, rows)
 
-    out.append("> **CLV caveat.** Beating the close is only evidence of skill when the "
-               "move came from the market re-evaluating the same information we had. If "
-               "a lineup scratch or injury broke after we locked, we collect the CLV "
-               "without having known anything — that is luck wearing the costume of "
-               "skill. Read CLV as evidence in aggregate, never on a single bet.")
-    out.append("")
     out.append("> **CLV caveat.** Beating the close is evidence of skill only when the "
                "move came from the market re-evaluating information we also had. If a "
                "scratch or injury broke after we locked, we collect the CLV without "
