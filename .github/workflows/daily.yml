@@ -12,10 +12,13 @@ name: Daily MLB Dashboard
 #   22:45 UTC ( 6:45p ET) — CLV capture: closing prices for today's picks
 on:
   schedule:
-    - cron: "5 4 * * *"
-    - cron: "0 12 * * *"
-    - cron: "0 15 * * *"
-    - cron: "45 22 * * *"
+    # HEARTBEAT, not an alarm clock. GitHub cron drops schedules when the
+    # workflow file changes, delays under load, and disables itself in quiet
+    # repos — on 2026-08-18 both period runs simply never fired. Instead of
+    # four exact times we wake every 30 minutes across the working windows
+    # and let should_run.py decide what today still owes. A missed slot is
+    # picked up by the next heartbeat instead of being lost for the day.
+    - cron: "*/30 4-5,12-17,22-23 * * *"
   workflow_dispatch:
     inputs:
       period_only:
@@ -58,26 +61,28 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install requests
-      - name: Decide run mode
+      - name: Decide what today still owes
+        id: guard
+        run: python should_run.py
+
+      - name: Decide run mode (manual overrides)
         id: mode
         run: |
-          if [ "${{ github.event.schedule }}" = "45 22 * * *" ] || [ "${{ github.event.inputs.clv_only }}" = "true" ]; then
+          if [ "${{ github.event.inputs.clv_only }}" = "true" ]; then
             echo "MODE=clv" >> "$GITHUB_ENV"
             echo "label=CLV close capture" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "0 12 * * *" ] || [ "${{ github.event.schedule }}" = "0 15 * * *" ] || [ "${{ github.event.inputs.period_only }}" = "true" ]; then
+          elif [ "${{ github.event.inputs.period_only }}" = "true" ]; then
             echo "MODE=period" >> "$GITHUB_ENV"
             echo "PERIOD_ONLY=1" >> "$GITHUB_ENV"
-            if [ "${{ github.event.schedule }}" = "0 15 * * *" ]; then
-              echo "PULL_TAG=late11" >> "$GITHUB_ENV"
-              echo "label=Late period pull (11am, lineups)" >> "$GITHUB_OUTPUT"
-            else
-              echo "PULL_TAG=early8" >> "$GITHUB_ENV"
-              echo "label=Early period pull (8am, pre-move)" >> "$GITHUB_OUTPUT"
-            fi
-          else
+            echo "PULL_TAG=manual" >> "$GITHUB_ENV"
+            echo "label=Manual period pull" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "MODE=core" >> "$GITHUB_ENV"
             echo "PULL_TAG=core" >> "$GITHUB_ENV"
-            echo "label=Midnight pull" >> "$GITHUB_OUTPUT"
+            echo "label=Manual core pull" >> "$GITHUB_OUTPUT"
+          else
+            # scheduled: keep whatever should_run.py already wrote to the env
+            echo "label=${RUN_LABEL:-Scheduled pull}" >> "$GITHUB_OUTPUT"
           fi
       - name: Backtest prop models (history replay)
         if: github.event.inputs.backtest == 'true'
@@ -96,16 +101,16 @@ jobs:
         run: python drift.py --days 45
 
       - name: Generate dashboard
-        if: env.MODE != 'clv' && github.event.inputs.backtest != 'true' && github.event.inputs.analyze != 'true' && github.event.inputs.fit != 'true' && github.event.inputs.drift != 'true'
+        if: env.MODE != 'skip' && env.MODE != 'clv' && github.event.inputs.backtest != 'true' && github.event.inputs.analyze != 'true' && github.event.inputs.fit != 'true' && github.event.inputs.drift != 'true'
         run: python run.py
       - name: Capture closing lines (CLV)
-        if: env.MODE == 'clv'
+        if: env.MODE != 'skip' && env.MODE == 'clv'
         run: python clv.py
       - name: Grade prior picks
-        if: env.MODE != 'clv' && github.event.inputs.backtest != 'true' && github.event.inputs.analyze != 'true' && github.event.inputs.fit != 'true' && github.event.inputs.drift != 'true'
+        if: env.MODE != 'skip' && env.MODE != 'clv' && github.event.inputs.backtest != 'true' && github.event.inputs.analyze != 'true' && github.event.inputs.fit != 'true' && github.event.inputs.drift != 'true'
         run: python grade.py || echo "grading skipped"
       - name: Add B divergence (today only, top of page)
-        if: env.MODE != 'clv'
+        if: env.MODE != 'skip' && env.MODE != 'clv'
         run: |
           D=$(grep -m1 -oE '^## [0-9]{4}-[0-9]{2}-[0-9]{2}' docs/PICKS.md | cut -d' ' -f2)
           python3 tools/b_unique.py docs/PICKS.md --markdown --date "$D" > /tmp/div.md || true
@@ -115,6 +120,7 @@ jobs:
 
             fi
       - name: Commit and publish page
+        if: env.MODE != 'skip'
         run: |
           git config user.name "mlb-bot"
           git config user.email "mlb-bot@users.noreply.github.com"
