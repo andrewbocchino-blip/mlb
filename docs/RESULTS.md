@@ -7,10 +7,10 @@
 | **Locked bets** (ML/Total) | 327-282 | **53.7%** | — | -3.54u · CLV -7.31% |
 | NRFI/YRFI forced calls | 58-70 | **45.3%** | 59.7% | 🔴 behind its own number · ⚠️ below 58% naive baseline |
 | HR board (top 10 daily) | 14-76 | **15.6%** | 24.5% | 🔴 behind its own number |
-| Player props (all tiers) | 1658-1923 | **46.3%** | 53.0% | 🔴 behind its own number · CLV -0.21% |
-| &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 85-61 | **58.2%** | 57.8% | 🟡 tracking its number |
-| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 580-555 | **51.1%** | 57.0% | 🔴 behind its own number |
-| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 980-1290 | **43.2%** | 50.5% | 🔴 behind its own number |
+| Player props (all tiers) | 1675-1959 | **46.1%** | 53.0% | 🔴 behind its own number · CLV -0.21% |
+| &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 87-61 | **58.8%** | 57.6% | 🟡 tracking its number |
+| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 584-568 | **50.7%** | 57.1% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 991-1313 | **43.0%** | 50.5% | 🔴 behind its own number |
 
 **Hit rate vs predicted is the whole test.** A board that hits at the rate it claims is trustworthy even when it loses; a board that hits below its own number is telling you it does not know what it claims to know.
 
@@ -53,11 +53,11 @@ YRFI share of calls: **98/128 (77%)** — hitting 42%.
 
 | Tier | Market | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|---|
-| A | Ks (P) | 146 | 85 | 61 | 58% | 58% | +0% |
-| B | Hits | 1135 | 580 | 555 | 51% | 57% | -6% |
-| C | H+R+RBI | 1135 | 547 | 588 | 48% | 58% | -9% |
-| C | RBI | 1135 | 433 | 702 | 38% | 44% | -5% |
-| **All** | | **3581** | **1658** | **1923** | **46%** | **53%** | **-7%** |
+| A | Ks (P) | 148 | 87 | 61 | 59% | 58% | +1% |
+| B | Hits | 1152 | 584 | 568 | 51% | 57% | -6% |
+| C | H+R+RBI | 1152 | 554 | 598 | 48% | 57% | -9% |
+| C | RBI | 1152 | 437 | 715 | 38% | 43% | -6% |
+| **All** | | **3634** | **1675** | **1959** | **46%** | **53%** | **-7%** |
 
 Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 
@@ -67,15 +67,18 @@ Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 
 Last 4 graded slates in full. Most recent first.
 
-### 2026-08-19 — props 7-55
+### 2026-08-19 — props 24-91
 
 **Player props**
 
 | Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
 |---|---|---|---|---|---|---|---|---|
 | Paul Skenes | Ks (P) | Over | 6.5 | +136 | 48% | 1 | — | ❌ |
+| Luis Rengifo | Hits | Over | 0.5 | -210 | 81% | 0 | — | ❌ |
+| Luis Campusano | Hits | Over | 0.5 | -166 | 74% | 0 | — | ❌ |
 | Gleyber Torres | Hits | Over | 0.5 | -181 | 75% | 0 | — | ❌ |
 | Oneil Cruz | Hits | Over | 0.5 | -163 | 72% | 1 | — | ✅ |
+| Brooks Lee | Hits | Over | 0.5 | -157 | 70% | 0 | — | ❌ |
 | Esmerlyn Valdez | Hits | Over | 0.5 | -154 | 70% | 0 | — | ❌ |
 | Colt Keith | Hits | Over | 0.5 | -179 | 73% | 0 | — | ❌ |
 | Nick Gonzales | Hits | Over | 0.5 | -247 | 81% | 0 | — | ❌ |
@@ -83,25 +86,34 @@ Last 4 graded slates in full. Most recent first.
 | Spencer Torkelson | Hits | Over | 0.5 | -117 | 61% | 0 | — | ❌ |
 | Jared Young | Hits | Over | 0.5 | -176 | 72% | 0 | — | ❌ |
 | Jacob Gonzalez | RBI | Over | 0.5 | +224 | 36% | 0 | — | ❌ |
+| Brooks Lee | RBI | Over | 0.5 | +249 | 33% | 0 | — | ❌ |
 | Jacob Gonzalez | Hits | Over | 0.5 | -172 | 70% | 0 | — | ❌ |
 | Hao-Yu Lee | Hits | Over | 0.5 | -138 | 64% | 0 | — | ❌ |
 | Hao-Yu Lee | H+R+RBI | Over | 0.5 | -166 | 72% | 0 | — | ❌ |
 | Colt Keith | H+R+RBI | Over | 1.5 | +111 | 55% | 0 | — | ❌ |
+| Luis Campusano | RBI | Over | 0.5 | +210 | 37% | 0 | — | ❌ |
 | Kevin McGonigle | Hits | Over | 0.5 | -209 | 74% | 0 | — | ❌ |
 | Gleyber Torres | H+R+RBI | Over | 1.5 | +110 | 55% | 0 | — | ❌ |
+| Luis Campusano | H+R+RBI | Over | 1.5 | +108 | 55% | 0 | — | ❌ |
+| Francisco Alvarez | Hits | Over | 0.5 | -156 | 66% | 0 | — | ❌ |
 | Oneil Cruz | H+R+RBI | Over | 1.5 | -105 | 58% | 2 | — | ✅ |
+| Drake Baldwin | Hits | Over | 0.5 | -226 | 75% | 0 | — | ❌ |
 | Brandon Lowe | RBI | Over | 0.5 | +171 | 41% | 0 | — | ❌ |
 | Dillon Dingler | RBI | Over | 0.5 | +190 | 38% | 0 | — | ❌ |
 | Zach McKinstry | Hits | Over | 0.5 | -161 | 66% | 0 | — | ❌ |
 | Brandon Lowe | Hits | Over | 0.5 | -227 | 74% | 0 | — | ❌ |
 | Spencer Torkelson | H+R+RBI | Over | 0.5 | -156 | 68% | 0 | — | ❌ |
 | Esmerlyn Valdez | H+R+RBI | Over | 1.5 | +105 | 54% | 0 | — | ❌ |
+| Royce Lewis | Hits | Over | 0.5 | -172 | 67% | 0 | — | ❌ |
 | Brandon Lowe | H+R+RBI | Over | 1.5 | -124 | 61% | 0 | — | ❌ |
 | Jacob Gonzalez | H+R+RBI | Over | 1.5 | +113 | 51% | 0 | — | ❌ |
 | Henry Davis | H+R+RBI | Over | 0.5 | -165 | 68% | 0 | — | ❌ |
+| Carson Benge | Hits | Over | 0.5 | -197 | 70% | 0 | — | ❌ |
 | Henry Davis | RBI | Over | 0.5 | +239 | 32% | 0 | — | ❌ |
 | Nick Gonzales | H+R+RBI | Over | 1.5 | -117 | 58% | 0 | — | ❌ |
 | Esmerlyn Valdez | RBI | Over | 0.5 | +177 | 39% | 0 | — | ❌ |
+| Brooks Lee | H+R+RBI | Over | 1.5 | +122 | 48% | 0 | — | ❌ |
+| Xander Bogaerts | Hits | Under | 0.5 | +131 | 45% | 0 | — | ✅ |
 | Oneil Cruz | RBI | Over | 0.5 | +160 | 41% | 1 | — | ✅ |
 | Nick Gonzales | RBI | Over | 0.5 | +228 | 32% | 0 | — | ❌ |
 | Dillon Dingler | Hits | Over | 0.5 | -200 | 69% | 0 | — | ❌ |
@@ -109,32 +121,73 @@ Last 4 graded slates in full. Most recent first.
 | Dillon Dingler | H+R+RBI | Over | 1.5 | -102 | 53% | 0 | — | ❌ |
 | Spencer Horwitz | Hits | Over | 0.5 | -233 | 72% | 0 | — | ❌ |
 | Bryan Reynolds | H+R+RBI | Over | 1.5 | -108 | 54% | 1 | — | ❌ |
+| Luis Rengifo | H+R+RBI | Over | 1.5 | -106 | 54% | 0 | — | ❌ |
 | Kevin McGonigle | H+R+RBI | Over | 1.5 | -103 | 53% | 0 | — | ❌ |
 | Paul Skenes | Ks (P) | Over | 5.5 | -162 | 63% | 1 | — | ❌ |
+| Matt Olson | Hits | Over | 0.5 | -203 | 68% | 0 | — | ❌ |
 | Bryan Reynolds | RBI | Over | 0.5 | +198 | 35% | 0 | — | ❌ |
 | Bryan Reynolds | Hits | Over | 0.5 | -205 | 68% | 1 | — | ✅ |
 | Ty France | H+R+RBI | Over | 1.5 | -128 | 57% | 0 | — | ❌ |
 | Jake Cronenworth | Hits | Over | 0.5 | -206 | 68% | 0 | — | ❌ |
+| Bo Bichette | Hits | Over | 0.5 | -220 | 69% | 0 | — | ❌ |
+| Drake Baldwin | H+R+RBI | Over | 1.5 | -126 | 56% | 0 | — | ❌ |
+| Xander Bogaerts | H+R+RBI | Under | 1.5 | -140 | 59% | 0 | — | ✅ |
 | Jared Young | H+R+RBI | Over | 1.5 | +104 | 49% | 0 | — | ❌ |
+| Bo Bichette | RBI | Over | 0.5 | +219 | 31% | 0 | — | ❌ |
+| Jackson Merrill | H+R+RBI | Under | 1.5 | +109 | 48% | 0 | — | ✅ |
+| Matt Olson | H+R+RBI | Over | 1.5 | -120 | 54% | 0 | — | ❌ |
 | Manny Machado | H+R+RBI | Under | 1.5 | +102 | 49% | 0 | — | ✅ |
+| Drake Baldwin | RBI | Over | 0.5 | +181 | 35% | 0 | — | ❌ |
+| A.J. Ewing | H+R+RBI | Under | 1.5 | -126 | 55% | 0 | — | ✅ |
+| Ronald Acuna Jr. | H+R+RBI | Under | 1.5 | +101 | 49% | 0 | — | ✅ |
+| Jackson Merrill | RBI | Under | 0.5 | -188 | 64% | 0 | — | ✅ |
+| Francisco Alvarez | H+R+RBI | Under | 1.5 | -156 | 60% | 0 | — | ✅ |
+| Bo Bichette | H+R+RBI | Over | 1.5 | -102 | 49% | 0 | — | ❌ |
+| Luis Rengifo | RBI | Over | 0.5 | +214 | 31% | 0 | — | ❌ |
+| Trevor Larnach | Hits | Over | 0.5 | -165 | 61% | 0 | — | ❌ |
 | Fernando Tatis Jr. | H+R+RBI | Over | 1.5 | -154 | 59% | 0 | — | ❌ |
+| Royce Lewis | H+R+RBI | Over | 1.5 | +107 | 47% | 0 | — | ❌ |
+| Francisco Lindor | RBI | Under | 0.5 | -246 | 69% | 0 | — | ✅ |
+| Francisco Lindor | H+R+RBI | Under | 1.5 | -111 | 51% | 0 | — | ✅ |
 | Manny Machado | Hits | Under | 0.5 | +187 | 34% | 0 | — | ✅ |
+| Trevor Larnach | H+R+RBI | Under | 1.5 | -145 | 57% | 0 | — | ✅ |
 | Fernando Tatis Jr. | RBI | Over | 0.5 | +160 | 37% | 0 | — | ❌ |
 | Ty France | RBI | Over | 0.5 | +161 | 37% | 0 | — | ❌ |
 | Spencer Horwitz | H+R+RBI | Over | 1.5 | -126 | 54% | 0 | — | ❌ |
+| Marcus Semien | H+R+RBI | Over | 0.5 | -176 | 61% | 0 | — | ❌ |
+| Royce Lewis | RBI | Over | 0.5 | +199 | 32% | 0 | — | ❌ |
+| Carson Benge | H+R+RBI | Over | 1.5 | -101 | 48% | 0 | — | ❌ |
+| Francisco Lindor | Hits | Over | 0.5 | -214 | 66% | 0 | — | ❌ |
 | Manny Machado | RBI | Over | 0.5 | +156 | 37% | 0 | — | ❌ |
 | Zach McKinstry | H+R+RBI | Over | 1.5 | +126 | 42% | 0 | — | ❌ |
 | Jake Cronenworth | H+R+RBI | Under | 1.5 | -117 | 51% | 0 | — | ✅ |
+| A.J. Ewing | Hits | Over | 0.5 | -207 | 65% | 0 | — | ❌ |
+| Xander Bogaerts | RBI | Over | 0.5 | +223 | 29% | 0 | — | ❌ |
+| Luke Keaschall | H+R+RBI | Over | 1.5 | +113 | 44% | 0 | — | ❌ |
 | Fernando Tatis Jr. | Hits | Over | 1.5 | +179 | 34% | 0 | — | ❌ |
+| Marcus Semien | Hits | Over | 0.5 | -136 | 55% | 0 | — | ❌ |
 | Jared Young | RBI | Over | 0.5 | +191 | 32% | 0 | — | ❌ |
+| Ronald Acuna Jr. | RBI | Over | 0.5 | +174 | 34% | 0 | — | ❌ |
 | Henry Davis | Hits | Over | 0.5 | -118 | 51% | 0 | — | ❌ |
+| Matt Olson | RBI | Over | 0.5 | +150 | 36% | 0 | — | ❌ |
 | Jake Cronenworth | RBI | Over | 0.5 | +211 | 29% | 0 | — | ❌ |
+| Taj Bradley | Ks (P) | Under | 5.5 | +104 | 47% | 0 | — | ✅ |
 | Kevin McGonigle | RBI | Over | 0.5 | +201 | 29% | 0 | — | ❌ |
+| Jackson Merrill | Hits | Under | 0.5 | +188 | 32% | 0 | — | ✅ |
+| Luke Keaschall | Hits | Under | 0.5 | +134 | 39% | 0 | — | ✅ |
+| Michael King | Ks (P) | Under | 4.5 | +116 | 43% | 2 | — | ✅ |
+| Ronald Acuna Jr. | Hits | Under | 0.5 | +169 | 33% | 0 | — | ✅ |
 | Hao-Yu Lee | RBI | Over | 0.5 | +293 | 32% | 0 | — | ❌ |
 | Gleyber Torres | RBI | Over | 0.5 | +278 | 32% | 0 | — | ❌ |
 | Spencer Torkelson | RBI | Over | 0.5 | +255 | 32% | 0 | — | ❌ |
 | Colt Keith | RBI | Over | 0.5 | +268 | 30% | 0 | — | ❌ |
+| Francisco Alvarez | RBI | Under | 0.5 | -301 | 74% | 0 | — | ✅ |
+| Trevor Larnach | RBI | Over | 0.5 | +258 | 27% | 0 | — | ❌ |
+| Carson Benge | RBI | Under | 0.5 | -289 | 72% | 0 | — | ✅ |
+| A.J. Ewing | RBI | Over | 0.5 | +278 | 25% | 0 | — | ❌ |
+| Marcus Semien | RBI | Over | 0.5 | +253 | 25% | 0 | — | ❌ |
 | Zach McKinstry | RBI | Over | 0.5 | +268 | 24% | 0 | — | ❌ |
+| Luke Keaschall | RBI | Over | 0.5 | +251 | 24% | 0 | — | ❌ |
 
 *Bold = cleared its edge and EV gate.*
 
