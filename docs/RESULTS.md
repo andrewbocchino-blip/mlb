@@ -4,7 +4,7 @@
 
 | Board | Record | Hit rate | Model predicted | Standing |
 |---|---|---|---|---|
-| **Locked bets** (ML/Total) | 323-279 | **53.7%** | — | -3.12u · CLV -8.60% |
+| **Locked bets** (ML/Total) | 327-282 | **53.7%** | — | -3.54u · CLV -7.31% |
 | NRFI/YRFI forced calls | 58-70 | **45.3%** | 59.7% | 🔴 behind its own number · ⚠️ below 58% naive baseline |
 | HR board (top 10 daily) | 14-76 | **15.6%** | 24.5% | 🔴 behind its own number |
 | Player props (all tiers) | 1651-1868 | **46.9%** | 53.0% | 🔴 behind its own number · CLV -0.21% |
@@ -18,7 +18,7 @@
 
 **Model A** = current model (control). **Model B** = retired variant, history preserved. CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 323-279  ·  54% win  ·  -3.12u  ·  -0.5% ROI  ·  avg CLV -8.60%**
+**Model A: 327-282  ·  54% win  ·  -3.54u  ·  -0.6% ROI  ·  avg CLV -7.31%**
 **Model B: 237-191  ·  55% win  ·  +14.16u  ·  +3.3% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 ## Board calibration standings
@@ -158,27 +158,27 @@ Last 5 graded slates. Full history stays in PICKS.md.
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
 
-### Moneyline probability calibration (Model A, n=326)
+### Moneyline probability calibration (Model A, n=332)
 
-Brier score: **0.2440** (0.25 = coin flip knowledge; lower is better)
+Brier score: **0.2438** (0.25 = coin flip knowledge; lower is better)
 
 | Model home-win band | n | Predicted avg | Actual home-win % |
 |---|---|---|---|
 | 0%–40% | 47 | 35% | 38% |
-| 40%–45% | 50 | 43% | 48% |
-| 45%–50% | 56 | 47% | 38% |
-| 50%–55% | 45 | 52% | 40% |
-| 55%–60% | 52 | 57% | 65% |
-| 60%–65% | 37 | 62% | 57% |
+| 40%–45% | 52 | 43% | 46% |
+| 45%–50% | 57 | 47% | 39% |
+| 50%–55% | 46 | 52% | 41% |
+| 55%–60% | 53 | 57% | 64% |
+| 60%–65% | 38 | 62% | 58% |
 | 65%+ | 39 | 69% | 67% |
 
 > Calibrated = predicted ≈ actual per band. Systematic gaps mean the win probabilities themselves need retuning before any ML edge claim.
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** NRFI 3-1 (+40%, CLV +2.0%)  ·  Moneyline 189-137 (+2%, CLV -14.2%)  ·  Total 83-79 (-0%, CLV -4.1%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 6-14 (-47%, CLV -2.0%)
-- **by side:** Over 25-25 (-0%, CLV -4.1%)  ·  Under 58-54 (-0%)  ·  team 240-200 (-1%, CLV -8.8%)
-- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 167-143 (+3%, CLV -2.2%)  ·  fav 90-66 (-6%, CLV -21.0%)  ·  dog 29-45 (-6%, CLV -1.9%)  ·  heavy fav 17-11 (-14%, CLV -11.6%)
+- **by market:** NRFI 3-1 (+40%, CLV +2.0%)  ·  Moneyline 193-139 (+2%, CLV -10.3%)  ·  Total 83-80 (-1%, CLV -4.1%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 6-14 (-47%, CLV -2.0%)
+- **by side:** Under 58-54 (-0%)  ·  team 244-202 (-0%, CLV -7.4%)  ·  Over 25-26 (-2%, CLV -4.1%)
+- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 168-145 (+3%, CLV -3.8%)  ·  fav 93-67 (-5%, CLV -12.3%)  ·  dog 29-45 (-6%, CLV -1.9%)  ·  heavy fav 17-11 (-14%, CLV -11.6%)
 
 ### Model B — segments (finding the winning slice)
 
@@ -187,6 +187,18 @@ Brier score: **0.2440** (0.25 = coin flip knowledge; lower is better)
 - **by fav_band:** pickem 129-98 (+9%)  ·  fav 68-40 (+4%)  ·  dog 27-40 (-5%)  ·  unknown 2-3 (-24%)  ·  heavy fav 11-10 (-26%)
 
 ## Model A — picks by date
+
+### 2026-08-18 — 4-3  (-0.42u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Los Angeles Dodgers @ Colorado Rockies | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -180** / DraftKings -193 | +3.4% | +0.56 |
+| ✅ WIN | PLAY | St. Louis Cardinals @ Cincinnati Reds | Moneyline | St. Louis Cardinals ML | — | **FanDuel -120** / DraftKings -123 | -18.1% | +0.83 |
+| ✅ WIN | PLAY | Arizona Diamondbacks @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **DraftKings -171** / FanDuel -174 | -6.5% | +0.58 |
+| ✅ WIN | LEAN | Chicago White Sox @ Chicago Cubs | Moneyline | Chicago Cubs ML | — | **FanDuel -164** / DraftKings -175 | +0.9% | +0.61 |
+| ❌ LOSS | PLAY | Atlanta Braves @ Minnesota Twins | Moneyline | Atlanta Braves ML | — | **FanDuel -126** / DraftKings -131 | -9.4% | -1.00 |
+| ❌ LOSS | LEAN | Toronto Blue Jays @ Tampa Bay Rays | Moneyline | Tampa Bay Rays ML | — | **FanDuel -146** / DraftKings -150 | +14.1% | -1.00 |
+| ❌ LOSS | LEAN | Atlanta Braves @ Minnesota Twins | Total | Over 8.5 | 8.5 | **FanDuel -115** / DraftKings -122 | — | -1.00 |
 
 ### 2026-08-17 — 3-2  (-0.09u)
 
