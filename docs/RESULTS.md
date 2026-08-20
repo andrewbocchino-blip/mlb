@@ -6,11 +6,11 @@
 |---|---|---|---|---|
 | **Locked bets** (ML/Total) | 329-288 | **53.3%** | — | -8.35u · CLV -6.16% |
 | NRFI/YRFI forced calls | 65-78 | **45.5%** | 59.8% | 🔴 behind its own number · ⚠️ below 58% naive baseline |
-| HR board (top 10 daily) | 16-84 | **16.0%** | 24.6% | 🔴 behind its own number |
-| Player props (all tiers) | 1963-2236 | **46.7%** | 52.9% | 🔴 behind its own number · CLV -0.01% |
-| &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 99-68 | **59.3%** | 57.6% | 🟡 tracking its number |
-| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 680-654 | **51.0%** | 57.0% | 🔴 behind its own number |
-| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 1171-1497 | **43.9%** | 50.5% | 🔴 behind its own number |
+| HR board (top 10 daily) | 16-87 | **15.5%** | 24.6% | 🔴 behind its own number |
+| Player props (all tiers) | 1977-2254 | **46.7%** | 52.9% | 🔴 behind its own number · CLV -0.01% |
+| &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 101-68 | **59.8%** | 57.6% | 🟡 tracking its number |
+| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 684-660 | **50.9%** | 57.0% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 1179-1509 | **43.9%** | 50.5% | 🔴 behind its own number |
 
 **Hit rate vs predicted is the whole test.** A board that hits at the rate it claims is trustworthy even when it loses; a board that hits below its own number is telling you it does not know what it claims to know.
 
@@ -45,19 +45,19 @@ YRFI share of calls: **110/143 (77%)** — hitting 42%.
 
 ### HR board (top-10 daily)
 
-- listed and graded: **100**
-- homered: **16** · model expected **24.6**
-- actual rate **16.0%** vs predicted **24.6%** (**-8.6%**)
+- listed and graded: **103**
+- homered: **16** · model expected **25.4**
+- actual rate **15.5%** vs predicted **24.6%** (**-9.1%**)
 
 ### Prop divergence board
 
 | Tier | Market | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|---|
-| A | Ks (P) | 167 | 99 | 68 | 59% | 58% | +2% |
-| B | Hits | 1334 | 680 | 654 | 51% | 57% | -6% |
-| C | H+R+RBI | 1334 | 658 | 676 | 49% | 57% | -8% |
-| C | RBI | 1334 | 513 | 821 | 38% | 44% | -5% |
-| **All** | | **4199** | **1963** | **2236** | **47%** | **53%** | **-6%** |
+| A | Ks (P) | 169 | 101 | 68 | 60% | 58% | +2% |
+| B | Hits | 1344 | 684 | 660 | 51% | 57% | -6% |
+| C | H+R+RBI | 1344 | 663 | 681 | 49% | 57% | -8% |
+| C | RBI | 1344 | 516 | 828 | 38% | 44% | -5% |
+| **All** | | **4231** | **1977** | **2254** | **47%** | **53%** | **-6%** |
 
 Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 
@@ -71,6 +71,59 @@ Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 ## Daily ledger — every call, every result
 
 Last 4 graded slates in full. Most recent first.
+
+### 2026-08-20 — props 14-18 · HR 0-3
+
+**Player props**
+
+| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
+|---|---|---|---|---|---|---|---|---|
+| Alec Burleson | Hits | Over | 1.5 | +171 | 47% | 0 | — | ❌ |
+| Michael McGreevy | Ks (P) | Under | 4.5 | -122 | 63% | 0 | — | ✅ |
+| Sal Stewart | RBI | Over | 0.5 | +190 | 44% | 0 | — | ❌ |
+| Jordan Walker | Hits | Over | 0.5 | -243 | 79% | 0 | — | ❌ |
+| Jordan Walker | H+R+RBI | Over | 1.5 | -125 | 63% | 1 | — | ❌ |
+| Jordan Walker | RBI | Over | 0.5 | +152 | 44% | 1 | — | ✅ |
+| Alec Burleson | RBI | Over | 0.5 | +133 | 45% | 0 | — | ❌ |
+| JJ Wetherholt | Hits | Over | 0.5 | -234 | 72% | 0 | — | ❌ |
+| Sal Stewart | Hits | Over | 0.5 | -243 | 72% | 0 | — | ❌ |
+| Sal Stewart | H+R+RBI | Over | 1.5 | -127 | 57% | 0 | — | ❌ |
+| Nathan Church | H+R+RBI | Under | 1.5 | -132 | 57% | 0 | — | ✅ |
+| Alec Burleson | H+R+RBI | Over | 2.5 | +116 | 47% | 0 | — | ❌ |
+| JJ Bleday | H+R+RBI | Under | 1.5 | -122 | 55% | 0 | — | ✅ |
+| Ivan Herrera | Hits | Over | 0.5 | -249 | 71% | 1 | — | ✅ |
+| Brady Singer | Ks (P) | Under | 4.5 | -142 | 59% | 0 | — | ✅ |
+| Tyler Stephenson | H+R+RBI | Under | 1.5 | -132 | 56% | 0 | — | ✅ |
+| Elly De La Cruz | RBI | Over | 0.5 | +185 | 35% | 0 | — | ❌ |
+| JJ Bleday | Hits | Over | 0.5 | -197 | 66% | 0 | — | ❌ |
+| JJ Bleday | RBI | Under | 0.5 | -244 | 70% | 0 | — | ✅ |
+| JJ Wetherholt | H+R+RBI | Over | 1.5 | -132 | 55% | 1 | — | ❌ |
+| Ivan Herrera | RBI | Over | 0.5 | +192 | 33% | 0 | — | ❌ |
+| Elly De La Cruz | H+R+RBI | Under | 1.5 | -103 | 48% | 1 | — | ✅ |
+| Ivan Herrera | H+R+RBI | Over | 1.5 | -132 | 54% | 1 | — | ❌ |
+| Nathan Church | Hits | Under | 0.5 | +146 | 39% | 0 | — | ✅ |
+| Bryan Torres | H+R+RBI | Under | 0.5 | +118 | 43% | 0 | — | ✅ |
+| Nathan Church | RBI | Over | 0.5 | +210 | 30% | 0 | — | ❌ |
+| Bryan Torres | Hits | Under | 0.5 | -113 | 51% | 0 | — | ✅ |
+| Tyler Stephenson | Hits | Under | 0.5 | +139 | 39% | 0 | — | ✅ |
+| JJ Wetherholt | RBI | Over | 0.5 | +190 | 31% | 0 | — | ❌ |
+| Elly De La Cruz | Hits | Under | 0.5 | +169 | 35% | 1 | — | ❌ |
+| Tyler Stephenson | RBI | Under | 0.5 | -272 | 70% | 0 | — | ✅ |
+| Bryan Torres | RBI | Over | 0.5 | +287 | 24% | 0 | — | ❌ |
+
+*Bold = cleared its edge and EV gate.*
+
+**HR board — top 10**
+
+| # | Player | Game | P(HR) | Result |
+|---|---|---|---|---|
+| 3 | Jordan Walker | St. Louis Cardinals @ Cincinnati Reds | 27% | ❌ |
+| 6 | Sal Stewart | St. Louis Cardinals @ Cincinnati Reds | 24% | ❌ |
+| 10 | Alec Burleson | St. Louis Cardinals @ Cincinnati Reds | 24% | ❌ |
+
+*0 homered · model expected 0.7*
+
+---
 
 ### 2026-08-19 — bets 2-6 (-4.81u) · props 312-368 · NRFI 7-8 · HR 2-8
 
@@ -811,8 +864,6 @@ Last 4 graded slates in full. Most recent first.
 
 *2 homered · model expected 2.6*
 
----
-
 ### 2026-08-18 — bets 4-3 (-0.42u)
 
 **Locked bets**
@@ -1274,736 +1325,6 @@ Last 4 graded slates in full. Most recent first.
 | 10 | Pete Crow-Armstrong | Chicago White Sox @ Chicago Cubs | 21% | ✅ |
 
 *3 homered · model expected 2.0*
-
-### 2026-08-16 — bets 8-2 (+4.46u) · props 345-326 · NRFI 8-7 · HR 2-6
-
-**Locked bets**
-
-| Market | Pick | Line | Price | Score | CLV | Result |
-|---|---|---|---|---|---|---|
-| Moneyline | Miami Marlins ML | — | -122 | 9.5 | — | ✅ +0.82u |
-| F5 Total | F5 Over 4.5 | 4.5 | -144 | 9.5 | — | ✅ +0.69u |
-| Total | Under 10.5 | 10.5 | -112 | 9.1 | — | ✅ +0.89u |
-| Moneyline | San Francisco Giants ML | — | -134 | 8.1 | -95.8% | ❌ -1.00u |
-| Total | Under 9.5 | 9.5 | -103 | 6.3 | — | ✅ +0.97u |
-| NRFI | NRFI | 0.5 | -184 | 6.1 | — | ✅ +0.54u |
-| Total | Over 8.0 | 8.0 | -102 | 6.0 | — | ✅ +0.98u |
-| F5 Total | F5 Over 4.5 | 4.5 | +116 | 6.0 | — | ❌ -1.00u |
-| Moneyline | New York Mets ML | — | -175 | 5.1 | — | ✅ +0.57u |
-| NRFI | NRFI | 0.5 | +100 | 5.0 | — | ✅ +1.00u |
-
-**Player props**
-
-| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
-|---|---|---|---|---|---|---|---|---|
-| Jorge Barrosa | Hits | Under | 0.5 | -106 | 81% | 0 | — | ✅ |
-| Edmundo Sosa | Hits | Under | 0.5 | +179 | 54% | 1 | — | ❌ |
-| Hunter Dobbins | Ks (P) | Over | 3.5 | -128 | 78% | 7 | — | ✅ |
-| Jonathan Aranda | RBI | Over | 0.5 | +246 | 39% | 0 | — | ❌ |
-| Freddy Fermin | Hits | Under | 0.5 | +104 | 66% | 1 | — | ❌ |
-| Ryan Johnson | Ks (P) | Under | 3.5 | +131 | 58% | 4 | — | ❌ |
-| Caleb Durbin | Hits | Under | 0.5 | +171 | 49% | 1 | — | ❌ |
-| Brandon Lowe | RBI | Over | 0.5 | +218 | 41% | 2 | — | ✅ |
-| Lawrence Butler | Hits | Under | 0.5 | +152 | 52% | 2 | — | ❌ |
-| Coby Mayo | H+R+RBI | Over | 0.5 | -124 | 73% | 3 | — | ✅ |
-| Dylan Beavers | H+R+RBI | Over | 0.5 | -139 | 75% | 0 | — | ❌ |
-| Brandon Lowe | H+R+RBI | Over | 1.5 | +115 | 60% | 5 | — | ✅ |
-| Sean Burke | Ks (P) | Over | 5.5 | -123 | 70% | 2 | — | ❌ |
-| Jorge Mateo | Hits | Under | 0.5 | +112 | 60% | 1 | — | ❌ |
-| Freddy Peralta | Ks (P) | Under | 6.5 | -145 | 75% | 2 | — | ✅ |
-| Yordan Alvarez | Hits | Over | 1.5 | +204 | 42% | 1 | — | ❌ |
-| Brady House | RBI | Over | 0.5 | +308 | 31% | 0 | — | ❌ |
-| Edmundo Sosa | H+R+RBI | Under | 1.5 | -105 | 64% | 1 | — | ✅ |
-| Michael Conforto | Hits | Under | 0.5 | +107 | 60% | 0 | — | ✅ |
-| Pete Alonso | H+R+RBI | Over | 1.5 | -105 | 64% | 4 | — | ✅ |
-| Jorge Mateo | H+R+RBI | Under | 1.5 | -162 | 77% | 2 | — | ❌ |
-| Austin Hedges | H+R+RBI | Over | 0.5 | -126 | 69% | 0 | — | ❌ |
-| Brady House | H+R+RBI | Over | 0.5 | -154 | 75% | 0 | — | ❌ |
-| Gunnar Henderson | H+R+RBI | Over | 1.5 | +116 | 57% | 1 | — | ❌ |
-| Jake Bauers | H+R+RBI | Over | 0.5 | -171 | 77% | 7 | — | ✅ |
-| Jackson Chourio | H+R+RBI | Over | 1.5 | +117 | 56% | 6 | — | ✅ |
-| Jose Caballero | H+R+RBI | Over | 0.5 | -124 | 67% | 3 | — | ✅ |
-| Esmerlyn Valdez | H+R+RBI | Over | 1.5 | +107 | 59% | 4 | — | ✅ |
-| Otto Lopez | Hits | Over | 1.5 | +158 | 47% | 1 | — | ❌ |
-| Alec Burleson | H+R+RBI | Over | 1.5 | -132 | 69% | 9 | — | ✅ |
-| Jake Cronenworth | Hits | Under | 0.5 | +147 | 49% | 1 | — | ❌ |
-| Austin Hedges | Hits | Over | 0.5 | +103 | 59% | 0 | — | ❌ |
-| Travis Bazzana | H+R+RBI | Over | 0.5 | -180 | 77% | 0 | — | ❌ |
-| Myles Straw | Hits | Under | 0.5 | -120 | 66% | 0 | — | ✅ |
-| Bryan Reynolds | H+R+RBI | Over | 1.5 | -111 | 63% | 6 | — | ✅ |
-| Jordan Walker | H+R+RBI | Over | 1.5 | -113 | 64% | 8 | — | ✅ |
-| TJ Friedl | Hits | Under | 0.5 | -120 | 65% | 0 | — | ✅ |
-| Andres Gimenez | RBI | Over | 0.5 | +343 | 27% | 1 | — | ✅ |
-| Trent Grisham | H+R+RBI | Over | 0.5 | -161 | 74% | 0 | — | ❌ |
-| Joey Ortiz | H+R+RBI | Over | 0.5 | -128 | 67% | 0 | — | ❌ |
-| Jonathan Aranda | H+R+RBI | Over | 1.5 | +106 | 58% | 0 | — | ❌ |
-| Chase Meidroth | RBI | Over | 0.5 | +278 | 32% | 0 | — | ❌ |
-| Leody Taveras | H+R+RBI | Over | 0.5 | -184 | 77% | 3 | — | ✅ |
-| Jake McCarthy | RBI | Over | 0.5 | +249 | 34% | 0 | — | ❌ |
-| Teoscar Hernandez | H+R+RBI | Over | 0.5 | -150 | 71% | 1 | — | ✅ |
-| Dylan Beavers | RBI | Over | 0.5 | +303 | 29% | 0 | — | ❌ |
-| Esteury Ruiz | H+R+RBI | Under | 1.5 | -150 | 71% | 1 | — | ✅ |
-| Taylor Trammell | H+R+RBI | Over | 0.5 | -142 | 70% | 0 | — | ❌ |
-| William Contreras | H+R+RBI | Over | 0.5 | -178 | 76% | 1 | — | ✅ |
-| Brooks Lee | H+R+RBI | Over | 1.5 | -101 | 60% | 6 | — | ✅ |
-| Dylan Beavers | Hits | Over | 0.5 | -106 | 61% | 0 | — | ❌ |
-| Jose Caballero | RBI | Over | 0.5 | +386 | 24% | 1 | — | ✅ |
-| Mike Trout | Hits | Over | 0.5 | -191 | 78% | 0 | — | ❌ |
-| Jeremy Pena | RBI | Over | 0.5 | +249 | 34% | 1 | — | ✅ |
-| Christian Walker | H+R+RBI | Over | 1.5 | +121 | 53% | 0 | — | ❌ |
-| Andres Gimenez | H+R+RBI | Over | 0.5 | -144 | 70% | 3 | — | ✅ |
-| Travis Bazzana | Hits | Over | 0.5 | -137 | 68% | 0 | — | ❌ |
-| Brooks Lee | RBI | Over | 0.5 | +225 | 36% | 4 | — | ✅ |
-| Esmerlyn Valdez | RBI | Over | 0.5 | +191 | 40% | 0 | — | ❌ |
-| Christian Walker | RBI | Over | 0.5 | +227 | 36% | 0 | — | ❌ |
-| Cam Smith | H+R+RBI | Over | 0.5 | -178 | 75% | 0 | — | ❌ |
-| Leody Taveras | RBI | Over | 0.5 | +285 | 30% | 0 | — | ❌ |
-| Carter Jensen | Hits | Under | 0.5 | +144 | 48% | 1 | — | ❌ |
-| Christian Scott | Ks (P) | Under | 5.5 | +112 | 55% | 7 | — | ❌ |
-| Drew Romo | Hits | Under | 0.5 | -115 | 62% | 1 | — | ❌ |
-| Xander Bogaerts | Hits | Under | 0.5 | +134 | 50% | 1 | — | ❌ |
-| Corbin Carroll | Hits | Under | 0.5 | +188 | 40% | 1 | — | ❌ |
-| Dylan Cease | Ks (P) | Over | 8.5 | -113 | 62% | 10 | — | ✅ |
-| Junior Caminero | H+R+RBI | Over | 1.5 | -126 | 65% | 0 | — | ❌ |
-| CJ Abrams | H+R+RBI | Over | 1.5 | -114 | 62% | 0 | — | ❌ |
-| A.J. Ewing | H+R+RBI | Under | 1.5 | +122 | 52% | 0 | — | ✅ |
-| Nick Loftin | Hits | Under | 0.5 | +141 | 48% | 0 | — | ✅ |
-| Heliot Ramos | H+R+RBI | Over | 0.5 | -167 | 72% | 1 | — | ✅ |
-| Andrés Chaparro | H+R+RBI | Over | 0.5 | -136 | 66% | 0 | — | ❌ |
-| Masyn Winn | RBI | Over | 0.5 | +268 | 31% | 0 | — | ❌ |
-| Jorge Mateo | RBI | Under | 0.5 | -306 | 87% | 1 | — | ❌ |
-| Chase Meidroth | H+R+RBI | Over | 1.5 | +107 | 55% | 0 | — | ❌ |
-| Austin Wells | H+R+RBI | Over | 0.5 | -105 | 59% | 0 | — | ❌ |
-| Pete Alonso | Hits | Over | 0.5 | -196 | 76% | 1 | — | ✅ |
-| Lawrence Butler | H+R+RBI | Under | 1.5 | -123 | 63% | 5 | — | ❌ |
-| Brooks Lee | Hits | Over | 0.5 | -198 | 76% | 1 | — | ✅ |
-| Elias Diaz | H+R+RBI | Under | 1.5 | -137 | 66% | 0 | — | ✅ |
-| Jeremy Pena | H+R+RBI | Over | 1.5 | -123 | 63% | 3 | — | ✅ |
-| Tristan Peters | H+R+RBI | Over | 0.5 | -181 | 73% | 3 | — | ✅ |
-| Byron Buxton | H+R+RBI | Over | 1.5 | -130 | 64% | 0 | — | ❌ |
-| Jorge Barrosa | H+R+RBI | Under | 0.5 | +116 | 53% | 0 | — | ✅ |
-| Brayan Rocchio | Hits | Over | 0.5 | -152 | 69% | 0 | — | ❌ |
-| Brandon Marsh | Hits | Over | 0.5 | -185 | 74% | 0 | — | ❌ |
-| Jonah Heim | Hits | Under | 0.5 | +186 | 40% | 0 | — | ✅ |
-| Brandon Nimmo | Hits | Over | 0.5 | -267 | 82% | 1 | — | ✅ |
-| Ke'Bryan Hayes | Hits | Under | 0.5 | -128 | 64% | 0 | — | ✅ |
-| Mike Trout | H+R+RBI | Over | 1.5 | -115 | 60% | 0 | — | ❌ |
-| Justin Foscue | H+R+RBI | Under | 1.5 | -148 | 68% | 1 | — | ✅ |
-| Logan Henderson | Ks (P) | Over | 5.5 | +108 | 54% | 6 | — | ✅ |
-| Freddie Freeman | Hits | Over | 0.5 | -175 | 72% | 0 | — | ❌ |
-| Henry Davis | H+R+RBI | Over | 0.5 | -162 | 70% | 1 | — | ✅ |
-| Munetaka Murakami | H+R+RBI | Over | 1.5 | -101 | 57% | 4 | — | ✅ |
-| James McCann | RBI | Over | 0.5 | +234 | 34% | 0 | — | ❌ |
-| Alec Burleson | Hits | Over | 0.5 | -265 | 82% | 3 | — | ✅ |
-| Colton Cowser | H+R+RBI | Over | 0.5 | -136 | 65% | 5 | — | ✅ |
-| Ivan Herrera | H+R+RBI | Over | 1.5 | -105 | 57% | 3 | — | ✅ |
-| Seiya Suzuki | RBI | Over | 0.5 | +168 | 42% | 0 | — | ❌ |
-| Ezequiel Tovar | H+R+RBI | Over | 0.5 | -168 | 70% | 0 | — | ❌ |
-| Isaac Paredes | RBI | Over | 0.5 | +209 | 36% | 0 | — | ❌ |
-| Dansby Swanson | Hits | Under | 0.5 | +124 | 50% | 0 | — | ✅ |
-| Michael Conforto | H+R+RBI | Under | 1.5 | -156 | 68% | 0 | — | ✅ |
-| Gleyber Torres | RBI | Over | 0.5 | +247 | 32% | 0 | — | ❌ |
-| Esteury Ruiz | RBI | Under | 0.5 | -317 | 85% | 0 | — | ✅ |
-| Braden Montgomery | RBI | Over | 0.5 | +233 | 33% | 0 | — | ❌ |
-| Jared Young | RBI | Under | 0.5 | -192 | 73% | 1 | — | ❌ |
-| Yandy Diaz | RBI | Over | 0.5 | +197 | 38% | 0 | — | ❌ |
-| Kazuma Okamoto | H+R+RBI | Over | 1.5 | +126 | 49% | 3 | — | ✅ |
-| Dylan Crews | Hits | Under | 0.5 | +135 | 47% | 0 | — | ✅ |
-| Jose Siri | Hits | Under | 0.5 | -123 | 61% | 0 | — | ✅ |
-| Bryan Reynolds | Hits | Over | 0.5 | -227 | 77% | 2 | — | ✅ |
-| Brandon Marsh | H+R+RBI | Over | 1.5 | +100 | 56% | 0 | — | ❌ |
-| Zach McKinstry | Hits | Under | 0.5 | +130 | 48% | 0 | — | ✅ |
-| Jake Irvin | Ks (P) | Over | 4.5 | +136 | 47% | 6 | — | ✅ |
-| Jared Young | H+R+RBI | Under | 1.5 | -101 | 56% | 4 | — | ❌ |
-| JJ Wetherholt | H+R+RBI | Over | 1.5 | -107 | 57% | 6 | — | ✅ |
-| Alec Burleson | RBI | Over | 0.5 | +157 | 43% | 4 | — | ✅ |
-| Yordan Alvarez | H+R+RBI | Over | 1.5 | -150 | 66% | 1 | — | ❌ |
-| Spencer Torkelson | Hits | Under | 0.5 | +117 | 51% | 0 | — | ✅ |
-| Zach McKinstry | H+R+RBI | Under | 1.5 | -148 | 66% | 1 | — | ✅ |
-| Gary Sanchez | H+R+RBI | Over | 0.5 | -173 | 70% | 0 | — | ❌ |
-| Jackson Chourio | Hits | Over | 0.5 | -172 | 70% | 3 | — | ✅ |
-| Otto Lopez | H+R+RBI | Over | 1.5 | -168 | 69% | 2 | — | ✅ |
-| Seiya Suzuki | H+R+RBI | Over | 1.5 | -133 | 63% | 2 | — | ✅ |
-| Jarren Duran | Hits | Under | 0.5 | +139 | 46% | 1 | — | ❌ |
-| Pete Alonso | RBI | Over | 0.5 | +175 | 40% | 2 | — | ✅ |
-| Isaac Paredes | H+R+RBI | Over | 1.5 | +106 | 53% | 1 | — | ❌ |
-| Cal Raleigh | H+R+RBI | Over | 0.5 | -152 | 66% | 3 | — | ✅ |
-| Jac Caglianone | Hits | Over | 0.5 | -245 | 78% | 0 | — | ❌ |
-| Jimmy Crooks | H+R+RBI | Over | 0.5 | -140 | 64% | 4 | — | ✅ |
-| Jacob Lopez | Ks (P) | Over | 4.5 | -142 | 64% | 6 | — | ✅ |
-| Rhys Hoskins | Hits | Under | 0.5 | +105 | 53% | 0 | — | ✅ |
-| Braden Montgomery | H+R+RBI | Over | 1.5 | +101 | 55% | 1 | — | ❌ |
-| Nolan Arenado | Hits | Under | 0.5 | +145 | 45% | 0 | — | ✅ |
-| Jake Bauers | RBI | Over | 0.5 | +246 | 32% | 2 | — | ✅ |
-| James McCann | H+R+RBI | Over | 1.5 | +115 | 51% | 2 | — | ✅ |
-| Jose Altuve | H+R+RBI | Over | 1.5 | +107 | 53% | 1 | — | ❌ |
-| Kazuma Okamoto | RBI | Over | 0.5 | +225 | 34% | 0 | — | ❌ |
-| Matt McLain | Hits | Under | 0.5 | -108 | 57% | 0 | — | ✅ |
-| Josh Bell | H+R+RBI | Over | 1.5 | -125 | 61% | 2 | — | ✅ |
-| Javier Baez | Hits | Over | 0.5 | -168 | 68% | 0 | — | ❌ |
-| Kevin McGonigle | H+R+RBI | Over | 1.5 | -109 | 57% | 0 | — | ❌ |
-| CJ Abrams | RBI | Over | 0.5 | +171 | 40% | 0 | — | ❌ |
-| Bryson Stott | Hits | Under | 0.5 | +172 | 40% | 1 | — | ❌ |
-| Luis Robert Jr. | Hits | Under | 0.5 | +127 | 48% | 1 | — | ❌ |
-| Wyatt Langford | H+R+RBI | Under | 2.5 | -150 | 65% | 1 | — | ✅ |
-| Trevor Larnach | RBI | Over | 0.5 | +244 | 32% | 0 | — | ❌ |
-| Alex Bregman | H+R+RBI | Over | 1.5 | -126 | 61% | 0 | — | ❌ |
-| Esteury Ruiz | Hits | Under | 0.5 | +116 | 50% | 1 | — | ❌ |
-| Jonathan Aranda | Hits | Over | 0.5 | -183 | 70% | 0 | — | ❌ |
-| Yandy Diaz | H+R+RBI | Over | 1.5 | -148 | 65% | 1 | — | ❌ |
-| Tommy Edman | Hits | Under | 0.5 | +140 | 45% | 0 | — | ✅ |
-| Matt Olson | H+R+RBI | Over | 1.5 | -128 | 61% | 5 | — | ✅ |
-| Jose Ramirez | Hits | Under | 0.5 | +159 | 42% | 2 | — | ❌ |
-| Eury Perez | Ks (P) | Over | 6.5 | -111 | 57% | 5 | — | ❌ |
-| Munetaka Murakami | Hits | Over | 0.5 | -173 | 68% | 1 | — | ✅ |
-| Jac Caglianone | H+R+RBI | Over | 1.5 | -132 | 62% | 0 | — | ❌ |
-| Joey Ortiz | RBI | Over | 0.5 | +353 | 24% | 0 | — | ❌ |
-| Ezequiel Duran | Hits | Under | 1.5 | -262 | 78% | 0 | — | ✅ |
-| Gunnar Henderson | RBI | Over | 0.5 | +238 | 32% | 0 | — | ❌ |
-| Colson Montgomery | H+R+RBI | Over | 1.5 | +124 | 48% | 3 | — | ✅ |
-| Jordan Walker | RBI | Over | 0.5 | +165 | 41% | 4 | — | ✅ |
-| Dominic Smith | RBI | Over | 0.5 | +257 | 30% | 0 | — | ❌ |
-| Spencer Jones | H+R+RBI | Over | 0.5 | -121 | 59% | 0 | — | ❌ |
-| Jordan Walker | Hits | Over | 0.5 | -221 | 74% | 3 | — | ✅ |
-| Henry Bolte | Hits | Under | 0.5 | +195 | 36% | 3 | — | ❌ |
-| Matt McLain | H+R+RBI | Over | 0.5 | -162 | 66% | 0 | — | ❌ |
-| Miguel Vargas | H+R+RBI | Over | 1.5 | -107 | 56% | 3 | — | ✅ |
-| Brayan Rocchio | RBI | Over | 0.5 | +291 | 28% | 0 | — | ❌ |
-| Masyn Winn | H+R+RBI | Over | 1.5 | +123 | 48% | 1 | — | ❌ |
-| Justin Foscue | RBI | Under | 0.5 | -284 | 79% | 0 | — | ✅ |
-| Byron Buxton | Hits | Over | 0.5 | -225 | 74% | 0 | — | ❌ |
-| Dean Kremer | Ks (P) | Over | 4.5 | +104 | 53% | 6 | — | ✅ |
-| Colt Keith | H+R+RBI | Under | 1.5 | -147 | 64% | 5 | — | ❌ |
-| Jorge Barrosa | RBI | Under | 0.5 | -428 | 87% | 0 | — | ✅ |
-| Ryan McMahon | H+R+RBI | Over | 0.5 | -136 | 62% | 0 | — | ❌ |
-| Kevin McGonigle | Hits | Over | 0.5 | -207 | 72% | 0 | — | ❌ |
-| Colson Montgomery | RBI | Over | 0.5 | +198 | 36% | 1 | — | ✅ |
-| Max Muncy | Hits | Under | 0.5 | +103 | 53% | 2 | — | ❌ |
-| Rafael Devers | Hits | Over | 0.5 | -217 | 73% | 2 | — | ✅ |
-| Gabriel Moreno | H+R+RBI | Over | 1.5 | -129 | 60% | 3 | — | ✅ |
-| Ben Rice | H+R+RBI | Over | 1.5 | +117 | 49% | 4 | — | ✅ |
-| Ozzie Albies | H+R+RBI | Over | 1.5 | +105 | 52% | 0 | — | ❌ |
-| Daylen Lile | H+R+RBI | Over | 1.5 | +100 | 53% | 1 | — | ❌ |
-| Luke Keaschall | H+R+RBI | Over | 1.5 | -107 | 55% | 0 | — | ❌ |
-| Brett Sullivan | H+R+RBI | Over | 0.5 | -169 | 67% | 6 | — | ✅ |
-| Christian Walker | Hits | Over | 0.5 | -162 | 66% | 0 | — | ❌ |
-| Willi Castro | H+R+RBI | Over | 1.5 | +109 | 51% | 2 | — | ✅ |
-| Freddie Freeman | H+R+RBI | Over | 1.5 | +110 | 51% | 0 | — | ❌ |
-| Ivan Herrera | Hits | Over | 0.5 | -196 | 71% | 1 | — | ✅ |
-| Colt Keith | RBI | Under | 0.5 | -294 | 80% | 1 | — | ❌ |
-| Nick Lodolo | Ks (P) | Under | 4.5 | -104 | 54% | 2 | — | ✅ |
-| Gabriel Moreno | Hits | Over | 0.5 | -270 | 78% | 1 | — | ✅ |
-| Bryan Woo | Ks (P) | Under | 5.5 | -104 | 54% | 5 | — | ✅ |
-| Francisco Lindor | H+R+RBI | Under | 2.5 | -154 | 64% | 2 | — | ✅ |
-| Josh Bell | RBI | Over | 0.5 | +171 | 39% | 0 | — | ❌ |
-| Gleyber Torres | Hits | Over | 0.5 | -216 | 73% | 2 | — | ✅ |
-| Masyn Winn | Hits | Over | 0.5 | -160 | 65% | 0 | — | ❌ |
-| Isaac Paredes | Hits | Over | 0.5 | -187 | 69% | 1 | — | ✅ |
-| Brayan Rocchio | H+R+RBI | Over | 1.5 | +130 | 46% | 0 | — | ❌ |
-| Austin Hedges | RBI | Over | 0.5 | +336 | 24% | 0 | — | ❌ |
-| Zach McKinstry | RBI | Under | 0.5 | -325 | 81% | 0 | — | ✅ |
-| Bryan Reynolds | RBI | Over | 0.5 | +212 | 34% | 2 | — | ✅ |
-| Tristan Peters | Hits | Over | 0.5 | -144 | 62% | 1 | — | ✅ |
-| Andrés Chaparro | Hits | Under | 0.5 | -120 | 58% | 0 | — | ✅ |
-| Royce Lewis | H+R+RBI | Over | 1.5 | -130 | 60% | 2 | — | ✅ |
-| Andruw Monasterio | H+R+RBI | Under | 1.5 | -151 | 64% | 0 | — | ✅ |
-| Michael Soroka | Ks (P) | Over | 4.5 | +105 | 52% | 5 | — | ✅ |
-| Willi Castro | Hits | Over | 0.5 | -180 | 68% | 1 | — | ✅ |
-| Edward Cabrera | Ks (P) | Under | 3.5 | +122 | 48% | 2 | — | ✅ |
-| Ben Rice | RBI | Over | 0.5 | +226 | 32% | 2 | — | ✅ |
-| Elias Diaz | RBI | Under | 0.5 | -274 | 78% | 0 | — | ✅ |
-| Chase Meidroth | Hits | Over | 0.5 | -195 | 70% | 0 | — | ❌ |
-| Heriberto Hernandez | Hits | Under | 0.5 | +181 | 38% | 1 | — | ❌ |
-| Edward Cabrera | Ks (P) | Under | 4.5 | -158 | 65% | 2 | — | ✅ |
-| Jake Burger | Hits | Over | 0.5 | -251 | 76% | 3 | — | ✅ |
-| Drake Baldwin | H+R+RBI | Over | 1.5 | -140 | 62% | 3 | — | ✅ |
-| Coby Mayo | RBI | Over | 0.5 | +228 | 32% | 0 | — | ❌ |
-| Ke'Bryan Hayes | RBI | Under | 0.5 | -418 | 85% | 0 | — | ✅ |
-| Connor Wong | Hits | Under | 0.5 | -107 | 55% | 2 | — | ❌ |
-| Junior Caminero | Hits | Over | 0.5 | -249 | 75% | 0 | — | ❌ |
-| Sal Stewart | H+R+RBI | Over | 1.5 | -116 | 57% | 0 | — | ❌ |
-| Cole Carrigg | RBI | Over | 0.5 | +245 | 30% | 2 | — | ✅ |
-| James McCann | Hits | Over | 0.5 | -167 | 66% | 2 | — | ✅ |
-| Rhys Hoskins | H+R+RBI | Under | 1.5 | -163 | 65% | 0 | — | ✅ |
-| Joey Ortiz | Hits | Over | 0.5 | -105 | 54% | 0 | — | ❌ |
-| Cam Smith | RBI | Over | 0.5 | +281 | 28% | 0 | — | ❌ |
-| Oswald Peraza | H+R+RBI | Under | 1.5 | -152 | 64% | 0 | — | ✅ |
-| Daulton Varsho | RBI | Under | 0.5 | -279 | 78% | 0 | — | ✅ |
-| Oswald Peraza | RBI | Under | 0.5 | -316 | 80% | 0 | — | ✅ |
-| Jake Irvin | Ks (P) | Over | 3.5 | -155 | 64% | 6 | — | ✅ |
-| Cole Young | Hits | Over | 0.5 | -176 | 67% | 0 | — | ❌ |
-| Rafael Devers | H+R+RBI | Over | 1.5 | -125 | 58% | 7 | — | ✅ |
-| Esmerlyn Valdez | Hits | Over | 0.5 | -156 | 64% | 2 | — | ✅ |
-| Yainer Diaz | RBI | Over | 0.5 | +268 | 28% | 0 | — | ❌ |
-| Braden Montgomery | Hits | Over | 0.5 | -203 | 70% | 1 | — | ✅ |
-| Jorbit Vivas | H+R+RBI | Over | 0.5 | -164 | 65% | 2 | — | ✅ |
-| CJ Abrams | Hits | Over | 0.5 | -231 | 73% | 0 | — | ❌ |
-| William Contreras | RBI | Over | 0.5 | +257 | 29% | 0 | — | ❌ |
-| Gabriel Moreno | RBI | Over | 0.5 | +189 | 36% | 1 | — | ✅ |
-| Gleyber Torres | H+R+RBI | Over | 1.5 | -116 | 56% | 3 | — | ✅ |
-| Connor Norby | H+R+RBI | Under | 1.5 | -173 | 66% | 2 | — | ❌ |
-| Bobby Witt Jr. | H+R+RBI | Under | 2.5 | -154 | 63% | 3 | — | ❌ |
-| Xavier Edwards | Hits | Over | 0.5 | -255 | 75% | 1 | — | ✅ |
-| Ernie Clement | Hits | Over | 0.5 | -187 | 68% | 0 | — | ❌ |
-| Justin Foscue | Hits | Under | 0.5 | +113 | 49% | 1 | — | ❌ |
-| Heliot Ramos | Hits | Over | 0.5 | -138 | 61% | 1 | — | ✅ |
-| Brandon Nimmo | H+R+RBI | Over | 1.5 | -157 | 64% | 1 | — | ❌ |
-| Andy Pages | H+R+RBI | Over | 1.5 | +108 | 50% | 3 | — | ✅ |
-| Alejandro Kirk | RBI | Over | 0.5 | +235 | 31% | 0 | — | ❌ |
-| Yainer Diaz | Hits | Over | 0.5 | -194 | 69% | 1 | — | ✅ |
-| Zach Neto | H+R+RBI | Over | 1.5 | -123 | 58% | 0 | — | ❌ |
-| Gavin Sheets | Hits | Under | 0.5 | +105 | 51% | 1 | — | ❌ |
-| Travis Bazzana | RBI | Over | 0.5 | +279 | 28% | 0 | — | ❌ |
-| Royce Lewis | Hits | Over | 0.5 | -236 | 73% | 1 | — | ✅ |
-| Cole Young | H+R+RBI | Over | 1.5 | +116 | 48% | 0 | — | ❌ |
-| Wilyer Abreu | Hits | Under | 0.5 | +160 | 40% | 0 | — | ✅ |
-| Manny Machado | Hits | Under | 0.5 | +163 | 40% | 0 | — | ✅ |
-| Drake Baldwin | RBI | Over | 0.5 | +189 | 36% | 1 | — | ✅ |
-| Josh Bell | Hits | Over | 0.5 | -238 | 73% | 1 | — | ✅ |
-| Andruw Monasterio | Hits | Under | 0.5 | +122 | 47% | 0 | — | ✅ |
-| Zack Gelof | H+R+RBI | Over | 1.5 | -127 | 58% | 5 | — | ✅ |
-| Trevor Larnach | H+R+RBI | Over | 1.5 | -113 | 55% | 1 | — | ❌ |
-| Austin Riley | Hits | Over | 0.5 | -151 | 63% | 2 | — | ✅ |
-| Caleb Durbin | H+R+RBI | Under | 1.5 | -116 | 56% | 1 | — | ✅ |
-| Bryce Harper | Hits | Over | 0.5 | -250 | 74% | 1 | — | ✅ |
-| Ernie Clement | H+R+RBI | Over | 1.5 | +112 | 49% | 1 | — | ❌ |
-| Jake Cronenworth | H+R+RBI | Under | 1.5 | -134 | 60% | 3 | — | ❌ |
-| Jake Mangum | Hits | Under | 1.5 | -247 | 74% | 1 | — | ✅ |
-| Jeremy Pena | Hits | Over | 0.5 | -254 | 74% | 1 | — | ✅ |
-| Dansby Swanson | H+R+RBI | Over | 1.5 | +105 | 51% | 0 | — | ❌ |
-| Nico Hoerner | RBI | Over | 0.5 | +216 | 33% | 0 | — | ❌ |
-| Ceddanne Rafaela | Hits | Under | 1.5 | -247 | 74% | 0 | — | ✅ |
-| Seiya Suzuki | Hits | Over | 0.5 | -221 | 71% | 1 | — | ✅ |
-| Randy Arozarena | H+R+RBI | Over | 1.5 | +100 | 52% | 4 | — | ✅ |
-| Dominic Canzone | Hits | Under | 0.5 | +118 | 47% | 2 | — | ❌ |
-| Drew Gilbert | H+R+RBI | Under | 1.5 | -118 | 56% | 3 | — | ❌ |
-| Trevor Larnach | Hits | Over | 0.5 | -193 | 68% | 1 | — | ✅ |
-| Brandon Lowe | Hits | Over | 0.5 | -155 | 63% | 2 | — | ✅ |
-| Ezequiel Tovar | Hits | Under | 0.5 | +103 | 51% | 0 | — | ✅ |
-| Brady House | Hits | Over | 0.5 | -125 | 57% | 0 | — | ❌ |
-| Dylan Crews | RBI | Under | 0.5 | -250 | 74% | 0 | — | ✅ |
-| Bobby Witt Jr. | RBI | Under | 0.5 | -210 | 70% | 1 | — | ❌ |
-| Austin Riley | H+R+RBI | Over | 1.5 | +118 | 47% | 4 | — | ✅ |
-| Brendan Donovan | Hits | Under | 0.5 | +158 | 40% | 0 | — | ✅ |
-| Taylor Trammell | Hits | Over | 0.5 | -109 | 54% | 0 | — | ❌ |
-| JJ Wetherholt | Hits | Over | 0.5 | -193 | 68% | 2 | — | ✅ |
-| Nick Loftin | H+R+RBI | Under | 1.5 | -138 | 60% | 0 | — | ✅ |
-| Javier Baez | H+R+RBI | Over | 1.5 | +118 | 47% | 0 | — | ❌ |
-| Nolan Arenado | RBI | Over | 0.5 | +197 | 35% | 0 | — | ❌ |
-| Javier Sanoja | Hits | Over | 0.5 | -245 | 73% | 1 | — | ✅ |
-| Brandon Nimmo | RBI | Under | 0.5 | -185 | 67% | 0 | — | ✅ |
-| Spencer Jones | Hits | Under | 0.5 | -145 | 61% | 0 | — | ✅ |
-| Edmundo Sosa | RBI | Under | 0.5 | -228 | 72% | 0 | — | ✅ |
-| Carson Benge | RBI | Under | 0.5 | -207 | 69% | 0 | — | ✅ |
-| Alec Bohm | Hits | Under | 1.5 | -260 | 74% | 2 | — | ❌ |
-| Ian Happ | Hits | Over | 0.5 | -181 | 66% | 1 | — | ✅ |
-| Hunter Brown | Ks (P) | Under | 5.5 | -102 | 52% | 5 | — | ✅ |
-| Ketel Marte | RBI | Under | 0.5 | -174 | 65% | 0 | — | ✅ |
-| Kazuma Okamoto | Hits | Over | 0.5 | -145 | 61% | 1 | — | ✅ |
-| Justin Crawford | H+R+RBI | Under | 1.5 | -135 | 59% | 1 | — | ✅ |
-| Connor Norby | RBI | Under | 0.5 | -357 | 80% | 0 | — | ✅ |
-| Henry Bolte | H+R+RBI | Under | 1.5 | +102 | 51% | 4 | — | ❌ |
-| Randy Arozarena | Hits | Over | 0.5 | -190 | 67% | 2 | — | ✅ |
-| Henry Bolte | RBI | Under | 0.5 | -245 | 73% | 0 | — | ✅ |
-| Jose Siri | RBI | Under | 0.5 | -356 | 80% | 0 | — | ✅ |
-| Jackson Chourio | RBI | Over | 0.5 | +231 | 31% | 0 | — | ❌ |
-| Ryan Weathers | Ks (P) | Over | 4.5 | -142 | 60% | 4 | — | ❌ |
-| Ozzie Albies | RBI | Over | 0.5 | +212 | 33% | 0 | — | ❌ |
-| Dominic Canzone | H+R+RBI | Under | 1.5 | -159 | 63% | 3 | — | ❌ |
-| Gary Sanchez | Hits | Over | 0.5 | -135 | 59% | 0 | — | ❌ |
-| Cole Carrigg | Hits | Under | 0.5 | +153 | 40% | 1 | — | ❌ |
-| Zach Neto | Hits | Over | 0.5 | -211 | 69% | 0 | — | ❌ |
-| Daulton Varsho | Hits | Under | 0.5 | +125 | 45% | 0 | — | ✅ |
-| Yainer Diaz | H+R+RBI | Over | 1.5 | +111 | 48% | 1 | — | ❌ |
-| Gavin Sheets | H+R+RBI | Under | 1.5 | -167 | 64% | 3 | — | ❌ |
-| Josh Naylor | Hits | Over | 0.5 | -178 | 65% | 1 | — | ✅ |
-| Gunnar Henderson | Hits | Over | 0.5 | -178 | 65% | 0 | — | ❌ |
-| Patrick Sandoval | Ks (P) | Over | 5.5 | +126 | 45% | 6 | — | ✅ |
-| TJ Friedl | RBI | Under | 0.5 | -428 | 83% | 0 | — | ✅ |
-| Matt Olson | Hits | Over | 0.5 | -216 | 70% | 1 | — | ✅ |
-| Jose Caballero | Hits | Over | 0.5 | +105 | 50% | 1 | — | ✅ |
-| Yandy Diaz | Hits | Over | 1.5 | +179 | 36% | 1 | — | ❌ |
-| Lawrence Butler | RBI | Under | 0.5 | -279 | 75% | 2 | — | ❌ |
-| Sam Antonacci | H+R+RBI | Over | 1.5 | -106 | 52% | 2 | — | ✅ |
-| Andy Pages | Hits | Over | 0.5 | -170 | 64% | 1 | — | ✅ |
-| Wade Meckler | Hits | Over | 0.5 | -157 | 62% | 0 | — | ❌ |
-| Leody Taveras | Hits | Over | 0.5 | -139 | 59% | 1 | — | ✅ |
-| Nolan Arenado | H+R+RBI | Over | 1.5 | +100 | 51% | 0 | — | ❌ |
-| Luis Arraez | H+R+RBI | Over | 1.5 | -157 | 62% | 2 | — | ✅ |
-| William Contreras | Hits | Over | 0.5 | -145 | 60% | 1 | — | ✅ |
-| Drake Baldwin | Hits | Over | 0.5 | -267 | 74% | 1 | — | ✅ |
-| Sal Stewart | RBI | Over | 0.5 | +155 | 40% | 0 | — | ❌ |
-| Max Muncy | RBI | Under | 0.5 | -252 | 73% | 0 | — | ✅ |
-| A.J. Ewing | RBI | Under | 0.5 | -283 | 75% | 0 | — | ✅ |
-| Keibert Ruiz | RBI | Under | 0.5 | -250 | 73% | 2 | — | ❌ |
-| Michael Harris II | Hits | Over | 0.5 | -261 | 73% | 1 | — | ✅ |
-| Jackson Holliday | Hits | Over | 0.5 | -147 | 60% | 2 | — | ✅ |
-| Wyatt Langford | Hits | Under | 1.5 | -256 | 73% | 0 | — | ✅ |
-| Kody Clemens | H+R+RBI | Over | 1.5 | -125 | 56% | 5 | — | ✅ |
-| Munetaka Murakami | RBI | Over | 0.5 | +185 | 36% | 2 | — | ✅ |
-| Alejandro Kirk | H+R+RBI | Over | 1.5 | +101 | 50% | 1 | — | ❌ |
-| Corbin Carroll | RBI | Under | 0.5 | -208 | 68% | 0 | — | ✅ |
-| Luis Garcia Jr. | H+R+RBI | Over | 1.5 | +116 | 47% | 2 | — | ✅ |
-| Jimmy Crooks | Hits | Under | 0.5 | -120 | 55% | 2 | — | ❌ |
-| Austin Wells | Hits | Over | 0.5 | +119 | 46% | 0 | — | ❌ |
-| Shohei Ohtani | Hits | Over | 0.5 | -198 | 67% | 1 | — | ✅ |
-| Andrew Benintendi | RBI | Over | 0.5 | +207 | 33% | 0 | — | ❌ |
-| Vaughn Grissom | H+R+RBI | Over | 1.5 | -109 | 53% | 1 | — | ❌ |
-| Connor Norby | Hits | Under | 0.5 | +107 | 49% | 1 | — | ❌ |
-| Corbin Carroll | H+R+RBI | Under | 1.5 | +107 | 49% | 1 | — | ✅ |
-| Ronald Acuna Jr. | H+R+RBI | Over | 1.5 | -126 | 56% | 2 | — | ✅ |
-| Nico Hoerner | H+R+RBI | Over | 1.5 | -120 | 55% | 1 | — | ❌ |
-| Ben Rice | Hits | Over | 0.5 | -153 | 61% | 1 | — | ✅ |
-| Kyle Isbel | Hits | Over | 0.5 | -142 | 59% | 1 | — | ✅ |
-| Xavier Edwards | H+R+RBI | Over | 1.5 | -129 | 57% | 2 | — | ✅ |
-| Henry Davis | Hits | Under | 0.5 | -107 | 52% | 0 | — | ✅ |
-| Francisco Lindor | RBI | Under | 0.5 | -186 | 66% | 0 | — | ✅ |
-| JJ Wetherholt | RBI | Over | 0.5 | +236 | 30% | 1 | — | ✅ |
-| Ketel Marte | Hits | Under | 0.5 | +184 | 36% | 0 | — | ✅ |
-| Drew Romo | H+R+RBI | Over | 0.5 | -144 | 60% | 4 | — | ✅ |
-| Vaughn Grissom | Hits | Under | 0.5 | +166 | 38% | 1 | — | ❌ |
-| Ivan Herrera | RBI | Over | 0.5 | +221 | 31% | 1 | — | ✅ |
-| Jose Altuve | Hits | Over | 0.5 | -199 | 67% | 1 | — | ✅ |
-| Patrick Sandoval | Ks (P) | Over | 4.5 | -150 | 60% | 6 | — | ✅ |
-| Freddy Fermin | RBI | Under | 0.5 | -384 | 80% | 0 | — | ✅ |
-| Alex Bregman | Hits | Over | 0.5 | -226 | 70% | 0 | — | ❌ |
-| Brett Baty | RBI | Under | 0.5 | -273 | 74% | 0 | — | ✅ |
-| Dansby Swanson | RBI | Over | 0.5 | +204 | 33% | 0 | — | ❌ |
-| Andrew Benintendi | Hits | Under | 0.5 | +141 | 42% | 0 | — | ✅ |
-| Alex Bregman | RBI | Over | 0.5 | +170 | 37% | 0 | — | ❌ |
-| Trent Grisham | Hits | Under | 0.5 | -111 | 53% | 0 | — | ✅ |
-| Trent Grisham | RBI | Over | 0.5 | +243 | 29% | 0 | — | ❌ |
-| Shohei Ohtani | H+R+RBI | Over | 1.5 | -115 | 54% | 1 | — | ❌ |
-| Jake Burger | H+R+RBI | Over | 1.5 | -150 | 60% | 6 | — | ✅ |
-| Austin Wells | RBI | Under | 0.5 | -480 | 83% | 0 | — | ✅ |
-| Max Muncy | H+R+RBI | Under | 1.5 | -157 | 61% | 2 | — | ❌ |
-| A.J. Ewing | Hits | Under | 1.5 | -290 | 75% | 0 | — | ✅ |
-| Carson Benge | Hits | Over | 0.5 | -289 | 74% | 0 | — | ❌ |
-| Jose Ramirez | RBI | Under | 0.5 | -245 | 71% | 0 | — | ✅ |
-| Dominic Canzone | RBI | Under | 0.5 | -296 | 75% | 1 | — | ❌ |
-| Luis Garcia Jr. | Hits | Under | 0.5 | +135 | 43% | 1 | — | ❌ |
-| Myles Straw | RBI | Under | 0.5 | -545 | 85% | 0 | — | ✅ |
-| Nick Fortes | Hits | Over | 0.5 | -154 | 61% | 1 | — | ✅ |
-| Bryce Eldridge | Hits | Over | 0.5 | -202 | 67% | 1 | — | ✅ |
-| Mike Yastrzemski | H+R+RBI | Under | 1.5 | -146 | 60% | 0 | — | ✅ |
-| Wyatt Langford | RBI | Under | 0.5 | -197 | 66% | 0 | — | ✅ |
-| Michael Conforto | RBI | Under | 0.5 | -291 | 75% | 0 | — | ✅ |
-| Junior Caminero | RBI | Over | 0.5 | +145 | 41% | 0 | — | ❌ |
-| Brett Baty | Hits | Under | 0.5 | +115 | 47% | 1 | — | ❌ |
-| Brendan Donovan | H+R+RBI | Under | 1.5 | -124 | 55% | 0 | — | ✅ |
-| Keibert Ruiz | Hits | Under | 0.5 | +142 | 41% | 2 | — | ❌ |
-| Bobby Witt Jr. | Hits | Under | 1.5 | -211 | 68% | 1 | — | ✅ |
-| Luis Torrens | RBI | Over | 0.5 | +252 | 28% | 2 | — | ✅ |
-| Elly De La Cruz | H+R+RBI | Over | 1.5 | -111 | 53% | 0 | — | ❌ |
-| Jung Hoo Lee | Hits | Over | 1.5 | +179 | 36% | 1 | — | ❌ |
-| Andrew Vaughn | Hits | Over | 0.5 | -157 | 61% | 2 | — | ✅ |
-| Colt Keith | Hits | Under | 0.5 | +131 | 43% | 2 | — | ❌ |
-| Coby Mayo | Hits | Over | 0.5 | +104 | 49% | 1 | — | ✅ |
-| Dylan Crews | H+R+RBI | Under | 1.5 | -139 | 58% | 0 | — | ✅ |
-| Luke Keaschall | Hits | Over | 0.5 | -206 | 67% | 0 | — | ❌ |
-| Nathan Church | Hits | Under | 0.5 | +139 | 42% | 0 | — | ✅ |
-| Ronald Acuna Jr. | Hits | Over | 0.5 | -224 | 69% | 1 | — | ✅ |
-| Jarren Duran | H+R+RBI | Under | 1.5 | -134 | 57% | 2 | — | ❌ |
-| Connor Wong | RBI | Under | 0.5 | -411 | 80% | 3 | — | ❌ |
-| Luis Robert Jr. | RBI | Under | 0.5 | -249 | 71% | 0 | — | ✅ |
-| Dominic Smith | H+R+RBI | Over | 1.5 | +123 | 45% | 2 | — | ✅ |
-| Luis Garcia Jr. | RBI | Over | 0.5 | +219 | 31% | 1 | — | ✅ |
-| Spencer Jones | RBI | Over | 0.5 | +340 | 23% | 0 | — | ❌ |
-| Dillon Dingler | H+R+RBI | Over | 1.5 | -125 | 55% | 2 | — | ✅ |
-| Mookie Betts | Hits | Over | 0.5 | -169 | 62% | 1 | — | ✅ |
-| Nathaniel Lowe | Hits | Over | 0.5 | -172 | 63% | 1 | — | ✅ |
-| Kody Clemens | Hits | Over | 0.5 | -219 | 68% | 2 | — | ✅ |
-| Kyle Schwarber | Hits | Over | 0.5 | -191 | 65% | 1 | — | ✅ |
-| Mickey Moniak | Hits | Under | 0.5 | +144 | 41% | 1 | — | ❌ |
-| Pete Crow-Armstrong | H+R+RBI | Over | 1.5 | -159 | 61% | 4 | — | ✅ |
-| Colton Cowser | Hits | Under | 0.5 | -131 | 56% | 2 | — | ❌ |
-| Jake Mangum | H+R+RBI | Over | 1.5 | -128 | 56% | 2 | — | ✅ |
-| Wilyer Abreu | RBI | Under | 0.5 | -218 | 68% | 0 | — | ✅ |
-| Bo Bichette | RBI | Under | 0.5 | -199 | 66% | 0 | — | ✅ |
-| Tarik Skubal | Ks (P) | Under | 7.5 | -137 | 57% | 7 | — | ✅ |
-| Carter Jensen | H+R+RBI | Under | 1.5 | -109 | 52% | 2 | — | ❌ |
-| Anthony Seigler | RBI | Under | 0.5 | -360 | 78% | 0 | — | ✅ |
-| Jung Hoo Lee | RBI | Under | 0.5 | -243 | 70% | 0 | — | ✅ |
-| Michael Massey | RBI | Under | 0.5 | -266 | 72% | 1 | — | ❌ |
-| Josh Naylor | H+R+RBI | Over | 1.5 | +110 | 47% | 1 | — | ❌ |
-| JJ Bleday | RBI | Under | 0.5 | -258 | 71% | 0 | — | ✅ |
-| Bryce Harper | RBI | Under | 0.5 | -186 | 64% | 0 | — | ✅ |
-| Bryce Eldridge | RBI | Under | 0.5 | -245 | 70% | 1 | — | ❌ |
-| Mike Yastrzemski | RBI | Under | 0.5 | -287 | 73% | 0 | — | ✅ |
-| Mickey Moniak | H+R+RBI | Over | 1.5 | -106 | 51% | 4 | — | ✅ |
-| Geraldo Perdomo | Hits | Over | 0.5 | -216 | 68% | 0 | — | ❌ |
-| Gavin Sheets | RBI | Under | 0.5 | -329 | 76% | 1 | — | ❌ |
-| Daulton Varsho | H+R+RBI | Under | 1.5 | -145 | 59% | 0 | — | ✅ |
-| Jake McCarthy | H+R+RBI | Over | 1.5 | -129 | 56% | 3 | — | ✅ |
-| Luis Arraez | Hits | Over | 1.5 | +155 | 39% | 1 | — | ❌ |
-| Teoscar Hernandez | RBI | Under | 0.5 | -309 | 75% | 0 | — | ✅ |
-| Jackson Merrill | Hits | Under | 0.5 | +166 | 37% | 1 | — | ❌ |
-| Jake Mangum | RBI | Over | 0.5 | +268 | 27% | 0 | — | ❌ |
-| Jackson Merrill | H+R+RBI | Over | 1.5 | -117 | 53% | 2 | — | ✅ |
-| George Springer | H+R+RBI | Over | 1.5 | +103 | 49% | 0 | — | ❌ |
-| Ty France | RBI | Under | 0.5 | -244 | 70% | 0 | — | ✅ |
-| Justin Crawford | RBI | Under | 0.5 | -364 | 78% | 0 | — | ✅ |
-| Ezequiel Duran | H+R+RBI | Over | 1.5 | -148 | 59% | 0 | — | ❌ |
-| Rhys Hoskins | RBI | Under | 0.5 | -284 | 73% | 0 | — | ✅ |
-| Tommy Edman | H+R+RBI | Under | 1.5 | -141 | 58% | 0 | — | ✅ |
-| Michael Harris II | H+R+RBI | Over | 1.5 | -138 | 57% | 1 | — | ❌ |
-| Julio Rodriguez | RBI | Under | 0.5 | -261 | 71% | 0 | — | ✅ |
-| Geraldo Perdomo | H+R+RBI | Under | 1.5 | -106 | 51% | 0 | — | ✅ |
-| Noah Cameron | Ks (P) | Over | 5.5 | -157 | 60% | 8 | — | ✅ |
-| Rafael Devers | RBI | Over | 0.5 | +181 | 35% | 3 | — | ✅ |
-| Ke'Bryan Hayes | H+R+RBI | Under | 0.5 | +102 | 49% | 0 | — | ✅ |
-| Bryce Elder | Ks (P) | Over | 3.5 | -135 | 57% | 5 | — | ✅ |
-| Jung Hoo Lee | H+R+RBI | Over | 1.5 | -143 | 58% | 1 | — | ❌ |
-| Jackson Holliday | H+R+RBI | Over | 1.5 | +127 | 43% | 7 | — | ✅ |
-| Jonny Deluca | H+R+RBI | Over | 1.5 | +107 | 48% | 0 | — | ❌ |
-| Fernando Tatis Jr. | Hits | Under | 1.5 | -267 | 72% | 2 | — | ❌ |
-| Ian Happ | RBI | Under | 0.5 | -246 | 70% | 0 | — | ✅ |
-| Alec Bohm | H+R+RBI | Under | 1.5 | +101 | 49% | 8 | — | ❌ |
-| Ian Happ | H+R+RBI | Over | 1.5 | -113 | 52% | 1 | — | ❌ |
-| Brett Baty | H+R+RBI | Under | 1.5 | -149 | 59% | 2 | — | ❌ |
-| Pete Crow-Armstrong | Hits | Under | 1.5 | -274 | 72% | 1 | — | ✅ |
-| Chase DeLauter | H+R+RBI | Over | 1.5 | -121 | 54% | 0 | — | ❌ |
-| Fernando Tatis Jr. | H+R+RBI | Over | 1.5 | -139 | 57% | 2 | — | ✅ |
-| Victor Caratini | RBI | Over | 0.5 | +222 | 30% | 0 | — | ❌ |
-| Andruw Monasterio | RBI | Under | 0.5 | -318 | 75% | 0 | — | ✅ |
-| Elias Diaz | Hits | Under | 0.5 | +135 | 42% | 0 | — | ✅ |
-| Myles Straw | H+R+RBI | Under | 0.5 | +101 | 49% | 0 | — | ✅ |
-| Chase DeLauter | RBI | Over | 0.5 | +201 | 33% | 0 | — | ❌ |
-| Victor Caratini | H+R+RBI | Over | 1.5 | +106 | 48% | 0 | — | ❌ |
-| Luis Robert Jr. | H+R+RBI | Under | 1.5 | -132 | 56% | 1 | — | ✅ |
-| Nick Fortes | H+R+RBI | Over | 1.5 | +124 | 44% | 1 | — | ❌ |
-| Trevor Rogers | Ks (P) | Under | 4.5 | -138 | 57% | 6 | — | ❌ |
-| Jonah Heim | H+R+RBI | Under | 1.5 | -104 | 50% | 0 | — | ✅ |
-| Bryson Stott | RBI | Under | 0.5 | -226 | 68% | 0 | — | ✅ |
-| George Springer | Hits | Over | 0.5 | -187 | 64% | 0 | — | ❌ |
-| Mike Yastrzemski | Hits | Under | 0.5 | +118 | 45% | 0 | — | ✅ |
-| Cole Young | RBI | Over | 0.5 | +245 | 28% | 0 | — | ❌ |
-| Cole Carrigg | H+R+RBI | Over | 1.5 | -107 | 50% | 3 | — | ✅ |
-| Luis Rengifo | Hits | Under | 0.5 | +171 | 36% | 2 | — | ❌ |
-| Andrew Painter | Ks (P) | Over | 3.5 | -129 | 55% | 2 | — | ❌ |
-| Teoscar Hernandez | Hits | Under | 0.5 | -109 | 51% | 1 | — | ❌ |
-| Mookie Betts | H+R+RBI | Over | 1.5 | +110 | 46% | 1 | — | ❌ |
-| Mookie Betts | RBI | Under | 0.5 | -294 | 73% | 0 | — | ✅ |
-| Andrés Chaparro | RBI | Over | 0.5 | +236 | 29% | 0 | — | ❌ |
-| Kyle Tucker | RBI | Under | 0.5 | -304 | 74% | 0 | — | ✅ |
-| Tommy Edman | RBI | Under | 0.5 | -326 | 75% | 0 | — | ✅ |
-| Casey Mize | Ks (P) | Over | 4.5 | +126 | 43% | 3 | — | ❌ |
-| Chase DeLauter | Hits | Over | 0.5 | -241 | 69% | 0 | — | ❌ |
-| Jake Cronenworth | RBI | Under | 0.5 | -365 | 76% | 1 | — | ❌ |
-| Michael Harris II | RBI | Under | 0.5 | -206 | 66% | 0 | — | ✅ |
-| Luis Torrens | Hits | Under | 0.5 | +114 | 46% | 1 | — | ❌ |
-| Jackson Merrill | RBI | Over | 0.5 | +178 | 35% | 0 | — | ❌ |
-| Julio Rodriguez | H+R+RBI | Over | 1.5 | -110 | 51% | 1 | — | ❌ |
-| Dominic Smith | Hits | Over | 0.5 | -163 | 60% | 1 | — | ✅ |
-| Jimmy Crooks | RBI | Over | 0.5 | +301 | 24% | 0 | — | ❌ |
-| Jorbit Vivas | Hits | Over | 0.5 | -127 | 55% | 1 | — | ✅ |
-| Carter Jensen | RBI | Under | 0.5 | -243 | 69% | 1 | — | ❌ |
-| Julio Rodriguez | Hits | Over | 0.5 | -221 | 67% | 1 | — | ✅ |
-| Miguel Vargas | RBI | Over | 0.5 | +174 | 36% | 1 | — | ✅ |
-| Drew Romo | RBI | Under | 0.5 | -436 | 79% | 2 | — | ❌ |
-| Ryan McMahon | RBI | Under | 0.5 | -443 | 79% | 0 | — | ✅ |
-| Kyle Schwarber | H+R+RBI | Over | 1.5 | -137 | 56% | 2 | — | ✅ |
-| Jackson Holliday | RBI | Over | 0.5 | +282 | 26% | 3 | — | ✅ |
-| Xander Bogaerts | H+R+RBI | Under | 1.5 | -146 | 58% | 2 | — | ❌ |
-| Jose Ramirez | H+R+RBI | Under | 1.5 | -117 | 52% | 2 | — | ❌ |
-| Andrew Vaughn | RBI | Under | 0.5 | -380 | 77% | 1 | — | ❌ |
-| Bo Bichette | Hits | Under | 1.5 | -266 | 70% | 3 | — | ❌ |
-| Andrew Vaughn | H+R+RBI | Under | 1.5 | -179 | 62% | 3 | — | ❌ |
-| Alejandro Kirk | Hits | Over | 0.5 | -217 | 66% | 1 | — | ✅ |
-| Colton Cowser | RBI | Under | 0.5 | -396 | 78% | 2 | — | ❌ |
-| Javier Sanoja | H+R+RBI | Over | 1.5 | -120 | 53% | 5 | — | ✅ |
-| Evan Carter | H+R+RBI | Under | 1.5 | -157 | 59% | 1 | — | ✅ |
-| Jose Altuve | RBI | Over | 0.5 | +239 | 29% | 0 | — | ❌ |
-| Adley Rutschman | H+R+RBI | Under | 1.5 | -127 | 54% | 0 | — | ✅ |
-| Alec Bohm | RBI | Over | 0.5 | +187 | 34% | 4 | — | ✅ |
-| Ryan Vilade | RBI | Over | 0.5 | +227 | 30% | 1 | — | ✅ |
-| Nick Fortes | RBI | Over | 0.5 | +247 | 28% | 0 | — | ❌ |
-| Pete Crow-Armstrong | RBI | Over | 0.5 | +160 | 37% | 2 | — | ✅ |
-| Jonny Deluca | Hits | Over | 0.5 | -187 | 63% | 0 | — | ❌ |
-| Josh Naylor | RBI | Under | 0.5 | -320 | 74% | 0 | — | ✅ |
-| Nathan Church | RBI | Over | 0.5 | +242 | 28% | 0 | — | ❌ |
-| Isaac Collins | Hits | Over | 0.5 | -158 | 59% | 0 | — | ❌ |
-| Tanner Bibee | Ks (P) | Over | 4.5 | +104 | 47% | 3 | — | ❌ |
-| Willi Castro | RBI | Over | 0.5 | +217 | 30% | 0 | — | ❌ |
-| Vaughn Grissom | RBI | Over | 0.5 | +185 | 34% | 0 | — | ❌ |
-| Jake McCarthy | Hits | Under | 1.5 | -254 | 69% | 1 | — | ✅ |
-| Byron Buxton | RBI | Over | 0.5 | +160 | 37% | 0 | — | ❌ |
-| Andrew Benintendi | H+R+RBI | Over | 1.5 | +104 | 47% | 0 | — | ❌ |
-| Salvador Perez | Hits | Under | 0.5 | +152 | 38% | 1 | — | ❌ |
-| Oswald Peraza | Hits | Under | 0.5 | +123 | 43% | 0 | — | ✅ |
-| Colson Montgomery | Hits | Over | 0.5 | -136 | 56% | 2 | — | ✅ |
-| Zack Gelof | RBI | Under | 0.5 | -259 | 70% | 2 | — | ❌ |
-| Eugenio Suarez | Hits | Over | 0.5 | -142 | 56% | 1 | — | ✅ |
-| Kevin McGonigle | RBI | Over | 0.5 | +235 | 29% | 0 | — | ❌ |
-| Ryan Vilade | Hits | Over | 0.5 | -158 | 59% | 3 | — | ✅ |
-| George Springer | RBI | Under | 0.5 | -278 | 71% | 0 | — | ✅ |
-| Sal Stewart | Hits | Over | 0.5 | -217 | 66% | 0 | — | ❌ |
-| Jose Siri | H+R+RBI | Over | 0.5 | -141 | 56% | 0 | — | ❌ |
-| Dillon Dingler | RBI | Over | 0.5 | +160 | 37% | 1 | — | ✅ |
-| Javier Sanoja | RBI | Under | 0.5 | -264 | 70% | 3 | — | ❌ |
-| Freddy Fermin | H+R+RBI | Under | 0.5 | +126 | 42% | 1 | — | ❌ |
-| Manny Machado | RBI | Over | 0.5 | +183 | 34% | 0 | — | ❌ |
-| Daylen Lile | RBI | Over | 0.5 | +179 | 34% | 0 | — | ❌ |
-| Victor Caratini | Hits | Over | 0.5 | -179 | 62% | 0 | — | ❌ |
-| Henry Davis | RBI | Over | 0.5 | +238 | 28% | 1 | — | ✅ |
-| Miguel Vargas | Hits | Over | 0.5 | -200 | 64% | 1 | — | ✅ |
-| Andres Gimenez | Hits | Over | 0.5 | -113 | 51% | 2 | — | ✅ |
-| Jo Adell | Hits | Under | 0.5 | +137 | 40% | 0 | — | ✅ |
-| TJ Friedl | H+R+RBI | Under | 0.5 | +114 | 45% | 0 | — | ✅ |
-| Luis Arraez | RBI | Under | 0.5 | -247 | 68% | 1 | — | ❌ |
-| Tim Tawa | H+R+RBI | Under | 1.5 | -153 | 58% | 1 | — | ✅ |
-| Cal Raleigh | Hits | Under | 0.5 | -125 | 53% | 1 | — | ❌ |
-| Heriberto Hernandez | H+R+RBI | Under | 1.5 | +103 | 47% | 4 | — | ❌ |
-| Bryce Eldridge | H+R+RBI | Over | 1.5 | -110 | 50% | 3 | — | ✅ |
-| Ryan Vilade | H+R+RBI | Over | 1.5 | +123 | 43% | 6 | — | ✅ |
-| Matt Olson | RBI | Under | 0.5 | -197 | 64% | 3 | — | ❌ |
-| Justin Crawford | Hits | Over | 0.5 | -183 | 62% | 1 | — | ✅ |
-| Yordan Alvarez | RBI | Over | 0.5 | +138 | 40% | 0 | — | ❌ |
-| Jacob Young | Hits | Under | 0.5 | +103 | 47% | 1 | — | ❌ |
-| Spencer Torkelson | H+R+RBI | Under | 1.5 | -142 | 56% | 0 | — | ✅ |
-| Evan Carter | Hits | Over | 0.5 | -140 | 56% | 1 | — | ✅ |
-| Wilyer Abreu | H+R+RBI | Under | 1.5 | -113 | 51% | 0 | — | ✅ |
-| Jake Burger | RBI | Under | 0.5 | -173 | 61% | 2 | — | ❌ |
-| Kyle Tucker | H+R+RBI | Under | 1.5 | -154 | 58% | 0 | — | ✅ |
-| Kyle Isbel | H+R+RBI | Under | 1.5 | -174 | 61% | 1 | — | ✅ |
-| Bryce Harper | H+R+RBI | Over | 1.5 | -159 | 59% | 3 | — | ✅ |
-| Ryan McMahon | Hits | Under | 0.5 | -124 | 53% | 0 | — | ✅ |
-| Carson Benge | H+R+RBI | Over | 1.5 | -149 | 57% | 0 | — | ❌ |
-| JJ Bleday | H+R+RBI | Under | 1.5 | -147 | 57% | 0 | — | ✅ |
-| Keibert Ruiz | H+R+RBI | Under | 1.5 | -132 | 54% | 4 | — | ❌ |
-| Ceddanne Rafaela | H+R+RBI | Under | 1.5 | +103 | 47% | 0 | — | ✅ |
-| Sam Antonacci | RBI | Over | 0.5 | +271 | 26% | 1 | — | ✅ |
-| Austin Riley | RBI | Over | 0.5 | +200 | 32% | 0 | — | ❌ |
-| Ty France | Hits | Under | 0.5 | +177 | 34% | 0 | — | ✅ |
-| Xander Bogaerts | RBI | Over | 0.5 | +249 | 27% | 1 | — | ✅ |
-| Zach Neto | RBI | Over | 0.5 | +198 | 32% | 0 | — | ❌ |
-| Sam Antonacci | Hits | Under | 0.5 | +156 | 37% | 0 | — | ✅ |
-| Nathaniel Lowe | H+R+RBI | Over | 1.5 | +106 | 46% | 1 | — | ❌ |
-| Elly De La Cruz | Hits | Under | 0.5 | +144 | 39% | 0 | — | ✅ |
-| Brett Sullivan | Hits | Over | 0.5 | -138 | 55% | 1 | — | ✅ |
-| Jared Young | Hits | Under | 0.5 | +163 | 36% | 2 | — | ❌ |
-| Bryson Stott | H+R+RBI | Under | 1.5 | -104 | 48% | 2 | — | ❌ |
-| Cam Smith | Hits | Under | 0.5 | +106 | 46% | 0 | — | ✅ |
-| Kyle Tucker | Hits | Under | 0.5 | +118 | 44% | 0 | — | ✅ |
-| Kody Clemens | RBI | Over | 0.5 | +161 | 36% | 1 | — | ✅ |
-| Tristan Peters | RBI | Over | 0.5 | +270 | 26% | 0 | — | ❌ |
-| Jake Bauers | Hits | Under | 0.5 | +102 | 47% | 4 | — | ❌ |
-| Ezequiel Duran | RBI | Over | 0.5 | +158 | 37% | 0 | — | ❌ |
-| Dillon Dingler | Hits | Under | 0.5 | +186 | 33% | 1 | — | ❌ |
-| Manny Machado | H+R+RBI | Over | 1.5 | -110 | 49% | 0 | — | ❌ |
-| Luis Rengifo | H+R+RBI | Over | 1.5 | -108 | 49% | 4 | — | ✅ |
-| Ronald Acuna Jr. | RBI | Over | 0.5 | +185 | 33% | 1 | — | ✅ |
-| Kyle Schwarber | RBI | Over | 0.5 | +148 | 38% | 0 | — | ❌ |
-| Wade Meckler | H+R+RBI | Over | 1.5 | +124 | 42% | 0 | — | ❌ |
-| Jo Adell | H+R+RBI | Over | 1.5 | -101 | 47% | 0 | — | ❌ |
-| Otto Lopez | RBI | Over | 0.5 | +181 | 34% | 0 | — | ❌ |
-| Michael Massey | H+R+RBI | Under | 1.5 | -131 | 53% | 5 | — | ❌ |
-| Brett Sullivan | RBI | Over | 0.5 | +272 | 25% | 3 | — | ✅ |
-| Xavier Edwards | RBI | Over | 0.5 | +194 | 32% | 0 | — | ❌ |
-| Ketel Marte | H+R+RBI | Under | 1.5 | +106 | 46% | 1 | — | ✅ |
-| Jo Adell | RBI | Over | 0.5 | +178 | 34% | 0 | — | ❌ |
-| Salvador Perez | H+R+RBI | Over | 1.5 | -109 | 49% | 1 | — | ❌ |
-| Randy Arozarena | RBI | Over | 0.5 | +234 | 28% | 1 | — | ✅ |
-| Brandon Marsh | RBI | Over | 0.5 | +209 | 30% | 0 | — | ❌ |
-| Michael Massey | Hits | Under | 0.5 | +144 | 38% | 3 | — | ❌ |
-| Ty France | H+R+RBI | Under | 1.5 | -111 | 49% | 0 | — | ✅ |
-| Jac Caglianone | RBI | Over | 0.5 | +143 | 38% | 0 | — | ❌ |
-| Jacob Young | H+R+RBI | Over | 1.5 | +131 | 40% | 1 | — | ❌ |
-| Jonah Heim | RBI | Over | 0.5 | +183 | 33% | 0 | — | ❌ |
-| Gabriel Hughes | Ks (P) | Under | 3.5 | +129 | 41% | 2 | — | ✅ |
-| Ceddanne Rafaela | RBI | Over | 0.5 | +199 | 31% | 0 | — | ❌ |
-| Anthony Seigler | Hits | Under | 0.5 | +105 | 45% | 1 | — | ❌ |
-| Nathan Church | H+R+RBI | Over | 1.5 | +112 | 44% | 0 | — | ❌ |
-| Anthony Seigler | H+R+RBI | Over | 1.5 | +131 | 40% | 2 | — | ✅ |
-| Heriberto Hernandez | RBI | Over | 0.5 | +157 | 36% | 1 | — | ✅ |
-| Nathaniel Lowe | RBI | Over | 0.5 | +200 | 31% | 0 | — | ❌ |
-| Connor Wong | H+R+RBI | Under | 0.5 | +126 | 41% | 6 | — | ❌ |
-| JJ Bleday | Hits | Under | 0.5 | +122 | 42% | 0 | — | ✅ |
-| Luis Torrens | H+R+RBI | Over | 1.5 | +122 | 42% | 4 | — | ✅ |
-| Isaac Collins | H+R+RBI | Over | 1.5 | +112 | 44% | 0 | — | ❌ |
-| Bo Bichette | H+R+RBI | Under | 1.5 | +118 | 42% | 3 | — | ❌ |
-| Eugenio Suarez | RBI | Over | 0.5 | +181 | 33% | 0 | — | ❌ |
-| Tim Tawa | RBI | Over | 0.5 | +238 | 27% | 1 | — | ✅ |
-| Mickey Moniak | RBI | Over | 0.5 | +172 | 34% | 3 | — | ✅ |
-| Eugenio Suarez | H+R+RBI | Over | 1.5 | +116 | 43% | 1 | — | ❌ |
-| Royce Lewis | RBI | Over | 0.5 | +147 | 37% | 0 | — | ❌ |
-| Javier Baez | RBI | Over | 0.5 | +254 | 26% | 0 | — | ❌ |
-| Andy Pages | RBI | Over | 0.5 | +186 | 32% | 1 | — | ✅ |
-| Adley Rutschman | Hits | Under | 0.5 | +140 | 38% | 0 | — | ✅ |
-| Tim Tawa | Hits | Under | 0.5 | +126 | 41% | 0 | — | ✅ |
-| Nico Hoerner | Hits | Under | 0.5 | +197 | 31% | 1 | — | ❌ |
-| Ozzie Albies | Hits | Under | 0.5 | +147 | 37% | 0 | — | ✅ |
-| Brendan Donovan | RBI | Over | 0.5 | +263 | 25% | 0 | — | ❌ |
-| Cal Raleigh | RBI | Over | 0.5 | +213 | 29% | 1 | — | ✅ |
-| Zack Gelof | Hits | Under | 0.5 | +172 | 34% | 2 | — | ❌ |
-| Jonny Deluca | RBI | Over | 0.5 | +233 | 27% | 0 | — | ❌ |
-| Daylen Lile | Hits | Under | 0.5 | +178 | 33% | 0 | — | ✅ |
-| Fernando Tatis Jr. | RBI | Over | 0.5 | +184 | 32% | 0 | — | ❌ |
-| Drew Gilbert | Hits | Under | 0.5 | +151 | 36% | 1 | — | ❌ |
-| Heliot Ramos | RBI | Over | 0.5 | +276 | 24% | 0 | — | ❌ |
-| Ernie Clement | RBI | Over | 0.5 | +237 | 27% | 1 | — | ✅ |
-| Freddie Freeman | RBI | Over | 0.5 | +232 | 27% | 0 | — | ❌ |
-| Ezequiel Tovar | RBI | Over | 0.5 | +279 | 24% | 0 | — | ❌ |
-| Nick Loftin | RBI | Over | 0.5 | +239 | 27% | 0 | — | ❌ |
-| Taylor Trammell | RBI | Over | 0.5 | +277 | 24% | 0 | — | ❌ |
-| Luke Keaschall | RBI | Over | 0.5 | +215 | 28% | 0 | — | ❌ |
-| Francisco Lindor | Hits | Over | 1.5 | +203 | 30% | 1 | — | ❌ |
-| Salvador Perez | RBI | Over | 0.5 | +165 | 34% | 0 | — | ❌ |
-| Shohei Ohtani | RBI | Over | 0.5 | +163 | 34% | 0 | — | ❌ |
-| Mike Trout | RBI | Over | 0.5 | +184 | 31% | 0 | — | ❌ |
-| Elly De La Cruz | RBI | Over | 0.5 | +172 | 33% | 0 | — | ❌ |
-| Wade Meckler | RBI | Over | 0.5 | +296 | 22% | 0 | — | ❌ |
-| Adley Rutschman | RBI | Over | 0.5 | +176 | 32% | 0 | — | ❌ |
-| Spencer Torkelson | RBI | Over | 0.5 | +180 | 32% | 0 | — | ❌ |
-| Luis Rengifo | RBI | Over | 0.5 | +232 | 26% | 1 | — | ✅ |
-| Jacob Young | RBI | Over | 0.5 | +229 | 27% | 0 | — | ❌ |
-| Jarren Duran | RBI | Over | 0.5 | +193 | 30% | 0 | — | ❌ |
-| Drew Gilbert | RBI | Over | 0.5 | +242 | 26% | 1 | — | ✅ |
-| Caleb Durbin | RBI | Over | 0.5 | +191 | 30% | 0 | — | ❌ |
-| Geraldo Perdomo | RBI | Over | 0.5 | +227 | 26% | 0 | — | ❌ |
-| Isaac Collins | RBI | Over | 0.5 | +240 | 25% | 0 | — | ❌ |
-| Gary Sanchez | RBI | Over | 0.5 | +247 | 25% | 0 | — | ❌ |
-| Evan Carter | RBI | Over | 0.5 | +240 | 25% | 0 | — | ❌ |
-| Kyle Isbel | RBI | Over | 0.5 | +280 | 22% | 0 | — | ❌ |
-| Jorbit Vivas | RBI | Over | 0.5 | +325 | 20% | 0 | — | ❌ |
-| Matt McLain | RBI | Over | 0.5 | +288 | 22% | 0 | — | ❌ |
-
-*Bold = cleared its edge and EV gate.*
-
-**NRFI / YRFI forced calls**
-
-| Game | Call | Confidence | Model | Market | Result |
-|---|---|---|---|---|---|
-| Baltimore Orioles @ Tampa Bay Rays | **YRFI** | High | 66% | 50% | ❌ |
-| Arizona Diamondbacks @ Atlanta Braves | **YRFI** | High | 72% | 49% | ❌ |
-| Washington Nationals @ New York Mets | **YRFI** | High | 61% | 50% | ❌ |
-| San Diego Padres @ Cleveland Guardians | **YRFI** | High | 56% | 43% | ❌ |
-| Chicago White Sox @ Detroit Tigers | **YRFI** | High | 56% | 43% | ❌ |
-| Colorado Rockies @ San Francisco Giants | **YRFI** | High | 66% | 50% | ✅ |
-| Kansas City Royals @ Los Angeles Angels | **NRFI** | High | 57% | 47% | ✅ |
-| Seattle Mariners @ Houston Astros | **YRFI** | High | 57% | 47% | ✅ |
-| New York Yankees @ Toronto Blue Jays | **NRFI** | Medium | 66% | 61% | ✅ |
-| Miami Marlins @ Cincinnati Reds | **NRFI** | Medium | 55% | 48% | ✅ |
-| Philadelphia Phillies @ Minnesota Twins | **NRFI** | Medium | 51% | 46% | ❌ |
-| Texas Rangers @ Athletics | **NRFI** | Low | 51% | 48% | ✅ |
-| Boston Red Sox @ Pittsburgh Pirates | **NRFI** | Coin flip | 51% | 51% | ❌ |
-| St. Louis Cardinals @ Chicago Cubs | **YRFI** | Coin flip | 51% | 52% | ✅ |
-| Milwaukee Brewers @ Los Angeles Dodgers | **NRFI** | Coin flip | 51% | 52% | ✅ |
-
-**HR board — top 10**
-
-| # | Player | Game | P(HR) | Result |
-|---|---|---|---|---|
-| 1 | Griffin Conine | Miami Marlins @ Cincinnati Reds | 32% | ❌ |
-| 2 | Kyle Schwarber | Philadelphia Phillies @ Minnesota Twins | 28% | ❌ |
-| 3 | Heriberto Hernández | Miami Marlins @ Cincinnati Reds | 28% | ✅ |
-| 5 | Byron Buxton | Philadelphia Phillies @ Minnesota Twins | 26% | ❌ |
-| 6 | Joc Pederson | Texas Rangers @ Athletics | 26% | ❌ |
-| 8 | Max Muncy | Milwaukee Brewers @ Los Angeles Dodgers | 25% | ✅ |
-| 9 | Shohei Ohtani | Milwaukee Brewers @ Los Angeles Dodgers | 25% | ❌ |
-| 10 | Jac Caglianone | Kansas City Royals @ Los Angeles Angels | 22% | ❌ |
-
-*2 homered · model expected 2.1*
 
 > **CLV caveat.** Beating the close is evidence of skill only when the move came from the market re-evaluating information we also had. If a scratch or injury broke after we locked, we collect the CLV without having known anything — that is luck wearing the costume of skill. Read CLV in aggregate, never on a single bet.
 
