@@ -14,6 +14,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | A | LEAN | 6.5 | Atlanta Braves @ Milwaukee Brewers | Total | Over 6.5 | 6.5 | **FanDuel -102** / DraftKings -112 |
 | A | LEAN | 5.7 | Cleveland Guardians @ Colorado Rockies | Moneyline | Cleveland Guardians ML | — | **DraftKings -157** / FanDuel -158 |
 | A | LEAN | 5.6 | Tampa Bay Rays @ Baltimore Orioles | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -113** |
+| A | LEAN | 5.4 | Minnesota Twins @ San Diego Padres | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -120** |
 
 #### NRFI/YRFI Board — forced calls (calibration record, NOT bets)
 
