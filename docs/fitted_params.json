@@ -1,4 +1,4 @@
-{
+fitted_params.json{
   "FI_DISPERSION": 2.168865182051851,
   "K_DISPERSION": 1.1122071007963847,
   "RBI_DISPERSION": 1.5845574266144782,
@@ -10,5 +10,6 @@
     "fi_games": 764,
     "fi_mean": 0.9921465968586387,
     "fi_p0": 0.518324607329843
-  }
+  },
+  "FI_LAMBDA_SCALE": 0.7415
 }
