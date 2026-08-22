@@ -7,10 +7,10 @@
 | **Locked bets** (ML/Total) | 338-294 | **53.5%** | — | -7.57u · CLV -5.17% |
 | NRFI/YRFI forced calls | 82-85 | **49.1%** | 59.8% | 🔴 behind its own number · ⚠️ below 57% naive baseline |
 | HR board (top 10 daily) | 19-101 | **15.8%** | 24.6% | 🔴 behind its own number |
-| Player props (all tiers) | 2488-2793 | **47.1%** | 53.0% | 🔴 behind its own number · CLV +0.31% |
+| Player props (all tiers) | 2488-2796 | **47.1%** | 53.0% | 🔴 behind its own number · CLV +0.31% |
 | &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 118-93 | **55.9%** | 57.7% | 🟡 tracking its number |
-| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 857-823 | **51.0%** | 57.1% | 🔴 behind its own number |
-| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 1500-1860 | **44.6%** | 50.6% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 857-824 | **51.0%** | 57.1% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 1500-1862 | **44.6%** | 50.6% | 🔴 behind its own number |
 
 **Hit rate vs predicted is the whole test.** A board that hits at the rate it claims is trustworthy even when it loses; a board that hits below its own number is telling you it does not know what it claims to know.
 
@@ -54,10 +54,10 @@ YRFI share of calls: **127/167 (76%)** — hitting 45%.
 | Tier | Market | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|---|
 | A | Ks (P) | 211 | 118 | 93 | 56% | 58% | -2% |
-| B | Hits | 1680 | 857 | 823 | 51% | 57% | -6% |
-| C | H+R+RBI | 1680 | 840 | 840 | 50% | 57% | -7% |
-| C | RBI | 1680 | 660 | 1020 | 39% | 44% | -5% |
-| **All** | | **5281** | **2488** | **2793** | **47%** | **53%** | **-6%** |
+| B | Hits | 1681 | 857 | 824 | 51% | 57% | -6% |
+| C | H+R+RBI | 1681 | 840 | 841 | 50% | 57% | -7% |
+| C | RBI | 1681 | 660 | 1021 | 39% | 44% | -5% |
+| **All** | | **5284** | **2488** | **2796** | **47%** | **53%** | **-6%** |
 
 Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 
@@ -72,6 +72,20 @@ Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 ## Daily ledger — every call, every result
 
 Last 4 graded slates in full. Most recent first.
+
+### 2026-08-22 — props 0-3
+
+**Player props**
+
+| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
+|---|---|---|---|---|---|---|---|---|
+| Spencer Jones | H+R+RBI | Over | 0.5 | -119 | 55% | 0 | — | ❌ |
+| Spencer Jones | Hits | Over | 0.5 | +112 | 46% | 0 | — | ❌ |
+| Spencer Jones | RBI | Over | 0.5 | +324 | 22% | 0 | — | ❌ |
+
+*Bold = cleared its edge and EV gate.*
+
+---
 
 ### 2026-08-21 — bets 6-3 (+1.34u) · props 353-339 · NRFI 9-6 · HR 3-7
 
@@ -824,8 +838,6 @@ Last 4 graded slates in full. Most recent first.
 | 10 | Nathaniel Lowe | Cleveland Guardians @ Colorado Rockies | 21% | ❌ |
 
 *3 homered · model expected 2.3*
-
----
 
 ### 2026-08-20 — bets 3-3 (-0.56u) · props 172-218 · NRFI 8-1 · HR 0-10
 
@@ -2006,20 +2018,6 @@ Last 4 graded slates in full. Most recent first.
 | 10 | Joe Mack | Miami Marlins @ Philadelphia Phillies | 24% | ❌ |
 
 *2 homered · model expected 2.6*
-
-### 2026-08-18 — bets 4-3 (-0.42u)
-
-**Locked bets**
-
-| Market | Pick | Line | Price | Score | CLV | Result |
-|---|---|---|---|---|---|---|
-| Moneyline | Los Angeles Dodgers ML | — | -180 | 9.5 | +3.4% | ✅ +0.56u |
-| Moneyline | Atlanta Braves ML | — | -126 | 8.5 | -9.4% | ❌ -1.00u |
-| Moneyline | St. Louis Cardinals ML | — | -120 | 8.1 | -18.1% | ✅ +0.83u |
-| Moneyline | Boston Red Sox ML | — | -171 | 8.1 | -6.5% | ✅ +0.58u |
-| Moneyline | Chicago Cubs ML | — | -164 | 5.9 | +0.9% | ✅ +0.61u |
-| Moneyline | Tampa Bay Rays ML | — | -146 | 5.1 | +14.1% | ❌ -1.00u |
-| Total | Over 8.5 | 8.5 | -115 | 5.0 | — | ❌ -1.00u |
 
 > **CLV caveat.** Beating the close is evidence of skill only when the move came from the market re-evaluating information we also had. If a scratch or injury broke after we locked, we collect the CLV without having known anything — that is luck wearing the costume of skill. Read CLV in aggregate, never on a single bet.
 

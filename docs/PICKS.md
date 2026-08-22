@@ -90,7 +90,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 720 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 2488-2793 (model expected 2798.0 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-823 (model expected 958.8 hits)* · *tier C 1500-1860 (model expected 1699.1 hits)*
+*Prop calibration (all time): all calls 2488-2796 (model expected 2799.2 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-824 (model expected 959.3 hits)* · *tier C 1500-1862 (model expected 1699.9 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -211,7 +211,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 719 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 2488-2793 (model expected 2798.0 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-823 (model expected 958.8 hits)* · *tier C 1500-1860 (model expected 1699.1 hits)*
+*Prop calibration (all time): all calls 2488-2796 (model expected 2799.2 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-824 (model expected 959.3 hits)* · *tier C 1500-1862 (model expected 1699.9 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -323,7 +323,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 426 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 2488-2793 (model expected 2798.0 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-823 (model expected 958.8 hits)* · *tier C 1500-1860 (model expected 1699.1 hits)*
+*Prop calibration (all time): all calls 2488-2796 (model expected 2799.2 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-824 (model expected 959.3 hits)* · *tier C 1500-1862 (model expected 1699.9 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -443,7 +443,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 707 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 2488-2793 (model expected 2798.0 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-823 (model expected 958.8 hits)* · *tier C 1500-1860 (model expected 1699.1 hits)*
+*Prop calibration (all time): all calls 2488-2796 (model expected 2799.2 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-824 (model expected 959.3 hits)* · *tier C 1500-1862 (model expected 1699.9 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -568,7 +568,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 431 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 2488-2793 (model expected 2798.0 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-823 (model expected 958.8 hits)* · *tier C 1500-1860 (model expected 1699.1 hits)*
+*Prop calibration (all time): all calls 2488-2796 (model expected 2799.2 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-824 (model expected 959.3 hits)* · *tier C 1500-1862 (model expected 1699.9 hits)*
 
 **Prop CLV: +0.31%** across 1424 closed rows (712/1424 beat the close).
 
@@ -676,7 +676,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 701 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 2488-2793 (model expected 2798.0 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-823 (model expected 958.8 hits)* · *tier C 1500-1860 (model expected 1699.1 hits)*
+*Prop calibration (all time): all calls 2488-2796 (model expected 2799.2 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-824 (model expected 959.3 hits)* · *tier C 1500-1862 (model expected 1699.9 hits)*
 
 **Prop CLV: +0.31%** across 1424 closed rows (712/1424 beat the close).
 
@@ -784,7 +784,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 705 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 2488-2793 (model expected 2798.0 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-823 (model expected 958.8 hits)* · *tier C 1500-1860 (model expected 1699.1 hits)*
+*Prop calibration (all time): all calls 2488-2796 (model expected 2799.2 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-824 (model expected 959.3 hits)* · *tier C 1500-1862 (model expected 1699.9 hits)*
 
 **Prop CLV: +0.31%** across 1424 closed rows (712/1424 beat the close).
 
@@ -889,7 +889,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 678 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 2488-2793 (model expected 2798.0 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-823 (model expected 958.8 hits)* · *tier C 1500-1860 (model expected 1699.1 hits)*
+*Prop calibration (all time): all calls 2488-2796 (model expected 2799.2 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-824 (model expected 959.3 hits)* · *tier C 1500-1862 (model expected 1699.9 hits)*
 
 **Prop CLV: +0.31%** across 1424 closed rows (712/1424 beat the close).
 
@@ -983,7 +983,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 433 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 2488-2793 (model expected 2798.0 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-823 (model expected 958.8 hits)* · *tier C 1500-1860 (model expected 1699.1 hits)*
+*Prop calibration (all time): all calls 2488-2796 (model expected 2799.2 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-824 (model expected 959.3 hits)* · *tier C 1500-1862 (model expected 1699.9 hits)*
 
 **Prop CLV: +0.31%** across 1424 closed rows (712/1424 beat the close).
 
@@ -1089,7 +1089,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 736 priced props today; 63 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 2488-2793 (model expected 2798.0 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-823 (model expected 958.8 hits)* · *tier C 1500-1860 (model expected 1699.1 hits)*
+*Prop calibration (all time): all calls 2488-2796 (model expected 2799.2 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-824 (model expected 959.3 hits)* · *tier C 1500-1862 (model expected 1699.9 hits)*
 
 **Prop CLV: +0.31%** across 1424 closed rows (712/1424 beat the close).
 
@@ -1199,7 +1199,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 30 priced props today; 13 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 2488-2793 (model expected 2798.0 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-823 (model expected 958.8 hits)* · *tier C 1500-1860 (model expected 1699.1 hits)*
+*Prop calibration (all time): all calls 2488-2796 (model expected 2799.2 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 118-93 (model expected 121.7 hits)* · *tier B 857-824 (model expected 959.3 hits)* · *tier C 1500-1862 (model expected 1699.9 hits)*
 
 **Prop CLV: +0.31%** across 1424 closed rows (712/1424 beat the close).
 
