@@ -15,10 +15,12 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | A | PLAY | 8.2 | Washington Nationals @ Miami Marlins | Total | Over 7.5 | 7.5 | **DraftKings -115** / FanDuel -124 |
 | A | PLAY | 8.1 | Washington Nationals @ Miami Marlins | Moneyline | Miami Marlins ML | — | **DraftKings -186** / FanDuel -188 |
 | A | PLAY | 8.1 | Pittsburgh Pirates @ Los Angeles Dodgers | Total | Over 7.5 | 7.5 | **DraftKings -112** / FanDuel -115 |
+| A | PLAY | 7.9 | Washington Nationals @ Miami Marlins | F5 Total | F5 Over 3.5 | 3.5 | **FanDuel -152** |
 | A | PLAY | 7.5 | Pittsburgh Pirates @ Los Angeles Dodgers | F5 Total | F5 Over 3.5 | 3.5 | **FanDuel -154** |
 | A | LEAN | 6.5 | Minnesota Twins @ San Diego Padres | Moneyline | San Diego Padres ML | — | **FanDuel -164** / DraftKings -164 |
 | A | LEAN | 6.1 | Athletics @ Houston Astros | Moneyline | Houston Astros ML | — | **DraftKings -246** / FanDuel -255 |
 | A | LEAN | 6.1 | St. Louis Cardinals @ Philadelphia Phillies | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -138** |
+| A | LEAN | 5.9 | Los Angeles Angels @ Texas Rangers | NRFI | NRFI | 0.5 | **FanDuel -104** |
 | A | LEAN | 5.5 | Chicago Cubs @ Seattle Mariners | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -104** |
 | A | LEAN | 5.3 | Washington Nationals @ Miami Marlins | NRFI | NRFI | 0.5 | **FanDuel -128** |
 | A | LEAN | 5.2 | Cincinnati Reds @ Arizona Diamondbacks | Total | Under 9.5 | 9.5 | **DraftKings -112** / FanDuel -122 |
