@@ -529,9 +529,9 @@ def write_picks_md(rows, board=None, hr_board=None, props_board=None):
             out.append("|---|---|---|---|---|---|---|---|---|")
             for b in sorted(day_hr, key=lambda x: x.get("rank") or 99):
                 res = {"HIT": "✅ HR", "MISS": "❌ no HR"}.get(b.get("result"), "pending")
-                out.append(f"| {b.get('rank','')} | {b['player']} | {b['team']} | {b['game']} "
-                           f"| {b['p_hr']:.0%} | {b['park_f']:.2f} | {b['wx_f']:.2f} "
-                           f"| {b['sp_f']:.2f} | {res} |")
+                out.append(f"| {b.get('rank','')} | {b.get('player','?')} | {b.get('team','—')} | {b.get('game','—')} "
+                           f"| {b.get('p_hr',0):.0%} | {b.get('park_f',1):.2f} "
+                           f"| {b.get('wx_f',1):.2f} | {b.get('sp_f',1):.2f} | {res} |")
             out.append("")
             graded_hr = [b for b in hr_board if b.get("graded")]
             if graded_hr:
