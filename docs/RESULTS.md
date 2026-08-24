@@ -63,6 +63,60 @@ Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 
 > **Sample-size reality check.** Distinguishing a real edge from noise needs hundreds of graded calls per tier. Gaps below are indicative, not verdicts — except where a tier is inverted against a lower tier, which is a structural signal rather than variance.
 
+## Weak-link analysis
+
+Every slice of the graded record with a bootstrap confidence interval. A segment only counts as a demonstrated loser when its whole interval sits below zero — otherwise it is a segment having a bad run, and cutting it would be fitting to noise.
+
+### By grade
+
+| Segment | Record | Units | ROI | 95% CI | Verdict |
+|---|---|---|---|---|---|
+| LEAN | 121-137 | -30.10u | -11.7% | -23.3% to +0.8% | ⚪ inconclusive |
+| PLAY | 236-173 | +20.02u | +4.9% | -4.0% to +13.8% | ⚪ inconclusive |
+
+### By market
+
+| Segment | Record | Units | ROI | 95% CI | Verdict |
+|---|---|---|---|---|---|
+| F5 Total | 13-19 | -9.29u | -29.0% | -57.0% to +4.0% | ⚪ inconclusive |
+| Total | 86-89 | -7.47u | -4.3% | -18.6% to +10.3% | ⚪ inconclusive |
+| Run Line | 42-48 | -2.11u | -2.3% | -24.3% to +20.2% | ⚪ inconclusive |
+| Moneyline | 211-149 | +9.43u | +2.6% | -6.4% to +11.4% | ⚪ inconclusive |
+
+### By price band
+
+| Segment | Record | Units | ROI | 95% CI | Verdict |
+|---|---|---|---|---|---|
+| fav -121 to -160 | 75-72 | -18.17u | -12.4% | -26.5% to +0.9% | ⚪ inconclusive |
+| dog +120 or longer | 19-34 | -5.19u | -9.8% | -40.8% to +21.8% | ⚪ inconclusive |
+| heavy fav past -160 | 71-41 | -3.93u | -3.5% | -17.2% to +9.9% | ⚪ inconclusive |
+| pickem -120 to -100 | 131-115 | +3.55u | +1.4% | -11.0% to +13.1% | ⚪ inconclusive |
+| dog +100 to +119 | 41-34 | +9.46u | +12.6% | -12.3% to +36.6% | ⚪ inconclusive |
+
+### By model score — does the score rank bets correctly?
+
+| Score band | n | Record | Units | ROI |
+|---|---|---|---|---|
+| 5.0–5.9 | 146 | 68-78 | -18.67u | -12.8% |
+| 6.0–6.9 | 112 | 53-59 | -11.43u | -10.2% |
+| 7.0–7.9 | 109 | 59-50 | +3.91u | +3.6% |
+| 8.0–8.9 | 79 | 45-34 | +2.44u | +3.1% |
+| 9.0–10.9 | 221 | 132-89 | +13.67u | +6.2% |
+
+> Rank correlation between score band and ROI: **+0.90** (+1.00 = ROI rises perfectly with score).
+
+> Below score 7.0: **-30.10u over 258 bets (-11.7%)**. At 7.0 and above: **+20.02u over 409 bets (+4.9%)**. The sign flips at exactly the PLAY threshold.
+
+> ✅ The score ranks bets in the right order. That is stronger evidence than any single segment clearing a confidence interval — one slice can look good by luck, a clean gradient across bands is much harder to get by accident.
+
+### Closing line value — the deeper test
+
+Across **57** picks with a captured close, average CLV is **-3.16%** and **17/57 (30%)** beat the closing price.
+
+> ⚠️ **Negative CLV outweighs a winning record.** The market is moving against these picks after they lock, which is what luck looks like from the inside — a model with real edge gets better prices than the close, not worse. Until this turns positive, treat any winning stretch as variance.
+
+> One measurement caveat before over-reading it: picks lock at the BEST price across two books, and the close is captured from that same book. Some of the gap is simply the best-of-two price regressing, not the market disagreeing. The honest read is directional, not exact.
+
 ## Early vs late pull
 
 | Pull | Rows | Avg CLV | Beat close |
