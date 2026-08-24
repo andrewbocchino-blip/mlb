@@ -402,6 +402,27 @@ def build_games(run_date: str):
                 best_book = max(seen, key=lambda b: seen[b][0])
                 return {"books": {b: seen[b][0] for b in seen}, "best_book": best_book}
 
+            # LEAN GRADE RETIRED 2026-08-23. Segment analysis over 667 graded
+            # bets: LEAN went 120-137 for -31.00u, ROI -12.1%, with a bootstrap
+            # 95% CI of -23.9% to -0.5% — entirely below zero, so this is a
+            # demonstrated loser rather than variance. PLAY over the same
+            # period was +20.97u. The score gradient is monotonic
+            # (-13.4% / -10.3% / +3.6% / +4.2% / +6.2% by score band), which
+            # says the model DOES rank bets correctly and the cut belongs
+            # right where the PLAY threshold already sits. LEANs still compute
+            # and display; they no longer lock as bets.
+            for _m, _v in (("Moneyline", ml), ("Run Line", rl), ("Total", tot),
+                           ("F5 Total", f5_v), ("NRFI", nrfi_v)):
+                pass
+            def _retire_lean(v):
+                if v is not None and getattr(v, "verdict", None) == "LEAN":
+                    return MarketVerdict(v.market, v.score, "PASS", v.pick,
+                                         list(v.rationale) +
+                                         ["LEAN grade retired 2026-08-23 — segment ROI "
+                                          "-12.1% over 257 bets, CI entirely below zero"])
+                return v
+            ml, rl, tot = _retire_lean(ml), _retire_lean(rl), _retire_lean(tot)
+            f5_v, nrfi_v = _retire_lean(f5_v), _retire_lean(nrfi_v)
             verdicts = {"Moneyline": ml, "Run Line": rl, "Total": tot,
                         "F5 Total": f5_v, "NRFI": nrfi_v}
             prices = {m: best_for(m, v) for m, v in verdicts.items()}
