@@ -99,7 +99,28 @@ def index_quotes(quotes):
         px.setdefault(key, {})[q.book_title] = q.price
         if q.point is not None:
             pts.setdefault((game, q.market_key), []).append(q.point)
-    lines = {k: sorted(v)[len(v) // 2] for k, v in pts.items()}
+    # MAIN-LINE SELECTION (2026-08-25): the median of every point in the
+    # feed lands on an ALTERNATE line, because alts sit inside the plausible
+    # band. Choose the balanced point instead — main lines are priced near
+    # even on both sides, alts are lopsided. A wrong closing line makes CLV
+    # meaningless, so this matters as much here as in the picks path.
+    lines = {}
+    for key, pt_list in pts.items():
+        game, mkey = key
+        cand = {}
+        for q in quotes:
+            g = f"{q.away_team} @ {q.home_team}" if getattr(q, "away_team", None) else None
+            if g != game or q.market_key != mkey or q.point is None or q.price is None:
+                continue
+            cand.setdefault(float(q.point), {}).setdefault(q.book_title, {})[q.outcome_name] = q.price
+        best = None
+        for pt, books in cand.items():
+            for _bk, sides in books.items():
+                if "Over" in sides and "Under" in sides:
+                    imb = abs(to_decimal(sides["Over"]) - to_decimal(sides["Under"]))
+                    if best is None or imb < best[0]:
+                        best = (imb, pt)
+        lines[key] = best[1] if best else sorted(pt_list)[len(pt_list) // 2]
     return px, lines
 
 
