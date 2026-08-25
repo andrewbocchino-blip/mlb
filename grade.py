@@ -413,6 +413,11 @@ def main():
         if b_changed:
             print(f"Graded {b_changed} NRFI/YRFI board calls.")
 
+    n_flag = _flag_suspect_totals(rows)
+    if n_flag:
+        print(f"Flagged {n_flag} totals locked against probable alternate lines "
+              f"(pre-2026-08-25 main-line bug) — excluded from performance tables.")
+
     reprice_historical(rows)
 
     changed = 0
@@ -842,6 +847,89 @@ def _standings_block(out):
 
 
 
+SUSPECT_TOTAL_LINE = 10.5   # see note in _flag_suspect_totals
+
+
+def _flag_suspect_totals(rows):
+    """Mark totals locked against a probable ALTERNATE line.
+
+    Until 2026-08-25 the market total was chosen as the median of every
+    point in the feed, and alternate totals sat inside the plausible band —
+    so a game with a real 7.5 line could lock as "Under 11.5" and then be
+    GRADED against that phantom number. The fingerprint is unmistakable:
+    of 64 totals locked at 10.5 or higher, 64 were Unders, and they graded
+    57.8% against 44.1% for everything below.
+
+    These rows are not deleted — they are flagged, excluded from the
+    performance tables, and counted separately. Silently dropping them
+    would hide the error; silently keeping them would let a fictional
+    record stand.
+    """
+    n = 0
+    for r in rows:
+        if r.get("market") != "Total":
+            continue
+        if r.get("suspect_line") is not None:
+            continue
+        line = r.get("line_at_pull")
+        pulled = r.get("pulled_at") or ""
+        if line is not None and float(line) >= SUSPECT_TOTAL_LINE and pulled < "2026-08-25":
+            r["suspect_line"] = True
+            n += 1
+        else:
+            r["suspect_line"] = False
+    return n
+
+
+def _gate_comparison_block(out):
+    """Model gate vs market-shrunk gate, graded head to head.
+
+    Every prop row records whether it would have qualified under BOTH gates,
+    so this settles the question with outcomes instead of argument: if the
+    rows the model gate selects beat the rows the shrunk gate would have
+    selected, the model is adding something the price does not have."""
+    props = load_props()
+    g = [b for b in props if b.get("result") in ("HIT", "MISS")]
+    if len(g) < 40:
+        return
+    model_q = [b for b in g if b.get("qualified")]
+    shrunk_q = [b for b in g if b.get("would_qualify_shrunk")]
+    if not model_q:
+        return
+
+    def rec(sel):
+        if not sel:
+            return "—", None
+        h = sum(1 for b in sel if b["result"] == "HIT")
+        pred = sum(b.get("model_p") or 0 for b in sel) / len(sel)
+        return f"{h}-{len(sel)-h} ({h/len(sel):.1%}) vs {pred:.0%} predicted", h / len(sel)
+
+    out.append("## Gate comparison — model vs market-shrunk")
+    out.append("")
+    out.append("| Gate | Rows cleared | Record |")
+    out.append("|---|---|---|")
+    mr, mrate = rec(model_q)
+    sr, srate = rec(shrunk_q)
+    out.append(f"| **Model edge** (live) | {len(model_q)} | {mr} |")
+    out.append(f"| Market-shrunk | {len(shrunk_q)} | {sr} |")
+    out.append("")
+    clv_m = [b["clv"] for b in model_q if b.get("clv") is not None]
+    if clv_m:
+        import statistics as _st
+        avg = _st.mean(clv_m)
+        out.append(f"Model-gated picks average **{avg:+.2f}%** CLV across {len(clv_m)} "
+                   f"closed rows.")
+        out.append("")
+        if avg > 0.5:
+            out.append("> Positive CLV on the picks the model actually recommends is the "
+                       "first real evidence of edge. Keep it running.")
+        elif avg < -0.5:
+            out.append("> The picks the model recommends are getting worse prices than the "
+                       "close. That is the pattern that shows up before a losing record "
+                       "does, and it is the reason to stop rather than press.")
+        out.append("")
+
+
 def _weak_link_block(out, rows):
     """Where is the money actually being lost?
 
@@ -851,9 +939,18 @@ def _weak_link_block(out, rows):
     entirely below zero, against PLAY at +5.1%."""
     import random
     A = [r for r in _dedupe([x for x in rows if x.get("graded")])
-         if r.get("model", "A") == "A" and r.get("result") in ("WIN", "LOSS")]
+         if r.get("model", "A") == "A" and r.get("result") in ("WIN", "LOSS")
+         and not r.get("suspect_line")]
     if len(A) < 60:
         return
+    n_susp = sum(1 for r in rows if r.get("suspect_line"))
+    if n_susp:
+        out.append(f"> **{n_susp} totals excluded** from every table below: they were "
+                   f"locked against a probable ALTERNATE line before the main-line fix "
+                   f"of 2026-08-25, so both the pick and its grade were made against a "
+                   f"number the book never offered. They are kept in the ledger and "
+                   f"flagged, not deleted.")
+        out.append("")
 
     def ci(sel, n=1500, seed=7):
         pls = [r.get("pl") or 0 for r in sel]
@@ -1201,6 +1298,46 @@ def write_results_md(rows):
                 f"{pred:.1%} | {verdict}{extra} |" if pred is not None
                 else f"| {name} | {hits}-{n-hits} | **{act:.1%}** | — | {verdict}{extra} |")
 
+    out.append("## Model standing — read this first")
+    out.append("")
+    out.append("Fitting the optimal blend between this model's projections and the "
+               "no-vig market price, over the real graded record, returns a weight on "
+               "the **market** of:")
+    out.append("")
+    out.append("| Board | n | Model Brier | Market Brier | Optimal weight on market |")
+    out.append("|---|---|---|---|---|")
+    out.append("| NRFI forced calls | 200 | 0.2686 | **0.2459** | **1.00** |")
+    out.append("| Props — tier A | 279 | 0.2568 | **0.2489** | 0.80 |")
+    out.append("| Props — tier B | 2,224 | 0.2507 | **0.2436** | **1.00** |")
+    out.append("| Props — tier C | 4,450 | 0.2281 | **0.2231** | **1.00** |")
+    out.append("")
+    out.append("**Predictions are most accurate when this model's number is discarded "
+               "and the market price is used instead.** The projections are not merely "
+               "uninformative — including them makes forecasts measurably worse. Tier A "
+               "props retain a 0.20 weight, and even there the blended Brier (0.2485) "
+               "beats the pure market (0.2489) by an amount inside the noise.")
+    out.append("")
+    out.append("Consequences now built into the model: qualification gates run on the "
+               "market-shrunk probability, so a row must show edge AFTER its projection "
+               "is pulled toward the price; NRFI confidence tiers were retired as a "
+               "signal after measuring as anti-predictive (High tier 45.0% actual vs "
+               "63.7% claimed, Coin flip 58.8% vs 53.0%); and the HR board carries a "
+               "fitted calibration scale after projecting 24.5% and delivering 14.7% "
+               "over 150 graded rows.")
+    out.append("")
+    out.append("**Gate mode: MODEL.** Recommendations are generated from the model's "
+               "own edge and EV, not the market-shrunk figures above. Every row records "
+               "both, so this period can be graded either way after the fact — if the "
+               "model-gated picks win, the Brier result above was the wrong read and the "
+               "record will say so plainly.")
+    out.append("")
+    out.append("Track two numbers as this accumulates: whether gate-clearing picks beat "
+               "their own stated probability, and whether they beat the closing price. "
+               "The first says the model is calibrated; the second says it has edge. "
+               "Neither has been shown yet.")
+    out.append("")
+    out.append("---")
+    out.append("")
     out.append("## Scoreboard")
     out.append("")
     out.append("| Board | Record | Hit rate | Model predicted | Standing |")
@@ -1269,6 +1406,7 @@ def write_results_md(rows):
     out.append("")
     _standings_block(out)
 
+    _gate_comparison_block(out)
     _weak_link_block(out, rows)
     _timing_block(out)
     _recent_results_block(out, rows)
