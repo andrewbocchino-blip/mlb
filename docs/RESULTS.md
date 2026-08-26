@@ -26,12 +26,12 @@ Track two numbers as this accumulates: whether gate-clearing picks beat their ow
 | Board | Record | Hit rate | Model predicted | Standing |
 |---|---|---|---|---|
 | **Locked bets** (ML/Total) | 362-315 | **53.5%** | — | -11.06u · CLV -3.07% |
-| NRFI/YRFI forced calls | 111-110 | **50.2%** | 59.8% | 🔴 behind its own number · ⚠️ below 55% naive baseline |
+| NRFI/YRFI forced calls | 111-111 | **50.0%** | 59.8% | 🔴 behind its own number · ⚠️ below 55% naive baseline |
 | HR board (top 10 daily) | 22-137 | **13.8%** | 24.5% | 🔴 behind its own number |
-| Player props (all tiers) | 3639-3994 | **47.7%** | 53.1% | 🔴 behind its own number · CLV +0.35% |
+| Player props (all tiers) | 3641-3995 | **47.7%** | 53.1% | 🔴 behind its own number · CLV +0.35% |
 | &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 163-142 | **53.4%** | 57.7% | 🔴 behind its own number |
-| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 1239-1193 | **50.9%** | 57.2% | 🔴 behind its own number |
-| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 2224-2642 | **45.7%** | 50.7% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 1240-1193 | **51.0%** | 57.2% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 2225-2643 | **45.7%** | 50.7% | 🔴 behind its own number |
 
 **Hit rate vs predicted is the whole test.** A board that hits at the rate it claims is trustworthy even when it loses; a board that hits below its own number is telling you it does not know what it claims to know.
 
@@ -53,12 +53,12 @@ These boards are calibration records, not bets. The question is not whether they
 | High | 127 | 56 | 71 | 44% | 64% | -20% |
 | Medium | 32 | 17 | 15 | 53% | 56% | -3% |
 | Low | 23 | 14 | 9 | 61% | 54% | +7% |
-| Coin flip | 39 | 24 | 15 | 62% | 53% | +9% |
-| **All** | **221** | **111** | **110** | **50%** | **60%** | **-10%** |
+| Coin flip | 40 | 24 | 16 | 60% | 53% | +7% |
+| **All** | **222** | **111** | **111** | **50%** | **60%** | **-10%** |
 
-YRFI share of calls: **156/221 (71%)** — hitting 47%.
+YRFI share of calls: **156/222 (70%)** — hitting 47%.
 
-**Naive baseline check.** First innings were scoreless in **54.8%** of these games, so always calling NRFI scores **54.8%**. The model scores **50.2%**.
+**Naive baseline check.** First innings were scoreless in **54.5%** of these games, so always calling NRFI scores **54.5%**. The model scores **50.0%**.
 
 > ⚠️ **The model is losing to a coin that always says the same thing.** Until it beats this line, its calls carry no information and should not be treated as analysis — a forced call is only worth making if it beats the majority class.
 
@@ -75,10 +75,10 @@ YRFI share of calls: **156/221 (71%)** — hitting 47%.
 | Tier | Market | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|---|
 | A | Ks (P) | 305 | 163 | 142 | 53% | 58% | -4% |
-| B | Hits | 2432 | 1239 | 1193 | 51% | 57% | -6% |
-| C | H+R+RBI | 2433 | 1241 | 1192 | 51% | 56% | -5% |
-| C | RBI | 2433 | 983 | 1450 | 40% | 45% | -5% |
-| **All** | | **7633** | **3639** | **3994** | **48%** | **53%** | **-5%** |
+| B | Hits | 2433 | 1240 | 1193 | 51% | 57% | -6% |
+| C | H+R+RBI | 2434 | 1242 | 1192 | 51% | 56% | -5% |
+| C | RBI | 2434 | 983 | 1451 | 40% | 45% | -5% |
+| **All** | | **7636** | **3641** | **3995** | **48%** | **53%** | **-5%** |
 
 Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 
@@ -157,7 +157,7 @@ Across **64** picks with a captured close, average CLV is **-3.21%** and **17/64
 
 Last 4 graded slates in full. Most recent first.
 
-### 2026-08-25 — bets 1-3 (-2.04u) · props 320-327 · NRFI 7-7 · HR 0-9
+### 2026-08-25 — bets 1-3 (-2.04u) · props 322-328 · NRFI 7-8 · HR 0-9
 
 **Locked bets**
 
@@ -380,6 +380,7 @@ Last 4 graded slates in full. Most recent first.
 | A.J. Ewing | H+R+RBI | Over | 0.5 | -156 | 64% | 1 | +1.5% | ✅ |
 | Jose Altuve | Hits | Over | 0.5 | -199 | 68% | 2 | -2.5% | ✅ |
 | Austin Riley | Hits | Over | 0.5 | -119 | 56% | 0 | -0.8% | ❌ |
+| Chase DeLauter | H+R+RBI | Under | 1.5 | -116 | 56% | 0 | — | ✅ |
 | Ronald Acuna Jr. | H+R+RBI | Under | 1.5 | -134 | 60% | 1 | +1.9% | ✅ |
 | Henry Davis | Hits | Under | 0.5 | -127 | 58% | 0 | +1.7% | ✅ |
 | Luis Torrens | H+R+RBI | Over | 0.5 | -152 | 63% | 1 | +0.3% | ✅ |
@@ -707,9 +708,11 @@ Last 4 graded slates in full. Most recent first.
 | Kyle Tucker | RBI | Over | 0.5 | +199 | 29% | 0 | -1.6% | ❌ |
 | Gunnar Henderson | RBI | Over | 0.5 | +213 | 28% | 0 | -1.9% | ❌ |
 | Ian Happ | RBI | Over | 0.5 | +177 | 32% | 3 | -4.2% | ✅ |
+| Chase DeLauter | RBI | Over | 0.5 | +205 | 29% | 0 | — | ❌ |
 | Ozzie Albies | Hits | Under | 0.5 | +114 | 43% | 2 | -2.7% | ❌ |
 | Kevin McGonigle | Hits | Under | 0.5 | +153 | 36% | 0 | -0.8% | ✅ |
 | Bryce Elder | Ks (P) | Over | 4.5 | +118 | 43% | 5 | — | ✅ |
+| Chase DeLauter | Hits | Under | 0.5 | +160 | 35% | 0 | — | ✅ |
 | Gage Jump | Ks (P) | Over | 5.5 | +130 | 41% | 9 | +5.5% | ✅ |
 | Leody Taveras | RBI | Over | 0.5 | +234 | 26% | 2 | -7.0% | ✅ |
 | Jackson Holliday | RBI | Over | 0.5 | +250 | 24% | 1 | -4.1% | ✅ |
@@ -839,6 +842,7 @@ Last 4 graded slates in full. Most recent first.
 | Boston Red Sox @ Miami Marlins | **NRFI** | Coin flip | 52% | 55% | ✅ |
 | Houston Astros @ New York Yankees | **YRFI** | Coin flip | 53% | 55% | ❌ |
 | Los Angeles Dodgers @ Atlanta Braves | **YRFI** | Coin flip | 53% | 52% | ✅ |
+| Cleveland Guardians @ Los Angeles Angels | **NRFI** | Coin flip | 56% | 58% | ❌ |
 | Pittsburgh Pirates @ San Diego Padres | **NRFI** | Coin flip | 54% | 59% | ✅ |
 
 **HR board — top 10**
