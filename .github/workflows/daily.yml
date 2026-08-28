@@ -12,17 +12,36 @@ name: Daily MLB Dashboard
 #   22:45 UTC ( 6:45p ET) — CLV capture: closing prices for today's picks
 on:
   schedule:
-    # HEARTBEAT, not an alarm clock. GitHub cron drops schedules when the
-    # workflow file changes, delays under load, and disables itself in quiet
-    # repos — on 2026-08-18 both period runs simply never fired. Instead of
-    # four exact times we wake every 30 minutes across the working windows
-    # and let should_run.py decide what today still owes. A missed slot is
-    # picked up by the next heartbeat instead of being lost for the day.
-    - cron: "*/30 4-5,12-17,22-23 * * *"
+    # EXPLICIT SLOTS WITH RETRIES (2026-08-28).
+    #
+    # The previous design woke every 30 minutes and let should_run.py decide
+    # what was owed. That failed in practice: GitHub deprioritises
+    # high-frequency schedules on public repos and silently drops most of
+    # them. Observed 8/27 — a single run fired all day; 8/28 — none by 15:00
+    # UTC. The guard logic was fine, it just was not being invoked.
+    #
+    # This replaces the heartbeat with a small number of EXPLICIT slots, each
+    # with a retry an hour later, and every one offset from :00. Top-of-hour
+    # is the most contested slot on GitHub's scheduler and the likeliest to
+    # be dropped; :07 and :37 are far quieter. Fewer total invocations also
+    # means less throttling. should_run.py still decides what each run does,
+    # so a dropped slot is picked up by its retry rather than lost.
+    - cron: "7 4 * * *"      # core        (12:07a ET)
+    - cron: "37 5 * * *"     # core retry  ( 1:37a ET)
+    - cron: "7 12 * * *"     # early8      ( 8:07a ET)
+    - cron: "37 13 * * *"    # early8 retry( 9:37a ET)
+    - cron: "7 15 * * *"     # late11      (11:07a ET)
+    - cron: "37 16 * * *"    # late11 retry(12:37p ET)
+    - cron: "47 22 * * *"    # clv         ( 6:47p ET)
+    - cron: "17 23 * * *"    # clv retry   ( 7:17p ET)
   workflow_dispatch:
     inputs:
       period_only:
         description: "Lock only F5/NRFI picks + boards (period-market run)"
+        required: false
+        default: "false"
+      catch_up:
+        description: "Run whatever today still owes (recommended manual option)"
         required: false
         default: "false"
       clv_only:
@@ -68,7 +87,11 @@ jobs:
       - name: Decide run mode (manual overrides)
         id: mode
         run: |
-          if [ "${{ github.event.inputs.clv_only }}" = "true" ]; then
+          if [ "${{ github.event.inputs.catch_up }}" = "true" ]; then
+            # Keep whatever should_run.py already wrote to $GITHUB_ENV — it
+            # has read the artefacts and knows what is actually outstanding.
+            echo "label=${RUN_LABEL:-Catch-up run}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.inputs.clv_only }}" = "true" ]; then
             echo "MODE=clv" >> "$GITHUB_ENV"
             echo "label=CLV close capture" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event.inputs.period_only }}" = "true" ]; then
