@@ -1226,21 +1226,62 @@ def _recent_results_block(out, rows=None, days_back: int = 4):
             out.append("")
 
         if dp:
-            out.append("**Player props**")
+            # RECOMMENDED PROPS ONLY. The board prices several hundred props a
+            # day; listing all of them buried the handful the model actually
+            # recommended. Only rows that cleared the gate appear here — the
+            # full board stays in PICKS.md and in props_board.jsonl.
+            rec = [b for b in dp if b.get("qualified")]
+            out.append(f"**Recommended props** ({len(rec)} of {len(dp)} priced cleared the gate)")
             out.append("")
-            out.append("| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |")
-            out.append("|---|---|---|---|---|---|---|---|---|")
-            for b in sorted(dp, key=lambda x: -(x.get("rank_score") or x.get("ev") or 0)):
-                px = b.get("price")
-                pxs = f"{'+' if px and px > 0 else ''}{int(px)}" if px is not None else "—"
-                star = "**" if b.get("qualified") else ""
-                clv = f"{b['clv']:+.1f}%" if b.get("clv") is not None else "—"
-                out.append(f"| {star}{b['player']}{star} | {MKT.get(b['market'], b['market'])} "
-                           f"| {b['side']} | {b['line']} | {pxs} | {b.get('model_p',0):.0%} "
-                           f"| {b.get('actual','—')} | {clv} | {ICON.get(b.get('result'),'')} |")
-            out.append("")
-            out.append("*Bold = cleared its edge and EV gate.*")
-            out.append("")
+            if not rec:
+                out.append("*None cleared the gate — the model found no prop worth "
+                           "recommending on this slate.*")
+                out.append("")
+            else:
+                out.append("| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |")
+                out.append("|---|---|---|---|---|---|---|---|---|")
+                for b in sorted(rec, key=lambda x: -(x.get("rank_score") or x.get("ev") or 0)):
+                    px = b.get("price")
+                    pxs = f"{'+' if px and px > 0 else ''}{int(px)}" if px is not None else "—"
+                    clv = f"{b['clv']:+.1f}%" if b.get("clv") is not None else "—"
+                    out.append(f"| {b['player']} | {MKT.get(b['market'], b['market'])} "
+                               f"| {b['side']} | {b['line']} | {pxs} | {b.get('model_p',0):.0%} "
+                               f"| {b.get('actual','—')} | {clv} | {ICON.get(b.get('result'),'')} |")
+                rh = sum(1 for b in rec if b.get("result") == "HIT")
+                rn = sum(1 for b in rec if b.get("result") in ("HIT", "MISS"))
+                rp = (sum(b.get("model_p") or 0 for b in rec) / len(rec)) if rec else 0
+                out.append("")
+                if rn:
+                    out.append(f"*Recommended: **{rh}-{rn-rh}** ({rh/rn:.0%}) against "
+                               f"{rp:.0%} predicted.*")
+                out.append("")
+
+            # PARLAY LEG CANDIDATES — tracked separately because a parlay
+            # multiplies vig across every leg, so these only make sense as
+            # part of a ticket, never as straight bets.
+            par = [b for b in dp if b.get("parlay_only")]
+            if par:
+                ph = sum(1 for b in par if b.get("result") == "HIT")
+                pn = sum(1 for b in par if b.get("result") in ("HIT", "MISS"))
+                out.append(f"**Parlay-leg candidates** ({len(par)} priced beyond the "
+                           f"-250 straight-bet floor)")
+                out.append("")
+                out.append("| Player | Mkt | Call | Line | Price | Model | Actual | Result |")
+                out.append("|---|---|---|---|---|---|---|---|")
+                for b in sorted(par, key=lambda x: -(x.get("ev") or 0))[:8]:
+                    px = b.get("price")
+                    pxs = f"{'+' if px and px > 0 else ''}{int(px)}" if px is not None else "—"
+                    out.append(f"| {b['player']} | {MKT.get(b['market'], b['market'])} "
+                               f"| {b['side']} | {b['line']} | {pxs} "
+                               f"| {b.get('model_p',0):.0%} | {b.get('actual','—')} "
+                               f"| {ICON.get(b.get('result'),'')} |")
+                out.append("")
+                if pn:
+                    hit_all = ph == pn
+                    out.append(f"*Legs: **{ph}-{pn-ph}**. A {pn}-leg parlay of these "
+                               f"{'WOULD have cashed' if hit_all else 'would NOT have cashed'} "
+                               f"— every leg must land.*")
+                out.append("")
 
         if db:
             out.append("**NRFI / YRFI forced calls**")
