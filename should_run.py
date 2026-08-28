@@ -53,7 +53,14 @@ WINDOWS = [
 # slot is abandoned rather than run at a useless hour — locking "midnight
 # line" picks at 6pm would corrupt the CLV comparison the whole project
 # rests on.
-STALE_AFTER = {"core": 6.0, "early8": 2.5, "late11": 5.0, "clv": 3.0}
+# Widened 2026-08-28 so a RETRY slot can still do the work. The old 2.5h
+# window on early8 meant a retry at 13:37 UTC was fine but anything later
+# was abandoned — and with GitHub dropping slots unpredictably, that threw
+# away work that was still worth doing. These are the limits past which the
+# run genuinely stops being what it claims: an "8am pre-move" pull taken
+# after noon ET is no longer pre-move, and a midnight-line lock taken in the
+# afternoon would corrupt the CLV baseline.
+STALE_AFTER = {"core": 7.0, "early8": 4.0, "late11": 6.0, "clv": 4.0}
 
 
 def _rows(path):
@@ -133,6 +140,8 @@ def decide(now_utc: datetime | None = None) -> tuple[str, str]:
 def main():
     job, why = decide()
     print(f"[should_run] {why}")
+    print(f"[should_run] slate={slate_date(datetime.now(UTC))} "
+          f"utc={datetime.now(UTC).strftime('%H:%M')}")
     env = os.environ.get("GITHUB_ENV")
 
     if job == "core":
