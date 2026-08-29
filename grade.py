@@ -873,6 +873,13 @@ def _flag_suspect_totals(rows):
             continue
         line = r.get("line_at_pull")
         pulled = r.get("pulled_at") or ""
+        # A full-game total below 6.5 is a first-five line that leaked into
+        # the full-game selection (Orioles @ Athletics, "Over 5.5" against a
+        # real 10). Quarantine those the same way as the alternate-line rows.
+        if line is not None and float(line) < 6.5 and pulled < "2026-08-30":
+            r["suspect_line"] = True
+            n += 1
+            continue
         if line is not None and float(line) >= SUSPECT_TOTAL_LINE and pulled < "2026-08-25":
             r["suspect_line"] = True
             n += 1
@@ -1077,7 +1084,16 @@ def _weak_link_block(out, rows):
         out.append("")
 
     # CLV is the deeper test and deserves its own callout
-    clv = [r for r in A if r.get("clv") is not None]
+    clv = [r for r in A if r.get("clv") is not None
+           and r.get("pull_tag") != "core_late"]
+    n_late = sum(1 for r in A if r.get("pull_tag") == "core_late")
+    if n_late:
+        out.append(f"> {n_late} picks were locked on a LATE core run (the midnight slot "
+                   f"was dropped and the work was done hours later). They count in the "
+                   f"W-L record but are excluded from CLV below, because a pick taken at "
+                   f"noon cannot be compared to a closing line the same way one taken at "
+                   f"midnight can.")
+        out.append("")
     if len(clv) >= 20:
         import statistics as _st
         avg = _st.mean(r["clv"] for r in clv)
