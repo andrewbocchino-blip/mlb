@@ -26,14 +26,36 @@ on:
     # be dropped; :07 and :37 are far quieter. Fewer total invocations also
     # means less throttling. should_run.py still decides what each run does,
     # so a dropped slot is picked up by its retry rather than lost.
-    - cron: "7 4 * * *"      # core        (12:07a ET)
-    - cron: "37 5 * * *"     # core retry  ( 1:37a ET)
-    - cron: "7 12 * * *"     # early8      ( 8:07a ET)
-    - cron: "37 13 * * *"    # early8 retry( 9:37a ET)
-    - cron: "7 15 * * *"     # late11      (11:07a ET)
-    - cron: "37 16 * * *"    # late11 retry(12:37p ET)
-    - cron: "47 22 * * *"    # clv         ( 6:47p ET)
-    - cron: "17 23 * * *"    # clv retry   ( 7:17p ET)
+    # MULTIPLE ATTEMPTS PER WINDOW (2026-08-29).
+    #
+    # Two slots per window was still not enough. Observed 8/29: the 04:07
+    # core slot fired, but 12:07, 13:37 and 15:07 were all dropped and the
+    # day produced no period pull. The pattern is consistent — the slot that
+    # lands is the one at midnight ET, and the ones that vanish are 8am-noon
+    # ET, which is peak load on GitHub's scheduler. GitHub documents that
+    # scheduled runs are delayed or dropped under load, and it does not
+    # queue a missed run for later.
+    #
+    # There is no way to make any single slot reliable, so the answer is
+    # more attempts spread across each window at irregular minutes. Runs
+    # that find nothing owed exit in about twenty seconds, so the cost of
+    # the extra attempts is trivial and public repos have unlimited minutes.
+    - cron: "7 4 * * *"      # core          (12:07a ET)
+    - cron: "41 4 * * *"     # core          (12:41a ET)
+    - cron: "23 5 * * *"     # core          ( 1:23a ET)
+    - cron: "7 12 * * *"     # early period  ( 8:07a ET)
+    - cron: "29 12 * * *"    # early period  ( 8:29a ET)
+    - cron: "51 12 * * *"    # early period  ( 8:51a ET)
+    - cron: "19 13 * * *"    # early period  ( 9:19a ET)
+    - cron: "43 13 * * *"    # early period  ( 9:43a ET)
+    - cron: "7 15 * * *"     # late period   (11:07a ET)
+    - cron: "29 15 * * *"    # late period   (11:29a ET)
+    - cron: "51 15 * * *"    # late period   (11:51a ET)
+    - cron: "19 16 * * *"    # late period   (12:19p ET)
+    - cron: "43 16 * * *"    # late period   (12:43p ET)
+    - cron: "47 22 * * *"    # clv           ( 6:47p ET)
+    - cron: "11 23 * * *"    # clv           ( 7:11p ET)
+    - cron: "39 23 * * *"    # clv           ( 7:39p ET)
   workflow_dispatch:
     inputs:
       period_only:
@@ -98,10 +120,16 @@ jobs:
             echo "MODE=period" >> "$GITHUB_ENV"
             echo "PERIOD_ONLY=1" >> "$GITHUB_ENV"
             echo "PULL_TAG=manual" >> "$GITHUB_ENV"
+            echo "PERIOD_ONLY=1" >> "$GITHUB_ENV"
             echo "label=Manual period pull" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # Clear PERIOD_ONLY explicitly. should_run.py may have set it
+            # before this step ran, and leaving it on made a manual CORE run
+            # also write the boards — tagged "core", which then confused the
+            # guard about whether the period pull had happened (seen 8/28).
             echo "MODE=core" >> "$GITHUB_ENV"
             echo "PULL_TAG=core" >> "$GITHUB_ENV"
+            echo "PERIOD_ONLY=" >> "$GITHUB_ENV"
             echo "label=Manual core pull" >> "$GITHUB_OUTPUT"
           else
             # scheduled: keep whatever should_run.py already wrote to the env
