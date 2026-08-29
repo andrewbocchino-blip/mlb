@@ -60,7 +60,19 @@ WINDOWS = [
 # run genuinely stops being what it claims: an "8am pre-move" pull taken
 # after noon ET is no longer pre-move, and a midnight-line lock taken in the
 # afternoon would corrupt the CLV baseline.
-STALE_AFTER = {"core": 7.0, "early8": 4.0, "late11": 6.0, "clv": 4.0}
+# Core widened to 13h on 2026-08-28. The tight window was costing whole
+# days of moneyline and total picks: those markets ONLY lock on the core
+# run, so when GitHub dropped that slot (8/27, 8/28) the day produced F5
+# picks and nothing else. The original reason for the tight window was
+# real — locking a "midnight line" pick at noon would corrupt the CLV
+# baseline — so instead of abandoning the work, a late core run now runs
+# and TAGS itself, letting the analysis exclude late locks rather than
+# losing the picks entirely.
+STALE_AFTER = {"core": 13.0, "early8": 4.0, "late11": 6.0, "clv": 4.0}
+
+# Hours past the window opening after which a core lock is no longer taken
+# at anything resembling the midnight line, and is marked as such.
+CORE_LATE_AFTER = 3.0
 
 
 def _rows(path):
@@ -82,7 +94,7 @@ def slate_date(now_utc: datetime) -> str:
 
 def core_done(date: str) -> bool:
     return any(r.get("slate_date") == date
-               and (r.get("pull_tag") in (None, "core"))
+               and (r.get("pull_tag") in (None, "core", "core_late"))
                and r.get("market") in ("Moneyline", "Total", "Run Line")
                for r in _rows(LOCK))
 
@@ -97,8 +109,11 @@ def period_done(date: str, tag: str) -> bool:
         for r in _rows(path):
             if r.get("slate_date") == date and r.get("pull_tag") == tag:
                 return True
-    # Rows written before pull tagging existed still count as a period pull.
-    if tag == "early8":
+    # Legacy rows (written before pull tagging existed) count as an early
+    # pull ONLY for dates before tagging shipped. Applying it to current
+    # dates masked a missing pull: the HR writer did not set a tag, so any
+    # HR rows made early8 look complete and the 8am slot was skipped.
+    if tag == "early8" and date < "2026-08-20":
         for path in BOARDS:
             for r in _rows(path):
                 if r.get("slate_date") == date and not r.get("pull_tag"):
@@ -145,8 +160,13 @@ def main():
     env = os.environ.get("GITHUB_ENV")
 
     if job == "core":
-        out = {"MODE": "core", "PULL_TAG": "core", "PERIOD_ONLY": ""}
-        label = "Midnight pull"
+        now = datetime.now(UTC)
+        opened = now.replace(hour=4, minute=5, second=0, microsecond=0)
+        late = (now - opened).total_seconds() / 3600.0 > CORE_LATE_AFTER
+        out = {"MODE": "core",
+               "PULL_TAG": "core_late" if late else "core",
+               "PERIOD_ONLY": ""}
+        label = "Late core pull (off midnight line)" if late else "Midnight pull"
     elif job in ("early8", "late11"):
         out = {"MODE": "period", "PULL_TAG": job, "PERIOD_ONLY": "1"}
         label = ("Early period pull (8am, pre-move)" if job == "early8"
