@@ -25,13 +25,13 @@ Track two numbers as this accumulates: whether gate-clearing picks beat their ow
 
 | Board | Record | Hit rate | Model predicted | Standing |
 |---|---|---|---|---|
-| **Locked bets** (ML/Total) | 366-317 | **53.6%** | — | -10.22u · CLV -3.07% |
-| NRFI/YRFI forced calls | 120-124 | **49.2%** | 59.6% | 🔴 behind its own number · ⚠️ below 54% naive baseline |
-| HR board (top 10 daily) | 30-147 | **16.9%** | 24.0% | 🔴 behind its own number |
-| Player props (all tiers) | 4076-4507 | **47.5%** | 53.1% | 🔴 behind its own number · CLV +0.35% |
-| &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 178-165 | **51.9%** | 57.7% | 🔴 behind its own number |
-| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 1392-1344 | **50.9%** | 57.2% | 🔴 behind its own number |
-| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 2493-2981 | **45.5%** | 50.7% | 🔴 behind its own number |
+| **Locked bets** (ML/Total) | 368-318 | **53.6%** | — | -9.73u · CLV -3.07% |
+| NRFI/YRFI forced calls | 127-129 | **49.6%** | 59.5% | 🔴 behind its own number · ⚠️ below 54% naive baseline |
+| HR board (top 10 daily) | 31-154 | **16.8%** | 23.9% | 🔴 behind its own number |
+| Player props (all tiers) | 4388-4857 | **47.5%** | 53.0% | 🔴 behind its own number · CLV +0.35% |
+| &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 196-176 | **52.7%** | 57.5% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 1508-1439 | **51.2%** | 57.2% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 2671-3225 | **45.3%** | 50.6% | 🔴 behind its own number |
 
 **Hit rate vs predicted is the whole test.** A board that hits at the rate it claims is trustworthy even when it loses; a board that hits below its own number is telling you it does not know what it claims to know.
 
@@ -39,7 +39,7 @@ Track two numbers as this accumulates: whether gate-clearing picks beat their ow
 
 **Model A** = current model (control). **Model B** = retired variant, history preserved. CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 366-317  ·  54% win  ·  -10.22u  ·  -1.5% ROI  ·  avg CLV -3.07%**
+**Model A: 368-318  ·  54% win  ·  -9.73u  ·  -1.4% ROI  ·  avg CLV -3.07%**
 **Model B: 237-191  ·  55% win  ·  +14.16u  ·  +3.3% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 ## Board calibration standings
@@ -50,15 +50,15 @@ These boards are calibration records, not bets. The question is not whether they
 
 | Confidence | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|
-| High | 135 | 61 | 74 | 45% | 64% | -19% |
-| Medium | 39 | 20 | 19 | 51% | 56% | -5% |
+| High | 139 | 64 | 75 | 46% | 64% | -18% |
+| Medium | 41 | 21 | 20 | 51% | 56% | -5% |
 | Low | 27 | 14 | 13 | 52% | 54% | -2% |
-| Coin flip | 43 | 25 | 18 | 58% | 53% | +5% |
-| **All** | **244** | **120** | **124** | **49%** | **60%** | **-10%** |
+| Coin flip | 49 | 28 | 21 | 57% | 53% | +4% |
+| **All** | **256** | **127** | **129** | **50%** | **59%** | **-10%** |
 
-YRFI share of calls: **165/244 (68%)** — hitting 47%.
+YRFI share of calls: **170/256 (66%)** — hitting 46%.
 
-**Naive baseline check.** First innings were scoreless in **53.7%** of these games, so always calling NRFI scores **53.7%**. The model scores **49.2%**.
+**Naive baseline check.** First innings were scoreless in **54.3%** of these games, so always calling NRFI scores **54.3%**. The model scores **49.6%**.
 
 > ⚠️ **The model is losing to a coin that always says the same thing.** Until it beats this line, its calls carry no information and should not be treated as analysis — a forced call is only worth making if it beats the majority class.
 
@@ -66,19 +66,19 @@ YRFI share of calls: **165/244 (68%)** — hitting 47%.
 
 ### HR board (top-10 daily)
 
-- listed and graded: **177**
-- homered: **30** · model expected **42.5**
-- actual rate **16.9%** vs predicted **24.0%** (**-7.1%**)
+- listed and graded: **185**
+- homered: **31** · model expected **44.2**
+- actual rate **16.8%** vs predicted **23.9%** (**-7.1%**)
 
 ### Prop divergence board
 
 | Tier | Market | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|---|
-| A | Ks (P) | 343 | 178 | 165 | 52% | 58% | -6% |
-| B | Hits | 2736 | 1392 | 1344 | 51% | 57% | -6% |
-| C | H+R+RBI | 2737 | 1385 | 1352 | 51% | 56% | -6% |
-| C | RBI | 2737 | 1108 | 1629 | 40% | 45% | -5% |
-| **All** | | **8583** | **4076** | **4507** | **47%** | **53%** | **-6%** |
+| A | Ks (P) | 372 | 196 | 176 | 53% | 58% | -5% |
+| B | Hits | 2947 | 1508 | 1439 | 51% | 57% | -6% |
+| C | H+R+RBI | 2948 | 1487 | 1461 | 50% | 56% | -6% |
+| C | RBI | 2948 | 1184 | 1764 | 40% | 45% | -5% |
+| **All** | | **9245** | **4388** | **4857** | **47%** | **53%** | **-6%** |
 
 Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 
@@ -102,13 +102,13 @@ Every slice of the graded record with a bootstrap confidence interval. A segment
 | Segment | Record | Units | ROI | 95% CI | Verdict |
 |---|---|---|---|---|---|
 | LEAN | 123-132 | -23.93u | -9.4% | -21.7% to +2.4% | ⚪ inconclusive |
-| PLAY | 206-158 | +6.51u | +1.8% | -7.3% to +11.0% | ⚪ inconclusive |
+| PLAY | 208-159 | +7.00u | +1.9% | -7.2% to +10.7% | ⚪ inconclusive |
 
 ### By market
 
 | Segment | Record | Units | ROI | 95% CI | Verdict |
 |---|---|---|---|---|---|
-| F5 Total | 16-21 | -8.96u | -24.2% | -52.2% to +4.4% | ⚪ inconclusive |
+| F5 Total | 18-22 | -8.47u | -21.2% | -47.7% to +8.7% | ⚪ inconclusive |
 | Total | 50-62 | -13.71u | -12.2% | -29.8% to +6.9% | ⚪ inconclusive |
 | Run Line | 42-48 | -2.11u | -2.3% | -24.3% to +20.2% | ⚪ inconclusive |
 | Moneyline | 215-154 | +7.22u | +2.0% | -6.9% to +11.6% | ⚪ inconclusive |
@@ -118,10 +118,10 @@ Every slice of the graded record with a bootstrap confidence interval. A segment
 | Segment | Record | Units | ROI | 95% CI | Verdict |
 |---|---|---|---|---|---|
 | dog +120 or longer | 19-34 | -5.19u | -9.8% | -40.8% to +21.8% | ⚪ inconclusive |
-| fav -121 to -160 | 82-73 | -14.20u | -9.2% | -22.8% to +4.5% | ⚪ inconclusive |
+| fav -121 to -160 | 84-73 | -12.71u | -8.1% | -20.9% to +5.8% | ⚪ inconclusive |
 | heavy fav past -160 | 71-42 | -4.93u | -4.4% | -17.6% to +9.1% | ⚪ inconclusive |
 | pickem -120 to -100 | 101-97 | -5.85u | -3.0% | -16.2% to +10.2% | ⚪ inconclusive |
-| dog +100 to +119 | 37-32 | +7.46u | +10.8% | -13.3% to +35.2% | ⚪ inconclusive |
+| dog +100 to +119 | 37-33 | +6.46u | +9.2% | -14.6% to +33.0% | ⚪ inconclusive |
 
 ### By model score — does the score rank bets correctly?
 
@@ -129,13 +129,13 @@ Every slice of the graded record with a bootstrap confidence interval. A segment
 |---|---|---|---|---|
 | 5.0–5.9 | 147 | 71-76 | -14.59u | -9.9% |
 | 6.0–6.9 | 108 | 52-56 | -9.34u | -8.6% |
-| 7.0–7.9 | 104 | 56-48 | +2.79u | +2.7% |
+| 7.0–7.9 | 105 | 56-49 | +1.79u | +1.7% |
 | 8.0–8.9 | 76 | 46-30 | +6.93u | +9.1% |
-| 9.0–10.9 | 184 | 104-80 | -3.21u | -1.7% |
+| 9.0–10.9 | 186 | 106-80 | -1.72u | -0.9% |
 
 > Rank correlation between score band and ROI: **+0.70** (+1.00 = ROI rises perfectly with score).
 
-> Below score 7.0: **-23.93u over 255 bets (-9.4%)**. At 7.0 and above: **+6.51u over 364 bets (+1.8%)**. The sign flips at exactly the PLAY threshold.
+> Below score 7.0: **-23.93u over 255 bets (-9.4%)**. At 7.0 and above: **+7.00u over 367 bets (+1.9%)**. The sign flips at exactly the PLAY threshold.
 
 > ⚠️ ROI does not trend with score. The score is not reliably ranking bets, and any threshold drawn from this table would be fitted to noise.
 
@@ -156,6 +156,69 @@ Across **64** picks with a captured close, average CLV is **-3.21%** and **17/64
 ## Daily ledger — every call, every result
 
 Last 4 graded slates in full. Most recent first.
+
+### 2026-08-28 — bets 2-1 (+0.49u) · props 312-350 · NRFI 7-5 · HR 1-7
+
+**Locked bets**
+
+| Market | Pick | Line | Price | Score | CLV | Result |
+|---|---|---|---|---|---|---|
+| F5 Total | F5 Over 4.5 | 4.5 | -128 | 9.5 | — | ✅ +0.78u |
+| F5 Total | F5 Over 4.5 | 4.5 | -140 | 9.5 | — | ✅ +0.71u |
+| F5 Total | F5 Over 4.5 | 4.5 | +100 | 7.7 | — | ❌ -1.00u |
+
+**Recommended props** (0 of 662 priced cleared the gate)
+
+*None cleared the gate — the model found no prop worth recommending on this slate.*
+
+**Parlay-leg candidates** (40 priced beyond the -250 straight-bet floor)
+
+| Player | Mkt | Call | Line | Price | Model | Actual | Result |
+|---|---|---|---|---|---|---|---|
+| Esteury Ruiz | RBI | Under | 0.5 | -341 | 86% | 0 | ✅ |
+| Carlos Narvaez | RBI | Under | 0.5 | -327 | 83% | 0 | ✅ |
+| Mike Yastrzemski | RBI | Under | 0.5 | -281 | 77% | 0 | ✅ |
+| Joc Pederson | RBI | Under | 0.5 | -286 | 77% | 0 | ✅ |
+| Jesus Sanchez | RBI | Under | 0.5 | -271 | 76% | 0 | ✅ |
+| Jose Siri | RBI | Under | 0.5 | -349 | 81% | 0 | ✅ |
+| Daulton Varsho | RBI | Under | 0.5 | -300 | 78% | 2 | ❌ |
+| Trea Turner | RBI | Under | 0.5 | -267 | 75% | 0 | ✅ |
+
+*Legs: **30-10**. A 40-leg parlay of these would NOT have cashed — every leg must land.*
+
+**NRFI / YRFI forced calls**
+
+| Game | Call | Confidence | Model | Market | Result |
+|---|---|---|---|---|---|
+| San Diego Padres @ Tampa Bay Rays | **NRFI** | High | 61% | 50% | ✅ |
+| Seattle Mariners @ Toronto Blue Jays | **YRFI** | High | 55% | 40% | ✅ |
+| Chicago White Sox @ Minnesota Twins | **YRFI** | High | 68% | 53% | ✅ |
+| Pittsburgh Pirates @ St. Louis Cardinals | **YRFI** | High | 60% | 46% | ❌ |
+| Cincinnati Reds @ Chicago Cubs | **NRFI** | Medium | 54% | 48% | ❌ |
+| Miami Marlins @ Washington Nationals | **NRFI** | Medium | 57% | 52% | ✅ |
+| Los Angeles Dodgers @ Detroit Tigers | **NRFI** | Coin flip | 53% | 57% | ✅ |
+| Kansas City Royals @ Cleveland Guardians | **YRFI** | Coin flip | 52% | 50% | ❌ |
+| Houston Astros @ New York Mets | **NRFI** | Coin flip | 54% | 53% | ✅ |
+| Colorado Rockies @ Atlanta Braves | **YRFI** | Coin flip | 53% | 55% | ❌ |
+| Boston Red Sox @ New York Yankees | **NRFI** | Coin flip | 57% | 57% | ✅ |
+| Texas Rangers @ Milwaukee Brewers | **NRFI** | Coin flip | 51% | 51% | ❌ |
+
+**HR board — top 10**
+
+| # | Player | Game | P(HR) | Result |
+|---|---|---|---|---|
+| 1 | Hunter Goodman | Colorado Rockies @ Atlanta Braves | 24% | ❌ |
+| 2 | Matt Olson | Colorado Rockies @ Atlanta Braves | 24% | ❌ |
+| 3 | Munetaka Murakami | Chicago White Sox @ Minnesota Twins | 22% | ❌ |
+| 4 | Ben Rice | Boston Red Sox @ New York Yankees | 22% | ❌ |
+| 7 | Mickey Moniak | Colorado Rockies @ Atlanta Braves | 19% | ❌ |
+| 8 | Kyle Schwarber | Philadelphia Phillies @ Los Angeles Angels | 19% | ❌ |
+| 9 | Joc Pederson | Texas Rangers @ Milwaukee Brewers | 19% | ❌ |
+| 10 | Colson Montgomery | Chicago White Sox @ Minnesota Twins | 18% | ✅ |
+
+*1 homered · model expected 1.7*
+
+---
 
 ### 2026-08-27 — bets 0-1 (-1.00u) · props 124-173 · NRFI 2-5 · HR 3-5
 
@@ -210,8 +273,6 @@ Last 4 graded slates in full. Most recent first.
 | 10 | Jeremy Peña | Houston Astros @ New York Yankees | 16% | ✅ |
 
 *3 homered · model expected 1.5*
-
----
 
 ### 2026-08-26 — bets 4-1 (+1.84u) · props 311-339 · NRFI 7-8 · HR 5-5
 
@@ -347,70 +408,6 @@ Last 4 graded slates in full. Most recent first.
 
 *0 homered · model expected 2.1*
 
-### 2026-08-24 — bets 4-2 (+1.06u) · props 210-216 · NRFI 5-5 · HR 0-10
-
-**Locked bets**
-
-| Market | Pick | Line | Price | Score | CLV | Result |
-|---|---|---|---|---|---|---|
-| Moneyline | Philadelphia Phillies ML | — | -116 | 9.5 | -6.9% | ❌ -1.00u |
-| F5 Total | F5 Over 4.5 | 4.5 | -146 | 9.5 | -3.2% | ❌ -1.00u |
-| Moneyline | Chicago Cubs ML | — | -142 | 5.9 | -11.5% | ✅ +0.70u |
-| Moneyline | Minnesota Twins ML | — | -154 | 5.7 | -1.6% | ✅ +0.65u |
-| F5 Total | F5 Over 4.5 | 4.5 | -108 | 5.3 | +8.9% | ✅ +0.93u |
-| NRFI | NRFI | 0.5 | -128 | 5.2 | -3.6% | ✅ +0.78u |
-
-**Recommended props** (0 of 426 priced cleared the gate)
-
-*None cleared the gate — the model found no prop worth recommending on this slate.*
-
-**Parlay-leg candidates** (29 priced beyond the -250 straight-bet floor)
-
-| Player | Mkt | Call | Line | Price | Model | Actual | Result |
-|---|---|---|---|---|---|---|---|
-| Dane Myers | RBI | Under | 0.5 | -273 | 82% | 0 | ✅ |
-| Otto Lopez | Hits | Over | 0.5 | -256 | 80% | 2 | ✅ |
-| Gabriel Moreno | Hits | Over | 0.5 | -252 | 80% | 0 | ❌ |
-| Esteury Ruiz | RBI | Under | 0.5 | -379 | 88% | 0 | ✅ |
-| Jorge Mateo | RBI | Under | 0.5 | -322 | 84% | 0 | ✅ |
-| Jose Siri | RBI | Under | 0.5 | -372 | 85% | 0 | ✅ |
-| Colt Keith | RBI | Under | 0.5 | -351 | 82% | 0 | ✅ |
-| Lawrence Butler | RBI | Under | 0.5 | -251 | 74% | 1 | ❌ |
-
-*Legs: **19-10**. A 29-leg parlay of these would NOT have cashed — every leg must land.*
-
-**NRFI / YRFI forced calls**
-
-| Game | Call | Confidence | Model | Market | Result |
-|---|---|---|---|---|---|
-| Colorado Rockies @ Washington Nationals | **NRFI** | High | 66% | 53% | ✅ |
-| Texas Rangers @ Chicago White Sox | **NRFI** | High | 57% | 47% | ❌ |
-| Pittsburgh Pirates @ San Diego Padres | **YRFI** | High | 56% | 44% | ❌ |
-| Minnesota Twins @ Athletics | **YRFI** | High | 78% | 58% | ✅ |
-| Philadelphia Phillies @ Seattle Mariners | **YRFI** | High | 54% | 42% | ✅ |
-| Tampa Bay Rays @ Detroit Tigers | **NRFI** | Coin flip | 54% | 55% | ❌ |
-| Boston Red Sox @ Miami Marlins | **NRFI** | Coin flip | 59% | 57% | ✅ |
-| Cleveland Guardians @ Los Angeles Angels | **NRFI** | Coin flip | 53% | 52% | ✅ |
-| Chicago Cubs @ Arizona Diamondbacks | **YRFI** | Coin flip | 54% | 53% | ❌ |
-| Cincinnati Reds @ San Francisco Giants | **NRFI** | Coin flip | 53% | 57% | ❌ |
-
-**HR board — top 10**
-
-| # | Player | Game | P(HR) | Result |
-|---|---|---|---|---|
-| 1 | Byron Buxton | Minnesota Twins @ Athletics | 28% | ❌ |
-| 2 | Munetaka Murakami | Texas Rangers @ Chicago White Sox | 27% | ❌ |
-| 3 | Pete Crow-Armstrong | Chicago Cubs @ Arizona Diamondbacks | 25% | ❌ |
-| 4 | CJ Abrams | Colorado Rockies @ Washington Nationals | 24% | ❌ |
-| 5 | Kody Clemens | Minnesota Twins @ Athletics | 22% | ❌ |
-| 6 | Colson Montgomery | Texas Rangers @ Chicago White Sox | 22% | ❌ |
-| 7 | Zack Gelof | Minnesota Twins @ Athletics | 22% | ❌ |
-| 8 | Miguel Vargas | Texas Rangers @ Chicago White Sox | 22% | ❌ |
-| 9 | Joc Pederson | Texas Rangers @ Chicago White Sox | 22% | ❌ |
-| 10 | Kyle Schwarber | Philadelphia Phillies @ Seattle Mariners | 22% | ❌ |
-
-*0 homered · model expected 2.4*
-
 > **CLV caveat.** Beating the close is evidence of skill only when the move came from the market re-evaluating information we also had. If a scratch or injury broke after we locked, we collect the CLV without having known anything — that is luck wearing the costume of skill. Read CLV in aggregate, never on a single bet.
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
@@ -433,9 +430,9 @@ Brier score: **0.2441** (0.25 = coin flip knowledge; lower is better)
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 215-154 (+2%, CLV -3.6%)  ·  NRFI 6-5 (+1%, CLV -4.0%)  ·  Run Line 42-48 (-2%)  ·  Total 87-89 (-4%, CLV +0.8%)  ·  F5 Total 16-21 (-24%, CLV -2.5%)
-- **by side:** Under 62-55 (+2%, CLV +1.5%)  ·  team 279-228 (-1%, CLV -3.4%)  ·  Over 25-34 (-16%, CLV +0.4%)
-- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 185-166 (+1%, CLV +0.2%)  ·  fav 110-79 (-5%, CLV -7.1%)  ·  dog 29-46 (-7%, CLV -1.9%)  ·  heavy fav 22-12 (-8%, CLV -1.7%)
+- **by market:** Moneyline 215-154 (+2%, CLV -3.6%)  ·  NRFI 6-5 (+1%, CLV -4.0%)  ·  Run Line 42-48 (-2%)  ·  Total 87-89 (-4%, CLV +0.8%)  ·  F5 Total 18-22 (-21%, CLV -2.5%)
+- **by side:** Under 62-55 (+2%, CLV +1.5%)  ·  team 281-229 (-1%, CLV -3.4%)  ·  Over 25-34 (-16%, CLV +0.4%)
+- **by fav_band:** unknown 20-14 (+12%)  ·  pickem 186-167 (+1%, CLV +0.2%)  ·  fav 111-79 (-4%, CLV -7.1%)  ·  dog 29-46 (-7%, CLV -1.9%)  ·  heavy fav 22-12 (-8%, CLV -1.7%)
 
 ### Model B — segments (finding the winning slice)
 
@@ -444,6 +441,14 @@ Brier score: **0.2441** (0.25 = coin flip knowledge; lower is better)
 - **by fav_band:** pickem 129-98 (+9%)  ·  fav 68-40 (+4%)  ·  dog 27-40 (-5%)  ·  unknown 2-3 (-24%)  ·  heavy fav 11-10 (-26%)
 
 ## Model A — picks by date
+
+### 2026-08-28 — 2-1  (+0.49u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ✅ WIN | PLAY | Cincinnati Reds @ Chicago Cubs | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -128** | — | +0.78 |
+| ✅ WIN | PLAY | Chicago White Sox @ Minnesota Twins | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -140** | — | +0.71 |
+| ❌ LOSS | PLAY | Pittsburgh Pirates @ St. Louis Cardinals | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel +100** | — | -1.00 |
 
 ### 2026-08-27 — 0-1  (-1.00u)
 
