@@ -26,12 +26,12 @@ Track two numbers as this accumulates: whether gate-clearing picks beat their ow
 | Board | Record | Hit rate | Model predicted | Standing |
 |---|---|---|---|---|
 | **Locked bets** (ML/Total) | 368-318 | **53.6%** | — | -9.73u · CLV -3.07% |
-| NRFI/YRFI forced calls | 127-129 | **49.6%** | 59.5% | 🔴 behind its own number · ⚠️ below 54% naive baseline |
+| NRFI/YRFI forced calls | 129-130 | **49.8%** | 59.4% | 🔴 behind its own number · ⚠️ below 54% naive baseline |
 | HR board (top 10 daily) | 31-154 | **16.8%** | 23.9% | 🔴 behind its own number |
-| Player props (all tiers) | 4388-4857 | **47.5%** | 53.0% | 🔴 behind its own number · CLV +0.35% |
+| Player props (all tiers) | 4391-4860 | **47.5%** | 53.0% | 🔴 behind its own number · CLV +0.35% |
 | &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 196-176 | **52.7%** | 57.5% | 🔴 behind its own number |
-| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 1508-1439 | **51.2%** | 57.2% | 🔴 behind its own number |
-| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 2671-3225 | **45.3%** | 50.6% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 1508-1441 | **51.1%** | 57.2% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 2674-3226 | **45.3%** | 50.6% | 🔴 behind its own number |
 
 **Hit rate vs predicted is the whole test.** A board that hits at the rate it claims is trustworthy even when it loses; a board that hits below its own number is telling you it does not know what it claims to know.
 
@@ -50,15 +50,15 @@ These boards are calibration records, not bets. The question is not whether they
 
 | Confidence | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|
-| High | 139 | 64 | 75 | 46% | 64% | -18% |
-| Medium | 41 | 21 | 20 | 51% | 56% | -5% |
-| Low | 27 | 14 | 13 | 52% | 54% | -2% |
+| High | 140 | 65 | 75 | 46% | 64% | -17% |
+| Medium | 42 | 22 | 20 | 52% | 56% | -4% |
+| Low | 28 | 14 | 14 | 50% | 54% | -4% |
 | Coin flip | 49 | 28 | 21 | 57% | 53% | +4% |
-| **All** | **256** | **127** | **129** | **50%** | **59%** | **-10%** |
+| **All** | **259** | **129** | **130** | **50%** | **59%** | **-10%** |
 
-YRFI share of calls: **170/256 (66%)** — hitting 46%.
+YRFI share of calls: **173/259 (67%)** — hitting 47%.
 
-**Naive baseline check.** First innings were scoreless in **54.3%** of these games, so always calling NRFI scores **54.3%**. The model scores **49.6%**.
+**Naive baseline check.** First innings were scoreless in **54.1%** of these games, so always calling NRFI scores **54.1%**. The model scores **49.8%**.
 
 > ⚠️ **The model is losing to a coin that always says the same thing.** Until it beats this line, its calls carry no information and should not be treated as analysis — a forced call is only worth making if it beats the majority class.
 
@@ -75,10 +75,10 @@ YRFI share of calls: **170/256 (66%)** — hitting 46%.
 | Tier | Market | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|---|
 | A | Ks (P) | 372 | 196 | 176 | 53% | 58% | -5% |
-| B | Hits | 2947 | 1508 | 1439 | 51% | 57% | -6% |
-| C | H+R+RBI | 2948 | 1487 | 1461 | 50% | 56% | -6% |
-| C | RBI | 2948 | 1184 | 1764 | 40% | 45% | -5% |
-| **All** | | **9245** | **4388** | **4857** | **47%** | **53%** | **-6%** |
+| B | Hits | 2949 | 1508 | 1441 | 51% | 57% | -6% |
+| C | H+R+RBI | 2950 | 1488 | 1462 | 50% | 56% | -6% |
+| C | RBI | 2950 | 1186 | 1764 | 40% | 45% | -5% |
+| **All** | | **9251** | **4391** | **4860** | **47%** | **53%** | **-6%** |
 
 Gate-clearing calls only: **40-32** (56% vs 60% predicted).
 
@@ -157,7 +157,7 @@ Across **64** picks with a captured close, average CLV is **-3.21%** and **17/64
 
 Last 4 graded slates in full. Most recent first.
 
-### 2026-08-28 — bets 2-1 (+0.49u) · props 312-350 · NRFI 7-5 · HR 1-7
+### 2026-08-28 — bets 2-1 (+0.49u) · props 315-353 · NRFI 9-6 · HR 1-7
 
 **Locked bets**
 
@@ -167,11 +167,11 @@ Last 4 graded slates in full. Most recent first.
 | F5 Total | F5 Over 4.5 | 4.5 | -140 | 9.5 | — | ✅ +0.71u |
 | F5 Total | F5 Over 4.5 | 4.5 | +100 | 7.7 | — | ❌ -1.00u |
 
-**Recommended props** (0 of 662 priced cleared the gate)
+**Recommended props** (0 of 668 priced cleared the gate)
 
 *None cleared the gate — the model found no prop worth recommending on this slate.*
 
-**Parlay-leg candidates** (40 priced beyond the -250 straight-bet floor)
+**Parlay-leg candidates** (41 priced beyond the -250 straight-bet floor)
 
 | Player | Mkt | Call | Line | Price | Model | Actual | Result |
 |---|---|---|---|---|---|---|---|
@@ -184,7 +184,7 @@ Last 4 graded slates in full. Most recent first.
 | Daulton Varsho | RBI | Under | 0.5 | -300 | 78% | 2 | ❌ |
 | Trea Turner | RBI | Under | 0.5 | -267 | 75% | 0 | ✅ |
 
-*Legs: **30-10**. A 40-leg parlay of these would NOT have cashed — every leg must land.*
+*Legs: **31-10**. A 41-leg parlay of these would NOT have cashed — every leg must land.*
 
 **NRFI / YRFI forced calls**
 
@@ -194,8 +194,11 @@ Last 4 graded slates in full. Most recent first.
 | Seattle Mariners @ Toronto Blue Jays | **YRFI** | High | 55% | 40% | ✅ |
 | Chicago White Sox @ Minnesota Twins | **YRFI** | High | 68% | 53% | ✅ |
 | Pittsburgh Pirates @ St. Louis Cardinals | **YRFI** | High | 60% | 46% | ❌ |
+| Philadelphia Phillies @ Los Angeles Angels | **YRFI** | High | 61% | 49% | ✅ |
 | Cincinnati Reds @ Chicago Cubs | **NRFI** | Medium | 54% | 48% | ❌ |
 | Miami Marlins @ Washington Nationals | **NRFI** | Medium | 57% | 52% | ✅ |
+| Arizona Diamondbacks @ San Francisco Giants | **YRFI** | Medium | 58% | 50% | ✅ |
+| Baltimore Orioles @ Athletics | **YRFI** | Low | 52% | 48% | ❌ |
 | Los Angeles Dodgers @ Detroit Tigers | **NRFI** | Coin flip | 53% | 57% | ✅ |
 | Kansas City Royals @ Cleveland Guardians | **YRFI** | Coin flip | 52% | 50% | ❌ |
 | Houston Astros @ New York Mets | **NRFI** | Coin flip | 54% | 53% | ✅ |
