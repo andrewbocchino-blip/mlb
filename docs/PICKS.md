@@ -9,9 +9,119 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | A | PLAY | 9.5 | Milwaukee Brewers @ Cincinnati Reds | Moneyline | Milwaukee Brewers ML | — | **FanDuel -162** / DraftKings -168 |
 | A | PLAY | 9.5 | St. Louis Cardinals @ Colorado Rockies | Total | Under 11.5 | 11.5 | **DraftKings -112** / FanDuel -114 |
 | A | PLAY | 9.5 | Washington Nationals @ Los Angeles Dodgers | Moneyline | Los Angeles Dodgers ML | — | **FanDuel -300** / DraftKings -328 |
+| A | PLAY | 9.5 | Arizona Diamondbacks @ Houston Astros | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -146** |
+| A | PLAY | 9.1 | Los Angeles Angels @ Pittsburgh Pirates | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -118** |
 | A | PLAY | 8.9 | Tampa Bay Rays @ Texas Rangers | Moneyline | Tampa Bay Rays ML | — | **FanDuel -106** / DraftKings -117 |
 | A | PLAY | 8.1 | Los Angeles Angels @ Pittsburgh Pirates | Moneyline | Pittsburgh Pirates ML | — | **FanDuel -196** / DraftKings -205 |
 | A | PLAY | 7.5 | Boston Red Sox @ Baltimore Orioles | Moneyline | Boston Red Sox ML | — | **FanDuel -118** / DraftKings -120 |
+
+#### NRFI/YRFI Board — forced calls (calibration record, NOT bets)
+
+| Game | Call | Confidence | Model P | Market P | Edge | Result |
+|---|---|---|---|---|---|---|
+| Minnesota Twins @ Chicago White Sox | **YRFI** | High | 79% | 55% | +23.4% | pending |
+| Athletics @ Seattle Mariners | **YRFI** | High | 62% | 45% | +17.1% | pending |
+| St. Louis Cardinals @ Colorado Rockies | **NRFI** | High | 62% | 44% | +18.0% | pending |
+| Washington Nationals @ Los Angeles Dodgers | **NRFI** | High | 59% | 50% | +8.7% | pending |
+| Arizona Diamondbacks @ Houston Astros | **NRFI** | High | 57% | 45% | +11.9% | pending |
+| San Francisco Giants @ New York Mets | **YRFI** | High | 54% | 45% | +8.2% | pending |
+| Los Angeles Angels @ Pittsburgh Pirates | **NRFI** | Medium | 53% | 48% | +5.5% | pending |
+| Tampa Bay Rays @ Texas Rangers | **NRFI** | Medium | 53% | 47% | +5.7% | pending |
+| Chicago Cubs @ Miami Marlins | **YRFI** | Low | 54% | 52% | +2.8% | pending |
+| Milwaukee Brewers @ Cincinnati Reds | **YRFI** | Low | 54% | 50% | +3.9% | pending |
+| Detroit Tigers @ Cleveland Guardians | **YRFI** | Low | 50% | 47% | +3.4% | pending |
+| Toronto Blue Jays @ Kansas City Royals | **YRFI** | Coin flip | 59% | 57% | +1.6% | pending |
+| Atlanta Braves @ Philadelphia Phillies | **NRFI** | Coin flip | 57% | 59% | -1.7% | pending |
+| Boston Red Sox @ Baltimore Orioles | **NRFI** | Coin flip | 57% | 56% | +1.0% | pending |
+| Detroit Tigers @ Cleveland Guardians | **NRFI** | Coin flip | 52% | 53% | -1.7% | pending |
+| New York Yankees @ San Diego Padres | **NRFI** | Coin flip | 51% | 57% | -5.8% | pending |
+
+*Board calibration (all time): High 88-91 · Medium 34-29 · Low 16-18 · Coin flip 33-31*
+
+#### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
+
+| # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Munetaka Murakami | Chicago White Sox | Minnesota Twins @ Chicago White Sox | 24% | 1.15 | 1.00 | 1.20 | pending |
+| 2 | Yordan Alvarez | Houston Astros | Arizona Diamondbacks @ Houston Astros | 23% | 1.10 | 1.00 | 1.24 | pending |
+| 3 | Colson Montgomery | Chicago White Sox | Minnesota Twins @ Chicago White Sox | 21% | 1.15 | 1.00 | 1.20 | pending |
+| 4 | Junior Caminero | Tampa Bay Rays | Tampa Bay Rays @ Texas Rangers | 20% | 1.00 | 1.00 | 1.17 | pending |
+| 5 | Kody Clemens | Minnesota Twins | Minnesota Twins @ Chicago White Sox | 20% | 1.15 | 1.00 | 1.24 | pending |
+| 6 | Miguel Vargas | Chicago White Sox | Minnesota Twins @ Chicago White Sox | 19% | 1.15 | 1.00 | 1.20 | pending |
+| 7 | Jake Bauers | Milwaukee Brewers | Milwaukee Brewers @ Cincinnati Reds | 19% | 1.33 | 1.00 | 1.07 | pending |
+| 8 | Jordan Walker | St. Louis Cardinals | St. Louis Cardinals @ Colorado Rockies | 19% | 1.08 | 1.00 | 1.24 | pending |
+| 9 | Randal Grichuk | Chicago White Sox | Minnesota Twins @ Chicago White Sox | 19% | 1.15 | 1.00 | 1.20 | pending |
+| 10 | Jackson Chourio | Milwaukee Brewers | Milwaukee Brewers @ Cincinnati Reds | 19% | 1.33 | 1.00 | 1.07 | pending |
+
+*HR board calibration (all time): 38 homered of 240 listed · model expected 55.4*
+
+#### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
+
+*Divergence means our number disagrees with the market — it does NOT mean the market is wrong. The market price already contains every sharp model working on this game; when we disagree, the more likely explanation is that our number is worse. Until this board beats its baseline, read a large divergence as a warning about our projection, not an opportunity.*
+
+| Player | Mkt | Tier | Call | Line | Price | Book | Model | No-vig | Diverg. | EV | Result |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Daniel Lynch IV | Ks (P) | A | Over | 2.5 | +112 | FanDuel | 83% | 44% | +39.3% | +76.8% | pending |
+| Erick Fedde | Ks (P) | A | Over | 3.5 | +130 | DraftKings | 69% | 40% | +28.9% | +59.0% | pending |
+| Logan Gilbert | Ks (P) | A | Under | 6.5 | -104 | FanDuel | 68% | 48% | +19.7% | +33.2% | pending |
+| Shane Drohan | Ks (P) | A | Over | 5.5 | +106 | DraftKings | 64% | 45% | +19.0% | +32.6% | pending |
+| Freddy Fermin | Hits | B | Under | 0.5 | +102 | DraftKings | 72% | 46% | +25.7% | +44.5% | pending |
+| Nathan Lukes | Hits | B | Under | 0.5 | +158 | DraftKings | 56% | 35% | +21.0% | +44.0% | pending |
+| Thomas Saggese | Hits | B | Under | 0.5 | +183 | DraftKings | 48% | 31% | +16.3% | +34.9% | pending |
+| Andre Pallante | Ks (P) | A | Over | 2.5 | -165 | DraftKings | 76% | 60% | +16.5% | +22.2% | pending |
+| Yordan Alvarez | Hits | B | Over | 1.5 | +203 | DraftKings | 44% | 29% | +14.9% | +33.2% | pending |
+| Andres Gimenez | Hits | B | Under | 0.5 | +159 | DraftKings | 51% | 35% | +16.1% | +31.5% | pending |
+| Bryan Torres | Hits | B | Under | 1.5 | -211 | DraftKings | 88% | 65% | +22.9% | +29.6% | pending |
+| Cole Carrigg | Hits | B | Under | 0.5 | +202 | DraftKings | 42% | 29% | +13.2% | +27.9% | pending |
+| Chris Sale | Ks (P) | A | Over | 6.5 | -125 | FanDuel | 65% | 53% | +12.6% | +17.4% | pending |
+| Jose Fermin | Hits | B | Under | 0.5 | +197 | DraftKings | 42% | 30% | +12.5% | +25.4% | pending |
+| Luis Robert Jr. | Hits | B | Under | 0.5 | +154 | DraftKings | 49% | 36% | +13.5% | +24.5% | pending |
+
+*Scanned 674 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
+
+*Prop calibration (all time): all calls 5875-6446 (model expected 6532.1 hits)* · *gate-clearing calls 40-32 (model expected 43.2 hits)* · *tier A 262-234 (model expected 287.0 hits)* · *tier B 2016-1915 (model expected 2267.7 hits)* · *tier C 3584-4280 (model expected 3959.0 hits)*
+
+
+**Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
+
+| Player | Mkt | Call | Line | Price | Model | No-vig | Result |
+|---|---|---|---|---|---|---|---|
+| Ernie Clement | Hits | Under | 1.5 | -256 | 80% | 69% | pending |
+| Nathan Church | Hits | Under | 1.5 | -253 | 79% | 69% | pending |
+| Otto Lopez | Hits | Over | 0.5 | -255 | 79% | 69% | pending |
+| Ernie Clement | RBI | Under | 0.5 | -260 | 78% | 69% | pending |
+| TJ Rumfield | Hits | Over | 0.5 | -264 | 78% | 70% | pending |
+| Dane Myers | RBI | Under | 0.5 | -338 | 81% | 74% | pending |
+
+> A parlay multiplies the vig on every leg. Two legs at -300 each is a -900 ticket needing ~90% to break even — only sensible if BOTH legs are genuinely mispriced, which we have not demonstrated.
+
+**Prop CLV: +0.35%** across 2905 closed rows (1451/2905 beat the close).
+
+> Positive CLV is the first real evidence this board carries information. It needs to persist over a few hundred rows before it means anything.
+
+*Ranked by EV discounted for how much evidence each market has: pitcher Ks (backtest Brier 0.2307 vs 0.2466 blind) rank at full weight, HR and RBI at half or less because neither has demonstrated skill. Price band: -250 to +250 for most markets (worse than -250 needs 71%+ to break even); HR props run to +955 since the market is priced as longshots by nature. Rows at +400 or longer carry a caution — our probability estimate is least reliable at that scale, and so is the devig.*
+
+*Bold = cleared its market's no-vig edge gate with no data-quality flags. Edge is measured against the vig-free price, never the raw line.* **Tier A** = skill-rate model with matchup (HR, pitcher Ks). **Tier B** = rate model, no platoon splits (hits, batter Ks). **Tier C** = experimental (RBI, H+R+RBI): depends on teammates reaching base, and H+R+RBI sums correlated components as independent, which understates variance — research only.
+
+<details><summary>Inputs behind each call</summary>
+
+- **Daniel Lynch IV** (Over 2.5): workload: season 12.2 IP/start, L5 2.9 · K/BF: season 0.184, L5 0.164 -> blended 0.180 · opponent K% 20.6% vs LHP split -> x0.916 · projected 4.71 K vs line 2.5 (negative binomial, dispersion 1.1122071007963847) · ⚠️ workload 7.6 IP/start implausible — clamped to 7.0 · ⚠️ no Statcast whiff/CSW — box-score K rate only · ⚠️ edge 39% implausible — treat as model error, not market error
+- **Erick Fedde** (Over 3.5): workload: season 9.5 IP/start, L5 4.6 · K/BF: season 0.165, L5 0.221 -> blended 0.174 · opponent K% 20.5% vs RHP split -> x0.913 · projected 4.80 K vs line 3.5 (negative binomial, dispersion 1.1122071007963847) · ⚠️ workload 7.0 IP/start implausible — clamped to 7.0 · ⚠️ no Statcast whiff/CSW — box-score K rate only · ⚠️ edge 29% implausible — treat as model error, not market error
+- **Drake Baldwin** (Over 0.5): bullpen: opp staff K/BF 0.260 -> x1.10, BAA 0.246 -> x1.03 (team totals proxy for pen) · volume: 4.43 PA/G season (518/117), slot unknown · exposure: 2.88 PA vs SP, 1.55 vs bullpen · quality: BABIP 0.320 vs career 0.305 (normal BABIP) -> AVG 0.276 regressed to 0.271 · park/weather run env 1.018 -> hit factor 1.009 · RBI/PA: season 0.128 · L7 0.129 · L15 0.108 · L30 0.100 -> 0.125 · no usable vs-LHP split (<60 PA) — vs-all used · RBI/PA league rank: 68%ile (#105 of 321) · -> 0.58 expected RBI (negative binomial, dispersion 1.5845574266144782) · opp SP K/BF 0.278 -> x1.24 · opp SP BAA 0.251 -> x1.03 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ RBI depends on teammates reaching base — not modelled · ⚠️ outside price band (-250 to +250) · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+- **Freddy Fermin** (Under 0.5): bullpen: opp staff K/BF 0.242 -> x1.03, BAA 0.225 -> x0.95 (team totals proxy for pen) · volume: 2.82 PA/G season (240/85), slot unknown · exposure: 2.41 PA vs SP, 0.41 vs bullpen · quality: BABIP 0.230 vs career 0.296 (unlucky on balls in play) -> AVG 0.194 regressed to 0.228 · park/weather run env 0.968 -> hit factor 0.984 · AVG: season 0.228 · L7 0.200 · L15 0.245 · L30 0.264 -> 0.235 · platoon vs LHP: 0.169 vs overall 0.228 -> x0.80 (70 PA) · AVG league rank: 28%ile (#233 of 321) · -> 0.154/AB over 2.5 AB · opp SP K/BF 0.239 -> x1.06 · opp SP BAA 0.198 -> x0.81 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ edge 26% implausible — treat as model error, not market error
+- **Nathan Lukes** (Under 0.5): bullpen: opp staff K/BF 0.193 -> x0.82, BAA 0.257 -> x1.08 (team totals proxy for pen) · volume: 3.60 PA/G season (378/105), slot unknown · exposure: 3.18 PA vs SP, 0.42 vs bullpen · quality: BABIP 0.291 vs career 0.285 (normal BABIP) -> AVG 0.265 regressed to 0.263 · AVG: season 0.263 · L7 0.280 · L15 0.264 · L30 0.229 -> 0.258 · platoon vs LHP: 0.164 vs overall 0.263 -> x0.80 (69 PA) · AVG league rank: 72%ile (#92 of 321) · -> 0.177/AB over 3.3 AB · opp SP K/BF 0.184 -> x0.82 · opp SP BAA 0.202 -> x0.83 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used
+- **Michael Harris II** (Over 0.5): bullpen: opp staff K/BF 0.260 -> x1.10, BAA 0.246 -> x1.03 (team totals proxy for pen) · volume: 4.00 PA/G season (536/134), slot unknown · exposure: 2.88 PA vs SP, 1.12 vs bullpen · quality: BABIP 0.331 vs career 0.318 (normal BABIP) -> AVG 0.295 regressed to 0.290 · park/weather run env 1.018 -> hit factor 1.009 · RBI/PA: season 0.140 · L7 0.296 · L15 0.197 · L30 0.136 -> 0.142 · no usable vs-LHP split (<60 PA) — vs-all used · RBI/PA league rank: 79%ile (#67 of 321) · -> 0.60 expected RBI (negative binomial, dispersion 1.5845574266144782) · opp SP K/BF 0.278 -> x1.24 · opp SP BAA 0.251 -> x1.03 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ RBI depends on teammates reaching base — not modelled · ⚠️ outside price band (-250 to +250) · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+- **Thomas Saggese** (Under 0.5): bullpen: opp staff K/BF 0.173 -> x0.80, BAA 0.287 -> x1.15 (team totals proxy for pen) · volume: 2.70 PA/G season (100/37), slot unknown · exposure: 2.53 PA vs SP, 0.17 vs bullpen · quality: BABIP 0.305 vs league 0.291 (normal BABIP) -> AVG 0.242 regressed to 0.234 · park/weather run env 1.069 -> hit factor 1.034 · AVG: season 0.234 · L7 0.500 · L15 0.342 · L30 0.250 -> 0.264 · platoon vs RHP: 0.230 vs overall 0.234 -> x0.98 (63 PA) · AVG league rank: 33%ile (#216 of 321) · -> 0.309/AB over 2.5 AB · opp SP K/BF 0.167 -> x0.75 · opp SP BAA 0.281 -> x1.16 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ part-time role — playing time is the dominant uncertainty · ⚠️ no Statcast xBA — raw AVG used
+- **Logan Gilbert** (Under 6.5): workload: season 5.9 IP/start, L5 5.4 · K/BF: season 0.260, L5 0.233 -> blended 0.256 · opponent K% 21.4% vs RHP split -> x0.952 · projected 5.52 K vs line 6.5 (negative binomial, dispersion 1.1122071007963847) · ⚠️ no Statcast whiff/CSW — box-score K rate only
+- **Yordan Alvarez** (Over 1.5): bullpen: opp staff K/BF 0.182 -> x0.80, BAA 0.249 -> x1.05 (team totals proxy for pen) · volume: 4.38 PA/G season (609/139), slot unknown · exposure: 2.74 PA vs SP, 1.64 vs bullpen · quality: BABIP 0.334 vs career 0.322 (normal BABIP) -> AVG 0.316 regressed to 0.312 · AVG: season 0.312 · L7 0.238 · L15 0.298 · L30 0.284 -> 0.302 · platoon vs RHP: 0.334 vs overall 0.312 -> x1.07 (449 PA) · AVG league rank: 99%ile (#4 of 321) · -> 0.351/AB over 3.6 AB · opp SP K/BF 0.154 -> x0.75 · opp SP BAA 0.270 -> x1.11 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used
+- **Shane Drohan** (Over 5.5): workload: season 6.9 IP/start, L5 5.2 · K/BF: season 0.236, L5 0.235 -> blended 0.236 · opponent K% 24.9% vs LHP split -> x1.106 · projected 6.68 K vs line 5.5 (negative binomial, dispersion 1.1122071007963847) · ⚠️ no Statcast whiff/CSW — box-score K rate only
+- **Freddy Fermin** (Under 0.5): bullpen: opp staff K/BF 0.242 -> x1.03, BAA 0.225 -> x0.95 (team totals proxy for pen) · volume: 2.82 PA/G season (240/85), slot unknown · exposure: 2.41 PA vs SP, 0.41 vs bullpen · quality: BABIP 0.230 vs career 0.296 (unlucky on balls in play) -> AVG 0.194 regressed to 0.228 · Statcast power: barrel 4.1% (lg 7.5%) · park/weather run env 0.968 -> hit factor 0.984 · AVG: season 0.228 · L7 0.200 · L15 0.245 · L30 0.264 -> 0.235 · platoon vs LHP: 0.169 vs overall 0.228 -> x0.80 (70 PA) · AVG league rank: 28%ile (#233 of 321) · R/PA: season 0.105 · L7 0.130 · L15 0.077 · L30 0.074 -> 0.104 · no usable vs-LHP split (<60 PA) — vs-all used · R/PA league rank: 28%ile (#232 of 321) · RBI/PA: season 0.091 · L7 0.043 · L15 0.058 · L30 0.064 -> 0.088 · no usable vs-LHP split (<60 PA) — vs-all used · RBI/PA league rank: 17%ile (#266 of 321) · H 0.38 + R 0.24 + RBI 0.20 = 0.82 expected (negative binomial, dispersion 2.0444937812293387) · opp SP K/BF 0.239 -> x1.06 · opp SP BAA 0.198 -> x0.81 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ H/R/RBI are strongly correlated; summed as independent — variance understated even after dispersion widening · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+- **Andres Gimenez** (Under 0.5): bullpen: opp staff K/BF 0.193 -> x0.82, BAA 0.257 -> x1.08 (team totals proxy for pen) · volume: 3.41 PA/G season (447/131), slot unknown · exposure: 3.18 PA vs SP, 0.24 vs bullpen · quality: BABIP 0.286 vs career 0.293 (normal BABIP) -> AVG 0.243 regressed to 0.246 · AVG: season 0.246 · L7 0.292 · L15 0.269 · L30 0.288 -> 0.250 · platoon vs LHP: 0.235 vs overall 0.246 -> x0.96 (125 PA) · AVG league rank: 51%ile (#158 of 321) · -> 0.202/AB over 3.1 AB · opp SP K/BF 0.184 -> x0.82 · opp SP BAA 0.202 -> x0.83 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used
+- **Bryan Torres** (Under 1.5): bullpen: opp staff K/BF 0.173 -> x0.80, BAA 0.287 -> x1.15 (team totals proxy for pen) · volume: 2.38 PA/G season (143/60), slot unknown · exposure: 2.38 PA vs SP, 0.00 vs bullpen · quality: BABIP 0.296 vs league 0.291 (normal BABIP) -> AVG 0.258 regressed to 0.255 · park/weather run env 1.069 -> hit factor 1.034 · AVG: season 0.255 · L7 0.412 · L15 0.306 · L30 0.313 -> 0.273 · platoon vs RHP: 0.272 vs overall 0.255 -> x1.07 (114 PA) · AVG league rank: 62%ile (#122 of 321) · -> 0.348/AB over 2.1 AB · opp SP K/BF 0.167 -> x0.75 · opp SP BAA 0.281 -> x1.16 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ part-time role — playing time is the dominant uncertainty · ⚠️ no Statcast xBA — raw AVG used
+- **Alejandro Kirk** (Under 1.5): bullpen: opp staff K/BF 0.193 -> x0.82, BAA 0.257 -> x1.08 (team totals proxy for pen) · volume: 3.92 PA/G season (247/63), slot unknown · exposure: 3.18 PA vs SP, 0.74 vs bullpen · quality: BABIP 0.280 vs career 0.282 (normal BABIP) -> AVG 0.271 regressed to 0.271 · Statcast power: barrel 3.7% (lg 7.5%) · AVG: season 0.271 · L7 0.185 · L15 0.276 · L30 0.321 -> 0.270 · platoon vs LHP: 0.292 vs overall 0.271 -> x1.07 (82 PA) · AVG league rank: 81%ile (#62 of 321) · R/PA: season 0.096 · L7 0.074 · L15 0.092 · L30 0.073 -> 0.097 · no usable vs-LHP split (<60 PA) — vs-all used · R/PA league rank: 15%ile (#275 of 321) · RBI/PA: season 0.123 · L7 0.111 · L15 0.169 · L30 0.161 -> 0.128 · no usable vs-LHP split (<60 PA) — vs-all used · RBI/PA league rank: 63%ile (#120 of 321) · H 0.88 + R 0.33 + RBI 0.44 = 1.65 expected (negative binomial, dispersion 2.0444937812293387) · opp SP K/BF 0.184 -> x0.82 · opp SP BAA 0.202 -> x0.83 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ H/R/RBI are strongly correlated; summed as independent — variance understated even after dispersion widening · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+- **Bryan Torres** (Under 2.5): bullpen: opp staff K/BF 0.173 -> x0.80, BAA 0.287 -> x1.15 (team totals proxy for pen) · volume: 2.38 PA/G season (143/60), slot unknown · exposure: 2.38 PA vs SP, 0.00 vs bullpen · quality: BABIP 0.296 vs league 0.291 (normal BABIP) -> AVG 0.258 regressed to 0.255 · Statcast power: barrel 3.9% (lg 7.5%) · park/weather run env 1.069 -> hit factor 1.034 · AVG: season 0.255 · L7 0.412 · L15 0.306 · L30 0.313 -> 0.273 · platoon vs RHP: 0.272 vs overall 0.255 -> x1.07 (114 PA) · AVG league rank: 62%ile (#122 of 321) · R/PA: season 0.117 · L7 0.100 · L15 0.070 · L30 0.079 -> 0.109 · no usable vs-RHP split (<60 PA) — vs-all used · R/PA league rank: 49%ile (#165 of 321) · RBI/PA: season 0.120 · L7 0.100 · L15 0.116 · L30 0.132 -> 0.119 · no usable vs-RHP split (<60 PA) — vs-all used · RBI/PA league rank: 58%ile (#135 of 321) · H 0.74 + R 0.32 + RBI 0.35 = 1.41 expected (negative binomial, dispersion 2.0444937812293387) · opp SP K/BF 0.167 -> x0.75 · opp SP BAA 0.281 -> x1.16 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ part-time role — playing time is the dominant uncertainty · ⚠️ no Statcast xBA — raw AVG used · ⚠️ H/R/RBI are strongly correlated; summed as independent — variance understated even after dispersion widening · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+
+</details>
 
 ## 2026-09-03
 
