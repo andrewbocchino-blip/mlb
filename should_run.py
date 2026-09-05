@@ -42,10 +42,13 @@ LOCK = "docs/locked_picks.jsonl"
 BOARDS = ("docs/props_board.jsonl", "docs/nrfi_board.jsonl", "docs/hr_board.jsonl")
 
 # (key, owed-from UTC hour, owed-from UTC minute)
+# 2026-09-04: the two period pulls (8am pre-move, 11am with lineups) are
+# collapsed into ONE at 10:30a ET. The early-vs-late CLV comparison never
+# accumulated enough rows to settle anything, and 10:30 sits after most
+# lineups post while staying well ahead of first pitch.
 WINDOWS = [
-    ("core",   4,  5),
-    ("early8", 12, 0),
-    ("late11", 15, 0),
+    ("core",    4, 5),
+    ("boards", 14, 30),
     ("clv",    22, 45),
 ]
 
@@ -68,7 +71,7 @@ WINDOWS = [
 # baseline — so instead of abandoning the work, a late core run now runs
 # and TAGS itself, letting the analysis exclude late locks rather than
 # losing the picks entirely.
-STALE_AFTER = {"core": 13.0, "early8": 4.0, "late11": 6.0, "clv": 4.0}
+STALE_AFTER = {"core": 13.0, "boards": 5.0, "clv": 4.0}
 
 # Hours past the window opening after which a core lock is no longer taken
 # at anything resembling the midnight line, and is marked as such.
@@ -100,6 +103,17 @@ def core_done(date: str) -> bool:
 
 
 def period_done(date: str, tag: str) -> bool:
+    """True when the board pull has run for this slate.
+
+    Rows written before the 2026-09-04 consolidation carry the old
+    "early8"/"late11" tags; either still means the boards exist for that
+    date, so history does not trigger a redundant re-run."""
+    if tag == "boards":
+        for path in BOARDS:
+            for r in _rows(path):
+                if r.get("slate_date") == date and r.get("pull_tag") in (
+                        "boards", "early8", "late11", "manual"):
+                    return True
     """A period pull counts as done when ANY board wrote rows tagged with it.
 
     Checking the boards rather than the picks matters: a legitimate period
@@ -133,8 +147,7 @@ def decide(now_utc: datetime | None = None) -> tuple[str, str]:
     now = now_utc or datetime.now(UTC)
     date = slate_date(now)
     checks = {"core": core_done(date),
-              "early8": period_done(date, "early8"),
-              "late11": period_done(date, "late11"),
+              "boards": period_done(date, "boards"),
               "clv": clv_done(date)}
 
     for key, hh, mm in WINDOWS:
@@ -167,10 +180,9 @@ def main():
                "PULL_TAG": "core_late" if late else "core",
                "PERIOD_ONLY": ""}
         label = "Late core pull (off midnight line)" if late else "Midnight pull"
-    elif job in ("early8", "late11"):
-        out = {"MODE": "period", "PULL_TAG": job, "PERIOD_ONLY": "1"}
-        label = ("Early period pull (8am, pre-move)" if job == "early8"
-                 else "Late period pull (11am, lineups)")
+    elif job == "boards":
+        out = {"MODE": "period", "PULL_TAG": "boards", "PERIOD_ONLY": "1"}
+        label = "Board pull (10:30am — props, HR, NRFI)"
     elif job == "clv":
         out = {"MODE": "clv", "PULL_TAG": "clv", "PERIOD_ONLY": ""}
         label = "CLV close capture"
