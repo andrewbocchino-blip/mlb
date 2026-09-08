@@ -232,7 +232,7 @@ def grade_props(client, board):
         if r.get("graded"):
             continue
         season = int(r["slate_date"][:4])
-        group = "pitching" if r["market"] == "pitcher_strikeouts" else "hitting"
+        group = "pitching" if r["market"].startswith("pitcher_") else "hitting"
         STAT_KEYS = {
             "batter_home_runs": ("homeRuns",),
             "pitcher_strikeouts": ("strikeOuts",),
@@ -240,6 +240,15 @@ def grade_props(client, board):
             "batter_hits": ("hits",),
             "batter_rbis": ("rbi",),
             "batter_hits_runs_rbis": ("hits", "runs", "rbi"),   # composite
+            "batter_total_bases": ("totalBases",),
+            "batter_singles": ("singles",),
+            "batter_doubles": ("doubles",),
+            "batter_walks": ("baseOnBalls",),
+            "batter_runs_scored": ("runs",),
+            "pitcher_outs": ("outs",),
+            "pitcher_hits_allowed": ("hits",),
+            "pitcher_earned_runs": ("earnedRuns",),
+            "pitcher_walks": ("baseOnBalls",),
         }
         pid = r.get("player_id")
         if pid is None:
@@ -549,7 +558,12 @@ def write_picks_md(rows, board=None, hr_board=None, props_board=None):
         if day_props:
             MKT = {"batter_home_runs": "HR", "pitcher_strikeouts": "Ks (P)",
                    "batter_strikeouts": "Ks (B)", "batter_hits": "Hits",
-                   "batter_rbis": "RBI", "batter_hits_runs_rbis": "H+R+RBI"}
+                   "batter_rbis": "RBI", "batter_hits_runs_rbis": "H+R+RBI",
+                   "batter_total_bases": "Total bases", "batter_singles": "Singles",
+                   "batter_doubles": "Doubles", "batter_walks": "BB (B)",
+                   "batter_runs_scored": "Runs", "pitcher_outs": "Outs",
+                   "pitcher_hits_allowed": "H allowed",
+                   "pitcher_earned_runs": "ER", "pitcher_walks": "BB (P)"}
             out.append("#### Prop Divergence — model vs **no-vig** market "
                        "(calibration record, NOT bets)")
             out.append("")
@@ -1188,7 +1202,12 @@ def _recent_results_block(out, rows=None, days_back: int = 4):
             "PUSH": "➖", "VOID": "⊘"}
     MKT = {"batter_home_runs": "HR", "pitcher_strikeouts": "Ks (P)",
            "batter_strikeouts": "Ks (B)", "batter_hits": "Hits",
-           "batter_rbis": "RBI", "batter_hits_runs_rbis": "H+R+RBI"}
+           "batter_rbis": "RBI", "batter_hits_runs_rbis": "H+R+RBI",
+           "batter_total_bases": "Total bases", "batter_singles": "Singles",
+           "batter_doubles": "Doubles", "batter_walks": "BB (B)",
+           "batter_runs_scored": "Runs", "pitcher_outs": "Outs",
+           "pitcher_hits_allowed": "H allowed", "pitcher_earned_runs": "ER",
+           "pitcher_walks": "BB (P)"}
 
     out.append("## Daily ledger — every call, every result")
     out.append("")
@@ -1314,11 +1333,13 @@ def _recent_results_block(out, rows=None, days_back: int = 4):
         if dh:
             out.append("**HR board — top 10**")
             out.append("")
-            out.append("| # | Player | Game | P(HR) | Result |")
-            out.append("|---|---|---|---|---|")
+            out.append("| # | Player | Game | P(HR) | Form | Platoon | Barrel | Result |")
+            out.append("|---|---|---|---|---|---|---|---|")
             for b in sorted(dh, key=lambda x: x.get("rank") or 99):
                 out.append(f"| {b.get('rank','')} | {b['player']} | {b.get('game','')} "
-                           f"| {b.get('p_hr',0):.0%} | {ICON.get(b['result'],'')} |")
+                           f"| {b.get('p_hr',0):.0%} | {b.get('form_f',1):.2f} "
+                           f"| {b.get('platoon_f',1):.2f} | {b.get('quality_f',1):.2f} "
+                           f"| {ICON.get(b['result'],'')} |")
             exp = sum(b.get("p_hr") or 0 for b in dh)
             hits = sum(1 for b in dh if b["result"] == "HIT")
             out.append("")
