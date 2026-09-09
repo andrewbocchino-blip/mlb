@@ -135,7 +135,7 @@ jobs:
           fi
       - name: Backtest prop models (history replay)
         if: github.event.inputs.backtest == 'true'
-        run: python backtest_props.py --pitchers 40
+        run: python backtest_props.py --players 60
 
       - name: Threshold + calibration analysis
         if: github.event.inputs.analyze == 'true'
