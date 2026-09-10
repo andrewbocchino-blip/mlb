@@ -2,6 +2,12 @@
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
 
+## 2026-09-10
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Colorado Rockies @ New York Yankees | Moneyline | New York Yankees ML | — | **FanDuel -335** / DraftKings -344 |
+
 ## 2026-09-09
 
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
