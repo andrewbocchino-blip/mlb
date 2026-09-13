@@ -10,7 +10,115 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | A | PLAY | 9.5 | New York Mets @ New York Yankees | Moneyline | New York Yankees ML | — | **FanDuel -184** / DraftKings -190 |
 | A | PLAY | 9.5 | Baltimore Orioles @ Toronto Blue Jays | Moneyline | Toronto Blue Jays ML | — | **FanDuel -148** / DraftKings -158 |
 | A | PLAY | 9.5 | Cincinnati Reds @ Milwaukee Brewers | Moneyline | Milwaukee Brewers ML | — | **FanDuel -198** / DraftKings -206 |
+| A | PLAY | 9.5 | Los Angeles Angels @ Washington Nationals | F5 Total | F5 Over 4.5 | 4.5 | **FanDuel -146** |
 | A | PLAY | 8.8 | Kansas City Royals @ Boston Red Sox | Moneyline | Boston Red Sox ML | — | **FanDuel -184** / DraftKings -192 |
+| A | PLAY | 8.6 | Pittsburgh Pirates @ Chicago Cubs | F5 Total | F5 Over 3.5 | 3.5 | **FanDuel -125** |
+
+#### NRFI/YRFI Board — forced calls (calibration record, NOT bets)
+
+| Game | Call | Confidence | Model P | Market P | Edge | Result |
+|---|---|---|---|---|---|---|
+| Cincinnati Reds @ Milwaukee Brewers | **YRFI** | High | 71% | 48% | +22.7% | pending |
+| Los Angeles Dodgers @ Miami Marlins | **YRFI** | High | 66% | 45% | +20.7% | pending |
+| Texas Rangers @ Arizona Diamondbacks | **NRFI** | High | 61% | 51% | +10.3% | pending |
+| Los Angeles Angels @ Washington Nationals | **NRFI** | High | 61% | 48% | +12.4% | pending |
+| Pittsburgh Pirates @ Chicago Cubs | **YRFI** | High | 60% | 45% | +15.6% | pending |
+| San Diego Padres @ San Francisco Giants | **YRFI** | High | 58% | 46% | +11.3% | pending |
+| New York Mets @ New York Yankees | **YRFI** | High | 57% | 47% | +10.3% | pending |
+| Kansas City Royals @ Boston Red Sox | **YRFI** | High | 57% | 42% | +14.4% | pending |
+| Philadelphia Phillies @ Atlanta Braves | **NRFI** | High | 54% | 43% | +10.5% | pending |
+| Seattle Mariners @ Athletics | **YRFI** | Medium | 55% | 50% | +4.4% | pending |
+| Chicago White Sox @ St. Louis Cardinals | **YRFI** | Medium | 54% | 50% | +4.7% | pending |
+| Cleveland Guardians @ Minnesota Twins | **YRFI** | Medium | 52% | 46% | +5.8% | pending |
+| Baltimore Orioles @ Toronto Blue Jays | **NRFI** | Coin flip | 54% | 58% | -3.8% | pending |
+| Houston Astros @ Tampa Bay Rays | **NRFI** | Coin flip | 50% | 50% | +0.3% | pending |
+
+*Board calibration (all time): High 123-113 · Medium 44-38 · Low 20-25 · Coin flip 44-37*
+
+#### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
+
+| # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Kyle Schwarber | Philadelphia Phillies | Philadelphia Phillies @ Atlanta Braves | 24% | 1.08 | 1.00 | 1.05 | pending |
+| 2 | Matt Olson | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 24% | 1.08 | 1.00 | 1.21 | pending |
+| 3 | Elly De La Cruz | Cincinnati Reds | Cincinnati Reds @ Milwaukee Brewers | 22% | 1.09 | 1.00 | 1.12 | pending |
+| 4 | Juan Soto | New York Mets | New York Mets @ New York Yankees | 22% | 1.24 | 1.00 | 0.82 | pending |
+| 5 | Ben Rice | New York Yankees | New York Mets @ New York Yankees | 21% | 1.24 | 1.00 | 0.87 | pending |
+| 6 | Luis García Jr. | New York Yankees | New York Mets @ New York Yankees | 21% | 1.24 | 1.00 | 0.87 | pending |
+| 7 | James Wood | Washington Nationals | Los Angeles Angels @ Washington Nationals | 20% | 1.04 | 1.00 | 1.20 | pending |
+| 8 | Griffin Conine | Miami Marlins | Los Angeles Dodgers @ Miami Marlins | 20% | 0.86 | 1.00 | 1.24 | pending |
+| 9 | Munetaka Murakami | Chicago White Sox | Chicago White Sox @ St. Louis Cardinals | 20% | 0.92 | 1.00 | 1.01 | pending |
+| 10 | Aaron Judge | New York Yankees | New York Mets @ New York Yankees | 20% | 1.24 | 1.00 | 0.87 | pending |
+
+*HR board calibration (all time): 56 homered of 312 listed · model expected 70.4*
+
+#### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
+
+*Divergence means our number disagrees with the market — it does NOT mean the market is wrong. The market price already contains every sharp model working on this game; when we disagree, the more likely explanation is that our number is worse. Until this board beats its baseline, read a large divergence as a warning about our projection, not an opportunity.*
+
+| Player | Mkt | Tier | Call | Line | Price | Book | Model | No-vig | Diverg. | EV | Result |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Cal Quantrill | Outs | A | Over | 17.5 | +134 | FanDuel | 75% | 38% | +36.7% | +75.4% | pending |
+| Logan Webb | Outs | A | Under | 17.5 | +130 | FanDuel | 68% | 40% | +28.8% | +57.4% | pending |
+| Cal Quantrill | Outs | A | Over | 16.5 | -116 | DraftKings | 81% | 50% | +31.1% | +51.4% | pending |
+| Nick Pivetta | Outs | A | Under | 14.5 | +113 | DraftKings | 70% | 43% | +27.2% | +49.9% | pending |
+| Chase Burns | Ks (P) | A | Over | 3.5 | -156 | FanDuel | 83% | 58% | +24.6% | +35.8% | pending |
+| Andrés Chaparro | Total bases | B | Over | 1.5 | +138 | DraftKings | 65% | 38% | +26.7% | +54.5% | pending |
+| Jahmai Jones | Hits | B | Under | 0.5 | +132 | DraftKings | 64% | 39% | +24.6% | +48.1% | pending |
+| Joe Ryan | Ks (P) | A | Over | 4.5 | +126 | DraftKings | 58% | 41% | +16.8% | +30.8% | pending |
+| Cal Quantrill | Ks (P) | A | Over | 3.5 | -121 | DraftKings | 71% | 52% | +19.4% | +30.0% | pending |
+| Jonah Cox | Hits | B | Under | 0.5 | +133 | DraftKings | 63% | 39% | +23.6% | +46.1% | pending |
+| Nick Pivetta | H allowed | B | Under | 3.5 | +116 | DraftKings | 72% | 43% | +28.9% | +54.4% | pending |
+| Elly De La Cruz | Total bases | B | Over | 1.5 | +133 | DraftKings | 63% | 39% | +24.0% | +46.9% | pending |
+| **Christian Scott** | Outs | A | Under | 14.5 | +134 | DraftKings | 56% | 39% | +16.6% | +30.0% | pending |
+| Bobby Witt Jr. | BB (B) | B | Over | 0.5 | +242 | DraftKings | 43% | 25% | +18.7% | +48.5% | pending |
+| Logan Webb | Ks (P) | A | Under | 4.5 | +104 | FanDuel | 60% | 46% | +14.3% | +22.9% | pending |
+
+*Scanned 1706 priced props today; 29 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
+
+*Prop calibration (all time): all calls 8778-9527 (model expected 9736.6 hits)* · *gate-clearing calls 69-61 (model expected 79.1 hits)* · *tier A 364-345 (model expected 413.1 hits)* · *tier B 3158-3068 (model expected 3560.3 hits)* · *tier C 5243-6097 (model expected 5744.7 hits)*
+
+
+**Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
+
+| Player | Mkt | Call | Line | Price | Model | No-vig | Result |
+|---|---|---|---|---|---|---|---|
+| Jahmai Jones | RBI | Under | 0.5 | -295 | 85% | 72% | pending |
+| Danny Jansen | BB (B) | Under | 0.5 | -253 | 79% | 69% | pending |
+| Jahmai Jones | BB (B) | Under | 0.5 | -284 | 81% | 71% | pending |
+| Jo Adell | BB (B) | Under | 0.5 | -315 | 83% | 73% | pending |
+| Andruw Monasterio | BB (B) | Under | 0.5 | -271 | 80% | 70% | pending |
+| Jonah Cox | RBI | Under | 0.5 | -381 | 86% | 77% | pending |
+
+> A parlay multiplies the vig on every leg. Two legs at -300 each is a -900 ticket needing ~90% to break even — only sensible if BOTH legs are genuinely mispriced, which we have not demonstrated.
+
+**Prop CLV: +0.35%** across 2905 closed rows (1451/2905 beat the close).
+
+> Positive CLV is the first real evidence this board carries information. It needs to persist over a few hundred rows before it means anything.
+
+*Ranked by EV discounted for how much evidence each market has: pitcher Ks (backtest Brier 0.2307 vs 0.2466 blind) rank at full weight, HR and RBI at half or less because neither has demonstrated skill. Price band: -250 to +250 for most markets (worse than -250 needs 71%+ to break even); HR props run to +955 since the market is priced as longshots by nature. Rows at +400 or longer carry a caution — our probability estimate is least reliable at that scale, and so is the devig.*
+
+*Bold = cleared its market's no-vig edge gate with no data-quality flags. Edge is measured against the vig-free price, never the raw line.* **Tier A** = skill-rate model with matchup (HR, pitcher Ks). **Tier B** = rate model, no platoon splits (hits, batter Ks). **Tier C** = experimental (RBI, H+R+RBI): depends on teammates reaching base, and H+R+RBI sums correlated components as independent, which understates variance — research only.
+
+<details><summary>Inputs behind each call</summary>
+
+- **Cal Quantrill** (Over 17.5): workload: season 7.9 IP/start, L5 6.4 · 7.00 IP/start -> 21.0 outs expected (negative binomial, dispersion 1.2) · ⚠️ workload clamped to 7.0 IP/start · ⚠️ edge 37% implausible — treat as model error, not market error
+- **Ryan O'Hearn** (Over 0.5): bullpen: opp staff K/BF 0.207 -> x0.88, BAA 0.244 -> x1.03 (team totals proxy for pen) · volume: batting 6th, team 38.8 PA/G -> 4.22 PA · exposure: 2.63 PA vs SP, 1.59 vs bullpen · quality: BABIP 0.304 vs career 0.297 (normal BABIP) -> AVG 0.268 regressed to 0.266 · RBI/PA: season 0.157 · L7 0.138 · L15 0.148 · L30 0.208 -> 0.156 · no usable vs-LHP split (<60 PA) — vs-all used · RBI/PA league rank: 95%ile (#19 of 328) · -> 0.66 expected RBI (negative binomial, dispersion 1.5845574266144782) · opp SP K/BF 0.191 -> x0.85 · opp SP BAA 0.244 -> x1.00 · ⚠️ no Statcast xBA — raw AVG used · ⚠️ RBI depends on teammates reaching base — not modelled · ⚠️ outside price band (-250 to +250) · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+- **Oneil Cruz** (Over 0.5): bullpen: opp staff K/BF 0.207 -> x0.88, BAA 0.244 -> x1.03 (team totals proxy for pen) · volume: batting 2nd, team 38.8 PA/G -> 4.67 PA · exposure: 2.63 PA vs SP, 2.04 vs bullpen · quality: BABIP 0.387 vs career 0.325 (running hot on balls in play) -> AVG 0.273 regressed to 0.251 · RBI/PA: season 0.150 · L7 0.179 · L15 0.169 · L30 0.220 -> 0.153 · no usable vs-LHP split (<60 PA) — vs-all used · RBI/PA league rank: 90%ile (#33 of 328) · -> 0.72 expected RBI (negative binomial, dispersion 1.5845574266144782) · opp SP K/BF 0.191 -> x0.85 · opp SP BAA 0.244 -> x1.00 · ⚠️ no Statcast xBA — raw AVG used · ⚠️ RBI depends on teammates reaching base — not modelled · ⚠️ outside price band (-250 to +250) · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+- **Logan Webb** (Under 17.5): workload: season 6.0 IP/start, L5 4.4 · 5.20 IP/start -> 15.6 outs expected (negative binomial, dispersion 1.2) · ⚠️ edge 29% implausible — treat as model error, not market error
+- **Andrés Chaparro** (Over 1.5): bullpen: opp staff K/BF 0.235 -> x1.00, BAA 0.235 -> x0.99 (team totals proxy for pen) · volume: batting 3rd, team 38.4 PA/G -> 4.52 PA · exposure: 2.42 PA vs SP, 2.10 vs bullpen · quality: BABIP 0.289 vs league 0.291 (normal BABIP) -> AVG 0.251 regressed to 0.252 · AVG: season 0.252 · L7 0.286 · L15 0.283 · L30 0.284 -> 0.258 · platoon vs RHP: 0.295 vs overall 0.252 -> x1.17 (67 PA) · AVG league rank: 58%ile (#138 of 328) · 1.98 bases per hit -> 2.53 total bases (dispersion 1.55) · opp SP K/BF 0.203 -> x0.90 · opp SP BAA 0.283 -> x1.16 · ⚠️ no Statcast xBA — raw AVG used · ⚠️ edge 27% implausible — treat as model error, not market error
+- **Nick Pivetta** (Under 3.5): workload: season 4.2 IP/start, L5 4.2 · 16.6 BF x 0.88 AB/BF x BAA 0.182 -> 2.66 hits (dispersion 1.35) · ⚠️ edge 29% implausible — treat as model error, not market error
+- **Cal Quantrill** (Over 16.5): workload: season 7.9 IP/start, L5 6.4 · 7.00 IP/start -> 21.0 outs expected (negative binomial, dispersion 1.2) · ⚠️ workload clamped to 7.0 IP/start · ⚠️ edge 31% implausible — treat as model error, not market error
+- **Keibert Ruiz** (Over 0.5): bullpen: opp staff K/BF 0.235 -> x1.00, BAA 0.235 -> x0.99 (team totals proxy for pen) · volume: batting 7th, team 38.4 PA/G -> 4.07 PA · exposure: 2.42 PA vs SP, 1.65 vs bullpen · quality: BABIP 0.298 vs career 0.264 (running hot on balls in play) -> AVG 0.289 regressed to 0.273 · 2B/AB 0.078 -> 0.34 expected · opp SP K/BF 0.203 -> x0.90 · opp SP BAA 0.283 -> x1.16 · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Nick Pivetta** (Under 14.5): workload: season 4.2 IP/start, L5 4.2 · 4.20 IP/start -> 12.6 outs expected (negative binomial, dispersion 1.2) · ⚠️ edge 27% implausible — treat as model error, not market error
+- **Bobby Witt Jr.** (Over 0.5): bullpen: opp staff K/BF 0.232 -> x0.99, BAA 0.243 -> x1.02 (team totals proxy for pen) · volume: batting 2nd, team 37.6 PA/G -> 4.52 PA · exposure: 2.55 PA vs SP, 1.97 vs bullpen · quality: BABIP 0.314 vs career 0.319 (normal BABIP) -> AVG 0.280 regressed to 0.282 · park/weather run env 1.022 -> hit factor 1.011 · BB/PA 0.108 over 4.5 PA · opp SP K/BF 0.289 -> x1.28 · opp SP BAA 0.219 -> x0.90 · ⚠️ no Statcast xBA — raw AVG used · ⚠️ walk rate depends heavily on the specific pitcher's command
+- **Jahmai Jones** (Under 0.5): bullpen: opp staff K/BF 0.191 -> x0.81, BAA 0.259 -> x1.09 (team totals proxy for pen) · volume: 1.82 PA/G season (153/84), slot unknown · exposure: 1.82 PA vs SP, 0.00 vs bullpen · quality: BABIP 0.293 vs league 0.291 (normal BABIP) -> AVG 0.216 regressed to 0.216 · park/weather run env 1.022 -> hit factor 1.011 · AVG: season 0.216 · L7 0.250 · L15 0.368 · L30 0.372 -> 0.258 · platoon vs LHP: 0.154 vs overall 0.216 -> x0.80 (88 PA) · AVG league rank: 14%ile (#283 of 328) · -> 0.201/AB over 1.6 AB · opp SP K/BF 0.217 -> x0.96 · opp SP BAA 0.234 -> x0.96 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ part-time role — playing time is the dominant uncertainty · ⚠️ no Statcast xBA — raw AVG used
+- **Elly De La Cruz** (Over 1.5): bullpen: opp staff K/BF 0.258 -> x1.10, BAA 0.222 -> x0.93 (team totals proxy for pen) · volume: batting 2nd, team 37.5 PA/G -> 4.52 PA · exposure: 2.59 PA vs SP, 1.93 vs bullpen · quality: BABIP 0.360 vs career 0.348 (normal BABIP) -> AVG 0.283 regressed to 0.279 · AVG: season 0.279 · L7 0.407 · L15 0.448 · L30 0.322 -> 0.287 · platoon vs LHP: 0.352 vs overall 0.279 -> x1.20 (165 PA) · AVG league rank: 89%ile (#36 of 328) · 1.81 bases per hit -> 2.44 total bases (dispersion 1.55) · opp SP K/BF 0.219 -> x0.97 · opp SP BAA 0.247 -> x1.02 · ⚠️ no Statcast xBA — raw AVG used
+- **Isaac Collins** (Over 0.5): bullpen: opp staff K/BF 0.232 -> x0.99, BAA 0.243 -> x1.02 (team totals proxy for pen) · volume: batting 7th, team 37.6 PA/G -> 3.98 PA · exposure: 2.55 PA vs SP, 1.43 vs bullpen · quality: BABIP 0.283 vs career 0.303 (normal BABIP) -> AVG 0.222 regressed to 0.230 · park/weather run env 1.022 -> hit factor 1.011 · BB/PA 0.120 over 4.0 PA · opp SP K/BF 0.289 -> x1.28 · opp SP BAA 0.219 -> x0.90 · ⚠️ no Statcast xBA — raw AVG used · ⚠️ walk rate depends heavily on the specific pitcher's command · ⚠️ outside price band (-250 to +250)
+- **Jonah Cox** (Under 0.5): bullpen: opp staff K/BF 0.219 -> x0.93, BAA 0.239 -> x1.00 (team totals proxy for pen) · volume: 2.31 PA/G season (113/49), slot unknown · exposure: 1.84 PA vs SP, 0.46 vs bullpen · quality: BABIP 0.431 vs league 0.291 (running hot on balls in play) -> AVG 0.284 regressed to 0.239 · park/weather run env 0.973 -> hit factor 0.986 · AVG: season 0.239 · L7 0.250 · L15 0.292 · L30 0.271 -> 0.251 · no usable vs-RHP split (<60 PA) — vs-all used · AVG league rank: 40%ile (#197 of 328) · -> 0.208/AB over 2.1 AB · opp SP K/BF 0.313 -> x1.30 · opp SP BAA 0.182 -> x0.80 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ part-time role — playing time is the dominant uncertainty · ⚠️ no Statcast xBA — raw AVG used
+- **Alika Williams** (Over 0.5): bullpen: opp staff K/BF 0.229 -> x0.97, BAA 0.250 -> x1.05 (team totals proxy for pen) · volume: batting 9th, team 37.9 PA/G -> 3.64 PA · exposure: 2.56 PA vs SP, 1.08 vs bullpen · quality: BABIP 0.312 vs league 0.291 (normal BABIP) -> AVG 0.253 regressed to 0.242 · park/weather run env 1.022 -> hit factor 1.011 · 2B/AB 0.079 -> 0.26 expected · opp SP K/BF 0.243 -> x1.08 · opp SP BAA 0.230 -> x0.95 · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+
+</details>
 
 ## 2026-09-12
 
