@@ -47,10 +47,14 @@ on:
     # pulls are collapsed into one. Five attempts because GitHub drops
     # morning slots; the first is the intended time, the rest are retries.
     - cron: "33 14 * * *"    # boards        (10:33a ET)  <- intended slot
-    - cron: "51 14 * * *"    # boards        (10:51a ET)
-    - cron: "13 15 * * *"    # boards        (11:13a ET)
-    - cron: "37 15 * * *"    # boards        (11:37a ET)
-    - cron: "9 16 * * *"     # boards        (12:09p ET)
+    - cron: "47 14 * * *"    # boards        (10:47a ET)
+    - cron: "3 15 * * *"     # boards        (11:03a ET)
+    - cron: "21 15 * * *"    # boards        (11:21a ET)
+    - cron: "39 15 * * *"    # boards        (11:39a ET)
+    - cron: "57 15 * * *"    # boards        (11:57a ET)
+    - cron: "17 16 * * *"    # boards        (12:17p ET)
+    - cron: "35 16 * * *"    # boards        (12:35p ET)
+    - cron: "53 16 * * *"    # boards        (12:53p ET)
     - cron: "47 22 * * *"    # clv           ( 6:47p ET)
     - cron: "11 23 * * *"    # clv           ( 7:11p ET)
     - cron: "39 23 * * *"    # clv           ( 7:39p ET)
