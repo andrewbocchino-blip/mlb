@@ -371,7 +371,19 @@ def build_games(run_date: str):
             # confidence label that runs backwards is worse than none, so every
             # call now reports the same tier and the board is read on its
             # probability alone.
-            _conf = "Unranked"
+            # Confidence tiers restored 2026-09-17 at the user's request. Note
+            # for the record: over 468 graded calls High delivered 52.0% vs
+            # 63.2% claimed, and Coin flip was the only calibrated tier. Read
+            # the tier as "how far the model disagrees with the price", not as
+            # a hit-rate promise — RESULTS.md tracks each tier's real rate.
+            if _metric >= 0.08:
+                _conf = "High"
+            elif _metric >= 0.04:
+                _conf = "Medium"
+            elif _metric >= 0.02:
+                _conf = "Low"
+            else:
+                _conf = "Coin flip"
             _note = ("starter splits" if any("splits applied" in r for r in nrfi_v.rationale)
                      else "team rates only")
             if not any("form/rank enrichment unavailable" in x for x in fi_extra) and fi_extra:
