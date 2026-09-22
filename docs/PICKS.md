@@ -2,6 +2,15 @@
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
 
+## 2026-09-22
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 8.7 | Arizona Diamondbacks @ Colorado Rockies | Total | Under 11.0 | 11.0 | **FanDuel +108** / DraftKings -115 |
+| A | PLAY | 7.9 | Toronto Blue Jays @ Baltimore Orioles | Total | Over 7.5 | 7.5 | **DraftKings -114** / FanDuel -115 |
+| A | PLAY | 7.9 | Milwaukee Brewers @ Philadelphia Phillies | Total | Over 7.0 | 7.0 | **FanDuel +104** / DraftKings -124 |
+| A | PLAY | 7.3 | St. Louis Cardinals @ Pittsburgh Pirates | Total | Over 7.0 | 7.0 | **FanDuel +102** / DraftKings -120 |
+
 ## 2026-09-20
 
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
