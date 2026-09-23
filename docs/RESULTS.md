@@ -27,7 +27,7 @@ Track two numbers as this accumulates: whether gate-clearing picks beat their ow
 |---|---|---|---|---|
 | **Locked bets** (ML/Total) | 437-364 | **54.6%** | — | -8.66u · CLV -2.81% |
 | NRFI/YRFI forced calls | 290-276 | **51.2%** | 58.9% | 🔴 behind its own number |
-| HR board (top 10 daily) | 71-326 | **17.9%** | 23.8% | 🔴 behind its own number |
+| HR board (top 10 daily) | 71-327 | **17.8%** | 23.9% | 🔴 behind its own number |
 | Player props (all tiers) | 14924-16145 | **48.0%** | 53.3% | 🔴 behind its own number · CLV +0.35% |
 | &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 568-564 | **50.2%** | 57.4% | 🔴 behind its own number |
 | &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 5349-5405 | **49.7%** | 55.9% | 🔴 behind its own number |
@@ -64,9 +64,9 @@ YRFI share of calls: **355/566 (63%)** — hitting 51%.
 
 ### HR board (top-10 daily)
 
-- listed and graded: **397**
-- homered: **71** · model expected **94.7**
-- actual rate **17.9%** vs predicted **23.8%** (**-6.0%**)
+- listed and graded: **398**
+- homered: **71** · model expected **95.0**
+- actual rate **17.8%** vs predicted **23.9%** (**-6.0%**)
 
 ### Prop divergence board
 
@@ -167,6 +167,18 @@ Across **64** picks with a captured close, average CLV is **-3.21%** and **17/64
 
 Last 4 graded slates in full. Most recent first.
 
+### 2026-09-23 — HR 0-1
+
+**HR board — top 10**
+
+| # | Player | Game | P(HR) | Form | Platoon | Barrel | Result |
+|---|---|---|---|---|---|---|---|
+| 9 | Pete Alonso | Toronto Blue Jays @ Baltimore Orioles | 30% | 1.29 | 1.00 | 1.43 | ❌ |
+
+*0 homered · model expected 0.3*
+
+---
+
 ### 2026-09-22 — bets 2-2 (+0.12u) · props 721-740 · NRFI 6-9 · HR 2-7
 
 **Locked bets**
@@ -259,8 +271,6 @@ Last 4 graded slates in full. Most recent first.
 | 10 | Ben Rice | Tampa Bay Rays @ New York Yankees | 28% | 0.99 | 1.19 | 1.39 | ❌ |
 
 *2 homered · model expected 2.8*
-
----
 
 ### 2026-09-20 — bets 3-3 (-0.41u) · props 687-901 · NRFI 8-6 · HR 2-7
 
@@ -450,104 +460,6 @@ Last 4 graded slates in full. Most recent first.
 | 10 | Eugenio Suárez | Chicago Cubs @ Cincinnati Reds | 29% | 1.14 | 1.07 | 1.25 | ❌ |
 
 *0 homered · model expected 3.5*
-
-### 2026-09-18 — bets 3-2 (+0.69u) · props 838-858 · NRFI 7-8 · HR 1-9
-
-**Locked bets**
-
-| Market | Pick | Line | Price | Score | CLV | Result |
-|---|---|---|---|---|---|---|
-| Moneyline | Chicago Cubs ML | — | -124 | 9.5 | — | ❌ -1.00u |
-| Total | Under 10.5 | 10.5 | -110 | 9.5 | — | ✅ +0.91u |
-| F5 Total | F5 Over 4.5 | 4.5 | -102 | 9.1 | — | ❌ -1.00u |
-| F5 Total | F5 Over 4.5 | 4.5 | -122 | 8.0 | — | ✅ +0.82u |
-| Moneyline | Washington Nationals ML | — | -104 | 7.5 | — | ✅ +0.96u |
-
-**Recommended props** (27 of 1696 priced cleared the gate)
-
-| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
-|---|---|---|---|---|---|---|---|---|
-| Tyler Glasnow | Outs | Under | 16.5 | +118 | 61% | 18 | — | ❌ |
-| Kyle Leahy | H allowed | Over | 2.5 | +144 | 58% | 5 | — | ✅ |
-| Randy Dobnak | Outs | Over | 15.5 | +119 | 56% | 11 | — | ❌ |
-| Cade Cavalli | Outs | Under | 17.5 | -102 | 60% | 15 | — | ✅ |
-| Dylan Cease | Outs | Under | 17.5 | +123 | 53% | 8 | — | ✅ |
-| Tyler Phillips | Outs | Over | 14.5 | -102 | 58% | 11 | — | ❌ |
-| Tyler Glasnow | H allowed | Under | 3.5 | +106 | 59% | 3 | — | ✅ |
-| Ian Seymour | Outs | Over | 14.5 | -192 | 75% | 15 | — | ✅ |
-| Grayson Rodriguez | Outs | Under | 16.5 | -112 | 59% | 20 | — | ❌ |
-| Nick Pivetta | H allowed | Under | 3.5 | -107 | 61% | 4 | — | ❌ |
-| Gerrit Cole | BB (P) | Under | 1.5 | -125 | 67% | 0 | — | ✅ |
-| Chase Burns | BB (P) | Over | 1.5 | +172 | 43% | 2 | — | ✅ |
-| Ian Seymour | H allowed | Over | 3.5 | -131 | 66% | 7 | — | ✅ |
-| Kyle Leahy | Outs | Over | 8.5 | -181 | 71% | 9 | — | ✅ |
-| Paul Skenes | Outs | Under | 17.5 | -128 | 62% | 18 | — | ❌ |
-| Dustin May | BB (P) | Under | 1.5 | -106 | 60% | 1 | — | ✅ |
-| Eduardo Rodriguez | BB (P) | Under | 1.5 | +146 | 48% | 4 | — | ❌ |
-| Ranger Suarez | H allowed | Under | 5.5 | -115 | 61% | 3 | — | ✅ |
-| Chase Burns | H allowed | Over | 2.5 | -101 | 57% | 4 | — | ✅ |
-| Peter Lambert | H allowed | Under | 4.5 | +110 | 54% | 6 | — | ❌ |
-| Ranger Suarez | Outs | Under | 17.5 | -114 | 57% | 17 | — | ✅ |
-| Paul Skenes | H allowed | Under | 4.5 | +104 | 55% | 6 | — | ❌ |
-| Clay Holmes | H allowed | Under | 4.5 | -103 | 57% | 3 | — | ✅ |
-| Peter Lambert | Outs | Under | 17.5 | -137 | 62% | 16 | — | ✅ |
-| Tyler Phillips | BB (P) | Over | 1.5 | -112 | 57% | 1 | — | ❌ |
-| Dustin May | H allowed | Under | 4.5 | -143 | 64% | 6 | — | ❌ |
-| Connor Prielipp | BB (P) | Over | 1.5 | +117 | 50% | 2 | — | ✅ |
-
-*Recommended: **16-11** (59%) against 59% predicted.*
-
-**Parlay-leg candidates** (80 priced beyond the -250 straight-bet floor)
-
-| Player | Mkt | Call | Line | Price | Model | Actual | Result |
-|---|---|---|---|---|---|---|---|
-| Jahmai Jones | Runs | Under | 0.5 | -258 | 78% | 1 | ❌ |
-| Derek Hill | Runs | Under | 0.5 | -252 | 76% | 1 | ❌ |
-| Trea Turner | Hits | Under | 1.5 | -264 | 74% | 1 | ✅ |
-| Jesus Sanchez | Runs | Under | 0.5 | -285 | 75% | 0 | ✅ |
-| Christian Vazquez | Runs | Under | 0.5 | -265 | 72% | 0 | ✅ |
-| Jose Ramirez | Hits | Under | 1.5 | -271 | 73% | 2 | ❌ |
-| Cal Raleigh | Hits | Under | 1.5 | -271 | 73% | 0 | ✅ |
-| Taylor Trammell | Runs | Under | 0.5 | -264 | 72% | 0 | ✅ |
-
-*Legs: **54-26**. A 80-leg parlay of these would NOT have cashed — every leg must land.*
-
-**NRFI / YRFI forced calls**
-
-| Game | Call | Confidence | Model | Market | Result |
-|---|---|---|---|---|---|
-| Chicago Cubs @ Cincinnati Reds | **NRFI** | Unranked | 58% | 54% | ❌ |
-| Kansas City Royals @ Pittsburgh Pirates | **NRFI** | Unranked | 53% | 52% | ❌ |
-| Milwaukee Brewers @ Baltimore Orioles | **YRFI** | Unranked | 55% | 47% | ❌ |
-| Athletics @ Cleveland Guardians | **YRFI** | Unranked | 66% | 46% | ✅ |
-| Boston Red Sox @ Tampa Bay Rays | **NRFI** | Unranked | 60% | 57% | ❌ |
-| Philadelphia Phillies @ New York Mets | **YRFI** | Unranked | 54% | 50% | ✅ |
-| Detroit Tigers @ Chicago White Sox | **NRFI** | Unranked | 51% | 52% | ❌ |
-| Toronto Blue Jays @ Texas Rangers | **YRFI** | Unranked | 54% | 46% | ❌ |
-| Seattle Mariners @ Colorado Rockies | **YRFI** | Unranked | 57% | 54% | ✅ |
-| Atlanta Braves @ Houston Astros | **YRFI** | Unranked | 54% | 52% | ❌ |
-| Washington Nationals @ St. Louis Cardinals | **NRFI** | Unranked | 63% | 53% | ❌ |
-| Minnesota Twins @ Los Angeles Angels | **YRFI** | Unranked | 62% | 47% | ✅ |
-| Miami Marlins @ San Diego Padres | **NRFI** | Unranked | 51% | 55% | ✅ |
-| New York Yankees @ Arizona Diamondbacks | **YRFI** | Unranked | 57% | 51% | ✅ |
-| San Francisco Giants @ Los Angeles Dodgers | **YRFI** | Unranked | 62% | 47% | ✅ |
-
-**HR board — top 10**
-
-| # | Player | Game | P(HR) | Form | Platoon | Barrel | Result |
-|---|---|---|---|---|---|---|---|
-| 1 | Pete Crow-Armstrong | Chicago Cubs @ Cincinnati Reds | 42% | 1.35 | 1.21 | 1.37 | ❌ |
-| 2 | Kyle Schwarber | Philadelphia Phillies @ New York Mets | 33% | 1.01 | 1.01 | 1.52 | ❌ |
-| 3 | Spencer Torkelson | Detroit Tigers @ Chicago White Sox | 31% | 1.11 | 1.30 | 1.29 | ❌ |
-| 4 | Hunter Goodman | Seattle Mariners @ Colorado Rockies | 30% | 0.91 | 1.21 | 1.44 | ❌ |
-| 5 | Kazuma Okamoto | Toronto Blue Jays @ Texas Rangers | 29% | 1.25 | 1.03 | 1.37 | ❌ |
-| 6 | Yordan Alvarez | Atlanta Braves @ Houston Astros | 29% | 0.90 | 1.12 | 1.53 | ❌ |
-| 7 | Elly De La Cruz | Chicago Cubs @ Cincinnati Reds | 28% | 1.30 | 0.97 | 1.52 | ❌ |
-| 8 | Riley Greene | Detroit Tigers @ Chicago White Sox | 28% | 1.13 | 1.11 | 1.45 | ✅ |
-| 9 | Randal Grichuk | Detroit Tigers @ Chicago White Sox | 27% | 1.05 | 1.44 | 1.20 | ❌ |
-| 10 | Eduardo Valencia | Detroit Tigers @ Chicago White Sox | 27% | 0.91 | 1.00 | 1.60 | ❌ |
-
-*1 homered · model expected 3.0*
 
 > **CLV caveat.** Beating the close is evidence of skill only when the move came from the market re-evaluating information we also had. If a scratch or injury broke after we locked, we collect the CLV without having known anything — that is luck wearing the costume of skill. Read CLV in aggregate, never on a single bet.
 
