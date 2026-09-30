@@ -2,6 +2,12 @@
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
 
+## 2026-09-30
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 8.0 | Chicago Cubs @ San Diego Padres | Total | Over 7.0 | 7.0 | **FanDuel +106** / DraftKings -126 |
+
 ## 2026-09-29
 
 *No locked picks — model passed the slate. Boards below are calibration records, not bets.*
@@ -11,12 +17,12 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | Game | Call | Confidence | Model P | Market P | Edge | Result |
 |---|---|---|---|---|---|---|
-| Chicago White Sox @ Houston Astros | **YRFI** | High | 69% | 50% | +19.8% | pending |
-| Chicago Cubs @ San Diego Padres | **NRFI** | Medium | 59% | 54% | +5.4% | pending |
-| Boston Red Sox @ New York Yankees | **NRFI** | Coin flip | 60% | 60% | +0.8% | pending |
-| Philadelphia Phillies @ Atlanta Braves | **NRFI** | Coin flip | 56% | 56% | +0.1% | pending |
+| Chicago White Sox @ Houston Astros | **YRFI** | High | 69% | 50% | +19.8% | ✅ HIT |
+| Chicago Cubs @ San Diego Padres | **NRFI** | Medium | 59% | 54% | +5.4% | ❌ MISS |
+| Boston Red Sox @ New York Yankees | **NRFI** | Coin flip | 60% | 60% | +0.8% | ✅ HIT |
+| Philadelphia Phillies @ Atlanta Braves | **NRFI** | Coin flip | 56% | 56% | +0.1% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -128,7 +134,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | St. Louis Cardinals @ Milwaukee Brewers | **NRFI** | Coin flip | 54% | 58% | -3.6% | ❌ MISS |
 | Chicago Cubs @ Boston Red Sox | **NRFI** | Coin flip | 54% | 53% | +0.7% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -239,7 +245,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Houston Astros @ Athletics | **YRFI** | Coin flip | 54% | 55% | -0.3% | ✅ HIT |
 | Los Angeles Dodgers @ San Francisco Giants | **NRFI** | Coin flip | 51% | 57% | -6.1% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -357,7 +363,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Pittsburgh Pirates @ Detroit Tigers | **NRFI** | Coin flip | 54% | 54% | +0.0% | ✅ HIT |
 | Atlanta Braves @ Miami Marlins | **NRFI** | Coin flip | 51% | 52% | -1.3% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -468,7 +474,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Cincinnati Reds @ Atlanta Braves | **NRFI** | Medium | 53% | 48% | +4.5% | ❌ MISS |
 | San Diego Padres @ Los Angeles Dodgers | **YRFI** | Low | 51% | 49% | +2.4% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -583,7 +589,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | San Diego Padres @ Los Angeles Dodgers | **YRFI** | Coin flip | 52% | 51% | +0.9% | ❌ MISS |
 | Cleveland Guardians @ Boston Red Sox | **NRFI** | Coin flip | 50% | 58% | -8.1% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -701,7 +707,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Cleveland Guardians @ Boston Red Sox | **YRFI** | Unranked | 50% | 40% | +10.7% | ❌ MISS |
 | Houston Astros @ Seattle Mariners | **YRFI** | Unranked | 50% | 49% | +1.1% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -818,7 +824,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | New York Yankees @ Arizona Diamondbacks | **YRFI** | Unranked | 52% | 47% | +5.3% | ✅ HIT |
 | Minnesota Twins @ Los Angeles Angels | **NRFI** | Unranked | 51% | 48% | +2.6% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -933,7 +939,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Athletics @ Cleveland Guardians | **YRFI** | Unranked | 51% | 48% | +2.6% | ✅ HIT |
 | Miami Marlins @ San Diego Padres | **NRFI** | Unranked | 50% | 52% | -1.6% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -1050,7 +1056,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Detroit Tigers @ Chicago White Sox | **NRFI** | Unranked | 51% | 52% | -0.4% | ❌ MISS |
 | Miami Marlins @ San Diego Padres | **NRFI** | Unranked | 51% | 55% | -4.1% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -1158,7 +1164,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Minnesota Twins @ Los Angeles Angels | **NRFI** | Unranked | 51% | 50% | +0.4% | ❌ MISS |
 | San Diego Padres @ Colorado Rockies | **NRFI** | Unranked | 50% | 44% | +6.4% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -1276,7 +1282,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Kansas City Royals @ Houston Astros | **YRFI** | Unranked | 52% | 55% | -3.1% | ❌ MISS |
 | Los Angeles Dodgers @ Cincinnati Reds | **YRFI** | Unranked | 51% | 48% | +2.5% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -1393,7 +1399,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Los Angeles Dodgers @ Cincinnati Reds | **NRFI** | Coin flip | 56% | 55% | +1.0% | ✅ HIT |
 | Baltimore Orioles @ New York Mets | **YRFI** | Coin flip | 50% | 50% | -0.1% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -1503,7 +1509,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | San Francisco Giants @ St. Louis Cardinals | **YRFI** | Medium | 53% | 46% | +6.8% | ❌ MISS |
 | New York Yankees @ Minnesota Twins | **YRFI** | Coin flip | 51% | 50% | +0.7% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -1621,7 +1627,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Baltimore Orioles @ Toronto Blue Jays | **NRFI** | Coin flip | 54% | 58% | -3.8% | ✅ HIT |
 | Houston Astros @ Tampa Bay Rays | **NRFI** | Coin flip | 50% | 50% | +0.3% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -1739,7 +1745,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Houston Astros @ Tampa Bay Rays | **NRFI** | Low | 56% | 53% | +3.4% | ❌ MISS |
 | Kansas City Royals @ Boston Red Sox | **NRFI** | Coin flip | 51% | 52% | -1.3% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -1860,7 +1866,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | San Diego Padres @ San Francisco Giants | **YRFI** | Medium | 54% | 47% | +7.1% | ✅ HIT |
 | Los Angeles Dodgers @ Miami Marlins | **NRFI** | Coin flip | 56% | 55% | +0.5% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -1963,7 +1969,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Houston Astros @ Philadelphia Phillies | **YRFI** | Low | 53% | 51% | +2.4% | ❌ MISS |
 | Colorado Rockies @ New York Yankees | **YRFI** | Coin flip | 55% | 53% | +1.9% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -2090,7 +2096,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | St. Louis Cardinals @ San Francisco Giants | **NRFI** | Coin flip | 55% | 56% | -1.0% | ❌ MISS |
 | Texas Rangers @ Seattle Mariners | **NRFI** | Coin flip | 51% | 53% | -1.8% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -2202,7 +2208,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Cleveland Guardians @ Baltimore Orioles | **NRFI** | Coin flip | 56% | 56% | -0.2% | ✅ HIT |
 | Toronto Blue Jays @ Athletics | **NRFI** | Coin flip | 50% | 55% | -4.7% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -2318,7 +2324,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Arizona Diamondbacks @ Houston Astros | **YRFI** | Low | 50% | 48% | +2.3% | ✅ HIT |
 | Los Angeles Angels @ Pittsburgh Pirates | **NRFI** | Coin flip | 54% | 59% | -4.9% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -2434,7 +2440,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Washington Nationals @ Los Angeles Dodgers | **NRFI** | Coin flip | 57% | 56% | +0.7% | ❌ MISS |
 | Chicago Cubs @ Miami Marlins | **YRFI** | Coin flip | 51% | 51% | +0.2% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -2555,7 +2561,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Detroit Tigers @ Cleveland Guardians | **NRFI** | Coin flip | 52% | 53% | -1.7% | ✅ HIT |
 | New York Yankees @ San Diego Padres | **NRFI** | Coin flip | 51% | 57% | -5.8% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -2666,7 +2672,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Toronto Blue Jays @ Cleveland Guardians | **NRFI** | Coin flip | 52% | 55% | -2.5% | ✅ HIT |
 | St. Louis Cardinals @ Los Angeles Dodgers | **NRFI** | Coin flip | 51% | 56% | -5.0% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -2784,7 +2790,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Baltimore Orioles @ Colorado Rockies | **YRFI** | Coin flip | 51% | 56% | -5.3% | ❌ MISS |
 | Atlanta Braves @ Washington Nationals | **YRFI** | Coin flip | 50% | 52% | -1.7% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -2900,7 +2906,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Detroit Tigers @ Minnesota Twins | **NRFI** | Coin flip | 51% | 50% | +1.6% | ❌ MISS |
 | Miami Marlins @ Kansas City Royals | **YRFI** | Coin flip | 51% | 56% | -4.7% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -3010,7 +3016,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Seattle Mariners @ Boston Red Sox | **YRFI** | Medium | 52% | 44% | +7.4% | ✅ HIT |
 | Athletics @ Texas Rangers | **NRFI** | Coin flip | 53% | 56% | -2.7% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -3125,7 +3131,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Kansas City Royals @ Cleveland Guardians | **YRFI** | Medium | 53% | 48% | +4.6% | ✅ HIT |
 | Baltimore Orioles @ Athletics | **YRFI** | Coin flip | 55% | 54% | +1.3% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -3244,7 +3250,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Arizona Diamondbacks @ San Francisco Giants | **NRFI** | Coin flip | 51% | 52% | -1.4% | ❌ MISS |
 | Boston Red Sox @ New York Yankees | **NRFI** | Coin flip | 51% | 56% | -5.2% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -3359,7 +3365,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Kansas City Royals @ Cleveland Guardians | **YRFI** | Coin flip | 52% | 50% | +1.5% | ❌ MISS |
 | Texas Rangers @ Milwaukee Brewers | **NRFI** | Coin flip | 51% | 51% | -0.2% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -3464,7 +3470,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Los Angeles Dodgers @ Atlanta Braves | **NRFI** | Coin flip | 59% | 60% | -1.0% | ❌ MISS |
 | Kansas City Royals @ Toronto Blue Jays | **NRFI** | Coin flip | 54% | 52% | +1.8% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -3581,7 +3587,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Tampa Bay Rays @ Detroit Tigers | **YRFI** | Low | 51% | 48% | +3.3% | ❌ MISS |
 | Texas Rangers @ Chicago White Sox | **NRFI** | Coin flip | 52% | 55% | -3.0% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -3697,7 +3703,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Houston Astros @ New York Yankees | **YRFI** | Coin flip | 53% | 55% | -1.8% | ❌ MISS |
 | Boston Red Sox @ Miami Marlins | **NRFI** | Coin flip | 52% | 55% | -3.2% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -3810,7 +3816,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Cleveland Guardians @ Los Angeles Angels | **NRFI** | Coin flip | 53% | 52% | +0.3% | ✅ HIT |
 | Cincinnati Reds @ San Francisco Giants | **NRFI** | Coin flip | 53% | 57% | -4.5% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -3937,7 +3943,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | San Francisco Giants @ Boston Red Sox | **NRFI** | Coin flip | 57% | 55% | +1.8% | ❌ MISS |
 | Detroit Tigers @ Kansas City Royals | **NRFI** | Coin flip | 50% | 52% | -1.5% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -4069,7 +4075,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Tampa Bay Rays @ Baltimore Orioles | **YRFI** | Low | 52% | 48% | +3.0% | ❌ MISS |
 | Detroit Tigers @ Kansas City Royals | **NRFI** | Coin flip | 51% | 51% | -0.1% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -4190,7 +4196,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Washington Nationals @ Miami Marlins | **NRFI** | Coin flip | 52% | 52% | -0.7% | ✅ HIT |
 | Toronto Blue Jays @ New York Yankees | **NRFI** | Coin flip | 51% | 55% | -3.8% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -4302,7 +4308,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Atlanta Braves @ Chicago White Sox | **NRFI** | Low | 51% | 48% | +2.9% | ✅ HIT |
 | Washington Nationals @ Texas Rangers | **NRFI** | Coin flip | 54% | 52% | +1.9% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -4422,7 +4428,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Miami Marlins @ Philadelphia Phillies | **NRFI** | Low | 51% | 48% | +3.1% | ✅ HIT |
 | Los Angeles Dodgers @ Colorado Rockies | **YRFI** | Coin flip | 53% | 58% | -5.0% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -4547,7 +4553,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Atlanta Braves @ Minnesota Twins | **YRFI** | Coin flip | 57% | 55% | +1.6% | ✅ HIT |
 | Chicago White Sox @ Chicago Cubs | **NRFI** | Coin flip | 52% | 52% | -0.2% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -4655,7 +4661,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | St. Louis Cardinals @ Chicago Cubs | **YRFI** | Coin flip | 51% | 52% | -0.8% | ✅ HIT |
 | Boston Red Sox @ Pittsburgh Pirates | **NRFI** | Coin flip | 51% | 51% | -0.2% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -4763,7 +4769,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Boston Red Sox @ Pittsburgh Pirates | **NRFI** | Coin flip | 54% | 52% | +1.1% | ✅ HIT |
 | St. Louis Cardinals @ Chicago Cubs | **YRFI** | Coin flip | 53% | 53% | +0.4% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -4868,7 +4874,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Milwaukee Brewers @ Los Angeles Dodgers | **NRFI** | Low | 50% | 48% | +2.2% | ❌ MISS |
 | Seattle Mariners @ Houston Astros | **NRFI** | Coin flip | 54% | 54% | +0.7% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -4962,7 +4968,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Milwaukee Brewers @ Los Angeles Dodgers | **NRFI** | Medium | 53% | 47% | +6.3% | ✅ HIT |
 | Philadelphia Phillies @ Minnesota Twins | **NRFI** | Low | 51% | 47% | +3.6% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -5068,7 +5074,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Philadelphia Phillies @ St. Louis Cardinals | **NRFI** | Low | 53% | 50% | +2.6% | ✅ HIT |
 | Kansas City Royals @ Los Angeles Dodgers | **YRFI** | Coin flip | 59% | 58% | +1.1% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -5178,7 +5184,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Texas Rangers @ Los Angeles Angels | **YRFI** | Coin flip | 53% | 56% | -3.1% | ✅ HIT |
 | Cincinnati Reds @ Chicago White Sox | **YRFI** | Coin flip | 51% | 50% | +1.4% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -5264,7 +5270,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Detroit Tigers @ San Francisco Giants | **YRFI** | High | 66% | — (no market) | — | ❌ MISS |
 | Tampa Bay Rays @ Seattle Mariners | **YRFI** | High | 65% | — (no market) | — | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -5316,7 +5322,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Houston Astros @ San Diego Padres | **NRFI** | Coin flip | 51% | 55% | -4.1% | ❌ MISS |
 | Los Angeles Dodgers @ Arizona Diamondbacks | **YRFI** | Coin flip | 51% | 52% | -1.3% | ❌ MISS |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
@@ -5372,7 +5378,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Colorado Rockies @ St. Louis Cardinals | **YRFI** | Coin flip | 51% | 52% | -0.9% | ❌ MISS |
 | Baltimore Orioles @ Texas Rangers | **NRFI** | Coin flip | 50% | 55% | -4.6% | ✅ HIT |
 
-*Board calibration (all time): High 148-142 · Medium 59-51 · Low 20-28 · Coin flip 54-43*
+*Board calibration (all time): High 149-142 · Medium 59-52 · Low 20-28 · Coin flip 55-44*
 
 #### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
 
