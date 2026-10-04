@@ -26,7 +26,7 @@ Track two numbers as this accumulates: whether gate-clearing picks beat their ow
 | Board | Record | Hit rate | Model predicted | Standing |
 |---|---|---|---|---|
 | **Locked bets** (ML/Total) | 446-375 | **54.3%** | — | -11.83u · CLV -2.81% |
-| NRFI/YRFI forced calls | 327-309 | **51.4%** | 59.0% | 🔴 behind its own number |
+| NRFI/YRFI forced calls | 328-312 | **51.2%** | 59.0% | 🔴 behind its own number |
 | HR board (top 10 daily) | 78-367 | **17.5%** | 24.8% | 🔴 behind its own number |
 | Player props (all tiers) | 17768-19409 | **47.8%** | 53.0% | 🔴 behind its own number · CLV +0.35% |
 | &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 653-663 | **49.6%** | 57.2% | 🔴 behind its own number |
@@ -50,15 +50,15 @@ These boards are calibration records, not bets. The question is not whether they
 
 | Confidence | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|
-| High | 293 | 151 | 142 | 52% | 63% | -12% |
-| Medium | 112 | 60 | 52 | 54% | 56% | -3% |
-| Low | 48 | 20 | 28 | 42% | 54% | -12% |
+| High | 295 | 151 | 144 | 51% | 63% | -12% |
+| Medium | 113 | 61 | 52 | 54% | 56% | -2% |
+| Low | 49 | 20 | 29 | 41% | 53% | -13% |
 | Coin flip | 100 | 56 | 44 | 56% | 53% | +3% |
-| **All** | **636** | **327** | **309** | **51%** | **59%** | **-8%** |
+| **All** | **640** | **328** | **312** | **51%** | **59%** | **-8%** |
 
-YRFI share of calls: **402/636 (63%)** — hitting 51%.
+YRFI share of calls: **405/640 (63%)** — hitting 51%.
 
-**Naive baseline check.** First innings were scoreless in **50.2%** of these games, so always calling NRFI scores **50.2%**. The model scores **51.4%**.
+**Naive baseline check.** First innings were scoreless in **50.5%** of these games, so always calling NRFI scores **50.5%**. The model scores **51.2%**.
 
 > ⚠️ **Confidence is inverted**: the High tier is hitting BELOW the Coin flip tier. Whatever the confidence metric is measuring, it is not the probability of being right. Calls at this tier should carry no weight until this reverses.
 
@@ -167,6 +167,19 @@ Across **64** picks with a captured close, average CLV is **-3.21%** and **17/64
 
 Last 4 graded slates in full. Most recent first.
 
+### 2026-10-03 — NRFI 1-3
+
+**NRFI / YRFI forced calls**
+
+| Game | Call | Confidence | Model | Market | Result |
+|---|---|---|---|---|---|
+| Chicago White Sox @ Cleveland Guardians | **YRFI** | High | 64% | 42% | ❌ |
+| Atlanta Braves @ Los Angeles Dodgers | **YRFI** | High | 60% | 48% | ❌ |
+| San Diego Padres @ Milwaukee Brewers | **NRFI** | Medium | 58% | 53% | ✅ |
+| New York Yankees @ Tampa Bay Rays | **YRFI** | Low | 51% | 47% | ❌ |
+
+---
+
 ### 2026-10-01 — NRFI 1-0
 
 **NRFI / YRFI forced calls**
@@ -174,8 +187,6 @@ Last 4 graded slates in full. Most recent first.
 | Game | Call | Confidence | Model | Market | Result |
 |---|---|---|---|---|---|
 | Philadelphia Phillies @ Atlanta Braves | **YRFI** | High | 56% | 48% | ✅ |
-
----
 
 ### 2026-09-30 — bets 0-1 (-1.00u) · NRFI 3-0
 
@@ -203,84 +214,6 @@ Last 4 graded slates in full. Most recent first.
 | Chicago Cubs @ San Diego Padres | **NRFI** | Medium | 59% | 54% | ❌ |
 | Philadelphia Phillies @ Atlanta Braves | **NRFI** | Coin flip | 56% | 56% | ❌ |
 | Boston Red Sox @ New York Yankees | **NRFI** | Coin flip | 60% | 60% | ✅ |
-
-### 2026-09-27 — bets 2-0 (+1.91u) · props 568-734 · NRFI 3-9 · HR 2-6
-
-**Locked bets**
-
-| Market | Pick | Line | Price | Score | CLV | Result |
-|---|---|---|---|---|---|---|
-| F5 Total | F5 Over 4.5 | 4.5 | -104 | 9.4 | — | ✅ +0.96u |
-| Total | Over 7.5 | 7.5 | -105 | 7.5 | — | ✅ +0.95u |
-
-**Recommended props** (15 of 1302 priced cleared the gate)
-
-| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
-|---|---|---|---|---|---|---|---|---|
-| Shota Imanaga | Outs | Over | 11.5 | -122 | 70% | 3 | — | ❌ |
-| Logan Gilbert | Outs | Under | 17.5 | +116 | 57% | 12 | — | ✅ |
-| Andre Pallante | Outs | Over | 11.5 | -131 | 70% | 15 | — | ✅ |
-| Kyle Freeland | Outs | Under | 14.5 | +127 | 51% | 12 | — | ✅ |
-| JR Ritchie | BB (P) | Over | 1.5 | -113 | 67% | 2 | — | ✅ |
-| Shota Imanaga | H allowed | Over | 3.5 | +120 | 55% | 1 | — | ❌ |
-| Jared Jones | Outs | Over | 15.5 | +129 | 49% | 12 | — | ❌ |
-| Andre Pallante | H allowed | Over | 3.5 | -103 | 59% | 10 | — | ✅ |
-| Dean Kremer | BB (P) | Under | 2.5 | -142 | 69% | 0 | — | ✅ |
-| Max Scherzer | BB (P) | Over | 1.5 | +120 | 53% | 1 | — | ❌ |
-| Daniel Lynch IV | BB (P) | Over | 1.5 | +121 | 53% | 0 | — | ❌ |
-| Yusei Kikuchi | H allowed | Over | 4.5 | +102 | 55% | 6 | — | ✅ |
-| Dean Kremer | H allowed | Under | 4.5 | -115 | 58% | 3 | — | ✅ |
-| Kyle Freeland | BB (P) | Under | 1.5 | -161 | 67% | 0 | — | ✅ |
-| JR Ritchie | H allowed | Over | 4.5 | +109 | 51% | 7 | — | ✅ |
-
-*Recommended: **10-5** (67%) against 59% predicted.*
-
-**Parlay-leg candidates** (25 priced beyond the -250 straight-bet floor)
-
-| Player | Mkt | Call | Line | Price | Model | Actual | Result |
-|---|---|---|---|---|---|---|---|
-| Ernie Clement | RBI | Under | 0.5 | -263 | 73% | 0 | ✅ |
-| Carlos Cortes | Runs | Under | 0.5 | -264 | 70% | 0 | ✅ |
-| Shay Whitcomb | Runs | Under | 0.5 | -287 | 71% | 1 | ❌ |
-| Jacob Gonzalez | Runs | Under | 0.5 | -281 | 70% | 0 | ✅ |
-| Taylor Trammell | RBI | Under | 0.5 | -284 | 70% | 0 | ✅ |
-| Jake Mangum | RBI | Under | 0.5 | -345 | 73% | 1 | ❌ |
-| Sal Frelick | Runs | Under | 0.5 | -260 | 68% | 0 | ✅ |
-| Jake Mangum | Runs | Under | 0.5 | -255 | 68% | 0 | ✅ |
-
-*Legs: **21-4**. A 25-leg parlay of these would NOT have cashed — every leg must land.*
-
-**NRFI / YRFI forced calls**
-
-| Game | Call | Confidence | Model | Market | Result |
-|---|---|---|---|---|---|
-| Los Angeles Dodgers @ San Francisco Giants | **YRFI** | High | 56% | 47% | ❌ |
-| Cincinnati Reds @ Toronto Blue Jays | **YRFI** | High | 63% | 52% | ❌ |
-| Cleveland Guardians @ Kansas City Royals | **YRFI** | High | 72% | 46% | ✅ |
-| Pittsburgh Pirates @ Detroit Tigers | **NRFI** | High | 64% | 54% | ❌ |
-| Arizona Diamondbacks @ San Diego Padres | **YRFI** | High | 62% | 50% | ❌ |
-| Los Angeles Angels @ Seattle Mariners | **YRFI** | High | 56% | 41% | ❌ |
-| Colorado Rockies @ Chicago White Sox | **YRFI** | High | 78% | 49% | ❌ |
-| Atlanta Braves @ Miami Marlins | **NRFI** | High | 64% | 50% | ✅ |
-| Houston Astros @ Athletics | **YRFI** | Medium | 63% | 58% | ❌ |
-| Texas Rangers @ Minnesota Twins | **YRFI** | Medium | 51% | 45% | ✅ |
-| Chicago Cubs @ Boston Red Sox | **NRFI** | Coin flip | 54% | 53% | ❌ |
-| St. Louis Cardinals @ Milwaukee Brewers | **NRFI** | Coin flip | 54% | 58% | ❌ |
-
-**HR board — top 10**
-
-| # | Player | Game | P(HR) | Form | Platoon | Barrel | Result |
-|---|---|---|---|---|---|---|---|
-| 1 | Randal Grichuk | Colorado Rockies @ Chicago White Sox | 36% | 1.13 | 1.45 | 1.20 | ✅ |
-| 2 | Yordan Alvarez | Houston Astros @ Athletics | 35% | 0.97 | 1.14 | 1.51 | ❌ |
-| 4 | Hunter Goodman | Colorado Rockies @ Chicago White Sox | 34% | 1.03 | 1.01 | 1.42 | ❌ |
-| 5 | Elly De La Cruz | Cincinnati Reds @ Toronto Blue Jays | 33% | 1.20 | 1.01 | 1.52 | ❌ |
-| 6 | Kazuma Okamoto | Cincinnati Reds @ Toronto Blue Jays | 32% | 1.05 | 1.25 | 1.34 | ❌ |
-| 7 | Pete Crow-Armstrong | Chicago Cubs @ Boston Red Sox | 31% | 1.13 | 1.21 | 1.35 | ❌ |
-| 9 | Griffin Conine | Atlanta Braves @ Miami Marlins | 30% | 0.94 | 1.38 | 1.48 | ✅ |
-| 10 | Munetaka Murakami | Colorado Rockies @ Chicago White Sox | 28% | 0.96 | 0.74 | 1.60 | ❌ |
-
-*2 homered · model expected 2.6*
 
 > **CLV caveat.** Beating the close is evidence of skill only when the move came from the market re-evaluating information we also had. If a scratch or injury broke after we locked, we collect the CLV without having known anything — that is luck wearing the costume of skill. Read CLV in aggregate, never on a single bet.
 
