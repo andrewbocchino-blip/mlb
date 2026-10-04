@@ -1,1 +1,9 @@
-requests
+# nfl_model / nfl_lines / nfl_baselines need only the stdlib.
+# pandas + pyarrow read nflverse play-by-play parquet (nfl_fit, nfl_backtest,
+# nfl_picks matchup/usage, nfl_proj game logs).
+# scipy is required by nfl_proj.py for the negative-binomial and normal
+# distributions behind the prop model — without it the Refresh board step
+# fails with ModuleNotFoundError on every capture run.
+pandas>=2.0
+pyarrow>=14.0
+scipy>=1.11
