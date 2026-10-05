@@ -26,7 +26,7 @@ Track two numbers as this accumulates: whether gate-clearing picks beat their ow
 | Board | Record | Hit rate | Model predicted | Standing |
 |---|---|---|---|---|
 | **Locked bets** (ML/Total) | 446-375 | **54.3%** | — | -11.83u · CLV -2.81% |
-| NRFI/YRFI forced calls | 328-312 | **51.2%** | 59.0% | 🔴 behind its own number |
+| NRFI/YRFI forced calls | 328-314 | **51.1%** | 59.0% | 🔴 behind its own number |
 | HR board (top 10 daily) | 78-367 | **17.5%** | 24.8% | 🔴 behind its own number |
 | Player props (all tiers) | 17768-19409 | **47.8%** | 53.0% | 🔴 behind its own number · CLV +0.35% |
 | &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 653-663 | **49.6%** | 57.2% | 🔴 behind its own number |
@@ -52,13 +52,13 @@ These boards are calibration records, not bets. The question is not whether they
 |---|---|---|---|---|---|---|
 | High | 295 | 151 | 144 | 51% | 63% | -12% |
 | Medium | 113 | 61 | 52 | 54% | 56% | -2% |
-| Low | 49 | 20 | 29 | 41% | 53% | -13% |
-| Coin flip | 100 | 56 | 44 | 56% | 53% | +3% |
-| **All** | **640** | **328** | **312** | **51%** | **59%** | **-8%** |
+| Low | 50 | 20 | 30 | 40% | 54% | -14% |
+| Coin flip | 101 | 56 | 45 | 55% | 53% | +2% |
+| **All** | **642** | **328** | **314** | **51%** | **59%** | **-8%** |
 
-YRFI share of calls: **405/640 (63%)** — hitting 51%.
+YRFI share of calls: **405/642 (63%)** — hitting 51%.
 
-**Naive baseline check.** First innings were scoreless in **50.5%** of these games, so always calling NRFI scores **50.5%**. The model scores **51.2%**.
+**Naive baseline check.** First innings were scoreless in **50.3%** of these games, so always calling NRFI scores **50.3%**. The model scores **51.1%**.
 
 > ⚠️ **Confidence is inverted**: the High tier is hitting BELOW the Coin flip tier. Whatever the confidence metric is measuring, it is not the probability of being right. Calls at this tier should carry no weight until this reverses.
 
@@ -167,6 +167,17 @@ Across **64** picks with a captured close, average CLV is **-3.21%** and **17/64
 
 Last 4 graded slates in full. Most recent first.
 
+### 2026-10-04 — NRFI 0-2
+
+**NRFI / YRFI forced calls**
+
+| Game | Call | Confidence | Model | Market | Result |
+|---|---|---|---|---|---|
+| San Diego Padres @ Milwaukee Brewers | **NRFI** | Low | 58% | 55% | ❌ |
+| Atlanta Braves @ Los Angeles Dodgers | **NRFI** | Coin flip | 54% | 58% | ❌ |
+
+---
+
 ### 2026-10-03 — NRFI 1-3
 
 **NRFI / YRFI forced calls**
@@ -177,8 +188,6 @@ Last 4 graded slates in full. Most recent first.
 | Atlanta Braves @ Los Angeles Dodgers | **YRFI** | High | 60% | 48% | ❌ |
 | San Diego Padres @ Milwaukee Brewers | **NRFI** | Medium | 58% | 53% | ✅ |
 | New York Yankees @ Tampa Bay Rays | **YRFI** | Low | 51% | 47% | ❌ |
-
----
 
 ### 2026-10-01 — NRFI 1-0
 
@@ -203,17 +212,6 @@ Last 4 graded slates in full. Most recent first.
 | Chicago White Sox @ Houston Astros | **YRFI** | High | 59% | 46% | ✅ |
 | Chicago Cubs @ San Diego Padres | **NRFI** | Medium | 59% | 52% | ✅ |
 | Boston Red Sox @ New York Yankees | **NRFI** | Coin flip | 57% | 56% | ✅ |
-
-### 2026-09-29 — NRFI 2-2
-
-**NRFI / YRFI forced calls**
-
-| Game | Call | Confidence | Model | Market | Result |
-|---|---|---|---|---|---|
-| Chicago White Sox @ Houston Astros | **YRFI** | High | 69% | 50% | ✅ |
-| Chicago Cubs @ San Diego Padres | **NRFI** | Medium | 59% | 54% | ❌ |
-| Philadelphia Phillies @ Atlanta Braves | **NRFI** | Coin flip | 56% | 56% | ❌ |
-| Boston Red Sox @ New York Yankees | **NRFI** | Coin flip | 60% | 60% | ✅ |
 
 > **CLV caveat.** Beating the close is evidence of skill only when the move came from the market re-evaluating information we also had. If a scratch or injury broke after we locked, we collect the CLV without having known anything — that is luck wearing the costume of skill. Read CLV in aggregate, never on a single bet.
 
