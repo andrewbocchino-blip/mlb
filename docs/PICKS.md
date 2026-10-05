@@ -9,6 +9,100 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | A | PLAY | 9.0 | Chicago White Sox @ Cleveland Guardians | Total | Over 6.5 | 6.5 | **FanDuel -115** / DraftKings -120 |
 | A | PLAY | 7.9 | New York Yankees @ Tampa Bay Rays | Total | Over 6.5 | 6.5 | **DraftKings -113** / FanDuel -118 |
 
+#### NRFI/YRFI Board — forced calls (calibration record, NOT bets)
+
+| Game | Call | Confidence | Model P | Market P | Edge | Result |
+|---|---|---|---|---|---|---|
+| Chicago White Sox @ Cleveland Guardians | **YRFI** | High | 67% | 39% | +27.9% | pending |
+| New York Yankees @ Tampa Bay Rays | **NRFI** | Low | 58% | 55% | +2.7% | pending |
+
+*Board calibration (all time): High 151-144 · Medium 61-52 · Low 20-30 · Coin flip 56-45*
+
+#### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
+
+| # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Munetaka Murakami | Chicago White Sox | Chicago White Sox @ Cleveland Guardians | 36% | 0.98 | 1.00 | 1.11 | pending |
+| 2 | Ben Rice | New York Yankees | New York Yankees @ Tampa Bay Rays | 30% | 1.00 | 1.00 | 1.04 | pending |
+| 3 | Luis García Jr. | New York Yankees | New York Yankees @ Tampa Bay Rays | 25% | 1.00 | 1.00 | 1.04 | pending |
+| 4 | Junior Caminero | Tampa Bay Rays | New York Yankees @ Tampa Bay Rays | 22% | 1.00 | 1.00 | 0.82 | pending |
+| 5 | Victor Mesa Jr. | Tampa Bay Rays | New York Yankees @ Tampa Bay Rays | 21% | 1.00 | 1.00 | 0.82 | pending |
+| 6 | Randal Grichuk | Chicago White Sox | Chicago White Sox @ Cleveland Guardians | 20% | 0.98 | 1.00 | 1.11 | pending |
+| 7 | Kyle Teel | Chicago White Sox | Chicago White Sox @ Cleveland Guardians | 20% | 0.98 | 1.00 | 1.11 | pending |
+| 8 | Miguel Vargas | Chicago White Sox | Chicago White Sox @ Cleveland Guardians | 18% | 0.98 | 1.00 | 1.11 | pending |
+| 9 | Austin Wells | New York Yankees | New York Yankees @ Tampa Bay Rays | 18% | 1.00 | 1.00 | 1.04 | pending |
+| 10 | Trent Grisham | New York Yankees | New York Yankees @ Tampa Bay Rays | 17% | 1.00 | 1.00 | 1.04 | pending |
+
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
+
+#### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
+
+*Divergence means our number disagrees with the market — it does NOT mean the market is wrong. The market price already contains every sharp model working on this game; when we disagree, the more likely explanation is that our number is worse. Until this board beats its baseline, read a large divergence as a warning about our projection, not an opportunity.*
+
+| Player | Mkt | Tier | Call | Line | Price | Book | Model | No-vig | Diverg. | EV | Result |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Gavin Williams** | Outs | A | Over | 15.5 | +124 | DraftKings | 54% | 41% | +13.6% | +20.0% | pending |
+| Cam Schlittler | Ks (P) | A | Under | 6.5 | +108 | DraftKings | 55% | 45% | +11.0% | +13.8% | pending |
+| Chase DeLauter | Total bases | B | Over | 1.5 | +154 | DraftKings | 48% | 36% | +11.4% | +20.7% | pending |
+| Junior Caminero | BB (B) | B | Over | 0.5 | +239 | DraftKings | 37% | 25% | +8.4% | +24.6% | pending |
+| **Freddy Peralta** | H allowed | B | Over | 3.5 | +103 | DraftKings | 59% | 46% | +15.7% | +20.0% | pending |
+| **Cam Schlittler** | Outs | A | Under | 17.5 | +127 | DraftKings | 50% | 40% | +9.3% | +12.8% | pending |
+| **Freddy Peralta** | Outs | A | Over | 14.5 | +103 | DraftKings | 55% | 46% | +11.0% | +12.3% | pending |
+| Ben Rice | Total bases | B | Over | 1.5 | +130 | DraftKings | 50% | 40% | +10.3% | +15.0% | pending |
+| **Gavin Williams** | H allowed | B | Over | 3.5 | +117 | DraftKings | 53% | 42% | +10.9% | +14.1% | pending |
+| Jo Adell | Singles | C | Over | 0.5 | +119 | DraftKings | 52% | 41% | +11.1% | +13.8% | pending |
+| Cody Bellinger | RBI | C | Over | 0.5 | +234 | DraftKings | 35% | 25% | +5.9% | +17.2% | pending |
+| Chase Meidroth | Runs | C | Over | 0.5 | +238 | DraftKings | 35% | 25% | +5.9% | +17.6% | pending |
+| Gavin Williams | ER | C | Over | 1.5 | +127 | DraftKings | 52% | 40% | +11.9% | +17.5% | pending |
+| Travis Bazzana | BB (B) | B | Over | 0.5 | +200 | DraftKings | 37% | 29% | +5.2% | +11.6% | pending |
+| Cody Bellinger | BB (B) | B | Over | 0.5 | +205 | DraftKings | 37% | 28% | +4.9% | +11.5% | pending |
+
+*Scanned 251 priced props today; 5 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
+
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
+
+
+**Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
+
+| Player | Mkt | Call | Line | Price | Model | No-vig | Result |
+|---|---|---|---|---|---|---|---|
+| Nathaniel Lowe | Runs | Under | 0.5 | -261 | 71% | 69% | pending |
+| Patrick Bailey | Runs | Under | 0.5 | -288 | 71% | 71% | pending |
+| Austin Wells | Runs | Under | 0.5 | -290 | 70% | 72% | pending |
+| Ryan McMahon | Runs | Under | 0.5 | -360 | 73% | 76% | pending |
+| Victor Mesa Jr. | Runs | Under | 0.5 | -278 | 69% | 71% | pending |
+| Jonny Deluca | Runs | Under | 0.5 | -344 | 72% | 75% | pending |
+
+> A parlay multiplies the vig on every leg. Two legs at -300 each is a -900 ticket needing ~90% to break even — only sensible if BOTH legs are genuinely mispriced, which we have not demonstrated.
+
+**Prop CLV: +0.35%** across 2905 closed rows (1451/2905 beat the close).
+
+> Positive CLV is the first real evidence this board carries information. It needs to persist over a few hundred rows before it means anything.
+
+*Ranked by EV discounted for how much evidence each market has: pitcher Ks (backtest Brier 0.2307 vs 0.2466 blind) rank at full weight, HR and RBI at half or less because neither has demonstrated skill. Price band: -250 to +250 for most markets (worse than -250 needs 71%+ to break even); HR props run to +955 since the market is priced as longshots by nature. Rows at +400 or longer carry a caution — our probability estimate is least reliable at that scale, and so is the devig.*
+
+*Bold = cleared its market's no-vig edge gate with no data-quality flags. Edge is measured against the vig-free price, never the raw line.* **Tier A** = skill-rate model with matchup (HR, pitcher Ks). **Tier B** = rate model, no platoon splits (hits, batter Ks). **Tier C** = experimental (RBI, H+R+RBI): depends on teammates reaching base, and H+R+RBI sums correlated components as independent, which understates variance — research only.
+
+<details><summary>Inputs behind each call</summary>
+
+- **Andrew Benintendi** (Over 0.5): bullpen: opp staff K/BF 0.251 -> x1.07, BAA 0.238 -> x1.00 (team totals proxy for pen) · volume: 3.32 PA/G season (468/141), slot unknown · exposure: 2.59 PA vs SP, 0.73 vs bullpen · quality: BABIP 0.287 vs career 0.303 (normal BABIP) -> AVG 0.240 regressed to 0.246 · 2B/AB 0.057 -> 0.15 expected · opp SP K/BF 0.332 -> x1.30 · opp SP BAA 0.213 -> x0.88 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Ryan McMahon** (Over 0.5): bullpen: opp staff K/BF 0.223 -> x0.95, BAA 0.229 -> x0.96 (team totals proxy for pen) · volume: 2.90 PA/G season (360/124), slot unknown · exposure: 2.53 PA vs SP, 0.37 vs bullpen · quality: BABIP 0.278 vs career 0.309 (unlucky on balls in play) -> AVG 0.213 regressed to 0.225 · 2B/AB 0.043 -> 0.11 expected · opp SP K/BF 0.214 -> x0.95 · opp SP BAA 0.247 -> x1.02 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Colson Montgomery** (Over 0.5): bullpen: opp staff K/BF 0.251 -> x1.07, BAA 0.238 -> x1.00 (team totals proxy for pen) · volume: 4.17 PA/G season (638/153), slot unknown · exposure: 2.59 PA vs SP, 1.58 vs bullpen · quality: BABIP 0.260 vs career 0.261 (normal BABIP) -> AVG 0.197 regressed to 0.198 · 2B/AB 0.042 -> 0.14 expected · opp SP K/BF 0.332 -> x1.30 · opp SP BAA 0.213 -> x0.88 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Andrew Benintendi** (Over 0.5): bullpen: opp staff K/BF 0.251 -> x1.07, BAA 0.238 -> x1.00 (team totals proxy for pen) · volume: 3.32 PA/G season (468/141), slot unknown · exposure: 2.59 PA vs SP, 0.73 vs bullpen · quality: BABIP 0.287 vs career 0.303 (normal BABIP) -> AVG 0.240 regressed to 0.246 · RBI/PA: season 0.151 · L7 0.333 · L15 0.190 · L30 0.170 -> 0.154 · no usable vs-RHP split (<60 PA) — vs-all used · RBI/PA league rank: 92%ile (#29 of 334) · -> 0.46 expected RBI (negative binomial, dispersion 1.5845574266144782) · opp SP K/BF 0.332 -> x1.30 · opp SP BAA 0.213 -> x0.88 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ RBI depends on teammates reaching base — not modelled · ⚠️ outside price band (-250 to +250) · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+- **Travis Bazzana** (Over 0.5): bullpen: opp staff K/BF 0.217 -> x0.92, BAA 0.243 -> x1.02 (team totals proxy for pen) · volume: 4.17 PA/G season (517/124), slot unknown · exposure: 2.54 PA vs SP, 1.62 vs bullpen · quality: BABIP 0.286 vs league 0.291 (normal BABIP) -> AVG 0.245 regressed to 0.247 · 2B/AB 0.049 -> 0.19 expected · opp SP K/BF 0.182 -> x0.81 · opp SP BAA 0.262 -> x1.08 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Kyle Teel** (Over 0.5): bullpen: opp staff K/BF 0.251 -> x1.07, BAA 0.238 -> x1.00 (team totals proxy for pen) · volume: 3.69 PA/G season (144/39), slot unknown · exposure: 2.59 PA vs SP, 1.10 vs bullpen · quality: BABIP 0.312 vs league 0.291 (normal BABIP) -> AVG 0.210 regressed to 0.200 · RBI/PA: season 0.142 · L7 0.188 · L15 0.136 · L30 0.171 -> 0.142 · no usable vs-RHP split (<60 PA) — vs-all used · RBI/PA league rank: 82%ile (#60 of 334) · -> 0.47 expected RBI (negative binomial, dispersion 1.5845574266144782) · opp SP K/BF 0.332 -> x1.30 · opp SP BAA 0.213 -> x0.88 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ RBI depends on teammates reaching base — not modelled · ⚠️ outside price band (-250 to +250) · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+- **Richie Palacios** (Over 0.5): bullpen: opp staff K/BF 0.243 -> x1.03, BAA 0.224 -> x0.94 (team totals proxy for pen) · volume: 3.22 PA/G season (399/124), slot unknown · exposure: 2.56 PA vs SP, 0.66 vs bullpen · quality: BABIP 0.264 vs career 0.274 (normal BABIP) -> AVG 0.235 regressed to 0.239 · 2B/AB 0.041 -> 0.09 expected · opp SP K/BF 0.314 -> x1.30 · opp SP BAA 0.185 -> x0.80 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **George Lombard Jr.** (Over 0.5): bullpen: opp staff K/BF 0.223 -> x0.95, BAA 0.229 -> x0.96 (team totals proxy for pen) · volume: 3.95 PA/G season (166/42), slot unknown · exposure: 2.53 PA vs SP, 1.42 vs bullpen · quality: BABIP 0.282 vs league 0.291 (normal BABIP) -> AVG 0.237 regressed to 0.242 · RBI/PA: season 0.123 · L7 0.250 · L15 0.238 · L30 0.158 -> 0.140 · no usable vs-RHP split (<60 PA) — vs-all used · RBI/PA league rank: 59%ile (#139 of 334) · -> 0.55 expected RBI (negative binomial, dispersion 1.5845574266144782) · opp SP K/BF 0.214 -> x0.95 · opp SP BAA 0.247 -> x1.02 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ RBI depends on teammates reaching base — not modelled · ⚠️ outside price band (-250 to +250) · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+- **Jonathan Aranda** (Over 0.5): bullpen: opp staff K/BF 0.243 -> x1.03, BAA 0.224 -> x0.94 (team totals proxy for pen) · volume: 4.31 PA/G season (668/155), slot unknown · exposure: 2.56 PA vs SP, 1.75 vs bullpen · quality: BABIP 0.340 vs career 0.345 (normal BABIP) -> AVG 0.274 regressed to 0.276 · 2B/AB 0.047 -> 0.14 expected · opp SP K/BF 0.314 -> x1.30 · opp SP BAA 0.185 -> x0.80 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Braden Montgomery** (Over 0.5): bullpen: opp staff K/BF 0.251 -> x1.07, BAA 0.238 -> x1.00 (team totals proxy for pen) · volume: 3.92 PA/G season (365/93), slot unknown · exposure: 2.59 PA vs SP, 1.33 vs bullpen · quality: BABIP 0.272 vs league 0.291 (normal BABIP) -> AVG 0.226 regressed to 0.234 · 2B/AB 0.050 -> 0.15 expected · opp SP K/BF 0.332 -> x1.30 · opp SP BAA 0.213 -> x0.88 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Nathaniel Lowe** (Over 0.5): bullpen: opp staff K/BF 0.217 -> x0.92, BAA 0.243 -> x1.02 (team totals proxy for pen) · volume: 3.40 PA/G season (429/126), slot unknown · exposure: 2.54 PA vs SP, 0.86 vs bullpen · quality: BABIP 0.289 vs career 0.325 (unlucky on balls in play) -> AVG 0.252 regressed to 0.266 · 2B/AB 0.058 -> 0.19 expected · opp SP K/BF 0.182 -> x0.81 · opp SP BAA 0.262 -> x1.08 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Yandy Diaz** (Over 0.5): bullpen: opp staff K/BF 0.243 -> x1.03, BAA 0.224 -> x0.94 (team totals proxy for pen) · volume: 4.45 PA/G season (686/154), slot unknown · exposure: 2.56 PA vs SP, 1.89 vs bullpen · quality: BABIP 0.316 vs career 0.321 (normal BABIP) -> AVG 0.293 regressed to 0.295 · 2B/AB 0.042 -> 0.14 expected · opp SP K/BF 0.314 -> x1.30 · opp SP BAA 0.185 -> x0.80 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Jonny Deluca** (Over 0.5): bullpen: opp staff K/BF 0.243 -> x1.03, BAA 0.224 -> x0.94 (team totals proxy for pen) · volume: 3.30 PA/G season (370/112), slot unknown · exposure: 2.56 PA vs SP, 0.74 vs bullpen · quality: BABIP 0.314 vs career 0.300 (normal BABIP) -> AVG 0.266 regressed to 0.260 · 2B/AB 0.069 -> 0.17 expected · opp SP K/BF 0.314 -> x1.30 · opp SP BAA 0.185 -> x0.80 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Liam Hicks** (Over 0.5): bullpen: opp staff K/BF 0.243 -> x1.03, BAA 0.224 -> x0.94 (team totals proxy for pen) · volume: 3.90 PA/G season (554/142), slot unknown · exposure: 2.56 PA vs SP, 1.34 vs bullpen · quality: BABIP 0.286 vs career 0.283 (normal BABIP) -> AVG 0.284 regressed to 0.283 · RBI/PA: season 0.139 · L7 0.037 · L15 0.115 · L30 0.108 -> 0.133 · no usable vs-RHP split (<60 PA) — vs-all used · RBI/PA league rank: 79%ile (#70 of 334) · -> 0.44 expected RBI (negative binomial, dispersion 1.5845574266144782) · opp SP K/BF 0.314 -> x1.30 · opp SP BAA 0.185 -> x0.80 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ RBI depends on teammates reaching base — not modelled · ⚠️ outside price band (-250 to +250) · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+- **Richie Palacios** (Over 0.5): bullpen: opp staff K/BF 0.243 -> x1.03, BAA 0.224 -> x0.94 (team totals proxy for pen) · volume: 3.22 PA/G season (399/124), slot unknown · exposure: 2.56 PA vs SP, 0.66 vs bullpen · quality: BABIP 0.264 vs career 0.274 (normal BABIP) -> AVG 0.235 regressed to 0.239 · RBI/PA: season 0.134 · L7 0.269 · L15 0.300 · L30 0.198 -> 0.146 · no usable vs-RHP split (<60 PA) — vs-all used · RBI/PA league rank: 70%ile (#101 of 334) · -> 0.39 expected RBI (negative binomial, dispersion 1.5845574266144782) · opp SP K/BF 0.314 -> x1.30 · opp SP BAA 0.185 -> x0.80 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ RBI depends on teammates reaching base — not modelled · ⚠️ outside price band (-250 to +250) · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+
+</details>
+
 ## 2026-10-04
 
 *No locked picks — model passed the slate. Boards below are calibration records, not bets.*
@@ -27,18 +121,18 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Shohei Ohtani | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 24% | 1.20 | 1.00 | 0.91 | pending |
-| 2 | Matt Olson | Atlanta Braves | Atlanta Braves @ Los Angeles Dodgers | 23% | 1.20 | 1.00 | 0.82 | pending |
-| 3 | Manny Machado | San Diego Padres | San Diego Padres @ Milwaukee Brewers | 22% | 1.09 | 1.00 | 1.07 | pending |
-| 4 | Teoscar Hernández | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 21% | 1.20 | 1.00 | 0.91 | pending |
-| 5 | Max Muncy | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 20% | 1.20 | 1.00 | 0.91 | pending |
-| 6 | Andy Pages | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 20% | 1.20 | 1.00 | 0.91 | pending |
-| 7 | Jackson Merrill | San Diego Padres | San Diego Padres @ Milwaukee Brewers | 20% | 1.09 | 1.00 | 1.07 | pending |
-| 8 | Fernando Tatis Jr. | San Diego Padres | San Diego Padres @ Milwaukee Brewers | 19% | 1.09 | 1.00 | 1.07 | pending |
-| 9 | Mookie Betts | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 19% | 1.20 | 1.00 | 0.91 | pending |
-| 10 | Gavin Sheets | San Diego Padres | San Diego Padres @ Milwaukee Brewers | 18% | 1.09 | 1.00 | 1.07 | pending |
+| 1 | Shohei Ohtani | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 24% | 1.20 | 1.00 | 0.91 | ❌ no HR |
+| 2 | Matt Olson | Atlanta Braves | Atlanta Braves @ Los Angeles Dodgers | 23% | 1.20 | 1.00 | 0.82 | ❌ no HR |
+| 3 | Manny Machado | San Diego Padres | San Diego Padres @ Milwaukee Brewers | 22% | 1.09 | 1.00 | 1.07 | ❌ no HR |
+| 4 | Teoscar Hernández | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 21% | 1.20 | 1.00 | 0.91 | ❌ no HR |
+| 5 | Max Muncy | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 20% | 1.20 | 1.00 | 0.91 | ✅ HR |
+| 6 | Andy Pages | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 20% | 1.20 | 1.00 | 0.91 | ❌ no HR |
+| 7 | Jackson Merrill | San Diego Padres | San Diego Padres @ Milwaukee Brewers | 20% | 1.09 | 1.00 | 1.07 | ❌ no HR |
+| 8 | Fernando Tatis Jr. | San Diego Padres | San Diego Padres @ Milwaukee Brewers | 19% | 1.09 | 1.00 | 1.07 | ❌ no HR |
+| 9 | Mookie Betts | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 19% | 1.20 | 1.00 | 0.91 | ❌ no HR |
+| 10 | Gavin Sheets | San Diego Padres | San Diego Padres @ Milwaukee Brewers | 18% | 1.09 | 1.00 | 1.07 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -46,37 +140,37 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | Player | Mkt | Tier | Call | Line | Price | Book | Model | No-vig | Diverg. | EV | Result |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Blake Snell | Outs | A | Under | 16.5 | -109 | DraftKings | 73% | 49% | +30.2% | +40.1% | pending |
-| Blake Snell | Ks (P) | A | Under | 6.5 | -106 | FanDuel | 63% | 48% | +17.5% | +21.9% | pending |
-| Luis Campusano | BB (B) | B | Over | 0.5 | +242 | DraftKings | 38% | 25% | +10.1% | +29.6% | pending |
-| **Blake Snell** | H allowed | B | Under | 3.5 | +109 | DraftKings | 58% | 44% | +15.5% | +20.7% | pending |
-| Blake Snell | ER | C | Under | 1.5 | -117 | DraftKings | 71% | 50% | +25.9% | +31.9% | pending |
-| Brice Turang | RBI | C | Over | 0.5 | +230 | DraftKings | 38% | 26% | +9.0% | +25.0% | pending |
-| Xander Bogaerts | BB (B) | B | Over | 0.5 | +201 | DraftKings | 40% | 29% | +8.6% | +20.0% | pending |
-| **Blake Snell** | BB (P) | B | Under | 1.5 | +131 | DraftKings | 52% | 40% | +12.9% | +19.9% | pending |
-| **Logan Henderson** | H allowed | B | Under | 3.5 | +108 | DraftKings | 55% | 44% | +12.4% | +15.2% | pending |
-| **Michael King** | Outs | A | Over | 14.5 | -136 | FanDuel | 63% | 54% | +11.9% | +9.1% | pending |
-| Austin Riley | Singles | C | Over | 0.5 | +178 | DraftKings | 41% | 32% | +7.5% | +14.5% | pending |
-| Christian Yelich | RBI | C | Over | 0.5 | +249 | DraftKings | 33% | 24% | +4.8% | +15.8% | pending |
-| Lane Thomas | Singles | C | Over | 0.5 | +219 | DraftKings | 35% | 27% | +4.2% | +11.2% | pending |
-| Fernando Tatis Jr. | BB (B) | B | Over | 0.5 | +192 | DraftKings | 38% | 30% | +5.3% | +11.1% | pending |
-| Jackson Chourio | Total bases | B | Over | 1.5 | +126 | DraftKings | 48% | 40% | +7.3% | +9.0% | pending |
+| Blake Snell | Outs | A | Under | 16.5 | -109 | DraftKings | 73% | 49% | +30.2% | +40.1% | ✅ HIT (11) |
+| Blake Snell | Ks (P) | A | Under | 6.5 | -106 | FanDuel | 63% | 48% | +17.5% | +21.9% | ✅ HIT (5) |
+| Luis Campusano | BB (B) | B | Over | 0.5 | +242 | DraftKings | 38% | 25% | +10.1% | +29.6% | ✅ HIT (1) |
+| **Blake Snell** | H allowed | B | Under | 3.5 | +109 | DraftKings | 58% | 44% | +15.5% | +20.7% | ✅ HIT (3) |
+| Blake Snell | ER | C | Under | 1.5 | -117 | DraftKings | 71% | 50% | +25.9% | +31.9% | ✅ HIT (1) |
+| Brice Turang | RBI | C | Over | 0.5 | +230 | DraftKings | 38% | 26% | +9.0% | +25.0% | ❌ MISS (0) |
+| Xander Bogaerts | BB (B) | B | Over | 0.5 | +201 | DraftKings | 40% | 29% | +8.6% | +20.0% | ✅ HIT (1) |
+| **Blake Snell** | BB (P) | B | Under | 1.5 | +131 | DraftKings | 52% | 40% | +12.9% | +19.9% | ❌ MISS (5) |
+| **Logan Henderson** | H allowed | B | Under | 3.5 | +108 | DraftKings | 55% | 44% | +12.4% | +15.2% | ✅ HIT (2) |
+| **Michael King** | Outs | A | Over | 14.5 | -136 | FanDuel | 63% | 54% | +11.9% | +9.1% | ✅ HIT (15) |
+| Austin Riley | Singles | C | Over | 0.5 | +178 | DraftKings | 41% | 32% | +7.5% | +14.5% | ❌ MISS (0) |
+| Christian Yelich | RBI | C | Over | 0.5 | +249 | DraftKings | 33% | 24% | +4.8% | +15.8% | ❌ MISS (0) |
+| Lane Thomas | Singles | C | Over | 0.5 | +219 | DraftKings | 35% | 27% | +4.2% | +11.2% | ❌ MISS (0) |
+| Fernando Tatis Jr. | BB (B) | B | Over | 0.5 | +192 | DraftKings | 38% | 30% | +5.3% | +11.1% | ❌ MISS (0) |
+| Jackson Chourio | Total bases | B | Over | 1.5 | +126 | DraftKings | 48% | 40% | +7.3% | +9.0% | ❌ MISS (1) |
 
 *Scanned 180 priced props today; 4 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
 
 | Player | Mkt | Call | Line | Price | Model | No-vig | Result |
 |---|---|---|---|---|---|---|---|
-| Austin Riley | Runs | Under | 0.5 | -263 | 70% | 69% | pending |
-| Lane Thomas | Runs | Under | 0.5 | -335 | 74% | 74% | pending |
-| Sal Frelick | Runs | Under | 0.5 | -277 | 69% | 71% | pending |
-| Mauricio Dubon | Runs | Under | 0.5 | -279 | 69% | 71% | pending |
-| Luis Campusano | Runs | Under | 0.5 | -325 | 71% | 74% | pending |
-| Jake Cronenworth | Runs | Under | 0.5 | -329 | 71% | 74% | pending |
+| Austin Riley | Runs | Under | 0.5 | -263 | 70% | 69% | ✅ |
+| Lane Thomas | Runs | Under | 0.5 | -335 | 74% | 74% | ✅ |
+| Sal Frelick | Runs | Under | 0.5 | -277 | 69% | 71% | ❌ |
+| Mauricio Dubon | Runs | Under | 0.5 | -279 | 69% | 71% | ✅ |
+| Luis Campusano | Runs | Under | 0.5 | -325 | 71% | 74% | ❌ |
+| Jake Cronenworth | Runs | Under | 0.5 | -329 | 71% | 74% | ✅ |
 
 > A parlay multiplies the vig on every leg. Two legs at -300 each is a -900 ticket needing ~90% to break even — only sensible if BOTH legs are genuinely mispriced, which we have not demonstrated.
 
@@ -128,18 +222,18 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Junior Caminero | Tampa Bay Rays | New York Yankees @ Tampa Bay Rays | 31% | 1.00 | 1.00 | 1.21 | pending |
-| 2 | Victor Mesa Jr. | Tampa Bay Rays | New York Yankees @ Tampa Bay Rays | 30% | 1.00 | 1.00 | 1.21 | pending |
-| 3 | Jackson Chourio | Milwaukee Brewers | San Diego Padres @ Milwaukee Brewers | 25% | 1.09 | 1.00 | 1.03 | pending |
-| 4 | Ben Rice | New York Yankees | New York Yankees @ Tampa Bay Rays | 24% | 1.00 | 1.00 | 0.82 | pending |
-| 5 | Matt Olson | Atlanta Braves | Atlanta Braves @ Los Angeles Dodgers | 23% | 1.20 | 1.00 | 0.82 | pending |
-| 6 | Randal Grichuk | Chicago White Sox | Chicago White Sox @ Cleveland Guardians | 23% | 0.98 | 1.00 | 0.83 | pending |
-| 7 | Jake Bauers | Milwaukee Brewers | San Diego Padres @ Milwaukee Brewers | 22% | 1.09 | 1.00 | 1.03 | pending |
-| 8 | Jonathan Aranda | Tampa Bay Rays | New York Yankees @ Tampa Bay Rays | 22% | 1.00 | 1.00 | 1.21 | pending |
-| 9 | Will Smith | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 22% | 1.20 | 1.00 | 1.00 | pending |
-| 10 | Shohei Ohtani | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 20% | 1.20 | 1.00 | 1.00 | pending |
+| 1 | Junior Caminero | Tampa Bay Rays | New York Yankees @ Tampa Bay Rays | 31% | 1.00 | 1.00 | 1.21 | ❌ no HR |
+| 2 | Victor Mesa Jr. | Tampa Bay Rays | New York Yankees @ Tampa Bay Rays | 30% | 1.00 | 1.00 | 1.21 | ❌ no HR |
+| 3 | Jackson Chourio | Milwaukee Brewers | San Diego Padres @ Milwaukee Brewers | 25% | 1.09 | 1.00 | 1.03 | ✅ HR |
+| 4 | Ben Rice | New York Yankees | New York Yankees @ Tampa Bay Rays | 24% | 1.00 | 1.00 | 0.82 | ❌ no HR |
+| 5 | Matt Olson | Atlanta Braves | Atlanta Braves @ Los Angeles Dodgers | 23% | 1.20 | 1.00 | 0.82 | ❌ no HR |
+| 6 | Randal Grichuk | Chicago White Sox | Chicago White Sox @ Cleveland Guardians | 23% | 0.98 | 1.00 | 0.83 | ❌ no HR |
+| 7 | Jake Bauers | Milwaukee Brewers | San Diego Padres @ Milwaukee Brewers | 22% | 1.09 | 1.00 | 1.03 | ❌ no HR |
+| 8 | Jonathan Aranda | Tampa Bay Rays | New York Yankees @ Tampa Bay Rays | 22% | 1.00 | 1.00 | 1.21 | ✅ HR |
+| 9 | Will Smith | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 22% | 1.20 | 1.00 | 1.00 | ❌ no HR |
+| 10 | Shohei Ohtani | Los Angeles Dodgers | Atlanta Braves @ Los Angeles Dodgers | 20% | 1.20 | 1.00 | 1.00 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -147,37 +241,37 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | Player | Mkt | Tier | Call | Line | Price | Book | Model | No-vig | Diverg. | EV | Result |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| **Robbie Ray** | Outs | A | Over | 11.5 | -106 | DraftKings | 64% | 48% | +19.9% | +24.9% | pending |
-| **Jacob Misiorowski** | Outs | A | Under | 17.5 | -112 | DraftKings | 64% | 49% | +18.7% | +21.8% | pending |
-| **Jacob Misiorowski** | H allowed | B | Under | 3.5 | -101 | DraftKings | 66% | 47% | +23.1% | +30.7% | pending |
-| **Parker Messick** | BB (P) | B | Under | 1.5 | +118 | DraftKings | 58% | 42% | +18.1% | +26.9% | pending |
-| **Tarik Skubal** | Outs | A | Under | 17.5 | +156 | DraftKings | 45% | 35% | +8.2% | +14.3% | pending |
-| Jackson Chourio | Total bases | B | Over | 1.5 | +129 | DraftKings | 52% | 40% | +12.7% | +19.3% | pending |
-| Randal Grichuk | Hits | B | Under | 0.5 | +134 | DraftKings | 50% | 39% | +10.5% | +15.9% | pending |
-| Jacob Misiorowski | Ks (P) | A | Under | 8.5 | -158 | FanDuel | 67% | 58% | +12.5% | +9.2% | pending |
-| Brice Turang | RBI | C | Over | 0.5 | +225 | DraftKings | 38% | 26% | +8.4% | +22.7% | pending |
-| Brayan Rocchio | Hits | B | Under | 0.5 | +112 | DraftKings | 54% | 44% | +10.8% | +13.4% | pending |
-| Victor Mesa Jr. | Hits | B | Under | 0.5 | +145 | DraftKings | 46% | 37% | +8.2% | +13.0% | pending |
-| Kyle Teel | BB (B) | B | Over | 0.5 | +175 | DraftKings | 41% | 32% | +7.4% | +13.9% | pending |
-| Liam Hicks | RBI | C | Over | 0.5 | +247 | DraftKings | 34% | 24% | +5.2% | +16.8% | pending |
-| Munetaka Murakami | RBI | C | Over | 0.5 | +228 | DraftKings | 36% | 26% | +6.0% | +16.6% | pending |
-| Drake Baldwin | RBI | C | Over | 0.5 | +250 | DraftKings | 33% | 24% | +5.0% | +16.5% | pending |
+| **Robbie Ray** | Outs | A | Over | 11.5 | -106 | DraftKings | 64% | 48% | +19.9% | +24.9% | ❌ MISS (8) |
+| **Jacob Misiorowski** | Outs | A | Under | 17.5 | -112 | DraftKings | 64% | 49% | +18.7% | +21.8% | ✅ HIT (12) |
+| **Jacob Misiorowski** | H allowed | B | Under | 3.5 | -101 | DraftKings | 66% | 47% | +23.1% | +30.7% | ❌ MISS (4) |
+| **Parker Messick** | BB (P) | B | Under | 1.5 | +118 | DraftKings | 58% | 42% | +18.1% | +26.9% | ❌ MISS (2) |
+| **Tarik Skubal** | Outs | A | Under | 17.5 | +156 | DraftKings | 45% | 35% | +8.2% | +14.3% | ❌ MISS (18) |
+| Jackson Chourio | Total bases | B | Over | 1.5 | +129 | DraftKings | 52% | 40% | +12.7% | +19.3% | ✅ HIT (4) |
+| Randal Grichuk | Hits | B | Under | 0.5 | +134 | DraftKings | 50% | 39% | +10.5% | +15.9% | ✅ HIT (0) |
+| Jacob Misiorowski | Ks (P) | A | Under | 8.5 | -158 | FanDuel | 67% | 58% | +12.5% | +9.2% | ✅ HIT (6) |
+| Brice Turang | RBI | C | Over | 0.5 | +225 | DraftKings | 38% | 26% | +8.4% | +22.7% | ❌ MISS (0) |
+| Brayan Rocchio | Hits | B | Under | 0.5 | +112 | DraftKings | 54% | 44% | +10.8% | +13.4% | ✅ HIT (0) |
+| Victor Mesa Jr. | Hits | B | Under | 0.5 | +145 | DraftKings | 46% | 37% | +8.2% | +13.0% | ❌ MISS (1) |
+| Kyle Teel | BB (B) | B | Over | 0.5 | +175 | DraftKings | 41% | 32% | +7.4% | +13.9% | ✅ HIT (1) |
+| Liam Hicks | RBI | C | Over | 0.5 | +247 | DraftKings | 34% | 24% | +5.2% | +16.8% | ❌ MISS (0) |
+| Munetaka Murakami | RBI | C | Over | 0.5 | +228 | DraftKings | 36% | 26% | +6.0% | +16.6% | ✅ HIT (2) |
+| Drake Baldwin | RBI | C | Over | 0.5 | +250 | DraftKings | 33% | 24% | +5.0% | +16.5% | ❌ MISS (0) |
 
 *Scanned 369 priced props today; 5 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
 
 | Player | Mkt | Call | Line | Price | Model | No-vig | Result |
 |---|---|---|---|---|---|---|---|
-| Patrick Bailey | Runs | Under | 0.5 | -255 | 75% | 69% | pending |
-| Nathaniel Lowe | Runs | Under | 0.5 | -260 | 75% | 69% | pending |
-| Ryan McMahon | Runs | Under | 0.5 | -315 | 76% | 73% | pending |
-| Angel Martinez | Runs | Under | 0.5 | -252 | 70% | 68% | pending |
-| Randal Grichuk | RBI | Under | 0.5 | -301 | 72% | 72% | pending |
-| Spencer Jones | Runs | Under | 0.5 | -270 | 70% | 70% | pending |
+| Patrick Bailey | Runs | Under | 0.5 | -255 | 75% | 69% | ✅ |
+| Nathaniel Lowe | Runs | Under | 0.5 | -260 | 75% | 69% | ✅ |
+| Ryan McMahon | Runs | Under | 0.5 | -315 | 76% | 73% | ✅ |
+| Angel Martinez | Runs | Under | 0.5 | -252 | 70% | 68% | ✅ |
+| Randal Grichuk | RBI | Under | 0.5 | -301 | 72% | 72% | ✅ |
+| Spencer Jones | Runs | Under | 0.5 | -270 | 70% | 70% | ✅ |
 
 > A parlay multiplies the vig on every leg. Two legs at -300 each is a -900 ticket needing ~90% to break even — only sensible if BOTH legs are genuinely mispriced, which we have not demonstrated.
 
@@ -226,18 +320,18 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Matt Olson | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 32% | 1.08 | 1.00 | 1.24 | pending |
-| 2 | Ronald Acuña Jr. | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 29% | 1.08 | 1.00 | 1.24 | pending |
-| 3 | Derek Hill | Philadelphia Phillies | Philadelphia Phillies @ Atlanta Braves | 24% | 1.08 | 1.00 | 0.91 | pending |
-| 4 | Drake Baldwin | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 23% | 1.08 | 1.00 | 1.24 | pending |
-| 5 | Kyle Schwarber | Philadelphia Phillies | Philadelphia Phillies @ Atlanta Braves | 22% | 1.08 | 1.00 | 0.91 | pending |
-| 6 | Austin Riley | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 22% | 1.08 | 1.00 | 1.24 | pending |
-| 7 | Michael Harris II | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 22% | 1.08 | 1.00 | 1.24 | pending |
-| 8 | Edmundo Sosa | Philadelphia Phillies | Philadelphia Phillies @ Atlanta Braves | 17% | 1.08 | 1.00 | 0.91 | pending |
-| 9 | Mike Yastrzemski | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 15% | 1.08 | 1.00 | 1.24 | pending |
-| 10 | Dominic Smith | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 15% | 1.08 | 1.00 | 1.24 | pending |
+| 1 | Matt Olson | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 32% | 1.08 | 1.00 | 1.24 | ✅ HR |
+| 2 | Ronald Acuña Jr. | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 29% | 1.08 | 1.00 | 1.24 | ❌ no HR |
+| 3 | Derek Hill | Philadelphia Phillies | Philadelphia Phillies @ Atlanta Braves | 24% | 1.08 | 1.00 | 0.91 | ❌ no HR |
+| 4 | Drake Baldwin | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 23% | 1.08 | 1.00 | 1.24 | ❌ no HR |
+| 5 | Kyle Schwarber | Philadelphia Phillies | Philadelphia Phillies @ Atlanta Braves | 22% | 1.08 | 1.00 | 0.91 | ❌ no HR |
+| 6 | Austin Riley | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 22% | 1.08 | 1.00 | 1.24 | ❌ no HR |
+| 7 | Michael Harris II | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 22% | 1.08 | 1.00 | 1.24 | ✅ HR |
+| 8 | Edmundo Sosa | Philadelphia Phillies | Philadelphia Phillies @ Atlanta Braves | 17% | 1.08 | 1.00 | 0.91 | ❌ no HR |
+| 9 | Mike Yastrzemski | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 15% | 1.08 | 1.00 | 1.24 | ❌ no HR |
+| 10 | Dominic Smith | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 15% | 1.08 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -245,37 +339,37 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | Player | Mkt | Tier | Call | Line | Price | Book | Model | No-vig | Diverg. | EV | Result |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| J.T. Realmuto | Hits | B | Under | 0.5 | +126 | DraftKings | 58% | 40% | +19.9% | +31.8% | pending |
-| **Aaron Nola** | Outs | A | Over | 11.5 | -133 | DraftKings | 69% | 54% | +20.6% | +21.7% | pending |
-| Bryson Stott | Hits | B | Under | 0.5 | +166 | DraftKings | 47% | 34% | +12.2% | +24.2% | pending |
-| Aaron Nola | Ks (P) | A | Over | 3.5 | -121 | DraftKings | 63% | 52% | +14.0% | +14.5% | pending |
-| Bryce Harper | Hits | B | Under | 0.5 | +166 | DraftKings | 44% | 34% | +9.4% | +18.3% | pending |
-| Trea Turner | Singles | C | Under | 0.5 | +112 | DraftKings | 56% | 43% | +14.6% | +18.8% | pending |
-| Bryson Stott | BB (B) | B | Over | 0.5 | +236 | DraftKings | 35% | 25% | +6.3% | +18.5% | pending |
-| Bryson Stott | Singles | C | Under | 0.5 | -106 | DraftKings | 61% | 47% | +15.8% | +17.7% | pending |
-| Brandon Marsh | Hits | B | Under | 0.5 | +108 | DraftKings | 55% | 44% | +11.2% | +13.3% | pending |
-| J.T. Realmuto | Singles | C | Under | 0.5 | -141 | DraftKings | 68% | 55% | +18.2% | +16.7% | pending |
-| Drake Baldwin | Total bases | B | Over | 1.5 | +124 | DraftKings | 51% | 41% | +10.1% | +13.8% | pending |
-| Matt Olson | Total bases | B | Over | 1.5 | +134 | DraftKings | 48% | 39% | +9.1% | +13.2% | pending |
-| Michael Harris II | Total bases | B | Over | 1.5 | +129 | DraftKings | 49% | 40% | +9.1% | +12.6% | pending |
-| **Aaron Nola** | H allowed | B | Over | 3.5 | -123 | DraftKings | 62% | 52% | +13.6% | +12.8% | pending |
-| Mauricio Dubon | Total bases | B | Over | 1.5 | +155 | DraftKings | 43% | 35% | +6.4% | +10.6% | pending |
+| J.T. Realmuto | Hits | B | Under | 0.5 | +126 | DraftKings | 58% | 40% | +19.9% | +31.8% | ✅ HIT (0) |
+| **Aaron Nola** | Outs | A | Over | 11.5 | -133 | DraftKings | 69% | 54% | +20.6% | +21.7% | ❌ MISS (5) |
+| Bryson Stott | Hits | B | Under | 0.5 | +166 | DraftKings | 47% | 34% | +12.2% | +24.2% | ✅ HIT (0) |
+| Aaron Nola | Ks (P) | A | Over | 3.5 | -121 | DraftKings | 63% | 52% | +14.0% | +14.5% | ❌ MISS (1) |
+| Bryce Harper | Hits | B | Under | 0.5 | +166 | DraftKings | 44% | 34% | +9.4% | +18.3% | ❌ MISS (1) |
+| Trea Turner | Singles | C | Under | 0.5 | +112 | DraftKings | 56% | 43% | +14.6% | +18.8% | ✅ HIT (0) |
+| Bryson Stott | BB (B) | B | Over | 0.5 | +236 | DraftKings | 35% | 25% | +6.3% | +18.5% | ❌ MISS (0) |
+| Bryson Stott | Singles | C | Under | 0.5 | -106 | DraftKings | 61% | 47% | +15.8% | +17.7% | ✅ HIT (0) |
+| Brandon Marsh | Hits | B | Under | 0.5 | +108 | DraftKings | 55% | 44% | +11.2% | +13.3% | ✅ HIT (0) |
+| J.T. Realmuto | Singles | C | Under | 0.5 | -141 | DraftKings | 68% | 55% | +18.2% | +16.7% | ✅ HIT (0) |
+| Drake Baldwin | Total bases | B | Over | 1.5 | +124 | DraftKings | 51% | 41% | +10.1% | +13.8% | ❌ MISS (0) |
+| Matt Olson | Total bases | B | Over | 1.5 | +134 | DraftKings | 48% | 39% | +9.1% | +13.2% | ✅ HIT (4) |
+| Michael Harris II | Total bases | B | Over | 1.5 | +129 | DraftKings | 49% | 40% | +9.1% | +12.6% | ✅ HIT (4) |
+| **Aaron Nola** | H allowed | B | Over | 3.5 | -123 | DraftKings | 62% | 52% | +13.6% | +12.8% | ❌ MISS (2) |
+| Mauricio Dubon | Total bases | B | Over | 1.5 | +155 | DraftKings | 43% | 35% | +6.4% | +10.6% | ❌ MISS (0) |
 
 *Scanned 126 priced props today; 2 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
 
 | Player | Mkt | Call | Line | Price | Model | No-vig | Result |
 |---|---|---|---|---|---|---|---|
-| Justin Crawford | Runs | Under | 0.5 | -314 | 74% | 73% | pending |
-| Brandon Marsh | Runs | Under | 0.5 | -270 | 70% | 70% | pending |
-| Ronald Acuna Jr. | Hits | Over | 0.5 | -252 | 68% | 69% | pending |
-| Bryson Stott | RBI | Under | 0.5 | -300 | 70% | 72% | pending |
-| Austin Riley | Runs | Under | 0.5 | -259 | 66% | 69% | pending |
-| Bryce Harper | RBI | Under | 0.5 | -270 | 67% | 70% | pending |
+| Justin Crawford | Runs | Under | 0.5 | -314 | 74% | 73% | ✅ |
+| Brandon Marsh | Runs | Under | 0.5 | -270 | 70% | 70% | ✅ |
+| Ronald Acuna Jr. | Hits | Over | 0.5 | -252 | 68% | 69% | ✅ |
+| Bryson Stott | RBI | Under | 0.5 | -300 | 70% | 72% | ✅ |
+| Austin Riley | Runs | Under | 0.5 | -259 | 66% | 69% | ❌ |
+| Bryce Harper | RBI | Under | 0.5 | -270 | 67% | 70% | ✅ |
 
 > A parlay multiplies the vig on every leg. Two legs at -300 each is a -900 ticket needing ~90% to break even — only sensible if BOTH legs are genuinely mispriced, which we have not demonstrated.
 
@@ -327,18 +421,18 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Munetaka Murakami | Chicago White Sox | Chicago White Sox @ Houston Astros | 32% | 1.10 | 1.00 | 0.88 | pending |
-| 2 | Ben Rice | New York Yankees | Boston Red Sox @ New York Yankees | 30% | 1.24 | 1.00 | 0.84 | pending |
-| 3 | Yordan Alvarez | Houston Astros | Chicago White Sox @ Houston Astros | 28% | 1.10 | 1.00 | 0.92 | pending |
-| 4 | Pete Crow-Armstrong | Chicago Cubs | Chicago Cubs @ San Diego Padres | 25% | 0.94 | 1.00 | 0.82 | pending |
-| 5 | Luis García Jr. | New York Yankees | Boston Red Sox @ New York Yankees | 25% | 1.24 | 1.00 | 0.84 | pending |
-| 6 | Willson Contreras | Boston Red Sox | Boston Red Sox @ New York Yankees | 22% | 1.24 | 1.00 | 0.82 | pending |
+| 1 | Munetaka Murakami | Chicago White Sox | Chicago White Sox @ Houston Astros | 32% | 1.10 | 1.00 | 0.88 | ❌ no HR |
+| 2 | Ben Rice | New York Yankees | Boston Red Sox @ New York Yankees | 30% | 1.24 | 1.00 | 0.84 | ❌ no HR |
+| 3 | Yordan Alvarez | Houston Astros | Chicago White Sox @ Houston Astros | 28% | 1.10 | 1.00 | 0.92 | ❌ no HR |
+| 4 | Pete Crow-Armstrong | Chicago Cubs | Chicago Cubs @ San Diego Padres | 25% | 0.94 | 1.00 | 0.82 | ❌ no HR |
+| 5 | Luis García Jr. | New York Yankees | Boston Red Sox @ New York Yankees | 25% | 1.24 | 1.00 | 0.84 | ✅ HR |
+| 6 | Willson Contreras | Boston Red Sox | Boston Red Sox @ New York Yankees | 22% | 1.24 | 1.00 | 0.82 | ✅ HR |
 | 7 | Nelson Velázquez | Houston Astros | Chicago White Sox @ Houston Astros | 21% | 1.10 | 1.00 | 0.92 | pending |
-| 8 | Jeremy Peña | Houston Astros | Chicago White Sox @ Houston Astros | 20% | 1.10 | 1.00 | 0.92 | pending |
-| 9 | Manny Machado | San Diego Padres | Chicago Cubs @ San Diego Padres | 19% | 0.94 | 1.00 | 1.09 | pending |
-| 10 | Christian Walker | Houston Astros | Chicago White Sox @ Houston Astros | 19% | 1.10 | 1.00 | 0.92 | pending |
+| 8 | Jeremy Peña | Houston Astros | Chicago White Sox @ Houston Astros | 20% | 1.10 | 1.00 | 0.92 | ✅ HR |
+| 9 | Manny Machado | San Diego Padres | Chicago Cubs @ San Diego Padres | 19% | 0.94 | 1.00 | 1.09 | ❌ no HR |
+| 10 | Christian Walker | Houston Astros | Chicago White Sox @ Houston Astros | 19% | 1.10 | 1.00 | 0.92 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -346,25 +440,25 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | Player | Mkt | Tier | Call | Line | Price | Book | Model | No-vig | Diverg. | EV | Result |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Kevin Gausman | Ks (P) | A | Over | 4.5 | +104 | FanDuel | 56% | 46% | +11.5% | +14.1% | pending |
-| **Max Fried** | Outs | A | Under | 16.5 | +106 | DraftKings | 57% | 45% | +13.3% | +16.5% | pending |
-| **Kevin Gausman** | Outs | A | Over | 14.5 | +110 | FanDuel | 55% | 43% | +13.4% | +15.6% | pending |
-| Max Fried | Ks (P) | A | Under | 5.5 | -125 | FanDuel | 63% | 53% | +13.4% | +13.0% | pending |
-| Jahmai Jones | H+R+RBI | C | Under | 0.5 | +113 | DraftKings | 58% | 43% | +17.3% | +24.5% | pending |
-| Dansby Swanson | BB (B) | B | Over | 0.5 | +228 | DraftKings | 36% | 26% | +6.4% | +17.8% | pending |
-| Carson Kelly | BB (B) | B | Over | 0.5 | +248 | DraftKings | 34% | 24% | +5.4% | +17.6% | pending |
-| Nick Sogard | BB (B) | B | Over | 0.5 | +215 | DraftKings | 37% | 27% | +6.8% | +17.5% | pending |
-| Caleb Durbin | Hits | B | Under | 0.5 | +127 | DraftKings | 50% | 40% | +9.7% | +13.3% | pending |
-| **Max Fried** | H allowed | B | Under | 4.5 | -135 | DraftKings | 66% | 54% | +15.5% | +14.3% | pending |
-| Alex Bregman | RBI | C | Over | 0.5 | +232 | DraftKings | 36% | 26% | +6.7% | +19.1% | pending |
-| Jahmai Jones | Hits | B | Under | 0.5 | -108 | DraftKings | 58% | 48% | +11.7% | +11.8% | pending |
-| **Nick Pivetta** | Outs | A | Under | 13.5 | -115 | DraftKings | 58% | 50% | +9.7% | +7.9% | pending |
-| Cody Bellinger | RBI | C | Over | 0.5 | +227 | DraftKings | 35% | 26% | +5.6% | +15.6% | pending |
-| Manny Machado | BB (B) | B | Over | 0.5 | +197 | DraftKings | 38% | 29% | +5.6% | +12.5% | pending |
+| Kevin Gausman | Ks (P) | A | Over | 4.5 | +104 | FanDuel | 56% | 46% | +11.5% | +14.1% | ❌ MISS (1) |
+| **Max Fried** | Outs | A | Under | 16.5 | +106 | DraftKings | 57% | 45% | +13.3% | +16.5% | ❌ MISS (18) |
+| **Kevin Gausman** | Outs | A | Over | 14.5 | +110 | FanDuel | 55% | 43% | +13.4% | +15.6% | ❌ MISS (10) |
+| Max Fried | Ks (P) | A | Under | 5.5 | -125 | FanDuel | 63% | 53% | +13.4% | +13.0% | ❌ MISS (6) |
+| Jahmai Jones | H+R+RBI | C | Under | 0.5 | +113 | DraftKings | 58% | 43% | +17.3% | +24.5% | ✅ HIT (0) |
+| Dansby Swanson | BB (B) | B | Over | 0.5 | +228 | DraftKings | 36% | 26% | +6.4% | +17.8% | ❌ MISS (0) |
+| Carson Kelly | BB (B) | B | Over | 0.5 | +248 | DraftKings | 34% | 24% | +5.4% | +17.6% | ❌ MISS (0) |
+| Nick Sogard | BB (B) | B | Over | 0.5 | +215 | DraftKings | 37% | 27% | +6.8% | +17.5% | ❌ MISS (0) |
+| Caleb Durbin | Hits | B | Under | 0.5 | +127 | DraftKings | 50% | 40% | +9.7% | +13.3% | ✅ HIT (0) |
+| **Max Fried** | H allowed | B | Under | 4.5 | -135 | DraftKings | 66% | 54% | +15.5% | +14.3% | ✅ HIT (3) |
+| Alex Bregman | RBI | C | Over | 0.5 | +232 | DraftKings | 36% | 26% | +6.7% | +19.1% | ❌ MISS (0) |
+| Jahmai Jones | Hits | B | Under | 0.5 | -108 | DraftKings | 58% | 48% | +11.7% | +11.8% | ✅ HIT (0) |
+| **Nick Pivetta** | Outs | A | Under | 13.5 | -115 | DraftKings | 58% | 50% | +9.7% | +7.9% | ✅ HIT (10) |
+| Cody Bellinger | RBI | C | Over | 0.5 | +227 | DraftKings | 35% | 26% | +5.6% | +15.6% | ✅ HIT (4) |
+| Manny Machado | BB (B) | B | Over | 0.5 | +197 | DraftKings | 38% | 29% | +5.6% | +12.5% | ❌ MISS (0) |
 
 *Scanned 394 priced props today; 5 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -372,11 +466,11 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | Player | Mkt | Call | Line | Price | Model | No-vig | Result |
 |---|---|---|---|---|---|---|---|
 | Taylor Trammell | Runs | Under | 0.5 | -268 | 74% | 70% | pending |
-| Colson Montgomery | Runs | Under | 0.5 | -270 | 70% | 70% | pending |
-| Ryan McMahon | Runs | Under | 0.5 | -337 | 74% | 74% | pending |
-| Nico Hoerner | Runs | Under | 0.5 | -277 | 69% | 71% | pending |
-| Jose Altuve | RBI | Under | 0.5 | -272 | 69% | 70% | pending |
-| Pedro Ramirez | Runs | Under | 0.5 | -292 | 70% | 72% | pending |
+| Colson Montgomery | Runs | Under | 0.5 | -270 | 70% | 70% | ✅ |
+| Ryan McMahon | Runs | Under | 0.5 | -337 | 74% | 74% | ✅ |
+| Nico Hoerner | Runs | Under | 0.5 | -277 | 69% | 71% | ✅ |
+| Jose Altuve | RBI | Under | 0.5 | -272 | 69% | 70% | ❌ |
+| Pedro Ramirez | Runs | Under | 0.5 | -292 | 70% | 72% | ✅ |
 
 > A parlay multiplies the vig on every leg. Two legs at -300 each is a -900 ticket needing ~90% to break even — only sensible if BOTH legs are genuinely mispriced, which we have not demonstrated.
 
@@ -428,18 +522,18 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Munetaka Murakami | Chicago White Sox | Chicago White Sox @ Houston Astros | 37% | 1.10 | 1.00 | 1.04 | pending |
-| 2 | Pete Crow-Armstrong | Chicago Cubs | Chicago Cubs @ San Diego Padres | 28% | 0.94 | 1.00 | 0.91 | pending |
-| 3 | Nelson Velázquez | Houston Astros | Chicago White Sox @ Houston Astros | 27% | 1.10 | 1.00 | 0.82 | pending |
-| 4 | Fernando Tatis Jr. | San Diego Padres | Chicago Cubs @ San Diego Padres | 24% | 0.94 | 1.00 | 0.96 | pending |
-| 5 | Ben Rice | New York Yankees | Boston Red Sox @ New York Yankees | 24% | 1.24 | 1.00 | 0.87 | pending |
-| 6 | Yordan Alvarez | Houston Astros | Chicago White Sox @ Houston Astros | 22% | 1.10 | 1.00 | 0.82 | pending |
-| 7 | Derek Hill | Philadelphia Phillies | Philadelphia Phillies @ Atlanta Braves | 22% | 1.08 | 1.00 | 0.82 | pending |
-| 8 | Matt Olson | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 21% | 1.08 | 1.00 | 0.82 | pending |
-| 9 | Randal Grichuk | Chicago White Sox | Chicago White Sox @ Houston Astros | 21% | 1.10 | 1.00 | 1.04 | pending |
-| 10 | Kyle Teel | Chicago White Sox | Chicago White Sox @ Houston Astros | 20% | 1.10 | 1.00 | 1.04 | pending |
+| 1 | Munetaka Murakami | Chicago White Sox | Chicago White Sox @ Houston Astros | 37% | 1.10 | 1.00 | 1.04 | ❌ no HR |
+| 2 | Pete Crow-Armstrong | Chicago Cubs | Chicago Cubs @ San Diego Padres | 28% | 0.94 | 1.00 | 0.91 | ❌ no HR |
+| 3 | Nelson Velázquez | Houston Astros | Chicago White Sox @ Houston Astros | 27% | 1.10 | 1.00 | 0.82 | ✅ HR |
+| 4 | Fernando Tatis Jr. | San Diego Padres | Chicago Cubs @ San Diego Padres | 24% | 0.94 | 1.00 | 0.96 | ✅ HR |
+| 5 | Ben Rice | New York Yankees | Boston Red Sox @ New York Yankees | 24% | 1.24 | 1.00 | 0.87 | ✅ HR |
+| 6 | Yordan Alvarez | Houston Astros | Chicago White Sox @ Houston Astros | 22% | 1.10 | 1.00 | 0.82 | ❌ no HR |
+| 7 | Derek Hill | Philadelphia Phillies | Philadelphia Phillies @ Atlanta Braves | 22% | 1.08 | 1.00 | 0.82 | ❌ no HR |
+| 8 | Matt Olson | Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 21% | 1.08 | 1.00 | 0.82 | ❌ no HR |
+| 9 | Randal Grichuk | Chicago White Sox | Chicago White Sox @ Houston Astros | 21% | 1.10 | 1.00 | 1.04 | ❌ no HR |
+| 10 | Kyle Teel | Chicago White Sox | Chicago White Sox @ Houston Astros | 20% | 1.10 | 1.00 | 1.04 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -447,37 +541,37 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 | Player | Mkt | Tier | Call | Line | Price | Book | Model | No-vig | Diverg. | EV | Result |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Jesus Luzardo | Ks (P) | A | Over | 2.5 | -162 | DraftKings | 77% | 59% | +25.2% | +25.2% | pending |
-| **Matthew Boyd** | Outs | A | Over | 13.5 | -111 | DraftKings | 65% | 49% | +19.9% | +24.0% | pending |
-| Bryce Harper | BB (B) | B | Over | 0.5 | +213 | DraftKings | 43% | 28% | +13.9% | +34.9% | pending |
-| Ben Rice | BB (B) | B | Over | 0.5 | +236 | DraftKings | 39% | 25% | +10.9% | +30.8% | pending |
-| Xander Bogaerts | BB (B) | B | Over | 0.5 | +221 | DraftKings | 39% | 27% | +9.9% | +26.1% | pending |
-| **Chris Sale** | Outs | A | Over | 18.5 | +135 | DraftKings | 48% | 39% | +8.7% | +12.5% | pending |
-| Dansby Swanson | BB (B) | B | Over | 0.5 | +235 | DraftKings | 36% | 25% | +6.8% | +19.7% | pending |
-| Heliot Ramos | Singles | C | Over | 0.5 | +146 | DraftKings | 48% | 36% | +11.5% | +18.5% | pending |
-| Manny Machado | BB (B) | B | Over | 0.5 | +218 | DraftKings | 37% | 27% | +7.1% | +18.5% | pending |
-| Alex Bregman | RBI | C | Over | 0.5 | +243 | DraftKings | 36% | 25% | +7.5% | +22.8% | pending |
-| Carson Kelly | BB (B) | B | Over | 0.5 | +250 | DraftKings | 34% | 24% | +5.6% | +18.1% | pending |
-| **Jesus Luzardo** | BB (P) | B | Over | 0.5 | -133 | DraftKings | 67% | 54% | +17.5% | +17.2% | pending |
-| **Jesus Luzardo** | H allowed | B | Over | 1.5 | -194 | DraftKings | 76% | 63% | +19.7% | +15.4% | pending |
-| Xander Bogaerts | Hits | B | Under | 0.5 | +156 | DraftKings | 44% | 35% | +7.5% | +13.0% | pending |
-| Willson Contreras | BB (B) | B | Over | 0.5 | +214 | DraftKings | 37% | 27% | +6.5% | +16.4% | pending |
+| Jesus Luzardo | Ks (P) | A | Over | 2.5 | -162 | DraftKings | 77% | 59% | +25.2% | +25.2% | ✅ HIT (6) |
+| **Matthew Boyd** | Outs | A | Over | 13.5 | -111 | DraftKings | 65% | 49% | +19.9% | +24.0% | ❌ MISS (12) |
+| Bryce Harper | BB (B) | B | Over | 0.5 | +213 | DraftKings | 43% | 28% | +13.9% | +34.9% | ❌ MISS (0) |
+| Ben Rice | BB (B) | B | Over | 0.5 | +236 | DraftKings | 39% | 25% | +10.9% | +30.8% | ❌ MISS (0) |
+| Xander Bogaerts | BB (B) | B | Over | 0.5 | +221 | DraftKings | 39% | 27% | +9.9% | +26.1% | ❌ MISS (0) |
+| **Chris Sale** | Outs | A | Over | 18.5 | +135 | DraftKings | 48% | 39% | +8.7% | +12.5% | ✅ HIT (19) |
+| Dansby Swanson | BB (B) | B | Over | 0.5 | +235 | DraftKings | 36% | 25% | +6.8% | +19.7% | ❌ MISS (0) |
+| Heliot Ramos | Singles | C | Over | 0.5 | +146 | DraftKings | 48% | 36% | +11.5% | +18.5% | ❌ MISS (0) |
+| Manny Machado | BB (B) | B | Over | 0.5 | +218 | DraftKings | 37% | 27% | +7.1% | +18.5% | ✅ HIT (1) |
+| Alex Bregman | RBI | C | Over | 0.5 | +243 | DraftKings | 36% | 25% | +7.5% | +22.8% | ❌ MISS (0) |
+| Carson Kelly | BB (B) | B | Over | 0.5 | +250 | DraftKings | 34% | 24% | +5.6% | +18.1% | ❌ MISS (0) |
+| **Jesus Luzardo** | BB (P) | B | Over | 0.5 | -133 | DraftKings | 67% | 54% | +17.5% | +17.2% | ✅ HIT (1) |
+| **Jesus Luzardo** | H allowed | B | Over | 1.5 | -194 | DraftKings | 76% | 63% | +19.7% | +15.4% | ✅ HIT (3) |
+| Xander Bogaerts | Hits | B | Under | 0.5 | +156 | DraftKings | 44% | 35% | +7.5% | +13.0% | ❌ MISS (2) |
+| Willson Contreras | BB (B) | B | Over | 0.5 | +214 | DraftKings | 37% | 27% | +6.5% | +16.4% | ❌ MISS (0) |
 
 *Scanned 486 priced props today; 7 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
 
 | Player | Mkt | Call | Line | Price | Model | No-vig | Result |
 |---|---|---|---|---|---|---|---|
-| Taylor Trammell | Runs | Under | 0.5 | -270 | 76% | 70% | pending |
-| Michael Conforto | Runs | Under | 0.5 | -288 | 76% | 71% | pending |
-| Luis Campusano | Runs | Under | 0.5 | -255 | 70% | 69% | pending |
-| Andrew Benintendi | Runs | Under | 0.5 | -255 | 70% | 69% | pending |
-| Jose Altuve | RBI | Under | 0.5 | -284 | 70% | 71% | pending |
-| Nico Hoerner | Runs | Under | 0.5 | -265 | 69% | 70% | pending |
+| Taylor Trammell | Runs | Under | 0.5 | -270 | 76% | 70% | ✅ |
+| Michael Conforto | Runs | Under | 0.5 | -288 | 76% | 71% | ✅ |
+| Luis Campusano | Runs | Under | 0.5 | -255 | 70% | 69% | ❌ |
+| Andrew Benintendi | Runs | Under | 0.5 | -255 | 70% | 69% | ✅ |
+| Jose Altuve | RBI | Under | 0.5 | -284 | 70% | 71% | ✅ |
+| Nico Hoerner | Runs | Under | 0.5 | -265 | 69% | 70% | ✅ |
 
 > A parlay multiplies the vig on every leg. Two legs at -300 each is a -900 ticket needing ~90% to break even — only sensible if BOTH legs are genuinely mispriced, which we have not demonstrated.
 
@@ -551,7 +645,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Griffin Conine | Miami Marlins | Atlanta Braves @ Miami Marlins | 30% | 0.86 | 1.00 | 1.23 | ✅ HR |
 | 10 | Munetaka Murakami | Chicago White Sox | Colorado Rockies @ Chicago White Sox | 28% | 1.15 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -577,7 +671,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1302 priced props today; 15 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -662,7 +756,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Elly De La Cruz | Cincinnati Reds | Cincinnati Reds @ Toronto Blue Jays | 27% | 1.10 | 1.00 | 0.94 | ❌ no HR |
 | 10 | Matt Olson | Atlanta Braves | Atlanta Braves @ Miami Marlins | 26% | 0.86 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -688,7 +782,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1259 priced props today; 24 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -780,7 +874,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Hunter Goodman | Colorado Rockies | Colorado Rockies @ Chicago White Sox | 30% | 1.15 | 1.00 | 0.91 | ❌ no HR |
 | 10 | Brandon Lowe | Pittsburgh Pirates | Pittsburgh Pirates @ Detroit Tigers | 29% | 0.90 | 1.00 | 1.21 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -806,7 +900,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1194 priced props today; 17 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -891,7 +985,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Heliot Ramos | New York Yankees | Tampa Bay Rays @ New York Yankees | 30% | 1.24 | 1.00 | 1.24 | ❌ no HR |
 | 10 | Kyle Schwarber | Philadelphia Phillies | Milwaukee Brewers @ Philadelphia Phillies | 29% | 1.18 | 1.00 | 0.95 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -917,7 +1011,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1118 priced props today; 22 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -1006,7 +1100,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Pete Alonso | Baltimore Orioles | Toronto Blue Jays @ Baltimore Orioles | 30% | 1.00 | 1.00 | 1.00 | ❌ no HR |
 | 10 | Elly De La Cruz | Cincinnati Reds | Cincinnati Reds @ Atlanta Braves | 30% | 1.08 | 1.00 | 0.82 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -1032,7 +1126,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1516 priced props today; 31 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -1124,7 +1218,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Matt Olson | Atlanta Braves | Cincinnati Reds @ Atlanta Braves | 28% | 1.08 | 1.00 | 1.24 | ❌ no HR |
 | 10 | Ben Rice | New York Yankees | Tampa Bay Rays @ New York Yankees | 28% | 1.24 | 1.00 | 0.82 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -1150,7 +1244,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1711 priced props today; 24 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -1241,7 +1335,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Griffin Conine | Miami Marlins | Miami Marlins @ San Diego Padres | 28% | 0.94 | 1.00 | 1.06 | ❌ no HR |
 | 10 | Carter Jensen | Kansas City Royals | Kansas City Royals @ Pittsburgh Pirates | 27% | 0.90 | 1.00 | 1.14 | pending |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -1267,7 +1361,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1611 priced props today; 25 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -1356,7 +1450,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Kyle Teel | Chicago White Sox | Detroit Tigers @ Chicago White Sox | 30% | 1.15 | 1.00 | 1.21 | ❌ no HR |
 | 10 | Eugenio Suárez | Cincinnati Reds | Chicago Cubs @ Cincinnati Reds | 29% | 1.33 | 1.00 | 1.02 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -1382,7 +1476,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1846 priced props today; 25 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -1473,7 +1567,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Randal Grichuk | Chicago White Sox | Detroit Tigers @ Chicago White Sox | 27% | 1.15 | 1.00 | 0.96 | ❌ no HR |
 | 10 | Eduardo Valencia | Detroit Tigers | Detroit Tigers @ Chicago White Sox | 27% | 1.15 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -1499,7 +1593,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1835 priced props today; 27 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -1581,7 +1675,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Matt McLain | Cincinnati Reds | Los Angeles Dodgers @ Cincinnati Reds | 27% | 1.33 | 1.00 | 1.14 | ❌ no HR |
 | 10 | Francisco Lindor | New York Mets | Philadelphia Phillies @ New York Mets | 26% | 1.00 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -1607,7 +1701,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1038 priced props today; 9 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -1699,7 +1793,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Luis García Jr. | New York Yankees | New York Yankees @ Minnesota Twins | 29% | 0.99 | 1.00 | 1.24 | ❌ no HR |
 | 10 | Max Muncy | Los Angeles Dodgers | Los Angeles Dodgers @ Cincinnati Reds | 29% | 1.33 | 1.00 | 1.13 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -1725,7 +1819,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1805 priced props today; 21 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -1816,7 +1910,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Yordan Alvarez | Houston Astros | Kansas City Royals @ Houston Astros | 20% | 1.10 | 1.00 | 1.02 | ✅ HR |
 | 10 | Miguel Vargas | Chicago White Sox | Chicago White Sox @ Cleveland Guardians | 20% | 0.98 | 1.00 | 1.06 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -1842,7 +1936,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1890 priced props today; 45 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -1926,7 +2020,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Elly De La Cruz | Cincinnati Reds | Los Angeles Dodgers @ Cincinnati Reds | 20% | 1.33 | 1.00 | 0.84 | ✅ HR |
 | 10 | Jose Siri | Los Angeles Angels | Seattle Mariners @ Los Angeles Angels | 20% | 1.04 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -1952,7 +2046,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 240 priced props today; 6 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -2044,7 +2138,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Munetaka Murakami | Chicago White Sox | Chicago White Sox @ St. Louis Cardinals | 20% | 0.92 | 1.00 | 1.01 | ❌ no HR |
 | 10 | Aaron Judge | New York Yankees | New York Mets @ New York Yankees | 20% | 1.24 | 1.00 | 0.87 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -2070,7 +2164,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1706 priced props today; 29 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -2162,7 +2256,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Munetaka Murakami | Chicago White Sox | Chicago White Sox @ St. Louis Cardinals | 18% | 0.92 | 1.00 | 0.90 | ❌ no HR |
 | 10 | Cam Smith | Houston Astros | Houston Astros @ Tampa Bay Rays | 18% | 1.00 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -2188,7 +2282,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 1742 priced props today; 32 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -2283,7 +2377,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Ben Rice | New York Yankees | New York Mets @ New York Yankees | 20% | 1.24 | 1.00 | 0.84 | ✅ HR |
 | 10 | Randal Grichuk | Chicago White Sox | Chicago White Sox @ St. Louis Cardinals | 20% | 0.92 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -2309,7 +2403,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 705 priced props today; 11 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -2386,7 +2480,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Colson Montgomery | Chicago White Sox | Pittsburgh Pirates @ Chicago White Sox | 19% | 1.15 | 1.00 | 1.11 | ❌ no HR |
 | 10 | Matt Olson | Atlanta Braves | Tampa Bay Rays @ Atlanta Braves | 19% | 1.08 | 1.00 | 0.96 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -2412,7 +2506,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 590 priced props today; 15 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -2513,7 +2607,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Mookie Betts | Los Angeles Dodgers | Cincinnati Reds @ Los Angeles Dodgers | 18% | 1.20 | 1.00 | 1.24 | ❌ no HR |
 | 10 | Aaron Judge | New York Yankees | Colorado Rockies @ New York Yankees | 18% | 1.24 | 1.00 | 0.85 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -2539,7 +2633,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 657 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -2625,7 +2719,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Eugenio Suárez | Cincinnati Reds | Cincinnati Reds @ Los Angeles Dodgers | 17% | 1.20 | 1.00 | 1.00 | ✅ HR |
 | 10 | Tyrone Taylor | Chicago Cubs | Chicago Cubs @ Milwaukee Brewers | 17% | 1.09 | 1.00 | 1.10 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -2651,7 +2745,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 496 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -2741,7 +2835,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Hunter Goodman | Colorado Rockies | St. Louis Cardinals @ Colorado Rockies | 18% | 1.08 | 1.00 | 0.87 | ❌ no HR |
 | 10 | Andrés Chaparro | Washington Nationals | Washington Nationals @ Los Angeles Dodgers | 18% | 1.20 | 1.00 | 1.13 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -2767,7 +2861,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 614 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -2857,7 +2951,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Jackson Chourio | Milwaukee Brewers | Milwaukee Brewers @ Cincinnati Reds | 18% | 1.33 | 1.00 | 1.06 | ❌ no HR |
 | 10 | Yordan Alvarez | Houston Astros | Arizona Diamondbacks @ Houston Astros | 18% | 1.10 | 1.00 | 0.95 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -2883,7 +2977,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 719 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -2978,7 +3072,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Randal Grichuk | Chicago White Sox | Minnesota Twins @ Chicago White Sox | 19% | 1.15 | 1.00 | 1.20 | ❌ no HR |
 | 10 | Jackson Chourio | Milwaukee Brewers | Milwaukee Brewers @ Cincinnati Reds | 19% | 1.33 | 1.00 | 1.07 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -3004,7 +3098,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 674 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -3089,7 +3183,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Kazuma Okamoto | Toronto Blue Jays | Toronto Blue Jays @ Cleveland Guardians | 17% | 0.98 | 1.00 | 1.15 | pending |
 | 10 | Colson Montgomery | Chicago White Sox | Chicago White Sox @ Houston Astros | 17% | 1.10 | 1.00 | 0.98 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -3115,7 +3209,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 417 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -3207,7 +3301,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Juan Soto | New York Mets | New York Mets @ Tampa Bay Rays | 18% | 1.00 | 1.00 | 1.11 | ✅ HR |
 | 10 | Shohei Ohtani | Los Angeles Dodgers | St. Louis Cardinals @ Los Angeles Dodgers | 18% | 1.20 | 1.00 | 1.00 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -3233,7 +3327,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 692 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -3323,7 +3417,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Hunter Goodman | Colorado Rockies | Baltimore Orioles @ Colorado Rockies | 20% | 1.08 | 1.00 | 0.93 | ❌ no HR |
 | 10 | Max Muncy | Los Angeles Dodgers | St. Louis Cardinals @ Los Angeles Dodgers | 20% | 1.20 | 1.00 | 1.06 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -3349,7 +3443,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 696 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -3433,7 +3527,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Coby Mayo | Baltimore Orioles | Baltimore Orioles @ Colorado Rockies | 20% | 1.08 | 1.00 | 1.24 | ❌ no HR |
 | 10 | Jackson Merrill | San Diego Padres | San Diego Padres @ Cincinnati Reds | 20% | 1.33 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -3459,7 +3553,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 179 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -3548,7 +3642,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Samuel Basallo | Baltimore Orioles | Baltimore Orioles @ Athletics | 19% | 1.12 | 1.00 | 1.24 | pending |
 | 10 | Sal Stewart | Cincinnati Reds | Cincinnati Reds @ Chicago Cubs | 19% | 1.04 | 1.00 | 1.24 | ✅ HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -3574,7 +3668,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 616 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -3667,7 +3761,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Hunter Goodman | Colorado Rockies | Colorado Rockies @ Atlanta Braves | 20% | 1.08 | 1.00 | 0.89 | ❌ no HR |
 | 10 | Coby Mayo | Baltimore Orioles | Baltimore Orioles @ Athletics | 20% | 1.12 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -3693,7 +3787,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 627 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -3782,7 +3876,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Joc Pederson | Texas Rangers | Texas Rangers @ Milwaukee Brewers | 19% | 1.09 | 1.00 | 1.08 | ❌ no HR |
 | 10 | Colson Montgomery | Chicago White Sox | Chicago White Sox @ Minnesota Twins | 18% | 0.99 | 1.00 | 1.24 | ✅ HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -3808,7 +3902,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 698 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -3887,7 +3981,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Jac Caglianone | Kansas City Royals | Kansas City Royals @ Toronto Blue Jays | 16% | 1.10 | 1.00 | 1.07 | ✅ HR |
 | 10 | Jeremy Peña | Houston Astros | Houston Astros @ New York Yankees | 16% | 1.24 | 1.00 | 1.01 | ✅ HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -3913,7 +4007,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 324 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -4004,7 +4098,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Andrés Chaparro | Washington Nationals | Colorado Rockies @ Washington Nationals | 18% | 1.04 | 1.00 | 1.24 | ✅ HR |
 | 10 | Drake Baldwin | Atlanta Braves | Los Angeles Dodgers @ Atlanta Braves | 17% | 1.08 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -4030,7 +4124,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 711 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -4120,7 +4214,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Joc Pederson | Texas Rangers | Texas Rangers @ Chicago White Sox | 22% | 1.15 | 1.00 | 0.99 | ❌ no HR |
 | 10 | Colson Montgomery | Chicago White Sox | Texas Rangers @ Chicago White Sox | 22% | 1.15 | 1.00 | 1.03 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -4146,7 +4240,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 710 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -4233,7 +4327,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Joc Pederson | Texas Rangers | Texas Rangers @ Chicago White Sox | 22% | 1.15 | 1.00 | 1.00 | ❌ no HR |
 | 10 | Kyle Schwarber | Philadelphia Phillies | Philadelphia Phillies @ Seattle Mariners | 22% | 0.89 | 1.00 | 1.03 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -4259,7 +4353,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 462 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -4360,7 +4454,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Luis García Jr. | New York Yankees | Toronto Blue Jays @ New York Yankees | 21% | 1.24 | 1.00 | 0.84 | ❌ no HR |
 | 10 | Pete Crow-Armstrong | Chicago Cubs | Chicago Cubs @ Seattle Mariners | 21% | 0.89 | 1.00 | 1.19 | ✅ HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -4386,7 +4480,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 667 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -4492,7 +4586,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Kazuma Okamoto | Toronto Blue Jays | Toronto Blue Jays @ New York Yankees | 23% | 1.24 | 1.00 | 1.03 | ❌ no HR |
 | 10 | Munetaka Murakami | Chicago White Sox | New York Mets @ Chicago White Sox | 22% | 1.15 | 1.00 | 0.84 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -4518,7 +4612,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 720 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -4613,7 +4707,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Paul Goldschmidt | New York Yankees | Toronto Blue Jays @ New York Yankees | 21% | 1.24 | 1.00 | 1.00 | ❌ no HR |
 | 10 | Nathaniel Lowe | Cleveland Guardians | Cleveland Guardians @ Colorado Rockies | 21% | 1.08 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -4639,7 +4733,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 719 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -4725,7 +4819,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Colson Montgomery | Chicago White Sox | Atlanta Braves @ Chicago White Sox | 24% | 1.15 | 1.00 | 1.16 | ❌ no HR |
 | 10 | Alec Burleson | St. Louis Cardinals | St. Louis Cardinals @ Cincinnati Reds | 24% | 1.33 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -4751,7 +4845,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 426 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -4845,7 +4939,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Mickey Moniak | Colorado Rockies | Los Angeles Dodgers @ Colorado Rockies | 25% | 1.08 | 1.00 | 1.24 | ✅ HR |
 | 10 | Joe Mack | Miami Marlins | Miami Marlins @ Philadelphia Phillies | 24% | 1.18 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -4871,7 +4965,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 707 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 
 **Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
@@ -4970,7 +5064,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Hunter Goodman | Colorado Rockies | Los Angeles Dodgers @ Colorado Rockies | 22% | 1.08 | 1.00 | 0.82 | pending |
 | 10 | Pete Crow-Armstrong | Chicago Cubs | Chicago White Sox @ Chicago Cubs | 21% | 1.04 | 1.00 | 1.12 | ✅ HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -4996,7 +5090,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 431 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 **Prop CLV: +0.35%** across 2905 closed rows (1451/2905 beat the close).
 
@@ -5078,7 +5172,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Shohei Ohtani | Los Angeles Dodgers | Milwaukee Brewers @ Los Angeles Dodgers | 25% | 1.20 | 1.00 | 1.15 | ❌ no HR |
 | 10 | Jac Caglianone | Kansas City Royals | Kansas City Royals @ Los Angeles Angels | 22% | 1.04 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -5104,7 +5198,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 701 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 **Prop CLV: +0.35%** across 2905 closed rows (1451/2905 beat the close).
 
@@ -5186,7 +5280,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Eugenio Suárez | Cincinnati Reds | Miami Marlins @ Cincinnati Reds | 22% | 1.33 | 1.00 | 0.97 | ❌ no HR |
 | 10 | Esteury Ruiz | Miami Marlins | Miami Marlins @ Cincinnati Reds | 22% | 1.33 | 1.00 | 1.24 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -5212,7 +5306,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 705 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 **Prop CLV: +0.35%** across 2905 closed rows (1451/2905 beat the close).
 
@@ -5291,7 +5385,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Pete Crow-Armstrong | Chicago Cubs | St. Louis Cardinals @ Chicago Cubs | 22% | 1.04 | 1.00 | 1.22 | ❌ no HR |
 | 10 | Joc Pederson | Texas Rangers | Texas Rangers @ Athletics | 22% | 1.12 | 1.00 | 1.00 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -5317,7 +5411,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 678 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 **Prop CLV: +0.35%** across 2905 closed rows (1451/2905 beat the close).
 
@@ -5385,7 +5479,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Colson Montgomery | Chicago White Sox | Cincinnati Reds @ Chicago White Sox | 22% | 1.15 | 1.00 | 1.02 | ❌ no HR |
 | 10 | Paul Goldschmidt | New York Yankees | Seattle Mariners @ New York Yankees | 22% | 1.24 | 1.00 | 1.04 | pending |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -5411,7 +5505,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 433 priced props today; 0 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 **Prop CLV: +0.35%** across 2905 closed rows (1451/2905 beat the close).
 
@@ -5491,7 +5585,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | JJ Bleday | Cincinnati Reds | Cincinnati Reds @ Chicago White Sox | 24% | 1.15 | 1.00 | 1.17 | ❌ no HR |
 | 10 | Paul Goldschmidt | New York Yankees | Seattle Mariners @ New York Yankees | 24% | 1.24 | 1.00 | 1.17 | pending |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -5517,7 +5611,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 736 priced props today; 63 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 **Prop CLV: +0.35%** across 2905 closed rows (1451/2905 beat the close).
 
@@ -5601,7 +5695,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Dominic Canzone | Seattle Mariners | Seattle Mariners @ New York Yankees | 23% | 1.24 | 1.00 | 1.06 | ❌ no HR |
 | 10 | Mickey Moniak | Colorado Rockies | Colorado Rockies @ Arizona Diamondbacks | 22% | 1.03 | 1.00 | 1.08 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 #### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
 
@@ -5627,7 +5721,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 
 *Scanned 30 priced props today; 13 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
 
-*Prop calibration (all time): all calls 17768-19409 (model expected 19714.5 hits)* · *gate-clearing calls 235-214 (model expected 264.1 hits)* · *tier A 653-663 (model expected 752.9 hits)* · *tier B 6328-6367 (model expected 7049.3 hits)* · *tier C 10774-12362 (model expected 11893.9 hits)*
+*Prop calibration (all time): all calls 18517-20202 (model expected 20508.8 hits)* · *gate-clearing calls 248-224 (model expected 277.8 hits)* · *tier A 676-687 (model expected 779.5 hits)* · *tier B 6558-6590 (model expected 7290.7 hits)* · *tier C 11270-12908 (model expected 12420.1 hits)*
 
 **Prop CLV: +0.35%** across 2905 closed rows (1451/2905 beat the close).
 
@@ -5687,7 +5781,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Nolan Arenado | Arizona Diamondbacks | Los Angeles Dodgers @ Arizona Diamondbacks | 16% | 1.03 | 1.00 | 1.04 | ❌ no HR |
 | 10 | Victor Mesa Jr. | Tampa Bay Rays | Tampa Bay Rays @ Seattle Mariners | 16% | 0.89 | 1.00 | 1.01 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 ## 2026-08-08
 
@@ -5739,7 +5833,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Esmerlyn Valdez | Pittsburgh Pirates | New York Mets @ Pittsburgh Pirates | 24% | 0.90 | 1.00 | 1.24 | ❌ no HR |
 | 10 | Mickey Moniak | Colorado Rockies | Colorado Rockies @ St. Louis Cardinals | 23% | 0.92 | 1.00 | 1.22 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 ## 2026-08-07
 
@@ -5795,7 +5889,7 @@ Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Mo
 | 9 | Kyle Schwarber | Philadelphia Phillies | Toronto Blue Jays @ Philadelphia Phillies | 23% | 1.18 | 1.00 | 0.86 | ❌ no HR |
 | 10 | Paul Goldschmidt | New York Yankees | Atlanta Braves @ New York Yankees | 23% | 1.24 | 1.00 | 1.09 | ❌ no HR |
 
-*HR board calibration (all time): 78 homered of 445 listed · model expected 110.3*
+*HR board calibration (all time): 89 homered of 494 listed · model expected 121.7*
 
 ## 2026-08-06
 

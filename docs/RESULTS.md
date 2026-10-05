@@ -27,11 +27,11 @@ Track two numbers as this accumulates: whether gate-clearing picks beat their ow
 |---|---|---|---|---|
 | **Locked bets** (ML/Total) | 446-375 | **54.3%** | — | -11.83u · CLV -2.81% |
 | NRFI/YRFI forced calls | 328-314 | **51.1%** | 59.0% | 🔴 behind its own number |
-| HR board (top 10 daily) | 78-367 | **17.5%** | 24.8% | 🔴 behind its own number |
-| Player props (all tiers) | 17768-19409 | **47.8%** | 53.0% | 🔴 behind its own number · CLV +0.35% |
-| &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 653-663 | **49.6%** | 57.2% | 🔴 behind its own number |
-| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 6328-6367 | **49.8%** | 55.5% | 🔴 behind its own number |
-| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 10774-12362 | **46.6%** | 51.4% | 🔴 behind its own number |
+| HR board (top 10 daily) | 89-405 | **18.0%** | 24.6% | 🔴 behind its own number |
+| Player props (all tiers) | 18517-20202 | **47.8%** | 53.0% | 🔴 behind its own number · CLV +0.35% |
+| &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 676-687 | **49.6%** | 57.2% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 6558-6590 | **49.9%** | 55.5% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 11270-12908 | **46.6%** | 51.4% | 🔴 behind its own number |
 
 **Hit rate vs predicted is the whole test.** A board that hits at the rate it claims is trustworthy even when it loses; a board that hits below its own number is telling you it does not know what it claims to know.
 
@@ -64,31 +64,31 @@ YRFI share of calls: **405/642 (63%)** — hitting 51%.
 
 ### HR board (top-10 daily)
 
-- listed and graded: **445**
-- homered: **78** · model expected **110.3**
-- actual rate **17.5%** vs predicted **24.8%** (**-7.3%**)
+- listed and graded: **494**
+- homered: **89** · model expected **121.7**
+- actual rate **18.0%** vs predicted **24.6%** (**-6.6%**)
 
 ### Prop divergence board
 
 | Tier | Market | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|---|
-| A | pitcher_outs | 340 | 185 | 155 | 54% | 57% | -3% |
-| A | Ks (P) | 976 | 468 | 508 | 48% | 57% | -9% |
-| B | Hits | 7674 | 3991 | 3683 | 52% | 58% | -6% |
+| A | pitcher_outs | 363 | 195 | 168 | 54% | 57% | -3% |
+| A | Ks (P) | 1000 | 481 | 519 | 48% | 57% | -9% |
+| B | Hits | 7887 | 4104 | 3783 | 52% | 58% | -6% |
 | B | batter_singles | 835 | 315 | 520 | 38% | 54% | -16% |
-| B | batter_total_bases | 1140 | 543 | 597 | 48% | 51% | -3% |
-| B | batter_walks | 2453 | 1165 | 1288 | 47% | 51% | -4% |
-| B | pitcher_hits_allowed | 304 | 166 | 138 | 55% | 57% | -2% |
-| B | pitcher_walks | 289 | 148 | 141 | 51% | 55% | -4% |
-| C | batter_doubles | 2775 | 1315 | 1460 | 47% | 50% | -2% |
-| C | H+R+RBI | 7666 | 3851 | 3815 | 50% | 55% | -5% |
-| C | RBI | 7675 | 3143 | 4532 | 41% | 44% | -3% |
-| C | batter_runs_scored | 2776 | 1605 | 1171 | 58% | 62% | -4% |
-| C | batter_singles | 1941 | 699 | 1242 | 36% | 52% | -16% |
-| C | pitcher_earned_runs | 303 | 161 | 142 | 53% | 57% | -4% |
-| **All** | | **37177** | **17768** | **19409** | **48%** | **53%** | **-5%** |
+| B | batter_total_bases | 1185 | 566 | 619 | 48% | 51% | -3% |
+| B | batter_walks | 2609 | 1235 | 1374 | 47% | 51% | -4% |
+| B | pitcher_hits_allowed | 326 | 181 | 145 | 56% | 57% | -1% |
+| B | pitcher_walks | 306 | 157 | 149 | 51% | 55% | -4% |
+| C | batter_doubles | 2979 | 1415 | 1564 | 47% | 50% | -2% |
+| C | H+R+RBI | 7870 | 3964 | 3906 | 50% | 55% | -5% |
+| C | RBI | 7879 | 3210 | 4669 | 41% | 44% | -3% |
+| C | batter_runs_scored | 2980 | 1725 | 1255 | 58% | 62% | -4% |
+| C | batter_singles | 2145 | 781 | 1364 | 36% | 52% | -16% |
+| C | pitcher_earned_runs | 325 | 175 | 150 | 54% | 57% | -3% |
+| **All** | | **38719** | **18517** | **20202** | **48%** | **53%** | **-5%** |
 
-Gate-clearing calls only: **235-214** (52% vs 59% predicted).
+Gate-clearing calls only: **248-224** (53% vs 59% predicted).
 
 > **Sample-size reality check.** Distinguishing a real edge from noise needs hundreds of graded calls per tier. Gaps below are indicative, not verdicts — except where a tier is inverted against a lower tier, which is a structural signal rather than variance.
 
@@ -96,7 +96,7 @@ Gate-clearing calls only: **235-214** (52% vs 59% predicted).
 
 | Gate | Rows cleared | Record |
 |---|---|---|
-| **Model edge** (live) | 449 | 235-214 (52.3%) vs 59% predicted |
+| **Model edge** (live) | 472 | 248-224 (52.5%) vs 59% predicted |
 | Market-shrunk | 0 | — |
 
 > **135 totals excluded** from every table below: they were locked against a probable ALTERNATE line before the main-line fix of 2026-08-25, so both the pick and its grade were made against a number the book never offered. They are kept in the ledger and flagged, not deleted.
@@ -167,7 +167,32 @@ Across **64** picks with a captured close, average CLV is **-3.21%** and **17/64
 
 Last 4 graded slates in full. Most recent first.
 
-### 2026-10-04 — NRFI 0-2
+### 2026-10-04 — props 69-111 · NRFI 0-2 · HR 1-9
+
+**Recommended props** (4 of 180 priced cleared the gate)
+
+| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
+|---|---|---|---|---|---|---|---|---|
+| Blake Snell | H allowed | Under | 3.5 | +109 | 58% | 3 | — | ✅ |
+| Blake Snell | BB (P) | Under | 1.5 | +131 | 52% | 5 | — | ❌ |
+| Logan Henderson | H allowed | Under | 3.5 | +108 | 55% | 2 | — | ✅ |
+| Michael King | Outs | Over | 14.5 | -136 | 63% | 15 | — | ✅ |
+
+*Recommended: **3-1** (75%) against 57% predicted.*
+
+**Parlay-leg candidates** (7 priced beyond the -250 straight-bet floor)
+
+| Player | Mkt | Call | Line | Price | Model | Actual | Result |
+|---|---|---|---|---|---|---|---|
+| Austin Riley | Runs | Under | 0.5 | -263 | 70% | 0 | ✅ |
+| Lane Thomas | Runs | Under | 0.5 | -335 | 74% | 0 | ✅ |
+| Sal Frelick | Runs | Under | 0.5 | -277 | 69% | 1 | ❌ |
+| Mauricio Dubon | Runs | Under | 0.5 | -279 | 69% | 0 | ✅ |
+| Luis Campusano | Runs | Under | 0.5 | -325 | 71% | 1 | ❌ |
+| Jake Cronenworth | Runs | Under | 0.5 | -329 | 71% | 0 | ✅ |
+| Xander Bogaerts | Runs | Under | 0.5 | -282 | 67% | 0 | ✅ |
+
+*Legs: **5-2**. A 7-leg parlay of these would NOT have cashed — every leg must land.*
 
 **NRFI / YRFI forced calls**
 
@@ -176,9 +201,53 @@ Last 4 graded slates in full. Most recent first.
 | San Diego Padres @ Milwaukee Brewers | **NRFI** | Low | 58% | 55% | ❌ |
 | Atlanta Braves @ Los Angeles Dodgers | **NRFI** | Coin flip | 54% | 58% | ❌ |
 
+**HR board — top 10**
+
+| # | Player | Game | P(HR) | Form | Platoon | Barrel | Result |
+|---|---|---|---|---|---|---|---|
+| 1 | Shohei Ohtani | Atlanta Braves @ Los Angeles Dodgers | 24% | 0.77 | 1.30 | 1.52 | ❌ |
+| 2 | Matt Olson | Atlanta Braves @ Los Angeles Dodgers | 23% | 0.96 | 1.06 | 1.40 | ❌ |
+| 3 | Manny Machado | San Diego Padres @ Milwaukee Brewers | 22% | 1.08 | 1.15 | 1.13 | ❌ |
+| 4 | Teoscar Hernández | Atlanta Braves @ Los Angeles Dodgers | 21% | 1.13 | 1.41 | 1.19 | ❌ |
+| 5 | Max Muncy | Atlanta Braves @ Los Angeles Dodgers | 20% | 0.84 | 1.10 | 1.32 | ✅ |
+| 6 | Andy Pages | Atlanta Braves @ Los Angeles Dodgers | 20% | 1.15 | 1.25 | 1.02 | ❌ |
+| 7 | Jackson Merrill | San Diego Padres @ Milwaukee Brewers | 20% | 0.99 | 1.10 | 1.29 | ❌ |
+| 8 | Fernando Tatis Jr. | San Diego Padres @ Milwaukee Brewers | 19% | 1.33 | 0.84 | 1.31 | ❌ |
+| 9 | Mookie Betts | Atlanta Braves @ Los Angeles Dodgers | 19% | 1.13 | 1.15 | 1.02 | ❌ |
+| 10 | Gavin Sheets | San Diego Padres @ Milwaukee Brewers | 18% | 1.02 | 1.28 | 0.98 | ❌ |
+
+*1 homered · model expected 2.0*
+
 ---
 
-### 2026-10-03 — NRFI 1-3
+### 2026-10-03 — props 191-172 · NRFI 1-3 · HR 2-8
+
+**Recommended props** (5 of 363 priced cleared the gate)
+
+| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
+|---|---|---|---|---|---|---|---|---|
+| Robbie Ray | Outs | Over | 11.5 | -106 | 64% | 8 | — | ❌ |
+| Jacob Misiorowski | Outs | Under | 17.5 | -112 | 64% | 12 | — | ✅ |
+| Jacob Misiorowski | H allowed | Under | 3.5 | -101 | 66% | 4 | — | ❌ |
+| Parker Messick | BB (P) | Under | 1.5 | +118 | 58% | 2 | — | ❌ |
+| Tarik Skubal | Outs | Under | 17.5 | +156 | 45% | 18 | — | ❌ |
+
+*Recommended: **1-4** (20%) against 59% predicted.*
+
+**Parlay-leg candidates** (22 priced beyond the -250 straight-bet floor)
+
+| Player | Mkt | Call | Line | Price | Model | Actual | Result |
+|---|---|---|---|---|---|---|---|
+| Patrick Bailey | Runs | Under | 0.5 | -255 | 75% | 0 | ✅ |
+| Nathaniel Lowe | Runs | Under | 0.5 | -260 | 75% | 0 | ✅ |
+| Ryan McMahon | Runs | Under | 0.5 | -315 | 76% | 0 | ✅ |
+| Angel Martinez | Runs | Under | 0.5 | -252 | 70% | 0 | ✅ |
+| Randal Grichuk | RBI | Under | 0.5 | -301 | 72% | 0 | ✅ |
+| Spencer Jones | Runs | Under | 0.5 | -270 | 70% | 0 | ✅ |
+| Austin Wells | Runs | Under | 0.5 | -315 | 72% | 0 | ✅ |
+| Mauricio Dubon | Runs | Under | 0.5 | -254 | 68% | 0 | ✅ |
+
+*Legs: **22-0**. A 22-leg parlay of these WOULD have cashed — every leg must land.*
 
 **NRFI / YRFI forced calls**
 
@@ -189,7 +258,48 @@ Last 4 graded slates in full. Most recent first.
 | San Diego Padres @ Milwaukee Brewers | **NRFI** | Medium | 58% | 53% | ✅ |
 | New York Yankees @ Tampa Bay Rays | **YRFI** | Low | 51% | 47% | ❌ |
 
-### 2026-10-01 — NRFI 1-0
+**HR board — top 10**
+
+| # | Player | Game | P(HR) | Form | Platoon | Barrel | Result |
+|---|---|---|---|---|---|---|---|
+| 1 | Junior Caminero | New York Yankees @ Tampa Bay Rays | 31% | 0.95 | 1.22 | 1.34 | ❌ |
+| 2 | Victor Mesa Jr. | New York Yankees @ Tampa Bay Rays | 30% | 1.12 | 1.34 | 1.20 | ❌ |
+| 3 | Jackson Chourio | San Diego Padres @ Milwaukee Brewers | 25% | 1.09 | 1.28 | 1.29 | ✅ |
+| 4 | Ben Rice | New York Yankees @ Tampa Bay Rays | 24% | 1.02 | 1.20 | 1.41 | ❌ |
+| 5 | Matt Olson | Atlanta Braves @ Los Angeles Dodgers | 23% | 0.96 | 1.06 | 1.40 | ❌ |
+| 6 | Randal Grichuk | Chicago White Sox @ Cleveland Guardians | 23% | 1.10 | 1.45 | 1.22 | ❌ |
+| 7 | Jake Bauers | San Diego Padres @ Milwaukee Brewers | 22% | 0.91 | 1.18 | 1.38 | ❌ |
+| 8 | Jonathan Aranda | New York Yankees @ Tampa Bay Rays | 22% | 1.28 | 1.21 | 1.14 | ✅ |
+| 9 | Will Smith | Atlanta Braves @ Los Angeles Dodgers | 22% | 1.30 | 1.00 | 1.29 | ❌ |
+| 10 | Shohei Ohtani | Atlanta Braves @ Los Angeles Dodgers | 20% | 0.77 | 1.00 | 1.52 | ❌ |
+
+*2 homered · model expected 2.4*
+
+### 2026-10-01 — props 68-58 · NRFI 1-0 · HR 2-8
+
+**Recommended props** (2 of 126 priced cleared the gate)
+
+| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
+|---|---|---|---|---|---|---|---|---|
+| Aaron Nola | Outs | Over | 11.5 | -133 | 69% | 5 | — | ❌ |
+| Aaron Nola | H allowed | Over | 3.5 | -123 | 62% | 2 | — | ❌ |
+
+*Recommended: **0-2** (0%) against 66% predicted.*
+
+**Parlay-leg candidates** (8 priced beyond the -250 straight-bet floor)
+
+| Player | Mkt | Call | Line | Price | Model | Actual | Result |
+|---|---|---|---|---|---|---|---|
+| Justin Crawford | Runs | Under | 0.5 | -314 | 74% | 0 | ✅ |
+| Brandon Marsh | Runs | Under | 0.5 | -270 | 70% | 0 | ✅ |
+| Ronald Acuna Jr. | Hits | Over | 0.5 | -252 | 68% | 1 | ✅ |
+| Bryson Stott | RBI | Under | 0.5 | -300 | 70% | 0 | ✅ |
+| Austin Riley | Runs | Under | 0.5 | -259 | 66% | 1 | ❌ |
+| Bryce Harper | RBI | Under | 0.5 | -270 | 67% | 0 | ✅ |
+| Trea Turner | RBI | Under | 0.5 | -355 | 71% | 1 | ❌ |
+| Mike Yastrzemski | Runs | Under | 0.5 | -311 | 69% | 0 | ✅ |
+
+*Legs: **6-2**. A 8-leg parlay of these would NOT have cashed — every leg must land.*
 
 **NRFI / YRFI forced calls**
 
@@ -197,13 +307,57 @@ Last 4 graded slates in full. Most recent first.
 |---|---|---|---|---|---|
 | Philadelphia Phillies @ Atlanta Braves | **YRFI** | High | 56% | 48% | ✅ |
 
-### 2026-09-30 — bets 0-1 (-1.00u) · NRFI 3-0
+**HR board — top 10**
+
+| # | Player | Game | P(HR) | Form | Platoon | Barrel | Result |
+|---|---|---|---|---|---|---|---|
+| 1 | Matt Olson | Philadelphia Phillies @ Atlanta Braves | 32% | 0.96 | 1.11 | 1.40 | ✅ |
+| 2 | Ronald Acuña Jr. | Philadelphia Phillies @ Atlanta Braves | 29% | 1.16 | 1.16 | 1.33 | ❌ |
+| 3 | Derek Hill | Philadelphia Phillies @ Atlanta Braves | 24% | 1.15 | 1.34 | 1.18 | ❌ |
+| 4 | Drake Baldwin | Philadelphia Phillies @ Atlanta Braves | 23% | 0.90 | 1.18 | 1.32 | ❌ |
+| 5 | Kyle Schwarber | Philadelphia Phillies @ Atlanta Braves | 22% | 0.83 | 0.99 | 1.48 | ❌ |
+| 6 | Austin Riley | Philadelphia Phillies @ Atlanta Braves | 22% | 1.13 | 1.18 | 1.29 | ❌ |
+| 7 | Michael Harris II | Philadelphia Phillies @ Atlanta Braves | 22% | 0.98 | 1.13 | 1.17 | ✅ |
+| 8 | Edmundo Sosa | Philadelphia Phillies @ Atlanta Braves | 17% | 1.28 | 1.26 | 0.98 | ❌ |
+| 9 | Mike Yastrzemski | Philadelphia Phillies @ Atlanta Braves | 15% | 1.19 | 0.99 | 0.96 | ❌ |
+| 10 | Dominic Smith | Philadelphia Phillies @ Atlanta Braves | 15% | 1.11 | 1.12 | 0.89 | ❌ |
+
+*2 homered · model expected 2.2*
+
+### 2026-09-30 — bets 0-1 (-1.00u) · props 171-216 · NRFI 3-0 · HR 3-6
 
 **Locked bets**
 
 | Market | Pick | Line | Price | Score | CLV | Result |
 |---|---|---|---|---|---|---|
 | Total | Over 7.0 | 7.0 | +106 | 8.0 | — | ❌ -1.00u |
+
+**Recommended props** (5 of 387 priced cleared the gate)
+
+| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
+|---|---|---|---|---|---|---|---|---|
+| Max Fried | Outs | Under | 16.5 | +106 | 57% | 18 | — | ❌ |
+| Kevin Gausman | Outs | Over | 14.5 | +110 | 55% | 10 | — | ❌ |
+| Max Fried | H allowed | Under | 4.5 | -135 | 66% | 3 | — | ✅ |
+| Nick Pivetta | Outs | Under | 13.5 | -115 | 58% | 10 | — | ✅ |
+| Kevin Gausman | H allowed | Over | 4.5 | +111 | 52% | 5 | — | ✅ |
+
+*Recommended: **3-2** (60%) against 57% predicted.*
+
+**Parlay-leg candidates** (11 priced beyond the -250 straight-bet floor)
+
+| Player | Mkt | Call | Line | Price | Model | Actual | Result |
+|---|---|---|---|---|---|---|---|
+| Colson Montgomery | Runs | Under | 0.5 | -270 | 70% | 0 | ✅ |
+| Ryan McMahon | Runs | Under | 0.5 | -337 | 74% | 0 | ✅ |
+| Nico Hoerner | Runs | Under | 0.5 | -277 | 69% | 0 | ✅ |
+| Jose Altuve | RBI | Under | 0.5 | -272 | 69% | 1 | ❌ |
+| Pedro Ramirez | Runs | Under | 0.5 | -292 | 70% | 0 | ✅ |
+| Carson Kelly | Runs | Under | 0.5 | -273 | 68% | 0 | ✅ |
+| Ceddanne Rafaela | Runs | Under | 0.5 | -274 | 68% | 0 | ✅ |
+| Austin Wells | Runs | Under | 0.5 | -308 | 70% | 1 | ❌ |
+
+*Legs: **8-3**. A 11-leg parlay of these would NOT have cashed — every leg must land.*
 
 **NRFI / YRFI forced calls**
 
@@ -212,6 +366,22 @@ Last 4 graded slates in full. Most recent first.
 | Chicago White Sox @ Houston Astros | **YRFI** | High | 59% | 46% | ✅ |
 | Chicago Cubs @ San Diego Padres | **NRFI** | Medium | 59% | 52% | ✅ |
 | Boston Red Sox @ New York Yankees | **NRFI** | Coin flip | 57% | 56% | ✅ |
+
+**HR board — top 10**
+
+| # | Player | Game | P(HR) | Form | Platoon | Barrel | Result |
+|---|---|---|---|---|---|---|---|
+| 1 | Munetaka Murakami | Chicago White Sox @ Houston Astros | 32% | 0.96 | 1.29 | 1.60 | ❌ |
+| 2 | Ben Rice | Boston Red Sox @ New York Yankees | 30% | 1.02 | 1.20 | 1.41 | ❌ |
+| 3 | Yordan Alvarez | Chicago White Sox @ Houston Astros | 28% | 0.97 | 1.13 | 1.50 | ❌ |
+| 4 | Pete Crow-Armstrong | Chicago Cubs @ San Diego Padres | 25% | 1.15 | 1.21 | 1.35 | ❌ |
+| 5 | Luis García Jr. | Boston Red Sox @ New York Yankees | 25% | 0.97 | 1.26 | 1.28 | ✅ |
+| 6 | Willson Contreras | Boston Red Sox @ New York Yankees | 22% | 0.93 | 1.18 | 1.34 | ✅ |
+| 8 | Jeremy Peña | Chicago White Sox @ Houston Astros | 20% | 1.21 | 1.28 | 0.98 | ✅ |
+| 9 | Manny Machado | Chicago Cubs @ San Diego Padres | 19% | 1.08 | 1.15 | 1.13 | ❌ |
+| 10 | Christian Walker | Chicago White Sox @ Houston Astros | 19% | 1.12 | 1.09 | 1.13 | ❌ |
+
+*3 homered · model expected 2.2*
 
 > **CLV caveat.** Beating the close is evidence of skill only when the move came from the market re-evaluating information we also had. If a scratch or injury broke after we locked, we collect the CLV without having known anything — that is luck wearing the costume of skill. Read CLV in aggregate, never on a single bet.
 
