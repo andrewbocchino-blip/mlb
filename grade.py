@@ -223,6 +223,39 @@ def load_props():
         return []
 
 
+def _day_splits(client, cache, pid, group, season, date):
+    """Stat lines for one player on one date, or None if the fetch failed.
+
+    StatsAPI gameLog defaults to regular season only, so postseason games
+    never appeared and October props / HR rows sat pending forever. Check
+    the regular-season log first, then postseason game types, and stop at
+    the first one that has a game on the date."""
+    for gt in ("R", "P", "F", "D", "L", "W"):
+        key = (pid, group, gt)
+        if key not in cache:
+            try:
+                cache[key] = client.get_json(
+                    f"mlb/people/{pid}/stats",
+                    {"stats": "gameLog", "group": group, "season": season,
+                     "gameType": gt})
+            except Exception:
+                cache[key] = None
+        resp = cache[key]
+        if not resp:
+            if gt == "R":
+                return None
+            continue
+        day = [sp.get("stat") or {}
+               for blk in (resp.get("stats") or [])
+               for sp in (blk.get("splits") or [])
+               if sp.get("date") == date]
+        if day:
+            return day
+        if gt == "R" and date[5:] < "09-25":
+            break             # nowhere near October — skip postseason lookups
+    return []
+
+
 def grade_props(client, board):
     """Grade prop calls off each player's game log for the slate date.
     HR props: did he homer. K props: strikeouts vs the locked line."""
@@ -253,22 +286,9 @@ def grade_props(client, board):
         pid = r.get("player_id")
         if pid is None:
             continue
-        key = (pid, group)
-        if key not in cache:
-            try:
-                cache[key] = client.get_json(
-                    f"mlb/people/{pid}/stats",
-                    {"stats": "gameLog", "group": group, "season": season})
-            except Exception:
-                cache[key] = None
-        resp = cache[key]
-        if not resp:
+        day = _day_splits(client, cache, pid, group, season, r["slate_date"])
+        if day is None:
             continue
-        day = []
-        for blk in (resp.get("stats") or []):
-            for sp in (blk.get("splits") or []):
-                if sp.get("date") == r["slate_date"]:
-                    day.append(sp.get("stat") or {})
         if not day:
             continue          # didn't play / not final yet — stays pending
         if len(day) > 1:
@@ -327,21 +347,10 @@ def grade_hr_board(client, board):
             continue
         pid = r.get("player_id")
         season = int(r["slate_date"][:4])
-        if pid not in log_cache:
-            try:
-                log_cache[pid] = client.get_json(
-                    f"mlb/people/{pid}/stats",
-                    {"stats": "gameLog", "group": "hitting", "season": season})
-            except Exception:
-                log_cache[pid] = None
-        resp = log_cache[pid]
-        if not resp:
+        day_games = _day_splits(client, log_cache, pid, "hitting", season,
+                                r["slate_date"])
+        if day_games is None:
             continue
-        day_games = []
-        for blk in (resp.get("stats") or []):
-            for sp in (blk.get("splits") or []):
-                if sp.get("date") == r["slate_date"]:
-                    day_games.append(sp.get("stat") or {})
         if not day_games:
             continue  # hasn't played yet / off day — stays pending
         hrs = 0
