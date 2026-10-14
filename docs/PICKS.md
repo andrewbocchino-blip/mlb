@@ -2,6 +2,103 @@
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
 
+## 2026-10-14
+
+*No locked picks — model passed the slate. Boards below are calibration records, not bets.*
+
+
+#### NRFI/YRFI Board — forced calls (calibration record, NOT bets)
+
+| Game | Call | Confidence | Model P | Market P | Edge | Result |
+|---|---|---|---|---|---|---|
+| Milwaukee Brewers @ Los Angeles Dodgers | **NRFI** | High | 66% | 54% | +11.9% | pending |
+
+*Board calibration (all time): High 154-146 · Medium 61-54 · Low 20-32 · Coin flip 61-45*
+
+#### HR Board — Top 10 P(HR) (calibration record, NOT bets — lineups unconfirmed)
+
+| # | Player | Team | Game | P(HR) | Park | Wx | vs SP | Result |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Shohei Ohtani | Los Angeles Dodgers | Milwaukee Brewers @ Los Angeles Dodgers | 26% | 1.20 | 1.00 | 1.04 | pending |
+| 2 | Teoscar Hernández | Los Angeles Dodgers | Milwaukee Brewers @ Los Angeles Dodgers | 24% | 1.20 | 1.00 | 1.04 | pending |
+| 3 | Max Muncy | Los Angeles Dodgers | Milwaukee Brewers @ Los Angeles Dodgers | 23% | 1.20 | 1.00 | 1.04 | pending |
+| 4 | Jackson Chourio | Milwaukee Brewers | Milwaukee Brewers @ Los Angeles Dodgers | 23% | 1.20 | 1.00 | 0.82 | pending |
+| 5 | Andy Pages | Los Angeles Dodgers | Milwaukee Brewers @ Los Angeles Dodgers | 22% | 1.20 | 1.00 | 1.04 | pending |
+| 6 | Mookie Betts | Los Angeles Dodgers | Milwaukee Brewers @ Los Angeles Dodgers | 21% | 1.20 | 1.00 | 1.04 | pending |
+| 7 | Jake Bauers | Milwaukee Brewers | Milwaukee Brewers @ Los Angeles Dodgers | 20% | 1.20 | 1.00 | 0.82 | pending |
+| 8 | Will Smith | Los Angeles Dodgers | Milwaukee Brewers @ Los Angeles Dodgers | 16% | 1.20 | 1.00 | 1.04 | pending |
+| 9 | Gary Sánchez | Milwaukee Brewers | Milwaukee Brewers @ Los Angeles Dodgers | 14% | 1.20 | 1.00 | 0.82 | pending |
+| 10 | Tommy Edman | Los Angeles Dodgers | Milwaukee Brewers @ Los Angeles Dodgers | 14% | 1.20 | 1.00 | 1.04 | pending |
+
+*HR board calibration (all time): 91 homered of 569 listed · model expected 135.9*
+
+#### Prop Divergence — model vs **no-vig** market (calibration record, NOT bets)
+
+*Divergence means our number disagrees with the market — it does NOT mean the market is wrong. The market price already contains every sharp model working on this game; when we disagree, the more likely explanation is that our number is worse. Until this board beats its baseline, read a large divergence as a warning about our projection, not an opportunity.*
+
+| Player | Mkt | Tier | Call | Line | Price | Book | Model | No-vig | Diverg. | EV | Result |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Blake Snell** | Outs | A | Under | 14.5 | +130 | DraftKings | 60% | 40% | +23.2% | +38.8% | pending |
+| **Robert Gasser** | Outs | A | Over | 11.5 | -148 | DraftKings | 70% | 56% | +18.8% | +17.6% | pending |
+| Will Smith | Hits | B | Under | 0.5 | +143 | DraftKings | 50% | 37% | +13.3% | +22.6% | pending |
+| Robert Gasser | Ks (P) | A | Over | 3.5 | -104 | FanDuel | 57% | 48% | +11.4% | +12.7% | pending |
+| Blake Snell | Ks (P) | A | Under | 6.5 | -136 | FanDuel | 64% | 55% | +12.1% | +10.4% | pending |
+| Jackson Chourio | Total bases | B | Over | 1.5 | +131 | DraftKings | 49% | 40% | +9.3% | +13.3% | pending |
+| William Contreras | RBI | C | Over | 0.5 | +236 | DraftKings | 36% | 25% | +6.7% | +19.5% | pending |
+| **Blake Snell** | BB (P) | B | Under | 2.5 | -155 | DraftKings | 70% | 58% | +17.5% | +15.3% | pending |
+| Blake Snell | ER | C | Under | 1.5 | -149 | DraftKings | 71% | 57% | +19.8% | +18.8% | pending |
+| Jake Bauers | RBI | C | Over | 0.5 | +250 | DraftKings | 33% | 24% | +4.4% | +14.9% | pending |
+| Mookie Betts | Hits | B | Under | 0.5 | +188 | DraftKings | 38% | 31% | +3.9% | +8.7% | pending |
+| Jackson Chourio | RBI | C | Over | 0.5 | +225 | DraftKings | 35% | 26% | +4.5% | +12.6% | pending |
+| Kyle Tucker | BB (B) | B | Over | 0.5 | +165 | DraftKings | 41% | 33% | +5.2% | +8.0% | pending |
+| Andy Pages | RBI | C | Over | 0.5 | +201 | DraftKings | 36% | 29% | +4.0% | +9.0% | pending |
+| Will Smith | H+R+RBI | C | Under | 1.5 | -121 | DraftKings | 59% | 51% | +9.7% | +7.2% | pending |
+
+*Scanned 113 priced props today; 3 cleared their market's EV gate. With this many comparisons some divergence is guaranteed by noise alone — the top of the board is exactly where model error concentrates, so treat rank as a research queue, not a confidence order.*
+
+*Prop calibration (all time): all calls 19261-21115 (model expected 21347.9 hits)* · *gate-clearing calls 262-243 (model expected 296.4 hits)* · *tier A 703-711 (model expected 807.9 hits)* · *tier B 6797-6860 (model expected 7553.5 hits)* · *tier C 11748-13527 (model expected 12968.0 hits)*
+
+
+**Parlay-leg candidates** (heavier juice than the -250 straight-bet floor; only worth considering inside a multi-leg ticket where the combined price justifies it)
+
+| Player | Mkt | Call | Line | Price | Model | No-vig | Result |
+|---|---|---|---|---|---|---|---|
+| Andrew Vaughn | Runs | Under | 0.5 | -289 | 74% | 71% | pending |
+| Joey Ortiz | Runs | Under | 0.5 | -335 | 72% | 74% | pending |
+| Will Smith | RBI | Under | 0.5 | -270 | 67% | 70% | pending |
+| Joey Ortiz | RBI | Under | 0.5 | -398 | 74% | 78% | pending |
+| Teoscar Hernandez | RBI | Under | 0.5 | -267 | 66% | 70% | pending |
+
+> A parlay multiplies the vig on every leg. Two legs at -300 each is a -900 ticket needing ~90% to break even — only sensible if BOTH legs are genuinely mispriced, which we have not demonstrated.
+
+**Prop CLV: -0.23%** across 3043 closed rows (1481/3043 beat the close).
+
+> Negative or flat CLV means the market moved AGAINST our calls after we made them — the clearest available evidence that the divergences are our error, not the market's.
+
+*Ranked by EV discounted for how much evidence each market has: pitcher Ks (backtest Brier 0.2307 vs 0.2466 blind) rank at full weight, HR and RBI at half or less because neither has demonstrated skill. Price band: -250 to +250 for most markets (worse than -250 needs 71%+ to break even); HR props run to +955 since the market is priced as longshots by nature. Rows at +400 or longer carry a caution — our probability estimate is least reliable at that scale, and so is the devig.*
+
+*Bold = cleared its market's no-vig edge gate with no data-quality flags. Edge is measured against the vig-free price, never the raw line.* **Tier A** = skill-rate model with matchup (HR, pitcher Ks). **Tier B** = rate model, no platoon splits (hits, batter Ks). **Tier C** = experimental (RBI, H+R+RBI): depends on teammates reaching base, and H+R+RBI sums correlated components as independent, which understates variance — research only.
+
+<details><summary>Inputs behind each call</summary>
+
+- **Blake Snell** (Under 14.5): workload: season 4.7 IP/start, L5 4.2 · 4.46 IP/start -> 13.4 outs expected (negative binomial, dispersion 1.2)
+- **Garrett Mitchell** (Over 0.5): bullpen: opp staff K/BF 0.257 -> x1.09, BAA 0.218 -> x0.92 (team totals proxy for pen) · volume: 3.66 PA/G season (531/145), slot unknown · exposure: 2.14 PA vs SP, 1.53 vs bullpen · quality: BABIP 0.387 vs career 0.382 (normal BABIP) -> AVG 0.262 regressed to 0.261 · park/weather run env 0.986 -> hit factor 0.993 · 2B/AB 0.065 -> 0.17 expected · opp SP K/BF 0.318 -> x1.30 · opp SP BAA 0.203 -> x0.84 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Andrew Vaughn** (Over 0.5): bullpen: opp staff K/BF 0.257 -> x1.09, BAA 0.218 -> x0.92 (team totals proxy for pen) · volume: 3.18 PA/G season (331/104), slot unknown · exposure: 2.14 PA vs SP, 1.05 vs bullpen · quality: BABIP 0.355 vs career 0.296 (running hot on balls in play) -> AVG 0.306 regressed to 0.278 · park/weather run env 0.986 -> hit factor 0.993 · 2B/AB 0.062 -> 0.14 expected · opp SP K/BF 0.318 -> x1.30 · opp SP BAA 0.203 -> x0.84 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Brice Turang** (Over 0.5): bullpen: opp staff K/BF 0.257 -> x1.09, BAA 0.218 -> x0.92 (team totals proxy for pen) · volume: 4.50 PA/G season (680/151), slot unknown · exposure: 2.14 PA vs SP, 2.37 vs bullpen · quality: BABIP 0.344 vs career 0.320 (normal BABIP) -> AVG 0.268 regressed to 0.261 · park/weather run env 0.986 -> hit factor 0.993 · 2B/AB 0.064 -> 0.20 expected · opp SP K/BF 0.318 -> x1.30 · opp SP BAA 0.203 -> x0.84 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Brice Turang** (Over 0.5): bullpen: opp staff K/BF 0.257 -> x1.09, BAA 0.218 -> x0.92 (team totals proxy for pen) · volume: 4.50 PA/G season (680/151), slot unknown · exposure: 2.14 PA vs SP, 2.37 vs bullpen · quality: BABIP 0.344 vs career 0.320 (normal BABIP) -> AVG 0.268 regressed to 0.261 · park/weather run env 0.986 -> hit factor 0.993 · RBI/PA: season 0.140 · L7 0.233 · L15 0.209 · L30 0.185 -> 0.143 · no usable vs-LHP split (<60 PA) — vs-all used · RBI/PA league rank: 80%ile (#68 of 334) · -> 0.56 expected RBI (negative binomial, dispersion 1.5845574266144782) · opp SP K/BF 0.318 -> x1.30 · opp SP BAA 0.203 -> x0.84 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ RBI depends on teammates reaching base — not modelled · ⚠️ outside price band (-250 to +250) · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+- **Will Smith** (Under 0.5): bullpen: opp staff K/BF 0.258 -> x1.10, BAA 0.221 -> x0.93 (team totals proxy for pen) · volume: 3.78 PA/G season (276/73), slot unknown · exposure: 2.57 PA vs SP, 1.21 vs bullpen · quality: BABIP 0.277 vs career 0.284 (normal BABIP) -> AVG 0.260 regressed to 0.263 · park/weather run env 0.986 -> hit factor 0.993 · AVG: season 0.263 · L7 0.435 · L15 0.356 · L30 0.281 -> 0.273 · platoon vs LHP: 0.176 vs overall 0.263 -> x0.80 (83 PA) · AVG league rank: 72%ile (#93 of 334) · -> 0.203/AB over 3.2 AB · opp SP K/BF 0.222 -> x0.99 · opp SP BAA 0.229 -> x0.94 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used
+- **William Contreras** (Over 0.5): bullpen: opp staff K/BF 0.257 -> x1.09, BAA 0.218 -> x0.92 (team totals proxy for pen) · volume: 4.35 PA/G season (640/147), slot unknown · exposure: 2.14 PA vs SP, 2.22 vs bullpen · quality: BABIP 0.292 vs career 0.318 (unlucky on balls in play) -> AVG 0.270 regressed to 0.279 · park/weather run env 0.986 -> hit factor 0.993 · 2B/AB 0.048 -> 0.15 expected · opp SP K/BF 0.318 -> x1.30 · opp SP BAA 0.203 -> x0.84 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Jackson Chourio** (Over 0.5): bullpen: opp staff K/BF 0.257 -> x1.09, BAA 0.218 -> x0.92 (team totals proxy for pen) · volume: 4.51 PA/G season (573/127), slot unknown · exposure: 2.14 PA vs SP, 2.38 vs bullpen · quality: BABIP 0.348 vs career 0.324 (normal BABIP) -> AVG 0.291 regressed to 0.283 · park/weather run env 0.986 -> hit factor 0.993 · 2B/AB 0.052 -> 0.18 expected · opp SP K/BF 0.318 -> x1.30 · opp SP BAA 0.203 -> x0.84 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **William Contreras** (Over 0.5): bullpen: opp staff K/BF 0.257 -> x1.09, BAA 0.218 -> x0.92 (team totals proxy for pen) · volume: 4.35 PA/G season (640/147), slot unknown · exposure: 2.14 PA vs SP, 2.22 vs bullpen · quality: BABIP 0.292 vs career 0.318 (unlucky on balls in play) -> AVG 0.270 regressed to 0.279 · park/weather run env 0.986 -> hit factor 0.993 · RBI/PA: season 0.139 · L7 0.250 · L15 0.299 · L30 0.228 -> 0.148 · no usable vs-LHP split (<60 PA) — vs-all used · RBI/PA league rank: 80%ile (#69 of 334) · -> 0.56 expected RBI (negative binomial, dispersion 1.5845574266144782) · opp SP K/BF 0.318 -> x1.30 · opp SP BAA 0.203 -> x0.84 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ RBI depends on teammates reaching base — not modelled · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+- **Blake Snell** (Under 1.5): workload: season 4.7 IP/start, L5 4.2 · ERA 1.90 over 4.46 IP -> 0.94 ER (dispersion 1.9 — one bad inning dominates) · ⚠️ earned runs depend on sequencing and defence, not just the arm
+- **Robert Gasser** (Over 11.5): workload: season 5.5 IP/start, L5 5.3 · 5.36 IP/start -> 16.1 outs expected (negative binomial, dispersion 1.2)
+- **Andy Pages** (Over 0.5): bullpen: opp staff K/BF 0.258 -> x1.10, BAA 0.221 -> x0.93 (team totals proxy for pen) · volume: 4.28 PA/G season (574/134), slot unknown · exposure: 2.57 PA vs SP, 1.71 vs bullpen · quality: BABIP 0.307 vs career 0.307 (normal BABIP) -> AVG 0.274 regressed to 0.274 · park/weather run env 0.986 -> hit factor 0.993 · 2B/AB 0.051 -> 0.18 expected · opp SP K/BF 0.222 -> x0.99 · opp SP BAA 0.229 -> x0.94 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ doubles are a rare event — small samples dominate · ⚠️ outside price band (-250 to +250)
+- **Blake Snell** (Under 2.5): workload: season 4.7 IP/start, L5 4.2 · 18.3 BF x BB/BF 0.092 -> 1.69 walks
+- **Jake Bauers** (Over 0.5): bullpen: opp staff K/BF 0.257 -> x1.09, BAA 0.218 -> x0.92 (team totals proxy for pen) · volume: 4.01 PA/G season (578/144), slot unknown · exposure: 2.14 PA vs SP, 1.88 vs bullpen · quality: BABIP 0.339 vs career 0.290 (running hot on balls in play) -> AVG 0.266 regressed to 0.251 · park/weather run env 0.986 -> hit factor 0.993 · RBI/PA: season 0.140 · L7 0.100 · L15 0.133 · L30 0.116 -> 0.136 · no usable vs-LHP split (<60 PA) — vs-all used · RBI/PA league rank: 81%ile (#66 of 334) · -> 0.47 expected RBI (negative binomial, dispersion 1.5845574266144782) · opp SP K/BF 0.318 -> x1.30 · opp SP BAA 0.203 -> x0.84 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ RBI depends on teammates reaching base — not modelled · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+- **Garrett Mitchell** (Over 0.5): bullpen: opp staff K/BF 0.257 -> x1.09, BAA 0.218 -> x0.92 (team totals proxy for pen) · volume: 3.66 PA/G season (531/145), slot unknown · exposure: 2.14 PA vs SP, 1.53 vs bullpen · quality: BABIP 0.387 vs career 0.382 (normal BABIP) -> AVG 0.262 regressed to 0.261 · park/weather run env 0.986 -> hit factor 0.993 · RBI/PA: season 0.120 · L7 0.000 · L15 0.133 · L30 0.104 -> 0.117 · no usable vs-LHP split (<60 PA) — vs-all used · RBI/PA league rank: 57%ile (#146 of 334) · -> 0.37 expected RBI (negative binomial, dispersion 1.5845574266144782) · opp SP K/BF 0.318 -> x1.30 · opp SP BAA 0.203 -> x0.84 · ⚠️ lineup unconfirmed — batting slot and PA estimated · ⚠️ no Statcast xBA — raw AVG used · ⚠️ RBI depends on teammates reaching base — not modelled · ⚠️ outside price band (-250 to +250) · ⚠️ derivative of the same rate estimates as hits — not an independent edge
+
+</details>
+
 ## 2026-10-13
 
 *No locked picks — model passed the slate. Boards below are calibration records, not bets.*
