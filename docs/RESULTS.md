@@ -26,12 +26,12 @@ Track two numbers as this accumulates: whether gate-clearing picks beat their ow
 | Board | Record | Hit rate | Model predicted | Standing |
 |---|---|---|---|---|
 | **Locked bets** (ML/Total) | 451-377 | **54.5%** | — | -9.35u · CLV -2.77% |
-| NRFI/YRFI forced calls | 337-322 | **51.1%** | 59.0% | 🔴 behind its own number |
-| HR board (top 10 daily) | 95-502 | **15.9%** | 23.6% | 🔴 behind its own number |
-| Player props (all tiers) | 19436-21287 | **47.7%** | 52.9% | 🔴 behind its own number · CLV -0.23% |
-| &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 707-716 | **49.7%** | 57.2% | 🔴 behind its own number |
-| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 6858-6908 | **49.8%** | 55.3% | 🔴 behind its own number |
-| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 11858-13646 | **46.5%** | 51.3% | 🔴 behind its own number |
+| NRFI/YRFI forced calls | 337-323 | **51.1%** | 58.9% | 🔴 behind its own number |
+| HR board (top 10 daily) | 95-511 | **15.7%** | 23.4% | 🔴 behind its own number |
+| Player props (all tiers) | 19480-21353 | **47.7%** | 52.9% | 🔴 behind its own number · CLV -0.23% |
+| &nbsp;&nbsp;↳ props · tier A (HR, pitcher K) | 709-718 | **49.7%** | 57.1% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier B (hits, batter K) | 6870-6930 | **49.8%** | 55.3% | 🔴 behind its own number |
+| &nbsp;&nbsp;↳ props · tier C (RBI, H+R+RBI) | 11888-13688 | **46.5%** | 51.3% | 🔴 behind its own number |
 
 **Hit rate vs predicted is the whole test.** A board that hits at the rate it claims is trustworthy even when it loses; a board that hits below its own number is telling you it does not know what it claims to know.
 
@@ -53,42 +53,42 @@ These boards are calibration records, not bets. The question is not whether they
 | High | 301 | 154 | 147 | 51% | 63% | -12% |
 | Medium | 115 | 61 | 54 | 53% | 56% | -3% |
 | Low | 52 | 20 | 32 | 38% | 54% | -15% |
-| Coin flip | 108 | 62 | 46 | 57% | 53% | +4% |
-| **All** | **659** | **337** | **322** | **51%** | **59%** | **-8%** |
+| Coin flip | 109 | 62 | 47 | 57% | 53% | +3% |
+| **All** | **660** | **337** | **323** | **51%** | **59%** | **-8%** |
 
-YRFI share of calls: **411/659 (62%)** — hitting 51%.
+YRFI share of calls: **411/660 (62%)** — hitting 51%.
 
-**Naive baseline check.** First innings were scoreless in **50.4%** of these games, so always calling NRFI scores **50.4%**. The model scores **51.1%**.
+**Naive baseline check.** First innings were scoreless in **50.3%** of these games, so always calling NRFI scores **50.3%**. The model scores **51.1%**.
 
 > ⚠️ **Confidence is inverted**: the High tier is hitting BELOW the Coin flip tier. Whatever the confidence metric is measuring, it is not the probability of being right. Calls at this tier should carry no weight until this reverses.
 
 ### HR board (top-10 daily)
 
-- listed and graded: **597**
-- homered: **95** · model expected **141.0**
-- actual rate **15.9%** vs predicted **23.6%** (**-7.7%**)
+- listed and graded: **606**
+- homered: **95** · model expected **142.0**
+- actual rate **15.7%** vs predicted **23.4%** (**-7.8%**)
 
 ### Prop divergence board
 
 | Tier | Market | n | Hit | Miss | Hit% | Model said | Gap |
 |---|---|---|---|---|---|---|---|
-| A | pitcher_outs | 392 | 210 | 182 | 54% | 57% | -4% |
-| A | Ks (P) | 1031 | 497 | 534 | 48% | 57% | -9% |
-| B | Hits | 8147 | 4246 | 3901 | 52% | 58% | -6% |
+| A | pitcher_outs | 394 | 210 | 184 | 53% | 57% | -4% |
+| A | Ks (P) | 1033 | 499 | 534 | 48% | 57% | -9% |
+| B | Hits | 8161 | 4252 | 3909 | 52% | 58% | -6% |
 | B | batter_singles | 835 | 315 | 520 | 38% | 54% | -16% |
-| B | batter_total_bases | 1244 | 590 | 654 | 47% | 51% | -3% |
-| B | batter_walks | 2856 | 1344 | 1512 | 47% | 51% | -4% |
-| B | pitcher_hits_allowed | 352 | 193 | 159 | 55% | 57% | -2% |
-| B | pitcher_walks | 332 | 170 | 162 | 51% | 56% | -4% |
-| C | batter_doubles | 3239 | 1543 | 1696 | 48% | 50% | -2% |
-| C | H+R+RBI | 8130 | 4099 | 4031 | 50% | 55% | -5% |
-| C | RBI | 8139 | 3289 | 4850 | 40% | 44% | -3% |
-| C | batter_runs_scored | 3240 | 1873 | 1367 | 58% | 61% | -4% |
-| C | batter_singles | 2405 | 873 | 1532 | 36% | 52% | -16% |
-| C | pitcher_earned_runs | 351 | 181 | 170 | 52% | 57% | -5% |
-| **All** | | **40723** | **19436** | **21287** | **48%** | **53%** | **-5%** |
+| B | batter_total_bases | 1246 | 590 | 656 | 47% | 51% | -3% |
+| B | batter_walks | 2870 | 1348 | 1522 | 47% | 51% | -4% |
+| B | pitcher_hits_allowed | 354 | 194 | 160 | 55% | 57% | -2% |
+| B | pitcher_walks | 334 | 171 | 163 | 51% | 56% | -4% |
+| C | batter_doubles | 3253 | 1549 | 1704 | 48% | 50% | -2% |
+| C | H+R+RBI | 8144 | 4105 | 4039 | 50% | 55% | -5% |
+| C | RBI | 8153 | 3294 | 4859 | 40% | 44% | -3% |
+| C | batter_runs_scored | 3254 | 1880 | 1374 | 58% | 61% | -4% |
+| C | batter_singles | 2419 | 878 | 1541 | 36% | 52% | -16% |
+| C | pitcher_earned_runs | 353 | 182 | 171 | 52% | 57% | -5% |
+| **All** | | **40833** | **19480** | **21353** | **48%** | **53%** | **-5%** |
 
-Gate-clearing calls only: **266-247** (52% vs 59% predicted).
+Gate-clearing calls only: **267-249** (52% vs 59% predicted).
 
 > **Sample-size reality check.** Distinguishing a real edge from noise needs hundreds of graded calls per tier. Gaps below are indicative, not verdicts — except where a tier is inverted against a lower tier, which is a structural signal rather than variance.
 
@@ -96,7 +96,7 @@ Gate-clearing calls only: **266-247** (52% vs 59% predicted).
 
 | Gate | Rows cleared | Record |
 |---|---|---|
-| **Model edge** (live) | 513 | 266-247 (51.9%) vs 59% predicted |
+| **Model edge** (live) | 516 | 267-249 (51.7%) vs 59% predicted |
 | Market-shrunk | 0 | — |
 
 > **135 totals excluded** from every table below: they were locked against a probable ALTERNATE line before the main-line fix of 2026-08-25, so both the pick and its grade were made against a number the book never offered. They are kept in the ledger and flagged, not deleted.
@@ -167,6 +167,53 @@ Across **64** picks with a captured close, average CLV is **-3.21%** and **17/64
 
 Last 4 graded slates in full. Most recent first.
 
+### 2026-10-18 — props 44-66 · NRFI 0-1 · HR 0-9
+
+**Recommended props** (3 of 110 priced cleared the gate)
+
+| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
+|---|---|---|---|---|---|---|---|---|
+| Parker Messick | Outs | Over | 15.5 | +126 | 50% | 6 | — | ❌ |
+| Drew Rasmussen | H allowed | Under | 4.5 | -113 | 59% | 4 | — | ✅ |
+| Parker Messick | H allowed | Under | 4.5 | -109 | 58% | 5 | — | ❌ |
+
+*Recommended: **1-2** (33%) against 56% predicted.*
+
+**Parlay-leg candidates** (4 priced beyond the -250 straight-bet floor)
+
+| Player | Mkt | Call | Line | Price | Model | Actual | Result |
+|---|---|---|---|---|---|---|---|
+| Nathaniel Lowe | Runs | Under | 0.5 | -302 | 70% | 0 | ✅ |
+| Victor Mesa Jr. | RBI | Under | 0.5 | -310 | 69% | 0 | ✅ |
+| Jo Adell | Runs | Under | 0.5 | -275 | 67% | 0 | ✅ |
+| Chase DeLauter | Runs | Under | 0.5 | -266 | 66% | 0 | ✅ |
+
+*Legs: **4-0**. A 4-leg parlay of these WOULD have cashed — every leg must land.*
+
+**NRFI / YRFI forced calls**
+
+| Game | Call | Confidence | Model | Market | Result |
+|---|---|---|---|---|---|
+| Tampa Bay Rays @ Cleveland Guardians | **NRFI** | Coin flip | 52% | 59% | ❌ |
+
+**HR board — top 10**
+
+| # | Player | Game | P(HR) | Form | Platoon | Barrel | Result |
+|---|---|---|---|---|---|---|---|
+| 1 | Victor Mesa Jr. | Tampa Bay Rays @ Cleveland Guardians | 16% | 1.12 | 1.00 | 1.20 | ❌ |
+| 2 | Junior Caminero | Tampa Bay Rays @ Cleveland Guardians | 14% | 0.95 | 0.75 | 1.34 | ❌ |
+| 3 | Angel Martínez | Tampa Bay Rays @ Cleveland Guardians | 13% | 1.17 | 1.03 | 0.98 | ❌ |
+| 4 | Nathaniel Lowe | Tampa Bay Rays @ Cleveland Guardians | 12% | 0.94 | 1.27 | 1.05 | ❌ |
+| 5 | Patrick Bailey | Tampa Bay Rays @ Cleveland Guardians | 12% | 1.12 | 1.39 | 1.01 | ❌ |
+| 6 | Travis Bazzana | Tampa Bay Rays @ Cleveland Guardians | 11% | 1.37 | 1.24 | 0.86 | ❌ |
+| 7 | Chase DeLauter | Tampa Bay Rays @ Cleveland Guardians | 9% | 1.04 | 1.17 | 0.93 | ❌ |
+| 9 | Jonathan Aranda | Tampa Bay Rays @ Cleveland Guardians | 8% | 1.28 | 0.65 | 1.14 | ❌ |
+| 10 | Yandy Díaz | Tampa Bay Rays @ Cleveland Guardians | 8% | 0.79 | 1.24 | 0.98 | ❌ |
+
+*0 homered · model expected 1.0*
+
+---
+
 ### 2026-10-17 — props 61-51 · NRFI 0-1 · HR 1-9
 
 **Recommended props** (3 of 112 priced cleared the gate)
@@ -214,8 +261,6 @@ Last 4 graded slates in full. Most recent first.
 | 10 | Jonny DeLuca | Tampa Bay Rays @ Cleveland Guardians | 10% | 0.99 | 1.38 | 0.77 | ❌ |
 
 *1 homered · model expected 1.5*
-
----
 
 ### 2026-10-15 — bets 1-0 (+0.95u) · props 58-64 · NRFI 1-0 · HR 1-8
 
@@ -312,47 +357,6 @@ Last 4 graded slates in full. Most recent first.
 | 10 | Tommy Edman | Milwaukee Brewers @ Los Angeles Dodgers | 14% | 1.08 | 1.37 | 0.87 | ❌ |
 
 *2 homered · model expected 1.9*
-
-### 2026-10-13 — props 47-58 · NRFI 0-1 · HR 0-8
-
-**Recommended props** (2 of 105 priced cleared the gate)
-
-| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
-|---|---|---|---|---|---|---|---|---|
-| Freddy Peralta | H allowed | Over | 3.5 | +102 | 59% | 4 | — | ✅ |
-| Freddy Peralta | Outs | Over | 13.5 | -139 | 62% | 18 | — | ✅ |
-
-*Recommended: **2-0** (100%) against 61% predicted.*
-
-**Parlay-leg candidates** (2 priced beyond the -250 straight-bet floor)
-
-| Player | Mkt | Call | Line | Price | Model | Actual | Result |
-|---|---|---|---|---|---|---|---|
-| Yandy Diaz | Hits | Under | 1.5 | -267 | 70% | 0 | ✅ |
-| Nathaniel Lowe | Runs | Under | 0.5 | -285 | 68% | 0 | ✅ |
-
-*Legs: **2-0**. A 2-leg parlay of these WOULD have cashed — every leg must land.*
-
-**NRFI / YRFI forced calls**
-
-| Game | Call | Confidence | Model | Market | Result |
-|---|---|---|---|---|---|
-| Cleveland Guardians @ Tampa Bay Rays | **YRFI** | Medium | 52% | 46% | ❌ |
-
-**HR board — top 10**
-
-| # | Player | Game | P(HR) | Form | Platoon | Barrel | Result |
-|---|---|---|---|---|---|---|---|
-| 1 | Victor Mesa Jr. | Cleveland Guardians @ Tampa Bay Rays | 16% | 1.12 | 1.00 | 1.20 | ❌ |
-| 2 | Angel Martínez | Cleveland Guardians @ Tampa Bay Rays | 16% | 1.17 | 1.03 | 0.98 | ❌ |
-| 3 | Nathaniel Lowe | Cleveland Guardians @ Tampa Bay Rays | 16% | 0.94 | 1.27 | 1.05 | ❌ |
-| 4 | Patrick Bailey | Cleveland Guardians @ Tampa Bay Rays | 16% | 1.12 | 1.39 | 1.01 | ❌ |
-| 5 | Travis Bazzana | Cleveland Guardians @ Tampa Bay Rays | 15% | 1.37 | 1.24 | 0.86 | ❌ |
-| 6 | Junior Caminero | Cleveland Guardians @ Tampa Bay Rays | 14% | 0.95 | 0.75 | 1.34 | ❌ |
-| 8 | Chase DeLauter | Cleveland Guardians @ Tampa Bay Rays | 11% | 1.04 | 1.17 | 0.93 | ❌ |
-| 9 | Jonathan Aranda | Cleveland Guardians @ Tampa Bay Rays | 8% | 1.28 | 0.65 | 1.14 | ❌ |
-
-*0 homered · model expected 1.1*
 
 > **CLV caveat.** Beating the close is evidence of skill only when the move came from the market re-evaluating information we also had. If a scratch or injury broke after we locked, we collect the CLV without having known anything — that is luck wearing the costume of skill. Read CLV in aggregate, never on a single bet.
 
