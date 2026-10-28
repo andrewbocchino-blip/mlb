@@ -167,6 +167,16 @@ Across **64** picks with a captured close, average CLV is **-3.21%** and **17/64
 
 Last 4 graded slates in full. Most recent first.
 
+### 2026-10-27 — bets 0-1 (+0.00u)
+
+**Locked bets**
+
+| Market | Pick | Line | Price | Score | CLV | Result |
+|---|---|---|---|---|---|---|
+| Total | Over 7.0 | 7.0 | +116 | 8.3 | — | ➖ +0.00u |
+
+---
+
 ### 2026-10-26 — bets 1-0 (+0.88u)
 
 **Locked bets**
@@ -174,8 +184,6 @@ Last 4 graded slates in full. Most recent first.
 | Market | Pick | Line | Price | Score | CLV | Result |
 |---|---|---|---|---|---|---|
 | Total | Over 7.0 | 7.0 | -113 | 9.5 | — | ✅ +0.88u |
-
----
 
 ### 2026-10-24 — props 51-67 · NRFI 0-1 · HR 0-9
 
@@ -271,56 +279,6 @@ Last 4 graded slates in full. Most recent first.
 
 *0 homered · model expected 1.7*
 
-### 2026-10-19 — bets 1-1 (-0.11u) · props 53-61 · NRFI 0-1 · HR 1-9
-
-**Locked bets**
-
-| Market | Pick | Line | Price | Score | CLV | Result |
-|---|---|---|---|---|---|---|
-| Total | Over 6.5 | 6.5 | -112 | 9.3 | — | ✅ +0.89u |
-| F5 Total | F5 Over 3.5 | 3.5 | -118 | 7.7 | — | ❌ -1.00u |
-
-**Recommended props** (1 of 114 priced cleared the gate)
-
-| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
-|---|---|---|---|---|---|---|---|---|
-| Freddy Peralta | H allowed | Over | 3.5 | -122 | 61% | 5 | — | ✅ |
-
-*Recommended: **1-0** (100%) against 61% predicted.*
-
-**Parlay-leg candidates** (3 priced beyond the -250 straight-bet floor)
-
-| Player | Mkt | Call | Line | Price | Model | Actual | Result |
-|---|---|---|---|---|---|---|---|
-| Yandy Diaz | Hits | Over | 0.5 | -259 | 68% | 1 | ✅ |
-| Nathaniel Lowe | Runs | Under | 0.5 | -279 | 68% | 1 | ❌ |
-| Jonny Deluca | Runs | Under | 0.5 | -254 | 66% | 0 | ✅ |
-
-*Legs: **2-1**. A 3-leg parlay of these would NOT have cashed — every leg must land.*
-
-**NRFI / YRFI forced calls**
-
-| Game | Call | Confidence | Model | Market | Result |
-|---|---|---|---|---|---|
-| Cleveland Guardians @ Tampa Bay Rays | **YRFI** | Medium | 51% | 44% | ❌ |
-
-**HR board — top 10**
-
-| # | Player | Game | P(HR) | Form | Platoon | Barrel | Result |
-|---|---|---|---|---|---|---|---|
-| 1 | Junior Caminero | Cleveland Guardians @ Tampa Bay Rays | 25% | 0.95 | 1.22 | 1.34 | ✅ |
-| 2 | Victor Mesa Jr. | Cleveland Guardians @ Tampa Bay Rays | 24% | 1.12 | 1.34 | 1.20 | ❌ |
-| 3 | Jonathan Aranda | Cleveland Guardians @ Tampa Bay Rays | 17% | 1.28 | 1.21 | 1.14 | ❌ |
-| 4 | Angel Martínez | Cleveland Guardians @ Tampa Bay Rays | 16% | 1.17 | 1.03 | 0.98 | ❌ |
-| 5 | Nathaniel Lowe | Cleveland Guardians @ Tampa Bay Rays | 16% | 0.94 | 1.27 | 1.05 | ❌ |
-| 6 | Patrick Bailey | Cleveland Guardians @ Tampa Bay Rays | 16% | 1.12 | 1.39 | 1.01 | ❌ |
-| 7 | Travis Bazzana | Cleveland Guardians @ Tampa Bay Rays | 15% | 1.37 | 1.24 | 0.86 | ❌ |
-| 8 | David Fry | Cleveland Guardians @ Tampa Bay Rays | 11% | 1.01 | 1.00 | 0.93 | ❌ |
-| 9 | Chase DeLauter | Cleveland Guardians @ Tampa Bay Rays | 11% | 1.04 | 1.17 | 0.93 | ❌ |
-| 10 | Jonny DeLuca | Cleveland Guardians @ Tampa Bay Rays | 10% | 0.99 | 1.38 | 0.77 | ❌ |
-
-*1 homered · model expected 1.6*
-
 > **CLV caveat.** Beating the close is evidence of skill only when the move came from the market re-evaluating information we also had. If a scratch or injury broke after we locked, we collect the CLV without having known anything — that is luck wearing the costume of skill. Read CLV in aggregate, never on a single bet.
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
@@ -354,6 +312,12 @@ Brier score: **0.2401** (0.25 = coin flip knowledge; lower is better)
 - **by fav_band:** pickem 129-98 (+9%)  ·  fav 68-40 (+4%)  ·  dog 27-40 (-5%)  ·  unknown 2-3 (-24%)  ·  heavy fav 11-10 (-26%)
 
 ## Model A — picks by date
+
+### 2026-10-27 — 0-0  (+0.00u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ➖ PUSH | PLAY | Milwaukee Brewers @ Tampa Bay Rays | Total | Over 7.0 | 7.0 | **FanDuel +116** / DraftKings -113 | — | +0.00 |
 
 ### 2026-10-26 — 1-0  (+0.88u)
 

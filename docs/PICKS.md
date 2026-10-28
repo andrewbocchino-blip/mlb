@@ -2,6 +2,12 @@
 
 Picks frozen at the line they were taken at. **Model A** = current (v14.3). **Model B** = variant. Both books shown; **bold = better price**. One row per bet. Paper only.
 
+## 2026-10-28
+
+| Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
+|---|---|---|---|---|---|---|---|
+| A | PLAY | 9.5 | Milwaukee Brewers @ Tampa Bay Rays | Total | Over 6.5 | 6.5 | **FanDuel -114** / DraftKings -119 |
+
 ## 2026-10-27
 
 | Model | Verdict | Score | Game | Market | Pick | Line | Books (best in bold) |
