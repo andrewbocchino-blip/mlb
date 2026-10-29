@@ -25,7 +25,7 @@ Track two numbers as this accumulates: whether gate-clearing picks beat their ow
 
 | Board | Record | Hit rate | Model predicted | Standing |
 |---|---|---|---|---|
-| **Locked bets** (ML/Total) | 453-378 | **54.5%** | — | -8.58u · CLV -2.77% |
+| **Locked bets** (ML/Total) | 453-379 | **54.4%** | — | -9.58u · CLV -2.77% |
 | NRFI/YRFI forced calls | 337-326 | **50.8%** | 58.9% | 🔴 behind its own number |
 | HR board (top 10 daily) | 96-539 | **15.1%** | 23.1% | 🔴 behind its own number |
 | Player props (all tiers) | 19638-21541 | **47.7%** | 52.8% | 🔴 behind its own number · CLV -0.23% |
@@ -39,7 +39,7 @@ Track two numbers as this accumulates: whether gate-clearing picks beat their ow
 
 **Model A** = current model (control). **Model B** = retired variant, history preserved. CLV measured from the real price vs close. Each unique bet counted once. Paper only — no real money.
 
-**Model A: 453-378  ·  55% win  ·  -8.58u  ·  -1.0% ROI  ·  avg CLV -2.77%**
+**Model A: 453-379  ·  54% win  ·  -9.58u  ·  -1.2% ROI  ·  avg CLV -2.77%**
 **Model B: 237-191  ·  55% win  ·  +14.16u  ·  +3.3% ROI  ·  avg CLV n/a (no closing lines yet)**
 
 ## Board calibration standings
@@ -110,14 +110,14 @@ Every slice of the graded record with a bootstrap confidence interval. A segment
 | Segment | Record | Units | ROI | 95% CI | Verdict |
 |---|---|---|---|---|---|
 | LEAN | 123-132 | -23.93u | -9.4% | -21.7% to +2.4% | ⚪ inconclusive |
-| PLAY | 293-219 | +8.15u | +1.6% | -6.4% to +8.9% | ⚪ inconclusive |
+| PLAY | 293-220 | +7.15u | +1.4% | -6.5% to +8.5% | ⚪ inconclusive |
 
 ### By market
 
 | Segment | Record | Units | ROI | 95% CI | Verdict |
 |---|---|---|---|---|---|
 | F5 Total | 28-42 | -20.29u | -29.0% | -49.2% to -6.3% | 🔴 **demonstrated loser** |
-| Total | 70-76 | -9.28u | -6.4% | -22.1% to +10.7% | ⚪ inconclusive |
+| Total | 70-77 | -10.28u | -7.0% | -23.9% to +9.6% | ⚪ inconclusive |
 | Run Line | 42-48 | -2.11u | -2.3% | -24.3% to +20.2% | ⚪ inconclusive |
 | Moneyline | 270-180 | +15.76u | +3.5% | -4.4% to +12.0% | ⚪ inconclusive |
 
@@ -128,7 +128,7 @@ Every slice of the graded record with a bootstrap confidence interval. A segment
 | dog +120 or longer | 19-34 | -5.19u | -9.8% | -40.8% to +21.8% | ⚪ inconclusive |
 | fav -121 to -160 | 104-92 | -17.44u | -8.9% | -20.8% to +3.2% | ⚪ inconclusive |
 | heavy fav past -160 | 101-55 | -3.40u | -2.2% | -13.6% to +9.2% | ⚪ inconclusive |
-| pickem -120 to -100 | 130-117 | +0.40u | +0.2% | -11.9% to +11.9% | ⚪ inconclusive |
+| pickem -120 to -100 | 130-118 | -0.60u | -0.2% | -12.3% to +12.0% | ⚪ inconclusive |
 | dog +100 to +119 | 42-41 | +3.65u | +4.4% | -18.0% to +25.0% | ⚪ inconclusive |
 
 ### By model score — does the score rank bets correctly?
@@ -139,15 +139,15 @@ Every slice of the graded record with a bootstrap confidence interval. A segment
 | 6.0–6.9 | 108 | 52-56 | -9.34u | -8.6% |
 | 7.0–7.9 | 140 | 73-67 | -1.94u | -1.4% |
 | 8.0–8.9 | 113 | 70-43 | +11.98u | +10.6% |
-| 9.0–10.9 | 259 | 150-109 | -1.89u | -0.7% |
+| 9.0–10.9 | 260 | 150-110 | -2.89u | -1.1% |
 
 > Rank correlation between score band and ROI: **+0.90** (+1.00 = ROI rises perfectly with score).
 
-> Below score 7.0: **-23.93u over 255 bets (-9.4%)**. At 7.0 and above: **+8.15u over 512 bets (+1.6%)**. The sign flips at exactly the PLAY threshold.
+> Below score 7.0: **-23.93u over 255 bets (-9.4%)**. At 7.0 and above: **+7.15u over 513 bets (+1.4%)**. The sign flips at exactly the PLAY threshold.
 
 > ✅ The score ranks bets in the right order. That is stronger evidence than any single segment clearing a confidence interval — one slice can look good by luck, a clean gradient across bands is much harder to get by accident.
 
-> 110 picks were locked on a LATE core run (the midnight slot was dropped and the work was done hours later). They count in the W-L record but are excluded from CLV below, because a pick taken at noon cannot be compared to a closing line the same way one taken at midnight can.
+> 111 picks were locked on a LATE core run (the midnight slot was dropped and the work was done hours later). They count in the W-L record but are excluded from CLV below, because a pick taken at noon cannot be compared to a closing line the same way one taken at midnight can.
 
 ### Closing line value — the deeper test
 
@@ -167,6 +167,16 @@ Across **64** picks with a captured close, average CLV is **-3.21%** and **17/64
 
 Last 4 graded slates in full. Most recent first.
 
+### 2026-10-28 — bets 0-1 (-1.00u)
+
+**Locked bets**
+
+| Market | Pick | Line | Price | Score | CLV | Result |
+|---|---|---|---|---|---|---|
+| Total | Over 6.5 | 6.5 | -114 | 9.5 | — | ❌ -1.00u |
+
+---
+
 ### 2026-10-27 — bets 0-1 (+0.00u)
 
 **Locked bets**
@@ -174,8 +184,6 @@ Last 4 graded slates in full. Most recent first.
 | Market | Pick | Line | Price | Score | CLV | Result |
 |---|---|---|---|---|---|---|
 | Total | Over 7.0 | 7.0 | +116 | 8.3 | — | ➖ +0.00u |
-
----
 
 ### 2026-10-26 — bets 1-0 (+0.88u)
 
@@ -232,53 +240,6 @@ Last 4 graded slates in full. Most recent first.
 
 *0 homered · model expected 1.6*
 
-### 2026-10-23 — props 54-60 · NRFI 0-1 · HR 0-10
-
-**Recommended props** (4 of 114 priced cleared the gate)
-
-| Player | Mkt | Call | Line | Price | Model | Actual | CLV | Result |
-|---|---|---|---|---|---|---|---|---|
-| Nick Martinez | Outs | Over | 13.5 | +100 | 61% | 15 | — | ✅ |
-| Jacob Misiorowski | H allowed | Under | 3.5 | -105 | 66% | 4 | — | ❌ |
-| Nick Martinez | Outs | Over | 12.5 | -133 | 67% | 15 | — | ✅ |
-| Nick Martinez | BB (P) | Under | 1.5 | -218 | 74% | 0 | — | ✅ |
-
-*Recommended: **3-1** (75%) against 67% predicted.*
-
-**Parlay-leg candidates** (4 priced beyond the -250 straight-bet floor)
-
-| Player | Mkt | Call | Line | Price | Model | Actual | Result |
-|---|---|---|---|---|---|---|---|
-| Sal Frelick | Runs | Under | 0.5 | -271 | 71% | 0 | ✅ |
-| Jonathan Aranda | Runs | Under | 0.5 | -264 | 68% | 1 | ❌ |
-| Jonny Deluca | Runs | Under | 0.5 | -374 | 72% | 0 | ✅ |
-| David Hamilton | Runs | Under | 0.5 | -300 | 68% | 0 | ✅ |
-
-*Legs: **3-1**. A 4-leg parlay of these would NOT have cashed — every leg must land.*
-
-**NRFI / YRFI forced calls**
-
-| Game | Call | Confidence | Model | Market | Result |
-|---|---|---|---|---|---|
-| Tampa Bay Rays @ Milwaukee Brewers | **NRFI** | Coin flip | 52% | 59% | ❌ |
-
-**HR board — top 10**
-
-| # | Player | Game | P(HR) | Form | Platoon | Barrel | Result |
-|---|---|---|---|---|---|---|---|
-| 1 | Junior Caminero | Tampa Bay Rays @ Milwaukee Brewers | 24% | 0.95 | 1.22 | 1.34 | ❌ |
-| 2 | Victor Mesa Jr. | Tampa Bay Rays @ Milwaukee Brewers | 23% | 1.12 | 1.34 | 1.20 | ❌ |
-| 3 | Jackson Chourio | Tampa Bay Rays @ Milwaukee Brewers | 19% | 1.09 | 0.97 | 1.29 | ❌ |
-| 4 | Jake Bauers | Tampa Bay Rays @ Milwaukee Brewers | 18% | 0.91 | 1.02 | 1.38 | ❌ |
-| 5 | Gary Sánchez | Tampa Bay Rays @ Milwaukee Brewers | 17% | 1.03 | 1.17 | 1.05 | ❌ |
-| 6 | Jonathan Aranda | Tampa Bay Rays @ Milwaukee Brewers | 17% | 1.28 | 1.21 | 1.14 | ❌ |
-| 7 | Brice Turang | Tampa Bay Rays @ Milwaukee Brewers | 15% | 1.17 | 1.21 | 1.01 | ❌ |
-| 8 | William Contreras | Tampa Bay Rays @ Milwaukee Brewers | 14% | 1.28 | 1.06 | 1.06 | ❌ |
-| 9 | Christian Yelich | Tampa Bay Rays @ Milwaukee Brewers | 11% | 1.05 | 1.05 | 1.13 | ❌ |
-| 10 | Garrett Mitchell | Tampa Bay Rays @ Milwaukee Brewers | 11% | 1.02 | 1.07 | 1.25 | ❌ |
-
-*0 homered · model expected 1.7*
-
 > **CLV caveat.** Beating the close is evidence of skill only when the move came from the market re-evaluating information we also had. If a scratch or injury broke after we locked, we collect the CLV without having known anything — that is luck wearing the costume of skill. Read CLV in aggregate, never on a single bet.
 
 > CLV is the signal that matters here, not W-L — per the sharp-bettor method, beating the closing line is what indicates a real edge. A small sample of wins with negative CLV is luck, not edge.
@@ -301,9 +262,9 @@ Brier score: **0.2401** (0.25 = coin flip knowledge; lower is better)
 
 ### Model A — segments (finding the winning slice)
 
-- **by market:** Moneyline 270-180 (+4%, CLV -3.3%)  ·  NRFI 6-5 (+1%, CLV -4.0%)  ·  Total 107-103 (-1%, CLV +0.7%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 28-42 (-29%, CLV -2.5%)
-- **by side:** Under 68-61 (+2%, CLV +1.5%)  ·  team 346-275 (-1%, CLV -3.1%)  ·  Over 39-42 (-5%, CLV +0.3%)
-- **by fav_band:** unknown 21-14 (+15%)  ·  pickem 224-197 (+2%, CLV +0.2%)  ·  heavy fav 35-15 (-2%, CLV +0.0%)  ·  fav 144-103 (-5%, CLV -7.1%)  ·  dog 29-49 (-11%, CLV -1.9%)
+- **by market:** Moneyline 270-180 (+4%, CLV -3.3%)  ·  NRFI 6-5 (+1%, CLV -4.0%)  ·  Total 107-104 (-2%, CLV +0.7%)  ·  Run Line 42-48 (-2%)  ·  F5 Total 28-42 (-29%, CLV -2.5%)
+- **by side:** Under 68-61 (+2%, CLV +1.5%)  ·  team 346-275 (-1%, CLV -3.1%)  ·  Over 39-43 (-6%, CLV +0.3%)
+- **by fav_band:** unknown 21-14 (+15%)  ·  pickem 224-198 (+2%, CLV +0.2%)  ·  heavy fav 35-15 (-2%, CLV +0.0%)  ·  fav 144-103 (-5%, CLV -7.1%)  ·  dog 29-49 (-11%, CLV -1.9%)
 
 ### Model B — segments (finding the winning slice)
 
@@ -312,6 +273,12 @@ Brier score: **0.2401** (0.25 = coin flip knowledge; lower is better)
 - **by fav_band:** pickem 129-98 (+9%)  ·  fav 68-40 (+4%)  ·  dog 27-40 (-5%)  ·  unknown 2-3 (-24%)  ·  heavy fav 11-10 (-26%)
 
 ## Model A — picks by date
+
+### 2026-10-28 — 0-1  (-1.00u)
+
+| Result | Verdict | Game | Market | Pick | Line | Books (best in bold) | CLV | P/L |
+|---|---|---|---|---|---|---|---|---|
+| ❌ LOSS | PLAY | Milwaukee Brewers @ Tampa Bay Rays | Total | Over 6.5 | 6.5 | **FanDuel -114** / DraftKings -119 | — | -1.00 |
 
 ### 2026-10-27 — 0-0  (+0.00u)
 
